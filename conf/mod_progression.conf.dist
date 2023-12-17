@@ -1,0 +1,29 @@
+[worldserver]
+
+###################################################################################################
+#    Progression.Patch
+#        Description: The currently active patch. It will always include all content up to and including the set patch.
+#                     0 - Patch 3.0: Echoes of Doom
+#                     1 - Patch 3.1: Secrets of Ulduar
+#                     2 - Patch 3.2: Call of the Crusade
+#                     3 - Patch 3.3: Fall of the Lich King
+#        Default:     4 - Patch 3.3.5: Assault on the Ruby Sanctum
+#
+
+Progression.Patch = 4
+
+#
+#    Progression.IcecrownCitadel.Aura
+#        Description: Set the aura inside Icecrown Citadel based on the active patch
+#                     Leave it set to 4 to always use the best possible aura
+#                     0 - Patch 3.3 = No buff, Patch 3.3.5 = 25%
+#                     1 - Patch 3.3 = 5%,      Patch 3.3.5 = 30%
+#                     2 - Patch 3.3 = 10%
+#                     3 - Patch 3.3 = 15%
+#        Default:     4 - Patch 3.3 = 20%
+#
+
+Progression.IcecrownCitadel.Aura = 4
+
+#
+###################################################################################################
