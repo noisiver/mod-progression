@@ -1,5 +1,6 @@
-DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (6145, 6521, 6522)) OR (`sourceType`=2 AND `entry` IN (603, 631, 632, 649, 650, 658, 668, 724)) OR (`sourceType`=3 AND `entry` IN (6, 30, 32)) OR (`sourceType`=9 AND `entry` IN (26, 51, 54, 61, 63, 64));
+DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (6145, 6521, 6522)) OR (`sourceType`=2 AND `entry` IN (249, 603, 631, 632, 649, 650, 658, 668, 724)) OR (`sourceType`=3 AND `entry` IN (6, 30, 32)) OR (`sourceType`=9 AND `entry` IN (26, 51, 54, 61, 63, 64));
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
+(2, 249, 3, '', '', 'Onyxia\'s Lair'),
 (2, 603, 3, '', '', 'Ulduar'),
 (2, 631, 15, '', '', 'Icecrown Citadel'),
 (2, 632, 3, '', '', 'The Forge of Souls'),

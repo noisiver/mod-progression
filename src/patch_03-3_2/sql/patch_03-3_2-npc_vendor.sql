@@ -1,5 +1,5 @@
 DELETE FROM `npc_vendor` WHERE `item` IN (48677, 48683, 48685, 48687, 48689, 48691, 48718, 49177);
-INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`, `patch_min`, `patch_max`, `name`, `subname`, `name`) VALUES
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Hira Snowdawn <Cold Weather Flying Trainer>
 (31238, 0, 49177, 0, 0, 0, 0), -- Tome of Cold Weather Flight
 -- Dame Evniki Kapsalis <Crusader's Quartermaster>

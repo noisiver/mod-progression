@@ -1,0 +1,22 @@
+DELETE FROM `creature_loot_template` WHERE `Entry` IN (32857, 32867, 32927, 33118, 33186, 33190, 33271, 33288, 33293, 33449, 33515, 33692, 33693, 33694, 33724, 33885, 33955, 33993, 33994, 34175) AND `Item` IN (40752, 40753, 45624, 47241);
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(32857, 40753, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir - Emblem of Valor'),
+(32867, 40753, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker - Emblem of Valor'),
+(32927, 40753, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim - Emblem of Valor'),
+(33118, 40753, 0, 100, 0, 1, 0, 1, 1, 'Ignis the Furnace Master - Emblem of Valor'),
+(33186, 40753, 0, 100, 0, 1, 0, 1, 1, 'Razorscale - Emblem of Valor'),
+(33190, 45624, 0, 100, 0, 1, 0, 2, 2, 'Ignis the Furnace Master (1) - Emblem of Conquest'),
+(33271, 40753, 0, 100, 0, 1, 0, 1, 1, 'General Vezax - Emblem of Valor'),
+(33288, 40753, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron - Emblem of Valor'),
+(33293, 40753, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor - Emblem of Valor'),
+(33449, 45624, 0, 100, 0, 1, 0, 1, 1, 'General Vezax (1) - Emblem of Conquest'),
+(33515, 40753, 0, 100, 0, 1, 0, 1, 1, 'Auriaya - Emblem of Valor'),
+(33692, 45624, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim (1) - Emblem of Conquest'),
+(33693, 45624, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker (1) - Emblem of Conquest'),
+(33694, 45624, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir (1) - Emblem of Conquest'),
+(33724, 45624, 0, 100, 0, 1, 0, 1, 1, 'Razorscale (1) - Emblem of Conquest'),
+(33885, 45624, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor (1) - Emblem of Conquest'),
+(33955, 45624, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron (1) - Emblem of Conquest'),
+(33993, 40752, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher - Emblem of Conquest'),
+(33994, 45624, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher (1) - Emblem of Conquest'),
+(34175, 45624, 0, 100, 0, 1, 0, 1, 1, 'Auriaya (1) - Emblem of Conquest');
