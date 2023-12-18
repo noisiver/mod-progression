@@ -13,3 +13,13 @@ UPDATE `quest_template` SET `RewardItem1`=40753 WHERE `ID` IN (
     13256, -- Proof of Demise: Cyanigosa
     14199 -- Proof of Demise: The Black Knight
 );
+
+UPDATE `quest_template` SET `RewardDisplaySpell`=0, `RewardSpell`=0, `RewardAmount2`=1 WHERE `ID` IN (
+    6622, -- Triage
+    6624 -- Triage
+);
+
+UPDATE `quest_template` SET `RewardItem2`=49192 WHERE `ID`=6622; -- Triage
+UPDATE `quest_template` SET `RewardItem2`=49193 WHERE `ID`=6624; -- Triage
+
+UPDATE `quest_template` SET `RewardDisplaySpell`=0, ´RewardSpell`=0 WHERE `ID`=6607; -- Nat Pagle, Angler Extreme
