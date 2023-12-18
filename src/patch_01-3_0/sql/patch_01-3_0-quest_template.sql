@@ -38,4 +38,4 @@ UPDATE `quest_template` SET `RewardDisplaySpell`=10846, `RewardSpell`=10846, `Re
     6624 -- Triage
 );
 
-UPDATE `quest_template` SET `RewardDisplaySpell`=19890, ´RewardSpell`=19890 WHERE `ID`=6607; -- Nat Pagle, Angler Extreme
+UPDATE `quest_template` SET `RewardDisplaySpell`=19890, `RewardSpell`=19890 WHERE `ID`=6607; -- Nat Pagle, Angler Extreme

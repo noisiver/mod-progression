@@ -1,19 +1,9 @@
-DELETE FROM `gameobject_loot_template` WHERE (`Entry` IN (24524, 24589, 25192, 25193, 26094, 26097, 26260, 26929, 26946, 26955, 26956, 26959, 26960, 26961, 26962, 26963, 26967, 26974, 27030, 27061, 27068, 27073, 27074, 27078, 27079, 27080, 27081, 27085, 27086, 27414, 27416, 27417) AND `Item` IN (40752, 40753, 45624, 47241)) OR (`Item`=50289);
+DELETE FROM `gameobject_loot_template` WHERE (`Entry` IN (24524, 24589, 25192, 25193, 26094, 26097, 26260, 26929, 26946, 26955, 26956, 26959, 26960, 26961, 26962, 26963, 26967, 26974, 27030, 27061, 27068, 27073, 27074, 27078, 27079, 27080, 27081, 27085, 27086, 27414, 27416, 27417) AND `Item` IN (40752, 40753, 45624, 47241));
 INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (24524, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Eregos - Emblem of Triumph'),
 (24589, 47241, 0, 100, 0, 1, 0, 1, 1, 'Dark Runed Chest - Emblem of Triumph'),
 (25192, 47241, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Triumph'),
 (25193, 47241, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Triumph'),
-(25662, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Glacial Salmon School - Blacktip Shark'),
-(25663, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Fangtooth Herring School - Blacktip Shark'),
-(25664, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Dragonfin Angelfish School - Blacktip Shark'),
-(25665, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Musselback Sculpin School - Blacktip Shark'),
-(25668, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Imperial Manta Ray School - Blacktip Shark'),
-(25669, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Borean Man O\' War School - Blacktip Shark'),
-(25670, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Moonglow Cuttlefish School - Blacktip Shark'),
-(25671, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Deep Sea Monsterbelly School - Blacktip Shark'),
-(25673, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Nettlefish School - Blacktip Shark'),
-(25674, 50289, 0, 0.05, 0, 1, 2, 1, 1, 'Glassfin Minnow School - Blacktip Shark'),
 (26094, 47241, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Triumph'),
 (26097, 47241, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Triumph'),
 (26260, 47241, 0, 100, 0, 1, 0, 1, 1, 'Tribunal Chest - Emblem of Triumph'),

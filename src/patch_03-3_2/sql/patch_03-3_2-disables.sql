@@ -1,3 +1,8 @@
+DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
+    14100, -- Relic of the Earthen Ring
+    14111 -- Relic of the Earthen Ring
+);
+
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
     249, -- Onyxia's Lair
     649, -- Trial of the Crusader

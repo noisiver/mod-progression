@@ -18,3 +18,7 @@ DELETE FROM `disables` WHERE `sourceType`=9 AND `entry` IN (
     63, -- Kalu'ak Fishing Derby Turn-ins
     64 -- Kalu'ak Fishing Derby Fishing Pools
 );
+
+DELETE FROM `disables` WHERE `sourceType`=10 AND `entry` IN (
+    50289 -- Blacktip Shark
+);
