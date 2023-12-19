@@ -1,9 +1,13 @@
 UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     25171, -- Invisible Stalker (Scale x0.5)
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
+    34771, -- Girana the Blooded <The Sunreavers>
     34772, -- Vasarin Redmorn <Sunreavers Quartermaster>
+    34880, -- Narasi Snowdawn <The Silver Covenant>
     34881, -- Hiren Loresong <Silver Covenant Quartermaster>
     34885, -- Dame Evniki Kapsalis <Crusader's Quartermaster>
+    34912, -- Savinia Loresong <The Silver Covenant>
+    34914, -- Tylos Dawnrunner <The Sunreavers>
     34955, -- Karg Skullgore <Battlemaster>
     34976, -- Ruk Warstomper <Battlemaster>
     34978, -- Mosha Starhorn <Battlemaster>

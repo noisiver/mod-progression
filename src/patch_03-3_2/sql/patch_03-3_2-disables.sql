@@ -1,4 +1,5 @@
 DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
+    14016, -- The Black Knight's Curse
     14100, -- Relic of the Earthen Ring
     14111 -- Relic of the Earthen Ring
 );
