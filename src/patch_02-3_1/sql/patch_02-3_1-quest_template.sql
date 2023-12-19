@@ -26,4 +26,4 @@ UPDATE `quest_template` SET `RewardDisplaySpell`=0, `RewardSpell`=0, `RewardAmou
 UPDATE `quest_template` SET `RewardItem2`=49192 WHERE `ID`=6622; -- Triage
 UPDATE `quest_template` SET `RewardItem2`=49193 WHERE `ID`=6624; -- Triage
 
-UPDATE `quest_template` SET `RewardDisplaySpell`=0, ´RewardSpell`=0 WHERE `ID`=6607; -- Nat Pagle, Angler Extreme
+UPDATE `quest_template` SET `RewardDisplaySpell`=0, `RewardSpell`=0 WHERE `ID`=6607; -- Nat Pagle, Angler Extreme
