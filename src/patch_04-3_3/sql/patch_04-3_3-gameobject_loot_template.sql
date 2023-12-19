@@ -31,4 +31,4 @@ INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, 
 (27086, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Innovation - Emblem of Triumph'),
 (27414, 47241, 0, 100, 0, 1, 0, 1, 1, 'Champion\'s Cache - Emblem of Triumph'),
 (27416, 47241, 0, 100, 0, 1, 0, 1, 1, 'Eadric\'s Cache - Emblem of Triumph'),
-(27417, 47241, 0, 100, 0, 1, 0, 1, 1, 'Confessor\'s Cache - Emblem of Triumph'),
+(27417, 47241, 0, 100, 0, 1, 0, 1, 1, 'Confessor\'s Cache - Emblem of Triumph');
