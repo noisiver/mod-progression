@@ -69,6 +69,8 @@ public:
 private:
     uint32 PatchId;
     uint32 AuraId;
+    bool EnforceQuestInfo;
+    bool EnforceDungeonFinder;
 
     inline std::vector<std::string> GetActivePatches();
 };

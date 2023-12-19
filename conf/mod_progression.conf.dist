@@ -26,4 +26,33 @@ Progression.Patch = 4
 Progression.IcecrownCitadel.Aura = 4
 
 #
+#    Progression.QuestInfo.Enforced
+#        Description: Enforce quest-related information based on the active patch
+#                     This includes quest markers on the map
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.QuestInfo.Enforced = 1
+
+#
+#    Progression.DungeonFinder.Enforced
+#        Description: Enforce the availability of the dungeon finder based on the active patch
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.DungeonFinder.Enforced = 1
+
+#
+#    Progression.Reset
+#        Description: Reapply all SQL files on startup
+#                     This is useful when moving to an older patch, after making changes or to make sure it's up-to-date
+#        Default:     0 - Disabled
+#                     1 - Enabled
+#
+
+Progression.Reset = 0
+
+#
 ###################################################################################################

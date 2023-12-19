@@ -6,6 +6,8 @@ Progression::Progression() : DatabaseScript("ProgressionDatabaseScript"), Player
 {
     PatchId = 4;
     AuraId = 4;
+    EnforceQuestInfo = true;
+    EnforceDungeonFinder = true;
 }
 
 void AddSC_npc_archmage_landalock_progression();

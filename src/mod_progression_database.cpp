@@ -12,6 +12,9 @@ void Progression::OnAfterDatabasesLoaded(uint32 updateFlags)
     if (PatchDatabaseDirectories.empty())
         return;
 
+    if (sConfigMgr->GetOption<bool>("Progression.Reset", false))
+        WorldDatabase.Query("DELETE FROM `updates` WHERE `name` LIKE 'patch_%'");
+
     DBUpdater<WorldDatabaseConnection>::Update(WorldDatabase, &PatchDatabaseDirectories);
 }
 
