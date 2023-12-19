@@ -55,6 +55,7 @@ public:
         void JustSummoned(Creature* image) override
         {
             image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
+            image->SetSpeed(MOVE_TURN_RATE, 0.2f);
             _summonGUID = image->GetGUID();
         }
 

@@ -14,7 +14,8 @@ enum ArchmageLandalockQuests
     QUEST_PROOF_OF_DEMISE_LOKEN                  = 13253,
     QUEST_PROOF_OF_DEMISE_ANUB_ARAK              = 13254,
     QUEST_PROOF_OF_DEMISE_HERALD_VOLAZJ          = 13255,
-    QUEST_PROOF_OF_DEMISE_CYANIGOSA              = 13256
+    QUEST_PROOF_OF_DEMISE_CYANIGOSA              = 13256,
+    QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT       = 14199
 };
 
 enum ArchmageLandalockImages
@@ -30,7 +31,8 @@ enum ArchmageLandalockImages
     NPC_LOKEN_IMAGE                              = 31625,
     NPC_ANUB_ARAK_IMAGE                          = 31626,
     NPC_HERALD_VOLAZJ_IMAGE                      = 31627,
-    NPC_CYANIGOSA_IMAGE                          = 31629
+    NPC_CYANIGOSA_IMAGE                          = 31629,
+    NPC_THE_BLACK_KNIGHT_IMAGE                   = 35461
 };
 
 class npc_archmage_landalock_progression : public CreatureScript
@@ -79,8 +81,10 @@ public:
                 return NPC_ANUB_ARAK_IMAGE;
             case QUEST_PROOF_OF_DEMISE_HERALD_VOLAZJ:
                 return NPC_HERALD_VOLAZJ_IMAGE;
-            default: //case QUEST_PROOF_OF_DEMISE_CYANIGOSA:
+            case QUEST_PROOF_OF_DEMISE_CYANIGOSA:
                 return NPC_CYANIGOSA_IMAGE;
+            default: // QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT
+                return NPC_THE_BLACK_KNIGHT_IMAGE;
             }
         }
 
@@ -88,7 +92,10 @@ public:
         {
             // xinef: screams like a baby
             if (image->GetEntry() != NPC_ANUB_ARAK_IMAGE)
+            {
                 image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
+                image->SetSpeed(MOVE_TURN_RATE, 0.2f);
+            }
             _summonGUID = image->GetGUID();
         }
 
@@ -114,10 +121,7 @@ public:
                         if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
                             image->DespawnOrUnsummon();
 
-                        float z = 653.622f;
-                        if (newEntry == NPC_KERISTRASZA_IMAGE || newEntry == NPC_CYANIGOSA_IMAGE)
-                            z += 3.0f;
-                        me->SummonCreature(newEntry, 5703.077f, 583.9757f, z, 3.926991f);
+                        me->SummonCreature(newEntry, 5703.077f, 583.9757f, 653.622f, 3.926991f);
                     }
                 }
             }
