@@ -1,4 +1,8 @@
 UPDATE `quest_template` SET `RewardItem1`=40753 WHERE `ID` IN (
+    13240, -- Timear Foresees Centrifuge Constructs in your Future!
+    13241, -- Timear Foresees Ymirjar Berserkers in your Future!
+    13243, -- Timear Foresees Infinite Agents in your Future!
+    13244, -- Timear Foresees Titanium Vanguards in your Future!
     13245, -- Proof of Demise: Ingvar the Plunderer
     13246, -- Proof of Demise: Keristrasza
     13247, -- Proof of Demise: Ley-Guardian Eregos

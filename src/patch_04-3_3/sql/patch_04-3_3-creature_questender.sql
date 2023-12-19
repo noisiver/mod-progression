@@ -1,4 +1,4 @@
-DELETE FROM `creature_questender` WHERE `id`=20735;
+DELETE FROM `creature_questender` WHERE `id` IN (20735, 31439);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 -- Archmage Lan'dalock
 (20735, 24579), -- Sartharion Must Die!

@@ -3,7 +3,12 @@ UPDATE `quest_template` SET `RewardItem1`=0, `RewardAmount1`=0 WHERE `ID` IN (
     24789, -- Daily Heroic Random (Nth)
     24790 -- Daily Normal Random (1st)
 );
+
 UPDATE `quest_template` SET `RewardItem1`=40752 WHERE `ID` IN (
+    13240, -- Timear Foresees Centrifuge Constructs in your Future!
+    13241, -- Timear Foresees Ymirjar Berserkers in your Future!
+    13243, -- Timear Foresees Infinite Agents in your Future!
+    13244, -- Timear Foresees Titanium Vanguards in your Future!
     13245, -- Proof of Demise: Ingvar the Plunderer
     13246, -- Proof of Demise: Keristrasza
     13247, -- Proof of Demise: Ley-Guardian Eregos
@@ -18,7 +23,12 @@ UPDATE `quest_template` SET `RewardItem1`=40752 WHERE `ID` IN (
     13256, -- Proof of Demise: Cyanigosa
     14199 -- Proof of Demise: The Black Knight
 );
+
 UPDATE `quest_template` SET `Flags`=`Flags`&~16384 WHERE `ID` IN (
+    13240, -- Timear Foresees Centrifuge Constructs in your Future!
+    13241, -- Timear Foresees Ymirjar Berserkers in your Future!
+    13243, -- Timear Foresees Infinite Agents in your Future!
+    13244, -- Timear Foresees Titanium Vanguards in your Future!
     13245, -- Proof of Demise: Ingvar the Plunderer
     13246, -- Proof of Demise: Keristrasza
     13247, -- Proof of Demise: Ley-Guardian Eregos

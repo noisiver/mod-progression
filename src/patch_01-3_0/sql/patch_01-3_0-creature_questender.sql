@@ -1,4 +1,4 @@
-DELETE FROM `creature_questender` WHERE `id`=20735;
+DELETE FROM `creature_questender` WHERE `id` IN (20735, 31439);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 -- Archmage Lan'dalock
 (20735, 13245), -- Proof of Demise: Ingvar the Plunderer
@@ -12,4 +12,9 @@ INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 (20735, 13253), -- Proof of Demise: Loken
 (20735, 13254), -- Proof of Demise: Anub'arak
 (20735, 13255), -- Proof of Demise: Herald Volazj
-(20735, 13256); -- Proof of Demise: Cyanigosa
+(20735, 13256), -- Proof of Demise: Cyanigosa
+-- Archmage Timear
+(31439, 13240), -- Timear Foresees Centrifuge Constructs in your Future!
+(31439, 13241), -- Timear Foresees Ymirjar Berserkers in your Future!
+(31439, 13243), -- Timear Foresees Infinite Agents in your Future!
+(31439, 13244); -- Timear Foresees Titanium Vanguards in your Future!

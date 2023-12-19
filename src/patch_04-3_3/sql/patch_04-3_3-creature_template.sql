@@ -17,5 +17,7 @@ UPDATE `creature_template` SET `faction`=7 WHERE `entry` IN (
     3183, -- Yarrog Baneshadow
     8554 -- Chief Sharptusk Thornmantle
 );
+
 UPDATE `creature_template` SET `faction`=190 WHERE `entry`=706; -- Frostmane Troll Whelp
 UPDATE `creature_template` SET `faction`=189 WHERE `entry`=2952; -- Bristleback Quilboar
+UPDATE `creature_template` SET `ScriptName`='' WHERE `entry`=31439; -- Archmage Timear
