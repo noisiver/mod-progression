@@ -754,3 +754,13 @@ DELETE FROM `npc_vendor` WHERE `entry`=35500 AND `item` IN (
     51288, -- Sanctified Ahn'Kahar Blood Hunter's Spaulders
     51289 -- Sanctified Ahn'Kahar Blood Hunter's Tunic
 );
+
+-- Hexil Garrot <Tools of the Trade>
+DELETE FROM `npc_vendor` WHERE `entry`=29538 AND `item` IN (
+    45829, -- Belt of the Twilight Assassin
+    45830, -- Belt of the Living Thicket
+    45838, -- Gloves of the Blind Stalker
+    45839, -- Grips of the Secret Grove
+    45846, -- Leggings of Wavering Shadow
+    45847 -- Wildstrider Legguards
+);
