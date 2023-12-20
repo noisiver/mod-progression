@@ -101,8 +101,10 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     37942, -- Arcanist Uovril <Emblem of Frost Quartermaster>
     37965, -- Argent Commander
     37967, -- Ebon Blade Commander
+    37968, -- Argent Hippogryph
     38433, -- Toravon the Ice Watcher
     38482, -- Frost Warder
+    38493, -- Argent Crusader
     39263, -- Disassembled Mechano-Tank
     39275, -- Gnomeregan Medic
     39349, -- Gnomeregan Trainee

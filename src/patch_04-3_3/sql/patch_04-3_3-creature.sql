@@ -17,6 +17,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     37967, -- Ebon Blade Commander
     37941, -- Magister Arlan <Emblem of Frost Quartermaster>
     37942, -- Arcanist Uovril <Emblem of Frost Quartermaster>
+    37968, -- Argent Hippogryph
     38433, -- Toravon the Ice Watcher
-    38482 -- Frost Warder
+    38482, -- Frost Warder
+    38493 -- Argent Crusader
 );
