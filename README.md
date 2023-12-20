@@ -2,7 +2,7 @@
 The goal of this module is to go through the patches of Wrath of the Lich King. The included patches are 3.0, 3.1, 3.2, 3.3 and 3.3.5. Every patch includes changes to simulate that patch as best as possible. Information on what is new in each patch can be seen by browsing their folder, although there are probably things listed that aren't implemented yet.
 
 # Note
-Keep in mind that it's not anywhere near complete even if there seems to be a lot done.
+Keep in mind that it's not anywhere near complete even if there seems to be a lot done. I have not yet looked at the PvP vendors so those are a huge mess.
 
 The next major thing to look at is the Argent Tournament Grounds. It was released in 3.1 but more was added to it in 3.2 along with the dungeon and raid.
 
