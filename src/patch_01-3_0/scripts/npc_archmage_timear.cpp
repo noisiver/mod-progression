@@ -54,8 +54,10 @@ public:
 
         void JustSummoned(Creature* image) override
         {
+            image->SetSheath(SHEATH_STATE_UNARMED);
             image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
             image->SetSpeed(MOVE_TURN_RATE, 0.2f);
+            image->AddAura(69609, image);
             _summonGUID = image->GetGUID();
         }
 
@@ -81,7 +83,11 @@ public:
                         if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
                             image->DespawnOrUnsummon();
 
-                        me->SummonCreature(newEntry, 5770.970f, 529.512f, 653.622f, 3.985f);
+                        float z = 653.622f;
+                        if (newEntry == NPC_INFINITE_AGENT_IMAGE)
+                            z += 1.9f;
+
+                        me->SummonCreature(newEntry, 5770.970f, 529.512f, z, 3.985f);
                     }
                 }
             }

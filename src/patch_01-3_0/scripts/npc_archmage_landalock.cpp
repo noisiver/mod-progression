@@ -90,12 +90,10 @@ public:
 
         void JustSummoned(Creature* image) override
         {
-            // xinef: screams like a baby
-            if (image->GetEntry() != NPC_ANUB_ARAK_IMAGE)
-            {
-                image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
-                image->SetSpeed(MOVE_TURN_RATE, 0.2f);
-            }
+            image->SetSheath(SHEATH_STATE_UNARMED);
+            image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
+            image->SetSpeed(MOVE_TURN_RATE, 0.2f);
+            image->AddAura(69609, image);
             _summonGUID = image->GetGUID();
         }
 
@@ -121,7 +119,13 @@ public:
                         if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
                             image->DespawnOrUnsummon();
 
-                        me->SummonCreature(newEntry, 5703.077f, 583.9757f, 653.622f, 3.926991f);
+                        float z = 653.622f;
+                        if (newEntry == NPC_KERISTRASZA_IMAGE || newEntry == NPC_THE_PROPHET_THARON_JA_IMAGE)
+                            z += 1.0f;
+                        else if (newEntry == NPC_LEY_GUARDIAN_EREGOS_IMAGE)
+                            z += 1.9f;
+
+                        me->SummonCreature(newEntry, 5703.077f, 583.9757f, z, 3.926991f);
                     }
                 }
             }
