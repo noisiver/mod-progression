@@ -6,9 +6,9 @@ The goal of this module is to go through the patches of Wrath of the Lich King. 
 * Build the server the same way you build AzerothCore. Specific steps included below
 * Use cmake to generate the project files
 * For Windows you compile the source using Visual Studio. For Linux, run make to compile the source
-* For Windows the config file is `/configs/modules/mod-progression.conf.dist`
-* For Linux the config file is usually `/etc/modules/mod-progression.conf.dist`
-* Make a copy of the config file and name it `mod-progression.conf`. This is the file that you edit the values of
+* For Windows the config file is `/configs/modules/mod_progression.conf.dist`
+* For Linux the config file is usually `/etc/modules/mod_progression.conf.dist`
+* Make a copy of the config file and name it `mod_progression.conf`. This is the file that you edit the values of
 * Start the server like normal and the auto-updater will take care of the database imports
 
 # Note
