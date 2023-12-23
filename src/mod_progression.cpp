@@ -12,6 +12,7 @@ Progression::Progression() : DatabaseScript("ProgressionDatabaseScript"), Player
 
 void AddSC_npc_archmage_landalock_progression();
 void AddSC_npc_archmage_timear_progression();
+void AddSC_npc_archmage_landalock_default();
 
 void Addmod_progressionScripts()
 {
@@ -21,5 +22,9 @@ void Addmod_progressionScripts()
     {
         AddSC_npc_archmage_landalock_progression();
         AddSC_npc_archmage_timear_progression();
+    }
+    else
+    {
+        AddSC_npc_archmage_landalock_default();
     }
 }
