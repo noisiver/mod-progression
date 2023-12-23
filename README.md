@@ -12,7 +12,7 @@ The goal of this module is to go through the patches of Wrath of the Lich King. 
 * Start the server like normal and the auto-updater will take care of the database imports
 
 # Note
-Keep in mind that it's not anywhere near complete even if there seems to be a lot done. I have not yet looked at the PvP vendors so those are a huge mess.
+Keep in mind that it's not complete even if there seems to be a lot done.
 
 # Limitation
 I am currently limiting this to Wrath of the Lich King so that I can get it to the point where I would consider it to be ready for production. I might be adding The Burning Crusade afterwards followed by Vanilla, only time will tell.
