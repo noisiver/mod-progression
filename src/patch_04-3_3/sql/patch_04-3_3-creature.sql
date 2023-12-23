@@ -22,3 +22,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     38482, -- Frost Warder
     38493 -- Argent Crusader
 );
+
+UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (
+    125689, -- Doris Volanthius <Veteran Armor Quartermaster>
+    133919 -- Lieutenant Tristia <Veteran Armor Quartermaster>
+);

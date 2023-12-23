@@ -65,3 +65,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     36481, -- Sentinel Stillbough
     36506 -- Daros Moonlance <The Highborne>
 );
+
+UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (
+    125693, -- Sergeant Thunderhorn <Apprentice Armor Quartermaster>
+    133920 -- Captain Dirgehammer <Apprentice Armor Quartermaster>
+);

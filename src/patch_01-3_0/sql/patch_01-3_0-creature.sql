@@ -117,3 +117,12 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     39716, -- Scuttling Mechano-Tank
     39717 -- Shooting Mechano-Tank
 );
+
+UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
+    125689, -- Doris Volanthius <Veteran Armor Quartermaster>
+    125691, -- Blood Guard Zar'shi <Northrend Armor Quartermaster>
+    125693, -- Sergeant Thunderhorn <Apprentice Armor Quartermaster>
+    133917, -- Knight-Lieutenant T'Maire Sydes <Northrend Armor Quartermaster>
+    133919, -- Lieutenant Tristia <Veteran Armor Quartermaster>
+    133920 -- Captain Dirgehammer <Apprentice Armor Quartermaster>
+);

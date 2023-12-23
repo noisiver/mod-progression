@@ -19,3 +19,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     34015, -- Tempest Warder
     34244 -- Jean Pierre Poulain <Argent Tournament Valiant>
 );
+
+UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (
+    125691, -- Blood Guard Zar'shi <Northrend Armor Quartermaster>
+    133917 -- Knight-Lieutenant T'Maire Sydes <Northrend Armor Quartermaster>
+);
