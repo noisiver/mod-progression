@@ -15,7 +15,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
     sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceDungeonFinder ? 0 : sWorld->getIntConfig(CONFIG_LFG_OPTIONSMASK)));
-    sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR ? 255 : 40));
+    sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR ? 255 : sWorld->getIntConfig(CONFIG_MIN_DUALSPEC_LEVEL)));
     sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, (PatchId >= PATCH_FALL_OF_THE_LICH_KING || !EnforceQuestInfo));
     sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, PatchId >= PATCH_CALL_OF_THE_CRUSADE);
 
