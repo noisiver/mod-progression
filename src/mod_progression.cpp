@@ -2,7 +2,7 @@
 
 #include "mod_progression.h"
 
-Progression::Progression() : DatabaseScript("ProgressionDatabaseScript"), PlayerScript("ProgressionPlayerScript"), WorldScript("ProgressionWorldScript")
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), PlayerScript("ProgressionPlayerScript"), WorldScript("ProgressionWorldScript")
 {
     PatchId = 4;
     AuraId = 4;

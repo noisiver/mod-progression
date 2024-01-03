@@ -47,9 +47,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
 
     if (PatchId < PATCH_FALL_OF_THE_LICH_KING)
-    {
         sWorld->setRate(RATE_HONOR, 0.5f);
-    }
 
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
     {

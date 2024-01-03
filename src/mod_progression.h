@@ -50,10 +50,13 @@ enum
     SPELL_ICECROWN_CITADEL_30_A    = 73828
 };
 
-class Progression : public DatabaseScript, PlayerScript, WorldScript
+class Progression : public AllBattlegroundScript, DatabaseScript, PlayerScript, WorldScript
 {
 public:
     Progression();
+
+    // AllBattlegroundScript
+    void OnBattlegroundEndReward(Battleground* /*bg*/, Player* /*player*/, TeamId /*winnerTeamId*/) override;
 
     // DatabaseScript
     void OnAfterDatabasesLoaded(uint32 /*updateFlags*/) override;
