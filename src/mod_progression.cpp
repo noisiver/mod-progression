@@ -2,9 +2,9 @@
 
 #include "mod_progression.h"
 
-Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript")
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), PlayerScript("ProgressionPlayerScript"), WorldScript("ProgressionWorldScript")
 {
-    PatchId = 21;
+    PatchId = 4;
     AuraId = 4;
     EnforceQuestInfo = true;
     EnforceDungeonFinder = true;

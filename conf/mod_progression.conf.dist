@@ -3,31 +3,14 @@
 ###################################################################################################
 #    Progression.Patch
 #        Description: The currently active patch. It will always include all content up to and including the set patch.
-#                     0 - Patch 1.1: World of Warcraft
-#                     1 - Patch 1.2: Mysteries of Maraudon
-#                     2 - Patch 1.3: Ruins of the Dire Maul
-#                     3 - Patch 1.4: The Call to War
-#                     4 - Patch 1.5: Battlegrounds
-#                     5 - Patch 1.6: Assault on Blackwing Lair
-#                     6 - Patch 1.7: Rise of the Blood God
-#                     7 - Patch 1.8: Dragons of Nightmare
-#                     8 - Patch 1.9: The Gates of Ahn'Qiraj
-#                     9 - Patch 1.10: Storms of Azeroth
-#                     10 - Patch 1.11: Shadow of the Necropolis
-#                     11 - Patch 1.12: Drums of War
-#                     12 - Patch 2.0: Before the Storm
-#                     13 - Patch 2.1: Black Temple
-#                     14 - Patch 2.2: Voice Chat
-#                     15 - Patch 2.3: The Gods of Zul'Aman
-#                     16 - Patch 2.4: Fury of the Sunwell
-#                     17 - Patch 3.0: Echoes of Doom
-#                     18 - Patch 3.1: Secrets of Ulduar
-#                     19 - Patch 3.2: Call of the Crusade
-#                     20 - Patch 3.3: Fall of the Lich King
-#        Default:     21 - Patch 3.3.5: Assault on the Ruby Sanctum
+#                     0 - Patch 3.0: Echoes of Doom
+#                     1 - Patch 3.1: Secrets of Ulduar
+#                     2 - Patch 3.2: Call of the Crusade
+#                     3 - Patch 3.3: Fall of the Lich King
+#        Default:     4 - Patch 3.3.5: Assault on the Ruby Sanctum
 #
 
-Progression.Patch = 21
+Progression.Patch = 4
 
 #
 #    Progression.IcecrownCitadel.Aura
