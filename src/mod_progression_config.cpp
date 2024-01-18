@@ -7,7 +7,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     if (reload)
         return;
 
-    PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", 21);
+    PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
     AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
     EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
     EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
