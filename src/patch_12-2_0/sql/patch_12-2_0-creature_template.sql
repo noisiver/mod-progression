@@ -1,43 +1,4 @@
-UPDATE `creature_template` SET `faction`=17 WHERE `entry` IN (
-    38, -- Defias Thug
-    103 -- Garrick Padfoot
-);
-
-UPDATE `creature_template` SET `faction`=107 WHERE `entry` IN (
-    706, -- Frostmane Troll Whelp
-    946 -- Frostmane Novice
-);
-
-UPDATE `creature_template` SET `faction`=22 WHERE `entry` IN (
-    1505, -- Night Web Spider
-    1688, -- Night Web Matriarch
-    1986, -- Webwood Spider
-    1994 -- Githyiss the Vile
-);
-
-UPDATE `creature_template` SET `faction`=67 WHERE `entry` IN (
-    1506, -- Scarlet Convert
-    1507, -- Scarlet Initiate
-    1667 -- Meven Korgal
-);
-
-UPDATE `creature_template` SET `faction`=111 WHERE `entry` IN (
-    2952, -- Bristleback Quilboar
-    2953, -- Bristleback Shaman
-    2954 -- Bristleback Battleboar
-);
-
-UPDATE `creature_template` SET `faction`=14 WHERE `entry` IN (
-    2966, -- Battleboar
-    3101, -- Vile Familiar
-    3102, -- Felstalker
-    8554 -- Chief Sharptusk Thornmantle
-);
-
-UPDATE `creature_template` SET `faction`=16 WHERE `entry`=3183; -- Yarrog Baneshadow
-UPDATE `creature_template` SET `ScriptName`='npc_archmage_timear' WHERE `entry`=31439; -- Archmage Timear
-
-UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
+UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     68, -- Stormwind City Guard
     352, -- Dungar Longdrink <Gryphon Master>
     523, -- Thor <Gryphon Master>
@@ -74,7 +35,7 @@ UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
     3214, -- Brave Greathoof
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
-    3310, -- Doras <Wind Rider Master>
+    3310, -- Doras <Wind Rider Master
     3571, -- Teldrassil Sentinel
     3615, -- Devrak <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
@@ -134,114 +95,35 @@ UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
     15177, -- Cloud Skydancer <Hippogryph Master>
     15178, -- Runk Windtamer <Wind Rider Master>
     16096, -- Steamwheedle Bruiser
+    16222, -- Silvermoon City Guardian
     16227, -- Bragok <Flight Master>
+    16733, -- Exodar Peacekeeper
     29016, -- Steam Tank Engineer
     29088, -- Stormwind Cannoneer
     29154 -- Thargold Ironwing
 );
 
-UPDATE `creature_template` SET `minlevel`=62, `maxlevel`=62 WHERE `entry` IN (
+UPDATE `creature_template` SET `minlevel`=72, `maxlevel`=72 WHERE `entry` IN (
     466, -- General Marcus Jonathan <High Commander of Stormwind Defense>
     2425 -- Varimathras
 );
 
-UPDATE `creature_template` SET `rank`=1 WHERE `entry` IN (
-    594, -- Defias Henchman
-    596, -- Brainwashed Noble
-    619, -- Defias Conjurer
-    1063, -- Jade
-    1892, -- Moonrage Watcher
-    1893, -- Moonrage Sentry
-    1896, -- Moonrage Elder
-    2106, -- Apothecary Berard
-    3529, -- Moonrage Armorer
-    3531, -- Moonrage Tailor
-    3533, -- Moonrage Leatherworker
-    3630, -- Deviate Coiler
-    3631, -- Deviate Stinglash
-    3632, -- Deviate Creeper
-    3633, -- Deviate Slayer
-    3634, -- Deviate Stalker
-    3638, -- Devouring Ectoplasm
-    3641, -- Deviate Lurker
-    4280, -- Scarlet Preserver
-    4281, -- Scarlet Scout
-    4282, -- Scarlet Magician
-    4283, -- Scarlet Sentry
-    4284, -- Scarlet Augur
-    4285, -- Scarlet Disciple
-    4788, -- Fallenroot Satyr
-    4789, -- Fallenroot Rogue
-    4802, -- Blackfathom Tide Priestess
-    4803, -- Blackfathom Oracle
-    4844, -- Shadowforge Surveyor
-    4845, -- Shadowforge Ruffian
-    4846, -- Shadowforge Digger
-    4851, -- Stonevault Rockchewer
-    4856, -- Stonevault Cave Hunter
-    4872, -- Obsidian Golem
-    5224, -- Murk Slitherer
-    5225, -- Murk Spitter
-    5235, -- Fungal Ooze
-    5243, -- Cursed Atal'ai
-    5261, -- Enthralled Atal'ai
-    5263, -- Mummified Atal'ai
-    5269, -- Atal'ai Priest
-    5645, -- Sandfury Hideskinner
-    5646, -- Sandfury Axe Thrower
-    5647, -- Sandfury Firecaller
-    6132, -- Razorfen Servitor
-    6208, -- Caverndeep Invader
-    6210, -- Caverndeep Pillager
-    6213, -- Irradiated Invader
-    6231, -- Techbot
-    7872, -- Death's Head Cultist
-    7873, -- Razorfen Battleguard
-    7874, -- Razorfen Thornweaver
-    9043, -- Scarshield Grunt <Scarshield Legion>
-    9044, -- Scarshield Sentry <Scarshield Legion>
-    11440, -- Gordok Enforcer
-    11442, -- Gordok Mauler
-    11443, -- Gordok Ogre-Mage
-    11777, -- Shadowshard Rumbler
-    11781, -- Ambershard Crusher
-    11782, -- Ambershard Destroyer
-    11785, -- Ambereye Basilisk
-    11786, -- Ambereye Reaver
-    11787, -- Rock Borer
-    11788, -- Rock Worm
-    12865, -- Ambassador Malcin
-    24818, -- Anvilrage Taskmaster
-    24819 -- Anvilrage Enforcer
-);
-
-UPDATE `creature_template` SET `rank`=0 WHERE `entry` IN (
-    1756 -- Stormwind Royal Guard
-);
-
-UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63 WHERE `entry` IN (
+UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     3057, -- Cairne Bloodhoof <High Chieftain>
     4949, -- Thrall <Warchief>
-    7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
     10540 -- Vol'jin
 );
 
-UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60, `rank`=0 WHERE `entry` IN (
-    1756, -- Stormwind Royal Guard
-    3083, -- Honor Guard
-    13839, -- Royal Dreadguard
-    14304 -- Kor'kron Elite
+UPDATE `creature_template` SET `minlevel`=68, `maxlevel`=69 WHERE `entry` IN (
+    7370, -- Restless Shade
+    12378 -- Damned Soul
 );
 
-UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60 WHERE `entry` IN (
-    7370, -- Restless Shade
+UPDATE `creature_template` SET `minlevel`=70, `maxlevel`=70 WHERE `entry` IN (
     8383, -- Master Wood
-    12377, -- Wailing Spectre
-    12378, -- Damned Soul
-    12379, -- Unliving Caretaker
     12380, -- Unliving Resident
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
@@ -261,7 +143,6 @@ UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60 WHERE `entry` IN (
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
     16378, -- Argent Sentry <The Argent Dawn>
-    24456, -- Captain Taldar Windsinger
     29144, -- Refurbished Steam Tank
     36224, -- Dark Ranger Clea
     36225, -- Dark Ranger Anya
@@ -269,36 +150,18 @@ UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60 WHERE `entry` IN (
     36273 -- Bragor Bloodfist <Kor'kron Captain>
 );
 
-UPDATE `creature_template` SET `minlevel`=57, `maxlevel`=57 WHERE `entry` IN (
+UPDATE `creature_template` SET `minlevel`=67, `maxlevel`=67 WHERE `entry` IN (
     9460, -- Gadgetzan Bruiser
     11190 -- Everlook Bruiser
 );
 
-UPDATE `creature_template` SET `minlevel`=45, `maxlevel`=45 WHERE `entry` IN (
+UPDATE `creature_template` SET `minlevel`=69, `maxlevel`=70 WHERE `entry` IN (
+    12377, -- Wailing Spectre
+    12379 -- Unliving Caretaker
+);
+
+UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
     29019, -- Dockhand
     29152, -- Stormwind Dock Worker
     29712 -- Stormwind Harbor Guard
-);
-
-UPDATE `creature_template` SET `minlevel`=70, `maxlevel`=70 WHERE `entry` IN (
-    20672, -- Royal Guard
-    20674 -- Shield of Velen
-);
-
-UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73 WHERE `entry` IN (
-    16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
-    17468 -- Prophet Velen
-);
-
-UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
-    24841, -- Marine Halters
-    24842, -- Marine Anderson
-    24996, -- Mariner Bladewhisper <The Moonspray>
-    24997, -- Mariner Swiftstar <The Moonspray>
-    24998, -- Mariner Farsight <The Moonspray>
-    25007, -- Mariner Evenmist <The Moonspray>
-    25079, -- Deathguard Fowles <The Thundercaller>
-    25080, -- Grunt Umgor
-    25081, -- Grunt Ounda
-    25083 -- Deathguard Lawson <The Thundercaller>
 );
