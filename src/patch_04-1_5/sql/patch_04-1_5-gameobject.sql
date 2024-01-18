@@ -1,0 +1,14 @@
+UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
+    179827, -- Wanted/Missing/Lost & Found
+    179844, -- Forge
+    179895, -- Mailbox
+    179896 -- Mailbox
+);
+
+UPDATE `gameobject` SET `phaseMask`=1 WHERE `guid` IN (
+    6928, -- Anvil
+    246083, -- Anvil
+    246084, -- Anvil
+    246085, -- Anvil
+    246086 -- Anvil
+);
