@@ -1,6 +1,7 @@
 UPDATE `creature` SET `id1`=5624, `equipment_id`=0 WHERE `guid` IN (17669, 28481, 28485, 28486, 28487, 28488, 28489, 28490, 33823, 33831, 34102, 34103, 34104, 34105, 34106, 38296, 38297, 38298, 38299, 38301, 38302, 38305, 39019, 39020, 39022, 39023, 39024, 39025, 39026, 41884, 41887, 41888, 41889, 41890, 41891, 41892, 41956, 41960, 41961, 41964, 79264, 79265, 79266, 79267); -- Undercity Guardian
 UPDATE `creature` SET `id1`=2425, `equipment_id`=0 WHERE `guid`=31901; -- Varimathras
 UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
+    1756, -- Stormwind Royal Guard
     25171, -- Invisible Stalker (Scale x0.5)
     33608, -- Alchemy
     33609, -- Blacksmithing

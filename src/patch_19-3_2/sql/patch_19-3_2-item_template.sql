@@ -37,7 +37,7 @@ UPDATE `item_template` SET `BuyPrice`=10000, `SellPrice`=2500, `ItemLevel`=20, `
     47100 -- Reins of the Striped Dawnsaber
 );
 
-UPDATE `item_template` SET `BuyPrice`=100000, `ItemLevel`=30, `RequiredLevel`=30 WHERE `entry` IN (
+UPDATE `item_template` SET `BuyPrice`=100000, `ItemLevel`=20, `RequiredLevel`=20 WHERE `entry` IN (
     33976 -- Brewfest Ram
 );
 
@@ -71,13 +71,11 @@ UPDATE `item_template` SET `BuyPrice`=100000, `SellPrice`=25000, `ItemLevel`=40,
     29745, -- Great Blue Elekk
     29746, -- Great Green Elekk
     29747, -- Great Purple Elekk
-    35513, -- Swift White Hawkstrider
     47101 -- Ochre Skeletal Warhorse
 );
 
-UPDATE `item_template` SET `SellPrice`=250000, `ItemLevel`=40, `RequiredLevel`=40 WHERE `entry`=13086; -- Reins of the Winterspring Frostsaber
-
 UPDATE `item_template` SET `ItemLevel`=40, `RequiredLevel`=40 WHERE `entry` IN (
+    13086, -- Reins of the Winterspring Frostsaber
     13335, -- Deathcharger's Reins
     18241, -- Black War Steed Bridle
     18242, -- Reins of the Black War Tiger
@@ -101,7 +99,7 @@ UPDATE `item_template` SET `ItemLevel`=40, `RequiredLevel`=40 WHERE `entry` IN (
     29229, -- Reins of the Silver War Talbuk
     29230, -- Reins of the Tan War Talbuk
     29231, -- Reins of the White War Talbuk
-    29465, -- Black Battlestrider 
+    29465, -- Black Battlestrider
     29466, -- Black War Kodo
     29467, -- Black War Ram
     29468, -- Black War Steed Bridle
@@ -121,6 +119,7 @@ UPDATE `item_template` SET `ItemLevel`=40, `RequiredLevel`=40 WHERE `entry` IN (
     32768, -- Reins of the Raven Lord
     33977, -- Swift Brewfest Ram
     34129, -- Swift Warstrider
+    35513, -- Swift White Hawkstrider
     35906, -- Reins of the Black War Elekk
     43956, -- Reins of the Black War Mammoth
     43958, -- Reins of the Ice Mammoth
@@ -138,8 +137,6 @@ UPDATE `item_template` SET `ItemLevel`=40, `RequiredLevel`=40 WHERE `entry` IN (
     44235 -- Reins of the Traveler's Tundra Mammoth
 );
 
-UPDATE `item_template` SET `ItemLevel`=60, `RequiredLevel`=60 WHERE `entry`=40775; -- Winged Steed of the Ebon Blade
-
 UPDATE `item_template` SET `BuyPrice`=500000, `SellPrice`=125000, `ItemLevel`=60, `RequiredLevel`=60 WHERE `entry` IN (
     25470, -- Golden Gryphon
     25471, -- Ebon Gryphon
@@ -147,6 +144,10 @@ UPDATE `item_template` SET `BuyPrice`=500000, `SellPrice`=125000, `ItemLevel`=60
     25474, -- Tawny Wind Rider
     25475, -- Blue Wind Rider
     25476 -- Green Wind Rider
+);
+
+UPDATE `item_template` SET `ItemLevel`=60, `RequiredLevel`=60 WHERE `entry` IN (
+    40775 -- Winged Steed of the Ebon Blade
 );
 
 UPDATE `item_template` SET `BuyPrice`=1000000, `SellPrice`=250000 WHERE `entry` IN (
