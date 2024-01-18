@@ -165,3 +165,5 @@ UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
     29152, -- Stormwind Dock Worker
     29712 -- Stormwind Harbor Guard
 );
+
+UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73, `DamageModifier`=35, `HealthModifier`=110, `ManaModifier`=2, `ScriptName`='' WHERE `entry`=12397; -- Lord Kazzak

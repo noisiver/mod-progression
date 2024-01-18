@@ -10,6 +10,7 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
     EnforceDungeonFinder = true;
 }
 
+void AddSC_boss_lord_kazzak_progression();
 void AddSC_instance_blackrock_spire_progression();
 void AddSC_npc_archmage_landalock_progression();
 void AddSC_npc_archmage_timear_progression();
@@ -18,6 +19,9 @@ void AddSC_npc_archmage_landalock_default();
 void Addmod_progressionScripts()
 {
     new Progression();
+
+    if (sConfigMgr->GetOption<uint32>("Progression.Patch", 21) < PATCH_BEFORE_THE_STORM)
+        AddSC_boss_lord_kazzak_progression();
 
     if (sConfigMgr->GetOption<uint32>("Progression.Patch", 21) < PATCH_ECHOES_OF_DOOM)
         AddSC_instance_blackrock_spire_progression();

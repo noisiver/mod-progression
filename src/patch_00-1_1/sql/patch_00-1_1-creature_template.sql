@@ -36,6 +36,7 @@ UPDATE `creature_template` SET `faction`=14 WHERE `entry` IN (
 
 UPDATE `creature_template` SET `faction`=16 WHERE `entry`=3183; -- Yarrog Baneshadow
 UPDATE `creature_template` SET `ScriptName`='npc_archmage_timear' WHERE `entry`=31439; -- Archmage Timear
+UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63, `DamageModifier`=20, `HealthModifier`=140, `ManaModifier`=45, `ScriptName`='boss_lord_kazzak' WHERE `entry`=12397; -- Lord Kazzak
 
 UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
     68, -- Stormwind City Guard
