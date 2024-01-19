@@ -9,8 +9,77 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     2804, -- Kurden Bloodclaw <Warsong Gulch Battlemaster>
     2941, -- Lanie Reed <Gryphon Master>
     3083, -- Honor Guard
+    3305, -- Grisha <Wind Rider Master>
+    3890, -- Brakgul Deathbringer <Warsong Gulch Battlemaster>
+    4314, -- Gorkas <Wind Rider Master>
+    5118, -- Brogun Stoneshield <Alterac Valley Battlemaster>
+    6109, -- Azuregos
+    7410, -- Thelman Slatefist <Alterac Valley Battlemaster>
+    7427, -- Taim Ragetotem <Alterac Valley Battlemaster>
+    10360, -- Kergul Bloodaxe <Warsong Gulch Battlemaster>
+    10378, -- Omusa Thunderhorn <Wind Rider Master>
+    10583, -- Gryfe <Flight Master>
+    12197, -- Glordrum Steelbeard <Alterac Valley Battlemaster>
+    12198, -- Martin Lindsey <Arathi Basin Battlemaster>
     12239, -- Spirit of Gelk <The Second Kahn>
+    12779, -- Archmage Gaiman
+    12780, -- Sergeant Major Skyshadow
+    12786, -- Guard Quine
+    12787, -- Guard Hammon
+    12789, -- Blood Guard Hini'wana
+    12790, -- Advisor Willington
+    12791, -- Chieftain Earthbind
+    12797, -- Grunt Korf
+    12798, -- Grunt Bek'rah
+    13217, -- Thanthaldis Snowgleam <Stormpike Supply Officer>
+    13219, -- Jekyll Flandring <Frostwolf Supply Officer>
     13697, -- Cavindra
+    13776, -- Corporal Teeka Bloodsnarl
+    13777, -- Sergeant Durgen Stormpike
+    13816, -- Prospector Stonehewer
+    13817, -- Voggah Deathgrip
+    13839, -- Royal Dreadguard
+    13840, -- Warmaster Laggrond
+    13841, -- Lieutenant Haggerdin
+    13842, -- Frostwolf Ambassador Rokhstrom
+    13843, -- Lieutenant Rotimer <Stormpike Guard Recruitment Officer>
+    14284, -- Stormpike Battleguard
+    14285, -- Frostwolf Battleguard
+    14304, -- Kor'kron Elite
+    14373, -- Sage Korolusk
+    14387, -- Lothos Riftwaker
+    14622, -- Thorium Brotherhood Lookout <The Thorium Brotherhood>
+    14624, -- Master Smith Burninate <The Thorium Brotherhood>
+    14625, -- Overseer Oilfist <The Thorium Brotherhood>
+    14626, -- Taskmaster Scrange <The Thorium Brotherhood>
+    14627, -- Hansel Heavyhands <The Thorium Brotherhood>
+    14628, -- Evonice Sootsmoker <The Thorium Brotherhood>
+    14634, -- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
+    14721, -- Field Marshal Afrasiabi
+    14730, -- Revantusk Watcher
+    14731, -- Lard <Innkeeper>
+    14734, -- Revantusk Drummer
+    14736, -- Primal Torntusk
+    14737, -- Smith Slagtree <Blacksmithing Supplies>
+    14738, -- Otho Moji'ko <Cooking Supplies>
+    14739, -- Mystic Yayo'jin <Reagents>
+    14740, -- Katoom the Angler <Fishing Trainer & Supplies>
+    14741, -- Huntsman Markhor <Stable Master>
+    14743, -- Jhordy Lapforge <Engineer>
+    14875, -- Molthor <Hand of Rastakhan>
+    14876, -- Zandalar Headshrinker
+    14887, -- Ysondre
+    14888, -- Lethon
+    14889, -- Emeriss
+    14890, -- Taerar
+    14902, -- Jin'rokh the Breaker
+    14903, -- Al'tabim the All-Seeing
+    14904, -- Maywiki of Zuldazar
+    14905, -- Falthir the Sightless
+    14910, -- Exzhal <Servitor of Rastakhan>
+    14911, -- Zandalar Enforcer
+    14912, -- Captured Hakkari Zealot
+    14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
     25171, -- Invisible Stalker (Scale x0.5)
     33608, -- Alchemy
     33609, -- Blacksmithing
@@ -132,6 +201,8 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
     34137, -- Archery Target
     34138, -- Archery Target
     34139, -- Archery Target
+    65613, -- Riding White Stallion
+    92890, -- Riding Raptor
     125689, -- Doris Volanthius <Veteran Armor Quartermaster>
     125691, -- Blood Guard Zar'shi <Northrend Armor Quartermaster>
     125693, -- Sergeant Thunderhorn <Apprentice Armor Quartermaster>
@@ -144,6 +215,18 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
     203495 -- Orgrimmar Grunt
 );
 
-DELETE FROM `creature` WHERE `guid`=156950;
+UPDATE `creature` SET `position_x`=-8195.5, `position_y`=-4480.25, `position_z`=9.20932, `orientation`=5.56651 WHERE `id1`=8196; -- Occulus
+UPDATE `creature` SET `position_x`=-8182.6, `position_y`=-4693.49, `position_z`=16.4608, `orientation`=3.12069 WHERE `id1`=8197; -- Chronalis
+UPDATE `creature` SET `position_x`=-8189.83, `position_y`=-4586.73, `position_z`=8.14232, `orientation`=0.7353 WHERE `id1`=8198; -- Tick
+UPDATE `creature` SET `position_x`=-8175.67, `position_y`=-4718.28, `position_z`=26.3489, `orientation`=1.88496 WHERE `id1`=15192; -- Anachronos
+UPDATE `creature` SET `position_x`=2280.98, `position_y`=-5306, `position_z`=86.231, `orientation`=1.735, `wander_distance`=5, `MovementType`=1 WHERE `id1`=11036; -- Leonid Barthalomew the Revered <The Argent Dawn>
+
+DELETE FROM `creature` WHERE (`guid`=156950) OR (`id1`=11099);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
-(156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL); -- Lord Kazzak
+-- Lord Kazzak
+(156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL),
+-- Argent Guard <The Argent Dawn>
+(5300000, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
+(5300001, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2281.74, -5323.96, 89.2463, 2.21657, 610, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
+(5300002, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2320.41, -5378.72, 85.7834, 0.777658, 25, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL),
+(5300003, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2316.27, -5374.83, 86.5285, 0.816928, 25, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL);

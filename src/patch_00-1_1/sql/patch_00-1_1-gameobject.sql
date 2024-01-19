@@ -25,6 +25,7 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     179879, -- Orb of Command
     179895, -- Mailbox
     179896, -- Mailbox
+    179913, -- Call to Arms!
     180448, -- Wanted Poster: Deathclasp
     180718, -- The Scarab Gong
     180451, -- Mailbox
