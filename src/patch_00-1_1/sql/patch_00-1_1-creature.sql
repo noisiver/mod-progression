@@ -146,4 +146,4 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
 
 DELETE FROM `creature` WHERE `guid`=156950;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
-(156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 0, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL); -- Lord Kazzak
+(156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL); -- Lord Kazzak
