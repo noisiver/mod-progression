@@ -15,6 +15,22 @@ void Progression::OnAfterConfigLoad(bool reload)
     if (PatchId > PATCH_ASSAULT_ON_THE_RUBY_SANCTUM || PatchId < PATCH_WORLD_OF_WARCRAFT)
         PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
 
+    if (PatchId < PATCH_BEFORE_THE_STORM)
+    {
+        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_CLASSIC);
+        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 60);
+    }
+    else if (PatchId < PATCH_ECHOES_OF_DOOM)
+    {
+        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_THE_BURNING_CRUSADE);
+        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 70);
+    }
+    else
+    {
+        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_WRATH_OF_THE_LICH_KING);
+        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 80);
+    }
+
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
     if (EnforceDungeonFinder)
