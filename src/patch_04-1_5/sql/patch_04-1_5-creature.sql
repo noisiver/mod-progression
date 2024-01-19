@@ -30,6 +30,7 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     14740, -- Katoom the Angler <Fishing Trainer & Supplies>
     14741, -- Huntsman Markhor <Stable Master>
     14743 -- Jhordy Lapforge <Engineer>
+    17598 -- Renn'az <Ammunition Vendor>
 );
 
 UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (

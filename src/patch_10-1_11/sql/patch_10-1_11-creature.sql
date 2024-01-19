@@ -11,7 +11,14 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     16134, -- Rimblat Earthshatter <The Earthen Ring>
     16135, -- Rayne <Cenarion Circle>
     16212, -- Dispatch Commander Metz <The Argent Dawn>
-    16225 -- Pack Mule
+    16225, -- Pack Mule
+    16227, -- Bragok <Flight Master>
+    16256, -- Jessica Chambers <Innkeeper>
+    16283, -- Packmaster Stonebruiser <Brotherhood of the Light>
+    16284, -- Argent Medic <The Argent Dawn>
+    16376, -- Craftsman Wilhelm <Brotherhood of the Light>
+    16378, -- Argent Sentry <The Argent Dawn>
+    16392 -- Captain Armando Ossex>
 );
 
 UPDATE `creature` SET `position_x`=2307.24, `position_y`=-5348.9, `position_z`=91.6577, `orientation`=2.72271, `wander_distance`=0, `MovementType`=0 WHERE `id1`=11036; -- Leonid Barthalomew the Revered <The Argent Dawn>

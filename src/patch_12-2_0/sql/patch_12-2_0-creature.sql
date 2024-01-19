@@ -1,3 +1,38 @@
+UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
+    16288, -- Advisor Sorrelon
+    17092, -- Advisor Duskingdawn
+    17093, -- Magistrix Elosai
+    17094, -- Nemeth Hawkeye <Farstriders>
+    17095, -- Balandar Brightstar
+    17097, -- Advisor Sarophas
+    17098, -- Ambassador Dawnsinger
+    17099, -- Mehlar Dawnblade
+    17100, -- Advisor Sunsworn
+    17104, -- Anchorite Delan
+    17106, -- Vindicator Palanaar
+    17108, -- Forsaken Raider
+    17109, -- Cersei Dusksinger
+    17119, -- Ithania
+    17127, -- Anchorite Avuun
+    17218, -- Huraan
+    17223, -- Ambassador Rualeth
+    17238, -- Anchorite Truuen
+    17291, -- Architect Nemos
+    17303, -- Vindicator Vedaar <Hand of Argus>
+    17406, -- Artificer
+    17409, -- Apprentice Boulian <Apprentice Architect>
+    17412, -- Phaedra <Weapon Merchant>
+    17531, -- Draenei Protector
+    17541, -- Draenei Quartermaster
+    17613, -- Archmage Alturus
+    18165, -- Archmage Cedric
+    18221, -- Holaaru
+    18253, -- Archmage Leryda
+    18255, -- Apprentice Darius
+    19848, -- Harbinger Ennarth
+    19850 -- Councilor Arial D'Anastasis
+);
+
 DELETE FROM `creature` WHERE `guid` IN (
     156950 -- Lord Kazzak
 );

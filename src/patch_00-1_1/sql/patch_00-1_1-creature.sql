@@ -161,6 +161,67 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     16135, -- Rayne <Cenarion Circle>
     16212, -- Dispatch Commander Metz <The Argent Dawn>
     16225, -- Pack Mule
+    16227, -- Bragok <Flight Master>
+    16256, -- Jessica Chambers <Innkeeper>
+    16283, -- Packmaster Stonebruiser <Brotherhood of the Light>
+    16284, -- Argent Medic <The Argent Dawn>
+    16287, -- Ambassador Sunsorrow
+    16288, -- Advisor Sorrelon
+    16376, -- Craftsman Wilhelm <Brotherhood of the Light>
+    16378, -- Argent Sentry <The Argent Dawn>
+    16392, -- Captain Armando Ossex>
+    16543, -- Garon Hutchins
+    16840, -- Advisor Sevel
+    16841, -- Watch Commander Relthorn Netherwane
+    17068, -- Chief Expeditionary Requisitioner Enkles
+    17069, -- Emissary Whitebeard
+    17070, -- Apothecary Quinard
+    17072, -- Emissary Gormok
+    17079, -- General Kirika
+    17080, -- Marshal Bluewall
+    17081, -- Scout Bloodfist
+    17082, -- Rifleman Torrig
+    17092, -- Advisor Duskingdawn
+    17093, -- Magistrix Elosai
+    17094, -- Nemeth Hawkeye <Farstriders>
+    17095, -- Balandar Brightstar
+    17097, -- Advisor Sarophas
+    17098, -- Ambassador Dawnsinger
+    17099, -- Mehlar Dawnblade
+    17100, -- Advisor Sunsworn
+    17103, -- Emissary Taluun
+    17104, -- Anchorite Delan
+    17105, -- Emissary Valustraa <Mage Trainer>
+    17106, -- Vindicator Palanaar
+    17108, -- Forsaken Raider
+    17109, -- Cersei Dusksinger
+    17119, -- Ithania
+    17127, -- Anchorite Avuun
+    17218, -- Huraan
+    17223, -- Ambassador Rualeth
+    17238, -- Anchorite Truuen
+    17249, -- Landro Longshot <The Black Flame>
+    17291, -- Architect Nemos
+    17303, -- Vindicator Vedaar <Hand of Argus>
+    17406, -- Artificer
+    17409, -- Apprentice Boulian <Apprentice Architect>
+    17412, -- Phaedra <Weapon Merchant>
+    17531, -- Draenei Protector
+    17541, -- Draenei Quartermaster
+    17598, -- Renn'az <Ammunition Vendor>
+    17613, -- Archmage Alturus
+    17765, -- Alliance Silithyst Sentinel
+    17766, -- Horde Silithyst Sentinel
+    18165, -- Archmage Cedric
+    18221, -- Holaaru
+    18253, -- Archmage Leryda
+    18255, -- Apprentice Darius
+    19202, -- Emissary Mordin
+    19254, -- Warlord Dar'toon
+    19848, -- Harbinger Ennarth
+    19850, -- Councilor Arial D'Anastasis
+    19855, -- Sir Maximus Adams <Arathi Basin Battlemaster>
+    19860, -- Katrina Turner
     25171, -- Invisible Stalker (Scale x0.5)
     33608, -- Alchemy
     33609, -- Blacksmithing

@@ -27,5 +27,11 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     15686, -- Auctioneer Rhyker
     15693, -- Jonathan the Revelator
     15903, -- Sergeant Carnes
-    16091 -- Dirk Thunderwood
+    16091, -- Dirk Thunderwood
+    17068, -- Chief Expeditionary Requisitioner Enkles
+    17070, -- Apothecary Quinard
+    17079, -- General Kirika
+    17080, -- Marshal Bluewall
+    17765, -- Alliance Silithyst Sentinel
+    17766 -- Horde Silithyst Sentinel
 );
