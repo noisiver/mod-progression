@@ -27,3 +27,10 @@ DELETE FROM `disables` WHERE `sourceType`=3 AND `entry` IN (
     5, -- Circle of Blood
     7 -- Eye of the Storm
 );
+
+DELETE FROM `disables` WHERE `sourceType`=10 AND `entry` IN (
+    21877, -- Netherweave Cloth
+    27859, -- Zangar Caps
+    27860, -- Purified Draenic Water
+    31952 -- Khorium Lockbox
+);

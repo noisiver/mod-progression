@@ -1,4 +1,4 @@
-DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (6145, 6521, 6522, 13830, 13832, 13833, 13834, 13836, 13861, 13862, 13863, 13864, 14016, 14100, 14111)) OR (`sourceType`=2 AND `entry` IN (269, 309, 349, 429, 469, 509, 531, 532, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 580, 585)) OR (`sourceType`=3 AND `entry` IN (1, 2, 3, 4, 5, 7, 8)) OR (`sourceType`=9 AND `entry` IN (26, 51, 54, 61, 63, 64)) OR (`sourceType`=10 AND `entry`=50289);
+DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (6145, 6521, 6522, 13830, 13832, 13833, 13834, 13836, 13861, 13862, 13863, 13864, 14016, 14100, 14111)) OR (`sourceType`=2 AND `entry` IN (269, 309, 349, 429, 469, 509, 531, 532, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 580, 585)) OR (`sourceType`=3 AND `entry` IN (1, 2, 3, 4, 5, 7, 8)) OR (`sourceType`=9 AND `entry` IN (26, 51, 54, 61, 63, 64)) OR (`sourceType`=10 AND `entry` IN (17413, 17414, 17682, 17683, 18600, 18646, 18665, 18705, 18987, 19803, 19805, 19806, 19807, 19808, 21877, 27859, 27860, 31952, 50289));
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (1, 13830, 0, '', '', 'The Ghostfish'),
 (1, 13832, 0, '', '', 'Jewel Of The Sewers'),
@@ -56,4 +56,22 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (9, 61, 0, '', '', 'Zalazane\'s Fall'),
 (9, 63, 0, '', '', 'Kalu\'ak Fishing Derby Turn-ins'),
 (9, 64, 0, '', '', 'Kalu\'ak Fishing Derby Fishing Pools'),
+(10, 17413, 0, '', '', 'Codex: Prayer of Fortitude'),
+(10, 17414, 0, '', '', 'Codex: Prayer of Fortitude II'),
+(10, 17682, 0, '', '', 'Gift of the Wild'),
+(10, 17683, 0, '', '', 'Book: Gift of the Wild II'),
+(10, 18600, 0, '', '', 'Tome of Arcane Brilliance'),
+(10, 18646, 0, '', '', 'The Eye of Divinity'),
+(10, 18665, 0, '', '', 'The Eye of Shadow'),
+(10, 18705, 0, '', '', 'Mature Black Dragon Sinew'),    
+(10, 18987, 0, '', '', 'Blackhand\'s Command'),
+(10, 19803, 0, '', '', 'Brownell\'s Blue Striped Racer'),
+(10, 19805, 0, '', '', 'Keefer\'s Angelfish'),
+(10, 19806, 0, '', '', 'Dezian Queenfish'),
+(10, 19807, 0, '', '', 'Speckled Tastyfish'),
+(10, 19808, 0, '', '', 'Rockhide Strongfish'),
+(10, 21877, 0, '', '', 'Netherweave Cloth'),    
+(10, 27859, 0, '', '', 'Zangar Caps'),    
+(10, 27860, 0, '', '', 'Purified Draenic Water'),    
+(10, 31952, 0, '', '', 'Khorium Lockbox'),    
 (10, 50289, 0, '', '', 'Blacktip Shark');
