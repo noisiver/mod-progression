@@ -255,3 +255,6 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (34252, 0, 46180, 0, 0, 2649, 0), -- Conqueror's Aegis Headpiece
 (34252, 0, 46181, 0, 0, 2645, 0), -- Conqueror's Aegis Greaves
 (34252, 0, 46182, 0, 0, 2643, 0); -- Conqueror's Aegis Spaulders
+
+DELETE FROM `npc_vendor` WHERE `entry`=2626 AND `item`=16083; -- Old Man Heming <Fishing Supplies>
+DELETE FROM `npc_vendor` WHERE `entry` IN (2805, 13476) AND `item`=16084; -- Expert First Aid - Under Wraps
