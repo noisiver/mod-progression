@@ -11,5 +11,11 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     14910, -- Exzhal <Servitor of Rastakhan>
     14911, -- Zandalar Enforcer
     14912, -- Captured Hakkari Zealot
-    14921 -- Rin'wosho the Trader <Zandalar Supplies & Repair>
+    14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
+    15006, -- Deze Snowbane <Arathi Basin Battlemaster>
+    15007, -- Sir Malory Wheeler <Arathi Basin Battlemaster>
+    15008, -- Lady Hoteshem <Arathi Basin Battlemaster>
+    15070, -- Vinchaxa <Servitor of Zanza>
+    15076, -- Zandalarian Emissary
+    15080 -- Servant of the Hand <Hand of Rastakhan>
 );

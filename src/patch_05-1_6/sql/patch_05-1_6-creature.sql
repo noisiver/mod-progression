@@ -8,5 +8,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     7427, -- Taim Ragetotem <Alterac Valley Battlemaster>
     10360, -- Kergul Bloodaxe <Warsong Gulch Battlemaster>
     10378, -- Omusa Thunderhorn <Wind Rider Master>
-    12197 -- Glordrum Steelbeard <Alterac Valley Battlemaster>
+    12197, -- Glordrum Steelbeard <Alterac Valley Battlemaster>
+    14942, -- Kartra Bloodsnarl <Alterac Valley Battlemaster>
+    14981, -- Elfarran <Warsong Gulch Battlemaster>
+    14982 -- Lylandris <Warsong Gulch Battlemaster>
 );

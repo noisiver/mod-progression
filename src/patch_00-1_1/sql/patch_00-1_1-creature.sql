@@ -80,6 +80,87 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     14911, -- Zandalar Enforcer
     14912, -- Captured Hakkari Zealot
     14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
+    14942, -- Kartra Bloodsnarl <Alterac Valley Battlemaster>
+    14981, -- Elfarran <Warsong Gulch Battlemaster>
+    14982, -- Lylandris <Warsong Gulch Battlemaster>
+    15006, -- Deze Snowbane <Arathi Basin Battlemaster>
+    15007, -- Sir Malory Wheeler <Arathi Basin Battlemaster>
+    15008, -- Lady Hoteshem <Arathi Basin Battlemaster>
+    15070, -- Vinchaxa <Servitor of Zanza>
+    15076, -- Zandalarian Emissary
+    15080, -- Servant of the Hand <Hand of Rastakhan>
+    15165, -- Haughty Modiste <Fashion Designer>
+    15170, -- Rutgar Glyphshaper
+    15171, -- Frankal Stonebridge
+    15172, -- Glibb <Brann Bronzebeard's Pet Monkey>
+    15174, -- Calandrath <Innkeeper>
+    15175, -- Khur Hornstriker <Reagents>
+    15176, -- Vargus <Blacksmith>
+    15177, -- Cloud Skydancer <Hippogryph Master>
+    15178, -- Runk Windtamer <Wind Rider Master>
+    15179, -- Mishta <Trade Supplies>
+    15180, -- Baristolth of the Shifting Sands
+    15181, -- Commander Mar'alith
+    15182, -- Vish Kozus <Captain of the Guard>
+    15183, -- Geologist Larksbane
+    15184, -- Cenarion Hold Infantry
+    15185, -- Brood of Nozdormu
+    15187, -- Cenarion Emissary Jademoon
+    15188, -- Cenarion Emissary Blackhoof
+    15189, -- Beetix Ficklespragg
+    15190, -- Noggle Ficklespragg
+    15191, -- Windcaller Proudhorn
+    15270, -- Huum Wildmane
+    15282, -- Aurel Goldleaf
+    15306, -- Bor Wildmane
+    15350, -- Horde Warbringer
+    15351, -- Alliance Brigadier General
+    15419, -- Kania <Enchanting Supplies>
+    15440, -- Captain Blackanvil <Ironforge Brigade Captain>
+    15441, -- Ironforge Brigade Rifleman
+    15443, -- Janela Stouthammer
+    15444, -- Arcanist Nozzlespring
+    15481, -- Spirit of Azuregos
+    15498, -- Windcaller Yessendra
+    15499, -- Warden Haro
+    15500, -- Keyl Swiftclaw
+    15540, -- Windcaller Kaldon
+    15612, -- Krug Skullsplit <Orgrimmar Legion Captain>
+    15613, -- Merok Longstride
+    15442, -- Ironforge Brigade Footman
+    15614, -- J.D. Shadesong
+    15615, -- Shadow Priestess Shai
+    15616, -- Orgrimmar Legion Grunt
+    15617, -- Orgrimmar Legion Axe Thrower
+    15659, -- Auctioneer Jaxon
+    15675, -- Auctioneer Stockton
+    15676, -- Auctioneer Yarly
+    15677, -- Auctioneer Graves
+    15678, -- Auctioneer Silva'las
+    15679, -- Auctioneer Cazarez
+    15681, -- Auctioneer O'reely
+    15682, -- Auctioneer Cain
+    15683, -- Auctioneer Naxxremis
+    15684, -- Auctioneer Tricket
+    15686, -- Auctioneer Rhyker
+    15693, -- Jonathan the Revelator
+    15722, -- Squire Leoren Mal'derath <Stable Master>
+    15903, -- Sergeant Carnes
+    16012, -- Mokvar
+    16013, -- Deliana
+    16091, -- Dirk Thunderwood
+    16112, -- Korfax, Champion of the Light <Brotherhood of the Light>
+    16113, -- Father Inigo Montoy <Brotherhood of the Light>
+    16114, -- Scarlet Commander Marjhan <The Scarlet Crusade>
+    16115, -- Commander Eligor Dawnbringer <Brotherhood of the Light>
+    16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
+    16131, -- Rohan the Assassin <The Scarlet Crusade>
+    16132, -- Huntsman Leopold <The Scarlet Crusade>
+    16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
+    16134, -- Rimblat Earthshatter <The Earthen Ring>
+    16135, -- Rayne <Cenarion Circle>
+    16212, -- Dispatch Commander Metz <The Argent Dawn>
+    16225, -- Pack Mule
     25171, -- Invisible Stalker (Scale x0.5)
     33608, -- Alchemy
     33609, -- Blacksmithing
@@ -220,6 +301,10 @@ UPDATE `creature` SET `position_x`=-8182.6, `position_y`=-4693.49, `position_z`=
 UPDATE `creature` SET `position_x`=-8189.83, `position_y`=-4586.73, `position_z`=8.14232, `orientation`=0.7353 WHERE `id1`=8198; -- Tick
 UPDATE `creature` SET `position_x`=-8175.67, `position_y`=-4718.28, `position_z`=26.3489, `orientation`=1.88496 WHERE `id1`=15192; -- Anachronos
 UPDATE `creature` SET `position_x`=2280.98, `position_y`=-5306, `position_z`=86.231, `orientation`=1.735, `wander_distance`=5, `MovementType`=1 WHERE `id1`=11036; -- Leonid Barthalomew the Revered <The Argent Dawn>
+
+DELETE FROM `creature` WHERE `id1` IN (
+    16226 -- Guard Didier <Brotherhood of the Light>
+);
 
 DELETE FROM `creature` WHERE (`guid`=156950) OR (`id1`=11099);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
