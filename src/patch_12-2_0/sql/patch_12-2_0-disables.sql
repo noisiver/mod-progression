@@ -28,6 +28,13 @@ DELETE FROM `disables` WHERE `sourceType`=3 AND `entry` IN (
     7 -- Eye of the Storm
 );
 
+DELETE FROM `disables` WHERE `sourceType`=5 AND `entry` IN (
+    1, -- Hellfire Peninsula
+    2, -- Nagrand
+    3, -- Terokkar Forest
+    4 -- Zangarmarsh
+);
+
 DELETE FROM `disables` WHERE `sourceType`=10 AND `entry` IN (
     21877, -- Netherweave Cloth
     27859, -- Zangar Caps

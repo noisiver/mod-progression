@@ -22,3 +22,7 @@ DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
     10, -- Dalaran Arena
     11 -- Ring of Valor
 );
+
+DELETE FROM `disables` WHERE `sourceType`=5 AND `entry` IN (
+    5 -- Grizzly Hills
+);
