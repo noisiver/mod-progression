@@ -1,110 +1,111 @@
-DELETE FROM `creature_loot_template` WHERE `Entry` IN (10184, 15928, 15931, 15932, 15936, 15952, 15953, 15954, 15956, 15989, 15990, 16011, 16028, 16060, 16061, 28860, 29249, 29268, 29278, 29324, 29373, 29417, 29448, 29615, 29701, 29718, 29932, 29940, 29955, 29991, 30061, 30397, 30398, 30510, 30529, 30530, 30532, 30540, 30748, 30774, 30788, 30807, 30810, 31125, 31211, 31212, 31215, 31311, 31349, 31350, 31360, 31362, 31367, 31368, 31370, 31381, 31384, 31386, 31456, 31463, 31464, 31465, 31469, 31506, 31507, 31508, 31509, 31510, 31511, 31512, 31533, 31536, 31537, 31538, 31558, 31559, 31560, 31610, 31611, 31612, 31656, 31673, 31679, 31722, 32313, 32857, 32867, 32927, 33118, 33186, 33190, 33271, 33288, 33293, 33449, 33515, 33692, 33693, 33694, 33724, 33885, 33955, 33993, 33994, 34175, 35013, 35490, 36538) AND `Item` IN (40752, 40753, 45624, 47241);
-INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
-(10184, 45624, 0, 100, 0, 1, 0, 3, 3, 'Onyxia - Emblem of Conquest'),
-(15928, 45624, 0, 100, 0, 1, 0, 1, 1, 'Thaddius - Emblem of Conquest'),
-(15931, 45624, 0, 100, 0, 1, 0, 1, 1, 'Grobbulus - Emblem of Conquest'),
-(15932, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gluth - Emblem of Conquest'),
-(15936, 45624, 0, 100, 0, 1, 0, 1, 1, 'Heigan the Unclean - Emblem of Conquest'),
-(15952, 45624, 0, 100, 0, 1, 0, 1, 1, 'Maexxna - Emblem of Conquest'),
-(15953, 45624, 0, 100, 0, 1, 0, 1, 1, 'Grand Widow Faerlina - Emblem of Conquest'),
-(15954, 45624, 0, 100, 0, 1, 0, 1, 1, 'Noth the Plaguebringer - Emblem of Conquest'),
-(15956, 45624, 0, 100, 0, 1, 0, 1, 1, 'Anub\'Rekhan - Emblem of Conquest'),
-(15989, 45624, 0, 100, 0, 1, 0, 1, 1, 'Sapphiron - Emblem of Conquest'),
-(15990, 45624, 0, 100, 0, 1, 0, 2, 2, 'Kel\'Thuzad - Emblem of Conquest'),
-(16011, 45624, 0, 100, 0, 1, 0, 1, 1, 'Loatheb - Emblem of Conquest'),
-(16028, 45624, 0, 100, 0, 1, 0, 1, 1, 'Patchwerk - Emblem of Conquest'),
-(16060, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gothik the Harvester - Emblem of Conquest'),
-(16061, 45624, 0, 100, 0, 1, 0, 1, 1, 'Instructor Razuvious - Emblem of Conquest'),
-(28860, 45624, 0, 100, 0, 1, 0, 3, 3, 'Sartharion - Emblem of Conquest'),
-(29249, 45624, 0, 100, 0, 1, 0, 1, 1, 'Anub\'Rekhan (1) - Emblem of Conquest'),
-(29268, 45624, 0, 100, 0, 1, 0, 1, 1, 'Grand Widow Faerlina (1) - Emblem of Conquest'),
-(29278, 45624, 0, 100, 0, 1, 0, 1, 1, 'Maexxna (1) - Emblem of Conquest'),
-(29324, 45624, 0, 100, 0, 1, 0, 1, 1, 'Patchwerk (1) - Emblem of Conquest'),
-(29373, 45624, 0, 100, 0, 1, 0, 1, 1, 'Grobbulus (1) - Emblem of Conquest'),
-(29417, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gluth (1) - Emblem of Conquest'),
-(29448, 45624, 0, 100, 0, 1, 0, 1, 1, 'Thaddius (1) - Emblem of Conquest'),
-(29615, 45624, 0, 100, 0, 1, 0, 1, 1, 'Noth the Plaguebringer (1) - Emblem of Conquest'),
-(29701, 45624, 0, 100, 0, 1, 0, 1, 1, 'Heigan the Unclean (1) - Emblem of Conquest'),
-(29718, 45624, 0, 100, 0, 1, 0, 1, 1, 'Loatheb (1) - Emblem of Conquest'),
-(29932, 45624, 0, 100, 0, 1, 0, 1, 1, 'Eck the Ferocious - Emblem of Conquest'),
-(29940, 45624, 0, 100, 0, 1, 0, 1, 1, 'Instructor Razuvious (1) - Emblem of Conquest'),
-(29955, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gothik the Harvester (1) - Emblem of Conquest'),
-(29991, 45624, 0, 100, 0, 1, 0, 1, 1, 'Sapphiron (1) - Emblem of Conquest'),
-(30061, 45624, 0, 100, 0, 1, 0, 2, 2, 'Kel\'Thuzad (1) - Emblem of Conquest'),
-(30397, 45624, 0, 100, 0, 1, 0, 1, 1, 'Commander Kolurg (1) - Emblem of Conquest'),
-(30398, 45624, 0, 100, 0, 1, 0, 1, 1, 'Commander Stoutbeard (1) - Emblem of Conquest'),
-(30510, 45624, 0, 100, 0, 1, 0, 1, 1, 'Grand Magus Telestra (1) - Emblem of Conquest'),
-(30529, 45624, 0, 100, 0, 1, 0, 1, 1, 'Anomalus (1) - Emblem of Conquest'),
-(30530, 45624, 0, 100, 0, 1, 0, 1, 1, 'Moorabi (1) - Emblem of Conquest'),
-(30532, 45624, 0, 100, 0, 1, 0, 1, 1, 'Ormorok the Tree-Shaper (1) - Emblem of Conquest'),
-(30540, 45624, 0, 100, 0, 1, 0, 1, 1, 'Keristrasza (1) - Emblem of Conquest'),
-(30748, 45624, 0, 100, 0, 1, 0, 1, 1, 'Prince Keleseth (1) - Emblem of Conquest'),
-(30774, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gortok Palehoof (1) - Emblem of Conquest'),
-(30788, 45624, 0, 100, 0, 1, 0, 1, 1, 'King Ymiron (1) - Emblem of Conquest'),
-(30807, 45624, 0, 100, 0, 1, 0, 1, 1, 'Skadi the Ruthless (1) - Emblem of Conquest'),
-(30810, 45624, 0, 100, 0, 1, 0, 1, 1, 'Svala Sorrowgrave (1) - Emblem of Conquest'),
-(31125, 45624, 0, 100, 0, 1, 0, 2, 2, 'Archavon the Stone Watcher - Emblem of Conquest'),
-(31211, 45624, 0, 100, 0, 1, 0, 1, 1, 'Meathook (1) - Emblem of Conquest'),
-(31212, 45624, 0, 100, 0, 1, 0, 1, 1, 'Salramm the Fleshcrafter (1) - Emblem of Conquest'),
-(31215, 45624, 0, 100, 0, 1, 0, 1, 1, 'Chrono-Lord Epoch (1) - Emblem of Conquest'),
-(31311, 45624, 0, 100, 0, 1, 0, 1, 1, 'Sartharion (1) - Emblem of Conquest'),
-(31349, 45624, 0, 100, 0, 1, 0, 1, 1, 'King Dred (1) - Emblem of Conquest'),
-(31350, 45624, 0, 100, 0, 1, 0, 1, 1, 'Novos the Summoner (1) - Emblem of Conquest'),
-(31360, 45624, 0, 100, 0, 1, 0, 1, 1, 'The Prophet Tharon\'ja (1) - Emblem of Conquest'),
-(31362, 45624, 0, 100, 0, 1, 0, 1, 1, 'Trollgore (1) - Emblem of Conquest'),
-(31367, 45624, 0, 100, 0, 1, 0, 1, 1, 'Drakkari Elemental (1) - Emblem of Conquest'),
-(31368, 45624, 0, 100, 0, 1, 0, 1, 1, 'Gal\'darah (1) - Emblem of Conquest'),
-(31370, 45624, 0, 100, 0, 1, 0, 1, 1, 'Slad\'ran (1) - Emblem of Conquest'),
-(31381, 45624, 0, 100, 0, 1, 0, 1, 1, 'Krystallus (1) - Emblem of Conquest'),
-(31384, 45624, 0, 100, 0, 1, 0, 1, 1, 'Maiden of Grief (1) - Emblem of Conquest'),
-(31386, 45624, 0, 100, 0, 1, 0, 1, 1, 'Sjonnir The Ironshaper (1) - Emblem of Conquest'),
-(31456, 45624, 0, 100, 0, 1, 0, 1, 1, 'Elder Nadox (1) - Emblem of Conquest'),
-(31463, 45624, 0, 100, 0, 1, 0, 1, 1, 'Amanitar (1) - Emblem of Conquest'),
-(31464, 45624, 0, 100, 0, 1, 0, 1, 1, 'Herald Volazj (1) - Emblem of Conquest'),
-(31465, 45624, 0, 100, 0, 1, 0, 1, 1, 'Jedoga Shadowseeker (1) - Emblem of Conquest'),
-(31469, 45624, 0, 100, 0, 1, 0, 1, 1, 'Prince Taldaram (1) - Emblem of Conquest'),
-(31506, 45624, 0, 100, 0, 1, 0, 1, 1, 'Cyanigosa (1) - Emblem of Conquest'),
-(31507, 45624, 0, 100, 0, 1, 0, 1, 1, 'Erekem (1) - Emblem of Conquest'),
-(31508, 45624, 0, 100, 0, 1, 0, 1, 1, 'Ichoron (1) - Emblem of Conquest'),
-(31509, 45624, 0, 100, 0, 1, 0, 1, 1, 'Lavanthor (1) - Emblem of Conquest'),
-(31510, 45624, 0, 100, 0, 1, 0, 1, 1, 'Moragg (1) - Emblem of Conquest'),
-(31511, 45624, 0, 100, 0, 1, 0, 1, 1, 'Xevozz (1) - Emblem of Conquest'),
-(31512, 45624, 0, 100, 0, 1, 0, 1, 1, 'Zuramat the Obliterator (1) - Emblem of Conquest'),
-(31533, 45624, 0, 100, 0, 1, 0, 1, 1, 'General Bjarngrim (1) - Emblem of Conquest'),
-(31536, 45624, 0, 100, 0, 1, 0, 1, 1, 'Volkhan (1) - Emblem of Conquest'),
-(31537, 45624, 0, 100, 0, 1, 0, 1, 1, 'Ionar (1) - Emblem of Conquest'),
-(31538, 45624, 0, 100, 0, 1, 0, 1, 1, 'Loken (1) - Emblem of Conquest'),
-(31558, 45624, 0, 100, 0, 1, 0, 1, 1, 'Drakos the Interrogator (1) - Emblem of Conquest'),
-(31559, 45624, 0, 100, 0, 1, 0, 1, 1, 'Varos Cloudstrider (1) - Emblem of Conquest'),
-(31560, 45624, 0, 100, 0, 1, 0, 1, 1, 'Mage-Lord Urom (1) - Emblem of Conquest'),
-(31610, 45624, 0, 100, 0, 1, 0, 1, 1, 'Anub\'arak (1) - Emblem of Conquest'),
-(31611, 45624, 0, 100, 0, 1, 0, 1, 1, 'Hadronox (1) - Emblem of Conquest'),
-(31612, 45624, 0, 100, 0, 1, 0, 1, 1, 'Krik\'thir the Gatewatcher (1) - Emblem of Conquest'),
-(31656, 45624, 0, 100, 0, 1, 0, 1, 1, 'Dalronn the Controller (1) - Emblem of Conquest'),
-(31673, 45624, 0, 100, 0, 1, 0, 1, 1, 'Ingvar the Plunderer (1) - Emblem of Conquest'),
-(31679, 45624, 0, 100, 0, 1, 0, 1, 1, 'Skarvald the Constructor (1) - Emblem of Conquest'),
-(31722, 45624, 0, 100, 0, 1, 0, 2, 2, 'Archavon the Stone Watcher (1) - Emblem of Conquest'),
-(32313, 45624, 0, 100, 0, 1, 0, 1, 1, 'Infinite Corruptor (1) - Emblem of Conquest'),
-(32857, 45624, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir - Emblem of Conquest'),
-(32867, 45624, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker - Emblem of Conquest'),
-(32927, 45624, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim - Emblem of Conquest'),
-(33118, 45624, 0, 100, 0, 1, 0, 1, 1, 'Ignis the Furnace Master - Emblem of Conquest'),
-(33186, 45624, 0, 100, 0, 1, 0, 1, 1, 'Razorscale - Emblem of Conquest'),
-(33190, 45624, 0, 100, 0, 1, 0, 2, 2, 'Ignis the Furnace Master (1) - Emblem of Conquest'),
-(33271, 45624, 0, 100, 0, 1, 0, 1, 1, 'General Vezax - Emblem of Conquest'),
-(33288, 45624, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron - Emblem of Conquest'),
-(33293, 45624, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor - Emblem of Conquest'),
-(33449, 45624, 0, 100, 0, 1, 0, 1, 1, 'General Vezax (1) - Emblem of Conquest'),
-(33515, 45624, 0, 100, 0, 1, 0, 1, 1, 'Auriaya - Emblem of Conquest'),
-(33692, 45624, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim (1) - Emblem of Conquest'),
-(33693, 45624, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker (1) - Emblem of Conquest'),
-(33694, 45624, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir (1) - Emblem of Conquest'),
-(33724, 45624, 0, 100, 0, 1, 0, 1, 1, 'Razorscale (1) - Emblem of Conquest'),
-(33885, 45624, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor (1) - Emblem of Conquest'),
-(33955, 45624, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron (1) - Emblem of Conquest'),
-(33993, 45624, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher - Emblem of Conquest'),
-(33994, 45624, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher (1) - Emblem of Conquest'),
-(34175, 45624, 0, 100, 0, 1, 0, 1, 1, 'Auriaya (1) - Emblem of Conquest'),
-(35013, 45624, 0, 100, 0, 1, 0, 2, 2, 'Koralon the Flame Watcher - Emblem of Conquest'),
-(35490, 45624, 0, 100, 0, 1, 0, 1, 1, 'The Black Knight (1) - Emblem of Conquest'),
-(36538, 45624, 0, 100, 0, 1, 0, 3, 3, 'Onyxia (1) - Emblem of Conquest');
+-- Emblem of Conquest
+UPDATE `creature_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    10184, -- Onyxia
+    15928, -- Thaddius
+    15931, -- Grobbulus
+    15932, -- Gluth
+    15936, -- Heigan the Unclean
+    15952, -- Maexxna
+    15953, -- Grand Widow Faerlina
+    15954, -- Noth the Plaguebringer
+    15956, -- Anub'Rekhan
+    15989, -- Sapphiron
+    15990, -- Kel'Thuzad
+    16011, -- Loatheb
+    16028, -- Patchwerk
+    16060, -- Gothik the Harvester
+    16061, -- Instructor Razuvious
+    28860, -- Sartharion
+    29249, -- Anub'Rekhan (1)
+    29268, -- Grand Widow Faerlina (1)
+    29278, -- Maexxna (1)
+    29324, -- Patchwerk (1)
+    29373, -- Grobbulus (1)
+    29417, -- Gluth (1)
+    29448, -- Thaddius (1)
+    29615, -- Noth the Plaguebringer (1)
+    29701, -- Heigan the Unclean (1)
+    29718, -- Loatheb (1)
+    29932, -- Eck the Ferocious
+    29940, -- Instructor Razuvious (1)
+    29955, -- Gothik the Harvester (1)
+    29991, -- Sapphiron (1)
+    30061, -- Kel'Thuzad (1)
+    30397, -- Commander Kolurg (1)
+    30398, -- Commander Stoutbeard (1)
+    30510, -- Grand Magus Telestra (1)
+    30529, -- Anomalus (1)
+    30530, -- Moorabi (1)
+    30532, -- Ormorok the Tree-Shaper (1)
+    30540, -- Keristrasza (1)
+    30748, -- Prince Keleseth (1)
+    30774, -- Gortok Palehoof (1)
+    30788, -- King Ymiron (1)
+    30807, -- Skadi the Ruthless (1)
+    30810, -- Svala Sorrowgrave (1)
+    31125, -- Archavon the Stone Watcher
+    31211, -- Meathook (1)
+    31212, -- Salramm the Fleshcrafter (1)
+    31215, -- Chrono-Lord Epoch (1)
+    31311, -- Sartharion (1)
+    31349, -- King Dred (1)
+    31350, -- Novos the Summoner (1)
+    31360, -- The Prophet Tharon'ja (1)
+    31362, -- Trollgore (1)
+    31367, -- Drakkari Elemental (1)
+    31368, -- Gal'darah (1)
+    31370, -- Slad'ran (1)
+    31381, -- Krystallus (1)
+    31384, -- Maiden of Grief (1)
+    31386, -- Sjonnir The Ironshaper (1)
+    31456, -- Elder Nadox (1)
+    31463, -- Amanitar (1)
+    31464, -- Herald Volazj (1)
+    31465, -- Jedoga Shadowseeker (1)
+    31469, -- Prince Taldaram (1)
+    31506, -- Cyanigosa (1)
+    31507, -- Erekem (1)
+    31508, -- Ichoron (1)
+    31509, -- Lavanthor (1)
+    31510, -- Moragg (1)
+    31511, -- Xevozz (1)
+    31512, -- Zuramat the Obliterator (1)
+    31533, -- General Bjarngrim (1)
+    31536, -- Volkhan (1)
+    31537, -- Ionar (1)
+    31538, -- Loken (1)
+    31558, -- Drakos the Interrogator (1)
+    31559, -- Varos Cloudstrider (1)
+    31560, -- Mage-Lord Urom (1)
+    31610, -- Anub'arak (1)
+    31611, -- Hadronox (1)
+    31612, -- Krik'thir the Gatewatcher (1)
+    31656, -- Dalronn the Controller (1)
+    31673, -- Ingvar the Plunderer (1)
+    31679, -- Skarvald the Constructor (1)
+    31722, -- Archavon the Stone Watcher (1)
+    32313, -- Infinite Corruptor (1)
+    32857, -- Stormcaller Brundir
+    32867, -- Steelbreaker
+    32927, -- Runemaster Molgeim
+    33118, -- Ignis the Furnace Master
+    33186, -- Razorscale
+    33190, -- Ignis the Furnace Master (1)
+    33271, -- General Vezax
+    33288, -- Yogg-Saron
+    33293, -- XT-002 Deconstructor
+    33449, -- General Vezax (1)
+    33515, -- Auriaya
+    33692, -- Runemaster Molgeim (1)
+    33693, -- Steelbreaker (1)
+    33694, -- Stormcaller Brundir (1)
+    33724, -- Razorscale (1)
+    33885, -- XT-002 Deconstructor (1)
+    33955, -- Yogg-Saron (1)
+    33993, -- Emalon the Storm Watcher
+    33994, -- Emalon the Storm Watcher (1)
+    34175, -- Auriaya (1)
+    35013, -- Koralon the Flame Watcher
+    35490, -- The Black Knight (1)
+    36538 -- Onyxia (1)
+);

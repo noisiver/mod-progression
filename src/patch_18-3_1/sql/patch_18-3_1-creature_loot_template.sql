@@ -1,22 +1,27 @@
-DELETE FROM `creature_loot_template` WHERE `Entry` IN (32857, 32867, 32927, 33118, 33186, 33190, 33271, 33288, 33293, 33449, 33515, 33692, 33693, 33694, 33724, 33885, 33955, 33993, 33994, 34175) AND `Item` IN (40752, 40753, 45624, 47241);
-INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
-(32857, 40753, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir - Emblem of Valor'),
-(32867, 40753, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker - Emblem of Valor'),
-(32927, 40753, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim - Emblem of Valor'),
-(33118, 40753, 0, 100, 0, 1, 0, 1, 1, 'Ignis the Furnace Master - Emblem of Valor'),
-(33186, 40753, 0, 100, 0, 1, 0, 1, 1, 'Razorscale - Emblem of Valor'),
-(33190, 45624, 0, 100, 0, 1, 0, 2, 2, 'Ignis the Furnace Master (1) - Emblem of Conquest'),
-(33271, 40753, 0, 100, 0, 1, 0, 1, 1, 'General Vezax - Emblem of Valor'),
-(33288, 40753, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron - Emblem of Valor'),
-(33293, 40753, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor - Emblem of Valor'),
-(33449, 45624, 0, 100, 0, 1, 0, 1, 1, 'General Vezax (1) - Emblem of Conquest'),
-(33515, 40753, 0, 100, 0, 1, 0, 1, 1, 'Auriaya - Emblem of Valor'),
-(33692, 45624, 0, 100, 0, 1, 0, 2, 2, 'Runemaster Molgeim (1) - Emblem of Conquest'),
-(33693, 45624, 0, 100, 0, 1, 0, 2, 2, 'Steelbreaker (1) - Emblem of Conquest'),
-(33694, 45624, 0, 100, 0, 1, 0, 1, 1, 'Stormcaller Brundir (1) - Emblem of Conquest'),
-(33724, 45624, 0, 100, 0, 1, 0, 1, 1, 'Razorscale (1) - Emblem of Conquest'),
-(33885, 45624, 0, 100, 0, 1, 0, 1, 1, 'XT-002 Deconstructor (1) - Emblem of Conquest'),
-(33955, 45624, 0, 100, 0, 1, 0, 1, 1, 'Yogg-Saron (1) - Emblem of Conquest'),
-(33993, 40752, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher - Emblem of Conquest'),
-(33994, 45624, 0, 100, 0, 1, 0, 2, 2, 'Emalon the Storm Watcher (1) - Emblem of Conquest'),
-(34175, 45624, 0, 100, 0, 1, 0, 1, 1, 'Auriaya (1) - Emblem of Conquest');
+-- Emblem of Valor
+UPDATE `creature_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    32857, -- Stormcaller Brundir
+    32867, -- Steelbreaker
+    32927, -- Runemaster Molgeim
+    33118, -- Ignis the Furnace Master
+    33186, -- Razorscale
+    33271, -- General Vezax
+    33288, -- Yogg-Saron
+    33293, -- XT-002 Deconstructor
+    33515 -- Auriaya
+);
+
+-- Emblem of Conquest
+UPDATE `creature_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    33190, -- Ignis the Furnace Master (1)
+    33449, -- General Vezax (1)
+    33692, -- Runemaster Molgeim (1)
+    33693, -- Steelbreaker (1)
+    33694, -- Stormcaller Brundir (1)
+    33724, -- Razorscale (1)
+    33885, -- XT-002 Deconstructor (1)
+    33955, -- Yogg-Saron (1)
+    33993, -- Emalon the Storm Watcher
+    33994, -- Emalon the Storm Watcher (1)
+    34175 -- Auriaya (1)
+);
