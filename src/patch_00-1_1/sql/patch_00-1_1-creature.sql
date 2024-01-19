@@ -1,7 +1,16 @@
 UPDATE `creature` SET `id1`=5624, `equipment_id`=0 WHERE `guid` IN (17669, 28481, 28485, 28486, 28487, 28488, 28489, 28490, 33823, 33831, 34102, 34103, 34104, 34105, 34106, 38296, 38297, 38298, 38299, 38301, 38302, 38305, 39019, 39020, 39022, 39023, 39024, 39025, 39026, 41884, 41887, 41888, 41889, 41890, 41891, 41892, 41956, 41960, 41961, 41964, 79264, 79265, 79266, 79267); -- Undercity Guardian
 UPDATE `creature` SET `id1`=2425, `equipment_id`=0 WHERE `guid`=31901; -- Varimathras
 UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
+    347, -- Grizzle Halfmane <Alterac Valley Battlemaster>
+    857, -- Donal Osgood <Arathi Basin Battlemaster>
+    907, -- Keras Wolfheart <Arathi Basin Battlemaster>
     1756, -- Stormwind Royal Guard
+    2302, -- Aethalas <Warsong Gulch Battlemaster>
+    2804, -- Kurden Bloodclaw <Warsong Gulch Battlemaster>
+    2941, -- Lanie Reed <Gryphon Master>
+    3083, -- Honor Guard
+    12239, -- Spirit of Gelk <The Second Kahn>
+    13697, -- Cavindra
     25171, -- Invisible Stalker (Scale x0.5)
     33608, -- Alchemy
     33609, -- Blacksmithing
@@ -120,10 +129,21 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
 );
 
 UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
+    34137, -- Archery Target
+    34138, -- Archery Target
+    34139, -- Archery Target
     125689, -- Doris Volanthius <Veteran Armor Quartermaster>
     125691, -- Blood Guard Zar'shi <Northrend Armor Quartermaster>
     125693, -- Sergeant Thunderhorn <Apprentice Armor Quartermaster>
     133917, -- Knight-Lieutenant T'Maire Sydes <Northrend Armor Quartermaster>
     133919, -- Lieutenant Tristia <Veteran Armor Quartermaster>
-    133920 -- Captain Dirgehammer <Apprentice Armor Quartermaster>
+    133920, -- Captain Dirgehammer <Apprentice Armor Quartermaster>
+    203492, -- Orgrimmar Grunt
+    203493, -- Orgrimmar Grunt
+    203494, -- Orgrimmar Grunt
+    203495 -- Orgrimmar Grunt
 );
+
+DELETE FROM `creature` WHERE `guid`=156950;
+INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
+(156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 0, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL); -- Lord Kazzak
