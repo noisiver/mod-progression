@@ -30,7 +30,21 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     18253, -- Archmage Leryda
     18255, -- Apprentice Darius
     19848, -- Harbinger Ennarth
-    19850 -- Councilor Arial D'Anastasis
+    19850, -- Councilor Arial D'Anastasis
+    19909, -- Rex Pixem <Arena Battlemaster>
+    19911, -- Beka Zipwhistle <Arena Battlemaster>
+    20374, -- Kandaar <Eye of the Storm Battlemaster>
+    20381, -- Jovil <Eye of the Storm Battlemaster>
+    20383, -- Enlae <Eye of the Storm Battlemaster>
+    20385, -- Andrissa Heartspear <Eye of the Storm Battlemaster>
+    20386, -- Lyrlia Blackshield <Eye of the Storm Battlemaster>
+    20388, -- Althallen Brightblade <Eye of the Storm Battlemaster>
+    21448, -- Gadgetzan Sniper
+    22936, -- Auhula <Apprentice Hippogryph Master>
+    23090, -- Troll Roof Stalker
+    23534, -- Babagaya Shadowcleft <Warlock Trainer>
+    23535, -- Matero Zeshuwal
+    23536 -- Nagulon <Matero Zeshuwal's Minion>
 );
 
 DELETE FROM `creature` WHERE `guid` IN (

@@ -11,5 +11,9 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     12197, -- Glordrum Steelbeard <Alterac Valley Battlemaster>
     14942, -- Kartra Bloodsnarl <Alterac Valley Battlemaster>
     14981, -- Elfarran <Warsong Gulch Battlemaster>
-    14982 -- Lylandris <Warsong Gulch Battlemaster>
+    14982, -- Lylandris <Warsong Gulch Battlemaster>
+    19906, -- Usha Eyegouge <Alterac Valley Battlemaster>
+    19907, -- Grumbol Grimhammer <Alterac Valley Battlemaster>
+    19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
+    19910 -- Gargok <Warsong Gulch Battlemaster>
 );

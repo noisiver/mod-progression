@@ -222,7 +222,176 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     19850, -- Councilor Arial D'Anastasis
     19855, -- Sir Maximus Adams <Arathi Basin Battlemaster>
     19860, -- Katrina Turner
+    19905, -- The Black Bride <Arathi Basin Battlemaster>
+    19906, -- Usha Eyegouge <Alterac Valley Battlemaster>
+    19907, -- Grumbol Grimhammer <Alterac Valley Battlemaster>
+    19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
+    19909, -- Rex Pixem <Arena Battlemaster>
+    19910, -- Gargok <Warsong Gulch Battlemaster>
+    19911, -- Beka Zipwhistle <Arena Battlemaster>
+    20374, -- Kandaar <Eye of the Storm Battlemaster>
+    20381, -- Jovil <Eye of the Storm Battlemaster>
+    20383, -- Enlae <Eye of the Storm Battlemaster>
+    20385, -- Andrissa Heartspear <Eye of the Storm Battlemaster>
+    20386, -- Lyrlia Blackshield <Eye of the Storm Battlemaster>
+    20388, -- Althallen Brightblade <Eye of the Storm Battlemaster>
+    20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
+    20407, -- Farseer Umbrua <Shaman Trainer>
+    20797, -- Deviate Coiler Hatchling
+    21045, -- Hired Bodyguard <The Black Flame>
+    21448, -- Gadgetzan Sniper
+    22931, -- Gorrim <Emerald Circle Flight Master>
+    22935, -- Suralais Farwind <Hippogryph Master>
+    22936, -- Auhula <Apprentice Hippogryph Master>
+    23090, -- Troll Roof Stalker
+    23127, -- Farseer Javad <Shaman Trainer>
+    23128, -- Master Pyreanor <Paladin Trainer>
+    23131, -- Blood Knight Honor Guard
+    23449, -- Yuula <Recruitment Officer>
+    23534, -- Babagaya Shadowcleft <Warlock Trainer>
+    23535, -- Matero Zeshuwal
+    23536, -- Nagulon <Matero Zeshuwal's Minion>
+    23567, -- Inspector Tarem
+    23570, -- Gizzix Grimegurgle
+    23571, -- Razbo Rustgear <Weapon & Armor Merchant>
+    23572, -- Drazzit Dripvalve
+    23573, -- Krixil Slogswitch <Food & Drink>
+    23579, -- Brogg <Stonemaul Survivor>
+    23612, -- Dyslix Silvergrub <Flight Master>
+    23636, -- Mudsprocket Bruiser
+    23797, -- Moxie Steelgrille
+    23995, -- Axle <Innkeeper>
+    24208, -- "Little" Logok <Innkeeper>
+    24366, -- Nizzle <Gryphon Master>
+    24369, -- Wind Trader Zhareem
+    24370, -- Nether-Stalker Mah'duun
+    24410, -- Vazruden the Herald Image
+    24437, -- Consortium Assistant
+    24456, -- Captain Taldar Windsinger <The Moonspray>
+    24729, -- Alicia
+    24833, -- Captain "Stash" Torgoley <The Lady Mehley>
+    24834, -- Galley Chief Grace <The Lady Mehley>
+    24835, -- First Mate Kowalski <The Lady Mehley>
+    24836, -- Abe the Cabin Boy <The Lady Mehley>
+    24837, -- Navigator Mehran <The Lady Mehley>
+    24838, -- Sailor Henders <The Lady Mehley>
+    24839, -- Sailor Wicks <The Lady Mehley>
+    24840, -- Sailor Vines <The Lady Mehley>
+    24841, -- Marine Halters
+    24842, -- Marine Anderson
+    24843, -- Engineer Combs <The Lady Mehley>
+    24851, -- Kiz Coilspanner <Flight Master>
+    24854, -- Sister of Torment Image
+    24924, -- Sky-Captain Bomblast <The Iron Eagle>
+    24926, -- Chief Officer Brassbolt <The Iron Eagle>
+    24927, -- Navigator Sparksizzle <The Iron Eagle>
+    24929, -- Crewman Crosswire <The Iron Eagle>
+    24930, -- Crewman Gazzlegear <The Iron Eagle>
+    24931, -- Crewman Fastwrench <The Iron Eagle>
+    24932, -- Exarch Nasuun
+    24934, -- Snack-O-Matic IV
+    24935, -- Vend-O-Tron D-Luxe
+    24993, -- Galley Chief Mariss <The Moonspray>
+    24995, -- Merchant Fallel Stargazer <The Moonspray>
+    24996, -- Mariner Bladewhisper <The Moonspray>
+    24997, -- Mariner Swiftstar <The Moonspray>
+    25007, -- Mariner Evenmist <The Moonspray>
+    25009, -- Captain Angelina Soluna <The Bravery>
+    25010, -- Engineer Brightbuckle <The Bravery>
+    25011, -- First Mate Wavesinger <The Bravery>
+    25012, -- Galley Chief Gathers <The Bravery>
+    25013, -- Sentinel Brightgrass
+    25014, -- Sentinel Winterdew
+    25015, -- Navigator Landerson <The Bravery>
+    25016, -- Sailor Wills <The Bravery>
+    25017, -- Sailor Fairfolk <The Bravery>
+    25018, -- Sailor Stoneheel <The Bravery>
+    25070, -- Chief Officer Coppernut<The Thundercaller>
+    25071, -- Crewman Rusthammer <The Thundercaller>
+    25072, -- Crewman Quickfix <The Thundercaller>
+    25074, -- Crewman Sparkfly <The Thundercaller>
+    25076, -- Navigator Fairweather <The Thundercaller>
+    25077, -- Sky-Captain Cloudkicker <The Thundercaller>
+    25079, -- Deathguard Fowles <The Thundercaller>
+    25080, -- Grunt Umgor
+    25081, -- Grunt Ounda
+    25083, -- Deathguard Lawson <The Thundercaller>
+    25134, -- Shattered Sun Trainee
+    25135, -- Shattered Sun Trainee
+    25136, -- Shattered Sun Trainee
+    25137, -- Shattered Sun Trainee
+    25138, -- Captain Dranarus
+    25140, -- Lord Torvos
+    25141, -- Commander Steele
+    25142, -- Shattered Sun Marksman
+    25143, -- Shattered Sun Veteran
+    25153, -- Shattered Sun Magi
+    25155, -- Shattered Sun Cleric
+    25167, -- General Tiras'alan
     25171, -- Invisible Stalker (Scale x0.5)
+    25885, -- Whirligig Wafflefry <Gnomish Inventor>
+    26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
+    26539, -- Meefi Farthrottle <Howling Fjord Zeppelin Master>
+    26548, -- Leesha Tannerby <Dockmaster>
+    27666, -- Ontuvo <Jewelcrafting Supplies>
+    27667, -- Anwehu <Weapons & Armorsmith>
+    27703, -- Ysuria <Portal Trainer>
+    27705, -- Lorrin Foxfire<Portal Trainer>
+    28092, -- The Etymidian
+    28126, -- Don Carlos
+    28601, -- High Cultist Herenn
+    28602, -- Death's Hand Acolyte
+    29093, -- Ian Drake <Elder>
+    29095, -- Edward Cairn <Elder>
+    29141, -- Pella Brassbrush <Barber>
+    29142, -- Jelinek Sharpshear <Barber>
+    29143, -- Bebri Coifcurl <Barber>
+    29287, -- Captain Paul Carver <The Assurance>
+    29288, -- Engineer Kurtis Paddock <The Assurance>
+    29289, -- First Mate Edgar Flores <The Assurance>
+    29290, -- Navigator Rian Trost <The Assurance>
+    29291, -- Galley Chief Paul Kubit<The Assurance>
+    29292, -- Art Peshkov
+    29293, -- Daniel Kramer
+    29294, -- Candace Thomas
+    29295, -- Meghan Dawson
+    29296, -- Justin Boehm <The Assurance>
+    29297, -- Michael Corpora <The Assurance>
+    29298, -- Benjamin Elgueta <The Assurance>
+    29299, -- Serban Oprescu <The Assurance>
+    29300, -- Robert Richardson <The Assurance>
+    29346, -- Apothecary Karlov
+    29725, -- Benik Boltshear <Locksmith>
+    29728, -- Walter Soref <Locksmith>
+    30578, -- Bethany Aldire <Strand of the Ancients Battlemaster>
+    30579, -- Marga Bearbrawn <Strand of the Ancients Battlemaster>
+    30580, -- Nivara Bladedancer <Strand of the Ancients Battlemaster>
+    30582, -- Ufuda Giant-Slayer <Strand of the Ancients Battlemaster>
+    30583, -- Sarah Forthright <Strand of the Ancients Battlemaster>
+    30706, -- Jo'mah <Inscription Trainer>
+    30709, -- Poshken Hardbinder <Inscription Trainer>
+    30710, -- Zantasia <Inscription Trainer>
+    30711, -- Margaux Parchley <Inscription Trainer>
+    30713, -- Catarina Stanford <Inscription Trainer>
+    30715, -- Feyden Darkin <Inscription Trainer>
+    30716, -- Thoth <Inscription Trainer>
+    30717, -- Elise Brightletter <Inscription Trainer>
+    30721, -- Michael Schwan <Master Inscription Trainer>
+    30722, -- Neferatti <Master Inscription Trainer>
+    30723, -- Xantili <Inscription Supplies>
+    30724, -- Mertle Murkpen <Inscription Supplies>
+    30727, -- Lelorian <Inscription Supplies>
+    30729, -- Ickabod Pimlen <Inscription Supplies>
+    30730, -- Stanly McCormick <Inscription Supplies>
+    30731, -- Illianna Moonscribe <Inscription Supplies>
+    30732, -- Sessoh <Inscription Supplies>
+    30733, -- Thargen Heavyquill <Inscription Supplies>
+    30734, -- Jezebel Bican <Inscription Supplies>
+    30735, -- Kul Inkspiller <Inscription Supplies>
+    31144, -- Grandmaster's Training Dummy
+    31146, -- Heroic Training Dummy
+    32666, -- Expert's Training Dummy
+    32667, -- Master's Training Dummy
     33608, -- Alchemy
     33609, -- Blacksmithing
     33610, -- Enchanting
@@ -237,10 +406,14 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     33619, -- Cooking
     33621, -- First Aid
     33623, -- Fishing
+    33638, -- Scribe Lanloer <Master Inscription Trainer>
+    33679, -- Recorder Lidio <Master Inscription Trainer>
     33963, -- Magister Sarien <Emblem of Conquest Quartermaster>
     33964, -- Arcanist Firael <Emblem of Conquest Quartermaster>
     33993, -- Emalon the Storm Watcher
     34015, -- Tempest Warder
+    34043, -- Lady Palanseer <Jewelcrafting Quartermaster>
+    34081, -- Captain O'Neal <Jewelcrafting Quartermaster>
     34244, -- Jean Pierre Poulain <Argent Tournament Valiant>
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
     34771, -- Girana the Blooded <The Sunreavers>
@@ -299,7 +472,17 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     35580, -- Aspirant Naradiel <Triumphant Armor Vendor>
     35587, -- Argent Peacekeeper
     35594, -- Brassbolt Mechawrench <Steam-Powered Auctioneer>
+    35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
+    35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
+    35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35599, -- Arcanist Dulial <Wintergrasp Battle-Mage>
+    35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
+    35602, -- Magister Savarin <Wintergrasp Battle-Mage>
+    35603, -- Magister Dalhyr <Wintergrasp Battle-Mage>
     35607, -- Reginald Arcfire <Steam-Powered Auctioneer>
+    35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
+    35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
     35790, -- Usuri Brightcoin <Money Changer>
     36065, -- Fjola Lightbane
     36066, -- Eydis Darkbane
@@ -344,7 +527,11 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
     34138, -- Archery Target
     34139, -- Archery Target
     65613, -- Riding White Stallion
+    79011, -- Skyguard Nether Ray
     92890, -- Riding Raptor
+    96656, -- Shattered Sun Marksman
+    96657, -- Shattered Sun Marksman
+    96658, -- Shattered Sun Marksman
     125689, -- Doris Volanthius <Veteran Armor Quartermaster>
     125691, -- Blood Guard Zar'shi <Northrend Armor Quartermaster>
     125693, -- Sergeant Thunderhorn <Apprentice Armor Quartermaster>

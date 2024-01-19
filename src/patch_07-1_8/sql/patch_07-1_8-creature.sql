@@ -32,5 +32,6 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     15419, -- Kania <Enchanting Supplies>
     15614, -- J.D. Shadesong
     15722, -- Squire Leoren Mal'derath <Stable Master>
-    16543 -- Garon Hutchins
+    16543, -- Garon Hutchins
+    23573 -- Krixil Slogswitch <Food & Drink>
 );
