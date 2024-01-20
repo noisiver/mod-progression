@@ -28,7 +28,7 @@ These are all the patches included with this module. Every patch includes change
 - Patch 3.3.5: Assault on the Ruby Sanctum
 
 # Note
-Keep in mind that it's not complete even if there seems to be a lot done. It's not meant to be 1:1 compared to retail Wrath of the Lich King because with changes to spells and so forth that's impossible without client and core edits, and those kind of edits are not what I want.
+Keep in mind that it's not complete even if there seems to be a lot done. It's not meant to be 1:1 compared to retail because with changes to spells and so forth that's impossible without client and core edits, and those kind of edits are not what I want.
 
 # Corrections
 Create issue reports for anything that isn't correct and I will look into it as soon as I have the time to. If something isn't intended to be in a certain patch, or if it is, I want to change it and would greatly appreciate reports for it.
