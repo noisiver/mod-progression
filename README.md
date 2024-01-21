@@ -2,7 +2,7 @@
 The goal of this module is to go through the patches of World of Warcraft.
 
 # Patches
-These are all the patches included with this module. Every patch includes changes to simulate that patch as best as possible. Information on what is new in each patch can be seen by browsing their folder, although there are probably things listed that aren't implemented yet.
+These are all the patches included with this module. Every patch includes changes to simulate that patch as best as possible. Information about what's new in each patch will be added soon.
 
 - Patch 1.1: World of Warcraft
 - Patch 1.2: Mysteries of Maraudon
