@@ -38,7 +38,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR ? 255 : 40));
     sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
     sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
-    sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, (PatchId >= PATCH_FALL_OF_THE_LICH_KING || EnforceQuestInfo));
+    sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, (PatchId >= PATCH_FALL_OF_THE_LICH_KING || !EnforceQuestInfo));
     sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, PatchId >= PATCH_CALL_OF_THE_CRUSADE);
     sWorld->setBoolConfig(CONFIG_WEATHER, PatchId >= PATCH_STORMS_OF_AZEROTH);
     sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, (PatchId < PATCH_ECHOES_OF_DOOM ? 60000 : 180000));
