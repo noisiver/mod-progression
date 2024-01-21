@@ -5,4 +5,4 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (200008, 23028, 38000, 0, 0, 56, 0), -- Arcane Brilliance (Rank 1)
 (200012, 21562, 28000, 0, 0, 48, 0), -- Prayer of Fortitude (Rank 1)
 (200012, 21564, 46000, 0, 0, 60, 0), -- Prayer of Fortitude (Rank 2)
-(200012, 27681, 2300, 0, 0, 60, 0), -- Prayer of Spirit (Rank 1)
+(200012, 27681, 2300, 0, 0, 60, 0); -- Prayer of Spirit (Rank 1)

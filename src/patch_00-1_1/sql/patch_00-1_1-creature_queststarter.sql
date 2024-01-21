@@ -32,7 +32,7 @@ DELETE FROM `creature_queststarter` WHERE `quest` IN (
     11498 -- Learning to Fly
 );
 
-DELETE FROM `creature_queststarter` WHERE `id` IN (550, 1661, 3631, 4487, 4488, 4489, 4490, 20735, 31439);
+DELETE FROM `creature_queststarter` WHERE (`quest` IN (550, 1661, 3631, 4487, 4488, 4489, 4490)) OR (`id` IN (20735, 31439));
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Demisette Cloyce <Warlock Trainer>
 (461, 4488), -- Summon Felsteed
