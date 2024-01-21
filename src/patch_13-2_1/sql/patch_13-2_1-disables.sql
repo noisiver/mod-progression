@@ -1,3 +1,7 @@
+DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
+    10955 -- Morthis Whisperwing
+);
+
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
     564 -- Black Temple
 );

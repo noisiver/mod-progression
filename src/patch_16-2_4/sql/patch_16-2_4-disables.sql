@@ -1,3 +1,8 @@
+DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
+    11481, -- Crisis at the Sunwell
+    11482 -- Duty Calls
+);
+
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
     580, -- Sunwell Plateau
     585 -- Magister's Terrace
