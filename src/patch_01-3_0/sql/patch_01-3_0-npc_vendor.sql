@@ -764,3 +764,248 @@ DELETE FROM `npc_vendor` WHERE `entry`=29538 AND `item` IN (
     45846, -- Leggings of Wavering Shadow
     45847 -- Wildstrider Legguards
 );
+
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    844, -- Antonio Perelli <Traveling Salesman>
+    958, -- Dawn Brightstar <Arcane Goods>
+    983, -- Thultazor <Alchemy Supplies & Reagents>
+    1257, -- Keldric Boucher <Alchemy Supplies & Reagents>
+    1275, -- Kyra Boucher <Reagents>
+    1307, -- Charys Yserian <Arcane Trinkets Vendor>
+    1308, -- Owen Vaughn <Reagents>
+    1313, -- Maria Lumere <Alchemy Supplies>
+    1351, -- Brother Cassius <Reagents>
+    1453, -- Dewin Shimmerdawn <Alchemy Supplies>
+    1463, -- Falkan Armonis <Reagents>
+    1673, -- Alyssa Eva <Reagents>
+    2380, -- Nandar Branson <Alchemy Supplies>
+    2480, -- Bro'kin <Alchemy Supplies>
+    2481, -- Bliztik <Alchemy Supplies>
+    2805, -- Deneb Walker <Reagents>
+    2812, -- Drovnar Strongbrew <Alchemy Supplies>
+    2848, -- Glyx Brewright <Alchemy Supplies>
+    3003, -- Fyr Mistrunner <Bread Vendor>
+    3010, -- Mani Winterhoof <Alchemy Supplies>
+    3014, -- Nida Winterhoof <Herbalism Supplies>
+    3017, -- Nan Mistrunner <Fruit Vendor>
+    3323, -- Horthus <Reagents>
+    3329, -- Kor'jus <Mushroom Vendor>
+    3335, -- Hagrus <Reagents>
+    3342, -- Shan'ti <Fruit Vendor>
+    3348, -- Kor'geld <Alchemy Supplies>
+    3351, -- Magenius <Reagents>
+    3405, -- Zeal'aya <Herbalism Supplies>
+    3490, -- Hula'mahi <Reagents, Herbs & Poison Supplies>
+    3500, -- Tarhus <Reagents>
+    3518, -- Thomas Miller <Baker>
+    3542, -- Jaysin Lanyda <Poisons & Reagents>
+    3548, -- Selina Weston <Alchemy & Herbalism Supplies>
+    3562, -- Alaindia <Reagents>
+    3700, -- Jadenvis Seawatcher <Reagents>
+    3956, -- Harklan Moongrove <Alchemy Supplies>
+    3970, -- Llana <Reagent Supplies>
+    4083, -- Jeeda <Apprentice Witch Doctor>
+    4169, -- Jaeana <Meat Vendor>
+    4216, -- Chardryn <Herbalism Supplies>
+    4220, -- Cyroen <Reagents>
+    4226, -- Ulthir <Alchemy Supplies>
+    4554, -- Tawny Grisette <Mushroom Vendor>
+    4562, -- Thomas Mordan <Reagents>
+    4571, -- Morley Bates <Fungus Vendor>
+    4575, -- Hannah Akeley <Reagents>
+    4610, -- Algernon <Alchemy Supplies>
+    4615, -- Katrina Alliestar <Herbalism Supplies>
+    4878, -- Montarr <Lorekeeper>
+    4899, -- Uma Bartulm <Herbalism & Alchemy Supplies>
+    4981, -- Ben Trias <Apprentice of Cheese>
+    5109, -- Myra Tyrngaarde <Bread Vendor>
+    5110, -- Barim Jurgenstaad <Reagents>
+    5111, -- Innkeeper Firebrew <Innkeeper>
+    5138, -- Gwina Stonebranch <Herbalism Supplies>
+    5151, -- Ginny Longberry <Reagents>
+    5178, -- Soolie Berryfizz <Alchemy Supplies>
+    5503, -- Eldraeith <Herbalism Supplies>
+    5594, -- Alchemist Pestlezugg <Alchemy Supplies>
+    6735, -- Innkeeper Saelienne <Innkeeper>
+    6740, -- Innkeeper Allison <Innkeeper>
+    6741, -- Innkeeper Norman <Innkeeper>
+    6746, -- Innkeeper Pala <Innkeeper>
+    6929, -- Innkeeper Gryshka <Innkeeper>
+    7978, -- Bimble Longberry <Fruit Vendor>
+    8157, -- Logannas <Alchemy Supplies>
+    8158, -- Bronk <Alchemy Supplies>
+    8177, -- Rartar <Alchemy Supplies>
+    8178, -- Nina Lightbrew <Alchemy Supplies>
+    8305, -- Kixxle <Potions & Herbs>
+    8361, -- Chepi <Reagents>
+    11188, -- Evie Whirlbrew <Alchemy Supplies>
+    13476, -- Balai Lok'Wein <Potions, Scrolls & Reagents>
+    14739, -- Mystic Yayo'jin <Reagents>
+    15165, -- Haughty Modiste <Fashion Designer>
+    15175, -- Khur Hornstriker <Reagents>
+    16015, -- Vi'el <Exotic Reagent Merchant>
+    18255, -- Apprentice Darius
+    20081, -- Bortega <Reagents & Poison Supplies>
+    29203, -- Alchemist Karloff <Corpse Dust Vendor>
+    29205, -- Corpulous <Food & Drink>
+    29288 -- Engineer Kurtis Paddock <The Assurance>
+) AND `item` IN (
+    33444, -- Pungent Seal Whey
+    33445, -- Honeymint Tea
+    33449, -- Crusty Flatbread
+    33452, -- Honey-Spiced Lichen
+    34581, -- Mysterious Arrow
+    34582, -- Mysterious Shell
+    35947, -- Sparkling Frostcap
+    35948, -- Savory Snowplum
+    35949, -- Tundra Berries
+    35950, -- Sweet Potato Bread
+    35954, -- Sweetened Goat's Milk
+    37201, -- Corpse Dust
+    37915, -- Pattern: Dress Shoes
+    38327, -- Pattern: Haliscan Jacket
+    38328, -- Pattern: Haliscan Pantaloons
+    40411, -- Enchanted Vial
+    44605, -- Wild Spineleaf
+    44614, -- Starleaf Seed
+    44615 -- Devout Candle
+);
+
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    228, -- Avette Fellwood <Bowyer>
+    734, -- Corporal Bluth <Camp Trader>
+    789, -- Kimberly Hiett <Fletcher>
+    958, -- Dawn Brightstar <Arcane Goods>
+    983, -- Thultazor <Alchemy Supplies & Reagents>
+    1149, -- Uthok <General Supplies>
+    1257, -- Keldric Boucher <Alchemy Supplies & Reagents>
+    1275, -- Kyra Boucher <Reagents>
+    1285, -- Thurman Mullby <General Goods>
+    1298, -- Frederick Stover <Bow & Arrow Merchant>
+    1307, -- Charys Yserian <Arcane Trinkets Vendor>
+    1308, -- Owen Vaughn <Reagents>
+    1351, -- Brother Cassius <Reagents>
+    1462, -- Edwina Monzor <Fletcher>
+    1463, -- Falkan Armonis <Reagents>
+    1673, -- Alyssa Eva <Reagents>
+    2084, -- Natheril Raincaller <General Goods>
+    2401, -- Kayren Soothallow <General Goods>
+    2626, -- Old Man Heming <Fishing Supplies>
+    2685, -- Mazk Snipeshot <Engineering Supplies>
+    2803, -- Malygen <General Goods>
+    2805, -- Deneb Walker <Reagents>
+    2806, -- Bale <General Goods>
+    2808, -- Vikki Lonsav <General Goods>
+    2820, -- Graud <General Goods>
+    2839, -- Haren Kanmae <Superior Bowyer>
+    2908, -- Grawl <General Goods>
+    3003, -- Fyr Mistrunner <Bread Vendor>
+    3015, -- Kuna Thunderhorn <Bowyer & Fletching Goods>
+    3017, -- Nan Mistrunner <Fruit Vendor>
+    3313, -- Trak'gen <General Goods>
+    3322, -- Kaja <Guns & Ammunition>
+    3323, -- Horthus <Reagents>
+    3329, -- Kor'jus <Mushroom Vendor>
+    3335, -- Hagrus <Reagents>
+    3342, -- Shan'ti <Fruit Vendor>
+    3350, -- Asoran <General Goods>
+    3351, -- Magenius <Reagents>
+    3410, -- Jin'sora <Bow Merchant>
+    3490, -- Hula'mahi <Reagents, Herbs & Poison Supplies>
+    3500, -- Tarhus <Reagents>
+    3518, -- Thomas Miller <Baker>
+    3541, -- Sarah Raycroft <General Goods>
+    3542, -- Jaysin Lanyda <Poisons & Reagents>
+    3562, -- Alaindia <Reagents>
+    3700, -- Jadenvis Seawatcher <Reagents>
+    3970, -- Llana <Reagent Supplies>
+    4083, -- Jeeda <Apprentice Witch Doctor>
+    4169, -- Jaeana <Meat Vendor>
+    4170, -- Ellandrieth <General Goods>
+    4173, -- Landria <Bow Merchant>
+    4220, -- Cyroen <Reagents>
+    4241, -- Mydrannul <General Goods>
+    4554, -- Tawny Grisette <Mushroom Vendor>
+    4555, -- Eleanor Rusk <General Goods>
+    4562, -- Thomas Mordan <Reagents>
+    4571, -- Morley Bates <Fungus Vendor>
+    4575, -- Hannah Akeley <Reagents>
+    4604, -- Abigail Sawyer <Bow Merchant>
+    4878, -- Montarr <Lorekeeper>
+    4892, -- Jensen Farran <Bowyer>
+    4896, -- Charity Mipsy <General Goods>
+    4981, -- Ben Trias <Apprentice of Cheese>
+    5101, -- Bryllia Ironbrand <General Goods>
+    5109, -- Myra Tyrngaarde <Bread Vendor>
+    5110, -- Barim Jurgenstaad <Reagents>
+    5111, -- Innkeeper Firebrew <Innkeeper>
+    5122, -- Skolmin Goldfury <Bow Merchant>
+    5151, -- Ginny Longberry <Reagents>
+    6028, -- Burkrum <Heavy Armor Merchant>
+    6735, -- Innkeeper Saelienne <Innkeeper>
+    6740, -- Innkeeper Allison <Innkeeper>
+    6741, -- Innkeeper Norman <Innkeeper>
+    6746, -- Innkeeper Pala <Innkeeper>
+    6929, -- Innkeeper Gryshka <Innkeeper>
+    7942, -- Faralorn <General Supplies>
+    7978, -- Bimble Longberry <Fruit Vendor>
+    8131, -- Blizrik Buckshot <Gunsmith>
+    8139, -- Jabbey <General Goods>
+    8361, -- Chepi <Reagents>
+    8362, -- Kuruk <General Goods>
+    9548, -- Cawind Trueaim <Gunsmith & Bowyer>
+    9551, -- Starn <Gunsmith & Bowyer>
+    9552, -- Zanara <Bowyer>
+    9555, -- Mu'uta <Bowyer>
+    11038, -- Caretaker Alen <The Argent Dawn>
+    11184, -- Wixxrak <Weaponsmith & Gunsmith>
+    12021, -- Daeolyn Summerleaf <General Goods>
+    12027, -- Tukk <General Goods>
+    12784, -- Lieutenant Jackspring <Reagent Vendor>
+    12784, -- Lieutenant Jackspring <Legacy Weapon Quartermaster>
+    12795, -- First Sergeant Hola'mahi <Reagent Vendor>
+    12795, -- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
+    12959, -- Nergal <General Goods>
+    12960, -- Christi Galvanis <General Goods>
+    13476, -- Balai Lok'Wein <Potions, Scrolls & Reagents>
+    14301, -- Brinna Valanaar <Bowyer>
+    14624, -- Master Smith Burninate <The Thorium Brotherhood>
+    14739, -- Mystic Yayo'jin <Reagents>
+    15174, -- Calandrath <Innkeeper>
+    15175, -- Khur Hornstriker <Reagents>
+    16015, -- Vi'el <Exotic Reagent Merchant>
+    17598, -- Renn'az <Ammunition Vendor>
+    20080, -- Galgrom <Provisioner>
+    20081, -- Bortega <Reagents & Poison Supplies>
+    23522, -- Arlen Lochlan <Bread Vendor>
+    23603, -- Uta Roughdough <Bread Vendor>
+    29203, -- Alchemist Karloff <Corpse Dust Vendor>
+    29205, -- Corpulous <Food & Drink>
+    29207, -- Gangrenus <General Goods>
+    29288 -- Engineer Kurtis Paddock <The Assurance>
+) AND `item` IN (
+    16083, -- Expert Fishing - The Bass and You
+    16084, -- Expert First Aid - Under Wraps
+    17020, -- Arcane Powder
+    17021, -- Wild Berries
+    17026, -- Wild Thornroot
+    17028, -- Holy Candle
+    17029, -- Sacred Candle
+    21177, -- Symbol of Kings
+    22147, -- Flintweed Seed
+    22148, -- Wild Quillvine
+    27855, -- Mag'har Grainbread
+    27856, -- Skethyl Berries
+    27859, -- Zangar Caps
+    28053, -- Wicked Arrow
+    28060, -- Impact Shot
+    28399 -- Filtered Draenic Water
+);
+
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Old Man Heming <Fishing Supplies>
+(2626, 0, 16083, 0, 0, 0, 0), -- Expert Fishing - The Bass and You
+-- Deneb Walker <Reagents>
+(2805, 0, 16084, 0, 0, 0, 0), -- Expert First Aid - Under Wraps
+-- Balai Lok'Wein <Potions, Scrolls & Reagents>
+(13476, 0, 16084, 0, 0, 0, 0); -- Expert First Aid - Under Wraps

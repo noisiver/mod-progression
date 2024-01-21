@@ -1,3 +1,7 @@
+DELETE FROM `creature_queststarter` WHERE `id` IN (
+    550 -- Battle of Hillsbrad
+);
+
 DELETE FROM `creature_queststarter` WHERE `id` IN (20735, 31439);
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Archmage Lan'dalock
