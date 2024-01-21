@@ -30,9 +30,6 @@ These are all the patches included with this module. Every patch includes change
 # Note
 Keep in mind that it's not complete even if there seems to be a lot done. It's not meant to be 1:1 compared to retail because with changes to spells and so forth that's impossible without client and core edits, and those kind of edits are not what I want.
 
-# Limitation
-I am currently limiting this to Wrath of the Lich King so that I can get it to the point where I would consider it to be ready for production. I might be adding The Burning Crusade afterwards followed by Vanilla, only time will tell.
-
 # Corrections
 Create issue reports for anything that isn't correct and I will look into it as soon as I have the time to. If something isn't intended to be in a certain patch, or if it is, I want to change it and would greatly appreciate reports for it.
 
