@@ -17,6 +17,7 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     15008, -- Lady Hoteshem <Arathi Basin Battlemaster>
     15070, -- Vinchaxa <Servitor of Zanza>
     15076, -- Zandalarian Emissary
+    15079, -- Fishbot 5000
     15080, -- Servant of the Hand <Hand of Rastakhan>
     19855, -- Sir Maximus Adams <Arathi Basin Battlemaster>
     19905 -- The Black Bride <Arathi Basin Battlemaster>

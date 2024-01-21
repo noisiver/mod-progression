@@ -88,6 +88,7 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     15008, -- Lady Hoteshem <Arathi Basin Battlemaster>
     15070, -- Vinchaxa <Servitor of Zanza>
     15076, -- Zandalarian Emissary
+    15079, -- Fishbot 5000
     15080, -- Servant of the Hand <Hand of Rastakhan>
     15165, -- Haughty Modiste <Fashion Designer>
     15170, -- Rutgar Glyphshaper

@@ -1,5 +1,49 @@
-DELETE FROM `creature_questender` WHERE `id` IN (20735, 31439);
+DELETE FROM `creature_questender` WHERE `quest` IN (
+    7028, -- Twisted Evils
+    7029, -- Vyletongue Corruption
+    7041, -- Vyletongue Corruption
+    7044, -- Legends of Maraudon
+    7064, -- Corruption of Earth and Seed
+    7065, -- Corruption of Earth and Seed
+    7066, -- Seed of Life
+    7067, -- The Pariah's Instructions
+    7068, -- Shadowshard Fragments
+    7070, -- Shadowshard Fragments
+    7441, -- Pusillin and the Elder Azj'Tordin
+    7481, -- Elven Legends
+    7482, -- Elven Legends
+    7492, -- Camp Mojache
+    7494, -- Feathermoon Stronghold
+    7562, -- Mor'zul Bloodbringer
+    7638, -- Lord Grayson Shadowbreaker
+    7670, -- Lord Grayson Shadowbreaker
+    8194, -- Apprentice Angler
+    8922, -- A Supernatural Device
+    8923, -- A Supernatural Device
+    10955, -- Morthis Whisperwing
+    11130, -- Oooh, Shinies!
+    11172, -- The Zeppelin Crash
+    11211, -- Help for Mudsprocket
+    11214, -- Mission to Mudsprocket
+    11215, -- Help Mudsprocket
+    11481, -- Crisis at the Sunwell
+    11482, -- Duty Calls
+    11497, -- Learning to Fly
+    11498 -- Learning to Fly
+);
+
+DELETE FROM `creature_questender` WHERE `id` IN (550, 1661, 3631, 4487, 4488, 4489, 4490, 20735, 31439);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
+-- Varimathras
+(2425, 550), -- Battle of Hillsbrad
+-- Duthorian Rall
+(6171, 1661), -- The Tome of Nobility
+-- Strahad Farsan
+(6251, 3631), -- Summon Felsteed
+(6251, 4487), -- Summon Felsteed
+(6251, 4488), -- Summon Felsteed
+(6251, 4489), -- Summon Felsteed
+(6251, 4490), -- Summon Felsteed
 -- Archmage Lan'dalock
 (20735, 13245), -- Proof of Demise: Ingvar the Plunderer
 (20735, 13246), -- Proof of Demise: Keristrasza
