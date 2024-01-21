@@ -32,7 +32,7 @@ DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
 );
 
 DELETE FROM `disables` WHERE `sourceType`=5 AND `entry` IN (
-    5 -- Grizzly Hills
+    7 -- Grizzly Hills
 );
 
 DELETE FROM `disables` WHERE `sourceType`=9 AND `entry` IN (
