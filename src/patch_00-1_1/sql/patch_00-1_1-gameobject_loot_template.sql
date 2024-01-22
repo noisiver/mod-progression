@@ -1,9 +1,14 @@
-DELETE FROM `gameobject_loot_template` WHERE (`Entry` IN (24524, 24589, 25192, 25193, 26094, 26097, 26260) AND `Item` IN (40752, 40753, 45624, 47241));
-INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
-(24524, 40752, 0, 100, 0, 1, 0, 1, 1, 'Cache of Eregos - Emblem of Heroism'),
-(24589, 40752, 0, 100, 0, 1, 0, 1, 1, 'Dark Runed Chest - Emblem of Heroism'),
-(25192, 40752, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Heroism'),
-(25193, 40753, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Valor'),
-(26094, 40752, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Heroism'),
-(26097, 40753, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Valor'),
-(26260, 40752, 0, 100, 0, 1, 0, 1, 1, 'Tribunal Chest - Emblem of Heroism');
+-- Emblem of Heroism
+UPDATE `creature_loot_template` SET `Item`=40752 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    24524, -- Cache of Eregos
+    24589, -- Dark Runed Chest
+    25192, -- Four Horsemen Chest
+    26094, -- Alexstrasza's Gift
+    26260 -- Tribunal Chest
+);
+
+-- Emblem of Valor
+UPDATE `creature_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    25193, -- Four Horsemen Chest
+    26097 -- Alexstrasza's Gift
+);

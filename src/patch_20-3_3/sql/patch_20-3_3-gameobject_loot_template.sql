@@ -1,34 +1,35 @@
-DELETE FROM `gameobject_loot_template` WHERE (`Entry` IN (24524, 24589, 25192, 25193, 26094, 26097, 26260, 26929, 26946, 26955, 26956, 26959, 26960, 26961, 26962, 26963, 26967, 26974, 27030, 27061, 27068, 27073, 27074, 27078, 27079, 27080, 27081, 27085, 27086, 27414, 27416, 27417) AND `Item` IN (40752, 40753, 45624, 47241));
-INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
-(24524, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Eregos - Emblem of Triumph'),
-(24589, 47241, 0, 100, 0, 1, 0, 1, 1, 'Dark Runed Chest - Emblem of Triumph'),
-(25192, 47241, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Triumph'),
-(25193, 47241, 0, 100, 0, 1, 0, 1, 1, 'Four Horsemen Chest - Emblem of Triumph'),
-(26094, 47241, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Triumph'),
-(26097, 47241, 0, 100, 0, 1, 0, 2, 2, 'Alexstrasza\'s Gift - Emblem of Triumph'),
-(26260, 47241, 0, 100, 0, 1, 0, 1, 1, 'Tribunal Chest - Emblem of Triumph'),
-(26929, 47241, 0, 100, 0, 1, 0, 1, 2, 'Cache of Living Stone - Emblem of Triumph'),
-(26946, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Winter - Emblem of Triumph'),
-(26955, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Storms - Emblem of Triumph'),
-(26956, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Storms - Emblem of Triumph'),
-(26959, 47241, 0, 100, 0, 1, 0, 2, 2, 'Freya\'s Gift - Emblem of Triumph'),
-(26960, 47241, 0, 100, 0, 1, 0, 2, 2, 'Freya\'s Gift - Emblem of Triumph'),
-(26961, 47241, 0, 100, 0, 1, 0, 1, 1, 'Freya\'s Gift - Emblem of Triumph'),
-(26962, 47241, 0, 100, 0, 1, 0, 1, 1, 'Freya\'s Gift - Emblem of Triumph'),
-(26963, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Innovation - Emblem of Triumph'),
-(26967, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Innovation - Emblem of Triumph'),
-(26974, 47241, 0, 100, 0, 1, 0, 2, 2, 'Gift of the Observer - Emblem of Triumph'),
-(27030, 47241, 0, 100, 0, 1, 0, 1, 1, 'Gift of the Observer - Emblem of Triumph'),
-(27061, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Living Stone - Emblem of Triumph'),
-(27068, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Winter - Emblem of Triumph'),
-(27073, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Storms - Emblem of Triumph'),
-(27074, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Storms - Emblem of Triumph'),
-(27078, 47241, 0, 100, 0, 1, 0, 3, 3, 'Freya\'s Gift - Emblem of Triumph'),
-(27079, 47241, 0, 100, 0, 1, 0, 3, 3, 'Freya\'s Gift - Emblem of Triumph'),
-(27080, 47241, 0, 100, 0, 1, 0, 3, 3, 'Freya\'s Gift - Emblem of Triumph'),
-(27081, 47241, 0, 100, 0, 1, 0, 3, 3, 'Freya\'s Gift - Emblem of Triumph'),
-(27085, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Innovation - Emblem of Triumph'),
-(27086, 47241, 0, 100, 0, 1, 0, 1, 1, 'Cache of Innovation - Emblem of Triumph'),
-(27414, 47241, 0, 100, 0, 1, 0, 1, 1, 'Champion\'s Cache - Emblem of Triumph'),
-(27416, 47241, 0, 100, 0, 1, 0, 1, 1, 'Eadric\'s Cache - Emblem of Triumph'),
-(27417, 47241, 0, 100, 0, 1, 0, 1, 1, 'Confessor\'s Cache - Emblem of Triumph');
+-- Emblem of Triumph
+UPDATE `creature_loot_template` SET `Item`=47241 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+    24524, -- Cache of Eregos
+    24589, -- Dark Runed Chest
+    25192, -- Four Horsemen Chest
+    25193, -- Four Horsemen Chest
+    26094, -- Alexstrasza's Gift
+    26097, -- Alexstrasza's Gift
+    26260, -- Tribunal Chest
+    26929, -- Cache of Living Stone
+    26946, -- Cache of Winter
+    26955, -- Cache of Storms
+    26956, -- Cache of Storms
+    26959, -- Freya's Gift
+    26960, -- Freya's Gift
+    26961, -- Freya's Gift
+    26962, -- Freya's Gift
+    26963, -- Cache of Innovation
+    26967, -- Cache of Innovation
+    26974, -- Gift of the Observer
+    27030, -- Gift of the Observer
+    27061, -- Cache of Living Stone
+    27068, -- Cache of Winter
+    27073, -- Cache of Storms
+    27074, -- Cache of Storms
+    27078, -- Freya's Gift
+    27079, -- Freya's Gift
+    27080, -- Freya's Gift
+    27081, -- Freya's Gift
+    27085, -- Cache of Innovation
+    27086, -- Cache of Innovation
+    27414, -- Champion's Cache
+    27416, -- Eadric's Cache
+    27417 -- Confessor's Cache
+);
