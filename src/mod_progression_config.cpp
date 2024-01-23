@@ -42,6 +42,8 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, PatchId >= PATCH_CALL_OF_THE_CRUSADE);
     sWorld->setBoolConfig(CONFIG_WEATHER, PatchId >= PATCH_STORMS_OF_AZEROTH);
     sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, (PatchId < PATCH_ECHOES_OF_DOOM ? 60000 : 180000));
+    if (PatchId < PATCH_ECHOES_OF_DOOM)
+        sWorld->setIntConfig(CONFIG_MAX_RECRUIT_A_FRIEND_BONUS_PLAYER_LEVEL, 0);
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
     sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
 
