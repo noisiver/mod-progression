@@ -1,4 +1,4 @@
-DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (550, 6145, 6521, 6522);
+DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (3631, 4487, 4488, 4489, 4490);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (1, 3631, 0, '', '', 'Deprecated quest: Summon Felsteed'),
 (1, 4487, 0, '', '', 'Deprecated quest: Summon Felsteed'),
