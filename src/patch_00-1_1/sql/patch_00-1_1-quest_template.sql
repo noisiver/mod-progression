@@ -43,7 +43,7 @@ UPDATE `quest_template` SET `Flags`=`Flags`&~16384 WHERE `ID` IN (
     13256 -- Proof of Demise: Cyanigosa
 );
 
-UPDATE `quest_template` SET `RewardDisplaySpell`=10846, `RewardSpell`=10846, `RewardItem2`=0, `RewardAmount2`=0 WHERE `ID` IN (
+UPDATE `quest_template` SET `RewardDisplaySpell`=10846, `RewardSpell`=19902, `RewardItem2`=0, `RewardAmount2`=0 WHERE `ID` IN (
     6622, -- Triage
     6624 -- Triage
 );
