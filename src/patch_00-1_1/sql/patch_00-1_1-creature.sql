@@ -510,6 +510,8 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     38433, -- Toravon the Ice Watcher
     38482, -- Frost Warder
     38493, -- Argent Crusader
+    39172, -- Marshal Magruder <Wintergrasp Quartermaster>
+    39173, -- Champion Ros'slai <Wintergrasp Quartermaster>
     39263, -- Disassembled Mechano-Tank
     39275, -- Gnomeregan Medic
     39349, -- Gnomeregan Trainee
