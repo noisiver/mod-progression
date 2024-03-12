@@ -1002,6 +1002,66 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     28399 -- Filtered Draenic Water
 );
 
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    39172, -- Marshal Magruder <Wintergrasp Quartermaster>
+    39173 -- Champion Ros'slai <Wintergrasp Quartermaster>
+);
+
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    32294, -- Knight Dameron <Wintergrasp Quartermaster>
+    32296 -- Stone Guard Mukar <Wintergrasp Quartermaster>
+) AND `item` IN (
+    46057, -- Titan-Forged Chestguard of Salvation
+    46058, -- Titan-Forged Breastplate of Triumph
+    46059, -- Titan-Forged Chain Armor of Triumph
+    46060, -- Titan-Forged Ringmail of Salvation
+    46061, -- Titan-Forged Mail Armor of Domination
+    46062, -- Titan-Forged Leather Tunic of Triumph
+    46063, -- Titan-Forged Leather Chestguard of Salvation
+    46064, -- Titan-Forged Leather Chestguard of Dominance
+    46065, -- Titan-Forged Raiment of Dominance
+    46066, -- Titan-Forged Raiment of Salvation
+    46071, -- Titan-Forged Girdle of Salvation
+    46072, -- Titan-Forged Girdle of Triumph
+    46073, -- Titan-Forged Waistguard of Dominance
+    46074, -- Titan-Forged Waistguard of Salvation
+    46075, -- Titan-Forged Waistguard of Triumph
+    46076, -- Titan-Forged Belt of Dominance
+    46077, -- Titan-Forged Belt of Salvation
+    46078, -- Titan-Forged Belt of Triumph
+    46079, -- Titan-Forged Cord of Dominance
+    46080, -- Titan-Forged Cord of Salvation
+    46081, -- Titan-Forged Rune of Audacity
+    46082, -- Titan-Forged Rune of Determination
+    46083, -- Titan-Forged Rune of Accuracy
+    46084, -- Titan-Forged Rune of Cruelty
+    46085, -- Titan-Forged Rune of Alacrity
+    46086, -- Platinum Disks of Battle
+    46087, -- Platinum Disks of Sorcery
+    46088, -- Platinum Disks of Swiftness
+    48974, -- Titan-Forged Armwraps of Dominance
+    48975, -- Titan-Forged Armwraps of Salvation
+    48976, -- Titan-Forged Armwraps of Triumph
+    48977, -- Titan-Forged Bracers of Salvation
+    48978, -- Titan-Forged Bracers of Triumph
+    48979, -- Titan-Forged Cuffs of Salvation
+    48980, -- Titan-Forged Wristguards of Dominance
+    48981, -- Titan-Forged Wristguards of Salvation
+    48982, -- Titan-Forged Wristguards of Triumph
+    48983, -- Titan-Forged Chain Leggings of Triumph
+    48987, -- Titan-Forged Leather Legguards of Salvation
+    48988, -- Titan-Forged Leather Legguards of Triumph
+    48990, -- Titan-Forged Mail Leggings of Dominance
+    48991, -- Titan-Forged Cloth Leggings of Salvation
+    48992, -- Titan-Forged Plate Legguards of Salvation
+    48993, -- Titan-Forged Plate Legguards of Triumph
+    48994, -- Titan-Forged Ringmail Leggings of Salvation
+    48997, -- Titan-Forged Cloth Trousers of Domination
+    48998, -- Titan-Forged Leather Legguards of Dominance
+    48999, -- Titan-Forged Band of Ascendancy
+    49000 -- Titan-Forged Band of Victory
+);
+
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
 (2626, 0, 16083, 0, 0, 0, 0), -- Expert Fishing - The Bass and You

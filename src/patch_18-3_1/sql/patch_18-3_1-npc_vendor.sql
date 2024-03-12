@@ -1,4 +1,4 @@
-DELETE FROM `npc_vendor` WHERE (`item` IN (45057, 45774, 46349)) OR (`entry`=29538 AND `item` IN (45829, 45830, 45838, 45839, 45846, 45847)) OR (`entry`=28992 AND `item` IN (45345, 45346, 45347, 45348, 45349, 45351, 45352, 45353, 45354, 45355, 45356, 45357, 45358, 45359, 45396, 45397, 45398, 45399, 45400, 45829, 45830, 45838, 45839, 45846, 45847, 46123, 46124, 46125, 46126, 46127, 46157, 46158, 46159, 46160, 46161, 46183, 46184, 46185, 46186, 46187, 46189, 46191, 46192, 46194, 46196, 46313)) OR (`entry`=34252 AND `item` IN (45335, 45336, 45337, 45338, 45339, 45340, 45341, 45342, 45343, 45344, 45370, 45371, 45372, 45373, 45374, 45375, 45376, 45377, 45379, 45380, 45381, 45382, 45383, 45384, 45385, 45424, 45425, 45426, 45427, 45428, 45429, 45430, 45431, 45432, 45433, 46111, 46113, 46115, 46116, 46117, 46118, 46119, 46120, 46121, 46122, 46146, 46148, 46149, 46150, 46151, 46152, 46153, 46154, 46155, 46156, 46162, 46164, 46166, 46167, 46169, 46173, 46174, 46175, 46176, 46177, 46178, 46179, 46180, 46181, 46182)) OR (`entry`=29523 AND `item` IN (45360, 45361, 45362, 45363, 45364, 45401, 45402, 45403, 45404, 45405, 45406, 45408, 45409, 45410, 45411, 45412, 45413, 45414, 45415, 45416, 45827, 45828, 45836, 45837, 45844, 45845, 46141, 46142, 46143, 46144, 46145, 46198, 46199, 46200, 46201, 46202, 46203, 46204, 46205, 46206, 46207, 46208, 46209, 46210, 46211, 46212)) OR (`entry`=28995 AND `item` IN (45365, 45367, 45368, 45369, 45386, 45387, 45388, 45389, 45390, 45391, 45392, 45393, 45394, 45395, 45417, 45419, 45420, 45421, 45422, 45831, 45840, 45848, 46129, 46130, 46131, 46132, 46133, 46134, 46135, 46136, 46137, 46139, 46140, 46163, 46165, 46168, 46170, 46172, 46188, 46190, 46193, 46195, 46197)) OR (`entry`=28997 AND `item` IN (45824, 45825, 45826, 45833, 45834, 45835, 45841, 45842, 45843)) OR  (`entry`=32216 AND `item` IN (25470, 25471, 25472, 25473, 25474, 25475, 25476, 25477, 25527, 25528, 25529, 25531, 25532, 25533));
+DELETE FROM `npc_vendor` WHERE (`item` IN (45057, 45774, 46349)) OR (`entry`=29538 AND `item` IN (45829, 45830, 45838, 45839, 45846, 45847)) OR (`entry`=28992 AND `item` IN (45345, 45346, 45347, 45348, 45349, 45351, 45352, 45353, 45354, 45355, 45356, 45357, 45358, 45359, 45396, 45397, 45398, 45399, 45400, 45829, 45830, 45838, 45839, 45846, 45847, 46123, 46124, 46125, 46126, 46127, 46157, 46158, 46159, 46160, 46161, 46183, 46184, 46185, 46186, 46187, 46189, 46191, 46192, 46194, 46196, 46313)) OR (`entry`=34252 AND `item` IN (45335, 45336, 45337, 45338, 45339, 45340, 45341, 45342, 45343, 45344, 45370, 45371, 45372, 45373, 45374, 45375, 45376, 45377, 45379, 45380, 45381, 45382, 45383, 45384, 45385, 45424, 45425, 45426, 45427, 45428, 45429, 45430, 45431, 45432, 45433, 46111, 46113, 46115, 46116, 46117, 46118, 46119, 46120, 46121, 46122, 46146, 46148, 46149, 46150, 46151, 46152, 46153, 46154, 46155, 46156, 46162, 46164, 46166, 46167, 46169, 46173, 46174, 46175, 46176, 46177, 46178, 46179, 46180, 46181, 46182)) OR (`entry`=29523 AND `item` IN (45360, 45361, 45362, 45363, 45364, 45401, 45402, 45403, 45404, 45405, 45406, 45408, 45409, 45410, 45411, 45412, 45413, 45414, 45415, 45416, 45827, 45828, 45836, 45837, 45844, 45845, 46141, 46142, 46143, 46144, 46145, 46198, 46199, 46200, 46201, 46202, 46203, 46204, 46205, 46206, 46207, 46208, 46209, 46210, 46211, 46212)) OR (`entry`=28995 AND `item` IN (45365, 45367, 45368, 45369, 45386, 45387, 45388, 45389, 45390, 45391, 45392, 45393, 45394, 45395, 45417, 45419, 45420, 45421, 45422, 45831, 45840, 45848, 46129, 46130, 46131, 46132, 46133, 46134, 46135, 46136, 46137, 46139, 46140, 46163, 46165, 46168, 46170, 46172, 46188, 46190, 46193, 46195, 46197)) OR (`entry`=28997 AND `item` IN (45824, 45825, 45826, 45833, 45834, 45835, 45841, 45842, 45843)) OR (`entry`=32216 AND `item` IN (25470, 25471, 25472, 25473, 25474, 25475, 25476, 25477, 25527, 25528, 25529, 25531, 25532, 25533)) OR (`Entry` IN (32294, 32296) AND `Item` IN (46057, 46058, 46059, 46060, 46061, 46062, 46063, 46064, 46065, 46066, 46071, 46072, 46073, 46074, 46075, 46076, 46077, 46078, 46079, 46080, 46081, 46082, 46083, 46084, 46085, 46086, 46087, 46088));
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Valerie Langrom <Leather Armor Merchant>
 (28992, 0, 45345, 0, 0, 2660, 0), -- Valorous Nightsong Handguards
@@ -184,6 +184,64 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (32216, 0, 25531, 0, 0, 0, 0), -- Swift Green Wind Rider
 (32216, 0, 25532, 0, 0, 0, 0), -- Swift Yellow Wind Rider
 (32216, 0, 25533, 0, 0, 0, 0), -- Swift Purple Wind Rider
+-- Knight Dameron <Wintergrasp Quartermaster>
+(32294, 0, 46057, 0, 0, 2579, 0), -- Titan-Forged Chestguard of Salvation
+(32294, 0, 46058, 0, 0, 2579, 0), -- Titan-Forged Breastplate of Triumph
+(32294, 0, 46059, 0, 0, 2579, 0), -- Titan-Forged Chain Armor of Triumph
+(32294, 0, 46060, 0, 0, 2579, 0), -- Titan-Forged Ringmail of Salvation
+(32294, 0, 46061, 0, 0, 2579, 0), -- Titan-Forged Mail Armor of Domination
+(32294, 0, 46062, 0, 0, 2579, 0), -- Titan-Forged Leather Tunic of Triumph
+(32294, 0, 46063, 0, 0, 2579, 0), -- Titan-Forged Leather Chestguard of Salvation
+(32294, 0, 46064, 0, 0, 2579, 0), -- Titan-Forged Leather Chestguard of Dominance
+(32294, 0, 46065, 0, 0, 2579, 0), -- Titan-Forged Raiment of Dominance
+(32294, 0, 46066, 0, 0, 2579, 0), -- Titan-Forged Raiment of Salvation
+(32294, 0, 46071, 0, 0, 2577, 0), -- Titan-Forged Girdle of Salvation
+(32294, 0, 46072, 0, 0, 2577, 0), -- Titan-Forged Girdle of Triumph
+(32294, 0, 46073, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Dominance
+(32294, 0, 46074, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Salvation
+(32294, 0, 46075, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Triumph
+(32294, 0, 46076, 0, 0, 2577, 0), -- Titan-Forged Belt of Dominance
+(32294, 0, 46077, 0, 0, 2577, 0), -- Titan-Forged Belt of Salvation
+(32294, 0, 46078, 0, 0, 2577, 0), -- Titan-Forged Belt of Triumph
+(32294, 0, 46079, 0, 0, 2577, 0), -- Titan-Forged Cord of Dominance
+(32294, 0, 46080, 0, 0, 2577, 0), -- Titan-Forged Cord of Salvation
+(32294, 0, 46081, 0, 0, 2578, 0), -- Titan-Forged Rune of Audacity
+(32294, 0, 46082, 0, 0, 2578, 0), -- Titan-Forged Rune of Determination
+(32294, 0, 46083, 0, 0, 2578, 0), -- Titan-Forged Rune of Accuracy
+(32294, 0, 46084, 0, 0, 2578, 0), -- Titan-Forged Rune of Cruelty
+(32294, 0, 46085, 0, 0, 2578, 0), -- Titan-Forged Rune of Alacrity
+(32294, 0, 46086, 0, 0, 2578, 0), -- Platinum Disks of Battle
+(32294, 0, 46087, 0, 0, 2578, 0), -- Platinum Disks of Sorcery
+(32294, 0, 46088, 0, 0, 2578, 0), -- Platinum Disks of Swiftness
+-- Stone Guard Mukar <Wintergrasp Quartermaster>
+(32296, 0, 46057, 0, 0, 2579, 0), -- Titan-Forged Chestguard of Salvation
+(32296, 0, 46058, 0, 0, 2579, 0), -- Titan-Forged Breastplate of Triumph
+(32296, 0, 46059, 0, 0, 2579, 0), -- Titan-Forged Chain Armor of Triumph
+(32296, 0, 46060, 0, 0, 2579, 0), -- Titan-Forged Ringmail of Salvation
+(32296, 0, 46061, 0, 0, 2579, 0), -- Titan-Forged Mail Armor of Domination
+(32296, 0, 46062, 0, 0, 2579, 0), -- Titan-Forged Leather Tunic of Triumph
+(32296, 0, 46063, 0, 0, 2579, 0), -- Titan-Forged Leather Chestguard of Salvation
+(32296, 0, 46064, 0, 0, 2579, 0), -- Titan-Forged Leather Chestguard of Dominance
+(32296, 0, 46065, 0, 0, 2579, 0), -- Titan-Forged Raiment of Dominance
+(32296, 0, 46066, 0, 0, 2579, 0), -- Titan-Forged Raiment of Salvation
+(32296, 0, 46071, 0, 0, 2577, 0), -- Titan-Forged Girdle of Salvation
+(32296, 0, 46072, 0, 0, 2577, 0), -- Titan-Forged Girdle of Triumph
+(32296, 0, 46073, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Dominance
+(32296, 0, 46074, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Salvation
+(32296, 0, 46075, 0, 0, 2577, 0), -- Titan-Forged Waistguard of Triumph
+(32296, 0, 46076, 0, 0, 2577, 0), -- Titan-Forged Belt of Dominance
+(32296, 0, 46077, 0, 0, 2577, 0), -- Titan-Forged Belt of Salvation
+(32296, 0, 46078, 0, 0, 2577, 0), -- Titan-Forged Belt of Triumph
+(32296, 0, 46079, 0, 0, 2577, 0), -- Titan-Forged Cord of Dominance
+(32296, 0, 46080, 0, 0, 2577, 0), -- Titan-Forged Cord of Salvation
+(32296, 0, 46081, 0, 0, 2578, 0), -- Titan-Forged Rune of Audacity
+(32296, 0, 46082, 0, 0, 2578, 0), -- Titan-Forged Rune of Determination
+(32296, 0, 46083, 0, 0, 2578, 0), -- Titan-Forged Rune of Accuracy
+(32296, 0, 46084, 0, 0, 2578, 0), -- Titan-Forged Rune of Cruelty
+(32296, 0, 46085, 0, 0, 2578, 0), -- Titan-Forged Rune of Alacrity
+(32296, 0, 46086, 0, 0, 2578, 0), -- Platinum Disks of Battle
+(32296, 0, 46087, 0, 0, 2578, 0), -- Platinum Disks of Sorcery
+(32296, 0, 46088, 0, 0, 2578, 0), -- Platinum Disks of Swiftness
 -- Dubin Clay
 (34252, 0, 45335, 0, 0, 2666, 0), -- Valorous Darkruned Chestguard
 (34252, 0, 45336, 0, 0, 2668, 0), -- Valorous Darkruned Faceguard

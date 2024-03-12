@@ -20,9 +20,7 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     37968, -- Argent Hippogryph
     38433, -- Toravon the Ice Watcher
     38482, -- Frost Warder
-    38493, -- Argent Crusader
-    39172, -- Marshal Magruder <Wintergrasp Quartermaster>
-    39173 -- Champion Ros'slai <Wintergrasp Quartermaster>
+    38493 -- Argent Crusader
 );
 
 UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (

@@ -1,7 +1,51 @@
-DELETE FROM `npc_vendor` WHERE (`item` IN (48677, 48683, 48685, 48687, 48689, 48691, 48718, 49177)) OR (`entry`=35496 AND `item` IN (47748, 47749, 47750, 47751, 47752, 47773, 47774, 47775, 47776, 47777, 47783, 47784, 47785, 47786, 47787, 47798, 47799, 47800, 47801, 47802, 47914, 47936, 47980, 47981, 47982, 48067, 48068, 48069, 48070, 48071, 48072, 48073, 48074, 48075, 48076, 48097, 48098, 48099, 48100, 48101)) OR (`entry`=35500 AND `item` IN (48250, 48251, 48252, 48253, 48254, 48275, 48276, 48277, 48278, 48279, 48280, 48281, 48282, 48283, 48284, 48295, 48296, 48297, 48298, 48299, 48310, 48312, 48313, 48314, 48315, 48336, 48337, 48338, 48339, 48340, 48341, 48342, 48343, 48344, 48345, 48366, 48367, 48368, 48369, 48370)) OR (`entry`=35497 AND `item` IN (48102, 48129, 48130, 48131, 48132, 48153, 48154, 48155, 48156, 48157, 48158, 48159, 48160, 48161, 48162, 48183, 48184, 48185, 48186, 48187, 48188, 48189, 48190, 48191, 48192, 48213, 48214, 48215, 48216, 48217, 48218, 48219, 48220, 48221, 48222, 48243, 48244, 48245, 48246, 48247)) OR (`entry`=35498 AND `item` IN (48386, 48387, 48388, 48389, 48390, 48456, 48457, 48458, 48459, 48460, 48501, 48502, 48503, 48504, 48505, 48558, 48559, 48560, 48561, 48562, 48595, 48596, 48597, 48598, 48599, 48627, 48628, 48629, 48630, 48631, 48652, 48653, 48654, 48655, 48656)) OR (`entry`=34252 AND `item` IN (48371, 48372, 48373, 48374, 48375, 48429, 48436, 48445, 48448, 48449, 48472, 48474, 48476, 48478, 48480, 48529, 48531, 48533, 48535, 48537, 48564, 48566, 48568, 48572, 48574, 48602, 48603, 48604, 48605, 48606, 48632, 48633, 48634, 48635, 48636));
+DELETE FROM `npc_vendor` WHERE (`item` IN (48677, 48683, 48685, 48687, 48689, 48691, 48718, 49177)) OR (`entry`=35496 AND `item` IN (47748, 47749, 47750, 47751, 47752, 47773, 47774, 47775, 47776, 47777, 47783, 47784, 47785, 47786, 47787, 47798, 47799, 47800, 47801, 47802, 47914, 47936, 47980, 47981, 47982, 48067, 48068, 48069, 48070, 48071, 48072, 48073, 48074, 48075, 48076, 48097, 48098, 48099, 48100, 48101)) OR (`entry`=35500 AND `item` IN (48250, 48251, 48252, 48253, 48254, 48275, 48276, 48277, 48278, 48279, 48280, 48281, 48282, 48283, 48284, 48295, 48296, 48297, 48298, 48299, 48310, 48312, 48313, 48314, 48315, 48336, 48337, 48338, 48339, 48340, 48341, 48342, 48343, 48344, 48345, 48366, 48367, 48368, 48369, 48370)) OR (`entry`=35497 AND `item` IN (48102, 48129, 48130, 48131, 48132, 48153, 48154, 48155, 48156, 48157, 48158, 48159, 48160, 48161, 48162, 48183, 48184, 48185, 48186, 48187, 48188, 48189, 48190, 48191, 48192, 48213, 48214, 48215, 48216, 48217, 48218, 48219, 48220, 48221, 48222, 48243, 48244, 48245, 48246, 48247)) OR (`entry`=35498 AND `item` IN (48386, 48387, 48388, 48389, 48390, 48456, 48457, 48458, 48459, 48460, 48501, 48502, 48503, 48504, 48505, 48558, 48559, 48560, 48561, 48562, 48595, 48596, 48597, 48598, 48599, 48627, 48628, 48629, 48630, 48631, 48652, 48653, 48654, 48655, 48656)) OR (`entry`=34252 AND `item` IN (48371, 48372, 48373, 48374, 48375, 48429, 48436, 48445, 48448, 48449, 48472, 48474, 48476, 48478, 48480, 48529, 48531, 48533, 48535, 48537, 48564, 48566, 48568, 48572, 48574, 48602, 48603, 48604, 48605, 48606, 48632, 48633, 48634, 48635, 48636)) OR (`Entry` IN (32294, 32296) AND `Item` IN (32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294, 32294));
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Hira Snowdawn <Cold Weather Flying Trainer>
 (31238, 0, 49177, 0, 0, 0, 0), -- Tome of Cold Weather Flight
+-- Knight Dameron <Wintergrasp Quartermaster>
+(32294, 0, 48974, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Dominance
+(32294, 0, 48975, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Salvation
+(32294, 0, 48976, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Triumph
+(32294, 0, 48977, 0, 0, 2577, 0), -- Titan-Forged Bracers of Salvation
+(32294, 0, 48978, 0, 0, 2577, 0), -- Titan-Forged Bracers of Triumph
+(32294, 0, 48979, 0, 0, 2577, 0), -- Titan-Forged Cuffs of Salvation
+(32294, 0, 48980, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Dominance
+(32294, 0, 48981, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Salvation
+(32294, 0, 48982, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Triumph
+(32294, 0, 48983, 0, 0, 2579, 0), -- Titan-Forged Chain Leggings of Triumph
+(32294, 0, 48987, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Salvation
+(32294, 0, 48988, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Triumph
+(32294, 0, 48990, 0, 0, 2579, 0), -- Titan-Forged Mail Leggings of Dominance
+(32294, 0, 48991, 0, 0, 2579, 0), -- Titan-Forged Cloth Leggings of Salvation
+(32294, 0, 48992, 0, 0, 2579, 0), -- Titan-Forged Plate Legguards of Salvation
+(32294, 0, 48993, 0, 0, 2579, 0), -- Titan-Forged Plate Legguards of Triumph
+(32294, 0, 48994, 0, 0, 2579, 0), -- Titan-Forged Ringmail Leggings of Salvation
+(32294, 0, 48997, 0, 0, 2579, 0), -- Titan-Forged Cloth Trousers of Domination
+(32294, 0, 48998, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Dominance
+(32294, 0, 48999, 0, 0, 2577, 0), -- Titan-Forged Band of Ascendancy
+(32294, 0, 49000, 0, 0, 2577, 0), -- Titan-Forged Band of Victory
+-- Stone Guard Mukar <Wintergrasp Quartermaster>
+(32296, 0, 48974, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Dominance
+(32296, 0, 48975, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Salvation
+(32296, 0, 48976, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Triumph
+(32296, 0, 48977, 0, 0, 2577, 0), -- Titan-Forged Bracers of Salvation
+(32296, 0, 48978, 0, 0, 2577, 0), -- Titan-Forged Bracers of Triumph
+(32296, 0, 48979, 0, 0, 2577, 0), -- Titan-Forged Cuffs of Salvation
+(32296, 0, 48980, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Dominance
+(32296, 0, 48981, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Salvation
+(32296, 0, 48982, 0, 0, 2577, 0), -- Titan-Forged Wristguards of Triumph
+(32296, 0, 48983, 0, 0, 2579, 0), -- Titan-Forged Chain Leggings of Triumph
+(32296, 0, 48987, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Salvation
+(32296, 0, 48988, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Triumph
+(32296, 0, 48990, 0, 0, 2579, 0), -- Titan-Forged Mail Leggings of Dominance
+(32296, 0, 48991, 0, 0, 2579, 0), -- Titan-Forged Cloth Leggings of Salvation
+(32296, 0, 48992, 0, 0, 2579, 0), -- Titan-Forged Plate Legguards of Salvation
+(32296, 0, 48993, 0, 0, 2579, 0), -- Titan-Forged Plate Legguards of Triumph
+(32296, 0, 48994, 0, 0, 2579, 0), -- Titan-Forged Ringmail Leggings of Salvation
+(32296, 0, 48997, 0, 0, 2579, 0), -- Titan-Forged Cloth Trousers of Domination
+(32296, 0, 48998, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Dominance
+(32296, 0, 48999, 0, 0, 2577, 0), -- Titan-Forged Band of Ascendancy
+(32296, 0, 49000, 0, 0, 2577, 0), -- Titan-Forged Band of Victory
 -- Dubin Clay <Plate Armor Merchant>
 (34252, 0, 48371, 0, 0, 2686, 0), -- Wrynn's Helmet of Conquest
 (34252, 0, 48372, 0, 0, 2686, 0), -- Wrynn's Battleplate of Conquest
