@@ -20,7 +20,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     37968, -- Argent Hippogryph
     38433, -- Toravon the Ice Watcher
     38482, -- Frost Warder
-    38493 -- Argent Crusader
+    38493, -- Argent Crusader
+    40160 -- Frozo the Renowned <Frozen Orb Trader>
 );
 
 UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (

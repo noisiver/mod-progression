@@ -520,7 +520,8 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     39711, -- Mechano-Tank Attack Target
     39715, -- Ejector Mechano-Tank
     39716, -- Scuttling Mechano-Tank
-    39717 -- Shooting Mechano-Tank
+    39717, -- Shooting Mechano-Tank
+    40160 -- Frozo the Renowned <Frozen Orb Trader>
 );
 
 UPDATE `creature` SET `phaseMask`=16384 WHERE `guid` IN (
