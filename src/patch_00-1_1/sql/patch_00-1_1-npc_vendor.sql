@@ -190,6 +190,32 @@ DELETE FROM `npc_vendor` WHERE `entry`=28997 AND `item` IN (
     45843 -- Legguards of the Peaceful Covenant
 );
 
+-- Harold Winston <Jewelry Vendor>
+DELETE FROM `npc_vendor` WHERE `entry`=32172 AND `item` IN (
+    45688, -- Inscribed Band of the Kirin Tor
+    45689, -- Inscribed Loop of the Kirin Tor
+    45690, -- Inscribed Ring of the Kirin Tor
+    45691, -- Inscribed Signet of the Kirin Tor
+    45819, -- Spiked Battleguard Choker
+    45820, -- Broach of the Wailing Night
+    45821, -- Shard of the Crystal Forest
+    45822, -- Evoker's Charm
+    45823, -- Frozen Tear of Elune
+    47729, -- Bloodshed Band
+    47730, -- Dexterous Brightstone Ring
+    47731, -- Clutch of Fortification
+    47732, -- Band of the Invoker
+    47733, -- Heartmender Circle
+    48954, -- Etched Band of the Kirin Tor
+    48955, -- Etched Loop of the Kirin Tor
+    48956, -- Etched Ring of the Kirin Tor
+    48957, -- Etched Signet of the Kirin Tor
+    51557, -- Runed Signet of the Kirin Tor
+    51558, -- Runed Loop of the Kirin Tor
+    51559, -- Runed Ring of the Kirin Tor
+    51560 -- Runed Band of the Kirin Tor
+);
+
 -- Dubin Clay <Plate Armor Merchant>
 DELETE FROM `npc_vendor` WHERE `entry`=34252 AND `item` IN (
     45335, -- Valorous Darkruned Chestguard
