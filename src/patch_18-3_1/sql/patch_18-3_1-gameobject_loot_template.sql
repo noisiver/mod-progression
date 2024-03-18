@@ -1,5 +1,5 @@
 -- Emblem of Valor
-UPDATE `creature_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+UPDATE `gameobject_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
     26956, -- Cache of Storms
     26962, -- Freya's Gift
     27030, -- Gift of the Observer
@@ -11,7 +11,7 @@ UPDATE `creature_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 
 );
 
 -- Emblem of Conquest
-UPDATE `creature_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
+UPDATE `gameobject_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
     26929, -- Cache of Living Stone
     26946, -- Cache of Winter
     26955, -- Cache of Storms
