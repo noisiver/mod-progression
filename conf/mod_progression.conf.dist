@@ -62,6 +62,15 @@ Progression.QuestInfo.Enforced = 1
 Progression.DungeonFinder.Enforced = 1
 
 #
+#    Progression.DualTalent.Enforced
+#        Description: Enforce the availability of dual talent specialization based on the active patch
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.DualTalent.Enforced = 1
+
+#
 #    Progression.Reset
 #        Description: Reapply all SQL files on startup
 #                     This is useful when moving to an older patch, after making changes or to make sure it's up-to-date

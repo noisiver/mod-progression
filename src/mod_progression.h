@@ -145,6 +145,7 @@ private:
     uint32 AuraId;
     bool EnforceQuestInfo;
     bool EnforceDungeonFinder;
+    bool EnforceDualTalent;
 
     inline std::vector<std::string> GetActivePatches();
 };

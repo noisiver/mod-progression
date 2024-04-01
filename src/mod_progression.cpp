@@ -8,6 +8,7 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
     AuraId = 4;
     EnforceQuestInfo = true;
     EnforceDungeonFinder = true;
+    EnforceDualTalent = true;
 }
 
 void AddSC_boss_lord_kazzak_progression();
