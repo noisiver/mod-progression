@@ -2,6 +2,7 @@
 #define MOD_PROGRESSION
 
 #include "ScriptMgr.h"
+#include "WardenWin.h"
 
 enum Patches
 {
@@ -107,7 +108,7 @@ enum
     FACTION_EXODAR                 = 930
 };
 
-class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, WorldScript
+class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
 {
 public:
     Progression();
@@ -137,6 +138,9 @@ public:
     void ModifySpellDamageTaken(Unit* /*target*/, Unit* /*attacker*/, int32& /*damage*/, SpellInfo const* /*spellInfo*/) override;
     void ModifyHealReceived(Unit* /*target*/, Unit* /*healer*/, uint32& /*heal*/, SpellInfo const* /*spellInfo*/) override;
 
+    // ServerScript
+    bool CanPacketSend(WorldSession* /*session*/, WorldPacket& /*packet*/) override;
+
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
 
@@ -148,6 +152,14 @@ private:
     bool EnforceDualTalent;
 
     inline std::vector<std::string> GetActivePatches();
+
+    std::vector<std::string> GetChunks(std::string /*s*/, uint8_t /*chunkSize*/);
+    void SendChunkedPayload(Warden* /*warden*/, std::string /*payload*/, uint32 /*chunkSize*/);
+    std::string _prePayload = "wlbuf = '';";
+    std::string _postPayload = "loadstring(wlbuf)();wlbuf = nil;";
+    uint16 _prePayloadId = 5500;
+    uint16 _postPayloadId = 5501;
+    uint16 _tmpPayloadId = 5502;
 };
 
 #endif
