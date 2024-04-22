@@ -26,6 +26,9 @@ void Progression::OnUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newAre
     if (player->IsGameMaster())
         return;
 
+    if (player->IsInFlight())
+        return;
+
     if (PatchId < PATCH_SECRETS_OF_ULDUAR)
     {
         if (newArea == AREA_ARGENT_TOURNAMENT_GROUNDS)
