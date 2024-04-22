@@ -393,6 +393,9 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     31146, -- Heroic Training Dummy
     32666, -- Expert's Training Dummy
     32667, -- Master's Training Dummy
+    33211, -- Lake Frog
+    33224, -- Lake Frog
+    33303, -- Maiden of Winter's Breath Lake
     33608, -- Alchemy
     33609, -- Blacksmithing
     33610, -- Enchanting

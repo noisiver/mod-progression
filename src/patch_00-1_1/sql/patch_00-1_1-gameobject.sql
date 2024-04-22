@@ -86,6 +86,8 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     190711, -- Barbershop Chair
     190712, -- Barbershop Chair
     193981, -- Lexicon of Power
+    194213, -- Winter Hyacinth
+    194237, -- Drak'Mar Brazier
     194498, -- Gnomeregan Banner
     195141, -- Portal to Blasted Lands
     195142, -- Portal to Blasted Lands

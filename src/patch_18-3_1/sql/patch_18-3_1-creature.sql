@@ -1,4 +1,7 @@
 UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
+    33211, -- Lake Frog
+    33224, -- Lake Frog
+    33303, -- Maiden of Winter's Breath Lake
     33608, -- Alchemy
     33609, -- Blacksmithing
     33610, -- Enchanting
