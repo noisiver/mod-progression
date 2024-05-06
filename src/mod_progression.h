@@ -112,6 +112,7 @@ class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, Pl
 {
 public:
     Progression();
+    static Progression* instance();
 
     // AllBattlegroundScript
     void OnBattlegroundEndReward(Battleground* /*bg*/, Player* /*player*/, TeamId /*winnerTeamId*/) override;
@@ -144,6 +145,13 @@ public:
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
 
+    // Progression
+    uint32 GetPatchId() { return PatchId; }
+    uint32 GetAuraId() { return AuraId; }
+    bool IsQuestInfoEnforced() { return EnforceQuestInfo; }
+    bool IsDungeonFinderEnforced() { return EnforceDungeonFinder; }
+    bool IsDualTalentEnforced() { return EnforceDualTalent; }
+
 private:
     uint32 PatchId;
     uint32 AuraId;
@@ -161,5 +169,7 @@ private:
     uint16 _postPayloadId = 5501;
     uint16 _tmpPayloadId = 5502;
 };
+
+#define sProgression Progression::instance()
 
 #endif
