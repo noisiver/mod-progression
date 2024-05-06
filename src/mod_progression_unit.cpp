@@ -11,7 +11,7 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
     if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
         return;
 
-    if (sProgression->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (PatchId < PATCH_ECHOES_OF_DOOM)
         damage *= 0.7f;
 }
 
@@ -24,7 +24,7 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
     if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
         return;
 
-    if (sProgression->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (PatchId < PATCH_ECHOES_OF_DOOM)
         damage *= 0.7f;
 }
 
@@ -37,7 +37,7 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
     if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
         return;
 
-    if (sProgression->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (PatchId < PATCH_ECHOES_OF_DOOM)
         damage *= 0.7f;
 }
 
@@ -56,6 +56,6 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
     if (spellInfo->Id == SPELL_RUNE_TAP || spellInfo->Id == SPELL_LIFE_STEAL)
         return;
 
-    if (sProgression->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (PatchId < PATCH_ECHOES_OF_DOOM)
         heal *= 0.65f;
 }
