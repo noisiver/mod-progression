@@ -147,10 +147,7 @@ public:
 
     // Progression
     uint32 GetPatchId() { return PatchId; }
-    uint32 GetAuraId() { return AuraId; }
-    bool IsQuestInfoEnforced() { return EnforceQuestInfo; }
-    bool IsDungeonFinderEnforced() { return EnforceDungeonFinder; }
-    bool IsDualTalentEnforced() { return EnforceDualTalent; }
+    void SetPatchId(uint32 id) { PatchId = id; }
 
 private:
     uint32 PatchId;

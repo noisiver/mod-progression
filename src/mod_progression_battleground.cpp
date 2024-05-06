@@ -4,7 +4,7 @@
 
 void Progression::OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId)
 {
-    if (PatchId >= PATCH_FALL_OF_THE_LICH_KING)
+    if (sProgression->GetPatchId() >= PATCH_FALL_OF_THE_LICH_KING)
         return;
 
     if (player->IsGameMaster())
