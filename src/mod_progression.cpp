@@ -11,6 +11,12 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
     EnforceDualTalent = true;
 }
 
+Progression* Progression::instance()
+{
+    static Progression instance;
+    return &instance;
+}
+
 void AddSC_boss_lord_kazzak_progression();
 void AddSC_instance_blackrock_spire_progression();
 void AddSC_npc_archmage_landalock_progression();
