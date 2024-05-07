@@ -167,7 +167,9 @@ public:
                     }
 
                     if (GetBossState(DATA_GYTH) == DONE)
+                    {
                         creature->DisappearAndDie();
+                    }
                     break;
                 case NPC_GYTH:
                     Gyth = creature->GetGUID();
@@ -203,87 +205,121 @@ public:
                 case GO_DOORS:
                     go_doors = go->GetGUID();
                     if (GetBossState(DATA_DRAGONSPIRE_ROOM) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_EMBERSEER_OUT:
                     go_emberseerout = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_HALL_RUNE_1:
                     go_roomrunes[0] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_1) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_2:
                     go_roomrunes[1] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_2) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_3:
                     go_roomrunes[2] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_3) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_4:
                     go_roomrunes[3] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_4) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_5:
                     go_roomrunes[4] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_5) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_6:
                     go_roomrunes[5] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_6) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_HALL_RUNE_7:
                     go_roomrunes[6] = go->GetGUID();
                     if (GetBossState(DATA_HALL_RUNE_7) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_1:
                     go_emberseerrunes[0] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_2:
                     go_emberseerrunes[1] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_3:
                     go_emberseerrunes[2] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_4:
                     go_emberseerrunes[3] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_5:
                     go_emberseerrunes[4] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_6:
                     go_emberseerrunes[5] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_EMBERSEER_RUNE_7:
                     go_emberseerrunes[6] = go->GetGUID();
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, false, go);
+                    }
                     break;
                 case GO_PORTCULLIS_ACTIVE:
                     go_portcullis_active = go->GetGUID();
                     if (GetBossState(DATA_GYTH) == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_UROK_PILE:
                     go_urokPile = go->GetGUID();
@@ -297,37 +333,51 @@ public:
                 case GO_DRAGONSPINE_DOOR:
                     go_dragonspineDoor = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_1:
                     go_darkIronBraziers[0] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_2:
                     go_darkIronBraziers[1] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_3:
                     go_darkIronBraziers[2] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_4:
                     go_darkIronBraziers[3] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_5:
                     go_darkIronBraziers[4] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 case GO_DARK_IRON_BRAZIER_6:
                     go_darkIronBraziers[5] = go->GetGUID();
                     if (UbrsDoorState == DONE)
+                    {
                         HandleGameObject(ObjectGuid::Empty, true, go);
+                    }
                     break;
                 default:
                     break;
@@ -372,7 +422,9 @@ public:
                     if (GetBossState(DATA_PYROGAURD_EMBERSEER) == NOT_STARTED)
                     {
                         if (Creature* Emberseer = instance->GetCreature(PyroguardEmberseer))
+                        {
                             Emberseer->AI()->SetData(1, 1);
+                        }
                     }
                     break;
                 case EVENT_UROK_DOOMHOWL:
@@ -398,13 +450,17 @@ public:
                     if (data == AREATRIGGER_DRAGONSPIRE_HALL)
                     {
                         if (GetBossState(DATA_DRAGONSPIRE_ROOM) != DONE)
+                        {
                             Events.ScheduleEvent(EVENT_DRAGONSPIRE_ROOM_STORE, 1s);
+                        }
                     }
 
                     if (data == DATA_DRAGONSPINE_DOOR)
                     {
                         if (UbrsDoorState == NOT_STARTED)
+                        {
                             Events.ScheduleEvent(EVENT_DRAGONSPINE_DOOR_STAGE_1, 3s);
+                        }
                     }
                     break;
                 case DATA_SOLAKAR_FLAMEWREATH:
@@ -628,7 +684,9 @@ public:
                     case EVENT_DRAGONSPIRE_ROOM_CHECK:
                         Dragonspireroomcheck();
                         if ((GetBossState(DATA_DRAGONSPIRE_ROOM) != DONE))
+                        {
                             Events.ScheduleEvent(EVENT_DRAGONSPIRE_ROOM_CHECK, 3s);
+                        }
                         break;
                     case EVENT_SOLAKAR_WAVE:
                         SummonSolakarWave(CurrentSolakarWave);
@@ -641,31 +699,45 @@ public:
                     case EVENT_DRAGONSPINE_DOOR_STAGE_1:
                         UbrsDoorState = IN_PROGRESS;
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[0]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[1]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
 
                         Events.ScheduleEvent(EVENT_DRAGONSPINE_DOOR_STAGE_2, 3s);
                         break;
                     case EVENT_DRAGONSPINE_DOOR_STAGE_2:
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[2]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[3]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
 
                         Events.ScheduleEvent(EVENT_DRAGONSPINE_DOOR_STAGE_3, 3s);
                         break;
                     case EVENT_DRAGONSPINE_DOOR_STAGE_3:
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[4]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
                         if (GameObject* go = instance->GetGameObject(go_darkIronBraziers[5]))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
 
                         Events.ScheduleEvent(EVENT_DRAGONSPINE_DOOR_STAGE_4, 3s);
                         break;
                     case EVENT_DRAGONSPINE_DOOR_STAGE_4:
                         if (GameObject* go = instance->GetGameObject(go_dragonspineDoor))
+                        {
                             go->SetGoState(GO_STATE_ACTIVE);
+                        }
 
                         UbrsDoorState = DONE;
                         break;
@@ -711,7 +783,9 @@ public:
                 bool _mobAlive = false;
                 rune = instance->GetGameObject(go_roomrunes[i]);
                 if (!rune)
+                {
                     continue;
+                }
 
                 if (rune->GetGoState() == GO_STATE_ACTIVE)
                 {
@@ -719,7 +793,9 @@ public:
                     {
                         mob = instance->GetCreature(guid);
                         if (mob && mob->IsAlive())
+                        {
                             _mobAlive = true;
+                        }
                     }
                 }
 
@@ -762,11 +838,17 @@ public:
             {
                 SetBossState(DATA_DRAGONSPIRE_ROOM, DONE);
                 if (GameObject* door1 = instance->GetGameObject(go_emberseerin))
+                {
                     HandleGameObject(ObjectGuid::Empty, true, door1);
+                }
                 if (GameObject* door2 = instance->GetGameObject(go_doors))
+                {
                     HandleGameObject(ObjectGuid::Empty, true, door2);
+                }
                 if (GameObject* door3 = instance->GetGameObject(go_emberseerin))
+                {
                     HandleGameObject(ObjectGuid::Empty, true, door3);
+                }
             }
         }
 
@@ -829,7 +911,9 @@ public:
                 instance->SetData(AREATRIGGER, AREATRIGGER_DRAGONSPIRE_HALL);
 
                 if (player->HasItemCount(ITEM_SEAL_OF_ASCENSION, 1))
+                {
                     instance->SetData(AREATRIGGER, DATA_DRAGONSPINE_DOOR);
+                }
 
                 return true;
             }

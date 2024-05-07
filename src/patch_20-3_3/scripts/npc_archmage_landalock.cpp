@@ -124,17 +124,23 @@ public:
                     uint32 questId = i->second;
                     Quest const* quest = sObjectMgr->GetQuestTemplate(questId);
                     if (!quest || !quest->IsWeekly())
+                    {
                         continue;
+                    }
 
                     uint32 newEntry = GetImageEntry(questId);
                     if (_summonGUID.GetEntry() != newEntry)
                     {
                         if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
+                        {
                             image->DespawnOrUnsummon();
+                        }
 
                         float z = 653.622f;
                         if (newEntry == NPC_MALYGOS_IMAGE || newEntry == NPC_RAZORSCALE_IMAGE || newEntry == NPC_SARTHARION_IMAGE)
+                        {
                             z += 3.0f;
+                        }
                         me->SummonCreature(newEntry, 5703.077f, 583.9757f, z, 3.926991f);
                     }
                 }

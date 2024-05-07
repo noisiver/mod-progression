@@ -5,7 +5,9 @@
 void Progression::OnAfterConfigLoad(bool reload)
 {
     if (reload)
+    {
         return;
+    }
 
     PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
     AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
@@ -14,7 +16,9 @@ void Progression::OnAfterConfigLoad(bool reload)
     EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
 
     if (PatchId > PATCH_ASSAULT_ON_THE_RUBY_SANCTUM || PatchId < PATCH_WORLD_OF_WARCRAFT)
+    {
         PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
+    }
 
     if (PatchId < PATCH_BEFORE_THE_STORM)
     {
@@ -35,7 +39,9 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
     if (EnforceDungeonFinder)
+    {
         sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
+    }
     sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR && EnforceDualTalent ? 255 : 40));
     sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
     sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
@@ -44,7 +50,9 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setBoolConfig(CONFIG_WEATHER, PatchId >= PATCH_STORMS_OF_AZEROTH);
     sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, (PatchId < PATCH_ECHOES_OF_DOOM ? 60000 : 180000));
     if (PatchId < PATCH_ECHOES_OF_DOOM)
+    {
         sWorld->setIntConfig(CONFIG_MAX_RECRUIT_A_FRIEND_BONUS_PLAYER_LEVEL, 0);
+    }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
     sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
 

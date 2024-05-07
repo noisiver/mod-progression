@@ -128,19 +128,27 @@ public:
                     uint32 questId = i->second;
                     Quest const* quest = sObjectMgr->GetQuestTemplate(questId);
                     if (!quest || !quest->IsDaily())
+                    {
                         continue;
+                    }
 
                     uint32 newEntry = GetImageEntry(questId);
                     if (_summonGUID.GetEntry() != newEntry)
                     {
                         if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
+                        {
                             image->DespawnOrUnsummon();
+                        }
 
                         float z = 653.622f;
                         if (newEntry == NPC_KERISTRASZA_IMAGE || newEntry == NPC_THE_PROPHET_THARON_JA_IMAGE)
+                        {
                             z += 1.0f;
+                        }
                         else if (newEntry == NPC_LEY_GUARDIAN_EREGOS_IMAGE)
+                        {
                             z += 1.9f;
+                        }
 
                         me->SummonCreature(newEntry, 5703.077f, 583.9757f, z, 3.926991f);
                     }
