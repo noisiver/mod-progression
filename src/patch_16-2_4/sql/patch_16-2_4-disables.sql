@@ -1,6 +1,7 @@
 DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
     11481, -- Crisis at the Sunwell
-    11482 -- Duty Calls
+    11482, -- Duty Calls
+    11880 -- The Multiphase Survey
 );
 
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
