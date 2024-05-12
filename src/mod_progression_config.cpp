@@ -14,6 +14,8 @@ void Progression::OnAfterConfigLoad(bool reload)
     EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
     EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
     EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
+    DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.8f);
+    HealingModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", 0.75f);
 
     if (PatchId > PATCH_ASSAULT_ON_THE_RUBY_SANCTUM || PatchId < PATCH_WORLD_OF_WARCRAFT)
     {

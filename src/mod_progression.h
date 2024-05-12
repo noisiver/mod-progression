@@ -150,6 +150,8 @@ private:
     bool EnforceQuestInfo;
     bool EnforceDungeonFinder;
     bool EnforceDualTalent;
+    float DamageModifier;
+    float HealingModifier;
 
     inline std::vector<std::string> GetActivePatches();
 
