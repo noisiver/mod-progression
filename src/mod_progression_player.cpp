@@ -92,3 +92,11 @@ void Progression::OnQuestComputeXP(Player* /*player*/, Quest const* quest, uint3
         xpValue = uint32(ceilf(xpValue / 1.428571429f));
     }
 }
+
+void Progression::OnGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
+{
+    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && PatchId < PATCH_CALL_OF_THE_CRUSADE)
+    {
+        amount = 0;
+    }
+}
