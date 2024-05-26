@@ -171,6 +171,7 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 -- Sairuk <Kalu'ak Quartermaster>
 (32763, 0, 45774, 0, 0, 0, 0), -- Pattern: Emerald Bag
 -- Harold Winston <Jewelry Vendor>
+(32172, 0, 45688, 0, 0, 2592, 0), -- Inscribed Band of the Kirin Tor
 (32172, 0, 45690, 0, 0, 2594, 0), -- Inscribed Ring of the Kirin Tor
 (32172, 0, 45691, 0, 0, 2595, 0), -- Inscribed Signet of the Kirin Tor
 (32172, 0, 45689, 0, 0, 2593, 0), -- Inscribed Loop of the Kirin Tor
