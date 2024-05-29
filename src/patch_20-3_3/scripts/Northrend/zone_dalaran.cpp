@@ -152,7 +152,7 @@ public:
     };
 };
 
-void AddSC_npc_archmage_landalock_default()
+void AddSC_zone_dalaran_default()
 {
     new npc_archmage_landalock_default();
 }

@@ -15,9 +15,8 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
 
 void AddSC_boss_lord_kazzak_progression();
 void AddSC_instance_blackrock_spire_progression();
-void AddSC_npc_archmage_landalock_progression();
-void AddSC_npc_archmage_timear_progression();
-void AddSC_npc_archmage_landalock_default();
+void AddSC_zone_dalaran_progression();
+void AddSC_zone_dalaran_progression_default();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
 
@@ -37,12 +36,11 @@ void Addmod_progressionScripts()
 
     if (sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM) < PATCH_FALL_OF_THE_LICH_KING)
     {
-        AddSC_npc_archmage_landalock_progression();
-        AddSC_npc_archmage_timear_progression();
+        AddSC_zone_dalaran_progression();
     }
     else
     {
-        AddSC_npc_archmage_landalock_default();
+        AddSC_zone_dalaran_default();
     }
 
     if (sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM) < PATCH_FALL_OF_THE_LICH_KING)

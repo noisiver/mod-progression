@@ -264,7 +264,7 @@ public:
     };
 };
 
-void AddSC_npc_archmage_landalock_progression()
+void AddSC_zone_dalaran_progression()
 {
     new npc_archmage_landalock_progression();
     new npc_archmage_timear_progression();
