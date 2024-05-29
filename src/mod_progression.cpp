@@ -18,6 +18,8 @@ void AddSC_instance_blackrock_spire_progression();
 void AddSC_npc_archmage_landalock_progression();
 void AddSC_npc_archmage_timear_progression();
 void AddSC_npc_archmage_landalock_default();
+void AddSC_boss_skadi_progression();
+void AddSC_boss_svala_progression();
 
 void Addmod_progressionScripts()
 {
@@ -41,5 +43,11 @@ void Addmod_progressionScripts()
     else
     {
         AddSC_npc_archmage_landalock_default();
+    }
+
+    if (sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM) < PATCH_FALL_OF_THE_LICH_KING)
+    {
+        AddSC_boss_skadi_progression();
+        AddSC_boss_svala_progression();
     }
 }
