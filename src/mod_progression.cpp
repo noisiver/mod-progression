@@ -16,7 +16,7 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
 void AddSC_boss_lord_kazzak_progression();
 void AddSC_instance_blackrock_spire_progression();
 void AddSC_zone_dalaran_progression();
-void AddSC_zone_dalaran_progression_default();
+void AddSC_zone_dalaran_default();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
 
