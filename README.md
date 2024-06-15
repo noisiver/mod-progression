@@ -1,3 +1,5 @@
+[![core-build](https://github.com/noisiver/mod-progression/actions/workflows/core-build.yml/badge.svg)](https://github.com/noisiver/mod-progression/actions/workflows/core-build.yml)
+
 # Progression
 This module offers a different take on progression. It handles content based on patches instead of brackets or by conquering content. It is server-wide and always the same for all players.
 
