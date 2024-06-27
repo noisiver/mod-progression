@@ -6,6 +6,7 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
 {
     PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
     AuraId = 4;
+    EnforceLevel = true;
     EnforceQuestInfo = true;
     EnforceDungeonFinder = true;
     EnforceDualTalent = true;

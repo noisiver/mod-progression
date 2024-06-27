@@ -148,6 +148,7 @@ public:
 private:
     uint32 PatchId;
     uint32 AuraId;
+    bool EnforceLevel;
     bool EnforceQuestInfo;
     bool EnforceDungeonFinder;
     bool EnforceDualTalent;

@@ -11,6 +11,7 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
     AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
+    EnforceLevel = sConfigMgr->GetOption<bool>("Progression.Level.Enforced", true);
     EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
     EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
     EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
@@ -22,21 +23,22 @@ void Progression::OnAfterConfigLoad(bool reload)
         PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
     }
 
+    uint32 TargetExpansion = EXPANSION_WRATH_OF_THE_LICH_KING;
+    uint32 TargetLevel = 80;
+
     if (PatchId < PATCH_BEFORE_THE_STORM)
     {
-        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_CLASSIC);
-        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 60);
+        TargetExpansion = EXPANSION_CLASSIC;
+        TargetLevel = 60;
     }
     else if (PatchId < PATCH_ECHOES_OF_DOOM)
     {
-        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_THE_BURNING_CRUSADE);
-        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 70);
+        TargetExpansion = EXPANSION_THE_BURNING_CRUSADE;
+        TargetLevel = 70;
     }
-    else
-    {
-        sWorld->setIntConfig(CONFIG_EXPANSION, EXPANSION_WRATH_OF_THE_LICH_KING);
-        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, 80);
-    }
+
+    sWorld->setIntConfig(CONFIG_EXPANSION, TargetExpansion);
+    sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, (EnforceLevel || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) > TargetLevel) ? TargetLevel : sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
