@@ -42,7 +42,7 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
-    if (EnforceDungeonFinder)
+    if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceDungeonFinder)
     {
         sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
     }
