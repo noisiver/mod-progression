@@ -227,7 +227,8 @@ UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63 WHERE `entry` IN (
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
-    10540 -- Vol'jin
+    10540, -- Vol'jin
+    29611 -- King Varian Wrynn <King of Stormwind>
 );
 
 UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60, `rank`=0 WHERE `entry` IN (

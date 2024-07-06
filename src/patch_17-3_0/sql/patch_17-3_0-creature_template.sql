@@ -34,7 +34,8 @@ UPDATE `creature_template` SET `minlevel`=83, `maxlevel`=83 WHERE `entry` IN (
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
     10540, -- Vol'jin
     16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
-    17468 -- Prophet Velen
+    17468, -- Prophet Velen
+    29611 -- King Varian Wrynn <King of Stormwind>
 );
 
 UPDATE `creature_template` SET `minlevel`=80, `maxlevel`=80, `rank`=1 WHERE `entry` IN (
