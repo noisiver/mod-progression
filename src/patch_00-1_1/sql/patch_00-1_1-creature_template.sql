@@ -299,6 +299,10 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     24997, -- Mariner Swiftstar <The Moonspray>
     24998, -- Mariner Farsight <The Moonspray>
     25007, -- Mariner Evenmist <The Moonspray>
+    25021, -- Mariner Moonblade <Feathermoon Ferry>
+    25022, -- Mariner Stillwake <Feathermoon Ferry>
+    25023, -- Mariner Everwatch <Feathermoon Ferry>
+    25024, -- Mariner Softsong <Feathermoon Ferry>
     25079, -- Deathguard Fowles <The Thundercaller>
     25080, -- Grunt Umgor
     25081, -- Grunt Ounda

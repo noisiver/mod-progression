@@ -19,6 +19,7 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     14627, -- Hansel Heavyhands <The Thorium Brotherhood>
     14628, -- Evonice Sootsmoker <The Thorium Brotherhood>
     14634, -- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
+    14637, -- Zorbin Fandazzle
     14721, -- Field Marshal Afrasiabi
     14730, -- Revantusk Watcher
     14731, -- Lard <Innkeeper>

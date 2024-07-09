@@ -55,6 +55,7 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     14627, -- Hansel Heavyhands <The Thorium Brotherhood>
     14628, -- Evonice Sootsmoker <The Thorium Brotherhood>
     14634, -- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
+    14637, -- Zorbin Fandazzle
     14721, -- Field Marshal Afrasiabi
     14730, -- Revantusk Watcher
     14731, -- Lard <Innkeeper>
@@ -307,6 +308,13 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     25016, -- Sailor Wills <The Bravery>
     25017, -- Sailor Fairfolk <The Bravery>
     25018, -- Sailor Stoneheel <The Bravery>
+    25019, -- Merchant Felagunne <Feathermoon Ferry>
+    25020, -- Galley Chief Alunwea <Feathermoon Ferry>
+    25021, -- Mariner Moonblade <Feathermoon Ferry>
+    25022, -- Mariner Stillwake <Feathermoon Ferry>
+    25023, -- Mariner Everwatch <Feathermoon Ferry>
+    25024, -- Mariner Softsong <Feathermoon Ferry>
+    25025, -- Captain Idrilae <Feathermoon Ferry>
     25070, -- Chief Officer Coppernut<The Thundercaller>
     25071, -- Crewman Rusthammer <The Thundercaller>
     25072, -- Crewman Quickfix <The Thundercaller>

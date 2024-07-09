@@ -22,6 +22,7 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     179596, -- Meeting Stone
     179827, -- Wanted/Missing/Lost & Found
     179844, -- Forge
+    179846, -- Campfire
     179879, -- Orb of Command
     179895, -- Mailbox
     179896, -- Mailbox
