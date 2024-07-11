@@ -5,7 +5,6 @@ DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
 );
 
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
-    249, -- Onyxia's Lair
     649, -- Trial of the Crusader
     650 -- Trial of the Champion
 );
