@@ -308,3 +308,7 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     25081, -- Grunt Ounda
     25083 -- Deathguard Lawson <The Thundercaller>
 );
+
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=13 WHERE `entry`=10184; -- Onyxia
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=63, `exp`=0, `lootid`=0, `skinloot`=0 WHERE `entry`=12129; -- Onyxian Warder
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=56, `maxlevel`=57, `exp`=0 WHERE `entry`=11262; -- Onyxian Whelp
