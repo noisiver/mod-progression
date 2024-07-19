@@ -139,7 +139,7 @@ UPDATE `item_template` SET `spellid_1`=64977 WHERE `entry`=46308; -- Black Skele
 UPDATE `item_template` SET `spellid_1`=66847 WHERE `entry`=47100; -- Reins of the Striped Dawnsaber
 UPDATE `item_template` SET `spellid_1`=66846 WHERE `entry`=47101; -- Ochre Skeletal Warhorse
 
-UPDATE `item_template` SET `spellcharges_1`=0, `spellid_2`=0, `spelltrigger_2`=0 WHERE `entry` IN (
+UPDATE `item_template` SET `spellcharges_1`=0, `spellid_2`=0, `spelltrigger_2`=0, `description`='' WHERE `entry` IN (
     1132, -- Horn of the Timber Wolf
     2411, -- Black Stallion Bridle
     2414, -- Pinto Bridle
