@@ -86,7 +86,7 @@ Progression.DualTalent.Enforced = 1
 #        Default:     0.8
 #
 
-Progression.Multiplier.Damage = 0.8
+Progression.Multiplier.Damage = 0.6
 
 #
 #    Progression.Multiplier.Healing
@@ -94,7 +94,7 @@ Progression.Multiplier.Damage = 0.8
 #        Default:     0.7
 #
 
-Progression.Multiplier.Healing = 0.75
+Progression.Multiplier.Healing = 0.5
 
 #
 #    Progression.Reset

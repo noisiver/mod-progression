@@ -10,8 +10,8 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
     EnforceQuestInfo = true;
     EnforceDungeonFinder = true;
     EnforceDualTalent = true;
-    DamageModifier = 0.8f;
-    HealingModifier = 0.75f;
+    DamageModifier = 0.6f;
+    HealingModifier = 0.5f;
 }
 
 void AddSC_boss_lord_kazzak_progression();
