@@ -43,26 +43,6 @@ Progression.Patch = 21
 Progression.IcecrownCitadel.Aura = 4
 
 #
-#    Progression.Level.Enforced
-#        Description: Enforce the max player level based on the active patch
-#                     While disabled the level can be lowered but not raised above the normal max level of the patch
-#                     0 - Disabled
-#        Default:     1 - Enabled
-#
-
-Progression.Level.Enforced = 1
-
-#
-#    Progression.QuestInfo.Enforced
-#        Description: Enforce quest-related information based on the active patch
-#                     This includes quest markers on the map
-#                     0 - Disabled
-#        Default:     1 - Enabled
-#
-
-Progression.QuestInfo.Enforced = 1
-
-#
 #    Progression.DungeonFinder.Enforced
 #        Description: Enforce the availability of the dungeon finder based on the active patch
 #                     0 - Disabled

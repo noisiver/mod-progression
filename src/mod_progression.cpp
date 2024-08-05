@@ -2,12 +2,10 @@
 
 #include "mod_progression.h"
 
-Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript")
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript")
 {
     PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
     AuraId = 4;
-    EnforceLevel = true;
-    EnforceQuestInfo = true;
     EnforceDungeonFinder = true;
     EnforceDualTalent = true;
     DamageModifier = 0.6f;

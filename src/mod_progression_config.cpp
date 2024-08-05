@@ -11,8 +11,6 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
     AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
-    EnforceLevel = sConfigMgr->GetOption<bool>("Progression.Level.Enforced", true);
-    EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
     EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
     EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
     DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
@@ -38,7 +36,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
 
     sWorld->setIntConfig(CONFIG_EXPANSION, TargetExpansion);
-    sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, (EnforceLevel || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) > TargetLevel) ? TargetLevel : sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
+    sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, TargetLevel);
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
@@ -49,7 +47,6 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR && EnforceDualTalent ? 255 : 40));
     sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
     sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
-    sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, (PatchId >= PATCH_FALL_OF_THE_LICH_KING || !EnforceQuestInfo));
     sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, PatchId >= PATCH_CALL_OF_THE_CRUSADE);
     sWorld->setBoolConfig(CONFIG_WEATHER, PatchId >= PATCH_STORMS_OF_AZEROTH);
     sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, (PatchId < PATCH_ECHOES_OF_DOOM ? 60000 : 180000));
