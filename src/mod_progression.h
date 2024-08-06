@@ -118,6 +118,7 @@ public:
 private:
     uint32 PatchId;
     uint32 AuraId;
+    bool EnforceLevel;
     bool EnforceDungeonFinder;
     bool EnforceDualTalent;
     float DamageModifier;

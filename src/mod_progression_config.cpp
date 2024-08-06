@@ -11,6 +11,7 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
     AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
+    EnforceLevel = sConfigMgr->GetOption<bool>("Progression.Level.Enforced", true);
     EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
     EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
     DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
@@ -36,7 +37,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
 
     sWorld->setIntConfig(CONFIG_EXPANSION, TargetExpansion);
-    sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, TargetLevel);
+    sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, (EnforceLevel || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) > TargetLevel) ? TargetLevel : sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
