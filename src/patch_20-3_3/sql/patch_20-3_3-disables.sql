@@ -20,7 +20,6 @@ DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
 );
 
 DELETE FROM `disables` WHERE `sourceType`=3 AND `entry` IN (
-    6, -- All Arenas
     32 -- Random Battleground
 );
 
