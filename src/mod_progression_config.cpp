@@ -40,7 +40,10 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, (EnforceLevel || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) > TargetLevel) ? TargetLevel : sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
-    sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, PatchId < PATCH_CALL_OF_THE_CRUSADE);
+    if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
+    {
+        sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, true);
+    }
     if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceDungeonFinder)
     {
         sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
