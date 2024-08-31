@@ -38,3 +38,8 @@ Wrath of the Lich King patches are by far the most complete and also my current 
 Create issue reports for anything that isn't correct and I will look into it as soon as I have the time to. If something isn't intended to be in a certain patch, or if it is, I want to change it and would greatly appreciate reports for it.
 
 The same can be said for improvements to the code. I'm not a professional developer in any way so it might not be clean or very optimized and therefore I welcome suggestions for that too.
+
+# Pull Requests
+I don't accept pull requests. There are a few exceptions listed below, and all of them have to be true for me to consider merging a pull request.
+- It's something I *really* want or that I think should be included with the module.
+- It matches my code style.
