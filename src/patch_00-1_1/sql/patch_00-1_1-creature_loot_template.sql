@@ -91,3 +91,16 @@ UPDATE `creature_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 
     31311, -- Sartharion (1)
     31722 -- Archavon the Stone Watcher (1)
 );
+
+DELETE FROM `creature_loot_template` WHERE `Entry`=46000;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(46000, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
+(46000, 46001, 46001, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
+(46000, 46002, 46002, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46003, 46003, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46004, 46004, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46005, 46005, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46006, 46006, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46007, 46007, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
+(46000, 46008, 46008, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(46000, 46009, 46009, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)');

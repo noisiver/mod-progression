@@ -109,3 +109,5 @@ UPDATE `creature_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 
     35490, -- The Black Knight (1)
     36538 -- Onyxia (1)
 );
+
+DELETE FROM `creature_loot_template` WHERE `Entry`=46000; -- Onyxia
