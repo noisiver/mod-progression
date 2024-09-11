@@ -1,13 +1,17 @@
-DELETE FROM `creature_queststarter` WHERE (`quest` IN (550, 1661, 3631, 4487, 4488, 4489, 4490)) OR (`id` IN (20735, 31439));
+DELETE FROM `creature_queststarter` WHERE (`quest` IN (550, 1661, 3631, 4487, 4488, 4489, 4490, 7491, 7496)) OR (`id` IN (20735, 31439));
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Demisette Cloyce <Warlock Trainer>
 (461, 4488), -- Summon Felsteed
+-- Highlord Bolvar Fordragon
+-- (1748, 7496), -- Celebrating Good Times
 -- High Executor Darthalia
 (2215, 550), -- Battle of Hillsbrad
 -- Zevrost <Warlock Trainer>
 (3326, 3631), -- Summon Felsteed
 -- Kaal Soulreaper <Warlock Trainer>
 (4563, 4489), -- Summon Felsteed
+-- Thrall <Warchief>
+(4949, 7491), -- For All To See
 -- Briarthorn <Warlock Trainer>
 (5172, 4487), -- Summon Felsteed
 -- Duthorian Rall
@@ -27,6 +31,8 @@ INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 (20735, 13254), -- Proof of Demise: Anub'arak
 (20735, 13255), -- Proof of Demise: Herald Volazj
 (20735, 13256), -- Proof of Demise: Cyanigosa
+-- King Varian Wrynn <King of Stormwind>
+(29611, 7496), -- Celebrating Good Times
 -- Archmage Timear
 (31439, 13240), -- Timear Foresees Centrifuge Constructs in your Future!
 (31439, 13241), -- Timear Foresees Ymirjar Berserkers in your Future!
