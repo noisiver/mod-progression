@@ -23,6 +23,7 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     29299, -- Serban Oprescu <The Assurance>
     29300, -- Robert Richardson <The Assurance>
     29346, -- Apothecary Karlov
+    29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
     30578, -- Bethany Aldire <Strand of the Ancients Battlemaster>
@@ -76,3 +77,10 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `guid` IN (
     203494, -- Orgrimmar Grunt
     203495 -- Orgrimmar Grunt
 );
+
+DELETE FROM `creature` WHERE `id1` IN (
+    1748, -- Highlord Bolvar Fordragon
+    1749 -- Lady Katrana Prestor
+);
+
+UPDATE `creature` SET `position_x`=-8439.61, `position_y`=334.384, `position_z`=122.58, `orientation`=2.2081 WHERE `id1`=1747; -- Anduin Wrynn <Prince of Stormwind>

@@ -370,6 +370,7 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     29299, -- Serban Oprescu <The Assurance>
     29300, -- Robert Richardson <The Assurance>
     29346, -- Apothecary Karlov
+    29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
     30578, -- Bethany Aldire <Strand of the Ancients Battlemaster>
@@ -567,7 +568,7 @@ DELETE FROM `creature` WHERE `id1` IN (
     16226 -- Guard Didier <Brotherhood of the Light>
 );
 
-DELETE FROM `creature` WHERE (`guid`=156950) OR (`id1`=11099);
+DELETE FROM `creature` WHERE (`guid`=156950) OR (`id1` IN (1748, 1749, 11099);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 -- Lord Kazzak
 (156950, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL),
@@ -575,4 +576,8 @@ INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, 
 (5300000, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
 (5300001, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2281.74, -5323.96, 89.2463, 2.21657, 610, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
 (5300002, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2320.41, -5378.72, 85.7834, 0.777658, 25, 0, 0, 1, 0, 2, 0, 0, 0, '', NULL, 0, NULL),
-(5300003, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2316.27, -5374.83, 86.5285, 0.816928, 25, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL);
+(5300003, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2316.27, -5374.83, 86.5285, 0.816928, 25, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
+(5300004, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8443.36, 331.838, 122.663, 1.85005, 86400, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL),
+(5300005, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 180, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, NULL);
+
+UPDATE `creature` SET `position_x`=-8441.42, `position_y`=333.102, `position_z`=122.579, `orientation`=2.23167 WHERE `id1`=1747; -- Anduin Wrynn <Prince of Stormwind>

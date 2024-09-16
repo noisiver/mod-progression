@@ -87,3 +87,5 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     29152, -- Stormwind Dock Worker
     29712 -- Stormwind Harbor Guard
 );
+
+UPDATE `creature_template` SET `AIName`='' WHERE `entry`=1748; -- Highlord Bolvar Fordragon

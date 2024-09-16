@@ -3,7 +3,7 @@ INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Demisette Cloyce <Warlock Trainer>
 (461, 4488), -- Summon Felsteed
 -- Highlord Bolvar Fordragon
--- (1748, 7496), -- Celebrating Good Times
+(1748, 7496), -- Celebrating Good Times
 -- High Executor Darthalia
 (2215, 550), -- Battle of Hillsbrad
 -- Zevrost <Warlock Trainer>
@@ -31,8 +31,6 @@ INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 (20735, 13254), -- Proof of Demise: Anub'arak
 (20735, 13255), -- Proof of Demise: Herald Volazj
 (20735, 13256), -- Proof of Demise: Cyanigosa
--- King Varian Wrynn <King of Stormwind>
-(29611, 7496), -- Celebrating Good Times
 -- Archmage Timear
 (31439, 13240), -- Timear Foresees Centrifuge Constructs in your Future!
 (31439, 13241), -- Timear Foresees Ymirjar Berserkers in your Future!

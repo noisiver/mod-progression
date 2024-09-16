@@ -168,3 +168,5 @@ UPDATE `creature_template` SET `minlevel`=55, `maxlevel`=55 WHERE `entry` IN (
 );
 
 UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73, `scale`=2, `DamageModifier`=35, `HealthModifier`=110, `ManaModifier`=2, `BaseAttackTime`=800, `unit_class`=1, `flags_extra`=1, `ScriptName`='' WHERE `entry`=12397; -- Lord Kazzak
+
+UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73 WHERE `entry`=1748; -- Highlord Bolvar Fordragon

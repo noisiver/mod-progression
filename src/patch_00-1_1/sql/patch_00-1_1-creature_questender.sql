@@ -1,7 +1,7 @@
 DELETE FROM `creature_questender` WHERE (`quest` IN (550, 1661, 3631, 4487, 4488, 4489, 4490, 7490, 7491, 7495, 7496)) OR (`id` IN (20735, 31439));
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 -- Highlord Bolvar Fordragon
--- (1748, 7495), -- Victory for the Alliance
+(1748, 7495), -- Victory for the Alliance
 -- Varimathras
 (2425, 550), -- Battle of Hillsbrad
 -- Thrall <Warchief>
@@ -31,8 +31,6 @@ INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 (20735, 13254), -- Proof of Demise: Anub'arak
 (20735, 13255), -- Proof of Demise: Herald Volazj
 (20735, 13256), -- Proof of Demise: Cyanigosa
--- King Varian Wrynn <King of Stormwind>
-(29611, 7495), -- Victory for the Alliance
 -- Archmage Timear
 (31439, 13240), -- Timear Foresees Centrifuge Constructs in your Future!
 (31439, 13241), -- Timear Foresees Ymirjar Berserkers in your Future!
