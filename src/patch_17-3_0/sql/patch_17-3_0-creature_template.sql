@@ -88,4 +88,5 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     29712 -- Stormwind Harbor Guard
 );
 
+UPDATE `creature_template` SET `subname`='Prince of Stormwind' WHERE `entry`=1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `AIName`='' WHERE `entry`=1748; -- Highlord Bolvar Fordragon

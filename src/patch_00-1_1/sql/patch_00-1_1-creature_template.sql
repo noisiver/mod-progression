@@ -313,4 +313,5 @@ UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`
 UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=63, `exp`=0, `lootid`=0, `skinloot`=0 WHERE `entry`=12129; -- Onyxian Warder
 UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=56, `maxlevel`=57, `exp`=0 WHERE `entry`=11262; -- Onyxian Whelp
 
+UPDATE `creature_template` SET `subname`='King of Stormwind' WHERE `entry`=1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63, `AIName`='SmartAI' WHERE `entry`=1748; -- Highlord Bolvar Fordragon
