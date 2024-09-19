@@ -105,11 +105,6 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 8);
     }
 
-    if (PatchId < PATCH_ECHOES_OF_DOOM)
-    {
-        sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, 1);
-    }
-
     if (PatchId <= PATCH_BATTLEGROUNDS)
     {
         sWorld->setRate(RATE_HONOR, 0);
