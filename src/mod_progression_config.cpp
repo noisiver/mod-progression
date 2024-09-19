@@ -60,6 +60,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
     sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
+    sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, sProgression->GetPatchId() < PATCH_ECHOES_OF_DOOM);
 
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
     {
