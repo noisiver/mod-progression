@@ -18,12 +18,6 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     35007, -- Lixa Felflinger <Battlemaster>
     35008, -- Sawemba <Battlemaster>
     35013, -- Koralon the Flame Watcher
-    35017, -- Gorom Warfang <Isle of Conquest Battlemaster>
-    35020, -- Deathscreamer Gura <Isle of Conquest Battlemaster>
-    35021, -- Marog <Isle of Conquest Battlemaster>
-    35023, -- Terrance Matterly <Isle of Conquest Battlemaster>
-    35024, -- Dracien Flanning <Isle of Conquest Battlemaster>
-    35025, -- Lynette Bracer <Isle of Conquest Battlemaster>
     35068, -- Gotura Fourwinds <The Earthen Ring>
     35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>

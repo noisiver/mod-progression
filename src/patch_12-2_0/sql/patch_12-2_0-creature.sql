@@ -33,12 +33,6 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     19850, -- Councilor Arial D'Anastasis
     19909, -- Rex Pixem <Arena Battlemaster>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
-    20374, -- Kandaar <Eye of the Storm Battlemaster>
-    20381, -- Jovil <Eye of the Storm Battlemaster>
-    20383, -- Enlae <Eye of the Storm Battlemaster>
-    20385, -- Andrissa Heartspear <Eye of the Storm Battlemaster>
-    20386, -- Lyrlia Blackshield <Eye of the Storm Battlemaster>
-    20388, -- Althallen Brightblade <Eye of the Storm Battlemaster>
     21448, -- Gadgetzan Sniper
     22936, -- Auhula <Apprentice Hippogryph Master>
     23090, -- Troll Roof Stalker

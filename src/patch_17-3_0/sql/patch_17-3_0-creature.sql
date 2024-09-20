@@ -26,11 +26,6 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
-    30578, -- Bethany Aldire <Strand of the Ancients Battlemaster>
-    30579, -- Marga Bearbrawn <Strand of the Ancients Battlemaster>
-    30580, -- Nivara Bladedancer <Strand of the Ancients Battlemaster>
-    30582, -- Ufuda Giant-Slayer <Strand of the Ancients Battlemaster>
-    30583, -- Sarah Forthright <Strand of the Ancients Battlemaster>
     30706, -- Jo'mah <Inscription Trainer>
     30709, -- Poshken Hardbinder <Inscription Trainer>
     30710, -- Zantasia <Inscription Trainer>

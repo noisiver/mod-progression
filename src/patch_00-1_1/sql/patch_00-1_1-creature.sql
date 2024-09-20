@@ -1,26 +1,14 @@
 UPDATE `creature` SET `id1`=5624, `equipment_id`=0 WHERE `guid` IN (17669, 28481, 28485, 28486, 28487, 28488, 28489, 28490, 33823, 33831, 34102, 34103, 34104, 34105, 34106, 38296, 38297, 38298, 38299, 38301, 38302, 38305, 39019, 39020, 39022, 39023, 39024, 39025, 39026, 41884, 41887, 41888, 41889, 41890, 41891, 41892, 41956, 41960, 41961, 41964, 79264, 79265, 79266, 79267); -- Undercity Guardian
 UPDATE `creature` SET `id1`=2425, `equipment_id`=0 WHERE `guid`=31901; -- Varimathras
 UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
-    347, -- Grizzle Halfmane <Alterac Valley Battlemaster>
-    857, -- Donal Osgood <Arathi Basin Battlemaster>
-    907, -- Keras Wolfheart <Arathi Basin Battlemaster>
     1756, -- Stormwind Royal Guard
-    2302, -- Aethalas <Warsong Gulch Battlemaster>
-    2804, -- Kurden Bloodclaw <Warsong Gulch Battlemaster>
     2941, -- Lanie Reed <Gryphon Master>
     3083, -- Honor Guard
     3305, -- Grisha <Wind Rider Master>
-    3890, -- Brakgul Deathbringer <Warsong Gulch Battlemaster>
     4314, -- Gorkas <Wind Rider Master>
-    5118, -- Brogun Stoneshield <Alterac Valley Battlemaster>
     6109, -- Azuregos
-    7410, -- Thelman Slatefist <Alterac Valley Battlemaster>
-    7427, -- Taim Ragetotem <Alterac Valley Battlemaster>
-    10360, -- Kergul Bloodaxe <Warsong Gulch Battlemaster>
     10378, -- Omusa Thunderhorn <Wind Rider Master>
     10583, -- Gryfe <Flight Master>
-    12197, -- Glordrum Steelbeard <Alterac Valley Battlemaster>
-    12198, -- Martin Lindsey <Arathi Basin Battlemaster>
     12239, -- Spirit of Gelk <The Second Kahn>
     12779, -- Archmage Gaiman
     12780, -- Sergeant Major Skyshadow
@@ -81,15 +69,8 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     14911, -- Zandalar Enforcer
     14912, -- Captured Hakkari Zealot
     14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
-    14942, -- Kartra Bloodsnarl <Alterac Valley Battlemaster>
-    14981, -- Elfarran <Warsong Gulch Battlemaster>
-    14982, -- Lylandris <Warsong Gulch Battlemaster>
-    15006, -- Deze Snowbane <Arathi Basin Battlemaster>
-    15007, -- Sir Malory Wheeler <Arathi Basin Battlemaster>
-    15008, -- Lady Hoteshem <Arathi Basin Battlemaster>
     15070, -- Vinchaxa <Servitor of Zanza>
     15076, -- Zandalarian Emissary
-    15079, -- Fishbot 5000
     15080, -- Servant of the Hand <Hand of Rastakhan>
     15165, -- Haughty Modiste <Fashion Designer>
     15170, -- Rutgar Glyphshaper
@@ -231,12 +212,6 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     19909, -- Rex Pixem <Arena Battlemaster>
     19910, -- Gargok <Warsong Gulch Battlemaster>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
-    20374, -- Kandaar <Eye of the Storm Battlemaster>
-    20381, -- Jovil <Eye of the Storm Battlemaster>
-    20383, -- Enlae <Eye of the Storm Battlemaster>
-    20385, -- Andrissa Heartspear <Eye of the Storm Battlemaster>
-    20386, -- Lyrlia Blackshield <Eye of the Storm Battlemaster>
-    20388, -- Althallen Brightblade <Eye of the Storm Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20797, -- Deviate Coiler Hatchling
@@ -373,11 +348,6 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
-    30578, -- Bethany Aldire <Strand of the Ancients Battlemaster>
-    30579, -- Marga Bearbrawn <Strand of the Ancients Battlemaster>
-    30580, -- Nivara Bladedancer <Strand of the Ancients Battlemaster>
-    30582, -- Ufuda Giant-Slayer <Strand of the Ancients Battlemaster>
-    30583, -- Sarah Forthright <Strand of the Ancients Battlemaster>
     30706, -- Jo'mah <Inscription Trainer>
     30709, -- Poshken Hardbinder <Inscription Trainer>
     30710, -- Zantasia <Inscription Trainer>
@@ -448,12 +418,6 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     35007, -- Lixa Felflinger <Battlemaster>
     35008, -- Sawemba <Battlemaster>
     35013, -- Koralon the Flame Watcher
-    35017, -- Gorom Warfang <Isle of Conquest Battlemaster>
-    35020, -- Deathscreamer Gura <Isle of Conquest Battlemaster>
-    35021, -- Marog <Isle of Conquest Battlemaster>
-    35023, -- Terrance Matterly <Isle of Conquest Battlemaster>
-    35024, -- Dracien Flanning <Isle of Conquest Battlemaster>
-    35025, -- Lynette Bracer <Isle of Conquest Battlemaster>
     35068, -- Gotura Fourwinds <The Earthen Ring>
     35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
