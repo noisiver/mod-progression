@@ -1,6 +1,4 @@
 UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
-    178764, -- Rope Line
-    178765, -- Rope Line Pole
     194213, -- Winter Hyacinth
     194237, -- Drak'Mar Brazier
     195218, -- Mailbox
