@@ -274,7 +274,6 @@ UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1`=5 WHERE `creature_i
     8556, -- Crypt Walker
     8557, -- Crypt Horror
     8558, -- Crypt Slayer
-    9462, -- Chieftain Bloodmaw
     10381, -- Ravaged Cadaver
     10382, -- Mangled Cadaver
     10384, -- Spectral Citizen
@@ -328,7 +327,6 @@ UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1`=5 WHERE `creature_i
     11873, -- Spectral Attendant
     12262, -- Ziggurat Protector
     12263, -- Slaughterhouse Protector
-    14342, -- Ragepaw
     14479, -- Twilight Lord Everun <Twilight's Hammer>
     14861, -- Blood Steward of Kirtonos
     15209, -- Crimson Templar <Abyssal Council>
@@ -353,7 +351,6 @@ UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1`=20 WHERE `creature_
 );
 
 UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1`=25 WHERE `creature_id` IN (
-    9464, -- Overlord Ror
     10199, -- Grizzle Snowpaw
     10432, -- Vectus
     10433, -- Marduk Blackpool
@@ -439,4 +436,11 @@ UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue2`=300 WHERE `creature
 
 UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue2`=500 WHERE `creature_id` IN (
     15727 -- C'Thun
+);
+
+UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1`=0 WHERE `creature_id` IN (
+    7442, -- Winterfall Pathfinder
+    9462, -- Chieftain Bloodmaw
+    9464, -- Overlord Ror
+    14342 -- Ragepaw
 );
