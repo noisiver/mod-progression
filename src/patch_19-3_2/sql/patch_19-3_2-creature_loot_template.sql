@@ -90,21 +90,10 @@ UPDATE `creature_loot_template` SET `Item`=45624 WHERE `Item` IN (40752, 40753, 
     32927, -- Runemaster Molgeim
     33118, -- Ignis the Furnace Master
     33186, -- Razorscale
-    33190, -- Ignis the Furnace Master (1)
     33271, -- General Vezax
     33288, -- Yogg-Saron
     33293, -- XT-002 Deconstructor
-    33449, -- General Vezax (1)
     33515, -- Auriaya
-    33692, -- Runemaster Molgeim (1)
-    33693, -- Steelbreaker (1)
-    33694, -- Stormcaller Brundir (1)
-    33724, -- Razorscale (1)
-    33885, -- XT-002 Deconstructor (1)
-    33955, -- Yogg-Saron (1)
-    33993, -- Emalon the Storm Watcher
-    33994, -- Emalon the Storm Watcher (1)
-    34175, -- Auriaya (1)
     35013, -- Koralon the Flame Watcher
     35490, -- The Black Knight (1)
     36538 -- Onyxia (1)

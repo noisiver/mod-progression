@@ -96,6 +96,11 @@ public:
                     break;
             }
         }
+
+        bool CheckAchievementCriteriaMeet(uint32 /*criteria_id*/, Player const*  /*source*/, Unit const*  /*target*/, uint32  /*miscvalue1*/) override
+        {
+            return false;
+        }
     };
 };
 
