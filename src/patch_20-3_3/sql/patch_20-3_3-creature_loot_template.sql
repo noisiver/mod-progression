@@ -112,3 +112,9 @@ UPDATE `creature_loot_template` SET `Item`=47241 WHERE `Item` IN (40752, 40753, 
     35490, -- The Black Knight (1)
     36538 -- Onyxia (1)
 );
+
+DELETE FROM `creature_loot_template` WHERE `Entry`=31311 AND `Reference`=34349;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(31311, 2, 34349, 100, 0, 2, 0, 1, 1, 'Sartharion (1) - (ReferenceTable)'),
+(31311, 3, 34349, 100, 0, 4, 0, 1, 1, 'Sartharion (1) - (ReferenceTable)'),
+(31311, 4, 34349, 100, 0, 8, 0, 1, 1, 'Sartharion (1) - (ReferenceTable)');
