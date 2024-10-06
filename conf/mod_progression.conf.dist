@@ -71,6 +71,17 @@ Progression.DungeonFinder.Enforced = 1
 Progression.DualTalent.Enforced = 1
 
 #
+#    Progression.QuestInfo.Enforced
+#        Description: Enforce quest-related information based on the active patch
+#                     This includes quest markers on the map and information in the tooltip
+#                     Disabling tooltip information requires Warden to be enabled
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.QuestInfo.Enforced = 1
+
+#
 #    Progression.Multiplier.Damage
 #        Description: Set the multiplier for damage done for patches prior to 3.0
 #        Default:     0.8
@@ -95,6 +106,17 @@ Progression.Multiplier.Healing = 0.5
 #
 
 Progression.Reset = 0
+
+
+#
+#    Progression.PatchNotes.Enabled
+#        Description: Show patch notes on the character select screen
+#                     Requires Warden to be enabled
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.PatchNotes.Enabled = 1
 
 #
 ###################################################################################################

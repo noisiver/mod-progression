@@ -2,15 +2,17 @@
 
 #include "mod_progression.h"
 
-Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript")
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript")
 {
     PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
     AuraId = 4;
     EnforceLevel = true;
     EnforceDungeonFinder = true;
     EnforceDualTalent = true;
+    EnforceQuestInfo = true;
     DamageModifier = 0.6f;
     HealingModifier = 0.5f;
+    ShowPatchNotes = true;
 }
 
 void AddSC_boss_lord_kazzak_progression();
