@@ -269,6 +269,133 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     38328 -- Pattern: Haliscan Pantaloons
 );
 
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+	18525 -- G'eras
+) AND `item` IN (
+	29267, -- Light-Bearer's Faith Shield
+	29268, -- Mazthoril Honor Shield
+	29269, -- Sapphiron's Wing Bone
+	29270, -- Flametongue Seal
+	29272, -- Orb of the Soul-Eater
+	29273, -- Khadgar's Knapsack
+	29274, -- Tears of Heaven
+	29275, -- Searing Sunblade
+	29367, -- Ring of Cryptic Dreams
+	29368, -- Manasurge Pendant
+	29370, -- Icon of the Silver Crescent
+	29373, -- Band of Halos
+	29374, -- Necklace of Eternal Hope
+	29375, -- Bishop's Cloak
+	29379, -- Ring of Arathi Warlords
+	29381, -- Choker of Vile Intent
+	29383, -- Bloodlust Brooch
+	29384, -- Ring of Unyielding Force
+	29386, -- Necklace of the Juggernaut
+	29387, -- Gnomeregan Auto-Blocker 600
+	29389, -- Totem of the Pulsing Earth
+	30761, -- Infernoweave Leggings
+	30762, -- Infernoweave Robe
+	30763, -- Infernoweave Boots
+	30764, -- Infernoweave Gloves
+	30766, -- Inferno Tempered Leggings
+	30767, -- Inferno Tempered Gauntlets
+	30768, -- Inferno Tempered Boots
+	30769, -- Inferno Tempered Chestguard
+	30770, -- Inferno Forged Boots
+	30772, -- Inferno Forged Leggings
+	30773, -- Inferno Forged Hauberk
+	30774, -- Inferno Forged Gloves
+	30776, -- Inferno Hardened Chestguard
+	30778, -- Inferno Hardened Leggings
+	30779, -- Inferno Hardened Boots
+	30780, -- Inferno Hardened Gloves
+	32083, -- Faceguard of Determination
+	32084, -- Helmet of the Steadfast Champion
+	32085, -- Warpstalker Helm
+	32086, -- Storm Master's Helmet
+	32087, -- Mask of the Deceiver
+	32088, -- Cowl of Beastly Rage
+	32089, -- Mana-Binders Cowl
+	32090, -- Cowl of Naaru Blessings
+	33192, -- Carved Witch Doctor's Stick
+	33207, -- Implacable Guardian Sabatons
+	33279, -- Iron-tusk Girdle
+	33280, -- War-Feathered Loop
+	33287, -- Gnarled Ironwood Pauldrons
+	33291, -- Voodoo-woven Belt
+	33296, -- Brooch of Deftness
+	33304, -- Cloak of Subjugated Power
+	33324, -- Treads of the Life Path
+	33325, -- Voodoo Shaker
+	33331, -- Chain of Unleashed Rage
+	33333, -- Kharmaa's Shroud of Hope
+	33334, -- Fetish of the Primal Gods
+	33386, -- Man'kin'do's Belt
+	33484, -- Dory's Embrace
+	33501, -- Bloodthirster's Wargreaves
+	33502, -- Libram of Mending
+	33503, -- Libram of Divine Judgement
+	33504, -- Libram of Divine Purpose
+	33505, -- Totem of Living Water
+	33506, -- Skycall Totem
+	33507, -- Stonebreaker's Totem
+	33510, -- Idol of the Unseen Moon
+	33512, -- Furious Deathgrips
+	33513, -- Eternium Rage-shackles
+	33514, -- Pauldrons of Gruesome Fate
+	33515, -- Unwavering Legguards
+	33516, -- Bracers of the Ancient Phalanx
+	33517, -- Bonefist Gauntlets
+	33518, -- High Justicar's Legplates
+	33519, -- Handguards of the Templar
+	33520, -- Vambraces of the Naaru
+	33522, -- Chestguard of the Stoic Guardian
+	33523, -- Sabatons of the Righteous Defender
+	33524, -- Girdle of the Protector
+	33527, -- Shifting Camouflage Pants
+	33528, -- Gauntlets of Sniping
+	33529, -- Steadying Bracers
+	33530, -- Natural Life Leggings
+	33531, -- Polished Waterscale Gloves
+	33532, -- Gleaming Earthen Bracers
+	33534, -- Grips of Nature's Wrath
+	33535, -- Earthquake Bracers
+	33536, -- Stormwrap
+	33537, -- Treads of Booming Thunder
+	33538, -- Shallow-grave Trousers
+	33539, -- Trickster's Stickyfingers
+	33540, -- Master Assassin Wristwraps
+	33552, -- Pants of Splendid Recovery
+	33557, -- Gargon's Bracers of Peaceful Slumber
+	33559, -- Starfire Waistband
+	33566, -- Blessed Elunite Coverings
+	33578, -- Armwraps of the Kaldorei Protector
+	33579, -- Vestments of Hibernation
+	33580, -- Band of the Swift Paw
+	33582, -- Footwraps of Wild Encroachment
+	33583, -- Waistguard of the Great Beast
+	33584, -- Pantaloons of Arcane Annihilation
+	33585, -- Achromic Trousers of the Naaru
+	33586, -- Studious Wraps
+	33587, -- Light-Blessed Bonds
+	33588, -- Runed Spell-cuffs
+	33589, -- Wristguards of Tranquil Thought
+	33593, -- Slikk's Cloak of Placation
+	33810, -- Amani Mask of Death
+	33832, -- Battlemaster's Determination
+	33965, -- Hauberk of the Furious Elements
+	33970, -- Pauldrons of the Furious Elements
+	33972, -- Mask of Primal Power
+	33974, -- Grasp of the Moonkin
+	34049, -- Battlemaster's Audacity
+	34050, -- Battlemaster's Perseverance
+	34162, -- Battlemaster's Depravity
+	34163, -- Battlemaster's Cruelty
+	35321, -- Cloak of Arcane Alacrity
+	35324, -- Cloak of Swift Reprieve
+	35326 -- Battlemaster's Alacrity
+);
+
 -- Patch 3.0
 DELETE FROM `npc_vendor` WHERE `entry` IN (
     844, -- Antonio Perelli <Traveling Salesman>
