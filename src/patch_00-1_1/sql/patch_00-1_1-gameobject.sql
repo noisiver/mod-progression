@@ -137,6 +137,24 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
 
 UPDATE `gameobject` SET `phaseMask`=16384 WHERE `guid` IN (
     6928, -- Anvil
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178765, -- Rope Line Pole
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178765, -- Rope Line Pole
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
     151256, -- Haystack 01
     151257, -- Haystack 01
     151258, -- Haystack 01

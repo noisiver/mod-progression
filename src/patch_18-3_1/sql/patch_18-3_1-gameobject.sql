@@ -39,3 +39,24 @@ UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
     195627, -- Mailbox
     195628 -- Mailbox
 );
+
+UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178765, -- Rope Line Pole
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178765, -- Rope Line Pole
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764, -- Rope Line
+    178764 -- Rope Line
+);
