@@ -132,6 +132,8 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     195628, -- Mailbox
     195695, -- Meeting Stone
     202184, -- Meeting Stone
+    202277, -- Orb of Naxxramas
+    202278, -- Orb of Naxxramas
     202713 -- Hazard Light Red 02
 );
 
