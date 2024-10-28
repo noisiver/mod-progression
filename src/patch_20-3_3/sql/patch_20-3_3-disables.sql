@@ -30,5 +30,6 @@ DELETE FROM `disables` WHERE `sourceType`=9 AND `entry` IN (
 );
 
 DELETE FROM `disables` WHERE `sourceType`=10 AND `entry` IN (
+    49426, -- Emblem of Frost
     50289 -- Blacktip Shark
 );
