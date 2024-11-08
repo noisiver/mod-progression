@@ -1,3 +1,12 @@
+UPDATE `quest_template` SET `RewardItem1`=45624 WHERE `ID` IN (
+    24788 -- Daily Heroic Random (1st)
+);
+
+UPDATE `quest_template` SET `RewardItem1`=40753 WHERE `ID` IN (
+    24789, -- Daily Heroic Random (Nth)
+    24790 -- Daily Normal Random (1st)
+);
+
 UPDATE `quest_template` SET `RewardItem1`=40753 WHERE `ID` IN (
     13240, -- Timear Foresees Centrifuge Constructs in your Future!
     13241, -- Timear Foresees Ymirjar Berserkers in your Future!

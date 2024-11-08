@@ -1,7 +1,12 @@
 UPDATE `quest_template` SET `RewardItem1`=47241 WHERE `ID` IN (
-    24788, -- Daily Heroic Random (1st)
+    24788 -- Daily Heroic Random (1st)
+);
+
+UPDATE `quest_template` SET `RewardItem1`=45624 WHERE `ID` IN (
+    24789, -- Daily Heroic Random (Nth)
     24790 -- Daily Normal Random (1st)
 );
+
 UPDATE `quest_template` SET `RewardAmount1`=2 WHERE `ID`=24788; -- Daily Heroic Random (1st)
 UPDATE `quest_template` SET `RewardAmount1`=1 WHERE `ID`=24790; -- Daily Normal Random (1st)
 UPDATE `quest_template` SET `RewardItem1`=45624 WHERE `ID` IN (
