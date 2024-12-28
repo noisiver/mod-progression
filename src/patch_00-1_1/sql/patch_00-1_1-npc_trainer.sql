@@ -49,6 +49,7 @@ DELETE FROM `npc_trainer` WHERE `ID`=200004 AND `SpellID` IN (
 );
 
 DELETE FROM `npc_trainer` WHERE `ID`=200006 AND `SpellID` IN (
+    1066, -- Aquatic Form
     21849, -- Gift of the Wild (Rank 1)
     21850, -- Gift of the Wild (Rank 2)
     25297, -- Healing Touch (Rank 11)
