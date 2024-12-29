@@ -114,8 +114,7 @@ UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73 WHERE `entry` IN (
     4949, -- Thrall <Warchief>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
-    10540, -- Vol'jin
-    29611 -- King Varian Wrynn <King of Stormwind>
+    10540 -- Vol'jin
 );
 
 UPDATE `creature_template` SET `minlevel`=68, `maxlevel`=69 WHERE `entry` IN (
