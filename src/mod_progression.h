@@ -4,34 +4,36 @@
 #include "ScriptMgr.h"
 #include "WardenWin.h"
 
+#define ARGENT_TOURNAMENT_GROUNDS 4658
+
 enum Patches
 {
-    PATCH_WORLD_OF_WARCRAFT = 0,
-    PATCH_MYSTERIES_OF_MARAUDON,
-    PATCH_RUINS_OF_THE_DIRE_MAUL,
-    PATCH_THE_CALL_TO_WAR,
-    PATCH_BATTLEGROUNDS,
-    PATCH_ASSAULT_ON_BLACKWING_LAIR,
-    PATCH_RISE_OF_THE_BLOOD_GOD,
-    PATCH_DRAGONS_OF_NIGHTMARE,
-    PATCH_THE_GATES_OF_AHN_QIRAJ,
-    PATCH_STORMS_OF_AZEROTH,
-    PATCH_SHADOW_OF_THE_NECROPOLIS,
-    PATCH_DRUMS_OF_WAR,
-    PATCH_BEFORE_THE_STORM,
-    PATCH_BLACK_TEMPLE,
-    PATCH_VOICE_CHAT,
-    PATCH_THE_GODS_OF_ZUL_AMAN,
-    PATCH_FURY_OF_THE_SUNWELL,
-    PATCH_ECHOES_OF_DOOM,
-    PATCH_SECRETS_OF_ULDUAR,
-    PATCH_CALL_OF_THE_CRUSADE,
-    PATCH_FALL_OF_THE_LICH_KING,
-    PATCH_ASSAULT_ON_THE_RUBY_SANCTUM,
-    PATCH_MAX
+    WORLD_OF_WARCRAFT = 0,
+    MYSTERIES_OF_MARAUDON,
+    RUINS_OF_THE_DIRE_MAUL,
+    THE_CALL_TO_WAR,
+    BATTLEGROUNDS,
+    ASSAULT_ON_BLACKWING_LAIR,
+    RISE_OF_THE_BLOOD_GOD,
+    DRAGONS_OF_NIGHTMARE,
+    THE_GATES_OF_AHN_QIRAJ,
+    STORMS_OF_AZEROTH,
+    SHADOW_OF_THE_NECROPOLIS,
+    DRUMS_OF_WAR,
+    BEFORE_THE_STORM,
+    BLACK_TEMPLE,
+    VOICE_CHAT,
+    THE_GODS_OF_ZUL_AMAN,
+    FURY_OF_THE_SUNWELL,
+    ECHOES_OF_DOOM,
+    SECRETS_OF_ULDUAR,
+    CALL_OF_THE_CRUSADE,
+    FALL_OF_THE_LICH_KING,
+    ASSAULT_ON_THE_RUBY_SANCTUM,
+    MAX_PATCH
 };
 
-const std::string PatchTitle[PATCH_MAX] =
+const std::string PatchTitle[MAX_PATCH] =
 {
     "Patch 1.1: World of Warcraft",
     "Patch 1.2: Mysteries of Maraudon",
@@ -57,7 +59,7 @@ const std::string PatchTitle[PATCH_MAX] =
     "Patch 3.3.5: Assault on the Ruby Sanctum"
 };
 
-const std::string PatchNotes[PATCH_MAX][2] =
+const std::string PatchNotes[MAX_PATCH][2] =
 {
     { "|cffffcc00World of Warcraft|r", "<html><body><p>Rumors of Onyxia, an enormous black dragon, have been heard through out Azeroth. Be sure to bring many brave warriors for she won’t take kindly to intruders in her lair.<br/><br/>Discovered in the heart of Blackrock Mountain beyond the Depths, lies the Molten Core. Within the Molten Core lives a multitude of ancient and powerful evil. Adventurers be ware, for the dangers found within the Molten Core are many and takes many forms.</p><br/><h2>|cffffcc00Dungeons|r</h2><p>|cff00ff00Added Blackfathom Deeps<br/>Added Blackrock Depths<br/>Added Blackrock Spire<br/>Added Gnomeregan<br/>Added Ragefire Chasm<br/>Added Razorfen Downs<br/>Added Razorfen Kraul<br/>Added Scarlet Monastery<br/>Added Scholomance<br/>Added Shadowfang Keep<br/>Added Stratholme<br/>Added Sunken Temple<br/>Added The Deadmines<br/>Added The Stockade<br/>Added Uldaman<br/>Added Wailing Caverns<br/>Added Zul’Farrak|r</p><br/><h2>|cffffcc00Raids|r</h2><p>|cff00ff00Added Molten Core<br/>Added Onyxia’s Lair|r</p><br/><h2>|cffffcc00Riding|r</h2><p>|cff00ff00Apprentice Riding is available at level 40 at a cost of 90 gold and an additional 9 gold per mount<br/>Journeyman Riding is available at level 60 at a cost of 900 gold and an additional 90 gold per mount|r</p></body></html>" },
     { "|cffffcc00Mysteries of Maraudon|r", "<html><body><p>Travelers who come to Desolace have little trouble spotting Zaetar’s tomb, for the blessing of nature that permeates his being transformed his resting place into a verdant paradise of flora and tranquil pools.<br/><br/>Today, this tomb is now trodden by the hooves of Zaetar’s children, who have claimed this great cavern as their sacred stronghold Maraudon.</p><br/><h2>|cffffcc00Dungeons|r</h2><p>|cff00ff00Added Maraudon|r</p><br/><h2>|cffffcc00Events|r</h2><p>|cff00ff00Added Gurubashi Arena<br/>Added Feast of Great-Winter|r</p><br/><h2>|cffffcc00Spells|r</h2><p>|cff00ff00Added area of effect spells to Druid<br/>Added area of effect spells to Mage<br/>Added area of effect spells to Priest|r</p></body></html>" },
@@ -108,16 +110,13 @@ enum
     FACTION_EXODAR                 = 930
 };
 
-class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
+class Progression : public AllBattlegroundScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
 {
 public:
     Progression();
 
     // AllBattlegroundScript
     void OnBattlegroundEndReward(Battleground* /*bg*/, Player* /*player*/, TeamId /*winnerTeamId*/) override;
-
-    // DatabaseScript
-    void OnAfterDatabasesLoaded(uint32 /*updateFlags*/) override;
 
     // MailScript
     void OnBeforeMailDraftSendMailTo(MailDraft* /*mailDraft*/, MailReceiver const& /*receiver*/, MailSender const& /*sender*/, MailCheckMask& /*checked*/, uint32& /*deliver_delay*/, uint32& /*custom_expiration*/, bool& /*deleteMailItemsFromDB*/, bool& /*sendMail*/) override;
@@ -144,19 +143,23 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
+    void OnStartup() override;
 
 private:
-    uint32 PatchId;
-    uint32 AuraId;
-    bool EnforceLevel;
-    bool EnforceDungeonFinder;
-    bool EnforceDualTalent;
-    bool EnforceQuestInfo;
-    float DamageModifier;
-    float HealingModifier;
-    bool ShowPatchNotes;
+    void UpdateCreatures();
+    void RemoveCreatures();
+    void AddCreatures();
+    void UpdateCreatureTemplates();
 
-    inline std::vector<std::string> GetActivePatches();
+    uint8 patchId;
+    uint32 auraId;
+    bool enforceLevel;
+    bool enforceDungeonFinder;
+    bool enforceDualTalent;
+    bool enforceQuestInfo;
+    bool showPatchNotes;
+    float damageModifier;
+    float healingModifier;
 
     std::vector<std::string> GetChunks(std::string /*s*/, uint8_t /*chunkSize*/);
     void SendChunkedPayload(Warden* /*warden*/, std::string /*payload*/, uint32 /*chunkSize*/);

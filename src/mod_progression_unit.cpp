@@ -15,9 +15,9 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
         return;
     }
 
-    if (PatchId < PATCH_ECHOES_OF_DOOM)
+    if (patchId < ECHOES_OF_DOOM)
     {
-        damage *= DamageModifier;
+        damage *= damageModifier;
     }
 }
 
@@ -34,9 +34,9 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
         return;
     }
 
-    if (PatchId < PATCH_ECHOES_OF_DOOM)
+    if (patchId < ECHOES_OF_DOOM)
     {
-        damage *= DamageModifier;
+        damage *= damageModifier;
     }
 }
 
@@ -53,9 +53,9 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
         return;
     }
 
-    if (PatchId < PATCH_ECHOES_OF_DOOM)
+    if (patchId < ECHOES_OF_DOOM)
     {
-        damage *= DamageModifier;
+        damage *= damageModifier;
     }
 }
 
@@ -82,8 +82,8 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
         return;
     }
 
-    if (PatchId < PATCH_ECHOES_OF_DOOM)
+    if (patchId < ECHOES_OF_DOOM)
     {
-        heal *= HealingModifier;
+        heal *= healingModifier;
     }
 }

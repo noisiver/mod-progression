@@ -2,6 +2,18 @@
 
 #include "mod_progression.h"
 
+void Progression::OnStartup()
+{
+    LOG_INFO("module", "Initializing data for {}", PatchNotes[patchId][1]);
+
+    if (patchId == ASSAULT_ON_THE_RUBY_SANCTUM)
+    {
+        return;
+    }
+
+    UpdateCreatures();
+}
+
 bool Progression::CanPacketSend(WorldSession* session, WorldPacket& packet)
 {
     WardenWin* warden = (WardenWin*)session->GetWarden();
@@ -16,9 +28,10 @@ bool Progression::CanPacketSend(WorldSession* session, WorldPacket& packet)
         return true;
     }
 
-    if (packet.GetOpcode() == SMSG_CHAR_ENUM && ShowPatchNotes)
+    if (packet.GetOpcode() == SMSG_CHAR_ENUM && showPatchNotes)
     {
-        std::string payload = Acore::StringFormat("ServerAlertTitle:SetText('{}');local saf = ServerAlertFrame;saf:SetParent(CharacterSelect);ServerAlertText:SetText('{}');saf:Show();", PatchNotes[PatchId][0], PatchNotes[PatchId][1]);
+        const std::string* patchNotes = PatchNotes[patchId];
+        std::string payload = Acore::StringFormat("ServerAlertTitle:SetText('{}');local saf = ServerAlertFrame;saf:SetParent(CharacterSelect);ServerAlertText:SetText('{}');saf:Show();", patchNotes[0], patchNotes[1]);
         payloadMgr->ClearQueuedPayloads();
         SendChunkedPayload(warden, payload, 128);
     }
@@ -26,7 +39,7 @@ bool Progression::CanPacketSend(WorldSession* session, WorldPacket& packet)
     if (packet.GetOpcode() == SMSG_LOGIN_VERIFY_WORLD)
     {
         std::string payload = Acore::StringFormat("SetCVar(\"showQuestTrackingTooltips\", 1);");
-        if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceQuestInfo)
+        if (patchId < FALL_OF_THE_LICH_KING && enforceQuestInfo)
         {
             payload = Acore::StringFormat("SetCVar(\"showQuestTrackingTooltips\", 0);");
         }

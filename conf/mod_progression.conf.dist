@@ -97,16 +97,6 @@ Progression.Multiplier.Damage = 0.6
 
 Progression.Multiplier.Healing = 0.5
 
-#
-#    Progression.Reset
-#        Description: Reapply all SQL files on startup
-#                     This is useful when moving to an older patch, after making changes or to make sure it's up-to-date
-#        Default:     0 - Disabled
-#                     1 - Enabled
-#
-
-Progression.Reset = 0
-
 
 #
 #    Progression.PatchNotes.Enabled
