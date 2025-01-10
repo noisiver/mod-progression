@@ -55,7 +55,7 @@ DELETE FROM `npc_trainer` WHERE `ID`=200006 AND `SpellID` IN (
     25297, -- Healing Touch (Rank 11)
     25298, -- Starfire (Rank 7)
     25299, -- Rejuvenation (Rank 11)
-    26991 -- Gift of the Wild (Rank 3)
+    26991, -- Gift of the Wild (Rank 3)
     31018, -- Ferocious Bite (Rank 5)
     31709 -- Cower (Rank 4)
 );
