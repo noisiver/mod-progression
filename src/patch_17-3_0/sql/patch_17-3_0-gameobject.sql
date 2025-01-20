@@ -14,7 +14,11 @@ UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
 DELETE FROM `gameobject` WHERE `id` IN (
     176146, -- Gate of Ahn'Qiraj
     176147, -- Ahn'Qiraj Gate Roots
-    176148 -- Ahn'Qiraj Gate Runes
+    176148, -- Ahn'Qiraj Gate Runes
+
+    -- Naxxramas
+    181287, -- Frozen Rune
+    181476 -- Nox Portal Plaguewood
 );
 
 UPDATE `gameobject` SET `animprogress`=0, `state`=0 WHERE `id` IN (

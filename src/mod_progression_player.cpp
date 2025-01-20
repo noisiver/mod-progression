@@ -100,3 +100,11 @@ void Progression::OnGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/,
         amount = 0;
     }
 }
+
+void Progression::OnBeforeChooseGraveyard(Player* player, TeamId /*teamId*/, bool /*nearCorpse*/, uint32& graveyardOverride)
+{
+    if (player->GetMapId() == MAP_NAXXRAMAS && PatchId < PATCH_ECHOES_OF_DOOM)
+    {
+        graveyardOverride = GRAVEYARD_STRATHOLME;
+    }
+}

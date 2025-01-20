@@ -314,3 +314,56 @@ UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=56, `maxlevel`
 
 UPDATE `creature_template` SET `subname`='King of Stormwind' WHERE `entry`=1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63, `AIName`='SmartAI' WHERE `entry`=1748; -- Highlord Bolvar Fordragon
+
+-- Naxxramas
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `lootid`=47000, `HealthModifier`=650 WHERE `entry`=15931; -- Grobbulus
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `lootid`=47001, `HealthModifier`=500 WHERE `entry`=15932; -- Gluth
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `name`='Stitched Spewer', `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `lootid`=47002, `HealthModifier`=45 WHERE `entry`=16025; -- Stitched Spewer (Stitched Giant)
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `lootid`=47003, `HealthModifier`=1200 WHERE `entry`=16028; -- Patchwerk
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0, `BaseAttackTime`=2500, `lootid`=47004 WHERE `entry`=16021; -- Living Monstrosity
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0, `lootid`=47005, `HealthModifier`=25 WHERE `entry`=16029; -- Sludge Belcher
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `BaseAttackTime`=2500, `lootid`=47006, `HealthModifier`=28 WHERE `entry`=16017; -- Patchwork Golem
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `BaseAttackTime`=2500, `lootid`=47007, `HealthModifier`=34 WHERE `entry`=16018; -- Bile Retcher
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `BaseAttackTime`=2500, `lootid`=47008, `HealthModifier`=16 WHERE `entry`=16020; -- Mad Scientist
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `BaseAttackTime`=2500, `lootid`=47009, `HealthModifier`=14 WHERE `entry`=16022; -- Surgical Assistant
+UPDATE `creature_template` SET `minlevel`=61, `maxlevel`=61, `exp`=0 WHERE `entry`=16027; -- Living Poison
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0 WHERE `entry`=16419; -- Ghost of Naxxramas
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `BaseAttackTime`=2500, `HealthModifier`=4 WHERE `entry`=16024; -- Embalming Slime
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `BaseAttackTime`=3000 WHERE `entry`=16360; -- Zombie Chow
+UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60, `exp`=0, `lootid`=47010, `AIName`='SmartAI' WHERE `entry`=16368; -- Necropolis Acolyte
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `BaseAttackTime`=1800, `HealthModifier`=50 WHERE `entry`=16375; -- Sewage Slime
+UPDATE `creature_template` SET `lootid`=47011, `AIName`='SmartAI' WHERE `entry`=16449; -- Spirit of Naxxramas
+UPDATE `creature_template` SET `lootid`=47012, `AIName`='SmartAI' WHERE `entry`=16448; -- Plagued Deathhound
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `speed_walk`=0.7, `lootid`=47013, `HealthModifier`=30 WHERE `entry`=16447; -- Plagued Ghoul
+UPDATE `creature_template` SET `name`='Deathknight Vindicator', `exp`=0, `speed_walk`=0.7, `BaseAttackTime`=2000, `lootid`=47014, `AIName`='SmartAI' WHERE `entry`=16451; -- Deathknight Vindicator
+UPDATE `creature_template` SET `exp`=0, `speed_walk`=0.7, `BaseAttackTime`=2000, `unit_class`=8, `lootid`=47015, `ScriptName`='npc_necro_knight_guardian' WHERE `entry`=16452; -- Necro Knight Guardian
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15929; -- Stalagg
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15930; -- Feugen
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `lootid`=47016, `HealthModifier`=2000 WHERE `entry`=15928; -- Thaddius
+
+/* WITH DAMAGE MODIFIERS
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=40, `BaseAttackTime`=2500, `lootid`=47000, `HealthModifier`=650 WHERE `entry`=15931; -- Grobbulus
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=36, `lootid`=47001, `HealthModifier`=500 WHERE `entry`=15932; -- Gluth
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `name`='Stitched Spewer', `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=37.55, `BaseAttackTime`=2500, `lootid`=47002, `HealthModifier`=45 WHERE `entry`=16025; -- Stitched Spewer (Stitched Giant)
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=67.5, `lootid`=47003, `HealthModifier`=1200 WHERE `entry`=16028; -- Patchwerk
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0, `DamageModifier`=30.6, `BaseAttackTime`=2500, `lootid`=47004 WHERE `entry`=16021; -- Living Monstrosity
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0, `DamageModifier`=35, `lootid`=47005, `HealthModifier`=25 WHERE `entry`=16029; -- Sludge Belcher
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `DamageModifier`=37.5, `BaseAttackTime`=2500, `lootid`=47006, `HealthModifier`=28 WHERE `entry`=16017; -- Patchwork Golem
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `DamageModifier`=35, `BaseAttackTime`=2500, `lootid`=47007, `HealthModifier`=34 WHERE `entry`=16018; -- Bile Retcher
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `DamageModifier`=15, `BaseAttackTime`=2500, `lootid`=47008, `HealthModifier`=16 WHERE `entry`=16020; -- Mad Scientist
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `DamageModifier`=14.95, `BaseAttackTime`=2500, `lootid`=47009, `HealthModifier`=14 WHERE `entry`=16022; -- Surgical Assistant
+UPDATE `creature_template` SET `minlevel`=61, `maxlevel`=61, `exp`=0, `DamageModifier`=4.35 WHERE `entry`=16027; -- Living Poison
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `DamageModifier`=27 WHERE `entry`=16419; -- Ghost of Naxxramas
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `DamageModifier`=23, `BaseAttackTime`=2500, `HealthModifier`=4 WHERE `entry`=16024; -- Embalming Slime
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `BaseAttackTime`=3000 WHERE `entry`=16360; -- Zombie Chow
+UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60, `exp`=0, `lootid`=47010, `AIName`='SmartAI' WHERE `entry`=16368; -- Necropolis Acolyte
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `DamageModifier`=23, `BaseAttackTime`=1800, `HealthModifier`=50 WHERE `entry`=16375; -- Sewage Slime
+UPDATE `creature_template` SET `lootid`=47011, `AIName`='SmartAI' WHERE `entry`=16449; -- Spirit of Naxxramas
+UPDATE `creature_template` SET `DamageModifier`=30.4, `lootid`=47012, `AIName`='SmartAI' WHERE `entry`=16448; -- Plagued Deathhound
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=61, `maxlevel`=61, `exp`=0, `speed_walk`=0.7, `DamageModifier`=26.25, `lootid`=47013, `HealthModifier`=30 WHERE `entry`=16447; -- Plagued Ghoul
+UPDATE `creature_template` SET `name`='Deathknight Vindicator', `exp`=0, `speed_walk`=0.7, `DamageModifier`=39, `BaseAttackTime`=2000, `lootid`=47014, `AIName`='SmartAI' WHERE `entry`=16451; -- Deathknight Vindicator
+UPDATE `creature_template` SET `exp`=0, `speed_walk`=0.7, `DamageModifier`=22, `BaseAttackTime`=2000, `unit_class`=8, `lootid`=47015, `ScriptName`='npc_necro_knight_guardian' WHERE `entry`=16452; -- Necro Knight Guardian
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=54.85, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15929; -- Stalagg
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=56.25, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15930; -- Feugen
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `DamageModifier`=50, `BaseAttackTime`=2500, `lootid`=47016, `HealthModifier`=2000 WHERE `entry`=15928; -- Thaddius
+*/
