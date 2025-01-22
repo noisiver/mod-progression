@@ -21,3 +21,5 @@ UPDATE `creature_template` SET `faction`=7 WHERE `entry` IN (
 UPDATE `creature_template` SET `faction`=190 WHERE `entry`=706; -- Frostmane Troll Whelp
 UPDATE `creature_template` SET `faction`=189 WHERE `entry`=2952; -- Bristleback Quilboar
 UPDATE `creature_template` SET `ScriptName`='' WHERE `entry`=31439; -- Archmage Timear
+UPDATE `creature_template` SET `name`='Diseased Timber Wolf' WHERE `entry`=69;
+UPDATE `creature_template` SET `name`='Diseased Young Wolf' WHERE `entry`=299;

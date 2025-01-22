@@ -1,4 +1,5 @@
 UPDATE `creature_loot_template` SET `Item`=17008 WHERE `Entry`=4421 AND `Item`=49205; -- Charlga Razorflank - Small Scroll
+UPDATE `creature_loot_template` SET `Item`=750 WHERE `Entry` IN (69, 299) AND `Item`=50432; -- Diseased Wolf Pelt -> Tough Wolf Meat
 
 -- Emblem of Heroism
 UPDATE `creature_loot_template` SET `Item`=40752 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (

@@ -68,3 +68,6 @@ UPDATE `quest_template` SET `QuestCompletionLog`='Return to Archmage Lan\'dalock
     13255, -- Proof of Demise: Herald Volazj
     13256 -- Proof of Demise: Cyanigosa
 );
+
+-- Wolves Across the Border
+UPDATE `quest_template` SET `LogDescription`='Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey.', `QuestDescription`='Whatever is affecting these wolves isn\'t going away. Each day that passes brings forth more sick wolves. It pains me to ask anyone to kill nature\'s beasts, but we must destroy the diseased young wolves before this little outbreak turns into an epidemic.$B$BKill diseased young wolves in the valley and bring me their diseased wolf pelts as proof of your deed.$B', `RequiredItemId1`=50432 WHERE `ID`=33;
