@@ -81,6 +81,8 @@ DELETE FROM `creature` WHERE `id1` IN (
 UPDATE `creature` SET `position_x`=-8439.61, `position_y`=334.384, `position_z`=122.58, `orientation`=2.2081 WHERE `id1`=1747; -- Anduin Wrynn <Prince of Stormwind>
 
 -- Naxxramas
+SET @Minimum := 5400000, @Maximum := 5400327;
+UPDATE `creature` SET `spawntimesecs`=300 WHERE `guid` IN (97718, 97724, 97736, 97747, 1971313);
 UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (30071, 30083, 30085);
-UPDATE `creature` SET `phaseMask`=1 WHERE `id1`=16447 AND `guid` NOT BETWEEN 5400000 AND 5400281;
-DELETE FROM `creature` WHERE `guid` BETWEEN 5400000 AND 5400281;
+UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (16020, 16021, 16022, 16447) AND `guid` NOT BETWEEN @Minimum AND @Maximum;
+DELETE FROM `creature` WHERE `guid` BETWEEN @Minimum AND @Maximum;

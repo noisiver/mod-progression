@@ -24,7 +24,11 @@ void AddSC_zone_dalaran_default();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
 void AddSC_at_naxxramas();
+void AddSC_instance_naxxramas_tweaks();
 void AddSC_npc_necro_knight_guardian();
+void AddSC_boss_patchwerk_progression();
+void AddSC_boss_grobbulus_progression();
+void AddSC_boss_gluth_progression();
 
 void Addmod_progressionScripts()
 {
@@ -45,7 +49,11 @@ void Addmod_progressionScripts()
     if (id < PATCH_ECHOES_OF_DOOM)
     {
         AddSC_instance_blackrock_spire_progression();
+        AddSC_instance_naxxramas_tweaks();
         AddSC_npc_necro_knight_guardian();
+        AddSC_boss_patchwerk_progression();
+        AddSC_boss_grobbulus_progression();
+        AddSC_boss_gluth_progression();
     }
 
     if (id < PATCH_CALL_OF_THE_CRUSADE)

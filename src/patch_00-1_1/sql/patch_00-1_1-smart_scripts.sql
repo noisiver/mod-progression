@@ -8,22 +8,30 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (1748, 0, 4, 0, 0, 0, 100, 0, 5000, 15000, 20000, 40000, 0, 0, 11, 20683, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Highlord\'s Justice');
 
 -- Naxxramas
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16368, 16447, 16448, 16449, 16451);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018, 16020, 16021, 16022, 16025, 16029, 16368, 16385, 16447, 16448, 16449, 16451);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
--- Necropolis Acolyte
+(16017, 0, 0, 0, 0, 0, 100, 0, 7000, 7000, 10000, 14000, 0, 0, 11, 27758, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In combat - Cast War Stomp'),
+(16017, 0, 2, 0, 0, 0, 100, 0, 5000, 5000, 8000, 15000, 0, 0, 11, 27794, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In combat - Cast Cleave'),
+(16018, 0, 0, 0, 0, 0, 100, 0, 10000, 10000, 15000, 15000, 0, 0, 11, 27807, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In combat - Cast Bile Vomit'),
+(16020, 0, 0, 0, 0, 0, 100, 0, 10000, 10000, 7000, 7000, 0, 0, 11, 28301, 256, 0, 0, 0, 0, 5, 0, 0, 1, 0, 0, 0, 0, 0, 'Mad Scientist - In combat - Cast Mana Burn'),
+(16021, 0, 0, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 28293, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In combat - Cast Chain Lightning'),
+(16021, 0, 1, 0, 0, 0, 100, 0, 6000, 12000, 8000, 12000, 0, 0, 11, 27990, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In Combat - Cast Fear'),
+(16021, 0, 2, 0, 0, 0, 100, 0, 3000, 4000, 10000, 15000, 0, 0, 11, 28294, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In combat - Cast Lightning Totem'),
+(16022, 0, 0, 0, 0, 0, 100, 0, 0, 0, 10000, 10000, 0, 0, 11, 28310, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Surgical Assistant - In combat - Cast Mind Flay'),
+(16025, 0, 2, 0, 0, 0, 100, 0, 0, 0, 5000, 10000, 0, 0, 11, 28311, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Stitched Spewer - In Combat - Cast Slime Bolt'),
+(16025, 0, 3, 0, 0, 0, 100, 0, 5000, 5000, 6000, 6000, 0, 0, 11, 28318, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Stitched Spewer - In Combat - Cast Slime Shot'),
+(16029, 0, 0, 0, 0, 0, 100, 0, 0, 0, 6000, 6000, 0, 0, 11, 27891, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In combat - Cast Acidic Sludge'),
+(16029, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 27889, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast Spawn Bile Sludge'),
 (16368, 0, 0, 0, 0, 0, 100, 0, 1000, 1000, 6000, 6000, 0, 0, 11, 22271, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Necropolis Acolyte - In Combat - Cast Arcane Explosion'),
 (16368, 0, 1, 0, 0, 0, 100, 0, 1000, 1000, 6000, 6000, 0, 0, 11, 28448, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Necropolis Acolyte - In Combat - Cast Shadow Bolt Volley'),
--- Plagued Ghoul
+(16385, 0, 0, 0, 0, 0, 100, 0, 1000, 3000, 4000, 4000, 0, 0, 11, 28297, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - In Combat - Cast Shock'),
 (16447, 0, 0, 0, 0, 0, 100, 0, 2000, 2000, 12000, 12000, 0, 0, 11, 29915, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Plagued Ghoul - In Combat - Cast Flesh Rot'),
 (16447, 0, 1, 0, 0, 0, 100, 0, 3000, 3000, 15000, 15000, 0, 0, 11, 13738, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Plagued Ghoul - In Combat - Cast Rend'),
 (16447, 0, 2, 0, 0, 0, 100, 0, 0, 0, 7000, 8000, 0, 0, 11, 26350, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Plagued Ghoul - In Combat - Cast Cleave'),
--- Plagued Deathhound
 (16448, 0, 0, 0, 0, 0, 100, 0, 6000, 8000, 8000, 10000, 0, 0, 11, 30121, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Plagued Deathhound - In Combat - Cast Forceful Howl'),
--- Spirit of Naxxramas
 (16449, 0, 0, 0, 0, 0, 100, 0, 2800, 5100, 4500, 12000, 0, 0, 11, 28599, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Spirit of Naxxramas - In combat - Cast Shadow Bolt Volley'),
 (16449, 0, 1, 0, 0, 0, 100, 0, 4100, 8700, 60000, 60000, 0, 0, 11, 28383, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Spirit of Naxxramas - In combat - Cast Portal of Shadows'),
 (16449, 0, 2, 0, 25, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 500, 0, 0, 0, 0, 0, 19, 16420, 0, 0, 0, 0, 0, 0, 0, 'Spirit of Naxxramas - On reset - Despawn Portal of Shadows'),
--- Deathknight Vindicator
 (16451, 0, 0, 0, 0, 0, 100, 0, 0, 2000, 4000, 4000, 0, 0, 11, 28413, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Deathknight Vindicator - In Combat - Cast Aura of Agony'),
 (16451, 0, 1, 0, 0, 0, 95, 0, 1000, 1000, 4000, 4000, 0, 0, 11, 15284, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Deathknight Vindicator - In Combat - Cast Cleave'),
 (16451, 0, 2, 0, 0, 0, 80, 0, 3000, 3000, 5000, 5000, 0, 0, 11, 28412, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Deathknight Vindicator - In Combat - Cast Death Coil');

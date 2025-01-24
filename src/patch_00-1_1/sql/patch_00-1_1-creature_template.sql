@@ -342,3 +342,8 @@ UPDATE `creature_template` SET `exp`=0, `speed_walk`=0.7, `BaseAttackTime`=2000,
 UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15929; -- Stalagg
 UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `HealthModifier`=150 WHERE `entry`=15930; -- Feugen
 UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0, `BaseAttackTime`=2500, `lootid`=47016, `HealthModifier`=2000 WHERE `entry`=15928; -- Thaddius
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0, `HealthModifier`=3 WHERE `entry`=16142; -- Bile Sludge
+UPDATE `creature_template` SET `minlevel`=60, `maxlevel`=60, `exp`=0 WHERE `entry`=16400; -- Toxic Tunnel
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=62, `maxlevel`=62, `exp`=0 WHERE `entry`=16385; -- Lightning Totem
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=63, `maxlevel`=63, `exp`=0 WHERE `entry`=16363; -- Grobbulus Cloud
+UPDATE `creature_template` SET `difficulty_entry_1`=0, `minlevel`=60, `maxlevel`=60, `exp`=0, `HealthModifier`=16 WHERE `entry`=16290; -- Fallout Slime

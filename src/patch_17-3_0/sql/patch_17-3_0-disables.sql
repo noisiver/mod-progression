@@ -7,7 +7,6 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (1, 4490, 0, '', '', 'Deprecated quest: Summon Felsteed');
 
 DELETE FROM `disables` WHERE `sourceType`=2 AND `entry` IN (
-    533, -- Naxxramas
     574, -- Utgarde Keep
     575, -- Utgarde Pinnacle
     576, -- The Nexus

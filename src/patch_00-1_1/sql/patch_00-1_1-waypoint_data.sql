@@ -39,6 +39,7 @@ INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `positio
 (5300002, 23, 2318.86, -5369.25, 87.2393, NULL, 10000, 0, 0, 100, 0);
 
 -- Naxxramas
+UPDATE `waypoint_data` SET `delay`=60000 WHERE `id`=1281350 AND `point`=8;
 DELETE FROM `waypoint_data` WHERE `id` BETWEEN 5400119 AND 5400271;
 INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES
 (5400119, 1, 3096.28, -3910.55, 267.593, 2.82117),
