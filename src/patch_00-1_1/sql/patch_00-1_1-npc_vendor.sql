@@ -244,6 +244,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     22148, -- Wild Quillvine
     27855, -- Mag'har Grainbread
     27856, -- Skethyl Berries
+    27857, -- Garadar Sharp
     27859, -- Zangar Caps
     28053, -- Wicked Arrow
     28060, -- Impact Shot
@@ -528,6 +529,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     33674, -- Alchemist Kanhu <Master Alchemy Trainer>
     33678 -- Jijia <Master Herbalism Trainer>
 ) AND `item` IN (
+    33443, -- Sour Goat Cheese
     33444, -- Pungent Seal Whey
     33445, -- Honeymint Tea
     33449, -- Crusty Flatbread
@@ -537,6 +539,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     35948, -- Savory Snowplum
     35949, -- Tundra Berries
     35950, -- Sweet Potato Bread
+    35952, -- Briny Hardcheese
     35953, -- Mead Basted Caribou
     35954, -- Sweetened Goat's Milk
     37201, -- Corpse Dust
