@@ -108,7 +108,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 8);
     }
 
-    if (PatchId <= PATCH_BATTLEGROUNDS)
+    if (PatchId < PATCH_BEFORE_THE_STORM)
     {
         sWorld->setRate(RATE_HONOR, 0);
         sWorld->setRate(RATE_ARENA_POINTS, 0);
