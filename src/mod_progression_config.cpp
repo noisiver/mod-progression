@@ -108,14 +108,18 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 8);
     }
 
-    if (PatchId < PATCH_BEFORE_THE_STORM)
+    if (PatchId < PATCH_BATTLEGROUNDS)
     {
         sWorld->setRate(RATE_HONOR, 0);
-        sWorld->setRate(RATE_ARENA_POINTS, 0);
     }
     else if (PatchId < PATCH_FALL_OF_THE_LICH_KING)
     {
         sWorld->setRate(RATE_HONOR, 0.5f);
+    }
+
+    if (PatchId < PATCH_BEFORE_THE_STORM)
+    {
+        sWorld->setRate(RATE_ARENA_POINTS, 0);
     }
 
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
