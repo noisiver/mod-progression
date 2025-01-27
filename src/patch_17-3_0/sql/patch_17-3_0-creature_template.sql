@@ -82,6 +82,8 @@ UPDATE `creature_template` SET `minlevel`=70, `maxlevel`=70 WHERE `entry` IN (
 );
 
 UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
+    11798, -- Bunthen Plainswind <Thunder Bluff Flight Master>
+    11800, -- Silva Fil'naveth <Darnassus Flight Master>
     29019, -- Dockhand
     29152, -- Stormwind Dock Worker
     29712 -- Stormwind Harbor Guard

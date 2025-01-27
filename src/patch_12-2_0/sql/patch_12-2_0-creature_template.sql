@@ -78,6 +78,7 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
     11138, -- Maethrya <Hippogryph Master>
     11139, -- Yugrek <Wind Rider Master>
     11194, -- Argent Defender <The Argent Dawn>
+    11822, -- Moonglade Warden
     11899, -- Shardi <Wind Rider Master>
     11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
@@ -105,7 +106,8 @@ UPDATE `creature_template` SET `minlevel`=65, `maxlevel`=65 WHERE `entry` IN (
 
 UPDATE `creature_template` SET `minlevel`=72, `maxlevel`=72 WHERE `entry` IN (
     466, -- General Marcus Jonathan <High Commander of Stormwind Defense>
-    2425 -- Varimathras
+    2425, -- Varimathras
+    11832 -- Keeper Remulos
 );
 
 UPDATE `creature_template` SET `minlevel`=73, `maxlevel`=73 WHERE `entry` IN (

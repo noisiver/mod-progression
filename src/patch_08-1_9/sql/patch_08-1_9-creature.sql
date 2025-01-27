@@ -1,4 +1,5 @@
 UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
+    11832, -- Keeper Remulos
     15440, -- Captain Blackanvil <Ironforge Brigade Captain>
     15441, -- Ironforge Brigade Rifleman
     15443, -- Janela Stouthammer

@@ -9,6 +9,7 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     6109, -- Azuregos
     10378, -- Omusa Thunderhorn <Wind Rider Master>
     10583, -- Gryfe <Flight Master>
+    11832, -- Keeper Remulos
     12239, -- Spirit of Gelk <The Second Kahn>
     12779, -- Archmage Gaiman
     12780, -- Sergeant Major Skyshadow
@@ -217,6 +218,11 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     20797, -- Deviate Coiler Hatchling
     21045, -- Hired Bodyguard <The Black Flame>
     21448, -- Gadgetzan Sniper
+    22834, -- Clintar Dreamwalker
+    22835, -- Cenarion Dreamwarden
+    22837, -- Dreamwarden Lurosa
+    22889, -- Manifest Nightmare
+    22902, -- Phantasmal Lash
     22931, -- Gorrim <Emerald Circle Flight Master>
     22935, -- Suralais Farwind <Hippogryph Master>
     22936, -- Auhula <Apprentice Hippogryph Master>
