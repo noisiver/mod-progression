@@ -45,7 +45,9 @@ DELETE FROM `npc_trainer` WHERE `ID`=200004 AND `SpellID` IN (
     25898, -- Greater Blessing of Kings
     25899, -- Greater Blessing of Sanctuary
     25916, -- Greater Blessing of Might (Rank 2)
-    25918 -- Greater Blessing of Wisdom (Rank 2)
+    25918, -- Greater Blessing of Wisdom (Rank 2)
+    31789, -- Righteous Defense
+    62124 -- Hand of Reckoning
 );
 
 DELETE FROM `npc_trainer` WHERE `ID`=200006 AND `SpellID` IN (

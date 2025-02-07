@@ -1,6 +1,7 @@
-DELETE FROM `npc_trainer` WHERE (`ID` IN (17215, 201001, 201003) AND `SpellID`=53042) OR (`SpellID` IN (1710, 13820, 23161, 23214, 34767, 34768)) OR (`ID`=200006 AND `SpellID`=26991) OR (`ID`=200008 AND `SpellID`=33717) OR (`ID`=200012 AND `SpellID` IN (25392, 39374)) OR (`ID`=200006 AND `SpellID`=1066);
+DELETE FROM `npc_trainer` WHERE (`ID` IN (17215, 201001, 201003) AND `SpellID`=53042) OR (`SpellID` IN (1710, 13820, 23161, 23214, 34767, 34768)) OR (`ID`=200004 AND `SpellID`=62124) OR (`ID`=200006 AND `SpellID`=26991) OR (`ID`=200008 AND `SpellID`=33717) OR (`ID`=200012 AND `SpellID` IN (25392, 39374)) OR (`ID`=200006 AND `SpellID`=1066);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 (17215, 53042, 10000, 171, 50, 0, 0), -- Mixology
+(200004, 62124, 3000, 0, 0, 16, 0), -- Hand of Reckoning
 (200006, 1066, 900, 0, 0, 16, 0), -- Aquatic Form
 (200006, 26991, 100000, 0, 0, 70, 0), -- Gift of the Wild (Rank 3)
 (200008, 33717, 150000, 0, 0, 70, 0), -- Conjure Food (Rank 8)

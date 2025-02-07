@@ -1,6 +1,6 @@
 UPDATE `npc_trainer` SET `MoneyCost`=6000000 WHERE `SpellID`=33391; -- Journeyman Riding
 
-DELETE FROM `npc_trainer` WHERE (`ID`=200002 AND `SpellID` IN (25286, 25288, 25289)) OR (`ID`=200004 AND `SpellID` IN (25290, 25291, 25292)) OR (`ID`=200006 AND `SpellID` IN (21849, 21850, 25297, 25298, 25299, 31018, 31709)) OR (`ID`=200008 AND `SpellID` IN (23028, 25304, 25306, 25345, 27090, 27127, 28609, 28612)) OR (`ID`=200010 AND `SpellID` IN (25307, 25309, 25311, 28610)) OR (`ID`=200012 AND `SpellID` IN (21562, 21564, 25314, 25315, 25316, 27683)) OR (`ID`=200014 AND `SpellID` IN (25294, 25295, 25296)) OR (`ID`=200016 AND `SpellID` IN (25300, 25302, 31016)) OR (`ID`=200018 AND `SpellID` IN (25357, 25361, 29228, 36936));
+DELETE FROM `npc_trainer` WHERE (`ID`=200002 AND `SpellID` IN (25286, 25288, 25289)) OR (`ID`=200004 AND `SpellID` IN (25290, 25291, 25292, 31789)) OR (`ID`=200006 AND `SpellID` IN (21849, 21850, 25297, 25298, 25299, 31018, 31709)) OR (`ID`=200008 AND `SpellID` IN (23028, 25304, 25306, 25345, 27090, 27127, 28609, 28612)) OR (`ID`=200010 AND `SpellID` IN (25307, 25309, 25311, 28610)) OR (`ID`=200012 AND `SpellID` IN (21562, 21564, 25314, 25315, 25316, 27683)) OR (`ID`=200014 AND `SpellID` IN (25294, 25295, 25296)) OR (`ID`=200016 AND `SpellID` IN (25300, 25302, 31016)) OR (`ID`=200018 AND `SpellID` IN (25357, 25361, 29228, 36936));
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 (200002, 25286, 60000, 0, 0, 60, 0), -- Heroic Strike (Rank 9)
 (200002, 25288, 60000, 0, 0, 60, 0), -- Revenge (Rank 6)
@@ -8,6 +8,7 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (200004, 25290, 50000, 0, 0, 60, 0), -- Blessing of Wisdom (Rank 6)
 (200004, 25291, 50000, 0, 0, 60, 0), -- Blessing of Might (Rank 7)
 (200004, 25292, 46000, 0, 0, 60, 0), -- Holy Light (Rank 9)
+(200004, 31789, 4000, 0, 0, 14, 0), -- Righteous Defense
 (200006, 21849, 23000, 0, 0, 50, 0), -- Gift of the Wild (Rank 1)
 (200006, 21850, 34000, 0, 0, 60, 0), -- Gift of the Wild (Rank 2)
 (200006, 25297, 34000, 0, 0, 60, 0), -- Healing Touch (Rank 11)
