@@ -195,6 +195,10 @@ AiPlayerbot.PremadeSpecName.8.2 = frost pve
 AiPlayerbot.PremadeSpecGlyph.8.2 = 0,0,0,0,0,0 
 AiPlayerbot.PremadeSpecLink.8.2.60 = 23000503310003--0533030310233100031 
 AiPlayerbot.PremadeSpecLink.8.2.80 = 23000503310003--0533030310233100031 
+AiPlayerbot.PremadeSpecName.8.3 = frostfire pve
+AiPlayerbot.PremadeSpecGlyph.8.3 = 0,0,0,0,0,0 
+AiPlayerbot.PremadeSpecLink.8.3.60 = 2300230311-0055032012303330051 
+AiPlayerbot.PremadeSpecLink.8.3.80 = 2300230311-0055032012303330051 
 
 #
 #
