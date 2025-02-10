@@ -205,7 +205,9 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     19848, -- Harbinger Ennarth
     19850, -- Councilor Arial D'Anastasis
     19855, -- Sir Maximus Adams <Arathi Basin Battlemaster>
+    19859, -- Max Luna <Arena Battlemaster>
     19860, -- Katrina Turner
+    19861, -- Bip Nigstrom <Arena Organizer>
     19905, -- The Black Bride <Arathi Basin Battlemaster>
     19906, -- Usha Eyegouge <Alterac Valley Battlemaster>
     19907, -- Grumbol Grimhammer <Alterac Valley Battlemaster>
