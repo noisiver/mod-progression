@@ -1,6 +1,5 @@
 UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     19202, -- Emissary Mordin
-    24932, -- Exarch Nasuun
     25134, -- Shattered Sun Trainee
     25135, -- Shattered Sun Trainee
     25136, -- Shattered Sun Trainee
@@ -14,8 +13,6 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     25155, -- Shattered Sun Cleric
     25167, -- General Tiras'alan
     25885, -- Whirligig Wafflefry <Gnomish Inventor>
-    27666, -- Ontuvo <Jewelcrafting Supplies>
-    27667, -- Anwehu <Weapons & Armorsmith>
     27703, -- Ysuria <Portal Trainer>
     27705, -- Lorrin Foxfire<Portal Trainer>
     28126, -- Don Carlos

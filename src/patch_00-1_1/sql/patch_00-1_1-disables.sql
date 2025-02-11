@@ -7,7 +7,7 @@ DELETE FROM `disables` WHERE `sourceType`=1 AND `entry` IN (
     4490 -- Deprecated quest: Summon Felsteed
 );
 
-DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (7028, 7029, 7041, 7044, 7064, 7065, 7066, 7067, 7068, 7070, 7441, 7481, 7482, 7492, 7494, 7562, 7638, 7670, 8194, 8922, 8923, 10955, 11130, 11172, 11211, 11214, 11215, 11481, 11482, 11497, 11498, 11880, 13830, 13832, 13833, 13834, 13836, 13861, 13862, 13863, 13864, 14016, 14100, 14111) OR (`sourceType`=2 AND `entry` IN (269, 309, 349, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724)) OR (`sourceType`=3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32)) OR (`sourceType`=5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7)) OR (`sourceType`=9 AND `entry` IN (1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 23, 24, 26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 70, 71, 76, 77, 90)) OR (`sourceType`=10 AND `entry` IN (17413, 17414, 17682, 17683, 18600, 18646, 18665, 18705, 18987, 19803, 19805, 19806, 19807, 19808, 21877, 27859, 27860, 31952, 49426, 50289)));
+DELETE FROM `disables` WHERE (`sourceType`=1 AND `entry` IN (7028, 7029, 7041, 7044, 7064, 7065, 7066, 7067, 7068, 7070, 7441, 7481, 7482, 7492, 7494, 7562, 7638, 7670, 8194, 8922, 8923, 10955, 11130, 11172, 11211, 11214, 11215, 11481, 11482, 11497, 11498, 11880, 13830, 13832, 13833, 13834, 13836, 13861, 13862, 13863, 13864, 14016, 14100, 14111) OR (`sourceType`=2 AND `entry` IN (269, 309, 349, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724)) OR (`sourceType`=3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32)) OR (`sourceType`=5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7)) OR (`sourceType`=9 AND `entry` IN (1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 23, 24, 26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 70, 71, 76, 77, 90, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115)) OR (`sourceType`=10 AND `entry` IN (17413, 17414, 17682, 17683, 18600, 18646, 18665, 18705, 18987, 19803, 19805, 19806, 19807, 19808, 21877, 27859, 27860, 31952, 49426, 50289)));
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (1, 7028, 0, '', '', 'Twisted Evils'),
 (1, 7029, 0, '', '', 'Vyletongue Corruption'),
@@ -182,6 +182,21 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (9, 76, 0, '', '', 'Arena Season 2'),
 (9, 77, 0, '', '', 'Darkmoon Faire Building (Terokkar Forest)'),
 (9, 90, 0, '', '', 'Stranglethorn Fishing Extravaganza - Turn-ins'),
+(9, 101, 0, '', '', 'Sun\'s Reach Reclamation Phase 1'),
+(9, 102, 0, '', '', 'Sun\'s Reach Reclamation Phase 2 Only'),
+(9, 103, 0, '', '', 'Sun\'s Reach Reclamation Phase 2 Permanent'),
+(9, 104, 0, '', '', 'Sun\'s Reach Reclamation Phase No Portal'),
+(9, 105, 0, '', '', 'Sun\'s Reach Reclamation Phase Portal'),
+(9, 106, 0, '', '', 'Sun\'s Reach Reclamation Phase 3 Only'),
+(9, 107, 0, '', '', 'Sun\'s Reach Reclamation Phase 3 Permanent'),
+(9, 108, 0, '', '', 'Sun\'s Reach Reclamation Phase No Anvil'),
+(9, 109, 0, '', '', 'Sun\'s Reach Reclamation Phase Anvil'),
+(9, 110, 0, '', '', 'Sun\'s Reach Reclamation Phase 4'),
+(9, 111, 0, '', '', 'Sun\'s Reach Reclamation Phase No Monument'),
+(9, 112, 0, '', '', 'Sun\'s Reach Reclamation Phase Monument'),
+(9, 113, 0, '', '', 'Sun\'s Reach Reclamation Phase No Alchemy Lab'),
+(9, 114, 0, '', '', 'Sun\'s Reach Reclamation Phase Alchemy Lab'),
+(9, 115, 0, '', '', 'Sun\'s Reach Reclamation Phase K\'iru'),
 (10, 17413, 0, '', '', 'Codex: Prayer of Fortitude'),
 (10, 17414, 0, '', '', 'Codex: Prayer of Fortitude II'),
 (10, 17682, 0, '', '', 'Gift of the Wild'),

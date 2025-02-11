@@ -273,7 +273,6 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     24929, -- Crewman Crosswire <The Iron Eagle>
     24930, -- Crewman Gazzlegear <The Iron Eagle>
     24931, -- Crewman Fastwrench <The Iron Eagle>
-    24932, -- Exarch Nasuun
     24934, -- Snack-O-Matic IV
     24935, -- Vend-O-Tron D-Luxe
     24993, -- Galley Chief Mariss <The Moonspray>
@@ -325,8 +324,6 @@ UPDATE `creature` SET `phaseMask`=16384 WHERE `id1` IN (
     26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
     26539, -- Meefi Farthrottle <Howling Fjord Zeppelin Master>
     26548, -- Leesha Tannerby <Dockmaster>
-    27666, -- Ontuvo <Jewelcrafting Supplies>
-    27667, -- Anwehu <Weapons & Armorsmith>
     27703, -- Ysuria <Portal Trainer>
     27705, -- Lorrin Foxfire<Portal Trainer>
     28092, -- The Etymidian

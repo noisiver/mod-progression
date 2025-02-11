@@ -46,7 +46,6 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     181617, -- Sillithus Flag Stand, Horde
     181618, -- ToWoW - Flag Cap Counter, Alliance
     181619, -- ToWoW - Flag Cap Counter, Horde
-    183435, -- Marksman Regiment's Cooking Pot
     185321, -- Meeting Stone
     185433, -- Meeting Stone
     185491, -- Emerald Dream Tree 001
@@ -70,7 +69,6 @@ UPDATE `gameobject` SET `phaseMask`=16384 WHERE `id` IN (
     186426, -- Wanted Poster
     186730, -- Doodad_ET_Holographic_Stand01
     186731, -- Doodad_ET_Holographic_Stand02
-    187056, -- Shattrath Portal to Isle of Quel'Danas
     187290, -- Guild Vault
     187291, -- Guild Vault
     187292, -- Guild Vault
