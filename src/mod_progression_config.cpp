@@ -62,6 +62,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_MAX_RECRUIT_A_FRIEND_BONUS_PLAYER_LEVEL, 0);
     }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
+    sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
     sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, PatchId < PATCH_ECHOES_OF_DOOM);
 
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
@@ -86,6 +87,39 @@ void Progression::OnAfterConfigLoad(bool reload)
     if (PatchId < PATCH_BEFORE_THE_STORM)
     {
         sWorld->setRate(RATE_ARENA_POINTS, 0);
+    }
+
+    if (PatchId <= PATCH_BEFORE_THE_STORM)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 1);
+    }
+    else if (PatchId < PATCH_THE_GODS_OF_ZUL_AMAN)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 2);
+    }
+    else if (PatchId == PATCH_THE_GODS_OF_ZUL_AMAN)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 3);
+    }
+    else if (PatchId == PATCH_FURY_OF_THE_SUNWELL)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 4);
+    }
+    else if (PatchId == PATCH_ECHOES_OF_DOOM)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 5);
+    }
+    else if (PatchId == PATCH_SECRETS_OF_ULDUAR)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 6);
+    }
+    else if (PatchId == PATCH_CALL_OF_THE_CRUSADE)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 7);
+    }
+    else if (PatchId >= PATCH_FALL_OF_THE_LICH_KING)
+    {
+        sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 8);
     }
 
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
