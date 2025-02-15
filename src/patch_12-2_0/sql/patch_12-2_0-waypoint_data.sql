@@ -1,3 +1,3 @@
 DELETE FROM `waypoint_data` WHERE `id` IN (
-    1239700 -- Lord Kazzak
+    520000000 -- Lord Kazzak
 );

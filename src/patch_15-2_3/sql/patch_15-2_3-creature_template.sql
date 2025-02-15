@@ -67,3 +67,29 @@ UPDATE `creature_template` SET `rank`=0 WHERE `entry` IN (
     24818, -- Anvilrage Taskmaster
     24819 -- Anvilrage Enforcer
 );
+
+-- Alterac Valley
+UPDATE `creature_template` SET `name`='Lieutenant Murp <old>', `AIName`='' WHERE `entry` IN (
+    13146 -- Lieutenant Murp
+);
+
+UPDATE `creature_template` SET `AIName`='' WHERE `entry` IN (
+    13137, -- Lieutenant Rugba
+    13138, -- Lieutenant Spencer
+    13143, -- Lieutenant Stronghoof
+    13144, -- Lieutenant Vol'talar
+    13145, -- Lieutenant Grummus
+    13147, -- Lieutenant Lewis
+    13296, -- Lieutenant Largent
+    13297, -- Lieutenant Stouthandle
+    13298, -- Lieutenant Greywand
+    13299, -- Lieutenant Lonadin
+    13300 -- Lieutenant Mancuso
+);
+    
+UPDATE `creature_template` SET `ScriptName`='' WHERE `entry` IN (
+    13152, -- Commander Malgor
+    13153, -- Commander Mulfort
+    13318, -- Commander Mortimer
+    13319 -- Commander Duffy
+);

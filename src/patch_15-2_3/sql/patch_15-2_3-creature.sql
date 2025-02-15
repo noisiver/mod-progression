@@ -70,3 +70,23 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     25081, -- Grunt Ounda
     25083 -- Deathguard Lawson <The Thundercaller>
 );
+
+-- Alterac Valley
+DELETE FROM `creature` WHERE `guid` IN (
+    5800000, -- Commander Mortimer
+    5800040, -- Commander Duffy
+    5800048, -- Lieutenant Lonadin
+    5800049, -- Lieutenant Spencer
+    5800050, -- Lieutenant Stouthandle
+    5800070, -- Lieutenant Greywand
+    5800071, -- Lieutenant Largent
+    5800076, -- Lieutenant Mancuso
+    5800106, -- Commander Mulfort
+    5800123, -- Commander Malgor
+    5800139, -- Lieutenant Rugba
+    5800140, -- Lieutenant Stronghoof
+    5800141, -- Lieutenant Vol'talar
+    5800142, -- Lieutenant Lewis
+    5800147, -- Lieutenant Murp
+    5800151 -- Lieutenant Grummus
+);

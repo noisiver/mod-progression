@@ -32,7 +32,20 @@ enum ArchmageLandalockQuests
     QUEST_PROOF_OF_DEMISE_ANUB_ARAK              = 13254,
     QUEST_PROOF_OF_DEMISE_HERALD_VOLAZJ          = 13255,
     QUEST_PROOF_OF_DEMISE_CYANIGOSA              = 13256,
-    QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT       = 14199
+    QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT       = 14199,
+
+    QUEST_SARTHARION_MUST_DIE                    = 24579,
+    QUEST_ANUBREKHAN_MUST_DIE                    = 24580,
+    QUEST_NOTH_THE_PLAGUEBINGER_MUST_DIE         = 24581,
+    QUEST_INSTRUCTOR_RAZUVIOUS_MUST_DIE          = 24582,
+    QUEST_PATCHWERK_MUST_DIE                     = 24583,
+    QUEST_MALYGOS_MUST_DIE                       = 24584,
+    QUEST_FLAME_LEVIATHAN_MUST_DIE               = 24585,
+    QUEST_RAZORSCALE_MUST_DIE                    = 24586,
+    QUEST_IGNIS_THE_FURNACE_MASTER_MUST_DIE      = 24587,
+    QUEST_XT_002_DECONSTRUCTOR_MUST_DIE          = 24588,
+    QUEST_LORD_JARAXXUS_MUST_DIE                 = 24589,
+    QUEST_LORD_MARROWGAR_MUST_DIE                = 24590
 };
 
 enum ArchmageLandalockImages
@@ -49,24 +62,37 @@ enum ArchmageLandalockImages
     NPC_ANUB_ARAK_IMAGE                          = 31626,
     NPC_HERALD_VOLAZJ_IMAGE                      = 31627,
     NPC_CYANIGOSA_IMAGE                          = 31629,
-    NPC_THE_BLACK_KNIGHT_IMAGE                   = 35461
+    NPC_THE_BLACK_KNIGHT_IMAGE                   = 35461,
+
+    NPC_SARTHARION_IMAGE                         = 37849,
+    NPC_ANUBREKHAN_IMAGE                         = 37850,
+    NPC_NOTH_THE_PLAGUEBINGER_IMAGE              = 37851,
+    NPC_INSTRUCTOR_RAZUVIOUS_IMAGE               = 37853,
+    NPC_PATCHWERK_IMAGE                          = 37854,
+    NPC_MALYGOS_IMAGE                            = 37855,
+    NPC_FLAME_LEVIATHAN_IMAGE                    = 37856,
+    NPC_RAZORSCALE_IMAGE                         = 37858,
+    NPC_IGNIS_THE_FURNACE_MASTER_IMAGE           = 37859,
+    NPC_XT_002_DECONSTRUCTOR_IMAGE               = 37861,
+    NPC_LORD_JARAXXUS_IMAGE                      = 37862,
+    NPC_LORD_MARROWGAR_IMAGE                     = 37864
 };
 
-class npc_archmage_landalock_progression : public CreatureScript
+class npc_archmage_landalock : public CreatureScript
 {
 public:
-    npc_archmage_landalock_progression() : CreatureScript("npc_archmage_landalock")
+    npc_archmage_landalock() : CreatureScript("npc_archmage_landalock")
     {
     }
 
     CreatureAI* GetAI(Creature* creature) const override
     {
-        return new npc_archmage_landalock_progressionAI(creature);
+        return new npc_archmage_landalockAI(creature);
     }
 
-    struct npc_archmage_landalock_progressionAI : public ScriptedAI
+    struct npc_archmage_landalockAI : public ScriptedAI
     {
-        npc_archmage_landalock_progressionAI(Creature* creature) : ScriptedAI(creature)
+        npc_archmage_landalockAI(Creature* creature) : ScriptedAI(creature)
         {
             _switchImageTimer = MINUTE * IN_MILLISECONDS;
             _summonGUID.Clear();
@@ -100,8 +126,32 @@ public:
                 return NPC_HERALD_VOLAZJ_IMAGE;
             case QUEST_PROOF_OF_DEMISE_CYANIGOSA:
                 return NPC_CYANIGOSA_IMAGE;
-            default: // QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT
+            case QUEST_PROOF_OF_DEMISE_THE_BLACK_KNIGHT:
                 return NPC_THE_BLACK_KNIGHT_IMAGE;
+            case QUEST_SARTHARION_MUST_DIE:
+                return NPC_SARTHARION_IMAGE;
+            case QUEST_ANUBREKHAN_MUST_DIE:
+                return NPC_ANUBREKHAN_IMAGE;
+            case QUEST_NOTH_THE_PLAGUEBINGER_MUST_DIE:
+                return NPC_NOTH_THE_PLAGUEBINGER_IMAGE;
+            case QUEST_INSTRUCTOR_RAZUVIOUS_MUST_DIE:
+                return NPC_INSTRUCTOR_RAZUVIOUS_IMAGE;
+            case QUEST_PATCHWERK_MUST_DIE:
+                return NPC_PATCHWERK_IMAGE;
+            case QUEST_MALYGOS_MUST_DIE:
+                return NPC_MALYGOS_IMAGE;
+            case QUEST_FLAME_LEVIATHAN_MUST_DIE:
+                return NPC_FLAME_LEVIATHAN_IMAGE;
+            case QUEST_RAZORSCALE_MUST_DIE:
+                return NPC_RAZORSCALE_IMAGE;
+            case QUEST_IGNIS_THE_FURNACE_MASTER_MUST_DIE:
+                return NPC_IGNIS_THE_FURNACE_MASTER_IMAGE;
+            case QUEST_XT_002_DECONSTRUCTOR_MUST_DIE:
+                return NPC_XT_002_DECONSTRUCTOR_IMAGE;
+            case QUEST_LORD_JARAXXUS_MUST_DIE:
+                return NPC_LORD_JARAXXUS_IMAGE;
+            default: //case QUEST_LORD_MARROWGAR_MUST_DIE:
+                return NPC_LORD_MARROWGAR_IMAGE;
             }
         }
 
@@ -127,7 +177,7 @@ public:
                 {
                     uint32 questId = i->second;
                     Quest const* quest = sObjectMgr->GetQuestTemplate(questId);
-                    if (!quest || !quest->IsDaily())
+                    if (!quest || !quest->IsDailyOrWeekly())
                     {
                         continue;
                     }
@@ -145,7 +195,7 @@ public:
                         {
                             z += 1.0f;
                         }
-                        else if (newEntry == NPC_LEY_GUARDIAN_EREGOS_IMAGE)
+                        else if (newEntry == NPC_LEY_GUARDIAN_EREGOS_IMAGE || newEntry == NPC_MALYGOS_IMAGE || newEntry == NPC_RAZORSCALE_IMAGE || newEntry == NPC_SARTHARION_IMAGE)
                         {
                             z += 1.9f;
                         }
@@ -161,111 +211,7 @@ public:
     };
 };
 
-enum ArchmageTimearQuests
+void AddSC_npc_archmage_landalock()
 {
-    QUEST_CENTRIFUGE_CONSTRUCTS    = 13240,
-    QUEST_YMIRJAR_BERSERKERS       = 13241,
-    QUEST_INFINITE_AGENTS          = 13243,
-    QUEST_TITANIUM_VANGUARDS       = 13244
-};
-
-enum ArchmageTimearImages
-{
-    NPC_CENTRIFUGE_CONSTRUCT_IMAGE = 31631,
-    NPC_YMIRJAR_BERSERKER_IMAGE    = 31632,
-    NPC_INFINITE_AGENT_IMAGE       = 31633,
-    NPC_TITANIUM_VANGUARD_IMAGE    = 31634
-};
-
-class npc_archmage_timear_progression : public CreatureScript
-{
-public:
-    npc_archmage_timear_progression() : CreatureScript("npc_archmage_timear")
-    {
-    }
-
-    CreatureAI* GetAI(Creature* creature) const override
-    {
-        return new npc_archmage_timear_progressionAI(creature);
-    }
-
-    struct npc_archmage_timear_progressionAI : public ScriptedAI
-    {
-        npc_archmage_timear_progressionAI(Creature* creature) : ScriptedAI(creature)
-        {
-            _switchImageTimer = MINUTE * IN_MILLISECONDS;
-            _summonGUID.Clear();
-        }
-
-        uint32 GetImageEntry(uint32 QuestId)
-        {
-            switch (QuestId)
-            {
-            case QUEST_CENTRIFUGE_CONSTRUCTS:
-                return NPC_CENTRIFUGE_CONSTRUCT_IMAGE;
-            case QUEST_YMIRJAR_BERSERKERS:
-                return NPC_YMIRJAR_BERSERKER_IMAGE;
-            case QUEST_INFINITE_AGENTS:
-                return NPC_INFINITE_AGENT_IMAGE;
-            default: //case QUEST_TITANIUM_VANGUARDS:
-                return NPC_TITANIUM_VANGUARD_IMAGE;
-            }
-        }
-
-        void JustSummoned(Creature* image) override
-        {
-            image->SetSheath(SHEATH_STATE_UNARMED);
-            image->SetUnitMovementFlags(MOVEMENTFLAG_RIGHT);
-            image->SetSpeed(MOVE_TURN_RATE, 0.2f);
-            image->AddAura(69609, image);
-            _summonGUID = image->GetGUID();
-        }
-
-        void UpdateAI(uint32 diff) override
-        {
-            ScriptedAI::UpdateAI(diff);
-
-            _switchImageTimer += diff;
-            if (_switchImageTimer > MINUTE * IN_MILLISECONDS)
-            {
-                _switchImageTimer = 0;
-                QuestRelationBounds objectQR = sObjectMgr->GetCreatureQuestRelationBounds(me->GetEntry());
-                for (QuestRelations::const_iterator i = objectQR.first; i != objectQR.second; ++i)
-                {
-                    uint32 questId = i->second;
-                    Quest const* quest = sObjectMgr->GetQuestTemplate(questId);
-                    if (!quest || !quest->IsDaily())
-                    {
-                        continue;
-                    }
-
-                    uint32 newEntry = GetImageEntry(questId);
-                    if (_summonGUID.GetEntry() != newEntry)
-                    {
-                        if (Creature* image = ObjectAccessor::GetCreature(*me, _summonGUID))
-                        {
-                            image->DespawnOrUnsummon();
-                        }
-
-                        float z = 653.622f;
-                        if (newEntry == NPC_INFINITE_AGENT_IMAGE)
-                        {
-                            z += 1.9f;
-                        }
-
-                        me->SummonCreature(newEntry, 5770.970f, 529.512f, z, 3.985f);
-                    }
-                }
-            }
-        }
-    private:
-        uint32 _switchImageTimer;
-        ObjectGuid _summonGUID;
-    };
-};
-
-void AddSC_zone_dalaran_progression()
-{
-    new npc_archmage_landalock_progression();
-    new npc_archmage_timear_progression();
+    new npc_archmage_landalock();
 }

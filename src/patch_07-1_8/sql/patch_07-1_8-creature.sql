@@ -35,3 +35,9 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     16543, -- Garon Hutchins
     23573 -- Krixil Slogswitch <Food & Drink>
 );
+
+-- Alterac Valley
+DELETE FROM `creature` WHERE `guid` IN (
+    5800045, -- Stormpike Mine Layer
+    5800138 -- Frostwolf Mine Layer
+);

@@ -320,3 +320,34 @@ UPDATE `creature_template` SET `subname`='King of Stormwind' WHERE `entry`=1747;
 UPDATE `creature_template` SET `minlevel`=63, `maxlevel`=63, `AIName`='SmartAI' WHERE `entry`=1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `name`='Timber Wolf' WHERE `entry`=69;
 UPDATE `creature_template` SET `name`='Young Wolf' WHERE `entry`=299;
+
+-- Alterac Valley
+UPDATE `creature_template` SET `name`='Lieutenant Murp', `AIName`='SmartAI' WHERE `entry` IN (
+    13146 -- Lieutenant Murp
+);
+
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry` IN (
+    13137, -- Lieutenant Rugba
+    13138, -- Lieutenant Spencer
+    13143, -- Lieutenant Stronghoof
+    13144, -- Lieutenant Vol'talar
+    13145, -- Lieutenant Grummus
+    13147, -- Lieutenant Lewis
+    13296, -- Lieutenant Largent
+    13297, -- Lieutenant Stouthandle
+    13298, -- Lieutenant Greywand
+    13299, -- Lieutenant Lonadin
+    13300 -- Lieutenant Mancuso
+);
+
+UPDATE `creature_template` SET `speed_walk`=1, `AIName`='SmartAI' WHERE `entry` IN (
+    13356, -- Stormpike Mine Layer
+    13357 -- Frostwolf Mine Layer
+);
+    
+UPDATE `creature_template` SET `ScriptName`='npc_alterac_valley_commander' WHERE `entry` IN (
+    13152, -- Commander Malgor
+    13153, -- Commander Mulfort
+    13318, -- Commander Mortimer
+    13319 -- Commander Duffy
+);

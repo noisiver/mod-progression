@@ -43,8 +43,8 @@ UPDATE `creature` SET `phaseMask`=1 WHERE `id1` IN (
     23536 -- Nagulon <Matero Zeshuwal's Minion>
 );
 
-DELETE FROM `creature` WHERE `guid` IN (
-    156950 -- Lord Kazzak
+DELETE FROM `creature` WHERE `id1` IN (
+    12397 -- Lord Kazzak
 );
 
 UPDATE `creature` SET `position_x`=-8294.49, `position_y`=-4586.79, `position_z`=8.97121, `orientation`=5.56651 WHERE `id1`=8196; -- Occulus
