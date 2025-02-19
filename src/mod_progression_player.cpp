@@ -3,7 +3,7 @@
 
 #include "mod_progression.h"
 
-void Progression::OnLogin(Player* player)
+void Progression::OnPlayerLogin(Player* player)
 {
     ChatHandler(player->GetSession()).SendSysMessage(PatchTitle[PatchId]);
 
@@ -13,17 +13,17 @@ void Progression::OnLogin(Player* player)
     }
 }
 
-bool Progression::OnBeforeAchiComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
+bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
 {
     return !(PatchId < PATCH_ECHOES_OF_DOOM);
 }
 
-bool Progression::OnBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
+bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
 {
     return !(PatchId < PATCH_ECHOES_OF_DOOM);
 }
 
-void Progression::OnUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
+void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
 {
     if (player->IsGameMaster())
     {
@@ -45,7 +45,7 @@ void Progression::OnUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newAre
     }
 }
 
-bool Progression::ShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
+bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 {
     if (PatchId < PATCH_STORMS_OF_AZEROTH)
     {
@@ -62,7 +62,7 @@ bool Progression::ShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
     return false;
 }
 
-bool Progression::OnUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 chance, int32 roll)
+bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 chance, int32 roll)
 {
     if (PatchId < PATCH_SECRETS_OF_ULDUAR)
     {
@@ -75,7 +75,7 @@ bool Progression::OnUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int3
     return true;
 }
 
-bool Progression::OnReputationChange(Player* /*player*/, uint32 factionID, int32& /*standing*/, bool /*incremental*/)
+bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID, int32& /*standing*/, bool /*incremental*/)
 {
     if ((factionID == FACTION_SILVERMOON_CITY || factionID == FACTION_EXODAR) && PatchId < PATCH_BEFORE_THE_STORM)
     {
@@ -85,7 +85,7 @@ bool Progression::OnReputationChange(Player* /*player*/, uint32 factionID, int32
     return true;
 }
 
-void Progression::OnQuestComputeXP(Player* /*player*/, Quest const* quest, uint32& xpValue)
+void Progression::OnPlayerQuestComputeXP(Player* /*player*/, Quest const* quest, uint32& xpValue)
 {
     if (PatchId < PATCH_THE_GODS_OF_ZUL_AMAN && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
     {
@@ -93,7 +93,7 @@ void Progression::OnQuestComputeXP(Player* /*player*/, Quest const* quest, uint3
     }
 }
 
-void Progression::OnGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
+void Progression::OnPlayerGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
 {
     if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && PatchId < PATCH_CALL_OF_THE_CRUSADE)
     {
