@@ -62,7 +62,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_MAX_RECRUIT_A_FRIEND_BONUS_PLAYER_LEVEL, 0);
     }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
-    sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
+    //sWorld->setBoolConfig(CONFIG_ARENA_SEASON_IN_PROGRESS, PatchId >= PATCH_BEFORE_THE_STORM);
     sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, PatchId < PATCH_ECHOES_OF_DOOM);
 
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
@@ -89,7 +89,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setRate(RATE_ARENA_POINTS, 0);
     }
 
-    if (PatchId <= PATCH_BEFORE_THE_STORM)
+    /*if (PatchId <= PATCH_BEFORE_THE_STORM)
     {
         sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 1);
     }
@@ -120,7 +120,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     else if (PatchId >= PATCH_FALL_OF_THE_LICH_KING)
     {
         sWorld->setIntConfig(CONFIG_ARENA_SEASON_ID, 8);
-    }
+    }*/
 
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
     {
