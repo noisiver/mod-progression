@@ -1,0 +1,1 @@
+DELETE FROM `map_dbc` WHERE `ID` IN (229, 533);
