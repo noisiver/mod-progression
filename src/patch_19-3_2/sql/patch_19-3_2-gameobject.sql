@@ -1,5 +1,1 @@
-UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
-    195141, -- Portal to Blasted Lands
-    195142, -- Portal to Blasted Lands
-    195498 -- Meeting Stone
-);
+UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (195141, 195142, 195498);

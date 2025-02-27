@@ -28,7 +28,7 @@ inline std::vector<std::string> Progression::GetActivePatches()
 {
     std::string PathToPatches = "/modules/mod-progression/src/";
     std::vector<std::string> ActivePatches;
-    PatchId = sConfigMgr->GetOption<int>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
+    uint8 PatchId = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
 
     if (PatchId >= PATCH_WORLD_OF_WARCRAFT)
     {

@@ -16,9 +16,10 @@ bool Progression::CanPacketSend(WorldSession* session, WorldPacket& packet)
         return true;
     }
 
-    if (packet.GetOpcode() == SMSG_CHAR_ENUM && ShowPatchNotes)
+    if (packet.GetOpcode() == SMSG_CHAR_ENUM && sProgressionMgr->ShowPatchNotes())
     {
-        std::string payload = Acore::StringFormat("ServerAlertTitle:SetText('{}');local saf = ServerAlertFrame;saf:SetParent(CharacterSelect);ServerAlertText:SetText('{}');saf:Show();", PatchNotes[PatchId][0], PatchNotes[PatchId][1]);
+        const std::string* patchNotes = sProgressionMgr->GetPatchNotes();
+        std::string payload = Acore::StringFormat("ServerAlertTitle:SetText('{}');local saf = ServerAlertFrame;saf:SetParent(CharacterSelect);ServerAlertText:SetText('{}');saf:Show();", patchNotes[0], patchNotes[1]);
         payloadMgr->ClearQueuedPayloads();
         SendChunkedPayload(warden, payload, 128);
     }
@@ -26,7 +27,7 @@ bool Progression::CanPacketSend(WorldSession* session, WorldPacket& packet)
     if (packet.GetOpcode() == SMSG_LOGIN_VERIFY_WORLD)
     {
         std::string payload = Acore::StringFormat("SetCVar(\"showQuestTrackingTooltips\", 1);");
-        if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceQuestInfo)
+        if (sProgressionMgr->GetPatchId() < PATCH_FALL_OF_THE_LICH_KING && sProgressionMgr->GetEnforceQuestInfo())
         {
             payload = Acore::StringFormat("SetCVar(\"showQuestTrackingTooltips\", 0);");
         }

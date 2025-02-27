@@ -5,9 +5,9 @@
 
 void Progression::OnPlayerLogin(Player* player)
 {
-    ChatHandler(player->GetSession()).SendSysMessage(PatchTitle[PatchId]);
+    ChatHandler(player->GetSession()).SendSysMessage(sProgressionMgr->GetPatchTitle());
 
-    if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceDungeonFinder)
+    if (sProgressionMgr->GetPatchId() < PATCH_FALL_OF_THE_LICH_KING && sProgressionMgr->GetEnforceDungeonFinder())
     {
         ChatHandler(player->GetSession()).SendSysMessage("Note: The Dungeon Finder is not available in this patch.");
     }
@@ -15,12 +15,12 @@ void Progression::OnPlayerLogin(Player* player)
 
 bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
 {
-    return !(PatchId < PATCH_ECHOES_OF_DOOM);
+    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
 }
 
 bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
 {
-    return !(PatchId < PATCH_ECHOES_OF_DOOM);
+    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
 }
 
 void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
@@ -35,7 +35,7 @@ void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 
         return;
     }
 
-    if (PatchId < PATCH_SECRETS_OF_ULDUAR)
+    if (sProgressionMgr->GetPatchId() < PATCH_SECRETS_OF_ULDUAR)
     {
         if (newArea == AREA_ARGENT_TOURNAMENT_GROUNDS)
         {
@@ -47,7 +47,7 @@ void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 
 
 bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 {
-    if (PatchId < PATCH_STORMS_OF_AZEROTH)
+    if (sProgressionMgr->GetPatchId() < PATCH_STORMS_OF_AZEROTH)
     {
         return false;
     }
@@ -64,7 +64,7 @@ bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 
 bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 chance, int32 roll)
 {
-    if (PatchId < PATCH_SECRETS_OF_ULDUAR)
+    if (sProgressionMgr->GetPatchId() < PATCH_SECRETS_OF_ULDUAR)
     {
         if (chance < roll)
         {
@@ -77,7 +77,7 @@ bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/
 
 bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID, int32& /*standing*/, bool /*incremental*/)
 {
-    if ((factionID == FACTION_SILVERMOON_CITY || factionID == FACTION_EXODAR) && PatchId < PATCH_BEFORE_THE_STORM)
+    if ((factionID == FACTION_SILVERMOON_CITY || factionID == FACTION_EXODAR) && sProgressionMgr->GetPatchId() < PATCH_BEFORE_THE_STORM)
     {
         return false;
     }
@@ -87,7 +87,7 @@ bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID,
 
 void Progression::OnPlayerQuestComputeXP(Player* /*player*/, Quest const* quest, uint32& xpValue)
 {
-    if (PatchId < PATCH_THE_GODS_OF_ZUL_AMAN && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
+    if (sProgressionMgr->GetPatchId() < PATCH_THE_GODS_OF_ZUL_AMAN && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
     {
         xpValue = uint32(ceilf(xpValue / 1.428571429f));
     }
@@ -95,7 +95,7 @@ void Progression::OnPlayerQuestComputeXP(Player* /*player*/, Quest const* quest,
 
 void Progression::OnPlayerGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
 {
-    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && PatchId < PATCH_CALL_OF_THE_CRUSADE)
+    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE)
     {
         amount = 0;
     }

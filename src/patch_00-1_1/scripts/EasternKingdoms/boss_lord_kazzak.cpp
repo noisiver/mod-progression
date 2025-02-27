@@ -213,7 +213,7 @@ public:
     }
 };
 
-void AddSC_boss_lord_kazzak_progression()
+void AddSC_boss_lord_kazzak()
 {
     new boss_lord_kazzak();
     new spell_mark_of_kazzak();

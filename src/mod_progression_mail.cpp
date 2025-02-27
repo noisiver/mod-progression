@@ -12,7 +12,7 @@ void Progression::OnBeforeMailDraftSendMailTo(MailDraft* /*mailDraft*/, MailRece
         }
     }
 
-    if (PatchId < PATCH_BLACK_TEMPLE)
+    if (sProgressionMgr->GetPatchId() < PATCH_BLACK_TEMPLE)
     {
         custom_expiration = 3;
     }

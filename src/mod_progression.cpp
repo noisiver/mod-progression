@@ -2,20 +2,15 @@
 
 #include "mod_progression.h"
 
-Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript")
+ProgressionMgr* ProgressionMgr::instance()
 {
-    PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
-    AuraId = 4;
-    EnforceLevel = true;
-    EnforceDungeonFinder = true;
-    EnforceDualTalent = true;
-    EnforceQuestInfo = true;
-    DamageModifier = 0.6f;
-    HealingModifier = 0.5f;
-    ShowPatchNotes = true;
+    static ProgressionMgr instance;
+    return &instance;
 }
 
-void AddSC_boss_lord_kazzak_progression();
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript") {}
+
+void AddSC_boss_lord_kazzak();
 void AddSC_instance_blackrock_spire_progression();
 void AddSC_instance_onyxias_lair_progression();
 void AddSC_boss_onyxia_progression();
@@ -30,11 +25,11 @@ void Addmod_progressionScripts()
 {
     new Progression();
 
-    uint32 id = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
+    uint8 id = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
 
-    if (id < PATCH_BEFORE_THE_STORM)
+    if (id >= PATCH_RUINS_OF_THE_DIRE_MAUL && id < PATCH_BEFORE_THE_STORM)
     {
-        AddSC_boss_lord_kazzak_progression();
+        AddSC_boss_lord_kazzak();
     }
 
     if (id < PATCH_ECHOES_OF_DOOM)

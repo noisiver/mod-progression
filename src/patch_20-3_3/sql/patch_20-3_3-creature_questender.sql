@@ -1,19 +1,3 @@
-DELETE FROM `creature_questender` WHERE `id` IN (
-    550 -- Battle of Hillsbrad
-);
-
-DELETE FROM `creature_questender` WHERE `id` IN (20735, 31439);
-INSERT INTO `creature_questender` (`id`, `quest`) VALUES
--- Archmage Lan'dalock
-(20735, 24579), -- Sartharion Must Die!
-(20735, 24580), -- Anub'Rekhan Must Die!
-(20735, 24581), -- Noth the Plaguebringer Must Die!
-(20735, 24582), -- Instructor Razuvious Must Die!
-(20735, 24583), -- Patchwerk Must Die!
-(20735, 24584), -- Malygos Must Die!
-(20735, 24585), -- Flame Leviathan Must Die!
-(20735, 24586), -- Razorscale Must Die!
-(20735, 24587), -- Ignis the Furnace Master Must Die!
-(20735, 24588), -- XT-002 Deconstructor Must Die!
-(20735, 24589), -- Lord Jaraxxus Must Die!
-(20735, 24590); -- Lord Marrowgar Must Die!
+DELETE FROM `creature_questender` WHERE `id` = 20735 AND `quest` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256, 14199);
+DELETE FROM `creature_questender` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);
+DELETE FROM `creature_questender` WHERE `id` = 2425 AND `quest` = 550;

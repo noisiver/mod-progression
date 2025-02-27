@@ -1,15 +1,1 @@
-UPDATE `gameobject` SET `phaseMask`=1 WHERE `id` IN (
-    180451, -- Mailbox
-    181075, -- Table
-    181076, -- Inigo's Chair
-    181077, -- Rug
-    181078, -- Marjhan's Chair
-    181079, -- Eligor's Chair
-    181080, -- Angela's Chair
-    181081, -- Map of the Eastern Plaguelands
-    181082, -- Candelabra
-    181130, -- Forge
-    181131, -- Anvil
-    181236, -- Mailbox
-    181257 -- Argent Dawn Banner
-);
+UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (180451, 181075, 181076, 181077, 181078, 181079, 181080, 181081, 181082, 181130, 181131, 181236, 181257);

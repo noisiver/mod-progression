@@ -146,16 +146,6 @@ public:
     void OnAfterConfigLoad(bool /*reload*/) override;
 
 private:
-    uint32 PatchId;
-    uint32 AuraId;
-    bool EnforceLevel;
-    bool EnforceDungeonFinder;
-    bool EnforceDualTalent;
-    bool EnforceQuestInfo;
-    float DamageModifier;
-    float HealingModifier;
-    bool ShowPatchNotes;
-
     inline std::vector<std::string> GetActivePatches();
 
     std::vector<std::string> GetChunks(std::string /*s*/, uint8_t /*chunkSize*/);
@@ -166,5 +156,49 @@ private:
     uint16 _postPayloadId = 5501;
     uint16 _tmpPayloadId = 5502;
 };
+
+class ProgressionMgr
+{
+public:
+    static ProgressionMgr* instance();
+
+    void SetPatchId(uint8 id) { patchId = id; }
+    uint8 GetPatchId() { return patchId; };
+    void SetAuraId(uint32 id) { auraId = id; }
+    uint32 GetAuraId() { return auraId; }
+    void SetEnforceLevel(bool enabled) { enforceLevel = enabled; }
+    bool GetEnforceLevel() { return enforceLevel; }
+    void SetEnforceDungeonFinder(bool enabled) { enforceDungeonFinder = enabled; }
+    bool GetEnforceDungeonFinder() { return enforceDungeonFinder; }
+    void SetEnforceDualTalent(bool enabled) { enforceDualTalent = enabled; }
+    bool GetEnforceDualTalent() { return enforceDualTalent; }
+    void SetEnforceQuestInfo(bool enabled) { enforceQuestInfo = enabled; }
+    bool GetEnforceQuestInfo() { return enforceQuestInfo; }
+    void SetDamageModifier(float value) { damageModifier = value; }
+    float GetDamageModifier() { return damageModifier; }
+    void SetHealingModifier(float value) { healingModifier = value; }
+    float GetHealingModifier() { return healingModifier; }
+    void SetResetDatabase(bool value) { resetDatabase = value; }
+    bool GetResetDatabase() { return resetDatabase; }
+
+    bool ShowPatchNotes() { return showPatchNotes; }
+    void SetShowPatchNotes(bool enabled) { showPatchNotes = enabled; }
+    const std::string GetPatchTitle() { return PatchTitle[patchId]; }
+    const std::string* GetPatchNotes() { return PatchNotes[patchId]; }
+
+private:
+    uint8 patchId;
+    uint8 auraId;
+    bool enforceLevel;
+    bool enforceDungeonFinder;
+    bool enforceDualTalent;
+    bool enforceQuestInfo;
+    bool showPatchNotes;
+    float damageModifier;
+    float healingModifier;
+    bool resetDatabase;
+};
+
+#define sProgressionMgr ProgressionMgr::instance()
 
 #endif

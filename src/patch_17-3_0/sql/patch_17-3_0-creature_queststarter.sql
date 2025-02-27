@@ -1,9 +1,7 @@
-DELETE FROM `creature_queststarter` WHERE `quest` IN (
-    1661, -- The Tome of Nobility
-    3631, -- Summon Felsteed
-    4487, -- Summon Felsteed
-    4488, -- Summon Felsteed
-    4489, -- Summon Felsteed
-    4490, -- Summon Felsteed
-    9712 -- The Thalassian Warhorse
-);
+DELETE FROM `creature_queststarter` WHERE `id` = 461 AND `quest` = 4488;
+DELETE FROM `creature_queststarter` WHERE `id` = 1748 AND `quest` = 7496;
+DELETE FROM `creature_queststarter` WHERE `id` = 3326 AND `quest` = 3631;
+DELETE FROM `creature_queststarter` WHERE `id` = 4563 AND `quest` = 4489;
+DELETE FROM `creature_queststarter` WHERE `id` = 5172 AND `quest` = 4487;
+DELETE FROM `creature_queststarter` WHERE `id` = 6171 AND `quest` = 1661;
+DELETE FROM `creature_queststarter` WHERE `id` = 6251 AND `quest` = 4490;

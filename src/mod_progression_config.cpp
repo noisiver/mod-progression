@@ -9,20 +9,30 @@ void Progression::OnAfterConfigLoad(bool reload)
         return;
     }
 
-    PatchId = sConfigMgr->GetOption<uint32>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
-    AuraId = sConfigMgr->GetOption<uint32>("Progression.IcecrownCitadel.Aura", 4);
-    EnforceLevel = sConfigMgr->GetOption<bool>("Progression.Level.Enforced", true);
-    EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
-    EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
-    EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
-    DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
-    HealingModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", 0.5f);
-    ShowPatchNotes = sConfigMgr->GetOption<bool>("Progression.PatchNotes.Enabled", true);
+    uint8 PatchId = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
+    uint8 AuraId = sConfigMgr->GetOption<uint8>("Progression.IcecrownCitadel.Aura", 4);
+    bool EnforceLevel = sConfigMgr->GetOption<bool>("Progression.Level.Enforced", true);
+    bool EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
+    bool EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
+    bool EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
+    float DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
+    float HealingModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", 0.5f);
+    bool ShowPatchNotes = sConfigMgr->GetOption<bool>("Progression.PatchNotes.Enabled", true);
 
     if (PatchId > PATCH_ASSAULT_ON_THE_RUBY_SANCTUM || PatchId < PATCH_WORLD_OF_WARCRAFT)
     {
         PatchId = PATCH_ASSAULT_ON_THE_RUBY_SANCTUM;
     }
+
+    sProgressionMgr->SetPatchId(PatchId);
+    sProgressionMgr->SetAuraId(AuraId);
+    sProgressionMgr->SetEnforceLevel(EnforceLevel);
+    sProgressionMgr->SetEnforceDungeonFinder(EnforceDungeonFinder);
+    sProgressionMgr->SetEnforceDualTalent(EnforceDualTalent);
+    sProgressionMgr->SetEnforceQuestInfo(EnforceQuestInfo);
+    sProgressionMgr->SetDamageModifier(DamageModifier);
+    sProgressionMgr->SetHealingModifier(HealingModifier);
+    sProgressionMgr->SetShowPatchNotes(ShowPatchNotes);
 
     uint32 TargetExpansion = EXPANSION_WRATH_OF_THE_LICH_KING;
     uint32 TargetLevel = 80;

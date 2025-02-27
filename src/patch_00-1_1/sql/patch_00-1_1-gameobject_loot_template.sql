@@ -1,14 +1,3 @@
--- Emblem of Heroism
-UPDATE `gameobject_loot_template` SET `Item`=40752 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
-    24524, -- Cache of Eregos
-    24589, -- Dark Runed Chest
-    25192, -- Four Horsemen Chest
-    26094, -- Alexstrasza's Gift
-    26260 -- Tribunal Chest
-);
-
--- Emblem of Valor
-UPDATE `gameobject_loot_template` SET `Item`=40753 WHERE `Item` IN (40752, 40753, 45624, 47241) AND `Entry` IN (
-    25193, -- Four Horsemen Chest
-    26097 -- Alexstrasza's Gift
-);
+UPDATE `gameobject_loot_template` SET `Item` = 40752 WHERE `Entry` IN (24524, 24589, 25192, 26094, 26260) AND `Item` IN (45624, 47241);
+UPDATE `gameobject_loot_template` SET `Item` = 40753 WHERE `Entry` IN (25193, 26097, 26956, 26962, 27030, 27061, 27068, 27073, 27085, 27086) AND `Item` = 45624;
+UPDATE `gameobject_loot_template` SET `Item` = 45624 WHERE `Entry` IN (26929, 26946, 26955, 26959, 26960, 26961, 26963, 26967, 26974, 27074, 27078, 27079, 27080, 27081, 27414, 27416, 27417) AND `Item` = 47241;
