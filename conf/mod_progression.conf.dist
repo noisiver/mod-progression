@@ -82,7 +82,7 @@ Progression.DualTalent.Enforced = 1
 Progression.QuestInfo.Enforced = 1
 
 #
-#    Progression.QuestInfo.Enforced
+#    Progression.TradableBindsOnPickup.Enforced
 #        Description: Enforce binds on pickup items being tradable based on the active patch
 #                     0 - Disabled
 #        Default:     1 - Enabled
