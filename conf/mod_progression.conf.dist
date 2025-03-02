@@ -82,6 +82,15 @@ Progression.DualTalent.Enforced = 1
 Progression.QuestInfo.Enforced = 1
 
 #
+#    Progression.QuestInfo.Enforced
+#        Description: Enforce binds on pickup items being tradable based on the active patch
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.TradableBindsOnPickup.Enforced = 1
+
+#
 #    Progression.Multiplier.Damage
 #        Description: Set the multiplier for damage done for patches prior to 3.0
 #        Default:     0.8

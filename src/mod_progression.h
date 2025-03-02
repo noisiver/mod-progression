@@ -174,6 +174,8 @@ public:
     bool GetEnforceDualTalent() { return enforceDualTalent; }
     void SetEnforceQuestInfo(bool enabled) { enforceQuestInfo = enabled; }
     bool GetEnforceQuestInfo() { return enforceQuestInfo; }
+    void SetEnforceTradableBindsOnPickup(bool enabled) { enforceTradableBindsOnPickup = enabled; }
+    bool GetEnforceTradableBindsOnPickup() { return enforceTradableBindsOnPickup; }
     void SetDamageModifier(float value) { damageModifier = value; }
     float GetDamageModifier() { return damageModifier; }
     void SetHealingModifier(float value) { healingModifier = value; }
@@ -193,6 +195,7 @@ private:
     bool enforceDungeonFinder;
     bool enforceDualTalent;
     bool enforceQuestInfo;
+    bool enforceTradableBindsOnPickup;
     bool showPatchNotes;
     float damageModifier;
     float healingModifier;
