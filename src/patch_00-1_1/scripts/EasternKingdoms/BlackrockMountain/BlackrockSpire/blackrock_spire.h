@@ -23,6 +23,7 @@
 uint32 const EncounterCount         = 23;
 
 #define DataHeader "BRS"
+
 #define BRSScriptName "instance_blackrock_spire"
 
 enum DataTypes
@@ -103,7 +104,8 @@ enum AdditionalData
     AREATRIGGER_DRAGONSPIRE_HALL    = 2046,
     AREATRIGGER_BLACKROCK_STADIUM   = 2026,
     SAY_FINKLE_GANG                 = 0,
-    ITEM_UNADORNED_SEAL             = 12219
+    ITEM_UNADORNED_SEAL             = 12219,
+    ITEM_SEAL_OF_ASCENSION          = 12344
 };
 
 enum GameObjectsIds
