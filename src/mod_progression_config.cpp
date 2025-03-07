@@ -105,6 +105,12 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_BATTLEGROUND_ALTERAC_REINFORCEMENTS, 0);
     }
 
+    if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
+    {
+        sWorld->setIntConfig(CONFIG_BATTLEGROUND_ARATHI_CAPTUREPOINTS, 2000);
+        sWorld->setIntConfig(CONFIG_BATTLEGROUND_EYEOFTHESTORM_CAPTUREPOINTS, 2000);
+    }
+
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
     {
         if (AuraId > 0)
