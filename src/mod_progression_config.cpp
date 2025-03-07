@@ -100,6 +100,11 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setRate(RATE_ARENA_POINTS, 0);
     }
 
+    if (PatchId < PATCH_THE_GODS_OF_ZUL_AMAN)
+    {
+        sWorld->setIntConfig(CONFIG_BATTLEGROUND_ALTERAC_REINFORCEMENTS, 0);
+    }
+
     if (PatchId >= PATCH_ASSAULT_ON_THE_RUBY_SANCTUM)
     {
         if (AuraId > 0)
