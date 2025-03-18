@@ -1,7 +1,7 @@
 UPDATE `npc_trainer` SET `MoneyCost` = 40000, `ReqLevel` = 20 WHERE `SpellID` = 33388;
 UPDATE `npc_trainer` SET `MoneyCost` = 500000, `ReqLevel` = 40 WHERE `SpellID` = 33391;
 UPDATE `npc_trainer` SET `MoneyCost` = 2500000, `ReqLevel` = 60 WHERE `SpellID` = 34090;
-UPDATE `npc_trainer` SET `SpellID` = 33950, `ReqLevel` = 60 WHERE `SpellID` = 33943;
+UPDATE `npc_trainer` SET `ReqLevel` = 60 WHERE `SpellID` = 33950;
 DELETE FROM `npc_trainer` WHERE `ID` = 200010 AND `SpellID` IN (1710, 23161);
 DELETE FROM `npc_trainer` WHERE `ID` = 200018 AND `SpellID` IN (66842, 66843, 66844);
 DELETE FROM `npc_trainer` WHERE `ID` = 200020 AND `SpellID` IN (13820, 23214);
