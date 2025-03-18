@@ -1,5 +1,5 @@
-DELETE FROM `pool_quest` WHERE `entry` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256, 14199) AND `pool_entry` = 5678;
-DELETE FROM `pool_quest` WHERE `entry` IN (13240, 13241, 13243, 13244) AND `pool_entry` = 87000;
+DELETE FROM `pool_quest` WHERE `pool_entry` = 5678;
+DELETE FROM `pool_quest` WHERE `pool_entry` = 87000;
 INSERT INTO `pool_quest` (`entry`, `pool_entry`, `description`) VALUES
 (13245, 5678, 'Proof of Demise: Ingvar the Plunderer'),
 (13246, 5678, 'Proof of Demise: Keristrasza'),
