@@ -1,4 +1,3 @@
-UPDATE `creature_template` SET `lootid` = 18978 WHERE `entry` = 18978;
 UPDATE `creature_template` SET `pickpocketloot` = 1852 WHERE `entry` = 1852;
 UPDATE `creature_template` SET `pickpocketloot` = 10508 WHERE `entry` = 10508;
 UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (4624, 9460, 11190);
