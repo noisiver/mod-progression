@@ -142,3 +142,5 @@ UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40
 UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40, `RequiredLevel` = 40, `spellid_1` = 66847, `spellcharges_1` = 0, `spellid_2` = 0, `spelltrigger_2` = 0, `description` = '' WHERE `entry` = 47100;
 UPDATE `item_template` SET `RequiredReputationRank` = 6 WHERE `entry` IN (30622, 30623, 30633, 30634, 30635, 30637);
 UPDATE `item_template` SET `Flags` = `Flags` & ~16 WHERE `entry` = 17008;
+UPDATE `item_template` SET `Quality` = 1 WHERE `entry` IN (2169, 5187, 6681, 7683, 9400);
+UPDATE `item_template` SET `Quality` = 2 WHERE `entry` IN (872, 1937, 2044, 2280, 3078, 3191, 4134, 5192, 5196, 5197, 5200, 6323, 6448, 6633, 6641, 6679, 6804, 6806, 6905, 7513, 7514, 9419, 9467, 9517, 9651, 9683, 9684, 9686, 10652, 10772, 10803, 10804, 10805, 10823, 11121, 11263, 11702, 11803, 11816, 13182, 13204, 14145, 14151, 15800, 15801, 18044, 18048, 20646, 20647);
