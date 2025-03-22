@@ -18,10 +18,10 @@ bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, Achievem
     return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
 }
 
-bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
-{
-    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
-}
+//bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
+//{
+//    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
+//}
 
 void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
 {
