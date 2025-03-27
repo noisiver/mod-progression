@@ -1,2 +1,10 @@
 UPDATE `item_template` SET `Quality` = 3 WHERE `entry` IN (11623, 11624, 11626, 11627, 11631, 11632, 11633, 11634, 11662, 11665, 11675, 11677, 11679, 11685, 11702, 11703, 11745, 11802, 11803, 11816, 11820, 11822, 11823, 11841, 11842, 12608, 12793, 12905, 12926, 12952, 12953, 12960, 13177, 13182, 13203, 13204, 13211, 13212, 13244, 13254, 13255, 13283, 13284, 13498, 14612, 14614, 14615, 14616, 14620, 14621, 14622, 14623, 14629, 14631, 14632, 14633, 14636, 14638, 14640, 14641, 18043, 18044, 18048);
 UPDATE `item_template` SET `Quality` = 13 WHERE `entry` = 13204;
+UPDATE `item_template` SET `delay` = 1800 WHERE `entry` = 13204;
+UPDATE `item_template` SET `delay` = 2700 WHERE `entry` = 18044;
+UPDATE `item_template` SET `delay` = 2900 WHERE `entry` = 13380;
+UPDATE `item_template` SET `delay` = 3300 WHERE `entry` = 13163;
+UPDATE `item_template` SET `delay` = 3500 WHERE `entry` = 12592;
+UPDATE `item_template` SET `delay` = 3600 WHERE `entry` IN (12969, 13505);
+UPDATE `item_template` SET `delay` = 3800 WHERE `entry` = 13348;
+UPDATE `item_template` SET `delay` = 3900 WHERE `entry` = 13372;
