@@ -6,3 +6,6 @@ UPDATE `item_template` SET `RequiredLevel` = 60 WHERE `entry` = 17073;
 UPDATE `item_template` SET `dmg_min1` = 11 WHERE `entry` = 18957;
 UPDATE `item_template` SET `dmg_min1` = 122 WHERE `entry` = 12528;
 UPDATE `item_template` SET `dmg_min1` = 175 WHERE `entry` = 17073;
+UPDATE `item_template` SET `dmg_max1` = 21 WHERE `entry` = 18957;
+UPDATE `item_template` SET `dmg_max1` = 184 WHERE `entry` = 12528;
+UPDATE `item_template` SET `dmg_max1` = 263 WHERE `entry` = 17073;

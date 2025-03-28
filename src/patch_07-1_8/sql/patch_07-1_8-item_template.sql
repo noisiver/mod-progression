@@ -4,3 +4,7 @@ UPDATE `item_template` SET `dmg_min1` = 36 WHERE `entry` = 7513;
 UPDATE `item_template` SET `dmg_min1` = 39 WHERE `entry` = 11263;
 UPDATE `item_template` SET `dmg_min1` = 41 WHERE `entry` = 7514;
 UPDATE `item_template` SET `dmg_min1` = 85 WHERE `entry` = 9517;
+UPDATE `item_template` SET `dmg_max1` = 68 WHERE `entry` = 7513;
+UPDATE `item_template` SET `dmg_max1` = 73 WHERE `entry` = 11263;
+UPDATE `item_template` SET `dmg_max1` = 78 WHERE `entry` = 7514;
+UPDATE `item_template` SET `dmg_max1` = 129 WHERE `entry` = 9517;

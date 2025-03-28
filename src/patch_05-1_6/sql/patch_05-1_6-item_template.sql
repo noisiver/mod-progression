@@ -9,3 +9,12 @@ UPDATE `item_template` SET `dmg_min1` = 107 WHERE `entry` IN (18836, 18837, 1885
 UPDATE `item_template` SET `dmg_min1` = 131 WHERE `entry` IN (18873, 18874);
 UPDATE `item_template` SET `dmg_min1` = 138 WHERE `entry` IN (12584, 16345, 18827, 18828, 18843, 18844, 18847, 18848, 18865, 18866);
 UPDATE `item_template` SET `dmg_min1` = 235 WHERE `entry` IN (18830, 18831, 18867, 18868, 18869, 18871, 18876, 18877);
+UPDATE `item_template` SET `dmg_max1` = 100 WHERE `entry` IN (18833, 18835);
+UPDATE `item_template` SET `dmg_max1` = 114 WHERE `entry` = 18680;
+UPDATE `item_template` SET `dmg_max1` = 124 WHERE `entry` = 18738;
+UPDATE `item_template` SET `dmg_max1` = 128 WHERE `entry` = 19107;
+UPDATE `item_template` SET `dmg_max1` = 143 WHERE `entry` IN (18838, 18840);
+UPDATE `item_template` SET `dmg_max1` = 162 WHERE `entry` IN (18836, 18837, 18855, 18860);
+UPDATE `item_template` SET `dmg_max1` = 207 WHERE `entry` IN (12584, 16345, 18827, 18828, 18843, 18844, 18847, 18848, 18865, 18866);
+UPDATE `item_template` SET `dmg_max1` = 225 WHERE `entry` IN (18873, 18874);
+UPDATE `item_template` SET `dmg_max1` = 353 WHERE `entry` IN (18830, 18831, 18867, 18868, 18869, 18871, 18876, 18877);
