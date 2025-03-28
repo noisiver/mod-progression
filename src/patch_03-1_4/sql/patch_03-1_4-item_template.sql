@@ -31,3 +31,4 @@ UPDATE `item_template` SET `dmg_max1` = 228.9 WHERE `entry` = 17113;
 UPDATE `item_template` SET `dmg_max1` = 263 WHERE `entry` = 17073;
 UPDATE `item_template` SET `stat_type1` = 5 WHERE `entry` IN (16058, 16837);
 UPDATE `item_template` SET `stat_type1` = 7 WHERE `entry` = 17072;
+UPDATE `item_template` SET `stat_type2` = 7 WHERE `entry` = 16058;

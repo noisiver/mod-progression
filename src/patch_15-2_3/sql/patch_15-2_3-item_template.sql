@@ -586,3 +586,15 @@ UPDATE `item_template` SET `stat_type1` = 21 WHERE `entry` IN (10769, 10836, 132
 UPDATE `item_template` SET `stat_type1` = 31 WHERE `entry` IN (7723, 9400, 13257, 14551, 17717);
 UPDATE `item_template` SET `stat_type1` = 32 WHERE `entry` IN (2044, 2169, 13255, 18388);
 UPDATE `item_template` SET `stat_type1` = 37 WHERE `entry` IN (2907, 4548, 12062, 18392, 19351, 19908, 19921);
+UPDATE `item_template` SET `stat_type2` = 3 WHERE `entry` IN (7756, 12964, 17739, 17767, 18047);
+UPDATE `item_template` SET `stat_type2` = 4 WHERE `entry` = 17746;
+UPDATE `item_template` SET `stat_type2` = 5 WHERE `entry` IN (4121, 6428, 6901, 9473, 9634, 9658, 10742, 11722, 11908);
+UPDATE `item_template` SET `stat_type2` = 6 WHERE `entry` IN (1832, 4476, 6405, 8112, 10801, 14407, 14413, 14428);
+UPDATE `item_template` SET `stat_type2` = 7 WHERE `entry` IN (1282, 6449, 6473, 7713, 9408, 9414, 9416, 10630, 10808, 10838, 11625, 11679, 11731, 11839, 12963, 14403, 14447);
+UPDATE `item_template` SET `stat_type2` = 12 WHERE `entry` IN (9403, 11703);
+UPDATE `item_template` SET `stat_type2` = 13 WHERE `entry` IN (10686, 12465);
+UPDATE `item_template` SET `stat_type2` = 18 WHERE `entry` IN (1156, 11824);
+UPDATE `item_template` SET `stat_type2` = 21 WHERE `entry` IN (1449, 4120, 4660, 7334, 13282, 13283, 17745);
+UPDATE `item_template` SET `stat_type2` = 31 WHERE `entry` IN (5196, 6678, 9396, 10837, 12637, 13255, 22270);
+UPDATE `item_template` SET `stat_type2` = 32 WHERE `entry` IN (5423, 11632, 12608, 22208);
+UPDATE `item_template` SET `stat_type2` = 37 WHERE `entry` IN (14551, 18505, 18822, 21126, 21837);
