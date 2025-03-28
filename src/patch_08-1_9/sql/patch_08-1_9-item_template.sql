@@ -1,1 +1,10 @@
 UPDATE `item_template` SET `Quality` = 3 WHERE `entry` IN (2933, 9538, 9588);
+UPDATE `item_template` SET `armor` = 211 WHERE `entry` = 16943;
+UPDATE `item_template` SET `armor` = 271 WHERE `entry` = 16944;
+UPDATE `item_template` SET `armor` = 301 WHERE `entry` = 16948;
+UPDATE `item_template` SET `armor` = 332 WHERE `entry` = 16949;
+UPDATE `item_template` SET `armor` = 362 WHERE `entry` = 16945;
+UPDATE `item_template` SET `armor` = 392 WHERE `entry` = 16947;
+UPDATE `item_template` SET `armor` = 422 WHERE `entry` = 16946;
+UPDATE `item_template` SET `armor` = 482 WHERE `entry` = 16950;
+UPDATE `item_template` SET `armor` = 2539 WHERE `entry` = 17066;

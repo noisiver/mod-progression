@@ -1,3 +1,13 @@
 UPDATE `item_template` SET `Quality` = 3 WHERE `entry` IN (13386, 13387, 14528, 14537, 14538, 14539, 14545, 14548);
 UPDATE `item_template` SET `delay` = 2500 WHERE `entry` = 17069;
 UPDATE `item_template` SET `delay` = 2600 WHERE `entry` = 17072;
+UPDATE `item_template` SET `armor` = 43 WHERE `entry` = 13386;
+UPDATE `item_template` SET `armor` = 52 WHERE `entry` = 12554;
+UPDATE `item_template` SET `armor` = 66 WHERE `entry` = 14538;
+UPDATE `item_template` SET `armor` = 141 WHERE `entry` = 14539;
+UPDATE `item_template` SET `armor` = 150 WHERE `entry` = 15855;
+UPDATE `item_template` SET `armor` = 152 WHERE `entry` = 14545;
+UPDATE `item_template` SET `armor` = 202 WHERE `entry` = 13387;
+UPDATE `item_template` SET `armor` = 274 WHERE `entry` = 14548;
+UPDATE `item_template` SET `armor` = 445 WHERE `entry` = 14537;
+UPDATE `item_template` SET `armor` = 2121 WHERE `entry` = 14528;
