@@ -59,3 +59,7 @@ UPDATE `item_template` SET `armor` = 557 WHERE `entry` = 14623;
 UPDATE `item_template` SET `armor` = 567 WHERE `entry` = 11633;
 UPDATE `item_template` SET `armor` = 1903 WHERE `entry` = 11631;
 UPDATE `item_template` SET `armor` = 1930 WHERE `entry` = 13254;
+UPDATE `item_template` SET `RequiredLevel` = 49 WHERE `entry` = 17780;
+UPDATE `item_template` SET `RequiredLevel` = 52 WHERE `entry` = 13182;
+UPDATE `item_template` SET `RequiredLevel` = 53 WHERE `entry` = 13284;
+UPDATE `item_template` SET `RequiredLevel` = 55 WHERE `entry`  IN (12952, 12953, 12960, 13204, 13498, 18048);

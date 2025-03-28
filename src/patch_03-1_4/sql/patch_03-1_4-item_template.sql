@@ -11,3 +11,5 @@ UPDATE `item_template` SET `armor` = 202 WHERE `entry` = 13387;
 UPDATE `item_template` SET `armor` = 274 WHERE `entry` = 14548;
 UPDATE `item_template` SET `armor` = 445 WHERE `entry` = 14537;
 UPDATE `item_template` SET `armor` = 2121 WHERE `entry` = 14528;
+UPDATE `item_template` SET `RequiredLevel` = 58 WHERE `entry` = 17077;
+UPDATE `item_template` SET `RequiredLevel` = 60 WHERE `entry` IN (17065, 17072, 17103, 17109);
