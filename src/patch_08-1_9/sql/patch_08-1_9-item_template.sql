@@ -9,3 +9,4 @@ UPDATE `item_template` SET `armor` = 422 WHERE `entry` = 16946;
 UPDATE `item_template` SET `armor` = 482 WHERE `entry` = 16950;
 UPDATE `item_template` SET `armor` = 2539 WHERE `entry` = 17066;
 UPDATE `item_template` SET `RequiredLevel` = 60 WHERE `entry` = 17066;
+UPDATE `item_template` SET `dmg_min1` = 78.8 WHERE `entry` = 17105;
