@@ -26,3 +26,4 @@ UPDATE `item_template` SET `stat_value1` = 41 WHERE `entry` IN (18830, 18831, 18
 UPDATE `item_template` SET `stat_value2` = 10 WHERE `entry` IN (18825, 18826);
 UPDATE `item_template` SET `stat_value2` = 23 WHERE `entry` IN (18873, 18874);
 UPDATE `item_template` SET `stat_value2` = 26 WHERE `entry` IN (18830, 18831, 18867, 18868, 18869, 18871, 18876, 18877);
+UPDATE `item_template` SET `stat_value3` = 17 WHERE `entry` IN (18873, 18874);

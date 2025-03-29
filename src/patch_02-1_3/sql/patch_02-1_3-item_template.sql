@@ -13,4 +13,8 @@ UPDATE `item_template` SET `stat_value2` = 5 WHERE `entry` IN (16683, 16686);
 UPDATE `item_template` SET `stat_value2` = 6 WHERE `entry` IN (16685, 16689);
 UPDATE `item_template` SET `stat_value2` = 8 WHERE `entry` = 16688;
 UPDATE `item_template` SET `stat_value2` = 14 WHERE `entry` = 14806;
+UPDATE `item_template` SET `stat_value3` = 4 WHERE `entry` = 16683;
+UPDATE `item_template` SET `stat_value3` = 6 WHERE `entry` IN (16685, 16689);
+UPDATE `item_template` SET `stat_value3` = 7 WHERE `entry` = 10824;
+UPDATE `item_template` SET `stat_value3` = 9 WHERE `entry` = 16688;
 UPDATE `item_template` SET `stat_value3` = 11 WHERE `entry` = 16686;

@@ -14,3 +14,4 @@ UPDATE `item_template` SET `stat_value1` = 3 WHERE `entry` IN (7513, 7514, 11263
 UPDATE `item_template` SET `stat_value1` = 8 WHERE `entry` = 9517;
 UPDATE `item_template` SET `stat_value1` = 13 WHERE `entry` = 18208;
 UPDATE `item_template` SET `stat_value2` = 11 WHERE `entry` = 18208;
+UPDATE `item_template` SET `stat_value3` = 8 WHERE `entry` = 18208;
