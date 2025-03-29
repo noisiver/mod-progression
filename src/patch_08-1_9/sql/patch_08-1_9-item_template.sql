@@ -15,3 +15,4 @@ UPDATE `item_template` SET `stat_type1` = 5 WHERE `entry` IN (16819, 16948, 1695
 UPDATE `item_template` SET `stat_type2` = 5 WHERE `entry` IN (16940, 16941);
 UPDATE `item_template` SET `stat_type2` = 6 WHERE `entry` IN (16819, 16948);
 UPDATE `item_template` SET `stat_type2` = 7 WHERE `entry` IN (16803, 16928);
+UPDATE `item_template` SET `stat_type3` = 0 WHERE `entry` IN (16809, 16928);
