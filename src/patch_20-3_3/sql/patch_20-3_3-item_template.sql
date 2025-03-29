@@ -476,3 +476,6 @@ UPDATE `item_template` SET `stat_value5` = 37 WHERE `entry` = 30896;
 UPDATE `item_template` SET `stat_value5` = 38 WHERE `entry` = 34404;
 UPDATE `item_template` SET `stat_value5` = 40 WHERE `entry` IN (21407, 34381);
 UPDATE `item_template` SET `stat_value5` = 64 WHERE `entry` = 34439;
+UPDATE `item_template` SET `stat_value6` = 0 WHERE `entry` = 30113;
+UPDATE `item_template` SET `stat_value6` = 12 WHERE `entry` = 22110;
+UPDATE `item_template` SET `stat_value6` = 25 WHERE `entry` = 34568;
