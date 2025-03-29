@@ -27,3 +27,6 @@ UPDATE `item_template` SET `stat_value2` = 10 WHERE `entry` IN (18825, 18826);
 UPDATE `item_template` SET `stat_value2` = 23 WHERE `entry` IN (18873, 18874);
 UPDATE `item_template` SET `stat_value2` = 26 WHERE `entry` IN (18830, 18831, 18867, 18868, 18869, 18871, 18876, 18877);
 UPDATE `item_template` SET `stat_value3` = 17 WHERE `entry` IN (18873, 18874);
+UPDATE `item_template` SET `spellid_1` = 21440 WHERE `entry` IN (18833, 18835, 18836, 18837, 18855, 18860);
+UPDATE `item_template` SET `spellid_1` = 23929 WHERE `entry` IN (18873, 18874);
+UPDATE `item_template` SET `spellid_1` = 23930 WHERE `entry` = 13209;

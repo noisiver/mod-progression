@@ -15,3 +15,8 @@ UPDATE `item_template` SET `stat_value1` = 8 WHERE `entry` = 9517;
 UPDATE `item_template` SET `stat_value1` = 13 WHERE `entry` = 18208;
 UPDATE `item_template` SET `stat_value2` = 11 WHERE `entry` = 18208;
 UPDATE `item_template` SET `stat_value3` = 8 WHERE `entry` = 18208;
+UPDATE `item_template` SET `spellid_1` = 7688 WHERE `entry` = 7513;
+UPDATE `item_template` SET `spellid_1` = 7702 WHERE `entry` = 7514;
+UPDATE `item_template` SET `spellid_1` = 9317 WHERE `entry` = 18208;
+UPDATE `item_template` SET `spellid_1` = 13595 WHERE `entry` = 11263;
+UPDATE `item_template` SET `spellid_1` = 15714 WHERE `entry` = 9517;

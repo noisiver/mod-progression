@@ -1,2 +1,10 @@
 UPDATE `item_template` SET `InventoryType` = 13 WHERE `entry` = 19019;
 UPDATE `item_template` SET `armor` = 26 WHERE `entry` = 7996;
+UPDATE `item_template` SET `spellid_1` = 29624 WHERE `entry` = 2825;
+UPDATE `item_template` SET `spellid_1` = 29625 WHERE `entry` = 2099;
+UPDATE `item_template` SET `spellid_1` = 29626 WHERE `entry` = 13040;
+UPDATE `item_template` SET `spellid_1` = 29633 WHERE `entry` = 9412;
+UPDATE `item_template` SET `spellid_1` = 29634 WHERE `entry` = 10567;
+UPDATE `item_template` SET `spellid_1` = 29635 WHERE `entry` = 13146;
+UPDATE `item_template` SET `spellid_1` = 29636 WHERE `entry` = 6469;
+UPDATE `item_template` SET `spellid_1` = 29637 WHERE `entry` = 17753;
