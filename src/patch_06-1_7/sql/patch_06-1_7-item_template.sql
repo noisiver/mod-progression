@@ -7,3 +7,5 @@ UPDATE `item_template` SET `dmg_min1` = 122 WHERE `entry` = 12528;
 UPDATE `item_template` SET `dmg_max1` = 21 WHERE `entry` = 18957;
 UPDATE `item_template` SET `dmg_max1` = 184 WHERE `entry` = 12528;
 UPDATE `item_template` SET `stat_type2` = 6 WHERE `entry` = 19426;
+UPDATE `item_template` SET `stat_type3` = 4 WHERE `entry` = 19491;
+UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (16684, 16687, 16692, 16694, 16699, 16705);

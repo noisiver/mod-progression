@@ -612,3 +612,8 @@ UPDATE `item_template` SET `stat_type3` = 21 WHERE `entry` IN (3019, 7684, 7713,
 UPDATE `item_template` SET `stat_type3` = 31 WHERE `entry` IN (11633, 12603, 12929, 17728, 17754, 18296);
 UPDATE `item_template` SET `stat_type3` = 32 WHERE `entry` IN (9432, 9476, 12935, 17711);
 UPDATE `item_template` SET `stat_type3` = 37 WHERE `entry` IN (9375, 18823, 20623);
+UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (6324, 9396, 9429, 9491, 10751, 10807, 10835, 10842, 11722, 11730, 11749, 14451, 15812, 22242);
+UPDATE `item_template` SET `stat_type4` = 15 WHERE `entry` = 19577;
+UPDATE `item_template` SET `stat_type4` = 18 WHERE `entry` = 11747;
+UPDATE `item_template` SET `stat_type4` = 21 WHERE `entry` = 6682;
+UPDATE `item_template` SET `stat_type4` = 31 WHERE `entry` IN (11685, 22207);

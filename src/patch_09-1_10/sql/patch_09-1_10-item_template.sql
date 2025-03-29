@@ -107,7 +107,13 @@ UPDATE `item_template` SET `stat_type2` = 4 WHERE `entry` IN (12966, 13168, 1340
 UPDATE `item_template` SET `stat_type2` = 5 WHERE `entry` IN (2620, 2954, 4505, 9515, 9516, 11627, 11632, 11665, 11730, 12547, 12637, 12960, 13383, 14614, 14616);
 UPDATE `item_template` SET `stat_type2` = 6 WHERE `entry` IN (9454, 10581, 12542, 13389, 13391);
 UPDATE `item_template` SET `stat_type2` = 7 WHERE `entry` IN (7511, 7512, 11631, 11685, 11782, 11784, 11814, 11822, 13141, 13257, 13372, 13388, 13392, 13498, 13956, 14522, 14612, 16809);
-UPDATE `item_template` SET `stat_type3` = 0 WHERE `entry` IN (13963, 16579);
-UPDATE `item_template` SET `stat_type3` = 4 WHERE `entry` = 16577;
-UPDATE `item_template` SET `stat_type3` = 5 WHERE `entry` IN (13402, 16462, 16466, 16467, 16468, 16565, 16567, 16568, 16569);
-UPDATE `item_template` SET `stat_type3` = 6 WHERE `entry` IN (16437, 16440, 16443, 16444, 16535, 16536, 16539, 16540);
+UPDATE `item_template` SET `stat_type3` = 0 WHERE `entry` IN (9454, 13142, 13179, 13208, 13394, 13405, 13944, 13956, 13963, 13967, 14620, 14621, 14622, 14623, 14638, 14640, 16579);
+UPDATE `item_template` SET `stat_type3` = 3 WHERE `entry` IN (11814, 11820, 14614);
+UPDATE `item_template` SET `stat_type3` = 4 WHERE `entry` IN (11726, 11728, 12557, 13257, 14612, 14615, 14616, 16577);
+UPDATE `item_template` SET `stat_type3` = 5 WHERE `entry` IN (11633, 11685, 11750, 11807, 11841, 13101, 13168, 13284, 13388, 13389, 13392, 13402, 14629, 16462, 16466, 16467, 16468, 16565, 16567, 16568, 16569);
+UPDATE `item_template` SET `stat_type3` = 6 WHERE `entry` IN (7511, 7512, 11665, 13390, 14631, 14633, 16437, 16440, 16443, 16444, 16535, 16536, 16539, 16540);
+UPDATE `item_template` SET `stat_type3` = 7 WHERE `entry` IN (10581, 11624, 11627, 11632, 11730, 11749, 11823, 12542, 12547, 13211, 13282, 13398);
+UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (11924, 12103, 12965, 13101, 13185, 13391, 13398, 13402, 13403, 14522);
+UPDATE `item_template` SET `stat_type4` = 3 WHERE `entry` IN (11749, 14612, 14616);
+UPDATE `item_template` SET `stat_type4` = 4 WHERE `entry` IN (11730, 14614);
+UPDATE `item_template` SET `stat_type4` = 7 WHERE `entry` = 11824;

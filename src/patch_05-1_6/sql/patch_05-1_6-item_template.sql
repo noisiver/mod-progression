@@ -19,3 +19,4 @@ UPDATE `item_template` SET `dmg_max1` = 207 WHERE `entry` IN (12584, 16345, 1882
 UPDATE `item_template` SET `dmg_max1` = 225 WHERE `entry` IN (18873, 18874);
 UPDATE `item_template` SET `dmg_max1` = 353 WHERE `entry` IN (18830, 18831, 18867, 18868, 18869, 18871, 18876, 18877);
 UPDATE `item_template` SET `stat_type1` = 7 WHERE `entry` IN (18833, 18835, 18836, 18837, 18855, 18860);
+UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (16841, 16843);
