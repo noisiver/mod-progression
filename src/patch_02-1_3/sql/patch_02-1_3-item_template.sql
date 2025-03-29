@@ -26,3 +26,4 @@ UPDATE `item_template` SET `spellid_1` = 14799 WHERE `entry` IN (11904, 17109);
 UPDATE `item_template` SET `spellid_1` = 21626 WHERE `entry` = 13216;
 UPDATE `item_template` SET `spellid_1` = 22641 WHERE `entry` = 9394;
 UPDATE `item_template` SET `spellid_2` = 9253 WHERE `entry` = 7515;
+UPDATE `item_template` SET `spellid_3` = 0 WHERE `entry` = 7515;

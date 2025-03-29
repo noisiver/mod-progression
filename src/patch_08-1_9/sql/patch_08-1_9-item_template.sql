@@ -120,3 +120,7 @@ UPDATE `item_template` SET `spellid_2` = 21364 WHERE `entry` = 16922;
 UPDATE `item_template` SET `spellid_2` = 21618 WHERE `entry` IN (16902, 16903);
 UPDATE `item_template` SET `spellid_2` = 21625 WHERE `entry` = 16799;
 UPDATE `item_template` SET `spellid_2` = 23727 WHERE `entry` = 16795;
+UPDATE `item_template` SET `spellid_3` = 7681 WHERE `entry` = 16948;
+UPDATE `item_template` SET `spellid_3` = 9406 WHERE `entry` = 16947;
+UPDATE `item_template` SET `spellid_3` = 18384 WHERE `entry` = 16928;
+UPDATE `item_template` SET `spellid_3` = 22852 WHERE `entry` = 17066;
