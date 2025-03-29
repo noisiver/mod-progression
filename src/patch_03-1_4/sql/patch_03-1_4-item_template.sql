@@ -36,3 +36,15 @@ UPDATE `item_template` SET `stat_type3` = 0 WHERE `entry` IN (16852, 16861, 1686
 UPDATE `item_template` SET `stat_type3` = 7 WHERE `entry` IN (14528, 14548, 16915, 16920, 17109);
 UPDATE `item_template` SET `stat_type4` = 5 WHERE `entry` = 14539;
 UPDATE `item_template` SET `stat_type5` = 3 WHERE `entry` = 14539;
+UPDATE `item_template` SET `stat_value1` = 0 WHERE `entry` = 16837;
+UPDATE `item_template` SET `stat_value1` = 5 WHERE `entry` = 16058;
+UPDATE `item_template` SET `stat_value1` = 6 WHERE `entry` IN (14539, 17072);
+UPDATE `item_template` SET `stat_value1` = 7 WHERE `entry` = 14528;
+UPDATE `item_template` SET `stat_value1` = 9 WHERE `entry` = 15855;
+UPDATE `item_template` SET `stat_value1` = 11 WHERE `entry` = 17110;
+UPDATE `item_template` SET `stat_value1` = 12 WHERE `entry` = 17103;
+UPDATE `item_template` SET `stat_value1` = 13 WHERE `entry` IN (14548, 17065);
+UPDATE `item_template` SET `stat_value1` = 16 WHERE `entry` = 14817;
+UPDATE `item_template` SET `stat_value1` = 19 WHERE `entry` IN (12945, 14538);
+UPDATE `item_template` SET `stat_value1` = 22 WHERE `entry` = 14537;
+UPDATE `item_template` SET `stat_value1` = 33 WHERE `entry` = 12903;

@@ -6,3 +6,6 @@ UPDATE `item_template` SET `stat_type1` = 5 WHERE `entry` = 13391;
 UPDATE `item_template` SET `stat_type2` = 3 WHERE `entry` = 13391;
 UPDATE `item_template` SET `stat_type3` = 7 WHERE `entry` IN (10824, 16683, 16685, 16688, 16689);
 UPDATE `item_template` SET `stat_type4` = 6 WHERE `entry` = 13391;
+UPDATE `item_template` SET `stat_value1` = 3 WHERE `entry` = 7515;
+UPDATE `item_template` SET `stat_value1` = 9 WHERE `entry` = 14806;
+UPDATE `item_template` SET `stat_value1` = 15 WHERE `entry` = 13391;

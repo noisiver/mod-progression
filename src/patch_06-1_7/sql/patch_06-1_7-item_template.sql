@@ -9,3 +9,6 @@ UPDATE `item_template` SET `dmg_max1` = 184 WHERE `entry` = 12528;
 UPDATE `item_template` SET `stat_type2` = 6 WHERE `entry` = 19426;
 UPDATE `item_template` SET `stat_type3` = 4 WHERE `entry` = 19491;
 UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (16684, 16687, 16692, 16694, 16699, 16705);
+UPDATE `item_template` SET `stat_value1` = 11 WHERE `entry` = 19426;
+UPDATE `item_template` SET `stat_value1` = 17 WHERE `entry` = 18456;
+UPDATE `item_template` SET `stat_value1` = 19 WHERE `entry` = 19491;
