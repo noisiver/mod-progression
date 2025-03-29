@@ -919,3 +919,14 @@ UPDATE `item_template` SET `stat_type4` = 21 WHERE `entry` IN (24395, 25577, 257
 UPDATE `item_template` SET `stat_type4` = 30 WHERE `entry` IN (32374, 33317, 34181, 34186, 34204, 34209, 34233, 34332, 34337, 34339, 34340, 34342, 34344, 34350, 34386, 34391, 34399, 34406, 34434, 34435, 34447, 34527, 34528, 34541, 34557, 34559, 34562, 34563, 34564, 35129, 35324, 37927, 37929);
 UPDATE `item_template` SET `stat_type4` = 35 WHERE `entry` IN (33766, 35109);
 UPDATE `item_template` SET `stat_type4` = 36 WHERE `entry` = 34394;
+UPDATE `item_template` SET `stat_type5` = 0 WHERE `entry` IN (2933, 14503, 14539, 21407, 21408, 21409, 22066, 22090, 22099, 30096, 30896, 32263, 32268, 32515, 32521, 33473, 33524, 34352, 34381, 34400, 34433, 34442, 34488, 34547, 34940);
+UPDATE `item_template` SET `stat_type5` = 3 WHERE `entry` IN (16833, 16840, 16843, 16853, 16855, 16856, 16857, 16901, 16946, 16954, 16955, 16958);
+UPDATE `item_template` SET `stat_type5` = 4 WHERE `entry` IN (10835, 16847, 16938, 16939, 34439);
+UPDATE `item_template` SET `stat_type5` = 5 WHERE `entry` IN (33766, 35109);
+UPDATE `item_template` SET `stat_type5` = 6 WHERE `entry` = 22242;
+UPDATE `item_template` SET `stat_type5` = 13 WHERE `entry` IN (29015, 29016, 30113, 30115);
+UPDATE `item_template` SET `stat_type5` = 14 WHERE `entry` = 29017;
+UPDATE `item_template` SET `stat_type5` = 15 WHERE `entry` IN (29011, 29012, 30114, 30116, 30970, 30974);
+UPDATE `item_template` SET `stat_type5` = 18 WHERE `entry` IN (30011, 30024, 30207, 30231, 30233, 31035, 31040, 31043, 31055, 31056, 31057, 31058, 34528);
+UPDATE `item_template` SET `stat_type5` = 21 WHERE `entry` IN (29080, 30162, 31046, 31049, 34399, 34435, 34563);
+UPDATE `item_template` SET `stat_type5` = 30 WHERE `entry` = 34574;

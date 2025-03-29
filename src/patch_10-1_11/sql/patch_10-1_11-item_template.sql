@@ -66,3 +66,4 @@ UPDATE `item_template` SET `stat_type3` = 5 WHERE `entry` IN (16462, 16466, 1646
 UPDATE `item_template` SET `stat_type3` = 6 WHERE `entry` IN (16437, 16440, 16443, 16444, 16535, 16536, 16539, 16540, 19845, 19846, 21415);
 UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (16465, 16472, 16476, 16566);
 UPDATE `item_template` SET `stat_type4` = 3 WHERE `entry` IN (21408, 21409);
+UPDATE `item_template` SET `stat_type5` = 6 WHERE `entry` IN (21408, 21409);

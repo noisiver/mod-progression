@@ -117,3 +117,4 @@ UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (11924, 12103, 1296
 UPDATE `item_template` SET `stat_type4` = 3 WHERE `entry` IN (11749, 14612, 14616);
 UPDATE `item_template` SET `stat_type4` = 4 WHERE `entry` IN (11730, 14614);
 UPDATE `item_template` SET `stat_type4` = 7 WHERE `entry` = 11824;
+UPDATE `item_template` SET `stat_type5` = 3 WHERE `entry` = 14503;

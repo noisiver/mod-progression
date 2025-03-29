@@ -20,3 +20,4 @@ UPDATE `item_template` SET `stat_type3` = 3 WHERE `entry` = 2933;
 UPDATE `item_template` SET `stat_type3` = 7 WHERE `entry` = 16819;
 UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` = 16808;
 UPDATE `item_template` SET `stat_type4` = 4 WHERE `entry` IN (2933, 16951, 16952, 16953, 16954, 16955, 16956, 16957, 16958);
+UPDATE `item_template` SET `stat_type5` = 5 WHERE `entry` = 2933;
