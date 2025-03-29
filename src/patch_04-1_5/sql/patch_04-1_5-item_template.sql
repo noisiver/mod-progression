@@ -93,3 +93,4 @@ UPDATE `item_template` SET `stat_value4` = 15 WHERE `entry` IN (16936, 16941);
 UPDATE `item_template` SET `stat_value4` = 16 WHERE `entry` = 16851;
 UPDATE `item_template` SET `stat_value4` = 17 WHERE `entry` IN (16938, 16940, 16942);
 UPDATE `item_template` SET `stat_value4` = 26 WHERE `entry` = 16939;
+UPDATE `item_template` SET `stat_value5` = 0 WHERE `entry` IN (16833, 16840, 16843, 16847, 16853, 16855, 16856, 16857, 16901, 16938, 16939, 16946, 16954, 16955, 16958);

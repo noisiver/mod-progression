@@ -185,3 +185,4 @@ UPDATE `item_template` SET `stat_value4` = 9 WHERE `entry` = 14616;
 UPDATE `item_template` SET `stat_value4` = 10 WHERE `entry` = 14503;
 UPDATE `item_template` SET `stat_value4` = 12 WHERE `entry` IN (14612, 14614);
 UPDATE `item_template` SET `stat_value4` = 13 WHERE `entry` = 11749;
+UPDATE `item_template` SET `stat_value5` = 10 WHERE `entry` = 14503;

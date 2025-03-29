@@ -688,3 +688,4 @@ UPDATE `item_template` SET `stat_value4` = 0 WHERE `entry` IN (6324, 9396, 9429,
 UPDATE `item_template` SET `stat_value4` = 8 WHERE `entry` IN (11685, 22207);
 UPDATE `item_template` SET `stat_value4` = 10 WHERE `entry` IN (11747, 19577);
 UPDATE `item_template` SET `stat_value4` = 12 WHERE `entry` = 6682;
+UPDATE `item_template` SET `stat_value5` = 6 WHERE `entry` IN (10835, 22242);

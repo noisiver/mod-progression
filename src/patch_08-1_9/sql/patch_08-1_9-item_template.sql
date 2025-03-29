@@ -78,3 +78,4 @@ UPDATE `item_template` SET `stat_value4` = 10 WHERE `entry` = 16954;
 UPDATE `item_template` SET `stat_value4` = 13 WHERE `entry` IN (16953, 16957);
 UPDATE `item_template` SET `stat_value4` = 16 WHERE `entry` IN (16938, 16958);
 UPDATE `item_template` SET `stat_value4` = 17 WHERE `entry` = 16955;
+UPDATE `item_template` SET `stat_value5` = 4 WHERE `entry` = 2933;
