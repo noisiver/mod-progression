@@ -9,3 +9,7 @@ UPDATE `item_template` SET `stat_type4` = 6 WHERE `entry` = 13391;
 UPDATE `item_template` SET `stat_value1` = 3 WHERE `entry` = 7515;
 UPDATE `item_template` SET `stat_value1` = 9 WHERE `entry` = 14806;
 UPDATE `item_template` SET `stat_value1` = 15 WHERE `entry` = 13391;
+UPDATE `item_template` SET `stat_value2` = 5 WHERE `entry` IN (16683, 16686);
+UPDATE `item_template` SET `stat_value2` = 6 WHERE `entry` IN (16685, 16689);
+UPDATE `item_template` SET `stat_value2` = 8 WHERE `entry` = 16688;
+UPDATE `item_template` SET `stat_value2` = 14 WHERE `entry` = 14806;

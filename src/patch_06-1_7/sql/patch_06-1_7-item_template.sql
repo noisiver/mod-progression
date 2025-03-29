@@ -12,3 +12,5 @@ UPDATE `item_template` SET `stat_type4` = 0 WHERE `entry` IN (16684, 16687, 1669
 UPDATE `item_template` SET `stat_value1` = 11 WHERE `entry` = 19426;
 UPDATE `item_template` SET `stat_value1` = 17 WHERE `entry` = 18456;
 UPDATE `item_template` SET `stat_value1` = 19 WHERE `entry` = 19491;
+UPDATE `item_template` SET `stat_value2` = 8 WHERE `entry` = 19426;
+UPDATE `item_template` SET `stat_value2` = 10 WHERE `entry` = 19491;
