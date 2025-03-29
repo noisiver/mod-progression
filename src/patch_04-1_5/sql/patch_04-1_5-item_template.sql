@@ -81,3 +81,15 @@ UPDATE `item_template` SET `stat_value3` = 26 WHERE `entry` IN (16834, 16853, 16
 UPDATE `item_template` SET `stat_value3` = 27 WHERE `entry` IN (16803, 16929, 16930);
 UPDATE `item_template` SET `stat_value3` = 30 WHERE `entry` = 16931;
 UPDATE `item_template` SET `stat_value3` = 31 WHERE `entry` = 16809;
+UPDATE `item_template` SET `stat_value4` = 0 WHERE `entry` IN (16796, 16798, 16800, 16801, 16803, 16805, 16810, 16811, 16814, 16816, 16820, 16821, 16822, 16823, 16826, 16828, 16829, 16831, 16832, 16833, 16835, 16836, 16837, 16838, 16839, 16840, 16841, 16843, 16844, 16845, 16849, 16852, 16862, 16863, 16865, 16866, 16867, 16897, 16898, 16899, 16901, 16902, 16903, 16905, 16906, 16909, 16910, 16917, 16919, 16924, 16930, 16931, 16932, 16943, 16944, 16946, 16950, 16951, 16952, 16953, 16954, 16955, 16956, 16957, 16958, 16959, 16960, 16962, 16963, 16964, 16965, 16966);
+UPDATE `item_template` SET `stat_value4` = 7 WHERE `entry` IN (16855, 16859);
+UPDATE `item_template` SET `stat_value4` = 8 WHERE `entry` = 16853;
+UPDATE `item_template` SET `stat_value4` = 9 WHERE `entry` = 16854;
+UPDATE `item_template` SET `stat_value4` = 10 WHERE `entry` IN (16856, 16860);
+UPDATE `item_template` SET `stat_value4` = 11 WHERE `entry` = 16850;
+UPDATE `item_template` SET `stat_value4` = 13 WHERE `entry` = 16935;
+UPDATE `item_template` SET `stat_value4` = 14 WHERE `entry` = 16848;
+UPDATE `item_template` SET `stat_value4` = 15 WHERE `entry` IN (16936, 16941);
+UPDATE `item_template` SET `stat_value4` = 16 WHERE `entry` = 16851;
+UPDATE `item_template` SET `stat_value4` = 17 WHERE `entry` IN (16938, 16940, 16942);
+UPDATE `item_template` SET `stat_value4` = 26 WHERE `entry` = 16939;

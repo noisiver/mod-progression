@@ -684,3 +684,7 @@ UPDATE `item_template` SET `stat_value3` = 17 WHERE `entry` IN (9375, 12967, 169
 UPDATE `item_template` SET `stat_value3` = 18 WHERE `entry` = 10806;
 UPDATE `item_template` SET `stat_value3` = 21 WHERE `entry` = 11839;
 UPDATE `item_template` SET `stat_value3` = 24 WHERE `entry` IN (10845, 11821, 12935);
+UPDATE `item_template` SET `stat_value4` = 0 WHERE `entry` IN (6324, 9396, 9429, 9491, 10751, 10807, 10835, 10842, 11722, 11730, 11749, 14451, 15812, 22242);
+UPDATE `item_template` SET `stat_value4` = 8 WHERE `entry` IN (11685, 22207);
+UPDATE `item_template` SET `stat_value4` = 10 WHERE `entry` IN (11747, 19577);
+UPDATE `item_template` SET `stat_value4` = 12 WHERE `entry` = 6682;
