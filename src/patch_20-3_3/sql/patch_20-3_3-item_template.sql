@@ -556,3 +556,5 @@ UPDATE `item_template` SET `spellid_3` = 15646 WHERE `entry` = 11832;
 UPDATE `item_template` SET `spellid_3` = 17712 WHERE `entry` = 833;
 UPDATE `item_template` SET `spellid_3` = 45052 WHERE `entry` = 34430;
 UPDATE `item_template` SET `spellid_3` = 62111 WHERE `entry` = 32387;
+UPDATE `item_template` SET `spelltrigger_1` = 0 WHERE `entry` 18951, 21407, 25793, 25794, 25795, 25796, 25797);
+UPDATE `item_template` SET `spelltrigger_1` = 1 WHERE `entry` IN (12185, 12549, 14456, 19028, 19874, 27895, 28301, 30132, 30678, 31034, 31039, 31042, 31044, 31048, 31249, 31250, 31575, 32261, 33473, 33495, 34556, 34573, 34888);

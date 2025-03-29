@@ -180,3 +180,4 @@ UPDATE `item_template` SET `spellid_2` = 21362 WHERE `entry` = 16835;
 UPDATE `item_template` SET `spellid_2` = 21624 WHERE `entry` = 16799;
 UPDATE `item_template` SET `spellid_3` = 0 WHERE `entry` IN (16798, 16809, 16897);
 UPDATE `item_template` SET `spellid_3` = 9408 WHERE `entry` = 16835;
+UPDATE `item_template` SET `spelltrigger_1` = 1 WHERE `entry` IN (16799, 16811, 16829, 16832, 16846, 16847, 16851, 16902, 16906, 16909, 16911, 16918, 16921, 16926, 16932, 16933, 16938, 16940, 16952, 16953, 16957, 16958, 16961, 16965, 16966);
