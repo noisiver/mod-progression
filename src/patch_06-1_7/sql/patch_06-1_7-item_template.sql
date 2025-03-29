@@ -14,3 +14,4 @@ UPDATE `item_template` SET `stat_value1` = 17 WHERE `entry` = 18456;
 UPDATE `item_template` SET `stat_value1` = 19 WHERE `entry` = 19491;
 UPDATE `item_template` SET `stat_value2` = 8 WHERE `entry` = 19426;
 UPDATE `item_template` SET `stat_value2` = 10 WHERE `entry` = 19491;
+UPDATE `item_template` SET `stat_value3` = 9 WHERE `entry` = 16692;
