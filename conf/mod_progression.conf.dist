@@ -93,7 +93,7 @@ Progression.TradableBindsOnPickup.Enforced = 1
 #
 #    Progression.Multiplier.Damage
 #        Description: Set the multiplier for damage done for patches prior to 3.0
-#        Default:     0.8
+#        Default:     0.6
 #
 
 Progression.Multiplier.Damage = 0.6
@@ -101,7 +101,7 @@ Progression.Multiplier.Damage = 0.6
 #
 #    Progression.Multiplier.Healing
 #        Description: Set the multiplier for healing for patches prior to 3.0
-#        Default:     0.7
+#        Default:     0.5
 #
 
 Progression.Multiplier.Healing = 0.5
