@@ -278,3 +278,6 @@ UPDATE `item_template` SET `stat_type5` = 32 WHERE `entry` IN (29080, 30162, 310
 UPDATE `item_template` SET `stat_type5` = 36 WHERE `entry` = 34574;
 UPDATE `item_template` SET `stat_type5` = 38 WHERE `entry` = 34439;
 UPDATE `item_template` SET `stat_type5` = 45 WHERE `entry` IN (21407, 22066, 22090, 22099);
+UPDATE `item_template` SET `stat_type6` = 0 WHERE `entry` = 30113;
+UPDATE `item_template` SET `stat_type6` = 4 WHERE `entry` = 34568;
+UPDATE `item_template` SET `stat_type6` = 45 WHERE `entry` = 22110;

@@ -930,3 +930,5 @@ UPDATE `item_template` SET `stat_type5` = 15 WHERE `entry` IN (29011, 29012, 301
 UPDATE `item_template` SET `stat_type5` = 18 WHERE `entry` IN (30011, 30024, 30207, 30231, 30233, 31035, 31040, 31043, 31055, 31056, 31057, 31058, 34528);
 UPDATE `item_template` SET `stat_type5` = 21 WHERE `entry` IN (29080, 30162, 31046, 31049, 34399, 34435, 34563);
 UPDATE `item_template` SET `stat_type5` = 30 WHERE `entry` = 34574;
+UPDATE `item_template` SET `stat_type6` = 0 WHERE `entry` IN (22110, 34568);
+UPDATE `item_template` SET `stat_type6` = 31 WHERE `entry` = 30113;
