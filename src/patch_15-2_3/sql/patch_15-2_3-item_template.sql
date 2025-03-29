@@ -783,3 +783,7 @@ UPDATE `item_template` SET `spellid_3` = 15808 WHERE `entry` = 21366;
 UPDATE `item_template` SET `spellid_3` = 15812 WHERE `entry` = 21370;
 UPDATE `item_template` SET `spellid_3` = 15814 WHERE `entry` = 22437;
 UPDATE `item_template` SET `spellid_3` = 28154 WHERE `entry` = 22632;
+UPDATE `item_template` SET `spellid_4` = 0 WHERE `entry` = 13255;
+UPDATE `item_template` SET `spellid_4` = 9336 WHERE `entry` = 22442;
+UPDATE `item_template` SET `spellid_4` = 14052 WHERE `entry` = 22436;
+UPDATE `item_template` SET `spellid_4` = 31796 WHERE `entry` = 22631;
