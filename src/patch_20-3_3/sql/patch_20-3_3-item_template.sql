@@ -603,3 +603,5 @@ UPDATE `item_template` SET `spellcooldown_3` = 300000 WHERE `entry` = 34430;
 UPDATE `item_template` SET `spellcooldown_3` = 900000 WHERE `entry` IN (11819, 11832);
 UPDATE `item_template` SET `spellcooldown_3` = 1800000 WHERE `entry` = 833;
 UPDATE `item_template` SET `spellcooldown_3` = 3600000 WHERE `entry` = 25809;
+UPDATE `item_template` SET `spellcooldown_4` = 0 WHERE `entry` = 31575;
+UPDATE `item_template` SET `spellcooldown_4` = -1 WHERE `entry` = 34334;
