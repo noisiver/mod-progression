@@ -842,3 +842,4 @@ UPDATE `item_template` SET `spellcooldown_2` = 900000 WHERE `entry` = 19024;
 UPDATE `item_template` SET `spellcooldown_3` = 0 WHERE `entry` IN (17904, 17909);
 UPDATE `item_template` SET `spellcooldown_3` = 120000 WHERE `entry` IN (17901, 17902, 17903, 17906, 17907, 17908);
 UPDATE `item_template` SET `spellcooldown_3` = 300000 WHERE `entry` = 22700;
+UPDATE `item_template` SET `spellcooldown_5` = -1 WHERE `entry` IN (22589, 22630, 22632);
