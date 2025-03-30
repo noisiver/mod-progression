@@ -1526,3 +1526,6 @@ UPDATE `item_template` SET `spellcategory_1` = 29 WHERE `entry` IN (1404, 5079, 
 UPDATE `item_template` SET `spellcategory_1` = 30 WHERE `entry` IN (833, 1713, 5323, 7507, 7508, 9397, 11819, 13315, 15866, 16768);
 UPDATE `item_template` SET `spellcategory_1` = 94 WHERE `entry` IN (1315, 1933);
 UPDATE `item_template` SET `spellcategory_1` = 102 WHERE `entry` = 13937;
+UPDATE `item_template` SET `spellcategory_2` = 0 WHERE `entry` IN (17074, 17900, 17905, 25634, 27828, 29376, 33828);
+UPDATE `item_template` SET `spellcategory_2` = 28 WHERE `entry` = 19024;
+UPDATE `item_template` SET `spellcategory_2` = 30 WHERE `entry` IN (15107, 15108);
