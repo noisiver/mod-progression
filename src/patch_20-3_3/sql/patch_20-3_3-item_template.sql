@@ -563,3 +563,23 @@ UPDATE `item_template` SET `spelltrigger_2` = 1 WHERE `entry` IN (13209, 19812, 
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (30132, 32387, 33446, 33453, 33473, 33481, 34573);
 UPDATE `item_template` SET `spellcharges_1` = 0 WHERE `entry` = 9449;
 UPDATE `item_template` SET `spellcharges_3` = 10 WHERE `entry` = 25809
+UPDATE `item_template` SET `spellppmRate_1` = 0 WHERE `entry` IN (1263, 19353, 19874);
+UPDATE `item_template` SET `spellppmRate_1` = 0.8 WHERE `entry` = 13285;
+UPDATE `item_template` SET `spellppmRate_1` = 1 WHERE `entry` IN (17073, 31193);
+UPDATE `item_template` SET `spellppmRate_1` = 1.2 WHERE `entry` = 19901;
+UPDATE `item_template` SET `spellppmRate_1` = 1.3 WHERE `entry` IN (647, 17705, 21856);
+UPDATE `item_template` SET `spellppmRate_1` = 1.35 WHERE `entry` = 811;
+UPDATE `item_template` SET `spellppmRate_1` = 1.4 WHERE `entry` IN (1728, 19334);
+UPDATE `item_template` SET `spellppmRate_1` = 1.5 WHERE `entry` IN (11684, 12583, 17112);
+UPDATE `item_template` SET `spellppmRate_1` = 1.7 WHERE `entry` = 12590;
+UPDATE `item_template` SET `spellppmRate_1` = 1.75 WHERE `entry` = 21679;
+UPDATE `item_template` SET `spellppmRate_1` = 1.8 WHERE `entry` = 19099;
+UPDATE `item_template` SET `spellppmRate_1` = 1.9 WHERE `entry` = 13984;
+UPDATE `item_template` SET `spellppmRate_1` = 2 WHERE `entry` IN (6622, 8225, 13246, 19324, 19852);
+UPDATE `item_template` SET `spellppmRate_1` = 2.2 WHERE `entry` IN (17071, 18816);
+UPDATE `item_template` SET `spellppmRate_1` = 2.3 WHERE `entry` = 20578;
+UPDATE `item_template` SET `spellppmRate_1` = 2.4 WHERE `entry` = 18203;
+UPDATE `item_template` SET `spellppmRate_1` = 3 WHERE `entry` IN (871, 14555, 19918);
+UPDATE `item_template` SET `spellppmRate_1` = 3.5 WHERE `entry` = 19910;
+UPDATE `item_template` SET `spellppmRate_1` = 4 WHERE `entry` = 19019;
+UPDATE `item_template` SET `spellppmRate_1` = 6 WHERE `entry` = 29996;
