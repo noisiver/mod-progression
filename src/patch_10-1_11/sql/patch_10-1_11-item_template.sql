@@ -204,3 +204,4 @@ UPDATE `item_template` SET `spellcategory_1` = 1141 WHERE `entry` IN (6972, 7133
 UPDATE `item_template` SET `spellcategory_1` = 1155 WHERE `entry` IN (20071, 20072, 21115, 21116, 21117, 21118, 21119, 21120);
 UPDATE `item_template` SET `spellcategory_2` = 0 WHERE `entry` IN (7515, 15107, 15108, 19024);
 UPDATE `item_template` SET `spellcategory_2` = 1150 WHERE `entry` = 17074;
+UPDATE `item_template` SET `spellcategory_3` = 0 WHERE `entry` = 6898;
