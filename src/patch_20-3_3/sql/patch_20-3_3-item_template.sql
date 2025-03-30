@@ -562,3 +562,4 @@ UPDATE `item_template` SET `spelltrigger_2` = 0 WHERE `entry` = 21407;
 UPDATE `item_template` SET `spelltrigger_2` = 1 WHERE `entry` IN (13209, 19812, 25793, 25795, 25809, 28229, 29995, 30132, 30678, 31039, 31042, 31044, 31048, 32261, 32387, 33285, 33326, 33453, 33473, 33481, 33492, 33495, 33497, 33971, 34444, 34473, 34556, 34573, 34888);
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (30132, 32387, 33446, 33453, 33473, 33481, 34573);
 UPDATE `item_template` SET `spellcharges_1` = 0 WHERE `entry` = 9449;
+UPDATE `item_template` SET `spellcharges_3` = 10 WHERE `entry` = 25809

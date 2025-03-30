@@ -1481,3 +1481,4 @@ UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (16798, 16809, 
 UPDATE `item_template` SET `spelltrigger_4` = 0 WHERE `entry` IN (873, 7515, 13255, 22436, 22442, 22631);
 UPDATE `item_template` SET `spelltrigger_5` = 0 WHERE `entry` IN (873, 22589, 22630, 22632);
 UPDATE `item_template` SET `spellcharges_1` = 3 WHERE `entry` = 9449;
+UPDATE `item_template` SET `spellcharges_3` = 0 WHERE `entry` = 25809
