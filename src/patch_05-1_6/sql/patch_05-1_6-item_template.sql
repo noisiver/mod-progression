@@ -33,3 +33,5 @@ UPDATE `item_template` SET `spellid_1` = 23930 WHERE `entry` = 13209;
 UPDATE `item_template` SET `spellid_2` = 9335 WHERE `entry` IN (12584, 16345, 18827, 18828, 18838, 18840, 18843, 18844, 18847, 18848, 18865, 18866);
 UPDATE `item_template` SET `spellcooldown_1` = 0 WHERE `entry` IN (17690, 17691);
 UPDATE `item_template` SET `spellcooldown_2` = 1000 WHERE `entry` IN (17900, 17905);
+UPDATE `item_template` SET `spellcooldown_3` = -1 WHERE `entry` IN (17904, 17909);
+UPDATE `item_template` SET `spellcooldown_3` = 1000 WHERE `entry` IN (17901, 17902, 17903, 17906, 17907, 17908);

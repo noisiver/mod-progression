@@ -1512,3 +1512,6 @@ UPDATE `item_template` SET `spellcooldown_2` = 0 WHERE `entry` IN (7515, 13031, 
 UPDATE `item_template` SET `spellcooldown_2` = 60000 WHERE `entry` = 17074;
 UPDATE `item_template` SET `spellcooldown_2` = 120000 WHERE `entry` = 28823;
 UPDATE `item_template` SET `spellcooldown_2` = 1800000 WHERE `entry` = 19024;
+UPDATE `item_template` SET `spellcooldown_3` = -1 WHERE `entry` IN (833, 9914, 11819, 11832, 15937, 15970, 15971, 15975, 15987, 15989, 25809, 34430);
+UPDATE `item_template` SET `spellcooldown_3` = 0 WHERE `entry` IN (22700, 34334);
+UPDATE `item_template` SET `spellcooldown_3` = 1000 WHERE `entry` IN (17904, 17909);
