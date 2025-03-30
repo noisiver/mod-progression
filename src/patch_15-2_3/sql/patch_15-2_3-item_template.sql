@@ -794,3 +794,4 @@ UPDATE `item_template` SET `spelltrigger_2` = 1 WHERE `entry` IN (873, 9517, 108
 UPDATE `item_template` SET `spelltrigger_2` = 2 WHERE `entry` = 19019;
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (873, 7515, 9517, 16452, 16455, 16463, 16467, 16549, 16561, 16567, 16571, 16938, 20069, 20070, 20214, 20220, 20264, 21189, 21366, 21368, 21370, 21563, 22013, 22060, 22437, 22438, 22441, 22875, 23078, 23087, 23090, 23293);
 UPDATE `item_template` SET `spelltrigger_4` = 1 WHERE `entry` IN (873, 7515, 22436, 22442, 22631);
+UPDATE `item_template` SET `spelltrigger_5` = 1 WHERE `entry` IN (873, 22589, 22630, 22632);
