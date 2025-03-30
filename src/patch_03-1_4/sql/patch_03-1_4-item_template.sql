@@ -80,3 +80,4 @@ UPDATE `item_template` SET `spellid_2` = 17493 WHERE `entry` = 17113;
 UPDATE `item_template` SET `spellid_2` = 18056 WHERE `entry` = 17103;
 UPDATE `item_template` SET `spellid_3` = 0 WHERE `entry` = 22852;
 UPDATE `item_template` SET `spelltrigger_2` = 1 WHERE `entry` IN (17073, 17105);
+UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` = 17066;
