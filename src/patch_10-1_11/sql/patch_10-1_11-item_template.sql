@@ -199,3 +199,6 @@ UPDATE `item_template` SET `spellcooldown_1` = 120000 WHERE `entry` = 19992;
 UPDATE `item_template` SET `spellcooldown_1` = 300000 WHERE `entry` IN (4444, 4984, 5613, 17744);
 UPDATE `item_template` SET `spellcooldown_2` = -1 WHERE `entry` = 17074;
 UPDATE `item_template` SET `spellcooldown_5` = -1 WHERE `entry` = 19948;
+UPDATE `item_template` SET `spellcategory_1` = 0 WHERE `entry` IN (744, 833, 940, 1315, 1404, 1447, 1713, 1933, 1973, 2802, 2820, 4444, 4984, 5079, 5323, 5613, 7344, 7507, 7508, 9394, 9397, 9404, 11808, 11819, 11832, 12532, 13143, 13315, 13937, 15866, 15867, 15873, 16768, 17744, 17759, 19948, 21181);
+UPDATE `item_template` SET `spellcategory_1` = 1141 WHERE `entry` IN (6972, 7133, 7734, 9492, 10455, 11905, 13171, 13213, 13382, 13515, 14554, 19992);
+UPDATE `item_template` SET `spellcategory_1` = 1155 WHERE `entry` IN (20071, 20072, 21115, 21116, 21117, 21118, 21119, 21120);

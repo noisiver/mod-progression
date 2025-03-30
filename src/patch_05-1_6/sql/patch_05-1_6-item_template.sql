@@ -35,3 +35,4 @@ UPDATE `item_template` SET `spellcooldown_1` = 0 WHERE `entry` IN (17690, 17691)
 UPDATE `item_template` SET `spellcooldown_2` = 1000 WHERE `entry` IN (17900, 17905);
 UPDATE `item_template` SET `spellcooldown_3` = -1 WHERE `entry` IN (17904, 17909);
 UPDATE `item_template` SET `spellcooldown_3` = 1000 WHERE `entry` IN (17901, 17902, 17903, 17906, 17907, 17908);
+UPDATE `item_template` SET `spellcategory_1` = 1091 WHERE `entry` IN (17690, 17691);

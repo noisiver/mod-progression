@@ -126,3 +126,4 @@ UPDATE `item_template` SET `spellid_3` = 18384 WHERE `entry` = 16928;
 UPDATE `item_template` SET `spellid_3` = 22852 WHERE `entry` = 17066;
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (16928, 16947, 16948);
 UPDATE `item_template` SET `spellppmRate_1` = 6.5 WHERE `entry` = 19019;
+UPDATE `item_template` SET `spellcategory_1` = 24 WHERE `entry` = 7734;

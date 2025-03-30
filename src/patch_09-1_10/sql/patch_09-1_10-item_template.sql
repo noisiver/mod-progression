@@ -254,3 +254,4 @@ UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (13255, 17070);
 UPDATE `item_template` SET `spelltrigger_4` = 1 WHERE `entry` = 13255;
 UPDATE `item_template` SET `spellppmRate_1` = 2 WHERE `entry` = 17076;
 UPDATE `item_template` SET `spellcooldown_1` = 120000 WHERE `entry` = 13213;
+UPDATE `item_template` SET `spellcategory_1` = 1141 WHERE `entry` IN (18820, 19336, 19337, 19339, 19342, 19343, 19344, 19948, 19949, 19950, 19991, 20036, 20130, 20512, 21180, 21473);
