@@ -197,3 +197,4 @@ UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (16473, 16474, 
 UPDATE `item_template` SET `spellcooldown_1` = 60000 WHERE `entry` = 7344;
 UPDATE `item_template` SET `spellcooldown_1` = 120000 WHERE `entry` = 19992;
 UPDATE `item_template` SET `spellcooldown_1` = 300000 WHERE `entry` IN (4444, 4984, 5613, 17744);
+UPDATE `item_template` SET `spellcooldown_2` = -1 WHERE `entry` = 17074;

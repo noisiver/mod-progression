@@ -594,3 +594,6 @@ UPDATE `item_template` SET `spellcooldown_1` = 300000 WHERE `entry` IN (16608, 1
 UPDATE `item_template` SET `spellcooldown_1` = 900000 WHERE `entry` IN (5624, 9870);
 UPDATE `item_template` SET `spellcooldown_1` = 1800000 WHERE `entry` = 18951;
 UPDATE `item_template` SET `spellcooldown_1` = 3600000 WHERE `entry` = 9449;
+UPDATE `item_template` SET `spellcooldown_2` = -1 WHERE `entry` IN (13031, 18472, 19520, 19898, 22887, 28823, 33446, 33465, 33483, 33490, 33496, 33498, 34334);
+UPDATE `item_template` SET `spellcooldown_2` = 0 WHERE `entry` IN (9914, 15937, 15970, 15971, 15975, 15987, 15989, 25809);
+UPDATE `item_template` SET `spellcooldown_2` = 1500 WHERE `entry` = 12185;

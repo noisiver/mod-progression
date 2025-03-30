@@ -1507,3 +1507,8 @@ UPDATE `item_template` SET `spellcooldown_1` = 180000 WHERE `entry` = 12344, 132
 UPDATE `item_template` SET `spellcooldown_1` = 300000 WHERE `entry` = 34430;
 UPDATE `item_template` SET `spellcooldown_1` = 900000 WHERE `entry` IN (11819, 11832);
 UPDATE `item_template` SET `spellcooldown_1` = 1800000 WHERE `entry` IN (833, 7508, 7734, 13937, 17759);
+UPDATE `item_template` SET `spellcooldown_2` = -1 WHERE `entry` IN (9914, 12185, 15937, 15970, 15971, 15975, 15987, 15989, 25809);
+UPDATE `item_template` SET `spellcooldown_2` = 0 WHERE `entry` IN (7515, 13031, 18472, 19520, 19898, 22887, 33446, 33465, 33483, 33490, 33496, 33498, 34334);
+UPDATE `item_template` SET `spellcooldown_2` = 60000 WHERE `entry` = 17074;
+UPDATE `item_template` SET `spellcooldown_2` = 120000 WHERE `entry` = 28823;
+UPDATE `item_template` SET `spellcooldown_2` = 1800000 WHERE `entry` = 19024;

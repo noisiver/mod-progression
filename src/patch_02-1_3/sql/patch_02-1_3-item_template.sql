@@ -29,3 +29,4 @@ UPDATE `item_template` SET `spellid_2` = 9253 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spellid_3` = 0 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spelltrigger_2` = 0 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spelltrigger_3` = 0 WHERE `entry` = 7515;
+UPDATE `item_template` SET `spellcooldown_2` = 1800000 WHERE `entry` = 7515;
