@@ -1498,3 +1498,4 @@ UPDATE `item_template` SET `spellppmRate_1` = 9.5 WHERE `entry` = 19019;
 UPDATE `item_template` SET `spellppmRate_2` = 0 WHERE `entry` IN (11086, 19323, 19908);
 UPDATE `item_template` SET `spellppmRate_2` = 5 WHERE `entry` = 30318;
 UPDATE `item_template` SET `spellppmRate_2` = 7.5 WHERE `entry` = 30312;
+UPDATE `item_template` SET `spellppmRate_4` = 0 WHERE `entry` = 30318;
