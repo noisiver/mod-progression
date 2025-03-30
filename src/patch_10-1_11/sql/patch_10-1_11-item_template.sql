@@ -194,3 +194,6 @@ UPDATE `item_template` SET `spellid_3` = 9415 WHERE `entry` IN (16577, 16578);
 UPDATE `item_template` SET `spellid_3` = 21363 WHERE `entry` IN (16473, 16474, 16573);
 UPDATE `item_template` SET `spelltrigger_3` = 0 WHERE `entry` IN (16455, 16467, 16561, 16567);
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (16473, 16474, 16573, 16577, 16578, 16579);
+UPDATE `item_template` SET `spellcooldown_1` = 60000 WHERE `entry` = 7344;
+UPDATE `item_template` SET `spellcooldown_1` = 120000 WHERE `entry` = 19992;
+UPDATE `item_template` SET `spellcooldown_1` = 300000 WHERE `entry` IN (4444, 4984, 5613, 17744);

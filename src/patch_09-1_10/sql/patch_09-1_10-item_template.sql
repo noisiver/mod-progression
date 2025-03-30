@@ -253,3 +253,4 @@ UPDATE `item_template` SET `spellid_4` = 27744 WHERE `entry` = 13255;
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (13255, 17070);
 UPDATE `item_template` SET `spelltrigger_4` = 1 WHERE `entry` = 13255;
 UPDATE `item_template` SET `spellppmRate_1` = 2 WHERE `entry` = 17076;
+UPDATE `item_template` SET `spellcooldown_1` = 120000 WHERE `entry` = 13213;
