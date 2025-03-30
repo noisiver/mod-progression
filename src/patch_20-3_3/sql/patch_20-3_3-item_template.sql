@@ -583,3 +583,6 @@ UPDATE `item_template` SET `spellppmRate_1` = 3 WHERE `entry` IN (871, 14555, 19
 UPDATE `item_template` SET `spellppmRate_1` = 3.5 WHERE `entry` = 19910;
 UPDATE `item_template` SET `spellppmRate_1` = 4 WHERE `entry` = 19019;
 UPDATE `item_template` SET `spellppmRate_1` = 6 WHERE `entry` = 29996;
+UPDATE `item_template` SET `spellppmRate_2` = 0 WHERE `entry` = 30318;
+UPDATE `item_template` SET `spellppmRate_2` = 1.5 WHERE `entry` = 19908;
+UPDATE `item_template` SET `spellppmRate_2` = 60 WHERE `entry` = 30312;
