@@ -1548,3 +1548,4 @@ UPDATE `item_template` SET `spellcategorycooldown_3` = 0 WHERE `entry` IN (17901
 UPDATE `item_template` SET `spellcategorycooldown_3` = 180000 WHERE `entry` = 6898;
 UPDATE `item_template` SET `spellcategorycooldown_4` = 0 WHERE `entry` = 31575;
 UPDATE `item_template` SET `spellcategorycooldown_4` = -1 WHERE `entry` = 34334;
+UPDATE `item_template` SET `spellcategorycooldown_5` = 0 WHERE `entry` IN (22589, 22630, 22632);
