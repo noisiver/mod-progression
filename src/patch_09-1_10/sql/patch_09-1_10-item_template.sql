@@ -263,3 +263,5 @@ UPDATE `item_template` SET `spellcategorycooldown_1` = 20000 WHERE `entry` IN (1
 UPDATE `item_template` SET `spellcategorycooldown_1` = 25000 WHERE `entry` = 20512;
 UPDATE `item_template` SET `spellcategorycooldown_1` = 30000 WHERE `entry` IN (19337, 21473);
 UPDATE `item_template` SET `spellcategorycooldown_1` = 60000 WHERE `entry` = 20130;
+UPDATE `item_template` SET `block` = 31 WHERE `entry` = 11631;
+UPDATE `item_template` SET `block` = 35 WHERE `entry` = 13254;
