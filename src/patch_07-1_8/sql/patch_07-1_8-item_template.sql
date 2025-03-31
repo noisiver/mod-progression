@@ -25,3 +25,5 @@ UPDATE `item_template` SET `spellid_3` = 0 WHERE `entry` = 9517;
 UPDATE `item_template` SET `spelltrigger_3` = 0 WHERE `entry` = 9517;
 UPDATE `item_template` SET `spellcooldown_1` = 600000 WHERE `entry` = 13937;
 UPDATE `item_template` SET `spellcategorycooldown_1` = 60000 WHERE `entry` = 13937;
+UPDATE `item_template` SET `StatsCount` = 1 WHERE `entry` IN (7513, 7514, 11263);
+UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` = 16803;

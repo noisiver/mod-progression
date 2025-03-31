@@ -27,3 +27,5 @@ UPDATE `item_template` SET `spellid_2` = 23037 WHERE `entry` = 16440;
 UPDATE `item_template` SET `spellid_2` = 23454 WHERE `entry` = 19323;
 UPDATE `item_template` SET `spelltrigger_2` = 1 WHERE `entry` = 16440;
 UPDATE `item_template` SET `spellppmRate_1` = 1.5 WHERE `entry` = 17076;
+UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` = 19426;
+UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` IN (16684, 16687, 16692, 16694, 16699, 16705, 19491);

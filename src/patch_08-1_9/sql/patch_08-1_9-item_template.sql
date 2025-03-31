@@ -127,3 +127,7 @@ UPDATE `item_template` SET `spellid_3` = 22852 WHERE `entry` = 17066;
 UPDATE `item_template` SET `spelltrigger_3` = 1 WHERE `entry` IN (16928, 16947, 16948);
 UPDATE `item_template` SET `spellppmRate_1` = 6.5 WHERE `entry` = 19019;
 UPDATE `item_template` SET `spellcategory_1` = 24 WHERE `entry` = 7734;
+UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` IN (16809, 16928);
+UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` = 16808;
+UPDATE `item_template` SET `StatsCount` = 4 WHERE `entry` IN (16951, 16952, 16953, 16954, 16955, 16956, 16957, 16958);
+UPDATE `item_template` SET `StatsCount` = 5 WHERE `entry` = 2933;

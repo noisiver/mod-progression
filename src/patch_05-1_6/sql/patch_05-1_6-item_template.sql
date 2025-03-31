@@ -42,3 +42,5 @@ UPDATE `item_template` SET `spellcategorycooldown_1` = 120000 WHERE `entry` IN (
 UPDATE `item_template` SET `spellcategorycooldown_2` = 120000 WHERE `entry` IN (17900, 17905);
 UPDATE `item_template` SET `spellcategorycooldown_3` = 1000 WHERE `entry` IN (17904, 17909);
 UPDATE `item_template` SET `spellcategorycooldown_3` = 120000 WHERE `entry` IN (17901, 17902, 17903, 17906, 17907, 17908);
+UPDATE `item_template` SET `StatsCount` = 1 WHERE `entry` IN (18833, 18835, 18836, 18837, 18855, 18860);
+UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` IN (16841, 16843);
