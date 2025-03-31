@@ -852,3 +852,4 @@ UPDATE `item_template` SET `spellcategorycooldown_1` = 30000 WHERE `entry` IN (1
 UPDATE `item_template` SET `spellcategorycooldown_1` = 180000 WHERE `entry` = 12344;
 UPDATE `item_template` SET `spellcategorycooldown_1` = 300000 WHERE `entry` IN (18834, 18845, 18846, 18849, 18850, 18851, 18852, 18853, 18854, 18856, 18857, 18858, 18859, 18862, 18863, 18864);
 UPDATE `item_template` SET `spellcategorycooldown_2` = 0 WHERE `entry` = 10698;
+UPDATE `item_template` SET `spellcategorycooldown_3` = 120000 WHERE `entry` = 22700;
