@@ -607,3 +607,8 @@ UPDATE `item_template` SET `spellcooldown_4` = -1 WHERE `entry` = 34334;
 UPDATE `item_template` SET `spellcooldown_4` = 0 WHERE `entry` = 31575;
 UPDATE `item_template` SET `spellcategory_1` = 1141 WHERE `entry` IN (19990, 20636, 30293);
 UPDATE `item_template` SET `spellcategory_2` = 1141 WHERE `entry` IN (25634, 27828, 29376, 33828);
+UPDATE `item_template` SET `spellcategorycooldown_1` = -1 WHERE `entry` IN (833, 869, 870, 937, 1664, 1680, 1720, 1727, 1998, 2167, 4463, 4767, 5310, 6461, 6465, 6660, 6738, 10628, 10630, 11819, 11832, 13031, 13032, 13036, 13041, 13049, 13057, 14398, 14399, 14403, 14405, 14407, 14414, 14553, 14555, 15106, 18370, 18375, 18377, 18379, 18381, 18472, 18528, 18674, 18679, 19038, 19115, 19520, 19529, 19898, 20665, 21678, 22095, 22272, 22401, 22887, 23411, 25300, 25333, 28158, 28164, 28229, 29995, 30224, 30883, 33285, 33297, 33326, 33446, 33453, 33465, 33481, 33483, 33490, 33492, 33496, 33497, 33498, 33971, 34177, 34334, 34444, 34473);
+UPDATE `item_template` SET `spellcategorycooldown_1` = 0 WHERE `entry` IN (1443, 5313, 6199, 9449, 9914, 12056, 15200, 15937, 15970, 15971, 15975, 15987, 15989, 16608, 25809);
+UPDATE `item_template` SET `spellcategorycooldown_1` = 15000 WHERE `entry` = 20636;
+UPDATE `item_template` SET `spellcategorycooldown_1` = 20000 WHERE `entry` IN (19990, 19992);
+UPDATE `item_template` SET `spellcategorycooldown_1` = 30000 WHERE `entry` IN (5624, 9870);
