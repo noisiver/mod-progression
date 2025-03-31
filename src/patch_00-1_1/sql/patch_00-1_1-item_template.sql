@@ -1538,3 +1538,8 @@ UPDATE `item_template` SET `spellcategorycooldown_1` = 120000 WHERE `entry` = 19
 UPDATE `item_template` SET `spellcategorycooldown_1` = 180000 WHERE `entry` IN (833, 1404, 1713, 5079, 5323, 7344, 7507, 7508, 9394, 11808, 11819, 13315, 15866, 16768);
 UPDATE `item_template` SET `spellcategorycooldown_1` = 300000 WHERE `entry` IN (940, 1447, 1973, 2802, 2820, 4444, 4984, 5613, 6972, 7133, 7734, 9404, 11832, 12532, 13143, 14554, 15867, 15873, 17744, 17759);
 UPDATE `item_template` SET `spellcategorycooldown_1` = 600000 WHERE `entry` = 13937;
+UPDATE `item_template` SET `spellcategorycooldown_2` = -1 WHERE `entry` IN (9914, 15937, 15970, 15971, 15975, 15987, 15989, 27828, 29376, 33828);
+UPDATE `item_template` SET `spellcategorycooldown_2` = 0 WHERE `entry` IN (13031, 17074, 17900, 17905, 18472, 19520, 19898, 22887, 25634, 33446, 33465, 33483, 33490, 33496, 33498, 34334);
+UPDATE `item_template` SET `spellcategorycooldown_2` = 180000 WHERE `entry` IN (10698, 15107, 15108);
+UPDATE `item_template` SET `spellcategorycooldown_2` = 300000 WHERE `entry` = 19024;
+UPDATE `item_template` SET `spellcategorycooldown_2` = 3600000 WHERE `entry` = 28585;

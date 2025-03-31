@@ -31,3 +31,4 @@ UPDATE `item_template` SET `spelltrigger_2` = 0 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spelltrigger_3` = 0 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spellcooldown_2` = 1800000 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spellcategory_2` = 30 WHERE `entry` = 7515;
+UPDATE `item_template` SET `spellcategorycooldown_2` = 180000 WHERE `entry` = 7515;

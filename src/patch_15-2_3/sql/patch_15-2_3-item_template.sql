@@ -851,3 +851,4 @@ UPDATE `item_template` SET `spellcategorycooldown_1` = 8000 WHERE `entry` = 1455
 UPDATE `item_template` SET `spellcategorycooldown_1` = 30000 WHERE `entry` IN (1280, 1282, 1319, 1449, 4135, 4549, 4550, 5266, 5351, 5622, 6332, 6389, 6678, 6686, 6693, 6743, 6748, 6749, 6750, 6971, 7130, 7420, 7552, 7686, 8350, 9447, 9461, 9533, 9642, 9655, 10408, 10710, 10739, 10780, 11868, 11869, 11945, 12038, 12102, 13475, 14753, 15467, 15533, 15540, 15550, 15558);
 UPDATE `item_template` SET `spellcategorycooldown_1` = 180000 WHERE `entry` = 12344;
 UPDATE `item_template` SET `spellcategorycooldown_1` = 300000 WHERE `entry` IN (18834, 18845, 18846, 18849, 18850, 18851, 18852, 18853, 18854, 18856, 18857, 18858, 18859, 18862, 18863, 18864);
+UPDATE `item_template` SET `spellcategorycooldown_2` = 0 WHERE `entry` = 10698;
