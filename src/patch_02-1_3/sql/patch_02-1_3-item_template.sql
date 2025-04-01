@@ -34,3 +34,4 @@ UPDATE `item_template` SET `spellcategory_2` = 30 WHERE `entry` = 7515;
 UPDATE `item_template` SET `spellcategorycooldown_2` = 180000 WHERE `entry` = 7515;
 UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` IN (10824, 16683, 16685, 16688, 16689);
 UPDATE `item_template` SET `StatsCount` = 4 WHERE `entry` = 13391;
+UPDATE `item_template` SET `RandomProperty` = 5850 WHERE `entry` = 15283;

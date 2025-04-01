@@ -87,3 +87,4 @@ UPDATE `item_template` SET `StatsCount` = 1 WHERE `entry` = 17072;
 UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` IN (16058, 16861, 16864, 16868, 16911);
 UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` IN (14528, 16852, 16862, 16863, 16865, 16866, 16867, 16920, 17109);
 UPDATE `item_template` SET `StatsCount` = 5 WHERE `entry` = 14539;
+UPDATE `item_template` SET `RandomProperty` = 933 WHERE `entry` = 13387;
