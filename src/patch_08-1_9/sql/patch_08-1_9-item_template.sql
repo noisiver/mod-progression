@@ -131,3 +131,4 @@ UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` IN (16809, 16928);
 UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` = 16808;
 UPDATE `item_template` SET `StatsCount` = 4 WHERE `entry` IN (16951, 16952, 16953, 16954, 16955, 16956, 16957, 16958);
 UPDATE `item_template` SET `StatsCount` = 5 WHERE `entry` = 2933;
+UPDATE `item_template` SET `bonding` = 2 WHERE `entry` IN (13260, 14536, 14555, 18289, 18295, 18296, 18298, 18337, 18338, 18339, 18340, 18343, 18344, 18697, 18698, 18699, 18700, 18701, 18702, 18736, 18741, 18742, 18743, 18744, 18745, 20653);

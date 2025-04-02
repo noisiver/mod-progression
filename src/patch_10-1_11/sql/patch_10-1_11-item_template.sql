@@ -217,3 +217,5 @@ UPDATE `item_template` SET `StatsCount` = 1 WHERE `entry` = 21417;
 UPDATE `item_template` SET `StatsCount` = 2 WHERE `entry` IN (16455, 16478, 16484, 16542, 16548, 16561, 17584, 17588, 17603, 17608, 17620, 17625, 19833, 19848, 21418);
 UPDATE `item_template` SET `StatsCount` = 3 WHERE `entry` IN (16440, 16465, 16472, 16475, 16476, 16540, 16566, 19835, 19845, 19846, 21415);
 UPDATE `item_template` SET `StatsCount` = 5 WHERE `entry` IN (21408, 21409);
+UPDATE `item_template` SET `bonding` = 1 WHERE `entry` IN (9398, 22327, 22330);
+UPDATE `item_template` SET `bonding` = 2 WHERE `entry` = 11302;

@@ -630,3 +630,5 @@ UPDATE `item_template` SET `StatsCount` = 4 WHERE `entry` IN (11750, 12103, 1657
 UPDATE `item_template` SET `StatsCount` = 5 WHERE `entry` IN (21407, 22066, 22090, 22099, 30096, 30113, 30896, 32263, 32268, 32515, 32521, 33473, 33524, 34352, 34381, 34400, 34433, 34442, 34488, 34547, 34940);
 UPDATE `item_template` SET `StatsCount` = 6 WHERE `entry` IN (22110, 34568);
 UPDATE `item_template` SET `RandomProperty` = -1 WHERE `entry` IN (5744, 7109);
+UPDATE `item_template` SET `bonding` = 0 WHERE `entry` IN (18610, 18611, 18612, 22276, 22277, 22278, 22280, 22281, 22282, 24443);
+UPDATE `item_template` SET `bonding` = 2 WHERE `entry` IN (19287, 19288, 19289, 19290, 31856, 31857, 31858, 31859);
