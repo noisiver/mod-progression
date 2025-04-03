@@ -75,6 +75,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
     sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, PatchId < PATCH_ECHOES_OF_DOOM);
+    sWorld->setBoolConfig(CONFIG_DBC_ENFORCE_ITEM_ATTRIBUTES, false);
 
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
     {
