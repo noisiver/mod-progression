@@ -18,8 +18,6 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
-void AddSC_map_alterac_valley();
-void AddSC_npc_alterac_valley_commander();
 
 void Addmod_progressionScripts()
 {
@@ -54,12 +52,5 @@ void Addmod_progressionScripts()
     {
         AddSC_boss_skadi_progression();
         AddSC_boss_svala_progression();
-    }
-
-    AddSC_map_alterac_valley();
-
-    if (id < PATCH_THE_GODS_OF_ZUL_AMAN)
-    {
-        AddSC_npc_alterac_valley_commander();
     }
 }

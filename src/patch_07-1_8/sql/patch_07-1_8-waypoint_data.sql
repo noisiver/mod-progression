@@ -1,1 +1,0 @@
-DELETE FROM `waypoint_data` WHERE `id` IN (58000450, 58001380);
