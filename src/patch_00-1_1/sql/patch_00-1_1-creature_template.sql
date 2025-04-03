@@ -1,7 +1,3 @@
-UPDATE `creature_template` SET `ScriptName` = 'npc_alterac_valley_commander' WHERE `entry` IN (13152, 13153, 13318, 13319);
-UPDATE `creature_template` SET `name` = 'Lieutenant Murp', `AIName` = 'SmartAI' WHERE `entry` = 13146;
-UPDATE `creature_template` SET `AIName` = 'SmartAI' WHERE `entry` IN (13137, 13138, 13143, 13144, 13145, 13147, 13296, 13297, 13298, 13299, 13300);
-UPDATE `creature_template` SET `speed_walk` = 1, `AIName` = 'SmartAI' WHERE `entry` IN (13356, 13357);
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69;
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299;
 UPDATE `creature_template` SET `pickpocketloot` = 0 WHERE `entry` IN (1852, 10508);
