@@ -6,3 +6,4 @@ UPDATE `quest_template` SET `Flags` = `Flags` & ~16384, `RewardItem1` = 40752, `
 UPDATE `quest_template` SET `Flags` = `Flags` & ~16384, `RewardItem1` = 45624 WHERE `ID` = 14199;
 UPDATE `quest_template` SET `RewardDisplaySpell` = 10846, `RewardSpell` = 19902, `RewardItem2` = 0, `RewardAmount2` = 0 WHERE `ID` IN (6622, 6624);
 UPDATE `quest_template` SET `RewardDisplaySpell` = 19890, `RewardSpell` = 19890 WHERE `ID` = 6607;
+UPDATE `quest_template` SET `LogDescription` = 'Return to Stormwind and inform Highlord Bolvar Fordragon of the fate of Nathanos Marris.' WHERE `ID` = 6186;

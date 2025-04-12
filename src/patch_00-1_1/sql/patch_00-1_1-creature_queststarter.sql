@@ -1,5 +1,5 @@
 DELETE FROM `creature_queststarter` WHERE `id` = 461 AND `quest` = 4488;
-DELETE FROM `creature_queststarter` WHERE `id` = 1748 AND `quest` = 7496;
+DELETE FROM `creature_queststarter` WHERE `id` = 1748 AND `quest` IN (6187, 7496);
 DELETE FROM `creature_queststarter` WHERE `id` = 2215 AND `quest` = 550;
 DELETE FROM `creature_queststarter` WHERE `id` = 3326 AND `quest` = 3631;
 DELETE FROM `creature_queststarter` WHERE `id` = 4563 AND `quest` = 4489;
@@ -12,6 +12,7 @@ DELETE FROM `creature_queststarter` WHERE `id` = 29611 AND `quest` = 7496;
 DELETE FROM `creature_queststarter` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 (461, 4488),
+(1748, 6187),
 (1748, 7496),
 (2215, 550),
 (3326, 3631),
