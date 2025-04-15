@@ -6,3 +6,6 @@ UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN (14363, 14365, 14367, 14375, 14376, 14377, 14378, 14379, 14380, 14423, 14438, 14439, 14440, 14441, 20672, 20674);
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (1756, 3083, 13839, 14304, 15350, 15351);
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (2784, 2784, 3057, 3057, 4949, 4949, 7937, 7999, 10181, 10181, 10540, 16802, 17468);
+UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15458, 15539, 15700, 15701);
+UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (15458, 15539);
+UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;
