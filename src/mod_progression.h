@@ -85,27 +85,263 @@ const std::string PatchNotes[PATCH_MAX][2] =
 
 enum
 {
-    AREA_ARGENT_TOURNAMENT_GROUNDS = 4658,
+    AREA_ARGENT_TOURNAMENT_GROUNDS                  = 4658,
 
-    SPELL_ICECROWN_CITADEL_NONE    = 0,
-    SPELL_ICECROWN_CITADEL_5_H     = 73816,
-    SPELL_ICECROWN_CITADEL_5_A     = 73762,
-    SPELL_ICECROWN_CITADEL_10_H    = 73818,
-    SPELL_ICECROWN_CITADEL_10_A    = 73824,
-    SPELL_ICECROWN_CITADEL_15_H    = 73819,
-    SPELL_ICECROWN_CITADEL_15_A    = 73825,
-    SPELL_ICECROWN_CITADEL_20_H    = 73820,
-    SPELL_ICECROWN_CITADEL_20_A    = 73826,
-    SPELL_ICECROWN_CITADEL_25_H    = 73821,
-    SPELL_ICECROWN_CITADEL_25_A    = 73827,
-    SPELL_ICECROWN_CITADEL_30_H    = 73822,
-    SPELL_ICECROWN_CITADEL_30_A    = 73828,
+    SPELL_ICECROWN_CITADEL_NONE                     = 0,
+    SPELL_ICECROWN_CITADEL_5_H                      = 73816,
+    SPELL_ICECROWN_CITADEL_5_A                      = 73762,
+    SPELL_ICECROWN_CITADEL_10_H                     = 73818,
+    SPELL_ICECROWN_CITADEL_10_A                     = 73824,
+    SPELL_ICECROWN_CITADEL_15_H                     = 73819,
+    SPELL_ICECROWN_CITADEL_15_A                     = 73825,
+    SPELL_ICECROWN_CITADEL_20_H                     = 73820,
+    SPELL_ICECROWN_CITADEL_20_A                     = 73826,
+    SPELL_ICECROWN_CITADEL_25_H                     = 73821,
+    SPELL_ICECROWN_CITADEL_25_A                     = 73827,
+    SPELL_ICECROWN_CITADEL_30_H                     = 73822,
+    SPELL_ICECROWN_CITADEL_30_A                     = 73828,
 
-    SPELL_RUNE_TAP                 = 48982,
-    SPELL_LIFE_STEAL               = 20004,
+    SPELL_RUNE_TAP                                  = 48982,
+    SPELL_LIFE_STEAL                                = 20004,
 
-    FACTION_SILVERMOON_CITY        = 911,
-    FACTION_EXODAR                 = 930
+    FACTION_SILVERMOON_CITY                         = 911,
+    FACTION_EXODAR                                  = 930,
+
+    EVENT_WAR_EFFORT_RESOURCE_COLLECTION            = 120,
+
+    // Warlord Gorchuk <War Effort Commander>
+    NPC_WARLORD_GORCHUK                             = 15700,
+    NPC_WARLORD_GORCHUK_GOSSIP_HELLO                = 8092,
+    NPC_WARLORD_GORCHUK_GOSSIP_DESCRIPTION          = 8209,
+    NPC_WARLORD_GORCHUK_GOSSIP_METAL_BARS           = 8096,
+    NPC_WARLORD_GORCHUK_GOSSIP_HERBS                = 8097,
+    NPC_WARLORD_GORCHUK_GOSSIP_LEATHER_SKINS        = 8098,
+    NPC_WARLORD_GORCHUK_GOSSIP_BANDAGES             = 8099,
+    NPC_WARLORD_GORCHUK_GOSSIP_COOKED_GOODS         = 8100,
+
+    // Field Marshal Snowfall <War Effort Commander>
+    NPC_FIELD_MARSHAL_SNOWFALL                      = 15701,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HELLO         = 8082,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_DESCRIPTION   = 8071,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_METAL_BARS    = 8087,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HERBS         = 8088,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_LEATHER_SKINS = 8089,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_BANDAGES      = 8090,
+    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_COOKED_GOODS  = 8091,
+
+    // General Zog <Horde Ambassador>
+    NPC_GENERAL_ZOG                                 = 15539,
+    NPC_GENERAL_ZOG_GOSSIP_HELLO                    = 7942,
+    NPC_GENERAL_ZOG_GOSSIP_DESCRIPTION              = 8209,
+    NPC_GENERAL_ZOG_GOSSIP_METAL_BARS               = 7944,
+    NPC_GENERAL_ZOG_GOSSIP_HERBS                    = 7945,
+    NPC_GENERAL_ZOG_GOSSIP_LEATHER_SKINS            = 7946,
+    NPC_GENERAL_ZOG_GOSSIP_BANDAGES                 = 7947,
+    NPC_GENERAL_ZOG_GOSSIP_COOKED_GOODS             = 7948,
+
+    // Commander Stronghammer <Alliance Ambassador>
+    NPC_COMMANDER_STRONGHAMMER                      = 15458,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_HELLO         = 7949,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_DESCRIPTION   = 8071,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_METAL_BARS    = 7951,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_HERBS         = 7952,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_LEATHER_SKINS = 7953,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_BANDAGES      = 7954,
+    NPC_COMMANDER_STRONGHAMMER_GOSSIP_COOKED_GOODS  = 7955,
+
+    // Resources states
+    STAGE_WAR_EFFORT                                = 50000,
+    RESOURCE_STATE_COPPER_BARS_A                    = 50001,
+    RESOURCE_STATE_COPPER_BARS_H                    = 50002,
+    RESOURCE_STATE_TIN_BARS                         = 50003,
+    RESOURCE_STATE_MITHRIL_BARS                     = 50004,
+    RESOURCE_STATE_IRON_BARS                        = 50005,
+    RESOURCE_STATE_THORIUM_BARS                     = 50006,
+    RESOURCE_STATE_PEACEBLOOM                       = 50007,
+    RESOURCE_STATE_FIREBLOOM                        = 50008,
+    RESOURCE_STATE_PURPLE_LOTUS_A                   = 50009,
+    RESOURCE_STATE_PURPLE_LOTUS_H                   = 50010,
+    RESOURCE_STATE_STRANGLEKELP                     = 50011,
+    RESOURCE_STATE_ARTHAS_TEARS                     = 50012,
+    RESOURCE_STATE_HEAVY_LEATHER                    = 50013,
+    RESOURCE_STATE_THICK_LEATHER_A                  = 50014,
+    RESOURCE_STATE_THICK_LEATHER_H                  = 50015,
+    RESOURCE_STATE_RUGGED_LEATHER                   = 50016,
+    RESOURCE_STATE_LIGHT_LEATHER                    = 50017,
+    RESOURCE_STATE_MEDIUM_LEATHER                   = 50018,
+    RESOURCE_STATE_WOOL_BANDAGE                     = 50019,
+    RESOURCE_STATE_MAGEWEAVE_BANDAGE                = 50020,
+    RESOURCE_STATE_RUNECLOTH_BANDAGE_A              = 50021,
+    RESOURCE_STATE_RUNECLOTH_BANDAGE_H              = 50022,
+    RESOURCE_STATE_LINEN_BANDAGE                    = 50023,
+    RESOURCE_STATE_SILK_BANDAGE                     = 50024,
+    RESOURCE_STATE_LEAN_WOLF_STEAK                  = 50025,
+    RESOURCE_STATE_SPOTTED_YELLOWTAIL_A             = 50026,
+    RESOURCE_STATE_SPOTTED_YELLOWTAIL_H             = 50027,
+    RESOURCE_STATE_BAKED_SALMON                     = 50028,
+    RESOURCE_STATE_RAINBOW_FIN_ALBACORE             = 50029,
+    RESOURCE_STATE_ROAST_RAPTOR                     = 50030,
+
+    // Copper Bars (Both)
+    RESOURCE_STATE_COPPER_BARS_CURRENT_A            = 1997,
+    RESOURCE_STATE_COPPER_BARS_CURRENT_H            = 2018,
+    RESOURCE_STATE_COPPER_BARS_REQUIRED             = 1998, // 90,000
+
+    // Iron Bars (Alliance)
+    RESOURCE_STATE_IRON_BARS_CURRENT                = 2002,
+    RESOURCE_STATE_IRON_BARS_REQUIRED               = 2003, // 28,000
+
+    // Tin Bars (Horde)
+    RESOURCE_STATE_TIN_BARS_CURRENT                 = 2005,
+    RESOURCE_STATE_TIN_BARS_REQUIRED                = 2006, // 22,000
+
+    // Mithril Bars (Horde)
+    RESOURCE_STATE_MITHRIL_BARS_CURRENT             = 2008,
+    RESOURCE_STATE_MITHRIL_BARS_REQUIRED            = 2009, // 18,000
+
+    // Thorium Bars (Alliance)
+    RESOURCE_STATE_THORIUM_BARS_CURRENT             = 2011,
+    RESOURCE_STATE_THORIUM_BARS_REQUIRED            = 2012, // 24,000
+
+    // Peacebloom (Horde)
+    RESOURCE_STATE_PEACEBLOOM_CURRENT               = 2021,
+    RESOURCE_STATE_PEACEBLOOM_REQUIRED              = 2020, // 96,000
+
+    // Firebloom (Horde)
+    RESOURCE_STATE_FIREBLOOM_CURRENT                = 2050,
+    RESOURCE_STATE_FIREBLOOM_REQUIRED               = 2051, // 19,000
+
+    // Purple Lotus (Both)
+    RESOURCE_STATE_PURPLE_LOTUS_CURRENT_A           = 2053,
+    RESOURCE_STATE_PURPLE_LOTUS_CURRENT_H           = 2054,
+    RESOURCE_STATE_PURPLE_LOTUS_REQUIRED            = 2055, // 26,000
+
+    // Stranglekelp (Alliance)
+    RESOURCE_STATE_STRANGLEKELP_CURRENT             = 2047,
+    RESOURCE_STATE_STRANGLEKELP_REQUIRED            = 2048, // 33,000
+
+    // Arthas' Tears (Alliance)
+    RESOURCE_STATE_ARTHAS_TEARS_CURRENT             = 2057,
+    RESOURCE_STATE_ARTHAS_TEARS_REQUIRED            = 2058, // 20,000
+
+    // Heavy Leather (Horde)
+    RESOURCE_STATE_HEAVY_LEATHER_CURRENT            = 2066,
+    RESOURCE_STATE_HEAVY_LEATHER_REQUIRED           = 2067, // 60,000
+
+    // Thick Leather (Both)
+    RESOURCE_STATE_THICK_LEATHER_CURRENT_A          = 2069,
+    RESOURCE_STATE_THICK_LEATHER_CURRENT_H          = 2070,
+    RESOURCE_STATE_THICK_LEATHER_REQUIRED           = 2071, // 80,000
+
+    // Rugged Leather (Horde)
+    RESOURCE_STATE_RUGGED_LEATHER_CURRENT           = 2073,
+    RESOURCE_STATE_RUGGED_LEATHER_REQUIRED          = 2074, // 60,000
+
+    // Light Leather (Alliance)
+    RESOURCE_STATE_LIGHT_LEATHER_CURRENT            = 2060,
+    RESOURCE_STATE_LIGHT_LEATHER_REQUIRED           = 2061, // 180,000
+
+    // Medium Leather (Alliance)
+    RESOURCE_STATE_MEDIUM_LEATHER_CURRENT           = 2063,
+    RESOURCE_STATE_MEDIUM_LEATHER_REQUIRED          = 2064, // 110,000
+
+    // Wool Bandage (Horde)
+    RESOURCE_STATE_WOOL_BANDAGE_CURRENT             = 2079,
+    RESOURCE_STATE_WOOL_BANDAGE_REQUIRED            = 2080, // 250,000
+
+    // Meagewave Bandage (Horde)
+    RESOURCE_STATE_MAGEWEAVE_BANDAGE_CURRENT        = 2085,
+    RESOURCE_STATE_MAGEWEAVE_BANDAGE_REQUIRED       = 2086, // 250,000
+
+    // Runecloth Bandage (Both)
+    RESOURCE_STATE_RUNECLOTH_BANDAGE_CURRENT_A      = 2088,
+    RESOURCE_STATE_RUNECLOTH_BANDAGE_CURRENT_H      = 2089,
+    RESOURCE_STATE_RUNECLOTH_BANDAGE_REQUIRED       = 2090, // 400,000
+
+    // Linen Bandage (Alliance)
+    RESOURCE_STATE_LINEN_BANDAGE_CURRENT            = 2076,
+    RESOURCE_STATE_LINEN_BANDAGE_REQUIRED           = 2077, // 800,000
+
+    // Silk Bandage (Alliance)
+    RESOURCE_STATE_SILK_BANDAGE_CURRENT             = 2082,
+    RESOURCE_STATE_SILK_BANDAGE_REQUIRED            = 2083, // 600,000
+
+    // Lean Wolf Steak (Horde)
+    RESOURCE_STATE_LEAN_WOLF_STEAK_CURRENT          = 2095,
+    RESOURCE_STATE_LEAN_WOLF_STEAK_REQUIRED         = 2096, // 10,000
+
+    // Spotted Yellowtail (Both)
+    RESOURCE_STATE_SPOTTED_YELLOWTAIL_CURRENT_A     = 2101,
+    RESOURCE_STATE_SPOTTED_YELLOWTAIL_CURRENT_H     = 2102,
+    RESOURCE_STATE_SPOTTED_YELLOWTAIL_REQUIRED      = 2103, // 17,000
+
+    // Baked Salmon (Horde)
+    RESOURCE_STATE_BAKED_SALMON_CURRENT             = 2105,
+    RESOURCE_STATE_BAKED_SALMON_REQUIRED            = 2106, // 10,000
+
+    // Rainbow Fin Albacore (Alliance)
+    RESOURCE_STATE_RAINBOW_FIN_ALBACORE_CURRENT     = 2092,
+    RESOURCE_STATE_RAINBOW_FIN_ALBACORE_REQUIRED    = 2093, // 14,000
+
+    // Roast Raptor (Alliance)
+    RESOURCE_STATE_ROAST_RAPTOR_CURRENT             = 2098,
+    RESOURCE_STATE_ROAST_RAPTOR_REQUIRED            = 2099, // 20,000
+
+    // Resources categories
+    RESOURCE_CATEGORY_METAL_BARS                    = 0,
+    RESOURCE_CATEGORY_HERBS                         = 1,
+    RESOURCE_CATEGORY_LEATHER_SKINS                 = 2,
+    RESOURCE_CATEGORY_BANDAGES                      = 3,
+    RESOURCE_CATEGORY_COOKED_GOODS                  = 4,
+
+    // Resource target values
+    RESOURCE_REQUIRED_COPPER_BARS                   = 90000,
+    RESOURCE_REQUIRED_TIN_BARS                      = 22000,
+    RESOURCE_REQUIRED_MITHRIL_BARS                  = 18000,
+    RESOURCE_REQUIRED_IRON_BARS                     = 28000,
+    RESOURCE_REQUIRED_THORIUM_BARS                  = 24000,
+    RESOURCE_REQUIRED_PEACEBLOOM                    = 96000,
+    RESOURCE_REQUIRED_FIREBLOOM                     = 19000,
+    RESOURCE_REQUIRED_PURPLE_LOTUS                  = 26000,
+    RESOURCE_REQUIRED_STRANGLEKELP                  = 33000,
+    RESOURCE_REQUIRED_ARTHAS_TEARS                  = 20000,
+    RESOURCE_REQUIRED_HEAVY_LEATHER                 = 60000,
+    RESOURCE_REQUIRED_THICK_LEATHER                 = 80000,
+    RESOURCE_REQUIRED_RUGGED_LEATHER                = 60000,
+    RESOURCE_REQUIRED_LIGHT_LEATHER                 = 180000,
+    RESOURCE_REQUIRED_MEDIUM_LEATHER                = 110000,
+    RESOURCE_REQUIRED_WOOL_BANDAGE                  = 250000,
+    RESOURCE_REQUIRED_MAGEWEAVE_BANDAGE             = 250000,
+    RESOURCE_REQUIRED_RUNECLOTH_BANDAGE             = 400000,
+    RESOURCE_REQUIRED_LINEN_BANDAGE                 = 800000,
+    RESOURCE_REQUIRED_SILK_BANDAGE                  = 600000,
+    RESOURCE_REQUIRED_LEAN_WOLF_STEAK               = 10000,
+    RESOURCE_REQUIRED_SPOTTED_YELLOWTAIL            = 17000,
+    RESOURCE_REQUIRED_BAKED_SALMON                  = 10000,
+    RESOURCE_REQUIRED_RAINBOW_FIN_ALBACORE          = 14000,
+    RESOURCE_REQUIRED_ROAST_RAPTOR                  = 20000,
+
+    // Resource gossip options
+    RESOURCE_OPTION_RETURN                          = 0,
+    RESOURCE_OPTION_DESCRIPTION                     = 1,
+    RESOURCE_OPTION_METAL_BARS                      = 2,
+    RESOURCE_OPTION_HERBS                           = 3,
+    RESOURCE_OPTION_LEATHER_SKINS                   = 4,
+    RESOURCE_OPTION_BANDAGES                        = 5,
+    RESOURCE_OPTION_COOKED_GOODS                    = 6,
+
+    WAR_EFFORT_STAGE_RESOURCE_COLLECTION            = 0
+};
+
+struct Resources
+{
+    uint8 team;
+    uint8 category;
+    uint32 current_id;
+    uint32 current_amount;
+    uint32 required_id;
+    uint32 required_amount;
+    uint32 state;
 };
 
 class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
@@ -144,6 +380,9 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
+    void OnStartup() override;
+    void OnShutdown() override;
+    void OnUpdate(uint32 /*diff*/) override;
 
 private:
     inline std::vector<std::string> GetActivePatches();
@@ -155,6 +394,8 @@ private:
     uint16 _prePayloadId = 5500;
     uint16 _postPayloadId = 5501;
     uint16 _tmpPayloadId = 5502;
+
+    Milliseconds resourceTimer = 0s;
 };
 
 class ProgressionMgr
@@ -188,6 +429,13 @@ public:
     const std::string GetPatchTitle() { return PatchTitle[patchId]; }
     const std::string* GetPatchNotes() { return PatchNotes[patchId]; }
 
+    void SetEffortStage(uint8 stage) { warEffortStage = stage; }
+    uint8 GetEffortStage() { return warEffortStage; }
+    void LoadAllResources();
+    void SaveAllResources();
+    void AddToResource(uint32 /*state*/, uint32 /*value*/);
+    void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team*/, uint8 /*category*/);
+
 private:
     uint8 patchId;
     uint8 auraId;
@@ -200,8 +448,9 @@ private:
     float damageModifier;
     float healingModifier;
     bool resetDatabase;
+    std::vector<Resources> resources;
+    uint8 warEffortStage;
 };
 
 #define sProgressionMgr ProgressionMgr::instance()
-
 #endif

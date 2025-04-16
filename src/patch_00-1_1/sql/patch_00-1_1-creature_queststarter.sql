@@ -7,6 +7,7 @@ DELETE FROM `creature_queststarter` WHERE `id` = 4949 AND `quest` = 7491;
 DELETE FROM `creature_queststarter` WHERE `id` = 5172 AND `quest` = 4487;
 DELETE FROM `creature_queststarter` WHERE `id` = 6171 AND `quest` = 1661;
 DELETE FROM `creature_queststarter` WHERE `id` = 6251 AND `quest` = 4490;
+DELETE FROM `creature_queststarter` WHERE `id` = 15708 AND `quest` = 8796;
 DELETE FROM `creature_queststarter` WHERE `id` = 20735 AND `quest` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256, 14199);
 DELETE FROM `creature_queststarter` WHERE `id` = 29611 AND `quest` = 7496;
 DELETE FROM `creature_queststarter` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);

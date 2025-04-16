@@ -18,6 +18,8 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
+void AddSC_npc_war_effort_commander();
+void AddSC_npc_war_effort_ambassador();
 
 void Addmod_progressionScripts()
 {
@@ -52,5 +54,11 @@ void Addmod_progressionScripts()
     {
         AddSC_boss_skadi_progression();
         AddSC_boss_svala_progression();
+    }
+
+    if (id >= PATCH_THE_GATES_OF_AHN_QIRAJ && id < PATCH_ECHOES_OF_DOOM)
+    {
+        AddSC_npc_war_effort_commander();
+        AddSC_npc_war_effort_ambassador();
     }
 }
