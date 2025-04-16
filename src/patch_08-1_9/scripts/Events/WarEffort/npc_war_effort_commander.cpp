@@ -1,4 +1,5 @@
 #include "CreatureScript.h"
+#include "Player.h"
 #include "ScriptedGossip.h"
 
 #include "mod_progression.h"
@@ -11,6 +12,13 @@ public:
     bool OnGossipHello(Player* player, Creature* creature) override
     {
         ClearGossipMenuFor(player);
+
+        if (creature->IsQuestGiver())
+        {
+            player->PrepareQuestMenu(creature->GetGUID());
+            player->SendPreparedQuest(creature->GetGUID());
+        }
+
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, RESOURCE_OPTION_DESCRIPTION);
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_METAL_BARS);
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_HERBS);

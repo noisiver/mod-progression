@@ -5,6 +5,7 @@ DELETE FROM `creature_questender` WHERE `id` = 6171 AND `quest` = 1661;
 DELETE FROM `creature_questender` WHERE `id` = 6251 AND `quest` IN (3631, 4487, 4488, 4489, 4490);
 DELETE FROM `creature_questender` WHERE `id` = 14392 AND `quest` = 7491;
 DELETE FROM `creature_questender` WHERE `id` = 14394 AND `quest` = 7496;
+DELETE FROM `creature_questender` WHERE `id` = 15701 AND `quest` IN (8795, 8796, 8797);
 DELETE FROM `creature_questender` WHERE `id` = 20735 AND `quest` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256);
 DELETE FROM `creature_questender` WHERE `id` = 29611 AND `quest` = 7495;
 DELETE FROM `creature_questender` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);

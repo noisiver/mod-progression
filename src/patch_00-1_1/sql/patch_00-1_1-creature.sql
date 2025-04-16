@@ -8,7 +8,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (1756, 2941, 3083, 3305
 UPDATE `creature` SET `phaseMask` = 16834 WHERE `id1` IN (14284, 14285) AND `map` = 0;
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (79011, 92890, 203492, 203493, 203494, 203495);
 UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213;
-DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 11099, 12397, 15458, 15539, 15700, 15701, 16226);
+UPDATE `creature` SET `position_x` = -8813.4, `position_y` = 654.195, `position_z` = 96.0776, `orientation` = 4.5185 WHERE `id1` = 15708;
+DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 11099, 12397, 15458, 15539, 15700, 15701, 15702, 15703, 15704, 15707, 15709, 16226);
 DELETE FROM `creature` WHERE `guid` BETWEEN 5400004 AND 5400007;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (5300000, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
