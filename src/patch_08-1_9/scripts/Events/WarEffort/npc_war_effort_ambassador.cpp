@@ -43,78 +43,23 @@ public:
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_DESCRIPTION : NPC_COMMANDER_STRONGHAMMER_GOSSIP_DESCRIPTION, creature->GetGUID());
             break;
         case RESOURCE_OPTION_METAL_BARS:
-            if (creature->GetEntry() == NPC_GENERAL_ZOG)
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_COPPER_BARS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_TIN_BARS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_MITHRIL_BARS);
-            }
-            else
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_COPPER_BARS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_IRON_BARS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_THORIUM_BARS);
-            }
+            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_METAL_BARS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_METAL_BARS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_METAL_BARS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_HERBS:
-            if (creature->GetEntry() == NPC_GENERAL_ZOG)
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_PURPLE_LOTUS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_PEACEBLOOM);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_FIREBLOOM);
-            }
-            else
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_PURPLE_LOTUS);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_STRANGLEKELP);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_ARTHAS_TEARS);
-            }
+            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_HERBS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_HERBS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_HERBS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_LEATHER_SKINS:
-            if (creature->GetEntry() == NPC_GENERAL_ZOG)
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_THICK_LEATHER);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_HEAVY_LEATHER);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_RUGGED_LEATHER);
-            }
-            else
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_THICK_LEATHER);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_LIGHT_LEATHER);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_MEDIUM_LEATHER);
-            }
+            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_LEATHER_SKINS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_LEATHER_SKINS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_LEATHER_SKINS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_BANDAGES:
-            if (creature->GetEntry() == NPC_GENERAL_ZOG)
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_RUNECLOTH_BANDAGE);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_WOOL_BANDAGE);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_MAGEWEAVE_BANDAGE);
-            }
-            else
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_RUNECLOTH_BANDAGE);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_LINEN_BANDAGE);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_SILK_BANDAGE);
-            }
+            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_BANDAGES);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_BANDAGES : NPC_COMMANDER_STRONGHAMMER_GOSSIP_BANDAGES, creature->GetGUID());
             break;
         default: // RESOURCE_OPTION_COOKED_GOODS
-            if (creature->GetEntry() == NPC_GENERAL_ZOG)
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_SPOTTED_YELLOWTAIL);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_LEAN_WOLF_STEAK);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_HORDE, RESOURCE_TYPE_BAKED_SALMON);
-            }
-            else
-            {
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_SPOTTED_YELLOWTAIL);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_RAINBOW_FIN_ALBACORE);
-                sProgressionMgr->SendResourceToPlayer(player, TEAM_ALLIANCE, RESOURCE_TYPE_ROAST_RAPTOR);
-            }
+            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_COOKED_GOODS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_COOKED_GOODS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_COOKED_GOODS, creature->GetGUID());
             break;
         }
