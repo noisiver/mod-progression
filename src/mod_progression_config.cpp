@@ -152,4 +152,30 @@ void Progression::OnAfterConfigLoad(bool reload)
             sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, SPELL_ICECROWN_CITADEL_NONE);
         }
     }
+
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_COPPER_BARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Copper", RESOURCE_REQUIRED_COPPER_BARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_TIN_BARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Tin", RESOURCE_REQUIRED_TIN_BARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_MITHRIL_BARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Mithril", RESOURCE_REQUIRED_MITHRIL_BARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_IRON_BARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Iron", RESOURCE_REQUIRED_IRON_BARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_THORIUM_BARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Thorium", RESOURCE_REQUIRED_THORIUM_BARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_PEACEBLOOM, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Herb.Peacebloom", RESOURCE_REQUIRED_PEACEBLOOM));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_FIREBLOOM, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Herb.Firebloom", RESOURCE_REQUIRED_FIREBLOOM));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_PURPLE_LOTUS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Herb.PurpleLotus", RESOURCE_REQUIRED_PURPLE_LOTUS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_STRANGLEKELP, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Herb.Stranglekelp", RESOURCE_REQUIRED_STRANGLEKELP));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_ARTHAS_TEARS, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Herb.ArthasTears", RESOURCE_REQUIRED_ARTHAS_TEARS));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_HEAVY_LEATHER, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Leather.Heavy", RESOURCE_REQUIRED_HEAVY_LEATHER));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_THICK_LEATHER, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Leather.Thick", RESOURCE_REQUIRED_THICK_LEATHER));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_RUGGED_LEATHER, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Leather.Rugged", RESOURCE_REQUIRED_RUGGED_LEATHER));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_LIGHT_LEATHER, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Leather.Light", RESOURCE_REQUIRED_LIGHT_LEATHER));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_MEDIUM_LEATHER, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Leather.Medium", RESOURCE_REQUIRED_MEDIUM_LEATHER));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_WOOL_BANDAGE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Bandage.Wool", RESOURCE_REQUIRED_WOOL_BANDAGE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_MAGEWEAVE_BANDAGE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Bandage.Mageweave", RESOURCE_REQUIRED_MAGEWEAVE_BANDAGE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_RUNECLOTH_BANDAGE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Bandage.Runecloth", RESOURCE_REQUIRED_RUNECLOTH_BANDAGE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_LINEN_BANDAGE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Bandage.Linen", RESOURCE_REQUIRED_LINEN_BANDAGE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_SILK_BANDAGE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Bandage.Silk", RESOURCE_REQUIRED_SILK_BANDAGE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_LEAN_WOLF_STEAK, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.LeanWolfSteak", RESOURCE_REQUIRED_LEAN_WOLF_STEAK));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_SPOTTED_YELLOWTAIL, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.SpottedYellowtail", RESOURCE_REQUIRED_SPOTTED_YELLOWTAIL));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_BAKED_SALMON, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.BakedSalmon", RESOURCE_REQUIRED_BAKED_SALMON));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_RAINBOW_FIN_ALBACORE, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.RainbowFinAlbacore", RESOURCE_REQUIRED_RAINBOW_FIN_ALBACORE));
+    sProgressionMgr->SetRequiredResourceCount(CONFIG_REQUIRED_RESOURCE_ROAST_RAPTOR, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.RoastRaptor", RESOURCE_REQUIRED_ROAST_RAPTOR));
 }
