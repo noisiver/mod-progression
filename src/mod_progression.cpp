@@ -21,6 +21,7 @@ void AddSC_boss_svala_progression();
 void AddSC_npc_war_effort_commander();
 void AddSC_npc_war_effort_ambassador();
 void AddSC_npc_war_effort_collector();
+void AddSC_go_war_effort_resources();
 
 void Addmod_progressionScripts()
 {
@@ -62,5 +63,6 @@ void Addmod_progressionScripts()
         AddSC_npc_war_effort_commander();
         AddSC_npc_war_effort_ambassador();
         AddSC_npc_war_effort_collector();
+        AddSC_go_war_effort_resources();
     }
 }

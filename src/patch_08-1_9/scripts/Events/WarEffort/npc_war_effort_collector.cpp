@@ -126,7 +126,16 @@ public:
             return false;
         }
 
-        sProgressionMgr->AddToResource(GetResourceState(creature), quest->RequiredItemCount[0]);
+        uint32 state = GetResourceState(creature);
+        uint32 current_amount = sProgressionMgr->GetCurrentResourceAmount(state);
+        uint32 required_amount = sProgressionMgr->GetRequiredResourceAmount(state);
+        uint32 rewarded_amount = current_amount + quest->RequiredItemCount[0] > required_amount ? required_amount - current_amount : quest->RequiredItemCount[0];
+
+        if (rewarded_amount)
+        {
+            sProgressionMgr->AddToResource(state, rewarded_amount);
+        }
+
         return true;
     }
 
