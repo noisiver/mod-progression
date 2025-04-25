@@ -1,7 +1,8 @@
+#include "CreatureScript.h"
 #include "Player.h"
 #include "ScriptedGossip.h"
 
-#include "mod_progression.h"
+#include "mod_progression_war_effort.h"
 
 class npc_war_effort_collector : public CreatureScript
 {
@@ -114,7 +115,7 @@ public:
             break;
         }
 
-        sProgressionMgr->SendResourceToPlayer(player, GetResourceState(creature));
+        sWarEffortMgr->SendResourceToPlayer(player, GetResourceState(creature));
         SendGossipMenuFor(player, textId, creature->GetGUID());
         return true;
     }
@@ -127,13 +128,13 @@ public:
         }
 
         uint32 state = GetResourceState(creature);
-        uint32 current_amount = sProgressionMgr->GetCurrentResourceAmount(state);
-        uint32 required_amount = sProgressionMgr->GetRequiredResourceAmount(state);
+        uint32 current_amount = sWarEffortMgr->GetCurrentAmount(state);
+        uint32 required_amount = sWarEffortMgr->GetRequiredAmount(state);
         uint32 rewarded_amount = current_amount + quest->RequiredItemCount[0] > required_amount ? required_amount - current_amount : quest->RequiredItemCount[0];
 
         if (rewarded_amount)
         {
-            sProgressionMgr->AddToResource(state, rewarded_amount);
+            sWarEffortMgr->AddResource(state, rewarded_amount);
             CheckResourceGameObjects(creature);
         }
 
@@ -317,7 +318,7 @@ private:
 
             if (GameObject* object = creature->FindNearestGameObject(objects[i], 25.0f))
             {
-                sProgressionMgr->HandleResourceGameObject(object);
+                sWarEffortMgr->UpdateGameObject(object);
             }
         }
     }

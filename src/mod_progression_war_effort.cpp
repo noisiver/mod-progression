@@ -2,8 +2,35 @@
 #include "Player.h"
 
 #include "mod_progression.h"
+#include "mod_progression_war_effort.h"
 
-void ProgressionMgr::LoadAllResources()
+WarEffortMgr* WarEffortMgr::instance()
+{
+    static WarEffortMgr instance;
+    return &instance;
+}
+
+void WarEffortMgr::Update(uint32 diff)
+{
+    timer += Milliseconds(diff);
+
+    if (timer > 5min)
+    {
+        SaveResources();
+        timer = 0s;
+    }
+}
+
+void WarEffortMgr::CheckStage()
+{
+    switch (GetStage())
+    {
+    default:
+        break;
+    }
+}
+
+void WarEffortMgr::LoadResources()
 {
     // Metal Bars
     resources.push_back(Resources(TEAM_ALLIANCE, RESOURCE_CATEGORY_METAL_BARS, RESOURCE_STATE_COPPER_BARS_CURRENT_A, !sWorld->getWorldState(RESOURCE_STATE_COPPER_BARS_A) ? 0 : sWorld->getWorldState(RESOURCE_STATE_COPPER_BARS_A), RESOURCE_STATE_COPPER_BARS_REQUIRED, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Metal.Copper", RESOURCE_REQUIRED_COPPER_BARS), RESOURCE_STATE_COPPER_BARS_A));
@@ -46,17 +73,17 @@ void ProgressionMgr::LoadAllResources()
     resources.push_back(Resources(TEAM_ALLIANCE, RESOURCE_CATEGORY_COOKED_GOODS, RESOURCE_STATE_ROAST_RAPTOR_CURRENT, !sWorld->getWorldState(RESOURCE_STATE_ROAST_RAPTOR) ? 0 : sWorld->getWorldState(RESOURCE_STATE_ROAST_RAPTOR), RESOURCE_STATE_ROAST_RAPTOR_REQUIRED, sConfigMgr->GetOption<uint32>("Progression.WarEffort.Food.RoastRaptor", RESOURCE_REQUIRED_ROAST_RAPTOR), RESOURCE_STATE_ROAST_RAPTOR));
 }
 
-void ProgressionMgr::SaveAllResources()
+void WarEffortMgr::SaveResources()
 {
-    sWorld->setWorldState(STAGE_WAR_EFFORT, warEffortStage);
+    sWorld->setWorldState(STAGE_WAR_EFFORT, stage);
 
-    for (auto &resource : resources)
+    for (auto& resource : resources)
     {
         sWorld->setWorldState(resource.state, resource.current_amount);
     }
 }
 
-void ProgressionMgr::AddToResource(uint32 state, uint32 value)
+void WarEffortMgr::AddResource(uint32 state, uint32 value)
 {
     for (int i = 0; i < resources.size(); i++)
     {
@@ -68,32 +95,7 @@ void ProgressionMgr::AddToResource(uint32 state, uint32 value)
     }
 }
 
-void ProgressionMgr::SendResourceCategoryToPlayer(Player* player, uint8 team, uint8 category)
-{
-    for (auto& resource : resources)
-    {
-        if (resource.team == team && resource.category == category)
-        {
-            player->SendUpdateWorldState(resource.current_id, resource.current_amount);
-            player->SendUpdateWorldState(resource.required_id, resource.required_amount);
-        }
-    }
-}
-
-void ProgressionMgr::SendResourceToPlayer(Player* player, uint32 id)
-{
-    for (auto& resource : resources)
-    {
-        if (resource.team == player->GetTeamId() && resource.state == id)
-        {
-            player->SendUpdateWorldState(resource.current_id, resource.current_amount);
-            player->SendUpdateWorldState(resource.required_id, resource.required_amount);
-            break;
-        }
-    }
-}
-
-uint32 ProgressionMgr::GetCurrentResourceAmount(uint32 state)
+uint32 WarEffortMgr::GetCurrentAmount(uint32 state)
 {
     for (auto& resource : resources)
     {
@@ -106,7 +108,7 @@ uint32 ProgressionMgr::GetCurrentResourceAmount(uint32 state)
     return 0;
 }
 
-uint32 ProgressionMgr::GetRequiredResourceAmount(uint32 state)
+uint32 WarEffortMgr::GetRequiredAmount(uint32 state)
 {
     for (auto& resource : resources)
     {
@@ -119,7 +121,32 @@ uint32 ProgressionMgr::GetRequiredResourceAmount(uint32 state)
     return 0;
 }
 
-void ProgressionMgr::HandleResourceGameObject(GameObject* go)
+void WarEffortMgr::SendResourceCategoryToPlayer(Player* player, uint8 team, uint8 category)
+{
+    for (auto& resource : resources)
+    {
+        if (resource.team == team && resource.category == category)
+        {
+            player->SendUpdateWorldState(resource.current_id, resource.current_amount);
+            player->SendUpdateWorldState(resource.required_id, resource.required_amount);
+        }
+    }
+}
+
+void WarEffortMgr::SendResourceToPlayer(Player* player, uint32 state)
+{
+    for (auto& resource : resources)
+    {
+        if (resource.team == player->GetTeamId() && resource.state == state)
+        {
+            player->SendUpdateWorldState(resource.current_id, resource.current_amount);
+            player->SendUpdateWorldState(resource.required_id, resource.required_amount);
+            break;
+        }
+    }
+}
+
+void WarEffortMgr::UpdateGameObject(GameObject* go)
 {
     uint32 current_amount = 0;
     uint32 required_amount = 0;
@@ -294,4 +321,17 @@ void ProgressionMgr::HandleResourceGameObject(GameObject* go)
             go->UpdateObjectVisibility();
         }
     }
+}
+
+void AddSC_npc_war_effort_commander();
+void AddSC_npc_war_effort_ambassador();
+void AddSC_npc_war_effort_collector();
+void AddSC_go_war_effort_resources();
+
+void AddSC_event_war_effort()
+{
+    AddSC_npc_war_effort_commander();
+    AddSC_npc_war_effort_ambassador();
+    AddSC_npc_war_effort_collector();
+    AddSC_go_war_effort_resources();
 }

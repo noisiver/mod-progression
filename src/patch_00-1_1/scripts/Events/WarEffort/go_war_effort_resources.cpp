@@ -1,4 +1,7 @@
-#include "mod_progression.h"
+#include "AllGameObjectScript.h"
+#include "GameObject.h"
+
+#include "mod_progression_war_effort.h"
 
 class go_war_effort_resources : AllGameObjectScript
 {
@@ -28,7 +31,7 @@ public:
             return;
         }
 
-        sProgressionMgr->HandleResourceGameObject(go);
+        sWarEffortMgr->UpdateGameObject(go);
     }
 };
 

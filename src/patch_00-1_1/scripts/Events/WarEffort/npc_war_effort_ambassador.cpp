@@ -1,7 +1,8 @@
+#include "Creature.h"
 #include "CreatureScript.h"
 #include "ScriptedGossip.h"
 
-#include "mod_progression.h"
+#include "mod_progression_war_effort.h"
 
 class npc_war_effort_ambassador : public CreatureScript
 {
@@ -43,23 +44,23 @@ public:
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_DESCRIPTION : NPC_COMMANDER_STRONGHAMMER_GOSSIP_DESCRIPTION, creature->GetGUID());
             break;
         case RESOURCE_OPTION_METAL_BARS:
-            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_METAL_BARS);
+            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_METAL_BARS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_METAL_BARS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_METAL_BARS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_HERBS:
-            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_HERBS);
+            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_HERBS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_HERBS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_HERBS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_LEATHER_SKINS:
-            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_LEATHER_SKINS);
+            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_LEATHER_SKINS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_LEATHER_SKINS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_LEATHER_SKINS, creature->GetGUID());
             break;
         case RESOURCE_OPTION_BANDAGES:
-            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_BANDAGES);
+            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_BANDAGES);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_BANDAGES : NPC_COMMANDER_STRONGHAMMER_GOSSIP_BANDAGES, creature->GetGUID());
             break;
         default: // RESOURCE_OPTION_COOKED_GOODS
-            sProgressionMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_COOKED_GOODS);
+            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_COOKED_GOODS);
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_GOSSIP_COOKED_GOODS : NPC_COMMANDER_STRONGHAMMER_GOSSIP_COOKED_GOODS, creature->GetGUID());
             break;
         }

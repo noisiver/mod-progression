@@ -18,10 +18,7 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
-void AddSC_npc_war_effort_commander();
-void AddSC_npc_war_effort_ambassador();
-void AddSC_npc_war_effort_collector();
-void AddSC_go_war_effort_resources();
+void AddSC_event_war_effort();
 
 void Addmod_progressionScripts()
 {
@@ -60,9 +57,6 @@ void Addmod_progressionScripts()
 
     if (id < PATCH_ECHOES_OF_DOOM)
     {
-        AddSC_npc_war_effort_commander();
-        AddSC_npc_war_effort_ambassador();
-        AddSC_npc_war_effort_collector();
-        AddSC_go_war_effort_resources();
+        AddSC_event_war_effort();
     }
 }

@@ -2,15 +2,16 @@
 #include "Player.h"
 
 #include "mod_progression.h"
+#include "mod_progression_war_effort.h"
 
 void Progression::OnStartup()
 {
     if (sProgressionMgr->GetPatchId() >= PATCH_THE_GATES_OF_AHN_QIRAJ && sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
     {
-        sProgressionMgr->SetEffortStage(!sWorld->getWorldState(STAGE_WAR_EFFORT) ? WAR_EFFORT_STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(STAGE_WAR_EFFORT));
-        sProgressionMgr->LoadAllResources();
+        sWarEffortMgr->SetStage(!sWorld->getWorldState(STAGE_WAR_EFFORT) ? WAR_EFFORT_STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(STAGE_WAR_EFFORT));
+        sWarEffortMgr->LoadResources();
 
-        switch (sProgressionMgr->GetEffortStage())
+        switch (sWarEffortMgr->GetStage())
         {
         default:
             sGameEventMgr->StartEvent(EVENT_WAR_EFFORT_RESOURCE_COLLECTION);
@@ -23,7 +24,7 @@ void Progression::OnShutdown()
 {
     if (sProgressionMgr->GetPatchId() >= PATCH_THE_GATES_OF_AHN_QIRAJ && sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
     {
-        sProgressionMgr->SaveAllResources();
+        sWarEffortMgr->SaveResources();
     }
 }
 
@@ -31,12 +32,6 @@ void Progression::OnUpdate(uint32 diff)
 {
     if (sProgressionMgr->GetPatchId() >= PATCH_THE_GATES_OF_AHN_QIRAJ && sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
     {
-        resourceTimer += Milliseconds(diff);
-
-        if (resourceTimer > 5min)
-        {
-            sProgressionMgr->SaveAllResources();
-            resourceTimer = 0s;
-        }
+        sWarEffortMgr->Update(diff);
     }
 }
