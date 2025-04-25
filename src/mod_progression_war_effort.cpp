@@ -291,6 +291,7 @@ void ProgressionMgr::HandleResourceGameObject(GameObject* go)
         {
             go->SetRespawnTime(RESPAWN_IMMEDIATELY);
             go->Respawn();
+            go->UpdateObjectVisibility();
         }
     }
 }

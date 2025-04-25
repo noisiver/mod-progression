@@ -134,6 +134,7 @@ public:
         if (rewarded_amount)
         {
             sProgressionMgr->AddToResource(state, rewarded_amount);
+            CheckResourceGameObjects(creature);
         }
 
         return true;
@@ -204,6 +205,120 @@ private:
             return RESOURCE_STATE_SPOTTED_YELLOWTAIL_H;
         default: // NPC_CHIEF_SHARPCLAW
             return RESOURCE_STATE_BAKED_SALMON;
+        }
+    }
+
+    void CheckResourceGameObjects(Creature* creature)
+    {
+        uint32 objects[5] = { 0, 0, 0, 0, 0 };
+
+        switch (creature->GetEntry())
+        {
+        case NPC_SERGEANT_STONEBROW: // Sergeant Stonebrow <Copper Bar Collector>
+        case NPC_CORPORAL_CARNES: // Corporal Carnes <Iron Bar Collector>
+        case NPC_DAME_TWINBRAID: // Dame Twinbraid <Thorium Bar Collector>
+            objects[0] = GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_1;
+            objects[1] = GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_2;
+            objects[2] = GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_3;
+            objects[3] = GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_4;
+            objects[4] = GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_5;
+            break;
+        case NPC_MINER_CROMWELL: // Miner Cromwell <Copper Bar Collector>
+        case NPC_GRUNT_MAUG: // Grunt Maug <Tin Bar Collector>
+        case NPC_SENIOR_SERGEANT_T_KELAH: // Senior Sergeant T'kelah <Mithril Bar Collector>
+            objects[0] = GO_RESOURCES_METAL_BARS_HORDE_TIER_1;
+            objects[1] = GO_RESOURCES_METAL_BARS_HORDE_TIER_2;
+            objects[2] = GO_RESOURCES_METAL_BARS_HORDE_TIER_3;
+            objects[3] = GO_RESOURCES_METAL_BARS_HORDE_TIER_4;
+            objects[4] = GO_RESOURCES_METAL_BARS_HORDE_TIER_5;
+            break;
+        case NPC_PRIVATE_DRAXLEGAUGE: // Private Draxlegauge <Stranglekelp Collector>
+        case NPC_MASTER_NIGHTSONG: // Master Nightsong <Purple Lotus Collector>
+        case NPC_SERGEANT_MAJOR_GERMAINE: // Sergeant Major Germaine <Arthas' Tears Collector>
+            objects[0] = GO_RESOURCES_HERBS_ALLIANCE_TIER_1;
+            objects[1] = GO_RESOURCES_HERBS_ALLIANCE_TIER_2;
+            objects[2] = GO_RESOURCES_HERBS_ALLIANCE_TIER_3;
+            objects[3] = GO_RESOURCES_HERBS_ALLIANCE_TIER_4;
+            objects[4] = GO_RESOURCES_HERBS_ALLIANCE_TIER_5;
+            break;
+        case NPC_HERBALIST_PROUDFEATHER: // Herbalist Proudfeather <Peacebloom Collector>
+        case NPC_BATRIDER_PELE_KEIKI: // Batrider Pele'keiki <Firebloom Collector>
+        case NPC_APOTHECARY_JEZEL: // Apothecary Jezel <Purple Lotus Collector>
+            objects[0] = GO_RESOURCES_HERBS_HORDE_TIER_1;
+            objects[1] = GO_RESOURCES_HERBS_HORDE_TIER_2;
+            objects[2] = GO_RESOURCES_HERBS_HORDE_TIER_3;
+            objects[3] = GO_RESOURCES_HERBS_HORDE_TIER_4;
+            objects[4] = GO_RESOURCES_HERBS_HORDE_TIER_5;
+            break;
+        case NPC_BONNIE_STONEFLAYER: // Bonnie Stoneflayer <Light Leather Collector>
+        case NPC_PRIVATE_PORTER: // Private Porter <Medium Leather Collector>
+        case NPC_MARTA_FINESPINDLE: // Marta Finespindle <Thick Leather Collector>
+            objects[0] = GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_1;
+            objects[1] = GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_2;
+            objects[2] = GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_3;
+            objects[3] = GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_4;
+            objects[4] = GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_5;
+            break;
+        case NPC_SKINNER_JAMANI: // Skinner Jamani <Heavy Leather Collector>
+        case NPC_SERGEANT_UMALA: // Sergeant Umala <Thick Leather Collector>
+        case NPC_DOCTOR_SERRATUS: // Doctor Serratus <Rugged Leather Collector>
+            objects[0] = GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_1;
+            objects[1] = GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_2;
+            objects[2] = GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_3;
+            objects[3] = GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_4;
+            objects[4] = GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_5;
+            break;
+        case NPC_SENTINEL_SILVERSKY: // Sentinel Silversky <Linen Bandage Collector>
+        case NPC_NURSE_STONEFIELD: // Nurse Stonefield <Silk Bandage Collector>
+        case NPC_KEEPER_MOONSHADE: // Keeper Moonshade <Runecloth Bandage Collector>
+            objects[0] = GO_RESOURCES_BANDAGES_ALLIANCE_TIER_1;
+            objects[1] = GO_RESOURCES_BANDAGES_ALLIANCE_TIER_2;
+            objects[2] = GO_RESOURCES_BANDAGES_ALLIANCE_TIER_3;
+            objects[3] = GO_RESOURCES_BANDAGES_ALLIANCE_TIER_4;
+            objects[4] = GO_RESOURCES_BANDAGES_ALLIANCE_TIER_5;
+                break;
+        case NPC_HEALER_LONGRUNNER: // Healer Longrunner <Wool Bandage Collector>
+        case NPC_LADY_CALLOW: // Lady Callow <Mageweave Bandage Collector>
+        case NPC_STONEGUARD_CLAYHOOF: // Stoneguard Clayhoof <Runecloth Bandage Collector>
+            objects[0] = GO_RESOURCES_BANDAGES_HORDE_TIER_1;
+            objects[1] = GO_RESOURCES_BANDAGES_HORDE_TIER_2;
+            objects[2] = GO_RESOURCES_BANDAGES_HORDE_TIER_3;
+            objects[3] = GO_RESOURCES_BANDAGES_HORDE_TIER_4;
+            objects[4] = GO_RESOURCES_BANDAGES_HORDE_TIER_5;
+            break;
+        case NPC_SLICKY_GASTRONOME: // Slicky Gastronome <Rainbow Fin Albacore Collector>
+        case NPC_SARAH_SADWHISTLE: // Sarah Sadwhistle <Roast Raptor Collector>
+        case NPC_HUNTRESS_SWIFTRIVER: // Huntress Swiftriver <Spotted Yellowtail Collector>
+            objects[0] = GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_1;
+            objects[1] = GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_2;
+            objects[2] = GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_3;
+            objects[3] = GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_4;
+            objects[4] = GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_5;
+            break;
+        case NPC_BLOODGUARD_RAWTAR: // Bloodguard Rawtar <Lean Wolf Steak Collector>
+        case NPC_FISHERMAN_LIN_DO: // Fisherman Lin'do <Spotted Yellowtail Collector>
+        case NPC_CHIEF_SHARPCLAW: // Chief Sharpclaw <Baked Salmon Collector>
+            objects[0] = GO_RESOURCES_COOKED_GOODS_HORDE_TIER_1;
+            objects[1] = GO_RESOURCES_COOKED_GOODS_HORDE_TIER_2;
+            objects[2] = GO_RESOURCES_COOKED_GOODS_HORDE_TIER_3;
+            objects[3] = GO_RESOURCES_COOKED_GOODS_HORDE_TIER_4;
+            objects[4] = GO_RESOURCES_COOKED_GOODS_HORDE_TIER_5;
+            break;
+        default:
+            break;
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (!objects[i])
+            {
+                continue;
+            }
+
+            if (GameObject* object = creature->FindNearestGameObject(objects[i], 25.0f))
+            {
+                sProgressionMgr->HandleResourceGameObject(object);
+            }
         }
     }
 };
