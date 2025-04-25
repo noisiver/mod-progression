@@ -435,6 +435,7 @@ class WarEffortMgr
 public:
     static WarEffortMgr* instance();
 
+    void Init();
     void Update(uint32 /*diff*/);
     void SetStage(uint8 id) { stage = id; }
     uint8 GetStage() { return stage; }

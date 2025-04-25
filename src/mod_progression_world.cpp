@@ -8,15 +8,7 @@ void Progression::OnStartup()
 {
     if (sProgressionMgr->GetPatchId() >= PATCH_THE_GATES_OF_AHN_QIRAJ && sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
     {
-        sWarEffortMgr->SetStage(!sWorld->getWorldState(STAGE_WAR_EFFORT) ? WAR_EFFORT_STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(STAGE_WAR_EFFORT));
-        sWarEffortMgr->LoadResources();
-
-        switch (sWarEffortMgr->GetStage())
-        {
-        default:
-            sGameEventMgr->StartEvent(EVENT_WAR_EFFORT_RESOURCE_COLLECTION);
-            break;
-        }
+        sWarEffortMgr->Init();
     }
 }
 

@@ -10,6 +10,19 @@ WarEffortMgr* WarEffortMgr::instance()
     return &instance;
 }
 
+void WarEffortMgr::Init()
+{
+    SetStage(!sWorld->getWorldState(STAGE_WAR_EFFORT) ? WAR_EFFORT_STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(STAGE_WAR_EFFORT));
+    LoadResources();
+
+    switch (GetStage())
+    {
+    default:
+        sGameEventMgr->StartEvent(EVENT_WAR_EFFORT_RESOURCE_COLLECTION);
+        break;
+    }
+}
+
 void WarEffortMgr::Update(uint32 diff)
 {
     timer += Milliseconds(diff);
