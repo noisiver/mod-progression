@@ -3,7 +3,7 @@
 #include "Player.h"
 #include "ScriptedGossip.h"
 
-#include "mod_progression_war_effort.h"
+#include "event_war_effort.h"
 
 class npc_war_effort_commander : public CreatureScript
 {

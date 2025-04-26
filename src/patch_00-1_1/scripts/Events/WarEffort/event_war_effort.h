@@ -1,5 +1,5 @@
-#ifndef MOD_PROGRESSION_WAR_EFFORT_H
-#define MOD_PROGRESSION_WAR_EFFORT_H
+#ifndef EVENT_WAR_EFFORT_H
+#define EVENT_WAR_EFFORT_H
 
 enum
 {
@@ -439,7 +439,6 @@ public:
     void Update(uint32 /*diff*/);
     void SetStage(uint8 id) { stage = id; }
     uint8 GetStage() { return stage; }
-    void CheckStage();
     void LoadResources();
     void SaveResources();
     void AddResource(uint32 /*state*/, uint32 /*value*/);
@@ -447,6 +446,7 @@ public:
     uint32 GetRequiredAmount(uint32 /*state*/);
     void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team*/, uint8 /*category*/);
     void SendResourceToPlayer(Player* /*player*/, uint32 /*state*/);
+    bool IsResourceCollectionComplete();
     void UpdateGameObject(GameObject* /*go*/);
 
 private:
@@ -456,5 +456,4 @@ private:
 };
 
 #define sWarEffortMgr WarEffortMgr::instance()
-
 #endif

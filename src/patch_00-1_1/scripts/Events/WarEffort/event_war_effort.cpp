@@ -2,7 +2,7 @@
 #include "Player.h"
 
 #include "mod_progression.h"
-#include "mod_progression_war_effort.h"
+#include "event_war_effort.h"
 
 WarEffortMgr* WarEffortMgr::instance()
 {
@@ -17,7 +17,9 @@ void WarEffortMgr::Init()
 
     switch (GetStage())
     {
-    default:
+    case WAR_EFFORT_STAGE_RESOURCE_COLLECTION_COMPLETE:
+        break;
+    default: // WAR_EFFORT_STAGE_RESOURCE_COLLECTION
         sGameEventMgr->StartEvent(EVENT_WAR_EFFORT_RESOURCE_COLLECTION);
         break;
     }
@@ -31,15 +33,6 @@ void WarEffortMgr::Update(uint32 diff)
     {
         SaveResources();
         timer = 0s;
-    }
-}
-
-void WarEffortMgr::CheckStage()
-{
-    switch (GetStage())
-    {
-    default:
-        break;
     }
 }
 
@@ -157,6 +150,19 @@ void WarEffortMgr::SendResourceToPlayer(Player* player, uint32 state)
             break;
         }
     }
+}
+
+bool WarEffortMgr::IsResourceCollectionComplete()
+{
+    for (auto& resource : resources)
+    {
+        if (resource.current_amount < resource.required_amount)
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 void WarEffortMgr::UpdateGameObject(GameObject* go)

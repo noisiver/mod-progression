@@ -2,7 +2,7 @@
 #include "Player.h"
 
 #include "mod_progression.h"
-#include "mod_progression_war_effort.h"
+#include "event_war_effort.h"
 
 void Progression::OnStartup()
 {
