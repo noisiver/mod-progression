@@ -1,7 +1,7 @@
 #include "Config.h"
+#include "GameEventMgr.h"
 #include "Player.h"
 
-#include "mod_progression.h"
 #include "event_war_effort.h"
 
 WarEffortMgr* WarEffortMgr::instance()
