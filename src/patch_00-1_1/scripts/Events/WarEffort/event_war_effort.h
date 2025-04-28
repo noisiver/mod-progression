@@ -47,123 +47,153 @@ enum
 
     // Sergeant Stonebrow <Copper Bar Collector>
     NPC_SERGEANT_STONEBROW                          = 15383,
-    NPC_SERGEANT_STONEBROW_GOSSIP                   = 7824,
+    NPC_SERGEANT_STONEBROW_GOSSIP_INCOMPLETE        = 7824,
+    NPC_SERGEANT_STONEBROW_GOSSIP_COMPLETE          = 7823,
 
     // Corporal Carnes <Iron Bar Collector>
     NPC_CORPORAL_CARNES                             = 15431,
-    NPC_CORPORAL_CARNES_GOSSIP                      = 7829,
+    NPC_CORPORAL_CARNES_GOSSIP_INCOMPLETE           = 7829,
+    NPC_CORPORAL_CARNES_GOSSIP_COMPLETE             = 7830,
 
     // Dame Twinbraid <Thorium Bar Collector>
     NPC_DAME_TWINBRAID                              = 15432,
-    NPC_DAME_TWINBRAID_GOSSIP                       = 7831,
+    NPC_DAME_TWINBRAID_GOSSIP_INCOMPLETE            = 7831,
+    NPC_DAME_TWINBRAID_GOSSIP_COMPLETE              = 7832,
 
     // Private Draxlegauge <Stranglekelp Collector>
     NPC_PRIVATE_DRAXLEGAUGE                         = 15434,
-    NPC_PRIVATE_DRAXLEGAUGE_GOSSIP                  = 7833,
+    NPC_PRIVATE_DRAXLEGAUGE_GOSSIP_INCOMPLETE       = 7833,
+    NPC_PRIVATE_DRAXLEGAUGE_GOSSIP_COMPLETE         = 7834,
 
     // Master Nightsong <Purple Lotus Collector>
     NPC_MASTER_NIGHTSONG                            = 15437,
-    NPC_MASTER_NIGHTSONG_GOSSIP                     = 7835,
+    NPC_MASTER_NIGHTSONG_GOSSIP_INCOMPLETE          = 7835,
+    NPC_MASTER_NIGHTSONG_GOSSIP_COMPLETE            = 55000,
 
     // Sergeant Major Germaine <Arthas' Tears Collector>
     NPC_SERGEANT_MAJOR_GERMAINE                     = 15445,
-    NPC_SERGEANT_MAJOR_GERMAINE_GOSSIP              = 7837,
+    NPC_SERGEANT_MAJOR_GERMAINE_GOSSIP_INCOMPLETE   = 7837,
+    NPC_SERGEANT_MAJOR_GERMAINE_GOSSIP_COMPLETE     = 7838,
 
     // Bonnie Stoneflayer <Light Leather Collector>
     NPC_BONNIE_STONEFLAYER                          = 15446,
-    NPC_BONNIE_STONEFLAYER_GOSSIP                   = 7840,
+    NPC_BONNIE_STONEFLAYER_GOSSIP_INCOMPLETE        = 7840,
+    NPC_BONNIE_STONEFLAYER_GOSSIP_COMPLETE          = 7842,
 
     // Private Porter <Medium Leather Collector>
     NPC_PRIVATE_PORTER                              = 15448,
-    NPC_PRIVATE_PORTER_GOSSIP                       = 7843,
+    NPC_PRIVATE_PORTER_GOSSIP_INCOMPLETE            = 7843,
+    NPC_PRIVATE_PORTER_GOSSIP_COMPLETE              = 7844,
 
     // Marta Finespindle <Thick Leather Collector>
     NPC_MARTA_FINESPINDLE                           = 15450,
-    NPC_MARTA_FINESPINDLE_GOSSIP                    = 7845,
+    NPC_MARTA_FINESPINDLE_GOSSIP_INCOMPLETE         = 7845,
+    NPC_MARTA_FINESPINDLE_GOSSIP_COMPLETE           = 7846,
 
     // Sentinel Silversky <Linen Bandage Collector>
     NPC_SENTINEL_SILVERSKY                          = 15451,
-    NPC_SENTINEL_SILVERSKY_GOSSIP                   = 7847,
+    NPC_SENTINEL_SILVERSKY_GOSSIP_INCOMPLETE        = 7847,
+    NPC_SENTINEL_SILVERSKY_GOSSIP_COMPLETE          = 7848,
 
     // Nurse Stonefield <Silk Bandage Collector>
     NPC_NURSE_STONEFIELD                            = 15452,
-    NPC_NURSE_STONEFIELD_GOSSIP                     = 7851,
+    NPC_NURSE_STONEFIELD_GOSSIP_INCOMPLETE          = 7851,
+    NPC_NURSE_STONEFIELD_GOSSIP_COMPLETE            = 7852,
 
     // Keeper Moonshade <Runecloth Bandage Collector>
     NPC_KEEPER_MOONSHADE                            = 15453,
-    NPC_KEEPER_MOONSHADE_GOSSIP                     = 7853,
+    NPC_KEEPER_MOONSHADE_GOSSIP_INCOMPLETE          = 7853,
+    NPC_KEEPER_MOONSHADE_GOSSIP_COMPLETE            = 7854,
 
     // Slicky Gastronome <Rainbow Fin Albacore Collector>
     NPC_SLICKY_GASTRONOME                           = 15455,
-    NPC_SLICKY_GASTRONOME_GOSSIP                    = 7856,
+    NPC_SLICKY_GASTRONOME_GOSSIP_INCOMPLETE         = 7856,
+    NPC_SLICKY_GASTRONOME_GOSSIP_COMPLETE           = 7857,
 
     // Sarah Sadwhistle <Roast Raptor Collector>
     NPC_SARAH_SADWHISTLE                            = 15456,
-    NPC_SARAH_SADWHISTLE_GOSSIP                     = 7859,
+    NPC_SARAH_SADWHISTLE_GOSSIP_INCOMPLETE          = 7859,
+    NPC_SARAH_SADWHISTLE_GOSSIP_COMPLETE            = 7860,
 
     // Huntress Swiftriver <Spotted Yellowtail Collector>
     NPC_HUNTRESS_SWIFTRIVER                         = 15457,
-    NPC_HUNTRESS_SWIFTRIVER_GOSSIP                  = 7861,
+    NPC_HUNTRESS_SWIFTRIVER_GOSSIP_INCOMPLETE       = 7861,
+    NPC_HUNTRESS_SWIFTRIVER_GOSSIP_COMPLETE         = 55001,
 
     // Miner Cromwell <Copper Bar Collector>
     NPC_MINER_CROMWELL                              = 15459,
-    NPC_MINER_CROMWELL_GOSSIP                       = 7866,
+    NPC_MINER_CROMWELL_GOSSIP_INCOMPLETE            = 7866,
+    NPC_MINER_CROMWELL_GOSSIP_COMPLETE              = 55002,
 
     // Grunt Maug <Tin Bar Collector>
     NPC_GRUNT_MAUG                                  = 15460,
-    NPC_GRUNT_MAUG_GOSSIP                           = 7870,
+    NPC_GRUNT_MAUG_GOSSIP_INCOMPLETE                = 7870,
+    NPC_GRUNT_MAUG_GOSSIP_COMPLETE                  = 55003,
 
     // Senior Sergeant T'kelah <Mithril Bar Collector>
     NPC_SENIOR_SERGEANT_T_KELAH                     = 15469,
-    NPC_SENIOR_SERGEANT_T_KELAH_GOSSIP              = 7876,
+    NPC_SENIOR_SERGEANT_T_KELAH_GOSSIP_INCOMPLETE   = 7876,
+    NPC_SENIOR_SERGEANT_T_KELAH_GOSSIP_COMPLETE     = 55004,
 
     // Herbalist Proudfeather <Peacebloom Collector>
     NPC_HERBALIST_PROUDFEATHER                      = 15477,
-    NPC_HERBALIST_PROUDFEATHER_GOSSIP               = 7878,
+    NPC_HERBALIST_PROUDFEATHER_GOSSIP_INCOMPLETE    = 7878,
+    NPC_HERBALIST_PROUDFEATHER_GOSSIP_COMPLETE      = 55005,
 
     // Batrider Pele'keiki <Firebloom Collector>
     NPC_BATRIDER_PELE_KEIKI                         = 15508,
-    NPC_BATRIDER_PELE_KEIKI_GOSSIP                  = 7905,
+    NPC_BATRIDER_PELE_KEIKI_GOSSIP_INCOMPLETE       = 7905,
+    NPC_BATRIDER_PELE_KEIKI_GOSSIP_COMPLETE         = 55006,
 
     // Apothecary Jezel <Purple Lotus Collector>
     NPC_APOTHECARY_JEZEL                            = 15512,
-    NPC_APOTHECARY_JEZEL_GOSSIP                     = 7907,
+    NPC_APOTHECARY_JEZEL_GOSSIP_INCOMPLETE          = 7907,
+    NPC_APOTHECARY_JEZEL_GOSSIP_COMPLETE            = 55007,
 
     // Skinner Jamani <Heavy Leather Collector>
     NPC_SKINNER_JAMANI                              = 15515,
-    NPC_SKINNER_JAMANI_GOSSIP                       = 7909,
+    NPC_SKINNER_JAMANI_GOSSIP_INCOMPLETE            = 7909,
+    NPC_SKINNER_JAMANI_GOSSIP_COMPLETE              = 55008,
 
     // Sergeant Umala <Thick Leather Collector>
     NPC_SERGEANT_UMALA                              = 15522,
-    NPC_SERGEANT_UMALA_GOSSIP                       = 7912,
+    NPC_SERGEANT_UMALA_GOSSIP_INCOMPLETE            = 7912,
+    NPC_SERGEANT_UMALA_GOSSIP_COMPLETE              = 7846,
 
     // Doctor Serratus <Rugged Leather Collector>
     NPC_DOCTOR_SERRATUS                             = 15525,
-    NPC_DOCTOR_SERRATUS_GOSSIP                      = 7914,
+    NPC_DOCTOR_SERRATUS_GOSSIP_INCOMPLETE           = 7914,
+    NPC_DOCTOR_SERRATUS_GOSSIP_COMPLETE             = 55009,
 
     // Healer Longrunner <Wool Bandage Collector>
     NPC_HEALER_LONGRUNNER                           = 15528,
-    NPC_HEALER_LONGRUNNER_GOSSIP                    = 7918,
+    NPC_HEALER_LONGRUNNER_GOSSIP_INCOMPLETE         = 7918,
+    NPC_HEALER_LONGRUNNER_GOSSIP_COMPLETE           = 55010,
 
     // Lady Callow <Mageweave Bandage Collector>
     NPC_LADY_CALLOW                                 = 15529,
-    NPC_LADY_CALLOW_GOSSIP                          = 7920,
+    NPC_LADY_CALLOW_GOSSIP_INCOMPLETE               = 7920,
+    NPC_LADY_CALLOW_GOSSIP_COMPLETE                 = 55011,
 
     // Stoneguard Clayhoof <Runecloth Bandage Collector>
     NPC_STONEGUARD_CLAYHOOF                         = 15532,
-    NPC_STONEGUARD_CLAYHOOF_GOSSIP                  = 7923,
+    NPC_STONEGUARD_CLAYHOOF_GOSSIP_INCOMPLETE       = 7923,
+    NPC_STONEGUARD_CLAYHOOF_GOSSIP_COMPLETE         = 7924,
 
     // Bloodguard Rawtar <Lean Wolf Steak Collector>
     NPC_BLOODGUARD_RAWTAR                           = 15533,
-    NPC_BLOODGUARD_RAWTAR_GOSSIP                    = 7925,
+    NPC_BLOODGUARD_RAWTAR_GOSSIP_INCOMPLETE         = 7925,
+    NPC_BLOODGUARD_RAWTAR_GOSSIP_COMPLETE           = 55012,
 
     // Fisherman Lin'do <Spotted Yellowtail Collector>
     NPC_FISHERMAN_LIN_DO                            = 15534,
-    NPC_FISHERMAN_LIN_DO_GOSSIP                     = 7927,
+    NPC_FISHERMAN_LIN_DO_GOSSIP_INCOMPLETE          = 7927,
+    NPC_FISHERMAN_LIN_DO_GOSSIP_COMPLETE            = 55013,
 
     // Chief Sharpclaw <Baked Salmon Collector>
     NPC_CHIEF_SHARPCLAW                             = 15535,
-    NPC_CHIEF_SHARPCLAW_GOSSIP                      = 7929,
+    NPC_CHIEF_SHARPCLAW_GOSSIP_INCOMPLETE           = 7929,
+    NPC_CHIEF_SHARPCLAW_GOSSIP_COMPLETE             = 7930,
 
     // Metal Bars
     GO_RESOURCES_METAL_BARS_ALLIANCE_INITIAL        = 180680,
@@ -421,13 +451,24 @@ enum
 
 struct Resources
 {
-    uint8 team;
-    uint8 category;
+    uint32 creature_id;
+    uint32 incomplete_text_id;
+    uint32 complete_text_id;
+    uint8 team_id;
+    uint8 category_id;
     uint32 current_id;
     uint32 current_amount;
     uint32 required_id;
     uint32 required_amount;
-    uint32 state;
+    uint32 state_id;
+};
+
+struct Objects
+{
+    uint32 object_id;
+    uint8 team_id;
+    uint8 category_id;
+    uint32 required_percentage;
 };
 
 class WarEffortMgr
@@ -441,17 +482,20 @@ public:
     uint8 GetStage() { return stage; }
     void LoadResources();
     void SaveResources();
-    void AddResource(uint32 /*state*/, uint32 /*value*/);
-    uint32 GetCurrentAmount(uint32 /*state*/);
-    uint32 GetRequiredAmount(uint32 /*state*/);
-    void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team*/, uint8 /*category*/);
-    void SendResourceToPlayer(Player* /*player*/, uint32 /*state*/);
+    void LoadObjects();
+    void AddResource(uint32 /*state_id*/, uint32 /*value*/);
+    bool IsResourceComplete(uint32 /*state_id*/);
     bool IsResourceCollectionComplete();
-    void UpdateGameObject(GameObject* /*go*/);
+    uint32 GetCreatureTextId(uint32 /*creature_id*/);
+    uint32 GetCreatureStateId(uint32 /*creature_id*/);
+    //double GetResourceCategoryPercentage(uint8 /*team_id*/, uint8 /*category_id*/);
+    void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team_id*/, uint8 /*category_id*/);
+    void SendResourceToPlayer(Player* /*player*/, uint32 /*state_id*/);
 
 private:
     uint8 stage;
     std::vector<Resources> resources;
+    std::vector<Objects> objects;
     Milliseconds timer;
 };
 
