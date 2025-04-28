@@ -1,465 +1,189 @@
 #ifndef EVENT_WAR_EFFORT_H
 #define EVENT_WAR_EFFORT_H
 
-enum
+enum Events
 {
-    EVENT_WAR_EFFORT_RESOURCE_COLLECTION            = 120,
-
-    // Warlord Gorchuk <War Effort Commander>
-    NPC_WARLORD_GORCHUK                             = 15700,
-    NPC_WARLORD_GORCHUK_GOSSIP_HELLO                = 8092,
-    NPC_WARLORD_GORCHUK_GOSSIP_DESCRIPTION          = 8209,
-    NPC_WARLORD_GORCHUK_GOSSIP_METAL_BARS           = 8096,
-    NPC_WARLORD_GORCHUK_GOSSIP_HERBS                = 8097,
-    NPC_WARLORD_GORCHUK_GOSSIP_LEATHER_SKINS        = 8098,
-    NPC_WARLORD_GORCHUK_GOSSIP_BANDAGES             = 8099,
-    NPC_WARLORD_GORCHUK_GOSSIP_COOKED_GOODS         = 8100,
-
-    // Field Marshal Snowfall <War Effort Commander>
-    NPC_FIELD_MARSHAL_SNOWFALL                      = 15701,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HELLO         = 8082,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_DESCRIPTION   = 8071,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_METAL_BARS    = 8087,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HERBS         = 8088,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_LEATHER_SKINS = 8089,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_BANDAGES      = 8090,
-    NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_COOKED_GOODS  = 8091,
-
-    // General Zog <Horde Ambassador>
-    NPC_GENERAL_ZOG                                 = 15539,
-    NPC_GENERAL_ZOG_GOSSIP_HELLO                    = 7942,
-    NPC_GENERAL_ZOG_GOSSIP_DESCRIPTION              = 8209,
-    NPC_GENERAL_ZOG_GOSSIP_METAL_BARS               = 7944,
-    NPC_GENERAL_ZOG_GOSSIP_HERBS                    = 7945,
-    NPC_GENERAL_ZOG_GOSSIP_LEATHER_SKINS            = 7946,
-    NPC_GENERAL_ZOG_GOSSIP_BANDAGES                 = 7947,
-    NPC_GENERAL_ZOG_GOSSIP_COOKED_GOODS             = 7948,
-
-    // Commander Stronghammer <Alliance Ambassador>
-    NPC_COMMANDER_STRONGHAMMER                      = 15458,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_HELLO         = 7949,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_DESCRIPTION   = 8071,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_METAL_BARS    = 7951,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_HERBS         = 7952,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_LEATHER_SKINS = 7953,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_BANDAGES      = 7954,
-    NPC_COMMANDER_STRONGHAMMER_GOSSIP_COOKED_GOODS  = 7955,
-
-    // Sergeant Stonebrow <Copper Bar Collector>
-    NPC_SERGEANT_STONEBROW                          = 15383,
-    NPC_SERGEANT_STONEBROW_GOSSIP_INCOMPLETE        = 7824,
-    NPC_SERGEANT_STONEBROW_GOSSIP_COMPLETE          = 7823,
-
-    // Corporal Carnes <Iron Bar Collector>
-    NPC_CORPORAL_CARNES                             = 15431,
-    NPC_CORPORAL_CARNES_GOSSIP_INCOMPLETE           = 7829,
-    NPC_CORPORAL_CARNES_GOSSIP_COMPLETE             = 7830,
-
-    // Dame Twinbraid <Thorium Bar Collector>
-    NPC_DAME_TWINBRAID                              = 15432,
-    NPC_DAME_TWINBRAID_GOSSIP_INCOMPLETE            = 7831,
-    NPC_DAME_TWINBRAID_GOSSIP_COMPLETE              = 7832,
-
-    // Private Draxlegauge <Stranglekelp Collector>
-    NPC_PRIVATE_DRAXLEGAUGE                         = 15434,
-    NPC_PRIVATE_DRAXLEGAUGE_GOSSIP_INCOMPLETE       = 7833,
-    NPC_PRIVATE_DRAXLEGAUGE_GOSSIP_COMPLETE         = 7834,
-
-    // Master Nightsong <Purple Lotus Collector>
-    NPC_MASTER_NIGHTSONG                            = 15437,
-    NPC_MASTER_NIGHTSONG_GOSSIP_INCOMPLETE          = 7835,
-    NPC_MASTER_NIGHTSONG_GOSSIP_COMPLETE            = 55000,
-
-    // Sergeant Major Germaine <Arthas' Tears Collector>
-    NPC_SERGEANT_MAJOR_GERMAINE                     = 15445,
-    NPC_SERGEANT_MAJOR_GERMAINE_GOSSIP_INCOMPLETE   = 7837,
-    NPC_SERGEANT_MAJOR_GERMAINE_GOSSIP_COMPLETE     = 7838,
-
-    // Bonnie Stoneflayer <Light Leather Collector>
-    NPC_BONNIE_STONEFLAYER                          = 15446,
-    NPC_BONNIE_STONEFLAYER_GOSSIP_INCOMPLETE        = 7840,
-    NPC_BONNIE_STONEFLAYER_GOSSIP_COMPLETE          = 7842,
-
-    // Private Porter <Medium Leather Collector>
-    NPC_PRIVATE_PORTER                              = 15448,
-    NPC_PRIVATE_PORTER_GOSSIP_INCOMPLETE            = 7843,
-    NPC_PRIVATE_PORTER_GOSSIP_COMPLETE              = 7844,
-
-    // Marta Finespindle <Thick Leather Collector>
-    NPC_MARTA_FINESPINDLE                           = 15450,
-    NPC_MARTA_FINESPINDLE_GOSSIP_INCOMPLETE         = 7845,
-    NPC_MARTA_FINESPINDLE_GOSSIP_COMPLETE           = 7846,
-
-    // Sentinel Silversky <Linen Bandage Collector>
-    NPC_SENTINEL_SILVERSKY                          = 15451,
-    NPC_SENTINEL_SILVERSKY_GOSSIP_INCOMPLETE        = 7847,
-    NPC_SENTINEL_SILVERSKY_GOSSIP_COMPLETE          = 7848,
-
-    // Nurse Stonefield <Silk Bandage Collector>
-    NPC_NURSE_STONEFIELD                            = 15452,
-    NPC_NURSE_STONEFIELD_GOSSIP_INCOMPLETE          = 7851,
-    NPC_NURSE_STONEFIELD_GOSSIP_COMPLETE            = 7852,
-
-    // Keeper Moonshade <Runecloth Bandage Collector>
-    NPC_KEEPER_MOONSHADE                            = 15453,
-    NPC_KEEPER_MOONSHADE_GOSSIP_INCOMPLETE          = 7853,
-    NPC_KEEPER_MOONSHADE_GOSSIP_COMPLETE            = 7854,
-
-    // Slicky Gastronome <Rainbow Fin Albacore Collector>
-    NPC_SLICKY_GASTRONOME                           = 15455,
-    NPC_SLICKY_GASTRONOME_GOSSIP_INCOMPLETE         = 7856,
-    NPC_SLICKY_GASTRONOME_GOSSIP_COMPLETE           = 7857,
-
-    // Sarah Sadwhistle <Roast Raptor Collector>
-    NPC_SARAH_SADWHISTLE                            = 15456,
-    NPC_SARAH_SADWHISTLE_GOSSIP_INCOMPLETE          = 7859,
-    NPC_SARAH_SADWHISTLE_GOSSIP_COMPLETE            = 7860,
-
-    // Huntress Swiftriver <Spotted Yellowtail Collector>
-    NPC_HUNTRESS_SWIFTRIVER                         = 15457,
-    NPC_HUNTRESS_SWIFTRIVER_GOSSIP_INCOMPLETE       = 7861,
-    NPC_HUNTRESS_SWIFTRIVER_GOSSIP_COMPLETE         = 55001,
-
-    // Miner Cromwell <Copper Bar Collector>
-    NPC_MINER_CROMWELL                              = 15459,
-    NPC_MINER_CROMWELL_GOSSIP_INCOMPLETE            = 7866,
-    NPC_MINER_CROMWELL_GOSSIP_COMPLETE              = 55002,
-
-    // Grunt Maug <Tin Bar Collector>
-    NPC_GRUNT_MAUG                                  = 15460,
-    NPC_GRUNT_MAUG_GOSSIP_INCOMPLETE                = 7870,
-    NPC_GRUNT_MAUG_GOSSIP_COMPLETE                  = 55003,
-
-    // Senior Sergeant T'kelah <Mithril Bar Collector>
-    NPC_SENIOR_SERGEANT_T_KELAH                     = 15469,
-    NPC_SENIOR_SERGEANT_T_KELAH_GOSSIP_INCOMPLETE   = 7876,
-    NPC_SENIOR_SERGEANT_T_KELAH_GOSSIP_COMPLETE     = 55004,
-
-    // Herbalist Proudfeather <Peacebloom Collector>
-    NPC_HERBALIST_PROUDFEATHER                      = 15477,
-    NPC_HERBALIST_PROUDFEATHER_GOSSIP_INCOMPLETE    = 7878,
-    NPC_HERBALIST_PROUDFEATHER_GOSSIP_COMPLETE      = 55005,
-
-    // Batrider Pele'keiki <Firebloom Collector>
-    NPC_BATRIDER_PELE_KEIKI                         = 15508,
-    NPC_BATRIDER_PELE_KEIKI_GOSSIP_INCOMPLETE       = 7905,
-    NPC_BATRIDER_PELE_KEIKI_GOSSIP_COMPLETE         = 55006,
-
-    // Apothecary Jezel <Purple Lotus Collector>
-    NPC_APOTHECARY_JEZEL                            = 15512,
-    NPC_APOTHECARY_JEZEL_GOSSIP_INCOMPLETE          = 7907,
-    NPC_APOTHECARY_JEZEL_GOSSIP_COMPLETE            = 55007,
-
-    // Skinner Jamani <Heavy Leather Collector>
-    NPC_SKINNER_JAMANI                              = 15515,
-    NPC_SKINNER_JAMANI_GOSSIP_INCOMPLETE            = 7909,
-    NPC_SKINNER_JAMANI_GOSSIP_COMPLETE              = 55008,
-
-    // Sergeant Umala <Thick Leather Collector>
-    NPC_SERGEANT_UMALA                              = 15522,
-    NPC_SERGEANT_UMALA_GOSSIP_INCOMPLETE            = 7912,
-    NPC_SERGEANT_UMALA_GOSSIP_COMPLETE              = 7846,
-
-    // Doctor Serratus <Rugged Leather Collector>
-    NPC_DOCTOR_SERRATUS                             = 15525,
-    NPC_DOCTOR_SERRATUS_GOSSIP_INCOMPLETE           = 7914,
-    NPC_DOCTOR_SERRATUS_GOSSIP_COMPLETE             = 55009,
-
-    // Healer Longrunner <Wool Bandage Collector>
-    NPC_HEALER_LONGRUNNER                           = 15528,
-    NPC_HEALER_LONGRUNNER_GOSSIP_INCOMPLETE         = 7918,
-    NPC_HEALER_LONGRUNNER_GOSSIP_COMPLETE           = 55010,
-
-    // Lady Callow <Mageweave Bandage Collector>
-    NPC_LADY_CALLOW                                 = 15529,
-    NPC_LADY_CALLOW_GOSSIP_INCOMPLETE               = 7920,
-    NPC_LADY_CALLOW_GOSSIP_COMPLETE                 = 55011,
-
-    // Stoneguard Clayhoof <Runecloth Bandage Collector>
-    NPC_STONEGUARD_CLAYHOOF                         = 15532,
-    NPC_STONEGUARD_CLAYHOOF_GOSSIP_INCOMPLETE       = 7923,
-    NPC_STONEGUARD_CLAYHOOF_GOSSIP_COMPLETE         = 7924,
-
-    // Bloodguard Rawtar <Lean Wolf Steak Collector>
-    NPC_BLOODGUARD_RAWTAR                           = 15533,
-    NPC_BLOODGUARD_RAWTAR_GOSSIP_INCOMPLETE         = 7925,
-    NPC_BLOODGUARD_RAWTAR_GOSSIP_COMPLETE           = 55012,
-
-    // Fisherman Lin'do <Spotted Yellowtail Collector>
-    NPC_FISHERMAN_LIN_DO                            = 15534,
-    NPC_FISHERMAN_LIN_DO_GOSSIP_INCOMPLETE          = 7927,
-    NPC_FISHERMAN_LIN_DO_GOSSIP_COMPLETE            = 55013,
-
-    // Chief Sharpclaw <Baked Salmon Collector>
-    NPC_CHIEF_SHARPCLAW                             = 15535,
-    NPC_CHIEF_SHARPCLAW_GOSSIP_INCOMPLETE           = 7929,
-    NPC_CHIEF_SHARPCLAW_GOSSIP_COMPLETE             = 7930,
-
-    // Metal Bars
-    GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_1         = 180780,
-    GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_2         = 180781,
-    GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_3         = 180782,
-    GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_4         = 180783,
-    GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_5         = 180784,
-    GO_RESOURCES_METAL_BARS_HORDE_TIER_1            = 180839,
-    GO_RESOURCES_METAL_BARS_HORDE_TIER_2            = 180840,
-    GO_RESOURCES_METAL_BARS_HORDE_TIER_3            = 180841,
-    GO_RESOURCES_METAL_BARS_HORDE_TIER_4            = 180842,
-    GO_RESOURCES_METAL_BARS_HORDE_TIER_5            = 180843,
-
-    // Herbs
-    GO_RESOURCES_HERBS_ALLIANCE_TIER_1              = 180801,
-    GO_RESOURCES_HERBS_ALLIANCE_TIER_2              = 180802,
-    GO_RESOURCES_HERBS_ALLIANCE_TIER_3              = 180803,
-    GO_RESOURCES_HERBS_ALLIANCE_TIER_4              = 180804,
-    GO_RESOURCES_HERBS_ALLIANCE_TIER_5              = 180805,
-    GO_RESOURCES_HERBS_HORDE_TIER_1                 = 180819,
-    GO_RESOURCES_HERBS_HORDE_TIER_2                 = 180820,
-    GO_RESOURCES_HERBS_HORDE_TIER_3                 = 180821,
-    GO_RESOURCES_HERBS_HORDE_TIER_4                 = 180822,
-    GO_RESOURCES_HERBS_HORDE_TIER_5                 = 180823,
-
-    // Leather Skins
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_1      = 180692,
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_2      = 180693,
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_3      = 180694,
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_4      = 180695,
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_5      = 180696,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_1         = 180813,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_2         = 180814,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_3         = 180815,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_4         = 180816,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_5         = 180817,
-
-    // Bandages
-    GO_RESOURCES_BANDAGES_ALLIANCE_TIER_1           = 180674,
-    GO_RESOURCES_BANDAGES_ALLIANCE_TIER_2           = 180675,
-    GO_RESOURCES_BANDAGES_ALLIANCE_TIER_3           = 180676,
-    GO_RESOURCES_BANDAGES_ALLIANCE_TIER_4           = 180677,
-    GO_RESOURCES_BANDAGES_ALLIANCE_TIER_5           = 180678,
-    GO_RESOURCES_BANDAGES_HORDE_TIER_1              = 180827,
-    GO_RESOURCES_BANDAGES_HORDE_TIER_2              = 180828,
-    GO_RESOURCES_BANDAGES_HORDE_TIER_3              = 180829,
-    GO_RESOURCES_BANDAGES_HORDE_TIER_4              = 180830,
-    GO_RESOURCES_BANDAGES_HORDE_TIER_5              = 180831,
-
-    // Cooked Goods
-    GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_1       = 180800,
-    GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_2       = 180806,
-    GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_3       = 180807,
-    GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_4       = 180808,
-    GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_5       = 180809,
-    GO_RESOURCES_COOKED_GOODS_HORDE_TIER_1          = 180833,
-    GO_RESOURCES_COOKED_GOODS_HORDE_TIER_2          = 180834,
-    GO_RESOURCES_COOKED_GOODS_HORDE_TIER_3          = 180835,
-    GO_RESOURCES_COOKED_GOODS_HORDE_TIER_4          = 180836,
-    GO_RESOURCES_COOKED_GOODS_HORDE_TIER_5          = 180837,
-
-    // Resources states
-    STAGE_WAR_EFFORT                                = 50000,
-    RESOURCE_STATE_COPPER_BARS_A                    = 50001,
-    RESOURCE_STATE_COPPER_BARS_H                    = 50002,
-    RESOURCE_STATE_TIN_BARS                         = 50003,
-    RESOURCE_STATE_MITHRIL_BARS                     = 50004,
-    RESOURCE_STATE_IRON_BARS                        = 50005,
-    RESOURCE_STATE_THORIUM_BARS                     = 50006,
-    RESOURCE_STATE_PEACEBLOOM                       = 50007,
-    RESOURCE_STATE_FIREBLOOM                        = 50008,
-    RESOURCE_STATE_PURPLE_LOTUS_A                   = 50009,
-    RESOURCE_STATE_PURPLE_LOTUS_H                   = 50010,
-    RESOURCE_STATE_STRANGLEKELP                     = 50011,
-    RESOURCE_STATE_ARTHAS_TEARS                     = 50012,
-    RESOURCE_STATE_HEAVY_LEATHER                    = 50013,
-    RESOURCE_STATE_THICK_LEATHER_A                  = 50014,
-    RESOURCE_STATE_THICK_LEATHER_H                  = 50015,
-    RESOURCE_STATE_RUGGED_LEATHER                   = 50016,
-    RESOURCE_STATE_LIGHT_LEATHER                    = 50017,
-    RESOURCE_STATE_MEDIUM_LEATHER                   = 50018,
-    RESOURCE_STATE_WOOL_BANDAGE                     = 50019,
-    RESOURCE_STATE_MAGEWEAVE_BANDAGE                = 50020,
-    RESOURCE_STATE_RUNECLOTH_BANDAGE_A              = 50021,
-    RESOURCE_STATE_RUNECLOTH_BANDAGE_H              = 50022,
-    RESOURCE_STATE_LINEN_BANDAGE                    = 50023,
-    RESOURCE_STATE_SILK_BANDAGE                     = 50024,
-    RESOURCE_STATE_LEAN_WOLF_STEAK                  = 50025,
-    RESOURCE_STATE_SPOTTED_YELLOWTAIL_A             = 50026,
-    RESOURCE_STATE_SPOTTED_YELLOWTAIL_H             = 50027,
-    RESOURCE_STATE_BAKED_SALMON                     = 50028,
-    RESOURCE_STATE_RAINBOW_FIN_ALBACORE             = 50029,
-    RESOURCE_STATE_ROAST_RAPTOR                     = 50030,
-
-    // Copper Bars (Both)
-    RESOURCE_STATE_COPPER_BARS_CURRENT_A            = 1997,
-    RESOURCE_STATE_COPPER_BARS_CURRENT_H            = 2018,
-    RESOURCE_STATE_COPPER_BARS_REQUIRED             = 1998,
-
-    // Iron Bars (Alliance)
-    RESOURCE_STATE_IRON_BARS_CURRENT                = 2002,
-    RESOURCE_STATE_IRON_BARS_REQUIRED               = 2003,
-
-    // Tin Bars (Horde)
-    RESOURCE_STATE_TIN_BARS_CURRENT                 = 2005,
-    RESOURCE_STATE_TIN_BARS_REQUIRED                = 2006,
-
-    // Mithril Bars (Horde)
-    RESOURCE_STATE_MITHRIL_BARS_CURRENT             = 2008,
-    RESOURCE_STATE_MITHRIL_BARS_REQUIRED            = 2009,
-
-    // Thorium Bars (Alliance)
-    RESOURCE_STATE_THORIUM_BARS_CURRENT             = 2011,
-    RESOURCE_STATE_THORIUM_BARS_REQUIRED            = 2012,
-
-    // Peacebloom (Horde)
-    RESOURCE_STATE_PEACEBLOOM_CURRENT               = 2021,
-    RESOURCE_STATE_PEACEBLOOM_REQUIRED              = 2020,
-
-    // Firebloom (Horde)
-    RESOURCE_STATE_FIREBLOOM_CURRENT                = 2050,
-    RESOURCE_STATE_FIREBLOOM_REQUIRED               = 2051,
-
-    // Purple Lotus (Both)
-    RESOURCE_STATE_PURPLE_LOTUS_CURRENT_A           = 2053,
-    RESOURCE_STATE_PURPLE_LOTUS_CURRENT_H           = 2054,
-    RESOURCE_STATE_PURPLE_LOTUS_REQUIRED            = 2055,
-
-    // Stranglekelp (Alliance)
-    RESOURCE_STATE_STRANGLEKELP_CURRENT             = 2047,
-    RESOURCE_STATE_STRANGLEKELP_REQUIRED            = 2048,
-
-    // Arthas' Tears (Alliance)
-    RESOURCE_STATE_ARTHAS_TEARS_CURRENT             = 2057,
-    RESOURCE_STATE_ARTHAS_TEARS_REQUIRED            = 2058,
-
-    // Heavy Leather (Horde)
-    RESOURCE_STATE_HEAVY_LEATHER_CURRENT            = 2066,
-    RESOURCE_STATE_HEAVY_LEATHER_REQUIRED           = 2067,
-
-    // Thick Leather (Both)
-    RESOURCE_STATE_THICK_LEATHER_CURRENT_A          = 2069,
-    RESOURCE_STATE_THICK_LEATHER_CURRENT_H          = 2070,
-    RESOURCE_STATE_THICK_LEATHER_REQUIRED           = 2071,
-
-    // Rugged Leather (Horde)
-    RESOURCE_STATE_RUGGED_LEATHER_CURRENT           = 2073,
-    RESOURCE_STATE_RUGGED_LEATHER_REQUIRED          = 2074,
-
-    // Light Leather (Alliance)
-    RESOURCE_STATE_LIGHT_LEATHER_CURRENT            = 2060,
-    RESOURCE_STATE_LIGHT_LEATHER_REQUIRED           = 2061,
-
-    // Medium Leather (Alliance)
-    RESOURCE_STATE_MEDIUM_LEATHER_CURRENT           = 2063,
-    RESOURCE_STATE_MEDIUM_LEATHER_REQUIRED          = 2064,
-
-    // Wool Bandage (Horde)
-    RESOURCE_STATE_WOOL_BANDAGE_CURRENT             = 2079,
-    RESOURCE_STATE_WOOL_BANDAGE_REQUIRED            = 2080,
-
-    // Meagewave Bandage (Horde)
-    RESOURCE_STATE_MAGEWEAVE_BANDAGE_CURRENT        = 2085,
-    RESOURCE_STATE_MAGEWEAVE_BANDAGE_REQUIRED       = 2086,
-
-    // Runecloth Bandage (Both)
-    RESOURCE_STATE_RUNECLOTH_BANDAGE_CURRENT_A      = 2088,
-    RESOURCE_STATE_RUNECLOTH_BANDAGE_CURRENT_H      = 2089,
-    RESOURCE_STATE_RUNECLOTH_BANDAGE_REQUIRED       = 2090,
-
-    // Linen Bandage (Alliance)
-    RESOURCE_STATE_LINEN_BANDAGE_CURRENT            = 2076,
-    RESOURCE_STATE_LINEN_BANDAGE_REQUIRED           = 2077,
-
-    // Silk Bandage (Alliance)
-    RESOURCE_STATE_SILK_BANDAGE_CURRENT             = 2082,
-    RESOURCE_STATE_SILK_BANDAGE_REQUIRED            = 2083,
-
-    // Lean Wolf Steak (Horde)
-    RESOURCE_STATE_LEAN_WOLF_STEAK_CURRENT          = 2095,
-    RESOURCE_STATE_LEAN_WOLF_STEAK_REQUIRED         = 2096,
-
-    // Spotted Yellowtail (Both)
-    RESOURCE_STATE_SPOTTED_YELLOWTAIL_CURRENT_A     = 2101,
-    RESOURCE_STATE_SPOTTED_YELLOWTAIL_CURRENT_H     = 2102,
-    RESOURCE_STATE_SPOTTED_YELLOWTAIL_REQUIRED      = 2103,
-
-    // Baked Salmon (Horde)
-    RESOURCE_STATE_BAKED_SALMON_CURRENT             = 2105,
-    RESOURCE_STATE_BAKED_SALMON_REQUIRED            = 2106,
-
-    // Rainbow Fin Albacore (Alliance)
-    RESOURCE_STATE_RAINBOW_FIN_ALBACORE_CURRENT     = 2092,
-    RESOURCE_STATE_RAINBOW_FIN_ALBACORE_REQUIRED    = 2093,
-
-    // Roast Raptor (Alliance)
-    RESOURCE_STATE_ROAST_RAPTOR_CURRENT             = 2098,
-    RESOURCE_STATE_ROAST_RAPTOR_REQUIRED            = 2099,
-
-    // Resources categories
-    RESOURCE_CATEGORY_METAL_BARS                    = 0,
-    RESOURCE_CATEGORY_HERBS                         = 1,
-    RESOURCE_CATEGORY_LEATHER_SKINS                 = 2,
-    RESOURCE_CATEGORY_BANDAGES                      = 3,
-    RESOURCE_CATEGORY_COOKED_GOODS                  = 4,
-
-    // Resource target values
-    RESOURCE_REQUIRED_COPPER_BARS                   = 90000,
-    RESOURCE_REQUIRED_TIN_BARS                      = 22000,
-    RESOURCE_REQUIRED_MITHRIL_BARS                  = 18000,
-    RESOURCE_REQUIRED_IRON_BARS                     = 28000,
-    RESOURCE_REQUIRED_THORIUM_BARS                  = 24000,
-    RESOURCE_REQUIRED_PEACEBLOOM                    = 96000,
-    RESOURCE_REQUIRED_FIREBLOOM                     = 19000,
-    RESOURCE_REQUIRED_PURPLE_LOTUS                  = 26000,
-    RESOURCE_REQUIRED_STRANGLEKELP                  = 33000,
-    RESOURCE_REQUIRED_ARTHAS_TEARS                  = 20000,
-    RESOURCE_REQUIRED_HEAVY_LEATHER                 = 60000,
-    RESOURCE_REQUIRED_THICK_LEATHER                 = 80000,
-    RESOURCE_REQUIRED_RUGGED_LEATHER                = 60000,
-    RESOURCE_REQUIRED_LIGHT_LEATHER                 = 180000,
-    RESOURCE_REQUIRED_MEDIUM_LEATHER                = 110000,
-    RESOURCE_REQUIRED_WOOL_BANDAGE                  = 250000,
-    RESOURCE_REQUIRED_MAGEWEAVE_BANDAGE             = 250000,
-    RESOURCE_REQUIRED_RUNECLOTH_BANDAGE             = 400000,
-    RESOURCE_REQUIRED_LINEN_BANDAGE                 = 800000,
-    RESOURCE_REQUIRED_SILK_BANDAGE                  = 600000,
-    RESOURCE_REQUIRED_LEAN_WOLF_STEAK               = 10000,
-    RESOURCE_REQUIRED_SPOTTED_YELLOWTAIL            = 17000,
-    RESOURCE_REQUIRED_BAKED_SALMON                  = 10000,
-    RESOURCE_REQUIRED_RAINBOW_FIN_ALBACORE          = 14000,
-    RESOURCE_REQUIRED_ROAST_RAPTOR                  = 20000,
-
-    // Resource gossip options
-    RESOURCE_OPTION_RETURN                          = 0,
-    RESOURCE_OPTION_DESCRIPTION                     = 1,
-    RESOURCE_OPTION_METAL_BARS                      = 2,
-    RESOURCE_OPTION_HERBS                           = 3,
-    RESOURCE_OPTION_LEATHER_SKINS                   = 4,
-    RESOURCE_OPTION_BANDAGES                        = 5,
-    RESOURCE_OPTION_COOKED_GOODS                    = 6,
-
-    WAR_EFFORT_STAGE_RESOURCE_COLLECTION            = 0,
-    WAR_EFFORT_STAGE_RESOURCE_COLLECTION_COMPLETE   = 1
+    EVENT_WAR_EFFORT_RESOURCE_COLLECTION_AND_TRANSITION     = 120
 };
 
-struct Resources
+enum Stages
 {
-    uint32 creature_id;
-    uint32 incomplete_text_id;
-    uint32 complete_text_id;
-    uint8 team_id;
-    uint8 category_id;
-    uint32 current_id;
+    STAGE_RESOURCE_COLLECTION                               = 0,
+    STAGE_TRANSITION_DAY_0,
+    STAGE_TRANSITION_DAY_1,
+    STAGE_TRANSITION_DAY_2,
+    STAGE_TRANSITION_DAY_3,
+    STAGE_TRANSITION_DAY_4,
+    STAGE_TRANSITION_DAY_5
+};
+
+enum States
+{
+    STATE_WAR_EFFORT_STAGE                                  = 50000,
+    STATE_NEXT_TRANSITION
+};
+
+enum Resources
+{
+    RESOURCE_COPPER_BARS_ALLIANCE                           = 0,
+    RESOURCE_IRON_BARS,
+    RESOURCE_THORIUM_BARS,
+    RESOURCE_TIN_BARS,
+    RESOURCE_MITHRIL_BARS,
+    RESOURCE_COPPER_BARS_HORDE,
+    RESOURCE_STRANGLEKELP,
+    RESOURCE_PURPLE_LOTUS_ALLIANCE,
+    RESOURCE_ARTHAS_TEARS,
+    RESOURCE_PEACEBLOOM,
+    RESOURCE_FIREBLOOM,
+    RESOURCE_PURPLE_LOTUS_HORDE,
+    RESOURCE_LIGHT_LEATHER,
+    RESOURCE_MEDIUM_LEATHER,
+    RESOURCE_THICK_LEATHER_ALLIANCE,
+    RESOURCE_HEAVY_LEATHER,
+    RESOURCE_THICK_LEATHER_HORDE,
+    RESOURCE_RUGGED_LEATHER,
+    RESOURCE_LINEN_BANDAGE,
+    RESOURCE_SILK_BANDAGE,
+    RESOURCE_RUNECLOTH_BANDAGE_ALLIANCE,
+    RESOURCE_WOOL_BANDAGE,
+    RESOURCE_MAGEWEAVE_BANDAGE,
+    RESOURCE_RUNECLOTH_BANDAGE_HORDE,
+    RESOURCE_RAINBOW_FIN_ALBACORE,
+    RESOURCE_ROAST_RAPTOR,
+    RESOURCE_SPOTTED_YELLOWTAIL_ALLIANCE,
+    RESOURCE_LEAN_WOLF_STEAK,
+    RESOURCE_SPOTTED_YELLOWTAIL_HORDE,
+    RESOURCE_BAKED_SALMON,
+    MAX_RESOURCES
+};
+
+enum Categories
+{
+    CATEGORY_METAL_BARS                                     = 0,
+    CATEGORY_HERBS,
+    CATEGORY_LEATHER_SKINS,
+    CATEGORY_BANDAGES,
+    CATEGORY_COOKED_GOODS
+};
+
+enum Columns
+{
+    COLUMN_CATEGORY                                         = 0,
+    COLUMN_TEAM,
+    COLUMN_CURRENT_AMOUNT,
+    COLUMN_STATE_CURRENT_AMOUNT,
+    COLUMN_REQUIRED_AMOUNT,
+    COLUMN_STATE_REQUIRED_AMOUNT,
+    COLUMN_WORLD_STATE,
+    MAX_COLUMNS
+};
+
+enum NPCs
+{
+    NPC_SERGEANT_STONEBROW                                  = 15383,
+    NPC_CORPORAL_CARNES                                     = 15431,
+    NPC_DAME_TWINBRAID                                      = 15432,
+    NPC_PRIVATE_DRAXLEGAUGE                                 = 15434,
+    NPC_MASTER_NIGHTSONG                                    = 15437,
+    NPC_SERGEANT_MAJOR_GERMAINE                             = 15445,
+    NPC_BONNIE_STONEFLAYER                                  = 15446,
+    NPC_PRIVATE_PORTER                                      = 15448,
+    NPC_MARTA_FINESPINDLE                                   = 15450,
+    NPC_SENTINEL_SILVERSKY                                  = 15451,
+    NPC_NURSE_STONEFIELD                                    = 15452,
+    NPC_KEEPER_MOONSHADE                                    = 15453,
+    NPC_SLICKY_GASTRONOME                                   = 15455,
+    NPC_SARAH_SADWHISTLE                                    = 15456,
+    NPC_HUNTRESS_SWIFTRIVER                                 = 15457,
+    NPC_COMMANDER_STRONGHAMMER                              = 15458,
+    NPC_MINER_CROMWELL                                      = 15459,
+    NPC_GRUNT_MAUG                                          = 15460,
+    NPC_SENIOR_SERGEANT_T_KELAH                             = 15469,
+    NPC_HERBALIST_PROUDFEATHER                              = 15477,
+    NPC_BATRIDER_PELE_KEIKI                                 = 15508,
+    NPC_APOTHECARY_JEZEL                                    = 15512,
+    NPC_SKINNER_JAMANI                                      = 15515,
+    NPC_SERGEANT_UMALA                                      = 15522,
+    NPC_DOCTOR_SERRATUS                                     = 15525,
+    NPC_HEALER_LONGRUNNER                                   = 15528,
+    NPC_LADY_CALLOW                                         = 15529,
+    NPC_STONEGUARD_CLAYHOOF                                 = 15532,
+    NPC_BLOODGUARD_RAWTAR                                   = 15533,
+    NPC_FISHERMAN_LIN_DO                                    = 15534,
+    NPC_CHIEF_SHARPCLAW                                     = 15535,
+    NPC_GENERAL_ZOG                                         = 15539,
+    NPC_WARLORD_GORCHUK                                     = 15700,
+    NPC_FIELD_MARSHAL_SNOWFALL                              = 15701
+};
+
+enum GameObjects
+{
+    GO_METAL_BARS_ALLIANCE_TIER_1                           = 180780,
+    GO_METAL_BARS_ALLIANCE_TIER_2                           = 180781,
+    GO_METAL_BARS_ALLIANCE_TIER_3                           = 180782,
+    GO_METAL_BARS_ALLIANCE_TIER_4                           = 180783,
+    GO_METAL_BARS_ALLIANCE_TIER_5                           = 180784,
+    GO_METAL_BARS_HORDE_TIER_1                              = 180839,
+    GO_METAL_BARS_HORDE_TIER_2                              = 180840,
+    GO_METAL_BARS_HORDE_TIER_3                              = 180841,
+    GO_METAL_BARS_HORDE_TIER_4                              = 180842,
+    GO_METAL_BARS_HORDE_TIER_5                              = 180843,
+
+    GO_HERBS_ALLIANCE_TIER_1                                = 180801,
+    GO_HERBS_ALLIANCE_TIER_2                                = 180802,
+    GO_HERBS_ALLIANCE_TIER_3                                = 180803,
+    GO_HERBS_ALLIANCE_TIER_4                                = 180804,
+    GO_HERBS_ALLIANCE_TIER_5                                = 180805,
+    GO_HERBS_HORDE_TIER_1                                   = 180819,
+    GO_HERBS_HORDE_TIER_2                                   = 180820,
+    GO_HERBS_HORDE_TIER_3                                   = 180821,
+    GO_HERBS_HORDE_TIER_4                                   = 180822,
+    GO_HERBS_HORDE_TIER_5                                   = 180823,
+
+    GO_LEATHER_SKINS_ALLIANCE_TIER_1                        = 180692,
+    GO_LEATHER_SKINS_ALLIANCE_TIER_2                        = 180693,
+    GO_LEATHER_SKINS_ALLIANCE_TIER_3                        = 180694,
+    GO_LEATHER_SKINS_ALLIANCE_TIER_4                        = 180695,
+    GO_LEATHER_SKINS_ALLIANCE_TIER_5                        = 180696,
+    GO_LEATHER_SKINS_HORDE_TIER_1                           = 180813,
+    GO_LEATHER_SKINS_HORDE_TIER_2                           = 180814,
+    GO_LEATHER_SKINS_HORDE_TIER_3                           = 180815,
+    GO_LEATHER_SKINS_HORDE_TIER_4                           = 180816,
+    GO_LEATHER_SKINS_HORDE_TIER_5                           = 180817,
+
+    GO_BANDAGES_ALLIANCE_TIER_1                             = 180674,
+    GO_BANDAGES_ALLIANCE_TIER_2                             = 180675,
+    GO_BANDAGES_ALLIANCE_TIER_3                             = 180676,
+    GO_BANDAGES_ALLIANCE_TIER_4                             = 180677,
+    GO_BANDAGES_ALLIANCE_TIER_5                             = 180678,
+    GO_BANDAGES_HORDE_TIER_1                                = 180827,
+    GO_BANDAGES_HORDE_TIER_2                                = 180828,
+    GO_BANDAGES_HORDE_TIER_3                                = 180829,
+    GO_BANDAGES_HORDE_TIER_4                                = 180830,
+    GO_BANDAGES_HORDE_TIER_5                                = 180831,
+
+    GO_COOKED_GOODS_ALLIANCE_TIER_1                         = 180800,
+    GO_COOKED_GOODS_ALLIANCE_TIER_2                         = 180806,
+    GO_COOKED_GOODS_ALLIANCE_TIER_3                         = 180807,
+    GO_COOKED_GOODS_ALLIANCE_TIER_4                         = 180808,
+    GO_COOKED_GOODS_ALLIANCE_TIER_5                         = 180809,
+    GO_COOKED_GOODS_HORDE_TIER_1                            = 180833,
+    GO_COOKED_GOODS_HORDE_TIER_2                            = 180834,
+    GO_COOKED_GOODS_HORDE_TIER_3                            = 180835,
+    GO_COOKED_GOODS_HORDE_TIER_4                            = 180836,
+    GO_COOKED_GOODS_HORDE_TIER_5                            = 180837
+};
+
+struct Resource
+{
+    uint8 category;
+    uint8 team;
     uint32 current_amount;
-    uint32 required_id;
     uint32 required_amount;
-    uint32 state_id;
-};
-
-struct Objects
-{
-    uint32 object_id;
-    uint8 team_id;
-    uint8 category_id;
-    uint32 required_percentage;
+    uint32 state_current_amount;
+    uint32 state_required_amount;
+    uint32 world_state;
 };
 
 class WarEffortMgr
@@ -469,29 +193,17 @@ public:
 
     void Init();
     void Update(uint32 /*diff*/);
-    void SetStage(uint8 id) { stage = id; }
+    void Save();
     uint8 GetStage() { return stage; }
-    void LoadResources();
-    void SaveResources();
-    void LoadObjects();
-    void AddResource(uint32 /*state_id*/, uint32 /*value*/);
-    bool IsResourceComplete(uint32 /*state_id*/);
-    bool IsResourceCollectionComplete();
-    uint32 GetCreatureTextId(uint32 /*creature_id*/);
-    uint32 GetCreatureStateId(uint32 /*creature_id*/);
-    uint8 GetResourceTeam(uint32 /*state_id*/);
-    uint8 GetResourceCategory(uint32 /*state_id*/);
-    void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team_id*/, uint8 /*category_id*/);
-    void SendResourceToPlayer(Player* /*player*/, uint32 /*state_id*/);
-    double GetResourceCompletedPercentage(uint8 /*team_id*/, uint8 /*category_id*/);
-    void UpdateResourceGameObject(GameObject* /*go*/);
-    void UpdateResourceGameObjectsNearCreature(Creature* /*creature*/, uint8 /*team_id*/, uint8 /*category_id*/);
+    Resource GetResource(uint8 resource) { return resources[resource]; }
+    std::vector<Resource> GetResourceCategoryForTeam(uint8 /*category*/, uint8 /*team*/);
+    void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
+    bool IsResourceCompleted(uint8 resource) { return !(resources[resource].current_amount < resources[resource].required_amount); }
 
 private:
-    uint8 stage;
-    std::vector<Resources> resources;
-    std::vector<Objects> objects;
-    Milliseconds timer;
+    uint8 stage = STAGE_RESOURCE_COLLECTION;
+    std::vector<Resource> resources;
+    Milliseconds timer = 0s;
 };
 
 #define sWarEffortMgr WarEffortMgr::instance()

@@ -1,9 +1,39 @@
 #include "Creature.h"
-#include "CreatureScript.h"
 #include "Player.h"
 #include "ScriptedGossip.h"
+#include "ScriptMgr.h"
 
 #include "event_war_effort.h"
+
+enum GossipOptions
+{
+    OPTION_RETURN                               = 0,
+    OPTION_DESCRIPTION,
+    OPTION_METAL_BARS,
+    OPTION_HERBS,
+    OPTION_LEATHER_SKINS,
+    OPTION_BANDAGES,
+    OPTION_COOKED_GOODS
+};
+
+enum Texts
+{
+    TEXT_WARLORD_GORCHUK_HELLO                  = 8092,
+    TEXT_WARLORD_GORCHUK_DESCRIPTION            = 8209,
+    TEXT_WARLORD_GORCHUK_METAL_BARS             = 8096,
+    TEXT_WARLORD_GORCHUK_HERBS                  = 8097,
+    TEXT_WARLORD_GORCHUK_LEATHER_SKINS          = 8098,
+    TEXT_WARLORD_GORCHUK_BANDAGES               = 8099,
+    TEXT_WARLORD_GORCHUK_COOKED_GOODS           = 8100,
+
+    TEXT_FIELD_MARSHAL_SNOWFALL_HELLO           = 8082,
+    TEXT_FIELD_MARSHAL_SNOWFALL_DESCRIPTION     = 8071,
+    TEXT_FIELD_MARSHAL_SNOWFALL_METAL_BARS      = 8087,
+    TEXT_FIELD_MARSHAL_SNOWFALL_HERBS           = 8088,
+    TEXT_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS   = 8089,
+    TEXT_FIELD_MARSHAL_SNOWFALL_BANDAGES        = 8090,
+    TEXT_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS    = 8091
+};
 
 class npc_war_effort_commander : public CreatureScript
 {
@@ -20,13 +50,13 @@ public:
             player->SendPreparedQuest(creature->GetGUID());
         }
 
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, RESOURCE_OPTION_DESCRIPTION);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_METAL_BARS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_HERBS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_LEATHER_SKINS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_BANDAGES);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, RESOURCE_OPTION_COOKED_GOODS);
-        SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_HELLO : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HELLO, creature->GetGUID());
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_LEATHER_SKINS);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_BANDAGES);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_COOKED_GOODS);
+        SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_HELLO : TEXT_FIELD_MARSHAL_SNOWFALL_HELLO, creature->GetGUID());
         return true;
     }
 
@@ -37,43 +67,65 @@ public:
             return false;
         }
 
-        if (action == RESOURCE_OPTION_RETURN)
+        if (action == OPTION_RETURN)
         {
             OnGossipHello(player, creature);
             return true;
         }
 
         ClearGossipMenuFor(player);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to ask you about something else.", GOSSIP_SENDER_MAIN, RESOURCE_OPTION_RETURN);
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to ask you about something else.", GOSSIP_SENDER_MAIN, OPTION_RETURN);
 
         switch (action)
         {
-        case RESOURCE_OPTION_DESCRIPTION:
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_DESCRIPTION : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_DESCRIPTION, creature->GetGUID());
+        case OPTION_DESCRIPTION:
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_DESCRIPTION : TEXT_FIELD_MARSHAL_SNOWFALL_DESCRIPTION, creature->GetGUID());
             break;
-        case RESOURCE_OPTION_METAL_BARS:
-            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_METAL_BARS);
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_METAL_BARS : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_METAL_BARS, creature->GetGUID());
+        case OPTION_METAL_BARS:
+            SendResourceCategoryToPlayer(player, CATEGORY_METAL_BARS, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_METAL_BARS : TEXT_FIELD_MARSHAL_SNOWFALL_METAL_BARS, creature->GetGUID());
             break;
-        case RESOURCE_OPTION_HERBS:
-            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_HERBS);
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_HERBS : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_HERBS, creature->GetGUID());
+        case OPTION_HERBS:
+            SendResourceCategoryToPlayer(player, CATEGORY_HERBS, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_HERBS : TEXT_FIELD_MARSHAL_SNOWFALL_HERBS, creature->GetGUID());
             break;
-        case RESOURCE_OPTION_LEATHER_SKINS:
-            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_LEATHER_SKINS);
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_LEATHER_SKINS : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_LEATHER_SKINS, creature->GetGUID());
+        case OPTION_LEATHER_SKINS:
+            SendResourceCategoryToPlayer(player, CATEGORY_LEATHER_SKINS, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_LEATHER_SKINS : TEXT_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS, creature->GetGUID());
             break;
-        case RESOURCE_OPTION_BANDAGES:
-            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_BANDAGES);
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_BANDAGES : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_BANDAGES, creature->GetGUID());
+        case OPTION_BANDAGES:
+            SendResourceCategoryToPlayer(player, CATEGORY_BANDAGES, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_BANDAGES : TEXT_FIELD_MARSHAL_SNOWFALL_BANDAGES, creature->GetGUID());
             break;
-        default: // RESOURCE_OPTION_COOKED_GOODS
-            sWarEffortMgr->SendResourceCategoryToPlayer(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE, RESOURCE_CATEGORY_COOKED_GOODS);
-            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_GOSSIP_COOKED_GOODS : NPC_FIELD_MARSHAL_SNOWFALL_GOSSIP_COOKED_GOODS, creature->GetGUID());
+        default: // OPTION_COOKED_GOODS
+            SendResourceCategoryToPlayer(player, CATEGORY_COOKED_GOODS, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_COOKED_GOODS : TEXT_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS, creature->GetGUID());
             break;
         }
 
         return true;
+    }
+
+private:
+    void SendResourceCategoryToPlayer(Player* player, uint32 category, uint32 team)
+    {
+        std::vector<Resource> resources = sWarEffortMgr->GetResourceCategoryForTeam(category, team);
+
+        if (resources.size())
+        {
+            for (auto& resource : resources)
+            {
+                if (resource.state_current_amount)
+                {
+                    player->SendUpdateWorldState(resource.state_current_amount, resource.current_amount);
+                }
+
+                if (resource.state_required_amount && resource.required_amount)
+                {
+                    player->SendUpdateWorldState(resource.state_required_amount, resource.required_amount);
+                }
+            }
+        }
     }
 };
 
