@@ -66,12 +66,9 @@ void WarEffortMgr::Save()
 
     for (auto& resource : resources)
     {
-        uint32 world_state = resource.world_state;
-        uint32 current_amount = resource.current_amount;
-
-        if (world_state && current_amount)
+        if (resource.world_state && resource.current_amount)
         {
-            sWorld->setWorldState(world_state, current_amount);
+            sWorld->setWorldState(resource.world_state, resource.current_amount);
         }
     }
 }

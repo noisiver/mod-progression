@@ -65,6 +65,8 @@ public:
             }
         }
 
+        UpdateGameObjects(creature);
+
         return true;
     }
 
@@ -271,6 +273,275 @@ private:
         }
 
         return text_id;
+    }
+
+    uint8 GetCategory(uint32 creature_id)
+    {
+        switch (creature_id)
+        {
+        case NPC_SERGEANT_STONEBROW:
+        case NPC_CORPORAL_CARNES:
+        case NPC_DAME_TWINBRAID:
+        case NPC_MINER_CROMWELL:
+        case NPC_GRUNT_MAUG:
+        case NPC_SENIOR_SERGEANT_T_KELAH:
+            return CATEGORY_METAL_BARS;
+        case NPC_PRIVATE_DRAXLEGAUGE:
+        case NPC_MASTER_NIGHTSONG:
+        case NPC_SERGEANT_MAJOR_GERMAINE:
+        case NPC_HERBALIST_PROUDFEATHER:
+        case NPC_BATRIDER_PELE_KEIKI:
+        case NPC_APOTHECARY_JEZEL:
+            return CATEGORY_HERBS;
+        case NPC_BONNIE_STONEFLAYER:
+        case NPC_PRIVATE_PORTER:
+        case NPC_MARTA_FINESPINDLE:
+        case NPC_SKINNER_JAMANI:
+        case NPC_SERGEANT_UMALA:
+        case NPC_DOCTOR_SERRATUS:
+            return CATEGORY_LEATHER_SKINS;
+        case NPC_SENTINEL_SILVERSKY:
+        case NPC_NURSE_STONEFIELD:
+        case NPC_KEEPER_MOONSHADE:
+        case NPC_HEALER_LONGRUNNER:
+        case NPC_LADY_CALLOW:
+        case NPC_STONEGUARD_CLAYHOOF:
+            return CATEGORY_BANDAGES;
+        default:
+            return CATEGORY_COOKED_GOODS;
+        }
+    }
+
+    uint8 GetTeam(uint32 creature_id)
+    {
+        switch (creature_id)
+        {
+        case NPC_SERGEANT_STONEBROW:
+        case NPC_CORPORAL_CARNES:
+        case NPC_DAME_TWINBRAID:
+        case NPC_PRIVATE_DRAXLEGAUGE:
+        case NPC_MASTER_NIGHTSONG:
+        case NPC_SERGEANT_MAJOR_GERMAINE:
+        case NPC_BONNIE_STONEFLAYER:
+        case NPC_PRIVATE_PORTER:
+        case NPC_MARTA_FINESPINDLE:
+        case NPC_SENTINEL_SILVERSKY:
+        case NPC_NURSE_STONEFIELD:
+        case NPC_KEEPER_MOONSHADE:
+        case NPC_SLICKY_GASTRONOME:
+        case NPC_SARAH_SADWHISTLE:
+        case NPC_HUNTRESS_SWIFTRIVER:
+            return TEAM_ALLIANCE;
+        default:
+            return TEAM_HORDE;
+        }
+    }
+
+    double GetCurrentPercentage(uint8 category, uint8 team)
+    {
+        std::vector<Resource> resources = sWarEffortMgr->GetResourceCategoryForTeam(category, team);
+
+        if (resources.size())
+        {
+            uint32 current_amount = 0;
+            uint32 required_amount = 0;
+
+            for (auto& resource : resources)
+            {
+                if (!resource.required_amount)
+                {
+                    continue;
+                }
+
+                current_amount += resource.current_amount;
+                required_amount += resource.required_amount;
+            }
+
+            return double(current_amount) / double(required_amount) * 100;
+        }
+
+        return 0;
+    }
+
+    double GetRequiredPercentage(GameObject* go)
+    {
+        switch (go->GetEntry())
+        {
+        case GO_METAL_BARS_ALLIANCE_TIER_1:
+        case GO_METAL_BARS_HORDE_TIER_1:
+        case GO_HERBS_ALLIANCE_TIER_1:
+        case GO_HERBS_HORDE_TIER_1:
+        case GO_LEATHER_SKINS_ALLIANCE_TIER_1:
+        case GO_LEATHER_SKINS_HORDE_TIER_1:
+        case GO_BANDAGES_ALLIANCE_TIER_1:
+        case GO_BANDAGES_HORDE_TIER_1:
+        case GO_COOKED_GOODS_ALLIANCE_TIER_1:
+        case GO_COOKED_GOODS_HORDE_TIER_1:
+            return 20;
+        case GO_METAL_BARS_ALLIANCE_TIER_2:
+        case GO_METAL_BARS_HORDE_TIER_2:
+        case GO_HERBS_ALLIANCE_TIER_2:
+        case GO_HERBS_HORDE_TIER_2:
+        case GO_LEATHER_SKINS_ALLIANCE_TIER_2:
+        case GO_LEATHER_SKINS_HORDE_TIER_2:
+        case GO_BANDAGES_ALLIANCE_TIER_2:
+        case GO_BANDAGES_HORDE_TIER_2:
+        case GO_COOKED_GOODS_ALLIANCE_TIER_2:
+        case GO_COOKED_GOODS_HORDE_TIER_2:
+            return 40;
+        case GO_METAL_BARS_ALLIANCE_TIER_3:
+        case GO_METAL_BARS_HORDE_TIER_3:
+        case GO_HERBS_ALLIANCE_TIER_3:
+        case GO_HERBS_HORDE_TIER_3:
+        case GO_LEATHER_SKINS_ALLIANCE_TIER_3:
+        case GO_LEATHER_SKINS_HORDE_TIER_3:
+        case GO_BANDAGES_ALLIANCE_TIER_3:
+        case GO_BANDAGES_HORDE_TIER_3:
+        case GO_COOKED_GOODS_ALLIANCE_TIER_3:
+        case GO_COOKED_GOODS_HORDE_TIER_3:
+            return 60;
+        case GO_METAL_BARS_ALLIANCE_TIER_4:
+        case GO_METAL_BARS_HORDE_TIER_4:
+        case GO_HERBS_ALLIANCE_TIER_4:
+        case GO_HERBS_HORDE_TIER_4:
+        case GO_LEATHER_SKINS_ALLIANCE_TIER_4:
+        case GO_LEATHER_SKINS_HORDE_TIER_4:
+        case GO_BANDAGES_ALLIANCE_TIER_4:
+        case GO_BANDAGES_HORDE_TIER_4:
+        case GO_COOKED_GOODS_ALLIANCE_TIER_4:
+        case GO_COOKED_GOODS_HORDE_TIER_4:
+            return 80;
+        default:
+            return 100;
+        }
+    }
+
+    std::vector<uint32> GetResourceObjects(uint32 creature_id)
+    {
+        std::vector<uint32> object_ids;
+
+        switch (creature_id)
+        {
+        case NPC_SERGEANT_STONEBROW:
+        case NPC_CORPORAL_CARNES:
+        case NPC_DAME_TWINBRAID:
+            object_ids.push_back(GO_METAL_BARS_ALLIANCE_TIER_1);
+            object_ids.push_back(GO_METAL_BARS_ALLIANCE_TIER_2);
+            object_ids.push_back(GO_METAL_BARS_ALLIANCE_TIER_3);
+            object_ids.push_back(GO_METAL_BARS_ALLIANCE_TIER_4);
+            object_ids.push_back(GO_METAL_BARS_ALLIANCE_TIER_5);
+            break;
+        case NPC_PRIVATE_DRAXLEGAUGE:
+        case NPC_MASTER_NIGHTSONG:
+        case NPC_SERGEANT_MAJOR_GERMAINE:
+            object_ids.push_back(GO_HERBS_ALLIANCE_TIER_1);
+            object_ids.push_back(GO_HERBS_ALLIANCE_TIER_2);
+            object_ids.push_back(GO_HERBS_ALLIANCE_TIER_3);
+            object_ids.push_back(GO_HERBS_ALLIANCE_TIER_4);
+            object_ids.push_back(GO_HERBS_ALLIANCE_TIER_5);
+            break;
+        case NPC_BONNIE_STONEFLAYER:
+        case NPC_PRIVATE_PORTER:
+        case NPC_MARTA_FINESPINDLE:
+            object_ids.push_back(GO_LEATHER_SKINS_ALLIANCE_TIER_1);
+            object_ids.push_back(GO_LEATHER_SKINS_ALLIANCE_TIER_2);
+            object_ids.push_back(GO_LEATHER_SKINS_ALLIANCE_TIER_3);
+            object_ids.push_back(GO_LEATHER_SKINS_ALLIANCE_TIER_4);
+            object_ids.push_back(GO_LEATHER_SKINS_ALLIANCE_TIER_5);
+            break;
+        case NPC_SENTINEL_SILVERSKY:
+        case NPC_NURSE_STONEFIELD:
+        case NPC_KEEPER_MOONSHADE:
+            object_ids.push_back(GO_BANDAGES_ALLIANCE_TIER_1);
+            object_ids.push_back(GO_BANDAGES_ALLIANCE_TIER_2);
+            object_ids.push_back(GO_BANDAGES_ALLIANCE_TIER_3);
+            object_ids.push_back(GO_BANDAGES_ALLIANCE_TIER_4);
+            object_ids.push_back(GO_BANDAGES_ALLIANCE_TIER_5);
+            break;
+        case NPC_SLICKY_GASTRONOME:
+        case NPC_SARAH_SADWHISTLE:
+        case NPC_HUNTRESS_SWIFTRIVER:
+            object_ids.push_back(GO_COOKED_GOODS_ALLIANCE_TIER_1);
+            object_ids.push_back(GO_COOKED_GOODS_ALLIANCE_TIER_2);
+            object_ids.push_back(GO_COOKED_GOODS_ALLIANCE_TIER_3);
+            object_ids.push_back(GO_COOKED_GOODS_ALLIANCE_TIER_4);
+            object_ids.push_back(GO_COOKED_GOODS_ALLIANCE_TIER_5);
+            break;
+        case NPC_MINER_CROMWELL:
+        case NPC_GRUNT_MAUG:
+        case NPC_SENIOR_SERGEANT_T_KELAH:
+            object_ids.push_back(GO_METAL_BARS_HORDE_TIER_1);
+            object_ids.push_back(GO_METAL_BARS_HORDE_TIER_2);
+            object_ids.push_back(GO_METAL_BARS_HORDE_TIER_3);
+            object_ids.push_back(GO_METAL_BARS_HORDE_TIER_4);
+            object_ids.push_back(GO_METAL_BARS_HORDE_TIER_5);
+            break;
+        case NPC_HERBALIST_PROUDFEATHER:
+        case NPC_BATRIDER_PELE_KEIKI:
+        case NPC_APOTHECARY_JEZEL:
+            object_ids.push_back(GO_HERBS_HORDE_TIER_1);
+            object_ids.push_back(GO_HERBS_HORDE_TIER_2);
+            object_ids.push_back(GO_HERBS_HORDE_TIER_3);
+            object_ids.push_back(GO_HERBS_HORDE_TIER_4);
+            object_ids.push_back(GO_HERBS_HORDE_TIER_5);
+            break;
+        case NPC_SKINNER_JAMANI:
+        case NPC_SERGEANT_UMALA:
+        case NPC_DOCTOR_SERRATUS:
+            object_ids.push_back(GO_LEATHER_SKINS_HORDE_TIER_1);
+            object_ids.push_back(GO_LEATHER_SKINS_HORDE_TIER_2);
+            object_ids.push_back(GO_LEATHER_SKINS_HORDE_TIER_3);
+            object_ids.push_back(GO_LEATHER_SKINS_HORDE_TIER_4);
+            object_ids.push_back(GO_LEATHER_SKINS_HORDE_TIER_5);
+            break;
+        case NPC_HEALER_LONGRUNNER:
+        case NPC_LADY_CALLOW:
+        case NPC_STONEGUARD_CLAYHOOF:
+            object_ids.push_back(GO_BANDAGES_HORDE_TIER_1);
+            object_ids.push_back(GO_BANDAGES_HORDE_TIER_2);
+            object_ids.push_back(GO_BANDAGES_HORDE_TIER_3);
+            object_ids.push_back(GO_BANDAGES_HORDE_TIER_4);
+            object_ids.push_back(GO_BANDAGES_HORDE_TIER_5);
+            break;
+        default:
+            object_ids.push_back(GO_COOKED_GOODS_HORDE_TIER_1);
+            object_ids.push_back(GO_COOKED_GOODS_HORDE_TIER_2);
+            object_ids.push_back(GO_COOKED_GOODS_HORDE_TIER_3);
+            object_ids.push_back(GO_COOKED_GOODS_HORDE_TIER_4);
+            object_ids.push_back(GO_COOKED_GOODS_HORDE_TIER_5);
+            break;
+        }
+
+        return object_ids;
+    }
+
+    void UpdateGameObjects(Creature* creature)
+    {
+        uint8 category = GetCategory(creature->GetEntry());
+        uint8 team = GetTeam(creature->GetEntry());
+        std::vector<uint32> object_ids = GetResourceObjects(creature->GetEntry());
+
+        if (object_ids.size())
+        {
+            double current_percentage = GetCurrentPercentage(category, team);
+
+            for (auto& id : object_ids)
+            {
+                if (GameObject* go = creature->FindNearestGameObject(id, 25.0f))
+                {
+                    double required_percentage = GetRequiredPercentage(go);
+                    if (current_percentage >= required_percentage)
+                    {
+                        if (!go->isSpawned())
+                        {
+                            go->SetRespawnTime(RESPAWN_IMMEDIATELY);
+                            go->Respawn();
+                            go->UpdateObjectVisibility();
+                        }
+                    }
+                }
+            }
+        }
     }
 };
 
