@@ -218,6 +218,32 @@ uint32 WarEffortMgr::GetCreatureStateId(uint32 creature_id)
     return 0;
 }
 
+uint8 WarEffortMgr::GetResourceTeam(uint32 state_id)
+{
+    for (auto& resource : resources)
+    {
+        if (resource.state_id == state_id)
+        {
+            return resource.team_id;
+        }
+    }
+
+    return 0;
+}
+
+uint8 WarEffortMgr::GetResourceCategory(uint32 state_id)
+{
+    for (auto& resource : resources)
+    {
+        if (resource.state_id == state_id)
+        {
+            return resource.category_id;
+        }
+    }
+
+    return 0;
+}
+
 void WarEffortMgr::AddResource(uint32 state_id, uint32 value)
 {
     for (int i = 0; i < resources.size(); i++)
@@ -256,6 +282,92 @@ void WarEffortMgr::SendResourceToPlayer(Player* player, uint32 state_id)
             player->SendUpdateWorldState(resource.current_id, resource.current_amount);
             player->SendUpdateWorldState(resource.required_id, resource.required_amount);
             break;
+        }
+    }
+}
+
+double WarEffortMgr::GetResourceCompletedPercentage(uint8 team_id, uint8 category_id)
+{
+    uint32 current_amount = 0;
+    uint32 required_amount = 0;
+    double percentage = 0;
+
+    for (auto& resource : resources)
+    {
+        if (resource.team_id == team_id && resource.category_id == category_id)
+        {
+            current_amount += resource.current_amount;
+            required_amount += resource.required_amount;
+        }
+    }
+
+    if (required_amount)
+    {
+        percentage = double(current_amount) / double(required_amount) * 100;
+    }
+
+    return percentage;
+}
+
+void WarEffortMgr::UpdateResourceGameObject(GameObject* go)
+{
+    for (auto& object : objects)
+    {
+        if (object.object_id == go->GetEntry())
+        {
+            double percentage = GetResourceCompletedPercentage(object.team_id, object.category_id);
+
+            if (percentage < object.required_percentage)
+            {
+                if (go->isSpawned())
+                {
+                    go->SetRespawnTime(365 * RESPAWN_ONE_DAY);
+                    go->DespawnOrUnsummon();
+                }
+            }
+            else
+            {
+                if (!go->isSpawned())
+                {
+                    go->SetRespawnTime(RESPAWN_IMMEDIATELY);
+                    go->Respawn();
+                    go->UpdateObjectVisibility();
+                }
+            }
+
+            break;
+        }
+    }
+}
+
+void WarEffortMgr::UpdateResourceGameObjectsNearCreature(Creature* creature, uint8 team_id, uint8 category_id)
+{
+    for (auto& object : objects)
+    {
+        if (object.team_id == team_id && object.category_id == category_id)
+        {
+            if (GameObject* go = creature->FindNearestGameObject(object.object_id, 25.0f))
+            {
+                double percentage = GetResourceCompletedPercentage(object.team_id, object.category_id);
+
+                if (percentage < object.required_percentage)
+                {
+                    if (go->isSpawned())
+                    {
+                        go->SetRespawnTime(365 * RESPAWN_ONE_DAY);
+                        go->DespawnOrUnsummon();
+                    }
+                }
+                else
+                {
+                    if (!go->isSpawned())
+                    {
+                        go->SetRespawnTime(RESPAWN_IMMEDIATELY);
+                        go->Respawn();
+                        go->UpdateObjectVisibility();
+                    }
+                }
+            }
         }
     }
 }

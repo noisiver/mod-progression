@@ -40,8 +40,11 @@ public:
 
         uint32 rewarded_amount = quest->RequiredItemCount[0];
         uint32 state_id = sWarEffortMgr->GetCreatureStateId(creature->GetEntry());
+        uint8 team_id = sWarEffortMgr->GetResourceTeam(state_id);
+        uint8 category_id = sWarEffortMgr->GetResourceCategory(state_id);
 
         sWarEffortMgr->AddResource(state_id, rewarded_amount);
+        sWarEffortMgr->UpdateResourceGameObjectsNearCreature(creature, team_id, category_id);
 
         if (sWarEffortMgr->IsResourceComplete(state_id))
         {

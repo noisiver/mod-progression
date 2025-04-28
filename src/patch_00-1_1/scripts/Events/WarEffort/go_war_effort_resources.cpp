@@ -64,7 +64,7 @@ public:
             return;
         }
 
-        //sWarEffortMgr->UpdateGameObject(go);
+        sWarEffortMgr->UpdateResourceGameObject(go);
     }
 };
 

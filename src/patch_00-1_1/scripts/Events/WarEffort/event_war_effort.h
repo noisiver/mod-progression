@@ -196,13 +196,11 @@ enum
     NPC_CHIEF_SHARPCLAW_GOSSIP_COMPLETE             = 7930,
 
     // Metal Bars
-    GO_RESOURCES_METAL_BARS_ALLIANCE_INITIAL        = 180680,
     GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_1         = 180780,
     GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_2         = 180781,
     GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_3         = 180782,
     GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_4         = 180783,
     GO_RESOURCES_METAL_BARS_ALLIANCE_TIER_5         = 180784,
-    GO_RESOURCES_METAL_BARS_HORDE_INITIAL           = 180838,
     GO_RESOURCES_METAL_BARS_HORDE_TIER_1            = 180839,
     GO_RESOURCES_METAL_BARS_HORDE_TIER_2            = 180840,
     GO_RESOURCES_METAL_BARS_HORDE_TIER_3            = 180841,
@@ -210,13 +208,11 @@ enum
     GO_RESOURCES_METAL_BARS_HORDE_TIER_5            = 180843,
 
     // Herbs
-    GO_RESOURCES_HERBS_ALLIANCE_INITIAL             = 180679,
     GO_RESOURCES_HERBS_ALLIANCE_TIER_1              = 180801,
     GO_RESOURCES_HERBS_ALLIANCE_TIER_2              = 180802,
     GO_RESOURCES_HERBS_ALLIANCE_TIER_3              = 180803,
     GO_RESOURCES_HERBS_ALLIANCE_TIER_4              = 180804,
     GO_RESOURCES_HERBS_ALLIANCE_TIER_5              = 180805,
-    GO_RESOURCES_HERBS_HORDE_INITIAL                = 180818,
     GO_RESOURCES_HERBS_HORDE_TIER_1                 = 180819,
     GO_RESOURCES_HERBS_HORDE_TIER_2                 = 180820,
     GO_RESOURCES_HERBS_HORDE_TIER_3                 = 180821,
@@ -224,13 +220,11 @@ enum
     GO_RESOURCES_HERBS_HORDE_TIER_5                 = 180823,
 
     // Leather Skins
-    GO_RESOURCES_LEATHER_SKINS_ALLIANCE_INITIAL     = 180681,
     GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_1      = 180692,
     GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_2      = 180693,
     GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_3      = 180694,
     GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_4      = 180695,
     GO_RESOURCES_LEATHER_SKINS_ALLIANCE_TIER_5      = 180696,
-    GO_RESOURCES_LEATHER_SKINS_HORDE_INITIAL        = 180812,
     GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_1         = 180813,
     GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_2         = 180814,
     GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_3         = 180815,
@@ -238,13 +232,11 @@ enum
     GO_RESOURCES_LEATHER_SKINS_HORDE_TIER_5         = 180817,
 
     // Bandages
-    GO_RESOURCES_BANDAGES_ALLIANCE_INITIAL          = 180598,
     GO_RESOURCES_BANDAGES_ALLIANCE_TIER_1           = 180674,
     GO_RESOURCES_BANDAGES_ALLIANCE_TIER_2           = 180675,
     GO_RESOURCES_BANDAGES_ALLIANCE_TIER_3           = 180676,
     GO_RESOURCES_BANDAGES_ALLIANCE_TIER_4           = 180677,
     GO_RESOURCES_BANDAGES_ALLIANCE_TIER_5           = 180678,
-    GO_RESOURCES_BANDAGES_HORDE_INITIAL             = 180826,
     GO_RESOURCES_BANDAGES_HORDE_TIER_1              = 180827,
     GO_RESOURCES_BANDAGES_HORDE_TIER_2              = 180828,
     GO_RESOURCES_BANDAGES_HORDE_TIER_3              = 180829,
@@ -257,7 +249,6 @@ enum
     GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_3       = 180807,
     GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_4       = 180808,
     GO_RESOURCES_COOKED_GOODS_ALLIANCE_TIER_5       = 180809,
-    GO_RESOURCES_COOKED_GOODS_HORDE_INITIAL         = 180832,
     GO_RESOURCES_COOKED_GOODS_HORDE_TIER_1          = 180833,
     GO_RESOURCES_COOKED_GOODS_HORDE_TIER_2          = 180834,
     GO_RESOURCES_COOKED_GOODS_HORDE_TIER_3          = 180835,
@@ -488,9 +479,13 @@ public:
     bool IsResourceCollectionComplete();
     uint32 GetCreatureTextId(uint32 /*creature_id*/);
     uint32 GetCreatureStateId(uint32 /*creature_id*/);
-    //double GetResourceCategoryPercentage(uint8 /*team_id*/, uint8 /*category_id*/);
+    uint8 GetResourceTeam(uint32 /*state_id*/);
+    uint8 GetResourceCategory(uint32 /*state_id*/);
     void SendResourceCategoryToPlayer(Player* /*player*/, uint8 /*team_id*/, uint8 /*category_id*/);
     void SendResourceToPlayer(Player* /*player*/, uint32 /*state_id*/);
+    double GetResourceCompletedPercentage(uint8 /*team_id*/, uint8 /*category_id*/);
+    void UpdateResourceGameObject(GameObject* /*go*/);
+    void UpdateResourceGameObjectsNearCreature(Creature* /*creature*/, uint8 /*team_id*/, uint8 /*category_id*/);
 
 private:
     uint8 stage;
