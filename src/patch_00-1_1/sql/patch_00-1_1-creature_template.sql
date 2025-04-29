@@ -24,8 +24,6 @@ UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN (16222, 16733, 24996, 24997, 24998, 25007, 25021, 25022, 25023, 25024);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (16802, 17468);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73, `Scale` = 1, `BaseAttackTime` = 800, `flags_extra` = `flags_extra` | 1, `ScriptName` = '' WHERE `entry` = 12397;
-UPDATE `creature_template` SET `ScriptName` = 'npc_war_effort_commander' WHERE `entry` IN (15700, 15701);
-UPDATE `creature_template` SET `ScriptName` = 'npc_war_effort_ambassador' WHERE `entry` IN (15458, 15539);
-UPDATE `creature_template` SET `ScriptName` = 'npc_war_effort_collector' WHERE `entry` IN (15383, 15431, 15432, 15434, 15437, 15445, 15446, 15448, 15450, 15451, 15452, 15453, 15455, 15456, 15457, 15459, 15460, 15469, 15477, 15508, 15512, 15515, 15522, 15525, 15528, 15529, 15532, 15533, 15534, 15535);
-UPDATE `creature_template` SET `npcflag` = `npcflag` | 1 WHERE `entry` IN (15458, 15539);
-UPDATE `creature_template` SET `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 15458;
+UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15383, 15431, 15432, 15434, 15437, 15445, 15446, 15448, 15450, 15451, 15452, 15453, 15455, 15456, 15457, 15458, 15459, 15460, 15469, 15477, 15508, 15512, 15515, 15522, 15525, 15528, 15529, 15532, 15533, 15534, 15535, 15539, 15700, 15701);
+UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (15458, 15539);
+UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;

@@ -9,7 +9,6 @@ enum Events
 enum Stages
 {
     STAGE_RESOURCE_COLLECTION                               = 0,
-    STAGE_TRANSITION_DAY_0,
     STAGE_TRANSITION_DAY_1,
     STAGE_TRANSITION_DAY_2,
     STAGE_TRANSITION_DAY_3,
@@ -172,7 +171,9 @@ enum GameObjects
     GO_COOKED_GOODS_HORDE_TIER_2                            = 180834,
     GO_COOKED_GOODS_HORDE_TIER_3                            = 180835,
     GO_COOKED_GOODS_HORDE_TIER_4                            = 180836,
-    GO_COOKED_GOODS_HORDE_TIER_5                            = 180837
+    GO_COOKED_GOODS_HORDE_TIER_5                            = 180837,
+
+    MAX_RESOURCE_OBJECTS                                    = 50
 };
 
 struct Resource
@@ -194,16 +195,26 @@ public:
     void Init();
     void Update(uint32 /*diff*/);
     void Save();
+    void UpdateActiveStage();
+    void UpdateActiveEvent();
     uint8 GetStage() { return stage; }
     Resource GetResource(uint8 resource) { return resources[resource]; }
     std::vector<Resource> GetResourceCategoryForTeam(uint8 /*category*/, uint8 /*team*/);
     void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
     bool IsResourceCompleted(uint8 resource) { return !(resources[resource].current_amount < resources[resource].required_amount); }
+    bool IsResourceCollectionCompleted();
+    void AddGameObject(uint8 id, GameObject* go) { resourceObjects[id] = go; }
+    bool IsGameObjectActive(uint32 /*entry*/);
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
     std::vector<Resource> resources;
     Milliseconds timer = 0s;
+    Seconds currentGameTime = 0s;
+    Seconds nextTransition = 0s;
+    GameObject* resourceObjects[MAX_RESOURCE_OBJECTS];
+
+    void UpdateGameObjects();
 };
 
 #define sWarEffortMgr WarEffortMgr::instance()

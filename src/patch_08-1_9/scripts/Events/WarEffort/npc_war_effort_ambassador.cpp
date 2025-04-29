@@ -7,7 +7,7 @@
 
 enum GossipOptions
 {
-    OPTION_RETURN                               = 0,
+    OPTION_RETURN                                       = 0,
     OPTION_DESCRIPTION,
     OPTION_METAL_BARS,
     OPTION_HERBS,
@@ -18,21 +18,30 @@ enum GossipOptions
 
 enum Texts
 {
-    TEXT_COMMANDER_STRONGHAMMER_HELLO           = 7949,
-    TEXT_COMMANDER_STRONGHAMMER_DESCRIPTION     = 8071,
-    TEXT_COMMANDER_STRONGHAMMER_METAL_BARS      = 7951,
-    TEXT_COMMANDER_STRONGHAMMER_HERBS           = 7952,
-    TEXT_COMMANDER_STRONGHAMMER_LEATHER_SKINS   = 7953,
-    TEXT_COMMANDER_STRONGHAMMER_BANDAGES        = 7954,
-    TEXT_COMMANDER_STRONGHAMMER_COOKED_GOODS    = 7955,
+    TEXT_COMMANDER_STRONGHAMMER_UNFINISHED              = 7949,
+    TEXT_COMMANDER_STRONGHAMMER_FINISHED_ONE_DAY        = 55018,
+    TEXT_COMMANDER_STRONGHAMMER_FINISHED_MULTIPLE_DAYS  = 55017,
+    TEXT_COMMANDER_STRONGHAMMER_DESCRIPTION             = 8071,
+    TEXT_COMMANDER_STRONGHAMMER_METAL_BARS              = 7951,
+    TEXT_COMMANDER_STRONGHAMMER_HERBS                   = 7952,
+    TEXT_COMMANDER_STRONGHAMMER_LEATHER_SKINS           = 7953,
+    TEXT_COMMANDER_STRONGHAMMER_BANDAGES                = 7954,
+    TEXT_COMMANDER_STRONGHAMMER_COOKED_GOODS            = 7955,
 
-    TEXT_GENERAL_ZOG_HELLO                      = 7942,
-    TEXT_GENERAL_ZOG_DESCRIPTION                = 8209,
-    TEXT_GENERAL_ZOG_METAL_BARS                 = 7944,
-    TEXT_GENERAL_ZOG_HERBS                      = 7945,
-    TEXT_GENERAL_ZOG_LEATHER_SKINS              = 7946,
-    TEXT_GENERAL_ZOG_BANDAGES                   = 7947,
-    TEXT_GENERAL_ZOG_COOKED_GOODS               = 7948
+    TEXT_GENERAL_ZOG_UNFINISHED                         = 7942,
+    TEXT_GENERAL_ZOG_FINISHED_ONE_DAY                   = 55016,
+    TEXT_GENERAL_ZOG_FINISHED_MULTIPLE_DAYS             = 8006,
+    TEXT_GENERAL_ZOG_DESCRIPTION                        = 8209,
+    TEXT_GENERAL_ZOG_METAL_BARS                         = 7944,
+    TEXT_GENERAL_ZOG_HERBS                              = 7945,
+    TEXT_GENERAL_ZOG_LEATHER_SKINS                      = 7946,
+    TEXT_GENERAL_ZOG_BANDAGES                           = 7947,
+    TEXT_GENERAL_ZOG_COOKED_GOODS                       = 7948
+};
+
+enum DayStates
+{
+    STATE_RESOURCES_FINISHED                            = 2113
 };
 
 class npc_war_effort_ambassador : public CreatureScript
@@ -43,13 +52,24 @@ public:
     bool OnGossipHello(Player* player, Creature* creature) override
     {
         ClearGossipMenuFor(player);
+
+        uint32 text_id = GetTextId(creature->GetEntry());
+
+        if (sWarEffortMgr->IsResourceCollectionCompleted() && sWarEffortMgr->GetStage() < STAGE_TRANSITION_DAY_5)
+        {
+            player->SendUpdateWorldState(STATE_RESOURCES_FINISHED, 6 - sWarEffortMgr->GetStage());
+        }
+
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_LEATHER_SKINS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_BANDAGES);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_COOKED_GOODS);
-        SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? TEXT_GENERAL_ZOG_HELLO : TEXT_COMMANDER_STRONGHAMMER_HELLO, creature->GetGUID());
+        if (!sWarEffortMgr->IsResourceCollectionCompleted())
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_LEATHER_SKINS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_BANDAGES);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_COOKED_GOODS);
+        }
+        SendGossipMenuFor(player, text_id, creature->GetGUID());
         return true;
     }
 
@@ -100,6 +120,22 @@ public:
     }
 
 private:
+    uint32 GetTextId(uint32 entry)
+    {
+        switch (sWarEffortMgr->GetStage())
+        {
+        case STAGE_TRANSITION_DAY_1:
+        case STAGE_TRANSITION_DAY_2:
+        case STAGE_TRANSITION_DAY_3:
+        case STAGE_TRANSITION_DAY_4:
+            return entry == NPC_GENERAL_ZOG ? TEXT_GENERAL_ZOG_FINISHED_MULTIPLE_DAYS : TEXT_COMMANDER_STRONGHAMMER_FINISHED_MULTIPLE_DAYS;
+        case STAGE_TRANSITION_DAY_5:
+            return entry == NPC_GENERAL_ZOG ? TEXT_GENERAL_ZOG_FINISHED_ONE_DAY : TEXT_COMMANDER_STRONGHAMMER_FINISHED_ONE_DAY;
+        default:
+            return entry == NPC_GENERAL_ZOG ? TEXT_GENERAL_ZOG_UNFINISHED : TEXT_COMMANDER_STRONGHAMMER_UNFINISHED;
+        }
+    }
+
     void SendResourceCategoryToPlayer(Player* player, uint32 category, uint32 team)
     {
         std::vector<Resource> resources = sWarEffortMgr->GetResourceCategoryForTeam(category, team);

@@ -7,7 +7,7 @@
 
 enum GossipOptions
 {
-    OPTION_RETURN                               = 0,
+    OPTION_RETURN                                       = 0,
     OPTION_DESCRIPTION,
     OPTION_METAL_BARS,
     OPTION_HERBS,
@@ -18,21 +18,31 @@ enum GossipOptions
 
 enum Texts
 {
-    TEXT_WARLORD_GORCHUK_HELLO                  = 8092,
-    TEXT_WARLORD_GORCHUK_DESCRIPTION            = 8209,
-    TEXT_WARLORD_GORCHUK_METAL_BARS             = 8096,
-    TEXT_WARLORD_GORCHUK_HERBS                  = 8097,
-    TEXT_WARLORD_GORCHUK_LEATHER_SKINS          = 8098,
-    TEXT_WARLORD_GORCHUK_BANDAGES               = 8099,
-    TEXT_WARLORD_GORCHUK_COOKED_GOODS           = 8100,
+    TEXT_WARLORD_GORCHUK_UNFINISHED                     = 8092,
+    TEXT_WARLORD_GORCHUK_FINISHED_ONE_DAY               = 55014,
+    TEXT_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS         = 8094,
+    TEXT_WARLORD_GORCHUK_DESCRIPTION                    = 8209,
+    TEXT_WARLORD_GORCHUK_METAL_BARS                     = 8096,
+    TEXT_WARLORD_GORCHUK_HERBS                          = 8097,
+    TEXT_WARLORD_GORCHUK_LEATHER_SKINS                  = 8098,
+    TEXT_WARLORD_GORCHUK_BANDAGES                       = 8099,
+    TEXT_WARLORD_GORCHUK_COOKED_GOODS                   = 8100,
 
-    TEXT_FIELD_MARSHAL_SNOWFALL_HELLO           = 8082,
-    TEXT_FIELD_MARSHAL_SNOWFALL_DESCRIPTION     = 8071,
-    TEXT_FIELD_MARSHAL_SNOWFALL_METAL_BARS      = 8087,
-    TEXT_FIELD_MARSHAL_SNOWFALL_HERBS           = 8088,
-    TEXT_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS   = 8089,
-    TEXT_FIELD_MARSHAL_SNOWFALL_BANDAGES        = 8090,
-    TEXT_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS    = 8091
+    TEXT_FIELD_MARSHAL_SNOWFALL_UNFINISHED              = 8082,
+    TEXT_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY        = 55015,
+    TEXT_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS  = 8084,
+    TEXT_FIELD_MARSHAL_SNOWFALL_HELLO                   = 8082,
+    TEXT_FIELD_MARSHAL_SNOWFALL_DESCRIPTION             = 8071,
+    TEXT_FIELD_MARSHAL_SNOWFALL_METAL_BARS              = 8087,
+    TEXT_FIELD_MARSHAL_SNOWFALL_HERBS                   = 8088,
+    TEXT_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS           = 8089,
+    TEXT_FIELD_MARSHAL_SNOWFALL_BANDAGES                = 8090,
+    TEXT_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS            = 8091
+};
+
+enum DayStates
+{
+    STATE_RESOURCES_FINISHED                            = 2113
 };
 
 class npc_war_effort_commander : public CreatureScript
@@ -50,13 +60,23 @@ public:
             player->SendPreparedQuest(creature->GetGUID());
         }
 
+        uint32 text_id = GetTextId(creature->GetEntry());
+
+        if (sWarEffortMgr->IsResourceCollectionCompleted() && sWarEffortMgr->GetStage() < STAGE_TRANSITION_DAY_5)
+        {
+            player->SendUpdateWorldState(STATE_RESOURCES_FINISHED, 6 - sWarEffortMgr->GetStage());
+        }
+
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_LEATHER_SKINS);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_BANDAGES);
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_COOKED_GOODS);
-        SendGossipMenuFor(player, creature->GetEntry() == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_HELLO : TEXT_FIELD_MARSHAL_SNOWFALL_HELLO, creature->GetGUID());
+        if (!sWarEffortMgr->IsResourceCollectionCompleted())
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many leather skins have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_LEATHER_SKINS);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many bandages have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_BANDAGES);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many cooked goods have the {} collected so far?", creature->GetEntry() == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_COOKED_GOODS);
+        }
+        SendGossipMenuFor(player, text_id, creature->GetGUID());
         return true;
     }
 
@@ -107,6 +127,22 @@ public:
     }
 
 private:
+    uint32 GetTextId(uint32 entry)
+    {
+        switch (sWarEffortMgr->GetStage())
+        {
+        case STAGE_TRANSITION_DAY_1:
+        case STAGE_TRANSITION_DAY_2:
+        case STAGE_TRANSITION_DAY_3:
+        case STAGE_TRANSITION_DAY_4:
+            return entry == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS : TEXT_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS;
+        case STAGE_TRANSITION_DAY_5:
+            return entry == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_FINISHED_ONE_DAY : TEXT_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY;
+        default:
+            return entry == NPC_WARLORD_GORCHUK ? TEXT_WARLORD_GORCHUK_UNFINISHED : TEXT_FIELD_MARSHAL_SNOWFALL_UNFINISHED;
+        }
+    }
+
     void SendResourceCategoryToPlayer(Player* player, uint32 category, uint32 team)
     {
         std::vector<Resource> resources = sWarEffortMgr->GetResourceCategoryForTeam(category, team);
