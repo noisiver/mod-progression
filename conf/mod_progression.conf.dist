@@ -132,31 +132,35 @@ Progression.PatchNotes.Enabled = 1
 #        Description: The number of items required to complete each part of the resource gathering for the War Effort
 #
 
-Progression.WarEffort.Metal.Copper            = 90000
-Progression.WarEffort.Metal.Tin               = 22000
-Progression.WarEffort.Metal.Mithril           = 18000
-Progression.WarEffort.Metal.Iron              = 28000
-Progression.WarEffort.Metal.Thorium           = 24000
-Progression.WarEffort.Herb.Peacebloom         = 96000
-Progression.WarEffort.Herb.Firebloom          = 19000
-Progression.WarEffort.Herb.PurpleLotus        = 26000
-Progression.WarEffort.Herb.Stranglekelp       = 33000
-Progression.WarEffort.Herb.ArthasTears        = 20000
-Progression.WarEffort.Leather.Light           = 180000
-Progression.WarEffort.Leather.Medium          = 110000
-Progression.WarEffort.Leather.Heavy           = 60000
-Progression.WarEffort.Leather.Thick           = 80000
-Progression.WarEffort.Leather.Rugged          = 60000
-Progression.WarEffort.Bandage.Linen           = 800000
-Progression.WarEffort.Bandage.Wool            = 250000
-Progression.WarEffort.Bandage.Mageweave       = 250000
-Progression.WarEffort.Bandage.Runecloth       = 400000
-Progression.WarEffort.Bandage.Silk            = 600000
-Progression.WarEffort.Food.LeanWolfSteak      = 10000
-Progression.WarEffort.Food.SpottedYellowtail  = 17000
-Progression.WarEffort.Food.BakedSalmon        = 10000
-Progression.WarEffort.Food.RainbowFinAlbacore = 14000
-Progression.WarEffort.Food.RoastRaptor        = 20000
+Progression.WarEffort.CopperBar.Required          = 90000
+Progression.WarEffort.IronBar.Required            = 28000
+Progression.WarEffort.ThoriumBar.Required         = 24000
+Progression.WarEffort.TinBar.Required             = 22000
+Progression.WarEffort.MithrilBar.Required         = 18000
+
+Progression.WarEffort.Stranglekelp.Required       = 33000
+Progression.WarEffort.PurpleLotus.Required        = 26000
+Progression.WarEffort.ArthasTears.Required        = 20000
+Progression.WarEffort.Peacebloom.Required         = 96000
+Progression.WarEffort.Firebloom.Required          = 19000
+
+Progression.WarEffort.LightLeather.Required       = 180000
+Progression.WarEffort.MediumLeather.Required      = 110000
+Progression.WarEffort.ThickLeather.Required       = 80000
+Progression.WarEffort.HeavyLeather.Required       = 60000
+Progression.WarEffort.RuggedLeather.Required      = 60000
+
+Progression.WarEffort.LinenBandage.Required       = 800000
+Progression.WarEffort.SilkBandage.Required        = 600000
+Progression.WarEffort.RuneclothBandage.Required   = 400000
+Progression.WarEffort.WoolBandage.Required        = 250000
+Progression.WarEffort.MageweaveBandage.Required   = 250000
+
+Progression.WarEffort.RainbowFinAlbacore.Required = 14000
+Progression.WarEffort.RoastRaptor.Required        = 20000
+Progression.WarEffort.SpottedYellowtail.Required  = 17000
+Progression.WarEffort.LeanWolfSteak.Required      = 10000
+Progression.WarEffort.BakedSalmon.Required        = 10000
 
 #
 ###################################################################################################
