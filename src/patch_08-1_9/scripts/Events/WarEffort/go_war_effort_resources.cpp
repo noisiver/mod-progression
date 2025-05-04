@@ -117,7 +117,6 @@ public:
         {
             if (go->isSpawned())
             {
-                go->SetRespawnTime(365 * DAY);
                 go->DespawnOrUnsummon();
             }
         }
