@@ -16,6 +16,7 @@ void WarEffortMgr::Init()
 {
     stage = !sWorld->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE) ? STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE);
     nextTransition = !sWorld->getWorldState(WORLD_STATE_NEXT_TRANSITION) ? Seconds(0) : Seconds(sWorld->getWorldState(WORLD_STATE_NEXT_TRANSITION));
+    minutesPerTransition = sConfigMgr->GetOption<uint32>("Progression.WarEFfort.Transition.Minutes", 1440);
 
     for (int i = 0; i < MAX_RESOURCES; i++)
     {
@@ -65,7 +66,7 @@ void WarEffortMgr::Update(uint32 diff)
 {
     timer += Milliseconds(diff);
 
-    if (timer > 10s)
+    if (timer > 5min)
     {
         UpdateActiveStage();
         UpdateActiveEvents();
@@ -104,7 +105,7 @@ void WarEffortMgr::UpdateActiveStage()
         if (IsResourceCollectionCompleted())
         {
             stage = STAGE_TRANSITION_DAY_1;
-            nextTransition = currentGameTime + Seconds(30);
+            nextTransition = currentGameTime + Seconds(minutesPerTransition * MINUTE);
         }
     }
     else if (stage <= STAGE_TRANSITION_DAY_5)
@@ -112,7 +113,7 @@ void WarEffortMgr::UpdateActiveStage()
         if (currentGameTime > nextTransition)
         {
             stage++;
-            nextTransition = currentGameTime + Seconds(30);
+            nextTransition = currentGameTime + Seconds(minutesPerTransition * MINUTE);
         }
     }
 }

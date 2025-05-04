@@ -224,6 +224,7 @@ private:
     Milliseconds timer = 0s;
     Seconds currentGameTime = 0s;
     Seconds nextTransition = 0s;
+    uint32 minutesPerTransition = 1440;
     uint32 resources[MAX_RESOURCES][MAX_COLUMNS] = {
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 90000, 1997, 1998, 50002 }, // Copper Bar
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 28000, 2002, 2003, 50003 }, // Iron Bar
