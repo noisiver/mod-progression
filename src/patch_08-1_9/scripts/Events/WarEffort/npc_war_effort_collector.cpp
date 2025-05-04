@@ -4,60 +4,6 @@
 
 #include "event_war_effort.h"
 
-enum
-{
-    GO_BANDAGES_ALLIANCE_TIER_1     = 180674,
-    GO_BANDAGES_ALLIANCE_TIER_2     = 180675,
-    GO_BANDAGES_ALLIANCE_TIER_3     = 180676,
-    GO_BANDAGES_ALLIANCE_TIER_4     = 180677,
-    GO_BANDAGES_ALLIANCE_TIER_5     = 180678,
-    GO_SKINS_ALLIANCE_TIER_1        = 180692,
-    GO_SKINS_ALLIANCE_TIER_2        = 180693,
-    GO_SKINS_ALLIANCE_TIER_3        = 180694,
-    GO_SKINS_ALLIANCE_TIER_4        = 180695,
-    GO_SKINS_ALLIANCE_TIER_5        = 180696,
-    GO_BARS_ALLIANCE_TIER_1         = 180780,
-    GO_BARS_ALLIANCE_TIER_2         = 180781,
-    GO_BARS_ALLIANCE_TIER_3         = 180782,
-    GO_BARS_ALLIANCE_TIER_4         = 180783,
-    GO_BARS_ALLIANCE_TIER_5         = 180784,
-    GO_COOKING_ALLIANCE_TIER_1      = 180800,
-    GO_HERBS_ALLIANCE_TIER_1        = 180801,
-    GO_HERBS_ALLIANCE_TIER_2        = 180802,
-    GO_HERBS_ALLIANCE_TIER_3        = 180803,
-    GO_HERBS_ALLIANCE_TIER_4        = 180804,
-    GO_HERBS_ALLIANCE_TIER_5        = 180805,
-    GO_COOKING_ALLIANCE_TIER_2      = 180806,
-    GO_COOKING_ALLIANCE_TIER_3      = 180807,
-    GO_COOKING_ALLIANCE_TIER_4      = 180808,
-    GO_COOKING_ALLIANCE_TIER_5      = 180809,
-    GO_SKINS_HORDE_TIER_1           = 180813,
-    GO_SKINS_HORDE_TIER_2           = 180814,
-    GO_SKINS_HORDE_TIER_3           = 180815,
-    GO_SKINS_HORDE_TIER_4           = 180816,
-    GO_SKINS_HORDE_TIER_5           = 180817,
-    GO_HERBS_HORDE_TIER_1           = 180819,
-    GO_HERBS_HORDE_TIER_2           = 180820,
-    GO_HERBS_HORDE_TIER_3           = 180821,
-    GO_HERBS_HORDE_TIER_4           = 180822,
-    GO_HERBS_HORDE_TIER_5           = 180823,
-    GO_BANDAGES_HORDE_TIER_1        = 180827,
-    GO_BANDAGES_HORDE_TIER_2        = 180828,
-    GO_BANDAGES_HORDE_TIER_3        = 180829,
-    GO_BANDAGES_HORDE_TIER_4        = 180830,
-    GO_BANDAGES_HORDE_TIER_5        = 180831,
-    GO_COOKING_HORDE_TIER_1         = 180833,
-    GO_COOKING_HORDE_TIER_2         = 180834,
-    GO_COOKING_HORDE_TIER_3         = 180835,
-    GO_COOKING_HORDE_TIER_4         = 180836,
-    GO_COOKING_HORDE_TIER_5         = 180837,
-    GO_BARS_HORDE_TIER_1            = 180839,
-    GO_BARS_HORDE_TIER_2            = 180840,
-    GO_BARS_HORDE_TIER_3            = 180841,
-    GO_BARS_HORDE_TIER_4            = 180842,
-    GO_BARS_HORDE_TIER_5            = 180843
-};
-
 class npc_war_effort_collector : public CreatureScript
 {
 public:
@@ -73,11 +19,12 @@ public:
             player->SendPreparedQuest(creature->GetGUID());
         }
 
-        uint32 resource_id = GetResourceId(creature->GetSpawnId());
+        uint32 entry = creature->GetEntry();
+        uint32 resource_id = GetResourceId(entry);
         uint32 text_id = 0;
         bool resource_completed = sWarEffortMgr->IsResourceCompleted(resource_id);
 
-        switch (creature->GetSpawnId())
+        switch (entry)
         {
         case NPC_SERGEANT_STONEBROW:
             text_id = resource_completed ? 7823 : 7824;
@@ -187,7 +134,8 @@ public:
             return false;
         }
 
-        uint32 resource_id = GetResourceId(creature->GetSpawnId());
+        uint32 entry = creature->GetEntry();
+        uint32 resource_id = GetResourceId(entry);
         uint32 rewarded_amount = quest->RequiredItemCount[0];
 
         sWarEffortMgr->AddToResource(resource_id, rewarded_amount);
@@ -209,107 +157,125 @@ public:
         uint8 team_id = sWarEffortMgr->GetTeamForResource(resource_id);
         double current_percentage = sWarEffortMgr->GetResourceCategoryCompletionPercentage(category_id, team_id);
 
-        switch (creature->GetSpawnId())
+        std::vector<std::vector<int>> objects;
+
+        switch (creature->GetEntry())
         {
         case NPC_SERGEANT_STONEBROW:
         case NPC_CORPORAL_CARNES:
         case NPC_DAME_TWINBRAID:
-            HandleResourceObject(creature, GO_BARS_ALLIANCE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_BARS_ALLIANCE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_BARS_ALLIANCE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_BARS_ALLIANCE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_BARS_ALLIANCE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_METAL_BARS_ALLIANCE_TIER_1, 20 });
+            objects.push_back({ GO_METAL_BARS_ALLIANCE_TIER_2, 40 });
+            objects.push_back({ GO_METAL_BARS_ALLIANCE_TIER_3, 60 });
+            objects.push_back({ GO_METAL_BARS_ALLIANCE_TIER_4, 80 });
+            objects.push_back({ GO_METAL_BARS_ALLIANCE_TIER_5, 100 });
             break;
         case NPC_PRIVATE_DRAXLEGAUGE:
         case NPC_MASTER_NIGHTSONG:
         case NPC_SERGEANT_MAJOR_GERMAINE:
-            HandleResourceObject(creature, GO_HERBS_ALLIANCE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_HERBS_ALLIANCE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_HERBS_ALLIANCE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_HERBS_ALLIANCE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_HERBS_ALLIANCE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_HERBS_ALLIANCE_TIER_1, 20 });
+            objects.push_back({ GO_HERBS_ALLIANCE_TIER_2, 40 });
+            objects.push_back({ GO_HERBS_ALLIANCE_TIER_3, 60 });
+            objects.push_back({ GO_HERBS_ALLIANCE_TIER_4, 80 });
+            objects.push_back({ GO_HERBS_ALLIANCE_TIER_5, 100 });
             break;
         case NPC_BONNIE_STONEFLAYER:
         case NPC_PRIVATE_PORTER:
         case NPC_MARTA_FINESPINDLE:
-            HandleResourceObject(creature, GO_SKINS_ALLIANCE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_SKINS_ALLIANCE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_SKINS_ALLIANCE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_SKINS_ALLIANCE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_SKINS_ALLIANCE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_LEATHER_SKINS_ALLIANCE_TIER_1, 20 });
+            objects.push_back({ GO_LEATHER_SKINS_ALLIANCE_TIER_2, 40 });
+            objects.push_back({ GO_LEATHER_SKINS_ALLIANCE_TIER_3, 60 });
+            objects.push_back({ GO_LEATHER_SKINS_ALLIANCE_TIER_4, 80 });
+            objects.push_back({ GO_LEATHER_SKINS_ALLIANCE_TIER_5, 100 });
             break;
         case NPC_SENTINEL_SILVERSKY:
         case NPC_NURSE_STONEFIELD:
         case NPC_KEEPER_MOONSHADE:
-            HandleResourceObject(creature, GO_BANDAGES_ALLIANCE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_BANDAGES_ALLIANCE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_BANDAGES_ALLIANCE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_BANDAGES_ALLIANCE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_BANDAGES_ALLIANCE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_BANDAGES_ALLIANCE_TIER_1, 20 });
+            objects.push_back({ GO_BANDAGES_ALLIANCE_TIER_2, 40 });
+            objects.push_back({ GO_BANDAGES_ALLIANCE_TIER_3, 60 });
+            objects.push_back({ GO_BANDAGES_ALLIANCE_TIER_4, 80 });
+            objects.push_back({ GO_BANDAGES_ALLIANCE_TIER_5, 100 });
             break;
         case NPC_SLICKY_GASTRONOME:
         case NPC_SARAH_SADWHISTLE:
         case NPC_HUNTRESS_SWIFTRIVER:
-            HandleResourceObject(creature, GO_COOKING_ALLIANCE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_COOKING_ALLIANCE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_COOKING_ALLIANCE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_COOKING_ALLIANCE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_COOKING_ALLIANCE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_COOKED_GOODS_ALLIANCE_TIER_1, 20 });
+            objects.push_back({ GO_COOKED_GOODS_ALLIANCE_TIER_2, 40 });
+            objects.push_back({ GO_COOKED_GOODS_ALLIANCE_TIER_3, 60 });
+            objects.push_back({ GO_COOKED_GOODS_ALLIANCE_TIER_4, 80 });
+            objects.push_back({ GO_COOKED_GOODS_ALLIANCE_TIER_5, 100 });
             break;
         case NPC_MINER_CROMWELL:
         case NPC_GRUNT_MAUG:
         case NPC_SENIOR_SERGEANT_T_KELAH:
-            HandleResourceObject(creature, GO_BARS_HORDE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_BARS_HORDE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_BARS_HORDE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_BARS_HORDE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_BARS_HORDE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_METAL_BARS_HORDE_TIER_1, 20 });
+            objects.push_back({ GO_METAL_BARS_HORDE_TIER_2, 40 });
+            objects.push_back({ GO_METAL_BARS_HORDE_TIER_3, 60 });
+            objects.push_back({ GO_METAL_BARS_HORDE_TIER_4, 80 });
+            objects.push_back({ GO_METAL_BARS_HORDE_TIER_5, 100 });
             break;
         case NPC_HERBALIST_PROUDFEATHER:
         case NPC_BATRIDER_PELE_KEIKI:
         case NPC_APOTHECARY_JEZEL:
-            HandleResourceObject(creature, GO_HERBS_HORDE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_HERBS_HORDE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_HERBS_HORDE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_HERBS_HORDE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_HERBS_HORDE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_HERBS_HORDE_TIER_1, 20 });
+            objects.push_back({ GO_HERBS_HORDE_TIER_2, 40 });
+            objects.push_back({ GO_HERBS_HORDE_TIER_3, 60 });
+            objects.push_back({ GO_HERBS_HORDE_TIER_4, 80 });
+            objects.push_back({ GO_HERBS_HORDE_TIER_5, 100 });
             break;
         case NPC_SKINNER_JAMANI:
         case NPC_SERGEANT_UMALA:
         case NPC_DOCTOR_SERRATUS:
-            HandleResourceObject(creature, GO_SKINS_HORDE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_SKINS_HORDE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_SKINS_HORDE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_SKINS_HORDE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_SKINS_HORDE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_LEATHER_SKINS_HORDE_TIER_1, 20 });
+            objects.push_back({ GO_LEATHER_SKINS_HORDE_TIER_2, 40 });
+            objects.push_back({ GO_LEATHER_SKINS_HORDE_TIER_3, 60 });
+            objects.push_back({ GO_LEATHER_SKINS_HORDE_TIER_4, 80 });
+            objects.push_back({ GO_LEATHER_SKINS_HORDE_TIER_5, 100 });
             break;
         case NPC_HEALER_LONGRUNNER:
         case NPC_LADY_CALLOW:
         case NPC_STONEGUARD_CLAYHOOF:
-            HandleResourceObject(creature, GO_BANDAGES_HORDE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_BANDAGES_HORDE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_BANDAGES_HORDE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_BANDAGES_HORDE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_BANDAGES_HORDE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_BANDAGES_HORDE_TIER_1, 20 });
+            objects.push_back({ GO_BANDAGES_HORDE_TIER_2, 40 });
+            objects.push_back({ GO_BANDAGES_HORDE_TIER_3, 60 });
+            objects.push_back({ GO_BANDAGES_HORDE_TIER_4, 80 });
+            objects.push_back({ GO_BANDAGES_HORDE_TIER_5, 100 });
             break;
         case NPC_BLOODGUARD_RAWTAR:
         case NPC_FISHERMAN_LIN_DO:
         default: // NPC_CHIEF_SHARPCLAW
-            HandleResourceObject(creature, GO_COOKING_HORDE_TIER_1, current_percentage, 20);
-            HandleResourceObject(creature, GO_COOKING_HORDE_TIER_2, current_percentage, 40);
-            HandleResourceObject(creature, GO_COOKING_HORDE_TIER_3, current_percentage, 60);
-            HandleResourceObject(creature, GO_COOKING_HORDE_TIER_4, current_percentage, 80);
-            HandleResourceObject(creature, GO_COOKING_HORDE_TIER_5, current_percentage, 100);
+            objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_1, 20 });
+            objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_2, 40 });
+            objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_3, 60 });
+            objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_4, 80 });
+            objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_5, 100 });
             break;
+        }
+
+        for (auto& object : objects)
+        {
+            if (object[1] <= current_percentage)
+            {
+                if (GameObject* go = creature->FindNearestGameObject(object[0], 25.0f))
+                {
+                    if (!go->isSpawned())
+                    {
+                        go->SetRespawnTime(RESPAWN_IMMEDIATELY);
+                        go->Respawn();
+                        go->UpdateObjectVisibility();
+                    }
+                }
+            }
         }
 
         return true;
     }
 
 private:
-    uint32 GetResourceId(uint32 spawn_id)
+    uint32 GetResourceId(uint32 entry)
     {
-        switch (spawn_id)
+        switch (entry)
         {
         case NPC_SERGEANT_STONEBROW:
             return RESOURCE_COPPER_BARS_ALLIANCE;
@@ -371,22 +337,6 @@ private:
             return RESOURCE_SPOTTED_YELLOWTAIL_HORDE;
         default: // NPC_CHIEF_SHARPCLAW
             return RESOURCE_BAKED_SALMON;
-        }
-    }
-
-    void HandleResourceObject(Creature* creature, uint32 entry, double current_percentage, double required_percentage)
-    {
-        if (GameObject* go = creature->FindNearestGameObject(entry, 25.0f))
-        {
-            if (current_percentage >= required_percentage)
-            {
-                if (!go->isSpawned())
-                {
-                    go->SetRespawnTime(RESPAWN_IMMEDIATELY);
-                    go->Respawn();
-                    go->UpdateObjectVisibility();
-                }
-            }
         }
     }
 };
