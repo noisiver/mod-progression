@@ -125,7 +125,6 @@ void WarEffortMgr::UpdateActiveEvents()
         {
             if (sGameEventMgr->IsActiveEvent(events[i][0]))
             {
-                LOG_INFO("server.loading", "Stopping event {}", events[i][0]);
                 sGameEventMgr->StopEvent(events[i][0]);
             }
         }
@@ -133,7 +132,6 @@ void WarEffortMgr::UpdateActiveEvents()
         {
             if (!sGameEventMgr->IsActiveEvent(events[i][0]))
             {
-                LOG_INFO("server.loading", "Starting event {}", events[i][0]);
                 sGameEventMgr->StartEvent(events[i][0]);
             }
         }
@@ -183,6 +181,12 @@ bool WarEffortMgr::IsResourceCollectionCompleted()
     }
 
     return true;
+}
+
+void WarEffortMgr::SendResourceToPlayer(Player* player, uint32 resource)
+{
+    player->SendUpdateWorldState(resources[resource][COLUMN_PLAYER_STATE_CURRENT_AMOUNT], resources[resource][COLUMN_CURRENT_AMOUNT]);
+    player->SendUpdateWorldState(resources[resource][COLUMN_PLAYER_STATE_REQUIRED_AMOUNT], resources[resource][COLUMN_REQUIRED_AMOUNT]);
 }
 
 void WarEffortMgr::SendResourceCategoryForTeamToPlayer(Player* player, uint8 category, uint8 team)

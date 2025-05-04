@@ -211,9 +211,12 @@ public:
     uint8 GetStage() { return stage; }
     uint32* GetResource(uint8 resource) { return resources[resource]; }
     double GetResourceCategoryCompletionPercentage(uint8 /*category*/, uint8 /*team*/);
+    uint8 GetCategoryForResource(uint32 resource) { return resources[resource][COLUMN_CATEGORY]; }
+    uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_TEAM]; }
     void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
     bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_CURRENT_AMOUNT] < resources[resource][COLUMN_REQUIRED_AMOUNT]); }
     bool IsResourceCollectionCompleted();
+    void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourceCategoryForTeamToPlayer(Player* /*player*/, uint8 /*category*/, uint8 /*team*/);
 
 private:
