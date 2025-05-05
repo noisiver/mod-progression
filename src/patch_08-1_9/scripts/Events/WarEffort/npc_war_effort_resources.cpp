@@ -73,7 +73,8 @@ public:
             (creature->GetEntry() == NPC_STONEGUARD_CLAYHOOF && sWarEffortMgr->IsResourceCompleted(RESOURCE_RUNECLOTH_BANDAGE_HORDE)) ||
             (creature->GetEntry() == NPC_BLOODGUARD_RAWTAR && sWarEffortMgr->IsResourceCompleted(RESOURCE_LEAN_WOLF_STEAK)) ||
             (creature->GetEntry() == NPC_FISHERMAN_LIN_DO && sWarEffortMgr->IsResourceCompleted(RESOURCE_SPOTTED_YELLOWTAIL_HORDE)) ||
-            (creature->GetEntry() == NPC_CHIEF_SHARPCLAW && sWarEffortMgr->IsResourceCompleted(RESOURCE_BAKED_SALMON)))
+            (creature->GetEntry() == NPC_CHIEF_SHARPCLAW && sWarEffortMgr->IsResourceCompleted(RESOURCE_BAKED_SALMON)) ||
+            (sWarEffortMgr->GetStage() > STAGE_RESOURCE_COLLECTION))
         {
             if (creature->HasNpcFlag(UNIT_NPC_FLAG_QUESTGIVER))
             {

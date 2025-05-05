@@ -115,9 +115,12 @@ public:
             (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 80) ||
             (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 100))
         {
-            if (go->isSpawned())
+            if (sWarEffortMgr->GetStage() == STAGE_RESOURCE_COLLECTION)
             {
-                go->DespawnOrUnsummon();
+                if (go->isSpawned())
+                {
+                    go->DespawnOrUnsummon();
+                }
             }
         }
     }
