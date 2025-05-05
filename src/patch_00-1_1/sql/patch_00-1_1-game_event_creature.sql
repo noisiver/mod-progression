@@ -1,1 +1,1 @@
-DELETE FROM `game_event_creature` WHERE `eventEntry` IN (120, 121);
+DELETE FROM `game_event_creature` WHERE `eventEntry` IN (120, 121, 122);
