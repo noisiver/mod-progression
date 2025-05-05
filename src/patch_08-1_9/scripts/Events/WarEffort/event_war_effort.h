@@ -204,9 +204,10 @@ public:
     uint8 GetCategoryForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_CATEGORY]; }
     uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_TEAM]; }
     void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
+    void CheckResources();
     bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT]); }
-    bool IsResourceCollectionCompletedForTeam(uint8 /*team*/);
-    bool IsResourceCollectionCompleted();
+    bool IsResourceCollectionCompletedForTeam(uint8 team) { return teamFinished[team]; }
+    bool IsResourceCollectionCompleted() { return teamFinished[TEAM_ALLIANCE] && teamFinished[TEAM_HORDE]; }
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourceCategoryForTeamToPlayer(Player* /*player*/, uint8 /*category*/, uint8 /*team*/);
 
@@ -216,6 +217,7 @@ private:
     Seconds currentGameTime = 0s;
     Seconds nextTransition = 0s;
     uint32 minutesPerTransition = 1440;
+    bool teamFinished[2] = { false, false };
     uint32 resources[MAX_RESOURCES][MAX_RESOURCE_COLUMNS] = {
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 90000, 1997, 1998, 50002 }, // Copper Bar
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 28000, 2002, 2003, 50003 }, // Iron Bar
