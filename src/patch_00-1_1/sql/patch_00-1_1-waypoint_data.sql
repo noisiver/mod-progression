@@ -1,4 +1,4 @@
-DELETE FROM `waypoint_data` WHERE `id` IN (52000000, 53000020, 54000010, 54000020);
+DELETE FROM `waypoint_data` WHERE `id` IN (52000000, 53000020, 54000010, 54000020, 54000770);
 INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES
 (53000020, 0, 2325.58, -5372.62, 85.9003, NULL, 0, 0, 0, 100, 0),
 (53000020, 1, 2332.74, -5363.57, 84.2833, NULL, 0, 0, 0, 100, 0),
