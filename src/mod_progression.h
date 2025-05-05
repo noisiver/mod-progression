@@ -85,27 +85,27 @@ const std::string PatchNotes[PATCH_MAX][2] =
 
 enum
 {
-    AREA_ARGENT_TOURNAMENT_GROUNDS                  = 4658,
+    AREA_ARGENT_TOURNAMENT_GROUNDS = 4658,
 
-    SPELL_ICECROWN_CITADEL_NONE                     = 0,
-    SPELL_ICECROWN_CITADEL_5_H                      = 73816,
-    SPELL_ICECROWN_CITADEL_5_A                      = 73762,
-    SPELL_ICECROWN_CITADEL_10_H                     = 73818,
-    SPELL_ICECROWN_CITADEL_10_A                     = 73824,
-    SPELL_ICECROWN_CITADEL_15_H                     = 73819,
-    SPELL_ICECROWN_CITADEL_15_A                     = 73825,
-    SPELL_ICECROWN_CITADEL_20_H                     = 73820,
-    SPELL_ICECROWN_CITADEL_20_A                     = 73826,
-    SPELL_ICECROWN_CITADEL_25_H                     = 73821,
-    SPELL_ICECROWN_CITADEL_25_A                     = 73827,
-    SPELL_ICECROWN_CITADEL_30_H                     = 73822,
-    SPELL_ICECROWN_CITADEL_30_A                     = 73828,
+    SPELL_ICECROWN_CITADEL_NONE    = 0,
+    SPELL_ICECROWN_CITADEL_5_H     = 73816,
+    SPELL_ICECROWN_CITADEL_5_A     = 73762,
+    SPELL_ICECROWN_CITADEL_10_H    = 73818,
+    SPELL_ICECROWN_CITADEL_10_A    = 73824,
+    SPELL_ICECROWN_CITADEL_15_H    = 73819,
+    SPELL_ICECROWN_CITADEL_15_A    = 73825,
+    SPELL_ICECROWN_CITADEL_20_H    = 73820,
+    SPELL_ICECROWN_CITADEL_20_A    = 73826,
+    SPELL_ICECROWN_CITADEL_25_H    = 73821,
+    SPELL_ICECROWN_CITADEL_25_A    = 73827,
+    SPELL_ICECROWN_CITADEL_30_H    = 73822,
+    SPELL_ICECROWN_CITADEL_30_A    = 73828,
 
-    SPELL_RUNE_TAP                                  = 48982,
-    SPELL_LIFE_STEAL                                = 20004,
+    SPELL_RUNE_TAP                 = 48982,
+    SPELL_LIFE_STEAL               = 20004,
 
-    FACTION_SILVERMOON_CITY                         = 911,
-    FACTION_EXODAR                                  = 930
+    FACTION_SILVERMOON_CITY        = 911,
+    FACTION_EXODAR                 = 930
 };
 
 class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
