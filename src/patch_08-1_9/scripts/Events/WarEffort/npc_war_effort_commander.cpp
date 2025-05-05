@@ -122,23 +122,23 @@ public:
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_DESCRIPTION : NPC_FIELD_MARSHAL_SNOWFALL_DESCRIPTION, creature->GetGUID());
             break;
         case OPTION_METAL_BARS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_METAL_BARS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_METAL_BARS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_METAL_BARS : NPC_FIELD_MARSHAL_SNOWFALL_METAL_BARS, creature->GetGUID());
             break;
         case OPTION_HERBS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_HERBS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_HERBS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_HERBS : NPC_FIELD_MARSHAL_SNOWFALL_HERBS, creature->GetGUID());
             break;
         case OPTION_LEATHER_SKINS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_LEATHER_SKINS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_LEATHER_SKINS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_LEATHER_SKINS : NPC_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS, creature->GetGUID());
             break;
         case OPTION_BANDAGES:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_BANDAGES, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_BANDAGES, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_BANDAGES : NPC_FIELD_MARSHAL_SNOWFALL_BANDAGES, creature->GetGUID());
             break;
         default: // OPTION_COOKED_GOODS
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_COOKED_GOODS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_COOKED_GOODS, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_COOKED_GOODS : NPC_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS, creature->GetGUID());
             break;
         }

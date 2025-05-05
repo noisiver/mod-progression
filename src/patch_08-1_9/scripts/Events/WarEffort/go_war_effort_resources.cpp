@@ -64,56 +64,56 @@ public:
             return;
         }
 
-        if ((go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_ALLIANCE) < 20) ||
-            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_ALLIANCE) < 40) ||
-            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_ALLIANCE) < 60) ||
-            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_ALLIANCE) < 80) ||
-            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_ALLIANCE) < 100) ||
-            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_HORDE) < 20) ||
-            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_HORDE) < 40) ||
-            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_HORDE) < 60) ||
-            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_HORDE) < 80) ||
-            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_METAL_BARS, TEAM_HORDE) < 100) ||
-            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_ALLIANCE) < 20) ||
-            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_ALLIANCE) < 40) ||
-            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_ALLIANCE) < 60) ||
-            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_ALLIANCE) < 80) ||
-            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_ALLIANCE) < 100) ||
-            (go->GetEntry() == GO_HERBS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_HORDE) < 20) ||
-            (go->GetEntry() == GO_HERBS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_HORDE) < 40) ||
-            (go->GetEntry() == GO_HERBS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_HORDE) < 60) ||
-            (go->GetEntry() == GO_HERBS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_HORDE) < 80) ||
-            (go->GetEntry() == GO_HERBS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_HERBS, TEAM_HORDE) < 100) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE) < 20) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE) < 40) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE) < 60) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE) < 80) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE) < 100) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_HORDE) < 20) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_HORDE) < 40) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_HORDE) < 60) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_HORDE) < 80) ||
-            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_LEATHER_SKINS, TEAM_HORDE) < 100) ||
-            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_ALLIANCE) < 20) ||
-            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_ALLIANCE) < 40) ||
-            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_ALLIANCE) < 60) ||
-            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_ALLIANCE) < 80) ||
-            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_ALLIANCE) < 100) ||
-            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_HORDE) < 20) ||
-            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_HORDE) < 40) ||
-            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_HORDE) < 60) ||
-            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_HORDE) < 80) ||
-            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_BANDAGES, TEAM_HORDE) < 100) ||
-            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_ALLIANCE) < 20) ||
-            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_ALLIANCE) < 40) ||
-            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_ALLIANCE) < 60) ||
-            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_ALLIANCE) < 80) ||
-            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_ALLIANCE) < 100) ||
-            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_HORDE) < 20) ||
-            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_HORDE) < 40) ||
-            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_HORDE) < 60) ||
-            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_HORDE) < 80) ||
-            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_COOKED_GOODS, TEAM_HORDE) < 100))
+        if ((go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 20) ||
+            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 40) ||
+            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 60) ||
+            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 80) ||
+            (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 100) ||
+            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE) < 20) ||
+            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE) < 40) ||
+            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE) < 60) ||
+            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE) < 80) ||
+            (go->GetEntry() == GO_METAL_BARS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE) < 100) ||
+            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE) < 20) ||
+            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE) < 40) ||
+            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE) < 60) ||
+            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE) < 80) ||
+            (go->GetEntry() == GO_HERBS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE) < 100) ||
+            (go->GetEntry() == GO_HERBS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_HORDE) < 20) ||
+            (go->GetEntry() == GO_HERBS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_HORDE) < 40) ||
+            (go->GetEntry() == GO_HERBS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_HORDE) < 60) ||
+            (go->GetEntry() == GO_HERBS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_HORDE) < 80) ||
+            (go->GetEntry() == GO_HERBS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_HERBS, TEAM_HORDE) < 100) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE) < 20) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE) < 40) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE) < 60) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE) < 80) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE) < 100) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE) < 20) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE) < 40) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE) < 60) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE) < 80) ||
+            (go->GetEntry() == GO_LEATHER_SKINS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE) < 100) ||
+            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE) < 20) ||
+            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE) < 40) ||
+            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE) < 60) ||
+            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE) < 80) ||
+            (go->GetEntry() == GO_BANDAGES_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE) < 100) ||
+            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE) < 20) ||
+            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE) < 40) ||
+            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE) < 60) ||
+            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE) < 80) ||
+            (go->GetEntry() == GO_BANDAGES_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE) < 100) ||
+            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE) < 20) ||
+            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE) < 40) ||
+            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE) < 60) ||
+            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE) < 80) ||
+            (go->GetEntry() == GO_COOKED_GOODS_ALLIANCE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE) < 100) ||
+            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 20) ||
+            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 40) ||
+            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 60) ||
+            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_4 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 80) ||
+            (go->GetEntry() == GO_COOKED_GOODS_HORDE_TIER_5 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE) < 100))
         {
             if (go->isSpawned())
             {

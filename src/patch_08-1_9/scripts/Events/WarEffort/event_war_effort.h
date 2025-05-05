@@ -3,13 +3,14 @@
 
 enum Events
 {
-    EVENT_WAR_EFFORT_RESOURCE_COLLECTION_INITIAL            = 120,
-    EVENT_WAR_EFFORT_TRANSITION_DAY_1                       = 121,
-    EVENT_WAR_EFFORT_TRANSITION_DAY_2                       = 122,
-    EVENT_WAR_EFFORT_TRANSITION_DAY_3                       = 123,
-    EVENT_WAR_EFFORT_TRANSITION_DAY_4                       = 124,
-    EVENT_WAR_EFFORT_TRANSITION_DAY_5                       = 125,
-    MAX_EVENTS                                              = 6
+    EVENT_WAR_EFFORT_INITIAL                                = 120,
+    EVENT_WAR_EFFORT_COMMENDATION_OFFICERS                  = 121,
+    EVENT_WAR_EFFORT_DAY_1                                  = 122,
+    EVENT_WAR_EFFORT_DAY_2                                  = 123,
+    EVENT_WAR_EFFORT_DAY_3                                  = 124,
+    EVENT_WAR_EFFORT_DAY_4                                  = 125,
+    EVENT_WAR_EFFORT_DAY_5                                  = 126,
+    MAX_EVENTS                                              = 7
 };
 
 enum Stages
@@ -66,24 +67,29 @@ enum Resources
 
 enum Columns
 {
-    COLUMN_CATEGORY                                         = 0,
-    COLUMN_TEAM,
-    COLUMN_CURRENT_AMOUNT,
-    COLUMN_REQUIRED_AMOUNT,
-    COLUMN_PLAYER_STATE_CURRENT_AMOUNT,
-    COLUMN_PLAYER_STATE_REQUIRED_AMOUNT,
-    COLUMN_WORLD_STATE_CURRENT_AMOUNT,
-    MAX_COLUMNS
+    COLUMN_RESOURCE_CATEGORY                                = 0,
+    COLUMN_RESOURCE_TEAM,
+    COLUMN_RESOURCE_CURRENT_AMOUNT,
+    COLUMN_RESOURCE_REQUIRED_AMOUNT,
+    COLUMN_RESOURCE_PLAYER_STATE_CURRENT_AMOUNT,
+    COLUMN_RESOURCE_PLAYER_STATE_REQUIRED_AMOUNT,
+    COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT,
+    MAX_RESOURCE_COLUMNS,
+
+    COLUMN_EVENT_ID                                         = 0,
+    COLUMN_EVENT_MIN_STAGE,
+    COLUMN_EVENT_MAX_STAGE,
+    MAX_EVENT_COLUMNS
 };
 
 enum Categories
 {
-    CATEGORY_METAL_BARS,
-    CATEGORY_HERBS,
-    CATEGORY_LEATHER_SKINS,
-    CATEGORY_BANDAGES,
-    CATEGORY_COOKED_GOODS,
-    MAX_CATEGORY
+    CATEGORY_RESOURCE_METAL_BARS                           = 0,
+    CATEGORY_RESOURCE_HERBS,
+    CATEGORY_RESOURCE_LEATHER_SKINS,
+    CATEGORY_RESOURCE_BANDAGES,
+    CATEGORY_RESOURCE_COOKED_GOODS,
+    MAX_RESOURCE_CATEGORY
 };
 
 enum NPCs
@@ -195,10 +201,10 @@ public:
     uint8 GetStage() { return stage; }
     uint32* GetResource(uint8 resource) { return resources[resource]; }
     double GetResourceCategoryCompletionPercentage(uint8 /*category*/, uint8 /*team*/);
-    uint8 GetCategoryForResource(uint32 resource) { return resources[resource][COLUMN_CATEGORY]; }
-    uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_TEAM]; }
+    uint8 GetCategoryForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_CATEGORY]; }
+    uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_TEAM]; }
     void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
-    bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_CURRENT_AMOUNT] < resources[resource][COLUMN_REQUIRED_AMOUNT]); }
+    bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT]); }
     bool IsResourceCollectionCompleted();
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourceCategoryForTeamToPlayer(Player* /*player*/, uint8 /*category*/, uint8 /*team*/);
@@ -209,45 +215,46 @@ private:
     Seconds currentGameTime = 0s;
     Seconds nextTransition = 0s;
     uint32 minutesPerTransition = 1440;
-    uint32 resources[MAX_RESOURCES][MAX_COLUMNS] = {
-        { CATEGORY_METAL_BARS, TEAM_ALLIANCE, 0, 90000, 1997, 1998, 50002 }, // Copper Bar
-        { CATEGORY_METAL_BARS, TEAM_ALLIANCE, 0, 28000, 2002, 2003, 50003 }, // Iron Bar
-        { CATEGORY_METAL_BARS, TEAM_ALLIANCE, 0, 24000, 2011, 2012, 50004 }, // Thorium Bar
-        { CATEGORY_METAL_BARS, TEAM_HORDE, 0, 22000, 2005, 2006, 50005 }, // Tin Bar
-        { CATEGORY_METAL_BARS, TEAM_HORDE, 0, 18000, 2008, 2009, 50006 }, // Mithril Bar
-        { CATEGORY_METAL_BARS, TEAM_HORDE, 0, 90000, 2018, 1998, 50007 }, // Copper Bar
-        { CATEGORY_HERBS, TEAM_ALLIANCE, 0, 33000, 2047, 2048, 50008 }, // Stranglekelp
-        { CATEGORY_HERBS, TEAM_ALLIANCE, 0, 26000, 2053, 2055, 50009 }, // Purple Lotus
-        { CATEGORY_HERBS, TEAM_ALLIANCE, 0, 20000, 2057, 2058, 50010 }, // Arthas' Tears
-        { CATEGORY_HERBS, TEAM_HORDE, 0, 96000, 2021, 2020, 50011 }, // Peacebloom
-        { CATEGORY_HERBS, TEAM_HORDE, 0, 19000, 2050, 2051, 50012 }, // Firebloom
-        { CATEGORY_HERBS, TEAM_HORDE, 0, 26000, 2054, 2055, 50013 }, // Purple Lotus
-        { CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE, 0, 180000, 2060, 2061, 50014 }, // Light Leather
-        { CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE, 0, 110000, 2063, 2064, 50015 }, // Medium Leather
-        { CATEGORY_LEATHER_SKINS, TEAM_ALLIANCE, 0, 80000, 2069, 2071, 50016 }, // Thick Leather
-        { CATEGORY_LEATHER_SKINS, TEAM_HORDE, 0, 60000, 2066, 2067, 50017 }, // Heavy Leather
-        { CATEGORY_LEATHER_SKINS, TEAM_HORDE, 0, 80000, 2070, 2071, 50018 }, // Thick Leather
-        { CATEGORY_LEATHER_SKINS, TEAM_HORDE, 0, 60000, 2073, 2074, 50019 }, // Rugged Leather
-        { CATEGORY_BANDAGES, TEAM_ALLIANCE, 0, 800000, 2076, 2077, 50020 }, // Linen Bandage
-        { CATEGORY_BANDAGES, TEAM_ALLIANCE, 0, 600000, 2082, 2083, 50021 }, // Silk Bandage
-        { CATEGORY_BANDAGES, TEAM_ALLIANCE, 0, 400000, 2088, 2090, 50022 }, // Runecloth Bandage
-        { CATEGORY_BANDAGES, TEAM_HORDE, 0, 250000, 2079, 2080, 50023 }, // Wool Bandage
-        { CATEGORY_BANDAGES, TEAM_HORDE, 0, 250000, 2085, 2086, 50024 }, // Mageweave Bandage
-        { CATEGORY_BANDAGES, TEAM_HORDE, 0, 400000, 2089, 2090, 50025 }, // Runecloth Bandage
-        { CATEGORY_COOKED_GOODS, TEAM_ALLIANCE, 0, 14000, 2092, 2093, 50026 }, // Rainbow Fin Albacore
-        { CATEGORY_COOKED_GOODS, TEAM_ALLIANCE, 0, 20000, 2098, 2099, 50027 }, // Roast Raptor
-        { CATEGORY_COOKED_GOODS, TEAM_ALLIANCE, 0, 17000, 2101, 2103, 50028 }, // Spotted Yellowtail
-        { CATEGORY_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2095, 2096, 50029 }, // Lean Wolf Steak
-        { CATEGORY_COOKED_GOODS, TEAM_HORDE, 0, 17000, 2102, 2103, 50030 }, // Spotted Yellowtail
-        { CATEGORY_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2105, 2106, 50031 } // Baked Salmon
+    uint32 resources[MAX_RESOURCES][MAX_RESOURCE_COLUMNS] = {
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 90000, 1997, 1998, 50002 }, // Copper Bar
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 28000, 2002, 2003, 50003 }, // Iron Bar
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 24000, 2011, 2012, 50004 }, // Thorium Bar
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE, 0, 22000, 2005, 2006, 50005 }, // Tin Bar
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE, 0, 18000, 2008, 2009, 50006 }, // Mithril Bar
+        { CATEGORY_RESOURCE_METAL_BARS, TEAM_HORDE, 0, 90000, 2018, 1998, 50007 }, // Copper Bar
+        { CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE, 0, 33000, 2047, 2048, 50008 }, // Stranglekelp
+        { CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE, 0, 26000, 2053, 2055, 50009 }, // Purple Lotus
+        { CATEGORY_RESOURCE_HERBS, TEAM_ALLIANCE, 0, 20000, 2057, 2058, 50010 }, // Arthas' Tears
+        { CATEGORY_RESOURCE_HERBS, TEAM_HORDE, 0, 96000, 2021, 2020, 50011 }, // Peacebloom
+        { CATEGORY_RESOURCE_HERBS, TEAM_HORDE, 0, 19000, 2050, 2051, 50012 }, // Firebloom
+        { CATEGORY_RESOURCE_HERBS, TEAM_HORDE, 0, 26000, 2054, 2055, 50013 }, // Purple Lotus
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE, 0, 180000, 2060, 2061, 50014 }, // Light Leather
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE, 0, 110000, 2063, 2064, 50015 }, // Medium Leather
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_ALLIANCE, 0, 80000, 2069, 2071, 50016 }, // Thick Leather
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE, 0, 60000, 2066, 2067, 50017 }, // Heavy Leather
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE, 0, 80000, 2070, 2071, 50018 }, // Thick Leather
+        { CATEGORY_RESOURCE_LEATHER_SKINS, TEAM_HORDE, 0, 60000, 2073, 2074, 50019 }, // Rugged Leather
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE, 0, 800000, 2076, 2077, 50020 }, // Linen Bandage
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE, 0, 600000, 2082, 2083, 50021 }, // Silk Bandage
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_ALLIANCE, 0, 400000, 2088, 2090, 50022 }, // Runecloth Bandage
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE, 0, 250000, 2079, 2080, 50023 }, // Wool Bandage
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE, 0, 250000, 2085, 2086, 50024 }, // Mageweave Bandage
+        { CATEGORY_RESOURCE_BANDAGES, TEAM_HORDE, 0, 400000, 2089, 2090, 50025 }, // Runecloth Bandage
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE, 0, 14000, 2092, 2093, 50026 }, // Rainbow Fin Albacore
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE, 0, 20000, 2098, 2099, 50027 }, // Roast Raptor
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_ALLIANCE, 0, 17000, 2101, 2103, 50028 }, // Spotted Yellowtail
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2095, 2096, 50029 }, // Lean Wolf Steak
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 17000, 2102, 2103, 50030 }, // Spotted Yellowtail
+        { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2105, 2106, 50031 } // Baked Salmon
     };
-    uint32 events[MAX_EVENTS][3] = {
-        { EVENT_WAR_EFFORT_RESOURCE_COLLECTION_INITIAL, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
-        { EVENT_WAR_EFFORT_TRANSITION_DAY_1, STAGE_TRANSITION_DAY_1, STAGE_TRANSITION_DAY_5 },
-        { EVENT_WAR_EFFORT_TRANSITION_DAY_2, STAGE_TRANSITION_DAY_2, STAGE_TRANSITION_DAY_5 },
-        { EVENT_WAR_EFFORT_TRANSITION_DAY_3, STAGE_TRANSITION_DAY_3, STAGE_TRANSITION_DAY_5 },
-        { EVENT_WAR_EFFORT_TRANSITION_DAY_4, STAGE_TRANSITION_DAY_4, STAGE_TRANSITION_DAY_5 },
-        { EVENT_WAR_EFFORT_TRANSITION_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE }
+    uint32 events[MAX_EVENTS][MAX_EVENT_COLUMNS] = {
+        { EVENT_WAR_EFFORT_INITIAL, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
+        { EVENT_WAR_EFFORT_COMMENDATION_OFFICERS, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
+        { EVENT_WAR_EFFORT_DAY_1, STAGE_TRANSITION_DAY_1, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_DAY_2, STAGE_TRANSITION_DAY_2, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_DAY_3, STAGE_TRANSITION_DAY_3, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE }
     };
 };
 

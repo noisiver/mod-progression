@@ -115,23 +115,23 @@ public:
             SendGossipMenuFor(player, creature->GetEntry() == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_DESCRIPTION : NPC_COMMANDER_STRONGHAMMER_DESCRIPTION, creature->GetGUID());
             break;
         case OPTION_METAL_BARS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_METAL_BARS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_METAL_BARS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_METAL_BARS : NPC_COMMANDER_STRONGHAMMER_METAL_BARS, creature->GetGUID());
             break;
         case OPTION_HERBS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_HERBS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_HERBS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_HERBS : NPC_COMMANDER_STRONGHAMMER_HERBS, creature->GetGUID());
             break;
         case OPTION_LEATHER_SKINS:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_LEATHER_SKINS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_LEATHER_SKINS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_LEATHER_SKINS : NPC_COMMANDER_STRONGHAMMER_LEATHER_SKINS, creature->GetGUID());
             break;
         case OPTION_BANDAGES:
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_BANDAGES, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_BANDAGES, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_BANDAGES : NPC_COMMANDER_STRONGHAMMER_BANDAGES, creature->GetGUID());
             break;
         default: // OPTION_COOKED_GOODS
-            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_COOKED_GOODS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
+            sWarEffortMgr->SendResourceCategoryForTeamToPlayer(player, CATEGORY_RESOURCE_COOKED_GOODS, entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE);
             SendGossipMenuFor(player, entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_COOKED_GOODS : NPC_COMMANDER_STRONGHAMMER_COOKED_GOODS, creature->GetGUID());
             break;
         }

@@ -1,4 +1,4 @@
-DELETE FROM `game_event_creature` WHERE `eventEntry` = 120;
+DELETE FROM `game_event_creature` WHERE `eventEntry` IN (-126, -125, -124, -123, -122, -121, 120, 121, 122, 123, 124, 125, 126);
 INSERT INTO `game_event_creature` (`eventEntry`, `guid`) VALUES
 (120, 86424),
 (120, 5400000),
@@ -43,4 +43,13 @@ INSERT INTO `game_event_creature` (`eventEntry`, `guid`) VALUES
 (120, 5400039),
 (120, 5400040),
 (120, 5400041),
-(120, 5400042);
+(120, 5400042),
+(120, 5400043),
+(121, 5400044),
+(121, 5400045),
+(121, 5400046),
+(121, 5400047),
+(121, 5400048),
+(121, 5400049),
+(121, 5400050),
+(121, 5400051);
