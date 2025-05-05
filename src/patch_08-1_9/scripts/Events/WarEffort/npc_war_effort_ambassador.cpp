@@ -19,6 +19,7 @@ enum GossipOptions
 enum Texts
 {
     NPC_COMMANDER_STRONGHAMMER_UNFINISHED               = 7949,
+    NPC_COMMANDER_STRONGHAMMER_TEAM_FINISHED            = 55019,
     NPC_COMMANDER_STRONGHAMMER_FINISHED_ONE_DAY         = 55018,
     NPC_COMMANDER_STRONGHAMMER_FINISHED_MULTIPLE_DAYS   = 55017,
     NPC_COMMANDER_STRONGHAMMER_DESCRIPTION              = 8071,
@@ -29,6 +30,7 @@ enum Texts
     NPC_COMMANDER_STRONGHAMMER_COOKED_GOODS             = 7955,
 
     NPC_GENERAL_ZOG_UNFINISHED                          = 7942,
+    NPC_GENERAL_ZOG_TEAM_FINISHED                       = 8007,
     NPC_GENERAL_ZOG_FINISHED_ONE_DAY                    = 55016,
     NPC_GENERAL_ZOG_FINISHED_MULTIPLE_DAYS              = 8006,
     NPC_GENERAL_ZOG_DESCRIPTION                         = 8209,
@@ -57,6 +59,9 @@ public:
         uint8 stage = sWarEffortMgr->GetStage();
         uint32 text_id = 0;
 
+        uint8 team = entry == NPC_GENERAL_ZOG ? TEAM_HORDE : TEAM_ALLIANCE;
+        bool team_completed = sWarEffortMgr->IsResourceCollectionCompletedForTeam(team);
+
         switch (stage)
         {
         case STAGE_TRANSITION_DAY_1:
@@ -69,7 +74,14 @@ public:
             text_id = entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_FINISHED_ONE_DAY : NPC_COMMANDER_STRONGHAMMER_FINISHED_ONE_DAY;
             break;
         default:
-            text_id = entry == NPC_GENERAL_ZOG ? NPC_GENERAL_ZOG_UNFINISHED : NPC_COMMANDER_STRONGHAMMER_UNFINISHED;
+            if (entry == NPC_GENERAL_ZOG)
+            {
+                text_id = team_completed ? NPC_GENERAL_ZOG_TEAM_FINISHED : NPC_GENERAL_ZOG_UNFINISHED;
+            }
+            else
+            {
+                text_id = team_completed ? NPC_COMMANDER_STRONGHAMMER_TEAM_FINISHED : NPC_COMMANDER_STRONGHAMMER_UNFINISHED;
+            }
             break;
         }
 
@@ -79,7 +91,7 @@ public:
         }
 
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
-        if (!sWarEffortMgr->IsResourceCollectionCompleted())
+        if (!team_completed)
         {
             AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", entry == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
             AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", entry == NPC_GENERAL_ZOG ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);

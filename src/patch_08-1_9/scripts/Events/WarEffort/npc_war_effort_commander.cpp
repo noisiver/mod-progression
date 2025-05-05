@@ -19,6 +19,7 @@ enum GossipOptions
 enum Texts
 {
     NPC_WARLORD_GORCHUK_UNFINISHED                      = 8092,
+    NPC_WARLORD_GORCHUK_TEAM_FINISHED                   = 55020,
     NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY                = 55014,
     NPC_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS          = 8094,
     NPC_WARLORD_GORCHUK_DESCRIPTION                     = 8209,
@@ -29,6 +30,7 @@ enum Texts
     NPC_WARLORD_GORCHUK_COOKED_GOODS                    = 8100,
 
     NPC_FIELD_MARSHAL_SNOWFALL_UNFINISHED               = 8082,
+    NPC_FIELD_MARSHAL_SNOWFALL_TEAM_FINISHED            = 8085,
     NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY         = 55015,
     NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS   = 8084,
     NPC_FIELD_MARSHAL_SNOWFALL_HELLO                    = 8082,
@@ -64,6 +66,9 @@ public:
         uint8 stage = sWarEffortMgr->GetStage();
         uint32 text_id = 0;
 
+        uint8 team = entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE;
+        bool team_completed = sWarEffortMgr->IsResourceCollectionCompletedForTeam(team);
+
         switch (stage)
         {
         case STAGE_TRANSITION_DAY_1:
@@ -76,7 +81,14 @@ public:
             text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY : NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY;
             break;
         default:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_UNFINISHED : NPC_FIELD_MARSHAL_SNOWFALL_UNFINISHED;
+            if (entry == NPC_WARLORD_GORCHUK)
+            {
+                text_id = team_completed ? NPC_WARLORD_GORCHUK_TEAM_FINISHED : NPC_WARLORD_GORCHUK_UNFINISHED;
+            }
+            else
+            {
+                text_id = team_completed ? NPC_FIELD_MARSHAL_SNOWFALL_TEAM_FINISHED : NPC_FIELD_MARSHAL_SNOWFALL_UNFINISHED;
+            }
             break;
         }
 
@@ -86,7 +98,7 @@ public:
         }
 
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
-        if (!sWarEffortMgr->IsResourceCollectionCompleted())
+        if (!team_completed)
         {
             AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many metal bars have the {} collected so far?", entry == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_METAL_BARS);
             AddGossipItemFor(player, GOSSIP_ICON_CHAT, Acore::StringFormat("How many herbs have the {} collected so far?", entry == NPC_WARLORD_GORCHUK ? "Horde" : "Alliance"), GOSSIP_SENDER_MAIN, OPTION_HERBS);

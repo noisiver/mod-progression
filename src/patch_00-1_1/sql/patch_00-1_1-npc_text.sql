@@ -1,2 +1,2 @@
 UPDATE `npc_text` SET `text0_0` = 'On the northern dock, you can board a ship that will carry you to Rut\'theran Village and Darnassus.  From the southern dock, you can find passage across the Great Sea to Menethil Harbor on Khaz Modan. Safe journeys to you!' WHERE `ID` = 5480;
-DELETE FROM `npc_text` WHERE `ID` IN (55000, 55001, 55002, 55003, 55004, 55005, 55006, 55007, 55008, 55009, 55010, 55011, 55012, 55013, 55014, 55015, 55016, 55017, 55018);
+DELETE FROM `npc_text` WHERE `ID` IN (55000, 55001, 55002, 55003, 55004, 55005, 55006, 55007, 55008, 55009, 55010, 55011, 55012, 55013, 55014, 55015, 55016, 55017, 55018, 55019, 55020);

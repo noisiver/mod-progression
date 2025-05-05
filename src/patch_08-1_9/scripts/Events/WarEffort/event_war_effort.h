@@ -205,6 +205,7 @@ public:
     uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_TEAM]; }
     void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
     bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT]); }
+    bool IsResourceCollectionCompletedForTeam(uint8 /*team*/);
     bool IsResourceCollectionCompleted();
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourceCategoryForTeamToPlayer(Player* /*player*/, uint8 /*category*/, uint8 /*team*/);

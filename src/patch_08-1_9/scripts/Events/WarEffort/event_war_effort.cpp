@@ -171,6 +171,20 @@ void WarEffortMgr::AddToResource(uint8 resource, uint32 amount)
     }
 }
 
+bool WarEffortMgr::IsResourceCollectionCompletedForTeam(uint8 team)
+{
+    for (int i = 0; i < MAX_RESOURCES; i++)
+    {
+        if (resources[i][COLUMN_RESOURCE_TEAM] == team)
+        {
+            if (resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[i][COLUMN_RESOURCE_REQUIRED_AMOUNT])
+            {
+                return false;
+            }
+        }
+    }
+}
+
 bool WarEffortMgr::IsResourceCollectionCompleted()
 {
     for (int i = 0; i < MAX_RESOURCES; i++)
