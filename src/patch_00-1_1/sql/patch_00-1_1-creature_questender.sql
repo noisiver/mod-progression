@@ -1,4 +1,4 @@
-DELETE FROM `creature_questender` WHERE `id` = 1748 AND `quest` = 7495;
+DELETE FROM `creature_questender` WHERE `id` = 1748 AND `quest` IN (6186, 6187, 7495);
 DELETE FROM `creature_questender` WHERE `id` = 2425 AND `quest` = 550;
 DELETE FROM `creature_questender` WHERE `id` = 4949 AND `quest` = 7490;
 DELETE FROM `creature_questender` WHERE `id` = 6171 AND `quest` = 1661;
@@ -9,6 +9,8 @@ DELETE FROM `creature_questender` WHERE `id` = 20735 AND `quest` IN (13245, 1324
 DELETE FROM `creature_questender` WHERE `id` = 29611 AND `quest` = 7495;
 DELETE FROM `creature_questender` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
+(1748, 6186),
+(1748, 6187),
 (1748, 7495),
 (2425, 550),
 (4949, 7490),
