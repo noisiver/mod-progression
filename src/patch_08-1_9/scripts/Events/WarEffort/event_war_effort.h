@@ -209,7 +209,7 @@ public:
     bool IsResourceCollectionCompletedForTeam(uint8 team) { return teamFinished[team]; }
     bool IsResourceCollectionCompleted() { return teamFinished[TEAM_ALLIANCE] && teamFinished[TEAM_HORDE]; }
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
-    void SendResourceCategoryForTeamToPlayer(Player* /*player*/, uint8 /*category*/, uint8 /*team*/);
+    void SendResourcesForTeamToPlayer(Player* /*player*/, uint8 /*team*/);
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
