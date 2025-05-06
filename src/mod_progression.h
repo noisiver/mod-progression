@@ -144,7 +144,7 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
-    void OnStartup() override;
+    void OnBeforeWorldInitialized() override;
     void OnShutdown() override;
     void OnUpdate(uint32 /*diff*/) override;
 

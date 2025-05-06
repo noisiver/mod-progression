@@ -3,14 +3,16 @@
 
 enum Events
 {
-    EVENT_WAR_EFFORT_INITIAL                                = 120,
-    EVENT_WAR_EFFORT_COMMENDATION_OFFICERS                  = 121,
-    EVENT_WAR_EFFORT_DAY_1                                  = 122,
-    EVENT_WAR_EFFORT_DAY_2                                  = 123,
-    EVENT_WAR_EFFORT_DAY_3                                  = 124,
-    EVENT_WAR_EFFORT_DAY_4                                  = 125,
-    EVENT_WAR_EFFORT_DAY_5                                  = 126,
-    MAX_EVENTS                                              = 7
+    EVENT_WAR_EFFORT_RESOURCE_COLLECTION                    = 91,
+    EVENT_WAR_EFFORT_COMMENDATION_OFFICERS                  = 92,
+    EVENT_WAR_EFFORT_DAY_1                                  = 93,
+    EVENT_WAR_EFFORT_DAY_2                                  = 94,
+    EVENT_WAR_EFFORT_DAY_3                                  = 95,
+    EVENT_WAR_EFFORT_DAY_4                                  = 96,
+    EVENT_WAR_EFFORT_DAY_5                                  = 97,
+    EVENT_WAR_EFFORT_GATE                                   = 98,
+    EVENT_WAR_EFFORT_GONG                                   = 99,
+    MAX_EVENTS                                              = 9
 };
 
 enum Stages
@@ -21,6 +23,7 @@ enum Stages
     STAGE_TRANSITION_DAY_3,
     STAGE_TRANSITION_DAY_4,
     STAGE_TRANSITION_DAY_5,
+    STAGE_BANG_A_GONG,
     MAX_STAGE
 };
 
@@ -213,7 +216,7 @@ public:
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
-    Milliseconds timer = 0s;
+    Milliseconds timer = 4min + 50s;
     Seconds currentGameTime = 0s;
     Seconds nextTransition = 0s;
     uint32 minutesPerTransition = 1440;
@@ -251,13 +254,15 @@ private:
         { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2105, 2106, 50031 } // Baked Salmon
     };
     uint32 events[MAX_EVENTS][MAX_EVENT_COLUMNS] = {
-        { EVENT_WAR_EFFORT_INITIAL, STAGE_RESOURCE_COLLECTION, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_RESOURCE_COLLECTION, STAGE_RESOURCE_COLLECTION, STAGE_TRANSITION_DAY_5 },
         { EVENT_WAR_EFFORT_COMMENDATION_OFFICERS, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_1, STAGE_TRANSITION_DAY_1, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_2, STAGE_TRANSITION_DAY_2, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_3, STAGE_TRANSITION_DAY_3, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, MAX_STAGE },
-        { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE }
+        { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE },
+        { EVENT_WAR_EFFORT_GATE, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
+        { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, MAX_STAGE }
     };
 };
 
