@@ -28,3 +28,4 @@ UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15383, 15431,
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (15458, 15539);
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `faction` = 29 WHERE `entry` = 14720;
+UPDATE `creature_template` SET `npcflag` = `npcflag` & ~2 | 4194304, `gossip_menu_id` = 9821 WHERE `entry` = 15180;
