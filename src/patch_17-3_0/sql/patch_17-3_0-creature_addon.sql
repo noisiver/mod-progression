@@ -1,1 +1,1 @@
-DELETE FROM `creature_addon` WHERE `guid` = 5400077;
+DELETE FROM `creature_addon` WHERE `guid` IN (5400077, 5400114);
