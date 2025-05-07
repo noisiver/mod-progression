@@ -5,3 +5,4 @@ UPDATE `creature_template` SET `npcflag` = `npcflag` | 1 WHERE `entry` IN (15458
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 15458;
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62, `faction` = 777 WHERE `entry` = 14720;
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~4194304 | 2, `gossip_menu_id` = 6529 WHERE `entry` = 15180;
+UPDATE `creature_template` SET `AIName` = 'SmartAI' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751);
