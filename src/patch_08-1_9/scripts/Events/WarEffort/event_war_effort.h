@@ -12,7 +12,8 @@ enum Events
     EVENT_WAR_EFFORT_DAY_5                                  = 97,
     EVENT_WAR_EFFORT_GATE                                   = 98,
     EVENT_WAR_EFFORT_GONG                                   = 99,
-    MAX_EVENTS                                              = 9
+    EVENT_WAR_EFFORT_RESONATING_CRYSTALS                    = 100,
+    MAX_EVENTS                                              = 10
 };
 
 enum Stages
@@ -264,7 +265,8 @@ private:
         { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE },
         { EVENT_WAR_EFFORT_GATE, STAGE_RESOURCE_COLLECTION, STAGE_BANG_A_GONG },
-        { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, STAGE_GATE_IS_OPEN }
+        { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, STAGE_GATE_IS_OPEN },
+        { EVENT_WAR_EFFORT_RESONATING_CRYSTALS, STAGE_GATE_IS_OPEN, STAGE_GATE_IS_OPEN }
     };
 };
 
