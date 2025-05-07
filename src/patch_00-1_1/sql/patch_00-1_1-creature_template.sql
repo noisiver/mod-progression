@@ -29,5 +29,5 @@ UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (1545
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `faction` = 29 WHERE `entry` = 14720;
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~2 | 4194304, `gossip_menu_id` = 9821 WHERE `entry` = 15180;
-UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753);
+UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756);
 DELETE FROM `creature_template` WHERE `entry` = 88000;
