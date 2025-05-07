@@ -121,6 +121,13 @@ void WarEffortMgr::UpdateActiveStage()
             nextTransition = currentGameTime + Seconds(minutesPerTransition * MINUTE);
         }
     }
+    else if (stage == STAGE_GATE_IS_OPEN)
+    {
+        if (currentGameTime > nextTransition)
+        {
+            LOG_INFO("server.loading", "Not Yet Implemented");
+        }
+    }
 }
 
 void WarEffortMgr::UpdateActiveEvents()
@@ -215,11 +222,25 @@ void WarEffortMgr::SendResourcesForTeamToPlayer(Player* player, uint8 team)
     }
 }
 
+void WarEffortMgr::GateIsOpen()
+{
+    if (stage < STAGE_BANG_A_GONG)
+    {
+        return;
+    }
+
+    stage = STAGE_GATE_IS_OPEN;
+    nextTransition = currentGameTime + Seconds(4 * HOUR);
+
+    UpdateActiveEvents();
+}
+
 void AddSC_npc_war_effort_commander();
 void AddSC_npc_war_effort_ambassador();
 void AddSC_npc_war_effort_collector();
 void AddSC_npc_war_effort_resources();
 void AddSC_go_war_effort_resources();
+void AddSC_go_war_effort_scarab_gong();
 
 void AddSC_event_war_effort()
 {
@@ -228,4 +249,5 @@ void AddSC_event_war_effort()
     AddSC_npc_war_effort_collector();
     AddSC_npc_war_effort_resources();
     AddSC_go_war_effort_resources();
+    AddSC_go_war_effort_scarab_gong();
 }

@@ -24,6 +24,7 @@ enum Stages
     STAGE_TRANSITION_DAY_4,
     STAGE_TRANSITION_DAY_5,
     STAGE_BANG_A_GONG,
+    STAGE_GATE_IS_OPEN,
     MAX_STAGE
 };
 
@@ -213,6 +214,7 @@ public:
     bool IsResourceCollectionCompleted() { return teamFinished[TEAM_ALLIANCE] && teamFinished[TEAM_HORDE]; }
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourcesForTeamToPlayer(Player* /*player*/, uint8 /*team*/);
+    void GateIsOpen();
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
@@ -261,8 +263,8 @@ private:
         { EVENT_WAR_EFFORT_DAY_3, STAGE_TRANSITION_DAY_3, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, MAX_STAGE },
         { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, MAX_STAGE },
-        { EVENT_WAR_EFFORT_GATE, STAGE_RESOURCE_COLLECTION, MAX_STAGE },
-        { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, MAX_STAGE }
+        { EVENT_WAR_EFFORT_GATE, STAGE_RESOURCE_COLLECTION, STAGE_BANG_A_GONG },
+        { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, STAGE_GATE_IS_OPEN }
     };
 };
 
