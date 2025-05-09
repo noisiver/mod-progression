@@ -1,1 +1,1 @@
-DELETE FROM `pool_template` WHERE `entry` = 88000;
+DELETE FROM `pool_template` WHERE `entry` IN (88000, 88001);
