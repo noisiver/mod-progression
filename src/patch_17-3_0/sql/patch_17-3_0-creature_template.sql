@@ -10,5 +10,5 @@ UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15383, 15431,
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (15458, 15539);
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `faction` = 29 WHERE `entry` = 14720;
-UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808);
+UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817);
 DELETE FROM `creature_template` WHERE `entry` = 88000;
