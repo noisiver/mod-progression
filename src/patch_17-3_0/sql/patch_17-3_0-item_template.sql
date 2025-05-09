@@ -139,3 +139,4 @@ UPDATE `item_template` SET `spellid_1` = 55884, `spellcharges_1` = -1, `spellid_
 UPDATE `item_template` SET `spellid_1` = 55884, `spellcharges_1` = -1, `spellid_2` = 64977, `spelltrigger_2` = 6, `description` = 'Teaches you how to summon this mount.' WHERE `entry` = 46308;
 UPDATE `item_template` SET `spellid_1` = 55884, `spellcharges_1` = -1, `spellid_2` = 66847, `spelltrigger_2` = 6, `description` = 'Teaches you how to summon this mount.' WHERE `entry` = 47100;
 UPDATE `item_template` SET `spellid_1` = 55884, `spellcharges_1` = -1, `spellid_2` = 66846, `spelltrigger_2` = 6, `description` = 'Teaches you how to summon this mount.  This is a very fast mount.' WHERE `entry` = 47101;
+UPDATE `item_template` SET `ItemLevel` = 60, `RequiredLevel` = 60, `spellid_1` = 483, `spellcharges_1` = -1, `spellid_2` = 26656, `spelltrigger_2` = 6, `description` = 'Teaches you how to summon this mount.  This is a very fast mount.' WHERE `entry` = 21176;
