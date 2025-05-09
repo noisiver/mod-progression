@@ -1,1 +1,1 @@
-DELETE FROM `creature_formations` WHERE `leaderGUID` IN (5400077, 5400114);
+DELETE FROM `creature_formations` WHERE `leaderGUID` IN (5400077, 5400114, 5400370, 5400427);
