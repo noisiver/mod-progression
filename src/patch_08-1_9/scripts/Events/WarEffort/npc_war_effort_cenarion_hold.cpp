@@ -1,7 +1,6 @@
 #include "Creature.h"
 #include "CreatureAI.h"
 #include "CreatureScript.h"
-#include "TemporarySummon.h"
 
 enum
 {
@@ -66,15 +65,17 @@ public:
 
         void JustSummoned(Creature* summon) override
         {
-            summon->GetMotionMaster()->MovePoint(0, targetPositions[spawned]);
-            summon->SetHomePosition(targetPositions[spawned]);
-            spawned++;
+            summon->GetMotionMaster()->MovePoint(0, targetPositions[count]);
+            summon->SetHomePosition(targetPositions[count]);
+
+            count++;
         }
 
         void SummonedCreatureDespawn(Creature* /*summon*/) override
         {
-            spawned--;
-            if (spawned > 0)
+            count--;
+
+            if (count > 0)
             {
                 return;
             }
@@ -83,8 +84,8 @@ public:
         }
 
     private:
-        uint32 timer = 15 * MINUTE * IN_MILLISECONDS;
-        uint32 spawned = 0;
+        uint32 timer = 1 * MINUTE * IN_MILLISECONDS;
+        uint32 count = 0;
     };
 
     CreatureAI* GetAI(Creature* creature) const override
