@@ -15,6 +15,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     bool EnforceDungeonFinder = sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true);
     bool EnforceDualTalent = sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true);
     bool EnforceQuestInfo = sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true);
+    bool EnforceAchievements = sConfigMgr->GetOption<bool>("Progression.Achievements.Enforced", true);
     bool EnforceTradableBindsOnPickup = sConfigMgr->GetOption<bool>("Progression.TradableBindsOnPickup.Enforced", true);
     float DamageModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
     float HealingModifier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", 0.5f);
@@ -31,6 +32,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     sProgressionMgr->SetEnforceDungeonFinder(EnforceDungeonFinder);
     sProgressionMgr->SetEnforceDualTalent(EnforceDualTalent);
     sProgressionMgr->SetEnforceQuestInfo(EnforceQuestInfo);
+    sProgressionMgr->SetEnforceAchievements(EnforceAchievements);
     sProgressionMgr->SetEnforceTradableBindsOnPickup(EnforceTradableBindsOnPickup);
     sProgressionMgr->SetDamageModifier(DamageModifier);
     sProgressionMgr->SetHealingModifier(HealingModifier);
