@@ -138,4 +138,49 @@ Progression.Reset = 0
 Progression.PatchNotes.Enabled = 1
 
 #
+#    Progression.WarEffort
+#        Description: The number of items required to complete each part of the resource gathering for the War Effort
+#
+
+Progression.WarEffort.CopperBar.Required          = 90000
+Progression.WarEffort.IronBar.Required            = 28000
+Progression.WarEffort.ThoriumBar.Required         = 24000
+Progression.WarEffort.TinBar.Required             = 22000
+Progression.WarEffort.MithrilBar.Required         = 18000
+
+Progression.WarEffort.Stranglekelp.Required       = 33000
+Progression.WarEffort.PurpleLotus.Required        = 26000
+Progression.WarEffort.ArthasTears.Required        = 20000
+Progression.WarEffort.Peacebloom.Required         = 96000
+Progression.WarEffort.Firebloom.Required          = 19000
+
+Progression.WarEffort.LightLeather.Required       = 180000
+Progression.WarEffort.MediumLeather.Required      = 110000
+Progression.WarEffort.ThickLeather.Required       = 80000
+Progression.WarEffort.HeavyLeather.Required       = 60000
+Progression.WarEffort.RuggedLeather.Required      = 60000
+
+Progression.WarEffort.LinenBandage.Required       = 800000
+Progression.WarEffort.SilkBandage.Required        = 600000
+Progression.WarEffort.RuneclothBandage.Required   = 400000
+Progression.WarEffort.WoolBandage.Required        = 250000
+Progression.WarEffort.MageweaveBandage.Required   = 250000
+
+Progression.WarEffort.RainbowFinAlbacore.Required = 14000
+Progression.WarEffort.RoastRaptor.Required        = 20000
+Progression.WarEffort.SpottedYellowtail.Required  = 17000
+Progression.WarEffort.LeanWolfSteak.Required      = 10000
+Progression.WarEffort.BakedSalmon.Required        = 10000
+
+#
+#    Progression.WarEffort.Transition.Minutes
+#        Description: The number of minutes between each resource tier being transported to Silithus
+#                     There are a total of 5 transition stages
+#                     The server will only run a check every 5 minutes. A lower value can be used but won't trigger until that time is up
+#        Default: 1140 (1 Day)
+#
+
+Progression.WarEFfort.Transition.Minutes = 1440
+
+#
 ###################################################################################################
