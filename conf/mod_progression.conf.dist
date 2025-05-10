@@ -82,6 +82,16 @@ Progression.DualTalent.Enforced = 1
 Progression.QuestInfo.Enforced = 1
 
 #
+#    Progression.Achievements.Enforced
+#        Description: Enforce achievements based on the active patch
+#                     Disabling this will allow players to unlock achievements before patch 3.0
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.Achievements.Enforced = 1
+
+#
 #    Progression.TradableBindsOnPickup.Enforced
 #        Description: Enforce binds on pickup items being tradable based on the active patch
 #                     0 - Disabled
