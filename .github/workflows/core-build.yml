@@ -1,9 +1,15 @@
 name: core-build
 on:
   push:
+    paths:
+      - '**.cpp'
+      - '**.h'
     branches:
       - 'master'
   pull_request:
+    paths:
+      - '**.cpp'
+      - '**.h'
     types:
       - opened
       - reopened
