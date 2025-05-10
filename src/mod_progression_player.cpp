@@ -13,15 +13,30 @@ void Progression::OnPlayerLogin(Player* player)
     }
 }
 
-bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
+bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* achievement)
 {
-    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
+    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM && sProgressionMgr->GetEnforceAchievements())
+    {
+        return false;
+    }
+
+    if (sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE && (achievement->ID == ACHIEVEMENT_ONYXIAS_LAIR_10 || achievement->ID == ACHIEVEMENT_ONYXIAS_LAIR_25))
+    {
+        return false;
+    }
+
+    return true;
 }
 
-//bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/)
-//{
-//    return !(sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM);
-//}
+bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* criteria)
+{
+    if (sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE && (criteria->ID == CRITERIA_ONYXIA_10 || criteria->ID == CRITERIA_ONYXIA_25))
+    {
+        return false;
+    }
+
+    return true;
+}
 
 void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
 {
