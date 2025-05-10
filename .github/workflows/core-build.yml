@@ -4,9 +4,15 @@ on:
     branches:
       - 'master'
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
 
 jobs:
   build:
+    if: !github.event.pull_request.draft
     uses: azerothcore/reusable-workflows/.github/workflows/core_build_modules.yml@main
     with:
       module_repo: ${{ github.event.repository.name }}
