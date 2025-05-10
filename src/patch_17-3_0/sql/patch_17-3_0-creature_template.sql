@@ -8,8 +8,8 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHER
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (2784, 2784, 3057, 3057, 4949, 4949, 7937, 7999, 10181, 10181, 10540, 16802, 17468);
 UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15383, 15431, 15432, 15434, 15437, 15445, 15446, 15448, 15450, 15451, 15452, 15453, 15455, 15456, 15457, 15458, 15459, 15460, 15469, 15477, 15508, 15512, 15515, 15522, 15525, 15528, 15529, 15532, 15533, 15534, 15535, 15539, 15700, 15701);
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~1 WHERE `entry` IN (15458, 15539);
-UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` = 15458;
+UPDATE `creature_template` SET `flags_extra` = `flags_extra` | 1 WHERE `entry` IN (15458, 15757, 15818);
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `faction` = 29 WHERE `entry` = 14720;
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818);
 UPDATE `creature_template` SET `rank` = 1 WHERE `entry` = 15818;
-DELETE FROM `creature_template` WHERE `entry` = 88000;
+DELETE FROM `creature_template` WHERE `entry` IN (88000, 88001);

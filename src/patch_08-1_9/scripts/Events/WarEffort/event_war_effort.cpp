@@ -125,7 +125,7 @@ void WarEffortMgr::UpdateActiveStage()
     {
         if (currentGameTime > nextTransition)
         {
-            LOG_INFO("server.loading", "Not Yet Implemented");
+            stage++;
         }
     }
 }
@@ -241,6 +241,7 @@ void AddSC_npc_war_effort_collector();
 void AddSC_npc_war_effort_resources();
 void AddSC_go_war_effort_resources();
 void AddSC_go_war_effort_scarab_gong();
+void AddSC_npc_war_effort_cenarion_hold();
 
 void AddSC_event_war_effort()
 {
@@ -250,4 +251,5 @@ void AddSC_event_war_effort()
     AddSC_npc_war_effort_resources();
     AddSC_go_war_effort_resources();
     AddSC_go_war_effort_scarab_gong();
+    AddSC_npc_war_effort_cenarion_hold();
 }
