@@ -24,3 +24,4 @@ UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN (16222, 16733, 24996, 24997, 24998, 25007, 25021, 25022, 25023, 25024);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (16802, 17468);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73, `Scale` = 1, `BaseAttackTime` = 800, `flags_extra` = `flags_extra` & 1, `ScriptName` = '' WHERE `entry` = 12397;
+UPDATE `creature_template` SET `AIName` = 'SmartAI' WHERE `entry` = 14435;
