@@ -3,7 +3,7 @@ DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (269, 309, 349, 429
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7);
 DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 23, 24, 26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 70, 71, 76, 77, 90, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115);
-DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (17413, 17414, 17682, 17683, 18600, 18646, 18665, 18705, 18987, 19803, 19805, 19806, 19807, 19808, 21103, 21104, 21105, 21108, 21110, 21877, 27859, 27860, 31952, 49205, 50289, 50432);
+DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (17413, 17414, 17682, 17683, 18563, 18564, 18600, 18646, 18665, 18705, 18987, 19803, 19805, 19806, 19807, 19808, 21103, 21104, 21105, 21108, 21110, 21877, 27859, 27860, 31952, 49205, 50289, 50432);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (1, 7028, 0, '', '', 'Twisted Evils'),
 (1, 7029, 0, '', '', 'Vyletongue Corruption'),
@@ -209,6 +209,8 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (10, 17414, 0, '', '', 'Codex: Prayer of Fortitude II'),
 (10, 17682, 0, '', '', 'Book: Gift of the Wild'),
 (10, 17683, 0, '', '', 'Book: Gift of the Wild II'),
+(10, 18563, 0, '', '', 'Bindings of the Windseeker'),
+(10, 18564, 0, '', '', 'Bindings of the Windseeker'),
 (10, 18600, 0, '', '', 'Tome of Arcane Brilliance'),
 (10, 18646, 0, '', '', 'The Eye of Divinity'),
 (10, 18665, 0, '', '', 'The Eye of Shadow'),

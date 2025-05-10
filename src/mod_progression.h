@@ -105,7 +105,13 @@ enum
     SPELL_LIFE_STEAL               = 20004,
 
     FACTION_SILVERMOON_CITY        = 911,
-    FACTION_EXODAR                 = 930
+    FACTION_EXODAR                 = 930,
+
+    ACHIEVEMENT_ONYXIAS_LAIR_10    = 4396,
+    ACHIEVEMENT_ONYXIAS_LAIR_25    = 4397,
+
+    CRITERIA_ONYXIA_10             = 12558,
+    CRITERIA_ONYXIA_25             = 12559
 };
 
 class Progression : public AllBattlegroundScript, DatabaseScript, MailScript, PlayerScript, UnitScript, ServerScript, WorldScript
@@ -125,7 +131,7 @@ public:
     // PlayerScript
     void OnPlayerLogin(Player* /*player*/) override;
     bool OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/) override;
-    //bool OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/) override;
+    bool OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* /*criteria*/) override;
     void OnPlayerUpdateArea(Player* /*player*/, uint32 /*oldArea*/, uint32 /*newArea*/) override;
     bool OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* /*player*/) override;
     bool OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 /*chance*/, int32 /*roll*/) override;
@@ -177,6 +183,8 @@ public:
     bool GetEnforceDualTalent() { return enforceDualTalent; }
     void SetEnforceQuestInfo(bool enabled) { enforceQuestInfo = enabled; }
     bool GetEnforceQuestInfo() { return enforceQuestInfo; }
+    void SetEnforceAchievements(bool enabled) { enforceAchievements = enabled; }
+    bool GetEnforceAchievements() { return enforceAchievements; }
     void SetEnforceTradableBindsOnPickup(bool enabled) { enforceTradableBindsOnPickup = enabled; }
     bool GetEnforceTradableBindsOnPickup() { return enforceTradableBindsOnPickup; }
     void SetDamageModifier(float value) { damageModifier = value; }
@@ -198,6 +206,7 @@ private:
     bool enforceDungeonFinder;
     bool enforceDualTalent;
     bool enforceQuestInfo;
+    bool enforceAchievements;
     bool enforceTradableBindsOnPickup;
     bool showPatchNotes;
     float damageModifier;
