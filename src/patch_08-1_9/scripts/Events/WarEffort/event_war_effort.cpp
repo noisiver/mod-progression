@@ -65,18 +65,21 @@ void WarEffortMgr::Init()
 
 void WarEffortMgr::Update(uint32 diff)
 {
-    timer += Milliseconds(diff);
-
-    if (timer > 5min)
+    if (stage < STAGE_EVENT_ENDED)
     {
-        if (!IsResourceCollectionCompleted())
+        timer += Milliseconds(diff);
+
+        if (timer > 5min)
         {
-            CheckResources();
+            if (!IsResourceCollectionCompleted())
+            {
+                CheckResources();
+            }
+            UpdateActiveStage();
+            UpdateActiveEvents();
+            Save();
+            timer = 0s;
         }
-        UpdateActiveStage();
-        UpdateActiveEvents();
-        Save();
-        timer = 0s;
     }
 }
 
@@ -125,7 +128,15 @@ void WarEffortMgr::UpdateActiveStage()
     {
         if (currentGameTime > nextTransition)
         {
-            stage++;
+            stage = STAGE_ATTACK_ON_CENARION_HOLD;
+            nextTransition = currentGameTime + Seconds(4 * HOUR);
+        }
+    }
+    else if (stage == STAGE_ATTACK_ON_CENARION_HOLD)
+    {
+        if (currentGameTime > nextTransition)
+        {
+            stage = STAGE_EVENT_ENDED;
         }
     }
 }
