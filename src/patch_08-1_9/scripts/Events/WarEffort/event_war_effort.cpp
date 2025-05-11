@@ -3,6 +3,7 @@
 #include "GameTime.h"
 #include "Player.h"
 #include "ScriptMgr.h"
+#include "WorldState.h"
 
 #include "event_war_effort.h"
 
