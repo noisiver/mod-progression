@@ -18,22 +18,22 @@ void Progression::OnBattlegroundEndReward(Battleground* bg, Player* player, Team
 
     switch (bg->GetMapId())
     {
-    case 30: // Alterac Valley
+    case MAP_ALTERAC_VALLEY: // Alterac Valley
         token = 20560;
         break;
-    case 489: // Warsong Gulch
+    case MAP_WARSONG_GULCH: // Warsong Gulch
         token = 20558;
         break;
-    case 529: // Arathi Basin
+    case MAP_ARATHI_BASIN: // Arathi Basin
         token = 20559;
         break;
-    case 566: // Eye of the Storm
+    case MAP_EYE_OF_THE_STORM: // Eye of the Storm
         token = 29024;
         break;
-    case 607: // Strand of the Ancients
+    case MAP_STRAND_OF_THE_ANCIENTS: // Strand of the Ancients
         token = 42425;
         break;
-    case 628: // Isle of Conquest
+    case MAP_ISLE_OF_CONQUEST: // Isle of Conquest
         token = 47395;
         break;
     default:
