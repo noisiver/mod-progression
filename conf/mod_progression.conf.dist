@@ -177,7 +177,7 @@ Progression.WarEffort.BakedSalmon.Required        = 10000
 #        Description: The number of minutes between each resource tier being transported to Silithus
 #                     There are a total of 5 transition stages
 #                     The server will only run a check every 5 minutes. A lower value can be used but won't trigger until that time is up
-#        Default: 1140 (1 Day)
+#        Default: 1440 (1 Day)
 #
 
 Progression.WarEFfort.Transition.Minutes = 1440
