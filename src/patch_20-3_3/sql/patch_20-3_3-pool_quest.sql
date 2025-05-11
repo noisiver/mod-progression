@@ -1,4 +1,5 @@
 DELETE FROM `pool_quest` WHERE `pool_entry` = 5678;
+DELETE FROM `pool_quest` WHERE `pool_entry` = 87000;
 INSERT INTO `pool_quest` (`entry`, `pool_entry`, `description`) VALUES
 (24579, 5678, 'Sartharion Must Die!'),
 (24580, 5678, 'Anub Rekhan Must Die!'),
