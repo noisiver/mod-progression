@@ -7,3 +7,9 @@ UPDATE `quest_template` SET `Flags` = `Flags` & ~16384, `RewardItem1` = 45624 WH
 UPDATE `quest_template` SET `RewardDisplaySpell` = 10846, `RewardSpell` = 19902, `RewardItem2` = 0, `RewardAmount2` = 0 WHERE `ID` IN (6622, 6624);
 UPDATE `quest_template` SET `RewardDisplaySpell` = 19890, `RewardSpell` = 19890 WHERE `ID` = 6607;
 UPDATE `quest_template` SET `LogDescription` = 'Return to Stormwind and inform Highlord Bolvar Fordragon of the fate of Nathanos Marris.' WHERE `ID` = 6186;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 20 iron bars to Corporal Carnes at the Military Ward in Ironforge.' WHERE `ID` = 8495;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 20 purple lotus to Master Nightsong at the Military Ward in Ironforge.' WHERE `ID` = 8506;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 20 arthas\' tears to Sergeant Major Germaine at the Military Ward in Ironforge.' WHERE `ID` = 8510;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 10 medium leather to Private Porter at the Military Ward in Ironforge.' WHERE `ID` = 8514;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 20 rainbow fin albacore to Slicky Gastronome at the Military Ward in Ironforge.' WHERE `ID` = 8525;
+UPDATE `quest_template` SET `LogDescription` = 'Bring 20 roast raptor to Sarah Sadwhistle at the Military Ward in Ironforge.' WHERE `ID` = 8527;
