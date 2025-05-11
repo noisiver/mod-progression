@@ -26,7 +26,7 @@ void Addmod_progressionScripts()
 
     uint8 id = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
 
-    if (id >= PATCH_RUINS_OF_THE_DIRE_MAUL && id < PATCH_BEFORE_THE_STORM)
+    if (id < PATCH_BEFORE_THE_STORM)
     {
         AddSC_boss_lord_kazzak();
     }

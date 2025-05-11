@@ -1,5 +1,4 @@
 UPDATE `creature_template` SET `subname` = 'Prince of Stormwind' WHERE `entry` = 1747;
-UPDATE `creature_template` SET `AIName` = '' WHERE `entry` = 1748;
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 12380;
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (68, 3084, 3296, 4262, 5595, 5624, 7980, 16096, 16222, 16733, 24841, 24842, 24996, 24997, 24998, 25007, 25021, 25022, 25023, 25024, 25079, 25080, 25081, 25083);
 UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (4624, 9460, 11190);
