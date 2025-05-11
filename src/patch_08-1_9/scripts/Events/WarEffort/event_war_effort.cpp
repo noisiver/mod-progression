@@ -14,13 +14,13 @@ WarEffortMgr* WarEffortMgr::instance()
 
 void WarEffortMgr::Init()
 {
-    stage = !sWorld->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE) ? STAGE_RESOURCE_COLLECTION : sWorld->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE);
-    nextTransition = !sWorld->getWorldState(WORLD_STATE_NEXT_TRANSITION) ? Seconds(0) : Seconds(sWorld->getWorldState(WORLD_STATE_NEXT_TRANSITION));
+    stage = !sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE) ? STAGE_RESOURCE_COLLECTION : sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE);
+    nextTransition = !sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION) ? Seconds(0) : Seconds(sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION));
     minutesPerTransition = sConfigMgr->GetOption<uint32>("Progression.WarEFfort.Transition.Minutes", 1440);
 
     for (int i = 0; i < MAX_RESOURCES; i++)
     {
-        resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT] = !sWorld->getWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT]) ? 0 : sWorld->getWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT]);
+        resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT] = !sWorldState->getWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT]) ? 0 : sWorldState->getWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT]);
     }
 
     resources[RESOURCE_COPPER_BARS_ALLIANCE][COLUMN_RESOURCE_REQUIRED_AMOUNT] = sConfigMgr->GetOption<uint32>("Progression.WarEffort.CopperBar.Required", 90000);
@@ -87,19 +87,19 @@ void WarEffortMgr::Save()
 {
     if (stage)
     {
-        sWorld->setWorldState(WORLD_STATE_WAR_EFFORT_STAGE, stage);
+        sWorldState->setWorldState(WORLD_STATE_WAR_EFFORT_STAGE, stage);
     }
 
     if (nextTransition.count())
     {
-        sWorld->setWorldState(WORLD_STATE_NEXT_TRANSITION, nextTransition.count());
+        sWorldState->setWorldState(WORLD_STATE_NEXT_TRANSITION, nextTransition.count());
     }
 
     for (int i = 0; i < MAX_RESOURCES; i++)
     {
         if (resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT] && resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT])
         {
-            sWorld->setWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT], resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT]);
+            sWorldState->setWorldState(resources[i][COLUMN_RESOURCE_WORLD_STATE_CURRENT_AMOUNT], resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT]);
         }
     }
 }
