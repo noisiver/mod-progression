@@ -1,6 +1,3 @@
 UPDATE `quest_template` SET `LogDescription` = 'Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey.', `QuestDescription` = 'Whatever is affecting these wolves isn\'t going away. Each day that passes brings forth more sick wolves. It pains me to ask anyone to kill nature\'s beasts, but we must destroy the diseased young wolves before this little outbreak turns into an epidemic.$B$BKill diseased young wolves in the valley and bring me their diseased wolf pelts as proof of your deed.$B', `RequiredItemId1` = 50432 WHERE `ID` = 33;
 UPDATE `quest_template` SET `RewardItem1` = 49426 WHERE `ID` = 24788;
 UPDATE `quest_template` SET `RewardItem1` = 47241 WHERE `ID` IN (24789, 24790);
-UPDATE `quest_template` SET `Flags` = `Flags` | 16384, `RewardItem1` = 47241, `QuestCompletionLog` = 'Return to Archmage Timear in Crystalsong Forest.' WHERE `ID` IN (13240, 13241, 13243, 13244);
-UPDATE `quest_template` SET `Flags` = `Flags` | 16384, `RewardItem1` = 47241, `QuestCompletionLog` = 'Return to Archmage Lan\'dalock at Forlorn Woods in Crystalsong Forest.' WHERE `ID` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256, 24789, 24790);
-UPDATE `quest_template` SET `Flags` = `Flags` | 16384, `RewardItem1` = 47241 WHERE `ID` = 14199;

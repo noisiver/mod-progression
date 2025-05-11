@@ -10,9 +10,11 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (79011, 92890, 203492,
 UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 11099, 12397, 16226);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
+(5200000, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300000, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300001, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2281.74, -5323.96, 89.2463, 2.21657, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300002, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2320.41, -5378.72, 85.7834, 0.777658, 25, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300003, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2316.27, -5374.83, 86.5285, 0.816928, 25, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300004, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8443.36, 331.838, 122.663, 1.85005, 86400, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
-(5300005, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 180, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
+(5300005, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 180, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(5300006, 16226, 0, 0, 0, 0, 0, 1, 16384, 0, 2305.29, -5286.12, 82.0618, 4.83456, 120, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
