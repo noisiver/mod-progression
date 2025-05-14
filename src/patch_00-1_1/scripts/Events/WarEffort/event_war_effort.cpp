@@ -17,14 +17,31 @@ WarEffortMgr* WarEffortMgr::instance()
 
 void WarEffortMgr::Init()
 {
+    if (sProgressionMgr->GetPatchId() < PATCH_THE_GATES_OF_AHN_QIRAJ)
+    {
+        for (int i = 0; i < MAX_EVENTS; i++)
+        {
+            if (events[i][COLUMN_EVENT_ID] == EVENT_WAR_EFFORT_GATE)
+            {
+                if (!sGameEventMgr->IsActiveEvent(events[i][COLUMN_EVENT_ID]))
+                {
+                    sGameEventMgr->StartEvent(events[i][COLUMN_EVENT_ID]);
+                }
+            }
+            else
+            {
+                if (sGameEventMgr->IsActiveEvent(events[i][COLUMN_EVENT_ID]))
+                {
+                    sGameEventMgr->StopEvent(events[i][COLUMN_EVENT_ID]);
+                }
+            }
+        }
+        return;
+    }
+
     stage = !sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE) ? STAGE_RESOURCE_COLLECTION : sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE);
     nextTransition = !sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION) ? Seconds(0) : Seconds(sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION));
     minutesPerTransition = sConfigMgr->GetOption<uint32>("Progression.WarEFfort.Transition.Minutes", 1440);
-
-    if (sProgressionMgr->GetPatchId() < PATCH_THE_GATES_OF_AHN_QIRAJ)
-    {
-        stage = STAGE_EVENT_NOT_ACTIVE;
-    }
 
     for (int i = 0; i < MAX_RESOURCES; i++)
     {
@@ -79,16 +96,13 @@ void WarEffortMgr::Update(uint32 diff)
 
         if (timer > 5min)
         {
-            if (stage > STAGE_EVENT_NOT_ACTIVE)
+            if (!IsResourceCollectionCompleted())
             {
-                if (!IsResourceCollectionCompleted())
-                {
-                    CheckResources();
-                }
-
-                UpdateActiveStage();
-                Save();
+                CheckResources();
             }
+
+            UpdateActiveStage();
+            Save();
             UpdateActiveEvents();
             timer = 0s;
         }
