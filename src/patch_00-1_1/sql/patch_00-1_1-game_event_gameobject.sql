@@ -1,4 +1,4 @@
-DELETE FROM `game_event_gameobject` WHERE `eventEntry` IN (-97, -96, -95, -94, -92, 91, 93, 94, 95, 96, 97, 98, 99, 100);
+DELETE FROM `game_event_gameobject` WHERE `eventEntry` IN (-97, -96, -95, -94, -92, 91, 93, 94, 95, 96, 97, 98, 99, 100, 120);
 INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
 (-97, 5400002),
 (-97, 5400010),
@@ -136,4 +136,14 @@ INSERT INTO `game_event_gameobject` (`eventEntry`, `guid`) VALUES
 (100, 5400089),
 (100, 5400090),
 (100, 5400091),
-(100, 5400092);
+(100, 5400092),
+(120, 5400059),
+(120, 5400060),
+(120, 5400061),
+(120, 5400062),
+(120, 5400063),
+(120, 5400064),
+(120, 5400065),
+(120, 5400066),
+(120, 5400067),
+(120, 5400068);
