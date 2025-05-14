@@ -146,7 +146,7 @@ void WarEffortMgr::UpdateActiveEvents()
 {
     for (int i = 0; i < MAX_EVENTS; i++)
     {
-        if (stage > events[i][COLUMN_EVENT_MAX_STAGE] || stage < events[i][COLUMN_EVENT_MIN_STAGE])
+        if (stage > events[i][COLUMN_EVENT_MAX_STAGE] || stage < events[i][COLUMN_EVENT_MIN_STAGE] || sProgressionMgr->GetPatchId() < COLUMN_EVENT_MIN_PATCH)
         {
             if (sGameEventMgr->IsActiveEvent(events[i][COLUMN_EVENT_ID]))
             {
