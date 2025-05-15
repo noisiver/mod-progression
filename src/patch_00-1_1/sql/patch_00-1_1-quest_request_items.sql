@@ -1,5 +1,4 @@
 UPDATE `quest_request_items` SET `CompletionText` = 'Hey $N.  I\'m getting hungry...did you get that tough wolf meat?' WHERE `ID` = 33;
-
 UPDATE `quest_request_items` SET `CompletionText` = 'Welcome back, $c. Our collection grows, but even now we have a need for additional purple lotus. If it is still within your power to gather more of the herb, I entreat you to do so and return them to me here.' WHERE `ID` = 8506;
 UPDATE `quest_request_items` SET `CompletionText` = 'Yes $g sir : ma\'am;, I remember you. Is that the medium leather you have with you there?' WHERE `id` = 8513;
 UPDATE `quest_request_items` SET `CompletionText` = 'Yes $g sir : ma\'am;, looks like we\'ve collected many pieces of medium leather, but we need more. I can assure you that it will all be put to good use; not one piece will get wasted. I know it\'s a lot to ask, but if you\'re still willing, I could use your help in attempting to put a dent in the rest of my quota.' WHERE `ID` = 8514;
