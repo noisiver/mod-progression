@@ -64,6 +64,16 @@ public:
             return;
         }
 
+        if (sWarEffortMgr->GetStage() == STAGE_EVENT_NOT_ACTIVE)
+        {
+            if (go->isSpawned())
+            {
+                go->DespawnOrUnsummon();
+            }
+
+            return;
+        }
+
         if ((go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_1 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 20) ||
             (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_2 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 40) ||
             (go->GetEntry() == GO_METAL_BARS_ALLIANCE_TIER_3 && sWarEffortMgr->GetResourceCategoryCompletionPercentage(CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE) < 60) ||
