@@ -169,7 +169,7 @@ private:
             return "Silk Bandage";
         case RESOURCE_RUNECLOTH_BANDAGE_ALLIANCE:
         case RESOURCE_RUNECLOTH_BANDAGE_HORDE:
-            return "Runeclotj Bandage";
+            return "Runecloth Bandage";
         case RESOURCE_WOOL_BANDAGE:
             return "Wool Bandage";
         case RESOURCE_MAGEWEAVE_BANDAGE:
