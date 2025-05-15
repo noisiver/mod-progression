@@ -55,7 +55,7 @@ void Addmod_progressionScripts()
         AddSC_boss_svala_progression();
     }
 
-    if (id >= PATCH_THE_GATES_OF_AHN_QIRAJ && id < PATCH_ECHOES_OF_DOOM)
+    if (id < PATCH_ECHOES_OF_DOOM)
     {
         AddSC_event_war_effort();
     }

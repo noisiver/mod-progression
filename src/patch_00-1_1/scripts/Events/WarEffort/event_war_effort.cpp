@@ -7,6 +7,8 @@
 
 #include "event_war_effort.h"
 
+#include "mod_progression.h"
+
 WarEffortMgr* WarEffortMgr::instance()
 {
     static WarEffortMgr instance;
@@ -15,6 +17,28 @@ WarEffortMgr* WarEffortMgr::instance()
 
 void WarEffortMgr::Init()
 {
+    if (sProgressionMgr->GetPatchId() < PATCH_THE_GATES_OF_AHN_QIRAJ)
+    {
+        for (int i = 0; i < MAX_EVENTS; i++)
+        {
+            if (events[i][COLUMN_EVENT_ID] == EVENT_WAR_EFFORT_GATE)
+            {
+                if (!sGameEventMgr->IsActiveEvent(events[i][COLUMN_EVENT_ID]))
+                {
+                    sGameEventMgr->StartEvent(events[i][COLUMN_EVENT_ID]);
+                }
+            }
+            else
+            {
+                if (sGameEventMgr->IsActiveEvent(events[i][COLUMN_EVENT_ID]))
+                {
+                    sGameEventMgr->StopEvent(events[i][COLUMN_EVENT_ID]);
+                }
+            }
+        }
+        return;
+    }
+
     stage = !sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE) ? STAGE_RESOURCE_COLLECTION : sWorldState->getWorldState(WORLD_STATE_WAR_EFFORT_STAGE);
     nextTransition = !sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION) ? Seconds(0) : Seconds(sWorldState->getWorldState(WORLD_STATE_NEXT_TRANSITION));
     minutesPerTransition = sConfigMgr->GetOption<uint32>("Progression.WarEFfort.Transition.Minutes", 1440);
@@ -76,9 +100,10 @@ void WarEffortMgr::Update(uint32 diff)
             {
                 CheckResources();
             }
+
             UpdateActiveStage();
-            UpdateActiveEvents();
             Save();
+            UpdateActiveEvents();
             timer = 0s;
         }
     }
@@ -254,6 +279,7 @@ void AddSC_npc_war_effort_resources();
 void AddSC_go_war_effort_resources();
 void AddSC_go_war_effort_scarab_gong();
 void AddSC_npc_war_effort_cenarion_hold();
+void AddSC_cmd_event_war_effort();
 
 void AddSC_event_war_effort()
 {
@@ -264,4 +290,5 @@ void AddSC_event_war_effort()
     AddSC_go_war_effort_resources();
     AddSC_go_war_effort_scarab_gong();
     AddSC_npc_war_effort_cenarion_hold();
+    AddSC_cmd_event_war_effort();
 }

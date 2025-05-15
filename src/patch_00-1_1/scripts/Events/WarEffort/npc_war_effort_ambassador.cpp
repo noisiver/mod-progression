@@ -87,7 +87,7 @@ public:
 
         if (stage >= STAGE_TRANSITION_DAY_1 && stage < STAGE_TRANSITION_DAY_5)
         {
-            player->SendUpdateWorldState(PLAYER_STATE_RESOURCES_FINISHED, 6 - stage);
+            player->SendUpdateWorldState(PLAYER_STATE_RESOURCES_FINISHED, 7 - stage);
         }
 
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);

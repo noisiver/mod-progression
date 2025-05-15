@@ -6,7 +6,7 @@
 
 void Progression::OnBeforeWorldInitialized()
 {
-    if (sProgressionMgr->GetPatchId() >= PATCH_THE_GATES_OF_AHN_QIRAJ && sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
     {
         sWarEffortMgr->Init();
     }
