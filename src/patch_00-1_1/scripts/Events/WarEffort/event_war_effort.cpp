@@ -279,6 +279,7 @@ void AddSC_npc_war_effort_resources();
 void AddSC_go_war_effort_resources();
 void AddSC_go_war_effort_scarab_gong();
 void AddSC_npc_war_effort_cenarion_hold();
+void AddSC_cmd_event_war_effort();
 
 void AddSC_event_war_effort()
 {
@@ -289,4 +290,5 @@ void AddSC_event_war_effort()
     AddSC_go_war_effort_resources();
     AddSC_go_war_effort_scarab_gong();
     AddSC_npc_war_effort_cenarion_hold();
+    AddSC_cmd_event_war_effort();
 }

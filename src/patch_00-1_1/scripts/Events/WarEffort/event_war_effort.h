@@ -220,6 +220,7 @@ public:
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourcesForTeamToPlayer(Player* /*player*/, uint8 /*team*/);
     void GateIsOpen();
+    Seconds GetNextTransition() { return nextTransition; }
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
