@@ -19,6 +19,8 @@ void WarEffortMgr::Init()
 {
     if (sProgressionMgr->GetPatchId() < PATCH_THE_GATES_OF_AHN_QIRAJ)
     {
+        stage = STAGE_EVENT_NOT_ACTIVE;
+
         for (int i = 0; i < MAX_EVENTS; i++)
         {
             if (events[i][COLUMN_EVENT_ID] == EVENT_WAR_EFFORT_GATE)
@@ -36,6 +38,7 @@ void WarEffortMgr::Init()
                 }
             }
         }
+
         return;
     }
 
