@@ -6,6 +6,7 @@ DELETE FROM `creature_questender` WHERE `id` = 6251 AND `quest` IN (3631, 4487, 
 DELETE FROM `creature_questender` WHERE `id` = 14392 AND `quest` = 7491;
 DELETE FROM `creature_questender` WHERE `id` = 14394 AND `quest` = 7496;
 DELETE FROM `creature_questender` WHERE `id` = 15180 AND `quest` IN (8286, 8288, 8301, 8302);
+DELETE FROM `creature_questender` WHERE `id` = 15701 AND `quest` IN (8795, 8796, 8797, 10501);
 DELETE FROM `creature_questender` WHERE `id` = 20735 AND `quest` IN (13245, 13246, 13247, 13248, 13249, 13250, 13251, 13252, 13253, 13254, 13255, 13256);
 DELETE FROM `creature_questender` WHERE `id` = 31439 AND `quest` IN (13240, 13241, 13243, 13244);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
@@ -22,6 +23,10 @@ INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 (6251, 4490),
 (14392, 7491),
 (14394, 7496),
+(15701, 8795),
+(15701, 8796),
+(15701, 8797),
+(15701, 10501),
 (20735, 13245),
 (20735, 13246),
 (20735, 13247),
