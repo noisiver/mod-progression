@@ -19,6 +19,7 @@ void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
 void AddSC_event_war_effort();
+void AddSC_go_portal_to_inner_maraudon();
 
 void Addmod_progressionScripts()
 {
@@ -58,5 +59,6 @@ void Addmod_progressionScripts()
     if (id < PATCH_ECHOES_OF_DOOM)
     {
         AddSC_event_war_effort();
+        AddSC_go_portal_to_inner_maraudon();
     }
 }
