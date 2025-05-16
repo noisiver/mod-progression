@@ -1577,3 +1577,4 @@ UPDATE `item_template` SET `bonding` = 0 WHERE `entry` IN (2169, 5187, 5254, 540
 UPDATE `item_template` SET `bonding` = 1 WHERE `entry` IN (11302, 13260, 14536, 14555, 16672, 16676, 16692, 16712, 16724, 16736, 16737, 18289, 18295, 18296, 18298, 18337, 18338, 18339, 18340, 18343, 18344, 18697, 18698, 18699, 18700, 18701, 18702, 18736, 18741, 18742, 18743, 18744, 18745, 19287, 19288, 19289, 19290, 20653, 22276, 22277, 22278, 22280, 22281, 22282, 24443, 31856, 31857, 31858, 31859);
 UPDATE `item_template` SET `bonding` = 2 WHERE `entry` IN (2280, 18610, 18611, 18612, 22327, 22330);
 UPDATE `item_template` SET `bonding` = 4 WHERE `entry` = 19022;
+UPDATE `item_template` SET `class` = 15, `subclass` = 0, `ItemLevel` = 1, `BuyPrice` = 0, `SellPrice` = 0, `Material` = -1, `MaxDurability` = 0, `RequiredDisenchantSkill` = 0, `DisenchantID` = 0, `sheath` = 0, `SoundOverrideSubclass` = -1 WHERE `entry` = 17191;
