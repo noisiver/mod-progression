@@ -85,19 +85,15 @@ void WarEffortMgr::Init()
     resources[RESOURCE_LEAN_WOLF_STEAK][COLUMN_RESOURCE_REQUIRED_AMOUNT] = sConfigMgr->GetOption<uint32>("Progression.WarEffort.LeanWolfSteak.Required", 10000);
     resources[RESOURCE_SPOTTED_YELLOWTAIL_HORDE][COLUMN_RESOURCE_REQUIRED_AMOUNT] = sConfigMgr->GetOption<uint32>("Progression.WarEffort.SpottedYellowtail.Required", 17000);
     resources[RESOURCE_BAKED_SALMON][COLUMN_RESOURCE_REQUIRED_AMOUNT] = sConfigMgr->GetOption<uint32>("Progression.WarEffort.BakedSalmon.Required", 10000);
-
-    CheckResources();
-    UpdateActiveStage();
-    UpdateActiveEvents();
 }
 
 void WarEffortMgr::Update(uint32 diff)
 {
     if (stage < STAGE_EVENT_ENDED)
     {
-        timer += Milliseconds(diff);
+        currentGameTime = GameTime::GetGameTime();
 
-        if (timer > 5min)
+        if (currentGameTime > nextCheck)
         {
             if (!IsResourceCollectionCompleted())
             {
@@ -107,7 +103,7 @@ void WarEffortMgr::Update(uint32 diff)
             UpdateActiveStage();
             Save();
             UpdateActiveEvents();
-            timer = 0s;
+            nextCheck = GameTime::GetGameTime() + 5min;
         }
     }
 }
@@ -135,8 +131,6 @@ void WarEffortMgr::Save()
 
 void WarEffortMgr::UpdateActiveStage()
 {
-    currentGameTime = GameTime::GetGameTime();
-
     if (stage == STAGE_RESOURCE_COLLECTION)
     {
         if (IsResourceCollectionCompleted())

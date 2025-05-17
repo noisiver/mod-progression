@@ -33,6 +33,11 @@ public:
         handler->PSendSysMessage(handler->GetSession() ? "|cff00CED1Gates of Ahn'Qiraj|r" : "Gates of Ahn'Qiraj");
         handler->PSendSysMessage(handler->GetSession() ? Acore::StringFormat("|cffFFA500Stage:|r |cff{}{} ({})|r", stage == STAGE_EVENT_NOT_ACTIVE || stage == STAGE_EVENT_ENDED ? "FF4500" : "32CD32", GetStageName(stage), stage) : Acore::StringFormat("Stage: {} ({})", GetStageName(stage), stage));
 
+        if (stage > STAGE_EVENT_NOT_ACTIVE && stage < STAGE_EVENT_ENDED)
+        {
+            handler->PSendSysMessage(handler->GetSession() ? Acore::StringFormat("|cffFFA500Next check:|r |cff32CD32{}|r", Acore::Time::TimeToTimestampStr(Seconds(sWarEffortMgr->GetNextCheck()))) : Acore::StringFormat("Next check: {}", Acore::Time::TimeToTimestampStr(Seconds(sWarEffortMgr->GetNextCheck()))));
+        }
+
         if ((stage > STAGE_RESOURCE_COLLECTION && stage < STAGE_BANG_A_GONG) || (stage > STAGE_BANG_A_GONG && stage < STAGE_EVENT_ENDED))
         {
             std::string transition = Acore::Time::TimeToTimestampStr(Seconds(sWarEffortMgr->GetNextTransition()));

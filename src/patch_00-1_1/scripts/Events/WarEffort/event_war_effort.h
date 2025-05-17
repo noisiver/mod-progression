@@ -221,11 +221,12 @@ public:
     void SendResourcesForTeamToPlayer(Player* /*player*/, uint8 /*team*/);
     void GateIsOpen();
     Seconds GetNextTransition() { return nextTransition; }
+    Seconds GetNextCheck() { return nextCheck; }
 
 private:
     uint8 stage = STAGE_RESOURCE_COLLECTION;
-    Milliseconds timer = 4min + 50s;
     Seconds currentGameTime = 0s;
+    Seconds nextCheck = 0s;
     Seconds nextTransition = 0s;
     uint32 minutesPerTransition = 1440;
     bool teamFinished[2] = { false, false };
