@@ -1,0 +1,8 @@
+UPDATE `item_template` SET `Quality` = 3, `ItemLevel` = 44, `StatsCount` = 3, `stat_type3` = 7, `stat_value3` = 7, `DisenchantID` = 45 WHERE `entry` = 10824;
+UPDATE `item_template` SET `spellid_1` = 21626 WHERE `entry` = 13216;
+UPDATE `item_template` SET `stat_value1` = 9, `stat_value2` = 14 WHERE `entry` = 14806;
+UPDATE `item_template` SET `spellid_1` = 0, `spelltrigger_1` = 0 WHERE `entry` = 15709;
+UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 5, `stat_type3` = 7, `stat_value3` = 4 WHERE `entry` = 16683;
+UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 6, `stat_type3` = 7, `stat_value3` = 6 WHERE `entry` = 16685;
+UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 6, `stat_type3` = 7, `stat_value3` = 6 WHERE `entry` = 16689;
+UPDATE `item_template` SET `stat_type1` = 3 WHERE `entry` = 16711;
