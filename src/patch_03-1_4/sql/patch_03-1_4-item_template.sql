@@ -11,8 +11,7 @@ UPDATE `item_template` SET `Quality` = 3, `armor` = 152, `spellid_1` = 21627, `s
 UPDATE `item_template` SET `Quality` = 3, `stat_value1` = 13, `stat_type3` = 7, `stat_value3` = 8, `armor` = 274, `spellid_1` = 9315, `spelltrigger_1` = 1, `DisenchantID` = 49 WHERE `entry` = 14548;
 UPDATE `item_template` SET `stat_value1` = 16, `stat_value2` = 8 WHERE `entry` = 14817;
 UPDATE `item_template` SET `stat_value1` = 9, `armor` = 150 WHERE `entry` = 15855;
-UPDATE `item_template` SET `stat_value2` = 5, `stat_value3` = 11 WHERE `entry` = 16686;
 UPDATE `item_template` SET `ItemLevel` = 68, `RequiredLevel` = 60, `stat_value1` = 13, `stat_value2` = 9 WHERE `entry` = 17065;
-UPDATE `item_template` SET `ItemLevel` = 71, `RequiredLevel` = 60, `stat_value1` = 12, `stat_value2` = 7, `dmg_min1` = 64, `arcane_res` = 0, `spellid_2` = 18056, `spelltrigger_2` = 1 WHERE `entry` = 17103
+UPDATE `item_template` SET `ItemLevel` = 71, `RequiredLevel` = 60, `stat_value1` = 12, `stat_value2` = 7, `dmg_min1` = 64, `arcane_res` = 0, `spellid_2` = 18056, `spelltrigger_2` = 1 WHERE `entry` = 17103;
 UPDATE `item_template` SET `ItemLevel` = 65, `RequiredLevel` = 60, `StatsCount` = 3, `stat_type3` = 7, `stat_value3` = 9, `spellid_1` = 9346 WHERE `entry` = 17109;
 UPDATE `item_template` SET `ItemLevel` = 70, `stat_value1` = 11, `stat_value2` = 11, `stat_value3` = 11, `fire_res` = 6, `nature_res` = 6, `frost_res` = 6, `shadow_res` = 6, `arcane_res` = 6, `spellid_1` = 21361 WHERE `entry` = 17110;

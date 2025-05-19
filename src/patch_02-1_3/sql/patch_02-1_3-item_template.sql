@@ -4,5 +4,7 @@ UPDATE `item_template` SET `stat_value1` = 9, `stat_value2` = 14 WHERE `entry` =
 UPDATE `item_template` SET `spellid_1` = 0, `spelltrigger_1` = 0 WHERE `entry` = 15709;
 UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 5, `stat_type3` = 7, `stat_value3` = 4 WHERE `entry` = 16683;
 UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 6, `stat_type3` = 7, `stat_value3` = 6 WHERE `entry` = 16685;
+UPDATE `item_template` SET `stat_value2` = 5, `stat_value3` = 11 WHERE `entry` = 16686;
 UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 6, `stat_type3` = 7, `stat_value3` = 6 WHERE `entry` = 16689;
 UPDATE `item_template` SET `stat_type1` = 3 WHERE `entry` = 16711;
+UPDATE `item_template` SET `spellid_1` = 14799 WHERE `entry` = 17109;
