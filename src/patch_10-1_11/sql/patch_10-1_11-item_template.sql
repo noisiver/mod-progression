@@ -42,5 +42,4 @@ UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 65, `stat_value1` = 9, `
 UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 67, `StatsCount` = 3, `stat_value2` = 14, `stat_type3` = 6, `stat_value3` = 6, `armor` = 52 WHERE `entry` = 21415;
 UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 65, `StatsCount` = 1, `stat_type1` = 7, `stat_value1` = 12, `spellid_2` = 9343 WHERE `entry` = 21417;
 UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 67, `StatsCount` = 2, `stat_value1` = 16, `stat_value2` = 9, `stat_type3` = 0, `stat_value3` = 0, `armor` = 52, `spellid_1` = 9346 WHERE `entry` = 21418;
-UPDATE `item_template` SET `bonding` = 1 WHERE `entry` = 22327;
-UPDATE `item_template` SET `bonding` = 1 WHERE `entry` = 22330;
+UPDATE `item_template` SET `bonding` = 1 WHERE `entry` IN (22327, 22330);

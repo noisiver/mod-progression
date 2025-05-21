@@ -1,5 +1,4 @@
-UPDATE `item_template` SET `spellid_1` = 9346 WHERE `entry` = 10019;
-UPDATE `item_template` SET `spellid_1` = 9346 WHERE `entry` = 10021;
+UPDATE `item_template` SET `spellid_1` = 9346 WHERE `entry` IN (10019, 10021);
 UPDATE `item_template` SET `stat_value1` = 14, `stat_value3` = 8, `fire_res` = 10, `nature_res` = 0, `frost_res` = 0, `spellid_1` = 9344, `spellid_2` = 0 WHERE `entry` = 16795;
 UPDATE `item_template` SET `StatsCount` = 3, `stat_value1` = 24, `stat_value2` = 13, `stat_value3` = 23, `stat_type4` = 0, `stat_value4` = 0, `fire_res` = 0, `nature_res` = 0, `frost_res` = 0, `shadow_res` = 10, `spellid_1` = 18384, `spellid_2` = 9404 WHERE `entry` = 16796;
 UPDATE `item_template` SET `StatsCount` = 3, `stat_value2` = 5, `stat_type3` = 7, `stat_value3` = 10, `fire_res` = 0, `shadow_res` = 7, `arcane_res` = 0, `spellid_1` = 21618, `spellid_2` = 9402 WHERE `entry` = 16797;
