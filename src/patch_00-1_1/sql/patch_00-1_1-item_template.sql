@@ -140,5 +140,6 @@ UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40
 UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40, `RequiredLevel` = 40, `spellid_1` = 64657, `spellcharges_1` = 0, `spellid_2` = 0, `spelltrigger_2` = 0, `description` = '' WHERE `entry` = 46100;
 UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40, `RequiredLevel` = 40, `spellid_1` = 64977, `spellcharges_1` = 0, `spellid_2` = 0, `spelltrigger_2` = 0, `description` = '' WHERE `entry` = 46308;
 UPDATE `item_template` SET `BuyPrice` = 90000, `SellPrice` = 0, `ItemLevel` = 40, `RequiredLevel` = 40, `spellid_1` = 66847, `spellcharges_1` = 0, `spellid_2` = 0, `spelltrigger_2` = 0, `description` = '' WHERE `entry` = 47100;
+UPDATE `item_template` SET `ItemLevel` = 60, `RequiredLevel` = 60, `spellid_1` = 26656, `spellcharges_1` = 0, `spellid_2` = 0, `spelltrigger_2` = 0, `description` = '' WHERE `entry` = 21176;
 UPDATE `item_template` SET `RequiredReputationRank` = 6 WHERE `entry` IN (30622, 30623, 30633, 30634, 30635, 30637);
 UPDATE `item_template` SET `Flags` = `Flags` & ~16 WHERE `entry` = 17008;
