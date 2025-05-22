@@ -2,7 +2,7 @@ UPDATE `item_template` SET `Quality` = 3, `StatsCount` = 5, `stat_value1` = 4, `
 UPDATE `item_template` SET `StatsCount` = 1, `stat_type1` = 7, `stat_value1` = 5, `armor` = 29, `spellid_1` = 7708 WHERE `entry` = 7027;
 UPDATE `item_template` SET `Quality` = 3, `stat_value1` = 9, `stat_value2` = 4, `DisenchantID` = 43 WHERE `entry` = 9538;
 UPDATE `item_template` SET `Quality` = 3, `stat_value1` = 9, `stat_value2` = 4, `DisenchantID` = 43 WHERE `entry` = 9588;
-UPDATE `item_template` SET `bonding` = 2 WHERE `entry` IN (13260, 14536, 18289, 18295, 18296, 18298, 18337, 18339, 18340, 18343, 18344, 18697, 18698, 18699, 18700, 18701, 18702, 18736, 18741, 18742, 18743, 18744, 18745, 20653)
+UPDATE `item_template` SET `bonding` = 2 WHERE `entry` IN (13260, 14536, 18289, 18295, 18296, 18298, 18337, 18339, 18340, 18343, 18344, 18697, 18698, 18699, 18700, 18701, 18702, 18736, 18741, 18742, 18743, 18744, 18745, 20653);
 UPDATE `item_template` SET `Quality` = 3, `stat_value1` = 12, `armor` = 126, `DisenchantID` = 48 WHERE `entry` = 15058;
 UPDATE `item_template` SET `stat_value1` = 16, `stat_value2` = 27, `stat_value3` = 10, `spellid_1` = 14799, `spellid_2` = 23727 WHERE `entry` = 16795;
 UPDATE `item_template` SET `stat_value1` = 23, `stat_value2` = 10, `stat_value3` = 18, `spellid_2` = 14799 WHERE `entry` = 16796;
