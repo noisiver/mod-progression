@@ -4,6 +4,7 @@ DELETE FROM `npc_trainer` WHERE `ID` = 200006 AND `SpellID` IN (1066, 26991);
 DELETE FROM `npc_trainer` WHERE `ID` = 200008 AND `SpellID` = 33717;
 DELETE FROM `npc_trainer` WHERE `ID` = 200010 AND `SpellID` IN (1710, 23161);
 DELETE FROM `npc_trainer` WHERE `ID` = 200012 AND `SpellID` IN (25392, 39374);
+DELETE FROM `npc_trainer` WHERE `ID` = 200018 AND `SpellID` IN (51730, 51988, 51991, 51992, 51993, 51994);
 DELETE FROM `npc_trainer` WHERE `ID` = 200020 AND `SpellID` IN (13820, 23214);
 DELETE FROM `npc_trainer` WHERE `ID` = 200021 AND `SpellID` IN (34767, 34768, 53736);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
@@ -16,6 +17,12 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (200010, 23161, 100000, 0, 0, 60, 0),
 (200012, 25392, 100000, 0, 0, 70, 0),
 (200012, 39374, 100000, 0, 0, 70, 0),
+(200018, 51730, 7000, 0, 0, 30, 0),
+(200018, 51988, 12000, 0, 0, 40, 0),
+(200018, 51991, 24000, 0, 0, 50, 0),
+(200018, 51992, 34000, 0, 0, 60, 0),
+(200018, 51993, 71000, 0, 0, 70, 0),
+(200018, 51994, 180000, 0, 0, 80, 0),
 (200020, 13820, 3500, 0, 0, 30, 0),
 (200020, 23214, 3500, 0, 0, 60, 0),
 (200021, 34767, 3500, 0, 0, 60, 0),
