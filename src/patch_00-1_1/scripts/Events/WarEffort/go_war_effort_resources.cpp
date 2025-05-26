@@ -64,7 +64,7 @@ public:
             return;
         }
 
-        if (sWarEffortMgr->GetStage() == STAGE_EVENT_NOT_ACTIVE)
+        if (sWarEffortMgr->GetStage() < STAGE_RESOURCE_COLLECTION || sWarEffortMgr->GetStage() > STAGE_TRANSITION_DAY_5)
         {
             if (go->isSpawned())
             {
