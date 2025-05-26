@@ -32,7 +32,7 @@ UPDATE `creature_template` SET `npcflag` = `npcflag` | 1 WHERE `entry` IN (15458
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 15458;
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62, `faction` = 777 WHERE `entry` = 14720;
 UPDATE `creature_template` SET `npcflag` = `npcflag` & ~4194304 | 2, `gossip_menu_id` = 6529 WHERE `entry` = 15180;
-UPDATE `creature_template` SET `AIName` = 'SmartAI' WHERE `entry` IN (15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818);
+UPDATE `creature_template` SET `AIName` = 'SmartAI' WHERE `entry` IN (14720, 15743, 15744, 15747, 15748, 15749, 15750, 15751, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818, 15853, 15861);
 UPDATE `creature_template` SET `flags_extra` = `flags_extra` & ~1 WHERE `entry` IN (15757, 15818);
 UPDATE `creature_template` SET `rank` = 3 WHERE `entry` = 15818;
 DELETE FROM `creature_template` WHERE `entry` IN (88000, 88001);
