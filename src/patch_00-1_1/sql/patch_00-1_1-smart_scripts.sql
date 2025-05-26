@@ -1,4 +1,4 @@
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (1748, 14435, 15743, 15744, 15747, 15748, 15749, 15750, 15751, 15752, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (1748, 14435, 14720, 15743, 15744, 15747, 15748, 15749, 15750, 15751, 15752, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818, 15853, 15861);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
 (1748, 0, 0, 0, 2, 0, 100, 1, 1, 20, 0, 0, 0, 0, 11, 17233, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Lay on Hands at 1-20%'),
 (1748, 0, 1, 0, 2, 0, 100, 0, 1, 90, 60000, 120000, 0, 0, 11, 15062, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Shield Wall at 1-90%'),
@@ -7,6 +7,8 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (1748, 0, 4, 0, 0, 0, 100, 0, 5000, 15000, 20000, 40000, 0, 0, 11, 20683, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Highlord\'s Justice'),
 (14435, 0, 0, 0, 0, 0, 100, 0, 12000, 12000, 12000, 20000, 0, 0, 11, 23009, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Prince Thunderaan - In Combat - Cast \'Tendrils of Air\''),
 (14435, 0, 1, 0, 0, 0, 100, 0, 17000, 17000, 8000, 11000, 0, 0, 11, 23011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Prince Thunderaan - In Combat - Cast \'Tears of the Wind Seeker\''),
+(14720, 0, 0, 0, 0, 0, 100, 0, 5000, 8000, 7000, 7000, 0, 0, 11, 16044, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'High Overlord Saurfang - In Combat - Cast \'Cleave\''),
+(14720, 0, 1, 0, 0, 0, 100, 0, 3000, 9000, 15000, 15000, 0, 0, 11, 14100, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'High Overlord Saurfang - In Combat - Cast \'Terrifying Roar\''),
 (15743, 0, 0, 0, 0, 0, 100, 0, 8000, 8000, 10000, 12000, 0, 0, 11, 8255, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Strong Cleave\''),
 (15743, 0, 1, 0, 0, 0, 100, 0, 10000, 10000, 10000, 10000, 0, 0, 11, 16145, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Sunder Armor\''),
 (15743, 0, 2, 0, 0, 0, 100, 0, 2000, 2000, 6000, 8000, 0, 0, 11, 8078, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Thunderclap\''),
@@ -52,4 +54,7 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (15818, 0, 0, 0, 0, 0, 100, 0, 4000, 9000, 7000, 12000, 0, 0, 11, 15284, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Lieutenant General Nokhor - In Combat - Cast \'Cleave\''),
 (15818, 0, 1, 0, 0, 0, 100, 0, 3000, 8000, 15000, 21000, 0, 0, 11, 23511, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Lieutenant General Nokhor - In Combat - Cast \'Demoralizing Shout\''),
 (15818, 0, 2, 0, 0, 0, 100, 0, 5000, 5000, 8000, 12000, 0, 0, 11, 24573, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Lieutenant General Nokhor - In Combat - Cast \'Mortal Strike\''),
-(15818, 0, 3, 0, 0, 0, 100, 0, 12000, 24000, 26000, 34000, 0, 0, 11, 25599, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lieutenant General Nokhor - In Combat - Cast \'Thundercrash\'');
+(15818, 0, 3, 0, 0, 0, 100, 0, 12000, 24000, 26000, 34000, 0, 0, 11, 25599, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lieutenant General Nokhor - In Combat - Cast \'Thundercrash\''),
+(15861, 0, 0, 0, 0, 0, 100, 0, 6000, 8000, 8000, 10000, 0, 0, 11, 25710, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Ironforge Infantryman - In Combat - Cast \'Heroic Strike\''),
+(15853, 0, 0, 0, 0, 0, 100, 0, 3000, 5000, 5000, 7000, 0, 0, 11, 22591, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Orgrimmar Elite Infantryman - In Combat - Cast \'Strike\''),
+(15861, 0, 1, 0, 0, 0, 100, 0, 2000, 8000, 10000, 16000, 0, 0, 11, 11972, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Ironforge Infantryman - In Combat - Cast \'Shield Bash\'');
