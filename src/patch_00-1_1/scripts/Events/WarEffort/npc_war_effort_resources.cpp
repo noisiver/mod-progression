@@ -44,6 +44,21 @@ public:
             return;
         }
 
+        if (sWarEffortMgr->GetStage() > STAGE_RESOURCE_COLLECTION)
+        {
+            if (creature->HasNpcFlag(UNIT_NPC_FLAG_QUESTGIVER))
+            {
+                creature->RemoveNpcFlag(UNIT_NPC_FLAG_QUESTGIVER);
+            }
+
+            if (!creature->HasNpcFlag(UNIT_NPC_FLAG_GOSSIP))
+            {
+                creature->SetNpcFlag(UNIT_NPC_FLAG_GOSSIP);
+            }
+
+            return;
+        }
+
         if ((creature->GetEntry() == NPC_SERGEANT_STONEBROW && sWarEffortMgr->IsResourceCompleted(RESOURCE_COPPER_BARS_ALLIANCE)) ||
             (creature->GetEntry() == NPC_CORPORAL_CARNES && sWarEffortMgr->IsResourceCompleted(RESOURCE_IRON_BARS)) ||
             (creature->GetEntry() == NPC_DAME_TWINBRAID && sWarEffortMgr->IsResourceCompleted(RESOURCE_THORIUM_BARS)) ||
@@ -73,8 +88,7 @@ public:
             (creature->GetEntry() == NPC_STONEGUARD_CLAYHOOF && sWarEffortMgr->IsResourceCompleted(RESOURCE_RUNECLOTH_BANDAGE_HORDE)) ||
             (creature->GetEntry() == NPC_BLOODGUARD_RAWTAR && sWarEffortMgr->IsResourceCompleted(RESOURCE_LEAN_WOLF_STEAK)) ||
             (creature->GetEntry() == NPC_FISHERMAN_LIN_DO && sWarEffortMgr->IsResourceCompleted(RESOURCE_SPOTTED_YELLOWTAIL_HORDE)) ||
-            (creature->GetEntry() == NPC_CHIEF_SHARPCLAW && sWarEffortMgr->IsResourceCompleted(RESOURCE_BAKED_SALMON)) ||
-            (sWarEffortMgr->GetStage() > STAGE_RESOURCE_COLLECTION))
+            (creature->GetEntry() == NPC_CHIEF_SHARPCLAW && sWarEffortMgr->IsResourceCompleted(RESOURCE_BAKED_SALMON)))
         {
             if (creature->HasNpcFlag(UNIT_NPC_FLAG_QUESTGIVER))
             {
