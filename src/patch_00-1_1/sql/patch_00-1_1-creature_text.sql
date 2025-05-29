@@ -1,4 +1,4 @@
-DELETE FROM `creature_text` WHERE `CreatureID` = 12397;
+DELETE FROM `creature_text` WHERE `CreatureID` IN (12397, 18338);
 INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `BroadcastTextId`, `TextRange`, `comment`) VALUES
 (12397, 0, 0, 'I remember well the sting of defeat at the conclusion of the Third War. I have waited far too long for my revenge. Now the shadow of the Legion falls over this world. It is only a matter of time until all of your failed creation... is undone. ', 14, 0, 0, 0, 0, 11332, 20076, 0, 'kazzak SAY_INTRO'),
 (12397, 1, 0, 'The legion will conquer all!', 14, 0, 0, 0, 0, 11333, 20077, 3, 'kazzak SAY_AGGRO1'),
@@ -11,4 +11,11 @@ INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Lan
 (12397, 5, 0, 'The universe will be remade.', 14, 0, 0, 0, 0, 11339, 20083, 0, 'kazzak SAY_WIPE'),
 (12397, 6, 0, 'The Legion... will never... fall.', 14, 0, 0, 0, 0, 11340, 20084, 0, 'kazzak SAY_DEATH'),
 (12397, 7, 0, 'Invaders, you dangle upon the precipice of oblivion! The Burning Legion comes and with it comes your end.\n', 14, 0, 0, 0, 0, 0, 15895, 0, 'kazzak SAY_RAND1'),
-(12397, 7, 1, 'Impudent whelps, you only delay the inevitable. Where one has fallen, ten shall rise. Such is the will of Kazzak...', 14, 0, 0, 0, 0, 0, 16432, 0, 'kazzak SAY_RAND2');
+(12397, 7, 1, 'Impudent whelps, you only delay the inevitable. Where one has fallen, ten shall rise. Such is the will of Kazzak...', 14, 0, 0, 0, 0, 0, 16432, 0, 'kazzak SAY_RAND2'),
+(18338, 0, 0, 'Your fate is sealed, Azeroth!  I will find the Aspect Shards, and then you will not stand against our might!', 14, 0, 0, 0, 0, 0, 16047, 0, 'Highlord Kruul - On Respawn'),
+(18338, 0, 1, 'Azeroth has cowered too long under our shadow!  Now, feel the power of the Burning Crusade and despair!', 14, 0, 0, 0, 0, 0, 16046, 0, 'Highlord Kruul - On Respawn'),
+(18338, 0, 2, 'Cower, little worms!  Your feeble heroes are nothing!  Your saviors will be our first feast!', 14, 0, 0, 0, 0, 0, 16045, 0, 'Highlord Kruul - On Respawn'),
+(18338, 0, 3, 'Where?  Where are the Shards!  You cannot hide them from us!', 14, 0, 0, 0, 0, 0, 17097, 0, 'Highlord Kruul - On Respawn'),
+(18338, 0, 4, 'Your world will die, mortals!  Your doom is now at hand!', 14, 0, 0, 0, 0, 0, 16044, 0, 'Highlord Kruul - On Respawn'),
+(18338, 1, 0, 'Your own strength feeds me, $n!', 14, 0, 0, 0, 0, 0, 8461, 0, 'Highlord Kruul - On Killed Unit'),
+(18338, 2, 0, 'Hah!  This place is not yet worthy of my infliction!', 14, 0, 0, 0, 0, 0, 16048, 0, 'Highlord Kruul - On Despawn');
