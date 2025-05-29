@@ -66,7 +66,7 @@ public:
                         timer = 18000;
                         break;
                     case STAGE_GATE_OPENED:
-                        sWarEffortMgr->GateIsOpen();
+                        sWarEffortMgr->GateOpened();
                         timer = 0;
                         break;
                     }

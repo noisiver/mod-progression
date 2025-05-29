@@ -205,32 +205,50 @@ public:
     void Init();
     void Update(uint32 /*diff*/);
     void Save();
-    void UpdateActiveStage();
-    void UpdateActiveEvents();
     uint8 GetStage() { return stage; }
+    bool IsResourceCollectionComplete()
+    {
+        for (int i = 0; i < MAX_RESOURCES; i++)
+        {
+            if (resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[i][COLUMN_RESOURCE_REQUIRED_AMOUNT])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    bool IsResourceComplete(uint8 resource) { return resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] == resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT]; }
+    bool HasTeamFinishedCollection(uint8 team)
+    {
+        for (int i = 0; i < MAX_RESOURCES; i++)
+        {
+            if (resources[i][COLUMN_RESOURCE_TEAM] == team)
+            {
+                if (resources[i][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[i][COLUMN_RESOURCE_REQUIRED_AMOUNT])
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
+    };
     uint32* GetResource(uint8 resource) { return resources[resource]; }
-    double GetResourceCategoryCompletionPercentage(uint8 /*category*/, uint8 /*team*/);
-    uint8 GetCategoryForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_CATEGORY]; }
-    uint8 GetTeamForResource(uint32 resource) { return resources[resource][COLUMN_RESOURCE_TEAM]; }
-    void AddToResource(uint8 /*resource*/, uint32 /*amount*/);
-    void CheckResources();
-    bool IsResourceCompleted(uint8 resource) { return !(resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] < resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT]); }
-    bool IsResourceCollectionCompletedForTeam(uint8 team) { return teamFinished[team]; }
-    bool IsResourceCollectionCompleted() { return teamFinished[TEAM_ALLIANCE] && teamFinished[TEAM_HORDE]; }
+    void AddToResource(uint8 resource, uint32 amount) { resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] += resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] + amount > resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT] ? resources[resource][COLUMN_RESOURCE_REQUIRED_AMOUNT] - resources[resource][COLUMN_RESOURCE_CURRENT_AMOUNT] : amount; }
     void SendResourceToPlayer(Player* /*player*/, uint32 /*resource*/);
     void SendResourcesForTeamToPlayer(Player* /*player*/, uint8 /*team*/);
-    void GateIsOpen();
+    double GetResourceCategoryCompletionForTeam(uint8 /*category*/, uint8 /*team*/);
+    void GateOpened();
     Seconds GetNextTransition() { return nextTransition; }
     Seconds GetNextCheck() { return nextCheck; }
 
 private:
-    uint8 stage = STAGE_RESOURCE_COLLECTION;
+    uint8 stage = STAGE_EVENT_NOT_ACTIVE;
     Seconds currentGameTime = 0s;
     Seconds nextCheck = 0s;
     Seconds nextTransition = 0s;
     uint32 minutesPerTransition = 1440;
-    bool teamFinished[2] = { false, false };
-    uint32 resources[MAX_RESOURCES][MAX_RESOURCE_COLUMNS] = {
+    uint32 resources[MAX_RESOURCES][MAX_RESOURCE_COLUMNS] =
+    {
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 90000, 1997, 1998, 50002 }, // Copper Bar
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 28000, 2002, 2003, 50003 }, // Iron Bar
         { CATEGORY_RESOURCE_METAL_BARS, TEAM_ALLIANCE, 0, 24000, 2011, 2012, 50004 }, // Thorium Bar
@@ -262,19 +280,23 @@ private:
         { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 17000, 2102, 2103, 50030 }, // Spotted Yellowtail
         { CATEGORY_RESOURCE_COOKED_GOODS, TEAM_HORDE, 0, 10000, 2105, 2106, 50031 } // Baked Salmon
     };
-    uint32 events[MAX_EVENTS][MAX_EVENT_COLUMNS] = {
+    uint32 events[MAX_EVENTS][MAX_EVENT_COLUMNS] =
+    {
         { EVENT_WAR_EFFORT_RESOURCE_COLLECTION, STAGE_RESOURCE_COLLECTION, STAGE_TRANSITION_DAY_5  },
         { EVENT_WAR_EFFORT_COMMENDATION_OFFICERS, STAGE_RESOURCE_COLLECTION, STAGE_EVENT_ENDED  },
-        { EVENT_WAR_EFFORT_DAY_1, STAGE_TRANSITION_DAY_1, STAGE_TRANSITION_DAY_5  },
-        { EVENT_WAR_EFFORT_DAY_2, STAGE_TRANSITION_DAY_2, STAGE_TRANSITION_DAY_5  },
-        { EVENT_WAR_EFFORT_DAY_3, STAGE_TRANSITION_DAY_3, STAGE_TRANSITION_DAY_5  },
-        { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, STAGE_TRANSITION_DAY_5 },
-        { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, STAGE_TRANSITION_DAY_5 },
+        { EVENT_WAR_EFFORT_DAY_1, STAGE_TRANSITION_DAY_1, STAGE_GATE_IS_OPEN  },
+        { EVENT_WAR_EFFORT_DAY_2, STAGE_TRANSITION_DAY_2, STAGE_GATE_IS_OPEN  },
+        { EVENT_WAR_EFFORT_DAY_3, STAGE_TRANSITION_DAY_3, STAGE_GATE_IS_OPEN  },
+        { EVENT_WAR_EFFORT_DAY_4, STAGE_TRANSITION_DAY_4, STAGE_GATE_IS_OPEN },
+        { EVENT_WAR_EFFORT_DAY_5, STAGE_TRANSITION_DAY_5, STAGE_GATE_IS_OPEN },
         { EVENT_WAR_EFFORT_GATE, STAGE_EVENT_NOT_ACTIVE, STAGE_BANG_A_GONG },
         { EVENT_WAR_EFFORT_GONG, STAGE_BANG_A_GONG, STAGE_ATTACK_ON_CENARION_HOLD },
         { EVENT_WAR_EFFORT_RESONATING_CRYSTALS, STAGE_GATE_IS_OPEN, STAGE_ATTACK_ON_CENARION_HOLD },
         { EVENT_WAR_EFFORT_ATTACK_ON_CENARION_HOLD, STAGE_ATTACK_ON_CENARION_HOLD, STAGE_ATTACK_ON_CENARION_HOLD }
     };
+
+    void CheckStage();
+    void CheckEvents();
 };
 
 #define sWarEffortMgr WarEffortMgr::instance()

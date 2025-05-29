@@ -21,104 +21,10 @@ public:
 
         uint32 entry = creature->GetEntry();
         uint32 resource_id = GetResourceId(entry);
-        uint32 text_id = 0;
-        bool resource_completed = sWarEffortMgr->IsResourceCompleted(resource_id);
+        bool resource_complete = sWarEffortMgr->IsResourceComplete(resource_id);
+        uint32 text_id = GetTextId(entry, resource_complete);
 
-        switch (entry)
-        {
-        case NPC_SERGEANT_STONEBROW:
-            text_id = resource_completed ? 7823 : 7824;
-            break;
-        case NPC_CORPORAL_CARNES:
-            text_id = resource_completed ? 7830 : 7829;
-            break;
-        case NPC_DAME_TWINBRAID:
-            text_id = resource_completed ? 7832 : 7831;
-            break;
-        case NPC_PRIVATE_DRAXLEGAUGE:
-            text_id = resource_completed ? 7834 : 7833;
-            break;
-        case NPC_MASTER_NIGHTSONG:
-            text_id = resource_completed ? 55000 : 7835;
-            break;
-        case NPC_SERGEANT_MAJOR_GERMAINE:
-            text_id = resource_completed ? 7838 : 7837;
-            break;
-        case NPC_BONNIE_STONEFLAYER:
-            text_id = resource_completed ? 7842 : 7840;
-            break;
-        case NPC_PRIVATE_PORTER:
-            text_id = resource_completed ? 7844 : 7843;
-            break;
-        case NPC_MARTA_FINESPINDLE:
-            text_id = resource_completed ? 7846 : 7845;
-            break;
-        case NPC_SENTINEL_SILVERSKY:
-            text_id = resource_completed ? 7848 : 7847;
-            break;
-        case NPC_NURSE_STONEFIELD:
-            text_id = resource_completed ? 7852 : 7851;
-            break;
-        case NPC_KEEPER_MOONSHADE:
-            text_id = resource_completed ? 7854 : 7853;
-            break;
-        case NPC_SLICKY_GASTRONOME:
-            text_id = resource_completed ? 7857 : 7856;
-            break;
-        case NPC_SARAH_SADWHISTLE:
-            text_id = resource_completed ? 7860 : 7859;
-            break;
-        case NPC_HUNTRESS_SWIFTRIVER:
-            text_id = resource_completed ? 55001 : 7861;
-            break;
-        case NPC_MINER_CROMWELL:
-            text_id = resource_completed ? 55002 : 7866;
-            break;
-        case NPC_GRUNT_MAUG:
-            text_id = resource_completed ? 55003 : 7870;
-            break;
-        case NPC_SENIOR_SERGEANT_T_KELAH:
-            text_id = resource_completed ? 55004 : 7876;
-            break;
-        case NPC_HERBALIST_PROUDFEATHER:
-            text_id = resource_completed ? 55005 : 7878;
-            break;
-        case NPC_BATRIDER_PELE_KEIKI:
-            text_id = resource_completed ? 55006 : 7905;
-            break;
-        case NPC_APOTHECARY_JEZEL:
-            text_id = resource_completed ? 55007 : 7907;
-            break;
-        case NPC_SKINNER_JAMANI:
-            text_id = resource_completed ? 55008 : 7909;
-            break;
-        case NPC_SERGEANT_UMALA:
-            text_id = resource_completed ? 7846 : 7912;
-            break;
-        case NPC_DOCTOR_SERRATUS:
-            text_id = resource_completed ? 55009 : 7914;
-            break;
-        case NPC_HEALER_LONGRUNNER:
-            text_id = resource_completed ? 55010 : 7918;
-            break;
-        case NPC_LADY_CALLOW:
-            text_id = resource_completed ? 55011 : 7920;
-            break;
-        case NPC_STONEGUARD_CLAYHOOF:
-            text_id = resource_completed ? 7924 : 7923;
-            break;
-        case NPC_BLOODGUARD_RAWTAR:
-            text_id = resource_completed ? 55012 : 7925;
-            break;
-        case NPC_FISHERMAN_LIN_DO:
-            text_id = resource_completed ? 55013 : 7927;
-            break;
-        default: // NPC_CHIEF_SHARPCLAW
-            text_id = resource_completed ? 7930 : 7929;
-            break;
-        }
-
-        if (!resource_completed)
+        if (!resource_complete)
         {
             sWarEffortMgr->SendResourceToPlayer(player, resource_id);
         }
@@ -140,7 +46,7 @@ public:
 
         sWarEffortMgr->AddToResource(resource_id, rewarded_amount);
 
-        if (sWarEffortMgr->IsResourceCompleted(resource_id))
+        if (sWarEffortMgr->IsResourceComplete(resource_id))
         {
             if (creature->HasNpcFlag(UNIT_NPC_FLAG_QUESTGIVER))
             {
@@ -153,13 +59,37 @@ public:
             }
         }
 
-        uint8 category_id = sWarEffortMgr->GetCategoryForResource(resource_id);
-        uint8 team_id = sWarEffortMgr->GetTeamForResource(resource_id);
-        double current_percentage = sWarEffortMgr->GetResourceCategoryCompletionPercentage(category_id, team_id);
+        uint8 category_id = GetCategoryId(creature->GetEntry());
+        uint8 team_id = GetTeamId(creature->GetEntry());
+        double current_percentage = sWarEffortMgr->GetResourceCategoryCompletionForTeam(category_id, team_id);
 
-        std::vector<std::vector<int>> objects;
+        std::vector<std::vector<uint32>> objects = GetGameObjects(creature->GetEntry());
 
-        switch (creature->GetEntry())
+        for (auto& object : objects)
+        {
+            if (object[1] <= current_percentage)
+            {
+                if (GameObject* go = creature->FindNearestGameObject(object[0], 25.0f))
+                {
+                    if (!go->isSpawned())
+                    {
+                        go->SetRespawnTime(RESPAWN_IMMEDIATELY);
+                        go->Respawn();
+                        go->UpdateObjectVisibility();
+                    }
+                }
+            }
+        }
+
+        return true;
+    }
+
+private:
+    std::vector<std::vector<uint32>> GetGameObjects(uint32 entry)
+    {
+        std::vector<std::vector<uint32>> objects;
+
+        switch (entry)
         {
         case NPC_SERGEANT_STONEBROW:
         case NPC_CORPORAL_CARNES:
@@ -242,9 +172,7 @@ public:
             objects.push_back({ GO_BANDAGES_HORDE_TIER_4, 80 });
             objects.push_back({ GO_BANDAGES_HORDE_TIER_5, 100 });
             break;
-        case NPC_BLOODGUARD_RAWTAR:
-        case NPC_FISHERMAN_LIN_DO:
-        default: // NPC_CHIEF_SHARPCLAW
+        default:
             objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_1, 20 });
             objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_2, 40 });
             objects.push_back({ GO_COOKED_GOODS_HORDE_TIER_3, 60 });
@@ -253,26 +181,138 @@ public:
             break;
         }
 
-        for (auto& object : objects)
+        return objects;
+    }
+    
+    uint8 GetTeamId(uint32 entry)
+    {
+        switch (entry)
         {
-            if (object[1] <= current_percentage)
-            {
-                if (GameObject* go = creature->FindNearestGameObject(object[0], 25.0f))
-                {
-                    if (!go->isSpawned())
-                    {
-                        go->SetRespawnTime(RESPAWN_IMMEDIATELY);
-                        go->Respawn();
-                        go->UpdateObjectVisibility();
-                    }
-                }
-            }
+        case NPC_MINER_CROMWELL:
+        case NPC_GRUNT_MAUG:
+        case NPC_SENIOR_SERGEANT_T_KELAH:
+        case NPC_HERBALIST_PROUDFEATHER:
+        case NPC_BATRIDER_PELE_KEIKI:
+        case NPC_APOTHECARY_JEZEL:
+        case NPC_SKINNER_JAMANI:
+        case NPC_SERGEANT_UMALA:
+        case NPC_DOCTOR_SERRATUS:
+        case NPC_HEALER_LONGRUNNER:
+        case NPC_LADY_CALLOW:
+        case NPC_STONEGUARD_CLAYHOOF:
+        case NPC_BLOODGUARD_RAWTAR:
+        case NPC_FISHERMAN_LIN_DO:
+        case NPC_CHIEF_SHARPCLAW:
+            return TEAM_HORDE;
+        default:
+            return TEAM_ALLIANCE;
         }
-
-        return true;
     }
 
-private:
+    uint8 GetCategoryId(uint32 entry)
+    {
+        switch (entry)
+        {
+        case NPC_SERGEANT_STONEBROW:
+        case NPC_CORPORAL_CARNES:
+        case NPC_DAME_TWINBRAID:
+        case NPC_MINER_CROMWELL:
+        case NPC_GRUNT_MAUG:
+        case NPC_SENIOR_SERGEANT_T_KELAH:
+            return CATEGORY_RESOURCE_METAL_BARS;
+        case NPC_PRIVATE_DRAXLEGAUGE:
+        case NPC_MASTER_NIGHTSONG:
+        case NPC_SERGEANT_MAJOR_GERMAINE:
+        case NPC_HERBALIST_PROUDFEATHER:
+        case NPC_BATRIDER_PELE_KEIKI:
+        case NPC_APOTHECARY_JEZEL:
+            return CATEGORY_RESOURCE_HERBS;
+        case NPC_BONNIE_STONEFLAYER:
+        case NPC_PRIVATE_PORTER:
+        case NPC_MARTA_FINESPINDLE:
+        case NPC_SKINNER_JAMANI:
+        case NPC_SERGEANT_UMALA:
+        case NPC_DOCTOR_SERRATUS:
+            return CATEGORY_RESOURCE_LEATHER_SKINS;
+        case NPC_SENTINEL_SILVERSKY:
+        case NPC_NURSE_STONEFIELD:
+        case NPC_KEEPER_MOONSHADE:
+        case NPC_HEALER_LONGRUNNER:
+        case NPC_LADY_CALLOW:
+        case NPC_STONEGUARD_CLAYHOOF:
+            return CATEGORY_RESOURCE_BANDAGES;
+        default:
+            return CATEGORY_RESOURCE_COOKED_GOODS;
+        }
+    }
+
+    uint32 GetTextId(uint32 entry, bool resource_complete)
+    {
+        switch (entry)
+        {
+        case NPC_SERGEANT_STONEBROW:
+            return resource_complete ? 7823 : 7824;
+        case NPC_CORPORAL_CARNES:
+            return resource_complete ? 7830 : 7829;
+        case NPC_DAME_TWINBRAID:
+            return resource_complete ? 7832 : 7831;
+        case NPC_PRIVATE_DRAXLEGAUGE:
+            return resource_complete ? 7834 : 7833;
+        case NPC_MASTER_NIGHTSONG:
+            return resource_complete ? 55000 : 7835;
+        case NPC_SERGEANT_MAJOR_GERMAINE:
+            return resource_complete ? 7838 : 7837;
+        case NPC_BONNIE_STONEFLAYER:
+            return resource_complete ? 7842 : 7840;
+        case NPC_PRIVATE_PORTER:
+            return resource_complete ? 7844 : 7843;
+        case NPC_MARTA_FINESPINDLE:
+            return resource_complete ? 7846 : 7845;
+        case NPC_SENTINEL_SILVERSKY:
+            return resource_complete ? 7848 : 7847;
+        case NPC_NURSE_STONEFIELD:
+            return resource_complete ? 7852 : 7851;
+        case NPC_KEEPER_MOONSHADE:
+            return resource_complete ? 7854 : 7853;
+        case NPC_SLICKY_GASTRONOME:
+            return resource_complete ? 7857 : 7856;
+        case NPC_SARAH_SADWHISTLE:
+            return resource_complete ? 7860 : 7859;
+        case NPC_HUNTRESS_SWIFTRIVER:
+            return resource_complete ? 55001 : 7861;
+        case NPC_MINER_CROMWELL:
+            return resource_complete ? 55002 : 7866;
+        case NPC_GRUNT_MAUG:
+            return resource_complete ? 55003 : 7870;
+        case NPC_SENIOR_SERGEANT_T_KELAH:
+            return resource_complete ? 55004 : 7876;
+        case NPC_HERBALIST_PROUDFEATHER:
+            return resource_complete ? 55005 : 7878;
+        case NPC_BATRIDER_PELE_KEIKI:
+            return resource_complete ? 55006 : 7905;
+        case NPC_APOTHECARY_JEZEL:
+            return resource_complete ? 55007 : 7907;
+        case NPC_SKINNER_JAMANI:
+            return resource_complete ? 55008 : 7909;
+        case NPC_SERGEANT_UMALA:
+            return resource_complete ? 7846 : 7912;
+        case NPC_DOCTOR_SERRATUS:
+            return resource_complete ? 55009 : 7914;
+        case NPC_HEALER_LONGRUNNER:
+            return resource_complete ? 55010 : 7918;
+        case NPC_LADY_CALLOW:
+            return resource_complete ? 55011 : 7920;
+        case NPC_STONEGUARD_CLAYHOOF:
+            return resource_complete ? 7924 : 7923;
+        case NPC_BLOODGUARD_RAWTAR:
+            return resource_complete ? 55012 : 7925;
+        case NPC_FISHERMAN_LIN_DO:
+            return resource_complete ? 55013 : 7927;
+        default: // NPC_CHIEF_SHARPCLAW
+            return resource_complete ? 7930 : 7929;
+        }
+    }
+
     uint32 GetResourceId(uint32 entry)
     {
         switch (entry)

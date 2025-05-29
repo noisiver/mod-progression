@@ -18,7 +18,7 @@ enum GossipOptions
 
 enum Texts
 {
-    NPC_WARLORD_GORCHUK_UNFINISHED                      = 8092,
+    NPC_WARLORD_GORCHUK_TEAM_UNFINISHED                 = 8092,
     NPC_WARLORD_GORCHUK_TEAM_FINISHED                   = 55020,
     NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY                = 55014,
     NPC_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS          = 8094,
@@ -29,7 +29,7 @@ enum Texts
     NPC_WARLORD_GORCHUK_BANDAGES                        = 8099,
     NPC_WARLORD_GORCHUK_COOKED_GOODS                    = 8100,
 
-    NPC_FIELD_MARSHAL_SNOWFALL_UNFINISHED               = 8082,
+    NPC_FIELD_MARSHAL_SNOWFALL_TEAM_UNFINISHED          = 8082,
     NPC_FIELD_MARSHAL_SNOWFALL_TEAM_FINISHED            = 8085,
     NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY         = 55015,
     NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS   = 8084,
@@ -64,33 +64,7 @@ public:
 
         uint32 entry = creature->GetEntry();
         uint8 stage = sWarEffortMgr->GetStage();
-        uint32 text_id = 0;
-
-        uint8 team = entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE;
-        bool team_completed = sWarEffortMgr->IsResourceCollectionCompletedForTeam(team);
-
-        switch (stage)
-        {
-        case STAGE_TRANSITION_DAY_1:
-        case STAGE_TRANSITION_DAY_2:
-        case STAGE_TRANSITION_DAY_3:
-        case STAGE_TRANSITION_DAY_4:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS : NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS;
-            break;
-        case STAGE_TRANSITION_DAY_5:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY : NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY;
-            break;
-        default:
-            if (entry == NPC_WARLORD_GORCHUK)
-            {
-                text_id = team_completed ? NPC_WARLORD_GORCHUK_TEAM_FINISHED : NPC_WARLORD_GORCHUK_UNFINISHED;
-            }
-            else
-            {
-                text_id = team_completed ? NPC_FIELD_MARSHAL_SNOWFALL_TEAM_FINISHED : NPC_FIELD_MARSHAL_SNOWFALL_UNFINISHED;
-            }
-            break;
-        }
+        uint32 text_id = GetTextId(entry);
 
         if (stage >= STAGE_TRANSITION_DAY_1 && stage < STAGE_TRANSITION_DAY_5)
         {
@@ -98,7 +72,7 @@ public:
         }
 
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "What is the Ahn'Qiraj war effort?", GOSSIP_SENDER_MAIN, OPTION_DESCRIPTION);
-        if (!team_completed)
+        if (!sWarEffortMgr->HasTeamFinishedCollection(entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE))
         {
             sWarEffortMgr->SendResourcesForTeamToPlayer(player, entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
 
@@ -126,37 +100,59 @@ public:
         }
 
         uint32 entry = creature->GetEntry();
+        uint32 text_id = GetTextId(entry, action);
 
         ClearGossipMenuFor(player);
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to ask you about something else.", GOSSIP_SENDER_MAIN, OPTION_RETURN);
-
-        uint32 text_id = 0;
-
-        switch (action)
-        {
-        case OPTION_DESCRIPTION:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_DESCRIPTION : NPC_FIELD_MARSHAL_SNOWFALL_DESCRIPTION;
-            break;
-        case OPTION_METAL_BARS:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_METAL_BARS : NPC_FIELD_MARSHAL_SNOWFALL_METAL_BARS;
-            break;
-        case OPTION_HERBS:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_HERBS : NPC_FIELD_MARSHAL_SNOWFALL_HERBS;
-            break;
-        case OPTION_LEATHER_SKINS:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_LEATHER_SKINS : NPC_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS;
-            break;
-        case OPTION_BANDAGES:
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_BANDAGES : NPC_FIELD_MARSHAL_SNOWFALL_BANDAGES;
-            break;
-        default: // OPTION_COOKED_GOODS
-            text_id = entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_COOKED_GOODS : NPC_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS;
-            break;
-        }
-
         SendGossipMenuFor(player, text_id, creature->GetGUID());
 
         return true;
+    }
+
+private:
+    uint32 GetTextId(uint32 entry, uint32 action = 0)
+    {
+        switch (action)
+        {
+        case OPTION_DESCRIPTION:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_DESCRIPTION : NPC_FIELD_MARSHAL_SNOWFALL_DESCRIPTION;
+        case OPTION_METAL_BARS:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_METAL_BARS : NPC_FIELD_MARSHAL_SNOWFALL_METAL_BARS;
+        case OPTION_HERBS:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_HERBS : NPC_FIELD_MARSHAL_SNOWFALL_HERBS;
+        case OPTION_LEATHER_SKINS:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_LEATHER_SKINS : NPC_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS;
+        case OPTION_BANDAGES:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_BANDAGES : NPC_FIELD_MARSHAL_SNOWFALL_BANDAGES;
+        case OPTION_COOKED_GOODS:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_COOKED_GOODS : NPC_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS;
+        default:
+            break;
+        }
+
+        uint8 stage = sWarEffortMgr->GetStage();
+        bool team_complete = sWarEffortMgr->HasTeamFinishedCollection(entry == NPC_WARLORD_GORCHUK ? TEAM_HORDE : TEAM_ALLIANCE);
+
+        switch (stage)
+        {
+        case STAGE_RESOURCE_COLLECTION:
+            if (team_complete)
+            {
+                return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_TEAM_FINISHED : NPC_FIELD_MARSHAL_SNOWFALL_TEAM_FINISHED;
+            }
+            else
+            {
+                return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_TEAM_UNFINISHED : NPC_FIELD_MARSHAL_SNOWFALL_TEAM_UNFINISHED;
+            }
+            return 0;
+        case STAGE_TRANSITION_DAY_1:
+        case STAGE_TRANSITION_DAY_2:
+        case STAGE_TRANSITION_DAY_3:
+        case STAGE_TRANSITION_DAY_4:
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_FINISHED_MULTIPLE_DAYS : NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_MULTIPLE_DAYS;
+        default: // STAGE_TRANSITION_DAY_5
+            return entry == NPC_WARLORD_GORCHUK ? NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY : NPC_FIELD_MARSHAL_SNOWFALL_FINISHED_ONE_DAY;
+        }
     }
 };
 
