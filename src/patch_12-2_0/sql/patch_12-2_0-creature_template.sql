@@ -7,4 +7,3 @@ UPDATE `creature_template` SET `minlevel` = 69, `maxlevel` = 70 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (8383, 15184, 16378);
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` IN (466, 2425, 11832);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (1748, 2784, 2784, 3057, 3057, 4949, 4949, 7937, 7999, 10181, 10181, 10540);
-UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` = 12397;

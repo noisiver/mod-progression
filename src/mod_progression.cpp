@@ -10,7 +10,6 @@ ProgressionMgr* ProgressionMgr::instance()
 
 Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript") {}
 
-void AddSC_boss_lord_kazzak();
 void AddSC_instance_blackrock_spire_progression();
 void AddSC_instance_onyxias_lair_progression();
 void AddSC_boss_onyxia_progression();
@@ -24,11 +23,6 @@ void Addmod_progressionScripts()
     new Progression();
 
     uint8 id = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
-
-    if (id < PATCH_BEFORE_THE_STORM)
-    {
-        AddSC_boss_lord_kazzak();
-    }
 
     if (id < PATCH_ECHOES_OF_DOOM)
     {
