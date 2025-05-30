@@ -42,7 +42,7 @@ void Addmod_progressionScripts()
         AddSC_boss_onyxia_progression();
     }
 
-    if (id >= PATCH_ && id < PATCH_ECHOES_OF_DOOM)
+    if (id >= PATCH_SHADOW_OF_THE_NECROPOLIS && id < PATCH_ECHOES_OF_DOOM)
     {
         AddSC_at_naxxramas();
     }
