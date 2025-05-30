@@ -17,6 +17,8 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
+void AddSC_event_dark_portal_opens();
+void AddSC_npc_dark_portal_opens();
 
 void Addmod_progressionScripts()
 {
@@ -46,5 +48,11 @@ void Addmod_progressionScripts()
     {
         AddSC_boss_skadi_progression();
         AddSC_boss_svala_progression();
+    }
+
+    if (id <= PATCH_BEFORE_THE_STORM)
+    {
+        AddSC_event_dark_portal_opens();
+        AddSC_npc_dark_portal_opens();
     }
 }

@@ -1,0 +1,11 @@
+#ifndef EVENT_DARK_PORTAL_OPENS_H
+#define EVENT_DARK_PORTAL_OPENS_H
+
+enum
+{
+    EVENT_DARK_PORTAL_OPENS         = 121,
+
+    WORLD_STATE_DARK_PORTAL_OPENS   = 55000
+};
+
+#endif

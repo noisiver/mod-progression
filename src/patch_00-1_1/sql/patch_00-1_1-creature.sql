@@ -8,7 +8,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (1756, 2941, 3083, 3305
 UPDATE `creature` SET `phaseMask` = 16834 WHERE `id1` IN (14284, 14285) AND `map` = 0;
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (79011, 92890, 203492, 203493, 203494, 203495);
 UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213;
-DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 11099, 12397, 16226, 18338);
+DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 11099, 12397, 16226, 18338, 89000);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (5200000, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (5300000, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
@@ -28,4 +28,5 @@ INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, 
 (5500007, 18338, 0, 0, 1, 0, 0, 1, 1, 1, 6689.96, -4579.27, 721.225, 5.70548, 21600, 10, 0, 619024, 0, 1, 0, 0, 0, '', NULL, 0, NULL),
 (5500008, 18338, 0, 0, 0, 0, 0, 1, 1, 1, -14227.7, 343.678, 25.4857, 3.97761, 21600, 10, 0, 619024, 0, 1, 0, 0, 0, '', NULL, 0, NULL),
 (5500009, 18338, 0, 0, 1, 0, 0, 1, 1, 1, 2754.07, -3901.63, 91.9221, 1.08342, 21600, 10, 0, 619024, 0, 1, 0, 0, 0, '', NULL, 0, NULL),
-(5500010, 18338, 0, 0, 0, 0, 0, 1, 1, 1, -6483.52, -1105.19, 302.162, 4.81799, 21600, 10, 0, 619024, 0, 1, 0, 0, 0, '', NULL, 0, NULL);
+(5500010, 18338, 0, 0, 0, 0, 0, 1, 1, 1, -6483.52, -1105.19, 302.162, 4.81799, 21600, 10, 0, 619024, 0, 1, 0, 0, 0, '', NULL, 0, NULL),
+(5500011, 89000, 0, 0, 0, 0, 0, 1, 1, 0, -11850.6, -3201.44, -28.6149, 0.21478, 300, 0, 0, 42, 0, 0, 0, 0, 0, '', NULL, 0, NULL);
