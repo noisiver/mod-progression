@@ -14,8 +14,7 @@ public:
     {
         static ChatCommandTable warEffortCommandTable =
         {
-            { "info", HandleWarEffortInfoCommand, SEC_GAMEMASTER, Console::Yes },
-            { "addresource", HandleWarEffortAddResourceCommand, SEC_GAMEMASTER, Console::Yes }
+            { "info", HandleWarEffortInfoCommand, SEC_GAMEMASTER, Console::Yes }
         };
 
         static ChatCommandTable commandTable =
@@ -69,34 +68,6 @@ public:
                 }
             }
         }
-
-        return true;
-    }
-
-    static bool HandleWarEffortAddResourceCommand(ChatHandler* handler, uint8 resource, uint32 value)
-    {
-        if (resource < RESOURCE_COPPER_BARS_ALLIANCE || resource > RESOURCE_BAKED_SALMON || !value)
-        {
-            handler->PSendSysMessage("Error");
-            handler->SetSentErrorMessage(true);
-            return false;
-        }
-
-        handler->PSendSysMessage(handler->GetSession() ? "|cff00CED1Gates of Ahn'Qiraj|r" : "Gates of Ahn'Qiraj");
-
-        uint32* res = sWarEffortMgr->GetResource(resource);
-        uint32 val = res[COLUMN_RESOURCE_CURRENT_AMOUNT] + value > res[COLUMN_RESOURCE_REQUIRED_AMOUNT] ? res[COLUMN_RESOURCE_REQUIRED_AMOUNT] - res[COLUMN_RESOURCE_CURRENT_AMOUNT] : value;
-
-        if (res[COLUMN_RESOURCE_CURRENT_AMOUNT] < res[COLUMN_RESOURCE_REQUIRED_AMOUNT])
-        {
-            handler->PSendSysMessage(handler->GetSession() ? Acore::StringFormat("|cffFFD700Added|r |cff32CD32{}|r |cffFFD700to|r |cff32CD32{} ({})|r", val, GetResourceName(resource), resource) : Acore::StringFormat("Adding {} to {} ({})", val, GetResourceName(resource), resource));
-        }
-        else
-        {
-            handler->PSendSysMessage(handler->GetSession() ? Acore::StringFormat("|cff32CD32{} ({})|r |cffFFD700has already been completed|r", GetResourceName(resource), resource) : Acore::StringFormat("{} ({}) has already been completed", GetResourceName(resource), resource));
-        }
-
-        sWarEffortMgr->AddToResource(resource, val);
 
         return true;
     }
