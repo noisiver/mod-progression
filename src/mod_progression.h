@@ -148,6 +148,9 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
+    void OnBeforeWorldInitialized() override;
+    void OnShutdown() override;
+    void OnUpdate(uint32 /*diff*/) override;
 
 private:
     inline std::vector<std::string> GetActivePatches();
@@ -210,5 +213,4 @@ private:
 };
 
 #define sProgressionMgr ProgressionMgr::instance()
-
 #endif
