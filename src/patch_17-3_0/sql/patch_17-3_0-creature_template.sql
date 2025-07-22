@@ -6,3 +6,13 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (1756, 3083, 13839, 14304, 15350, 15351);
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (2784, 2784, 3057, 3057, 4949, 4949, 7937, 7999, 10181, 10181, 10540, 16802, 17468);
 UPDATE `creature_template` SET `DamageModifier` = 35, `BaseAttackTime` = 800 WHERE `entry` = 14435;
+UPDATE `creature_template` SET `HealthModifier` = 35.7 WHERE `entry` = 15687;
+UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 15688;
+UPDATE `creature_template` SET `HealthModifier` = 140 WHERE `entry` = 15689;
+UPDATE `creature_template` SET `HealthModifier` = 105 WHERE `entry` = 15690;
+UPDATE `creature_template` SET `HealthModifier` = 80.5 WHERE `entry` = 15691;
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (16151, 16152);
+UPDATE `creature_template` SET `HealthModifier` = 49 WHERE `entry` = 16457;
+UPDATE `creature_template` SET `HealthModifier` = 112 WHERE `entry` = 16524;
+UPDATE `creature_template` SET `HealthModifier` = 8.4 WHERE `entry` IN (17007, 19872, 19873, 19874, 19875, 19876);
+UPDATE `creature_template` SET `HealthModifier` = 17225 WHERE `entry` = 122.5;

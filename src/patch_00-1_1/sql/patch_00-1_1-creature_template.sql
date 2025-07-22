@@ -25,3 +25,13 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (16802, 17468);
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `Scale` = 2.2, `BaseAttackTime` = 2000, `flags_extra` = `flags_extra` & ~1, `AIName` = 'SmartAI' WHERE `entry` = 12397;
 UPDATE `creature_template` SET `DamageModifier` = 13.15, `BaseAttackTime` = 2000, `AIName` = 'SmartAI' WHERE `entry` = 14435;
+UPDATE `creature_template` SET `HealthModifier` = 51 WHERE `entry` = 15687;
+UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` = 15688;
+UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 15689;
+UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` = 15690;
+UPDATE `creature_template` SET `HealthModifier` = 115 WHERE `entry` = 15691;
+UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (16151, 16152);
+UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 16457;
+UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 16524;
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 19872, 19873, 19874, 19875, 19876);
+UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` = 17225;
