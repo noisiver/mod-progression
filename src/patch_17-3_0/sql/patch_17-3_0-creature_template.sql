@@ -20,3 +20,5 @@ UPDATE `creature_template` SET `HealthModifier` = 17.5 WHERE `entry` IN (17533, 
 UPDATE `creature_template` SET `HealthModifier` = 10.5 WHERE `entry` IN (17543, 17546);
 UPDATE `creature_template` SET `HealthModifier` = 3.5 WHERE `entry` = 17548;
 UPDATE `creature_template` SET `HealthModifier` = 17.5 WHERE `entry` = 18168;
+UPDATE `creature_template` SET `ScriptName` = '' WHERE `entry` IN (15383, 15431, 15432, 15434, 15437, 15445, 15446, 15448, 15450, 15451, 15452, 15453, 15455, 15456, 15457, 15458, 15459, 15460, 15469, 15477, 15508, 15512, 15515, 15522, 15525, 15528, 15529, 15532, 15533, 15534, 15535, 15539, 15700, 15701);
+DELETE FROM `creature_template` WHERE `entry` IN (88000, 88001);
