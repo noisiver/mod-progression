@@ -28,12 +28,12 @@ UPDATE `creature_template` SET `DamageModifier` = 13.15, `BaseAttackTime` = 2000
 UPDATE `creature_template` SET `HealthModifier` = 51 WHERE `entry` = 15687;
 UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` = 15688;
 UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 15689;
-UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` = 15690;
+UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` IN (15690, 22997);
 UPDATE `creature_template` SET `HealthModifier` = 115 WHERE `entry` = 15691;
 UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (16151, 16152, 17521);
 UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 16457;
 UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 16524;
-UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 19872, 19873, 19874, 19875, 19876);
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 19872, 19873, 19874, 19875, 19876, 23216);
 UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` = 17225;
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (17533, 17534, 17535, 18168);
 UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (17543, 17546);
@@ -45,3 +45,12 @@ UPDATE `creature_template` SET `HealthModifier` = 135 WHERE `entry` IN (23578, 2
 UPDATE `creature_template` SET `HealthModifier` = 225 WHERE `entry` = 23863;
 UPDATE `creature_template` SET `HealthModifier` = 17.5 WHERE `entry` IN (24240, 24244);
 UPDATE `creature_template` SET `HealthModifier` = 14 WHERE `entry` IN (24241, 24242, 24243, 24245, 24246, 24247);
+UPDATE `creature_template` SET `HealthModifier` = 500 WHERE `entry` = 22887;
+UPDATE `creature_template` SET `HealthModifier` = 600 WHERE `entry` = 22898;
+UPDATE `creature_template` SET `HealthModifier` = 132 WHERE `entry` = 22841;
+UPDATE `creature_template` SET `HealthModifier` = 800 WHERE `entry` = 22917;
+UPDATE `creature_template` SET `HealthModifier` = 750 WHERE `entry` IN (22947, 22948);
+UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` IN (22949, 22950, 22951, 22952);
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 23215;
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (23318, 23523, 23524);
+UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` = 23319;

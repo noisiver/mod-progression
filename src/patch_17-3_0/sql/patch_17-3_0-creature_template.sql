@@ -9,7 +9,7 @@ UPDATE `creature_template` SET `DamageModifier` = 35, `BaseAttackTime` = 800 WHE
 UPDATE `creature_template` SET `HealthModifier` = 35.7 WHERE `entry` = 15687;
 UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 15688;
 UPDATE `creature_template` SET `HealthModifier` = 140 WHERE `entry` = 15689;
-UPDATE `creature_template` SET `HealthModifier` = 105 WHERE `entry` = 15690;
+UPDATE `creature_template` SET `HealthModifier` = 105 WHERE `entry` IN (15690, 22997);
 UPDATE `creature_template` SET `HealthModifier` = 80.5 WHERE `entry` = 15691;
 UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (16151, 16152, 17521);
 UPDATE `creature_template` SET `HealthModifier` = 49 WHERE `entry` = 16457;
@@ -26,3 +26,13 @@ UPDATE `creature_template` SET `HealthModifier` = 94.5 WHERE `entry` IN (23578, 
 UPDATE `creature_template` SET `HealthModifier` = 157.5 WHERE `entry` = 23863;
 UPDATE `creature_template` SET `HealthModifier` = 12.25 WHERE `entry` IN (24240, 24244);
 UPDATE `creature_template` SET `HealthModifier` = 9.8 WHERE `entry` IN (24241, 24242, 24243, 24245, 24246, 24247);
+UPDATE `creature_template` SET `HealthModifier` = 350 WHERE `entry` = 22887;
+UPDATE `creature_template` SET `HealthModifier` = 420 WHERE `entry` = 22898;
+UPDATE `creature_template` SET `HealthModifier` = 92.4 WHERE `entry` = 22841;
+UPDATE `creature_template` SET `HealthModifier` = 560 WHERE `entry` = 22917;
+UPDATE `creature_template` SET `HealthModifier` = 525 WHERE `entry` IN (22947, 22948);
+UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` IN (22949, 22950, 22951, 22952);
+UPDATE `creature_template` SET `HealthModifier` = 14 WHERE `entry` = 23215;
+UPDATE `creature_template` SET `HealthModifier` = 8.4 WHERE `entry` = 23216;
+UPDATE `creature_template` SET `HealthModifier` = 2.8 WHERE `entry` IN (23318, 23523, 23524);
+UPDATE `creature_template` SET `HealthModifier` = 4.9 WHERE `entry` = 23319;
