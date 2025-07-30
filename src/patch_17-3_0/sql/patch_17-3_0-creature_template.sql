@@ -24,3 +24,5 @@ UPDATE `creature_template` SET `HealthModifier` = 126.35 WHERE `entry` = 23576;
 UPDATE `creature_template` SET `HealthModifier` = 56.875 WHERE `entry` = 23577;
 UPDATE `creature_template` SET `HealthModifier` = 94.5 WHERE `entry` IN (23578, 24239);
 UPDATE `creature_template` SET `HealthModifier` = 157.5 WHERE `entry` = 23863;
+UPDATE `creature_template` SET `HealthModifier` = 12.25 WHERE `entry` IN (24240, 24244);
+UPDATE `creature_template` SET `HealthModifier` = 9.8 WHERE `entry` IN (24241, 24242, 24243, 24245, 24246, 24247);
