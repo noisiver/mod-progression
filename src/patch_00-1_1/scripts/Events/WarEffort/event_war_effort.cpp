@@ -1,3 +1,4 @@
+#include "Chat.h"
 #include "Config.h"
 #include "GameEventMgr.h"
 #include "GameTime.h"
