@@ -22,9 +22,7 @@ enum
     STAGE_ACTIVATE_ROOTS        = 1,
     STAGE_ACTIVATE_RUNES        = 2,
     STAGE_ACTIVATE_GATE         = 3,
-    STAGE_GATE_OPENED           = 4,
-
-    //TEXT_CHAMPION               = 11427
+    STAGE_GATE_OPENED           = 4
 };
 
 class go_war_effort_scarab_gong : public GameObjectScript
@@ -99,7 +97,7 @@ public:
                 return;
             }
 
-            const BroadcastText* text = sObjectMgr->GetBroadcastText(TEXT_CHAMPION);
+            const BroadcastText* text = sObjectMgr->GetBroadcastText(TEXT_WAR_EFFORT_GATE_OPENED);
 
             sWorldSessionMgr->DoForAllOnlinePlayers([&](Player* target)
             {

@@ -197,6 +197,12 @@ enum GOs
     GO_COOKED_GOODS_HORDE_TIER_5                            = 180837
 };
 
+enum Texts
+{
+    TEXT_WAR_EFFORT_GATE_OPENED                             = 11427,
+    TEXT_WAR_EFFORT_EVENT_ENDED                             = 11649
+};
+
 class WarEffortMgr
 {
 public:

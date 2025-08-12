@@ -3,6 +3,7 @@
 #include "GameTime.h"
 #include "Player.h"
 #include "ScriptMgr.h"
+#include "WorldSessionMgr.h"
 #include "WorldState.h"
 
 #include "event_war_effort.h"
@@ -140,6 +141,16 @@ void WarEffortMgr::CheckStage()
         if (currentGameTime > nextTransition)
         {
             stage = STAGE_EVENT_ENDED;
+
+            const BroadcastText* text = sObjectMgr->GetBroadcastText(TEXT_WAR_EFFORT_EVENT_ENDED);
+
+            sWorldSessionMgr->DoForAllOnlinePlayers([&](Player* player)
+            {
+                LocaleConstant locale = player->GetSession()->GetSessionDbLocaleIndex();
+                WorldPacket data;
+                ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID_BOSS_EMOTE, LANG_UNIVERSAL, player, player, text->GetText(locale, player->getGender()));
+                target->SendDirectMessage(&data);
+            });
         }
         break;
     default:
