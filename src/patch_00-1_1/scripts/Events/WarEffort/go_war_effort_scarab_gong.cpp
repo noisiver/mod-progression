@@ -99,15 +99,15 @@ public:
                 return;
             }
 
-            /*const BroadcastText* text = sObjectMgr->GetBroadcastText(TEXT_CHAMPION);
+            const BroadcastText* text = sObjectMgr->GetBroadcastText(TEXT_CHAMPION);
 
             sWorldSessionMgr->DoForAllOnlinePlayers([&](Player* target)
             {
                 LocaleConstant locale = target->GetSession()->GetSessionDbLocaleIndex();
                 WorldPacket data;
-                ChatHandler::BuildChatPacket(data, CHAT_MSG_SYSTEM, LANG_UNIVERSAL, player, target, text->GetText(locale, player->getGender()));
+                ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID_BOSS_EMOTE, LANG_UNIVERSAL, player, player, text->GetText(locale, player->getGender()));
                 target->SendDirectMessage(&data);
-            });*/
+            });
 
             timer = 1000;
             stage = STAGE_ACTIVATE_ROOTS;
