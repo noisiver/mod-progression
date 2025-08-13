@@ -1,5 +1,5 @@
 DELETE FROM `smart_scripts` WHERE `entryorguid` IN (1748, 12397, 14435, 14720, 15743, 15744, 15747, 15748, 15749, 15750, 15751, 15752, 15753, 15754, 15756, 15757, 15758, 15759, 15806, 15807, 15808, 15810, 15811, 15812, 15817, 15818, 15853, 15861);
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (15740, 15741, 15742) AND `id` IN (1, 2, 3);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (15740, 15741, 15742) AND `id` IN (1, 2);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
 (1748, 0, 0, 0, 2, 0, 100, 1, 1, 20, 0, 0, 0, 0, 11, 17233, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Lay on Hands at 1-20%'),
 (1748, 0, 1, 0, 2, 0, 100, 0, 1, 90, 60000, 120000, 0, 0, 11, 15062, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Shield Wall at 1-90%'),
@@ -27,13 +27,12 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (14435, 0, 1, 0, 0, 0, 100, 0, 17000, 17000, 8000, 11000, 0, 0, 11, 23011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Prince Thunderaan - In Combat - Cast \'Tears of the Wind Seeker\''),
 (14720, 0, 0, 0, 0, 0, 100, 0, 5000, 8000, 7000, 7000, 0, 0, 11, 16044, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'High Overlord Saurfang - In Combat - Cast \'Cleave\''),
 (14720, 0, 1, 0, 0, 0, 100, 0, 3000, 9000, 15000, 15000, 0, 0, 11, 14100, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'High Overlord Saurfang - In Combat - Cast \'Terrifying Roar\''),
-(15740, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 204, 15799, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Zora - On Just Died - Despawn Instant'),
-(15740, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15799, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6825.01, 811.389, 51.8466, 1.67552, 'Colossus of Zora - On Just Died - Summon Creature \'Colossus Researcher Eazel\''),
-(15741, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 204, 15797, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Regal - On Just Died - Despawn Instant'),
-(15741, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15797, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6826.11, 813.571, 51.6444, 5.49779, 'Colossus of Regal - On Just Died - Summon Creature \'Colossus Researcher Sophia\''),
-(15741, 0, 3, 0, 40, 0, 100, 0, 33, 54001530, 0, 0, 0, 0, 89, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Regal - On Point 33 of Path 54001530 Reached - Start Random Movement'),
-(15742, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 204, 15798, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Ashi - On Just Died - Despawn Instant'),
-(15742, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15798, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6824.03, 813.17, 51.4418, 3.52557, 'Colossus of Ashi - On Just Died - Summon Creature \'Colossus Researcher Nestor\''),
+(15740, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15799, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6825.01, 811.389, 51.8466, 1.67552, 'Colossus of Zora - On Just Died - Summon Creature \'Colossus Researcher Eazel\''),
+(15740, 0, 2, 0, 40, 0, 100, 0, 25, 54001520, 0, 0, 0, 0, 89, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Zora - On Point 25 of Path 54001520 Reached - Start Random Movement'),
+(15741, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15797, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6826.11, 813.571, 51.6444, 5.49779, 'Colossus of Regal - On Just Died - Summon Creature \'Colossus Researcher Sophia\''),
+(15741, 0, 2, 0, 40, 0, 100, 0, 33, 54001530, 0, 0, 0, 0, 89, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Regal - On Point 33 of Path 54001530 Reached - Start Random Movement'),
+(15742, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15798, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6824.03, 813.17, 51.4418, 3.52557, 'Colossus of Ashi - On Just Died - Summon Creature \'Colossus Researcher Nestor\''),
+(15742, 0, 2, 0, 40, 0, 100, 0, 25, 54001540, 0, 0, 0, 0, 89, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Ashi - On Point 23 of Path 54001540 Reached - Start Random Movement'),
 (15743, 0, 0, 0, 0, 0, 100, 0, 8000, 8000, 10000, 12000, 0, 0, 11, 8255, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Strong Cleave\''),
 (15743, 0, 1, 0, 0, 0, 100, 0, 10000, 10000, 10000, 10000, 0, 0, 11, 16145, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Sunder Armor\''),
 (15743, 0, 2, 0, 0, 0, 100, 0, 2000, 2000, 6000, 8000, 0, 0, 11, 8078, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Thunderclap\''),
