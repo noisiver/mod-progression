@@ -31,6 +31,7 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (15740, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15799, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6825.01, 811.389, 51.8466, 1.67552, 'Colossus of Zora - On Just Died - Summon Creature \'Colossus Researcher Eazel\''),
 (15741, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 204, 15797, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Regal - On Just Died - Despawn Instant'),
 (15741, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15797, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6826.11, 813.571, 51.6444, 5.49779, 'Colossus of Regal - On Just Died - Summon Creature \'Colossus Researcher Sophia\''),
+(15741, 0, 3, 0, 40, 0, 100, 0, 33, 54001530, 0, 0, 0, 0, 89, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Regal - On Point 33 of Path 54001530 Reached - Start Random Movement'),
 (15742, 0, 1, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 204, 15798, 0, 0, 0, 0, 0, 0, 0, 'Colossus of Ashi - On Just Died - Despawn Instant'),
 (15742, 0, 2, 0, 6, 0, 100, 0, 0, 0, 0, 0, 0, 0, 12, 15798, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0, -6824.03, 813.17, 51.4418, 3.52557, 'Colossus of Ashi - On Just Died - Summon Creature \'Colossus Researcher Nestor\''),
 (15743, 0, 0, 0, 0, 0, 100, 0, 8000, 8000, 10000, 12000, 0, 0, 11, 8255, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Colossal Anubisath Warbringer - In Combat - Cast \'Strong Cleave\''),
