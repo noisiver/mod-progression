@@ -149,7 +149,7 @@ void WarEffortMgr::CheckStage()
             {
                 LocaleConstant locale = player->GetSession()->GetSessionDbLocaleIndex();
                 WorldPacket data;
-                ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID_BOSS_EMOTE, LANG_UNIVERSAL, player, player, text->GetText(locale, player->getGender()));
+                ChatHandler::BuildChatPacket(data, CHAT_MSG_EMOTE, LANG_UNIVERSAL, nullptr, player, text->GetText(locale, player->getGender()));
                 player->SendDirectMessage(&data);
             });
         }

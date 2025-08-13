@@ -5,19 +5,16 @@
 
 #include "event_war_effort.h"
 
-enum GossipOptions
+enum
 {
     OPTION_RETURN                                       = 0,
-    OPTION_DESCRIPTION,
-    OPTION_METAL_BARS,
-    OPTION_HERBS,
-    OPTION_LEATHER_SKINS,
-    OPTION_BANDAGES,
-    OPTION_COOKED_GOODS
-};
+    OPTION_DESCRIPTION                                  = 1,
+    OPTION_METAL_BARS                                   = 2,
+    OPTION_HERBS                                        = 3,
+    OPTION_LEATHER_SKINS                                = 4,
+    OPTION_BANDAGES                                     = 5,
+    OPTION_COOKED_GOODS                                 = 6,
 
-enum Texts
-{
     NPC_COMMANDER_STRONGHAMMER_TEAM_UNFINISHED          = 7949,
     NPC_COMMANDER_STRONGHAMMER_TEAM_FINISHED            = 55019,
     NPC_COMMANDER_STRONGHAMMER_FINISHED_ONE_DAY         = 55018,
@@ -38,11 +35,8 @@ enum Texts
     NPC_GENERAL_ZOG_HERBS                               = 7945,
     NPC_GENERAL_ZOG_LEATHER_SKINS                       = 7946,
     NPC_GENERAL_ZOG_BANDAGES                            = 7947,
-    NPC_GENERAL_ZOG_COOKED_GOODS                        = 7948
-};
+    NPC_GENERAL_ZOG_COOKED_GOODS                        = 7948,
 
-enum DayStates
-{
     PLAYER_STATE_RESOURCES_FINISHED                     = 2113
 };
 

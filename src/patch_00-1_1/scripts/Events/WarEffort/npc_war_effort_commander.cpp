@@ -5,19 +5,16 @@
 
 #include "event_war_effort.h"
 
-enum GossipOptions
+enum
 {
     OPTION_RETURN                                       = 0,
-    OPTION_DESCRIPTION,
-    OPTION_METAL_BARS,
-    OPTION_HERBS,
-    OPTION_LEATHER_SKINS,
-    OPTION_BANDAGES,
-    OPTION_COOKED_GOODS
-};
+    OPTION_DESCRIPTION                                  = 1,
+    OPTION_METAL_BARS                                   = 2,
+    OPTION_HERBS                                        = 3,
+    OPTION_LEATHER_SKINS                                = 4,
+    OPTION_BANDAGES                                     = 5,
+    OPTION_COOKED_GOODS                                 = 6,
 
-enum Texts
-{
     NPC_WARLORD_GORCHUK_TEAM_UNFINISHED                 = 8092,
     NPC_WARLORD_GORCHUK_TEAM_FINISHED                   = 55020,
     NPC_WARLORD_GORCHUK_FINISHED_ONE_DAY                = 55014,
@@ -39,11 +36,8 @@ enum Texts
     NPC_FIELD_MARSHAL_SNOWFALL_HERBS                    = 8088,
     NPC_FIELD_MARSHAL_SNOWFALL_LEATHER_SKINS            = 8089,
     NPC_FIELD_MARSHAL_SNOWFALL_BANDAGES                 = 8090,
-    NPC_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS             = 8091
-};
+    NPC_FIELD_MARSHAL_SNOWFALL_COOKED_GOODS             = 8091,
 
-enum DayStates
-{
     PLAYER_STATE_RESOURCES_FINISHED                     = 2113
 };
 
