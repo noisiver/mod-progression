@@ -40,7 +40,7 @@ UPDATE `creature_template` SET `HealthModifier` = 210 WHERE `entry` = 21214;
 UPDATE `creature_template` SET `HealthModifier` = 92.4 WHERE `entry` = 22841;
 UPDATE `creature_template` SET `HealthModifier` = 42 WHERE `entry` IN (22855, 22878);
 UPDATE `creature_template` SET `HealthModifier` = 577.5 WHERE `entry` = 22871;
-UPDATE `creature_template` SET `HealthModifier` = 560 WHERE `entry` IN (22917, 21212);
+UPDATE `creature_template` SET `HealthModifier` = 560 WHERE `entry` IN (21212, 22917);
 UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` IN (22949, 22950, 22951, 22952);
 UPDATE `creature_template` SET `HealthModifier` = 63 WHERE `entry` IN (22957, 22962, 23196, 23394);
 UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 23089;
