@@ -18,6 +18,7 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
 void AddSC_boss_svala_progression();
+void AddSC_spell_summon_nightbane();
 
 void Addmod_progressionScripts()
 {
@@ -33,6 +34,7 @@ void Addmod_progressionScripts()
     if (id < PATCH_ECHOES_OF_DOOM)
     {
         AddSC_instance_blackrock_spire_progression();
+        AddSC_spell_summon_nightbane();
     }
 
     if (id < PATCH_CALL_OF_THE_CRUSADE)

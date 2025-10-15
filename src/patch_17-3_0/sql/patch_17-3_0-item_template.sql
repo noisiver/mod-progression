@@ -133,3 +133,4 @@ UPDATE `item_template` SET `spellid_2` = 64977 WHERE `entry` = 46308;
 UPDATE `item_template` SET `spellid_2` = 66847 WHERE `entry` = 47100;
 UPDATE `item_template` SET `spellid_2` = 66846 WHERE `entry` = 47101;
 UPDATE `item_template` SET `spellid_1` = 483, `spellcharges_1` = -1, `spellid_2` = 26656 WHERE `entry` = 21176;
+UPDATE `item_template` SET `Quality` = 0, `SellPrice` = 20000, `spellid_1` = 0, `description` = 'Though the urn now appears to be empty, it might still be worth something to a vendor.' WHERE `entry` = 24140;

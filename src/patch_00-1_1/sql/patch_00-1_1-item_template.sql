@@ -136,6 +136,7 @@ UPDATE `item_template` SET `spellid_1` = 66847 WHERE `entry` = 47100;
 UPDATE `item_template` SET `spellid_1` = 66846 WHERE `entry` = 47101;
 UPDATE `item_template` SET `RequiredReputationRank` = 6 WHERE `entry` IN (30622, 30623, 30633, 30634, 30635, 30637);
 UPDATE `item_template` SET `Flags` = `Flags` & ~16 WHERE `entry` = 17008;
+UPDATE `item_template` SET `Quality` = 1, `SellPrice` = 0, `spellid_1` = 31116, `description` = '' WHERE `entry` = 24140;
 /*
 Item changes - stored separately to make it easier to clean up
 */
