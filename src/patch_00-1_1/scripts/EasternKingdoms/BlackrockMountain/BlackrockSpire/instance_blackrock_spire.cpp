@@ -37,10 +37,7 @@ enum EventIds
     EVENT_DRAGONSPINE_DOOR_STAGE_4         = 7
 };
 
-enum Timers
-{
-    TIMER_SOLAKAR_WAVE = 30000
-};
+constexpr Milliseconds TIMER_SOLAKAR_WAVE = 30s;
 
 enum SolakarWaves
 {
