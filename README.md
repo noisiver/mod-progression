@@ -30,7 +30,7 @@ These are all the patches included with this module. Every patch includes change
 # Note
 Keep in mind that it's not complete even if there seems to be a lot done. It's not meant to be 1:1 compared to retail because with changes to spells and so forth that's impossible without client and core edits, and those kind of edits are not what I want.
 
-I haven't added the level 60 versions of Naxxramas or the opening of the Ahn'Qiraj yet. Most of this is already done in my core patch but I rather do it from scratch, clean it up and minimize the amount of edits required to support it. I don't need reports for these unless specifically stated.
+I haven't added the level 60 versions of Naxxramas yet and I'm not sure if I ever will. The event for opening the Gate of Ahn'Qiraj just requires a player to complete the line of quests required to obtain The Scepter of the Shifting Sands too. I have no plans to fully implement the War Effort event.
 
 Wrath of the Lich King patches are by far the most complete and I am currently focusing on The Burning Crusade but I'm busy with other things a lot of the time.
 
