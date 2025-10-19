@@ -75,7 +75,7 @@ public:
             }
         }
 
-        void OpenGate(Player* player)
+        void OpenGate()
         {
             goGate = GetClosestGameObjectWithEntry(me, GO_AHN_QIRAJ_GATE, 150.0f, true);
             goRoots = GetClosestGameObjectWithEntry(me, GO_AHN_QIRAJ_GATE_ROOTS, 150.0f, true);
@@ -108,7 +108,7 @@ public:
         return new go_scarab_gongAI(object);
     }
 
-    bool OnQuestReward(Player* player, GameObject* go, Quest const* quest, uint32 /*opt*/) override
+    bool OnQuestReward(Player* /*player*/, GameObject* go, Quest const* quest, uint32 /*opt*/) override
     {
         if (quest->GetQuestId() != QUEST_BANG_A_GONG)
         {
@@ -122,7 +122,7 @@ public:
 
         if (auto* gongAI = dynamic_cast<go_scarab_gongAI*>(go->AI()))
         {
-            gongAI->OpenGate(player);
+            gongAI->OpenGate();
         }
 
         return true;
