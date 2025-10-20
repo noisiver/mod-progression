@@ -14,10 +14,10 @@ enum Skadi
     SPELL_LAUNCH_HARPOON      = 48642
 };
 
-class go_harpoon_cannon_progression : public GameObjectScript
+class go_harpoon_canon_progression : public GameObjectScript
 {
 public:
-    go_harpoon_cannon_progression() : GameObjectScript("go_harpoon_canon") { }
+    go_harpoon_canon_progression() : GameObjectScript("go_harpoon_canon") { }
 
     bool OnGossipHello(Player* pPlayer, GameObject* go) override
     {
@@ -47,5 +47,5 @@ public:
 
 void AddSC_boss_skadi_progression()
 {
-    new go_harpoon_cannon_progression();
+    new go_harpoon_canon_progression();
 }

@@ -9,8 +9,8 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
         return;
     }
 
-    bool isPet = attacker->GetOwner() && attacker->GetOwner()->GetTypeId() == TYPEID_PLAYER;
-    if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
+    bool isPet = attacker->GetOwner() && attacker->GetOwner()->IsPlayer();
+    if (!isPet && !attacker->IsPlayer())
     {
         return;
     }
@@ -28,8 +28,8 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
         return;
     }
 
-    bool isPet = attacker->GetOwner() && attacker->GetOwner()->GetTypeId() == TYPEID_PLAYER;
-    if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
+    bool isPet = attacker->GetOwner() && attacker->GetOwner()->IsPlayer();
+    if (!isPet && !attacker->IsPlayer())
     {
         return;
     }
@@ -47,8 +47,8 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
         return;
     }
 
-    bool isPet = attacker->GetOwner() && attacker->GetOwner()->GetTypeId() == TYPEID_PLAYER;
-    if (!isPet && attacker->GetTypeId() != TYPEID_PLAYER)
+    bool isPet = attacker->GetOwner() && attacker->GetOwner()->IsPlayer();
+    if (!isPet && !attacker->IsPlayer())
     {
         return;
     }
@@ -66,8 +66,8 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
         return;
     }
 
-    bool isPet = healer->GetOwner() && healer->GetOwner()->GetTypeId() == TYPEID_PLAYER;
-    if (!isPet && healer->GetTypeId() != TYPEID_PLAYER)
+    bool isPet = healer->GetOwner() && healer->GetOwner()->IsPlayer();
+    if (!isPet && !healer->IsPlayer())
     {
         return;
     }
