@@ -16,6 +16,7 @@ void AddSC_instance_onyxias_lair_progression();
 void AddSC_boss_onyxia_progression();
 void AddSC_go_scarab_gong();
 void AddSC_go_scarab_gate();
+void AddSC_at_naxxramas();
 void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
@@ -45,6 +46,11 @@ void Addmod_progressionScripts()
     {
         AddSC_instance_onyxias_lair_progression();
         AddSC_boss_onyxia_progression();
+    }
+
+    if (id >= PATCH_SHADOW_OF_THE_NECROPOLIS && id < PATCH_ECHOES_OF_DOOM)
+    {
+        AddSC_at_naxxramas();
     }
 
     AddSC_npc_archmage_landalock();
