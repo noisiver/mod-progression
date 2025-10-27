@@ -20,21 +20,6 @@ bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, Achievem
         return false;
     }
 
-    if (sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE && (achievement->ID == ACHIEVEMENT_ONYXIAS_LAIR_10 || achievement->ID == ACHIEVEMENT_ONYXIAS_LAIR_25))
-    {
-        return false;
-    }
-
-    return true;
-}
-
-bool Progression::OnPlayerBeforeCriteriaProgress(Player* /*player*/, AchievementCriteriaEntry const* criteria)
-{
-    if (sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE && (criteria->ID == CRITERIA_ONYXIA_10 || criteria->ID == CRITERIA_ONYXIA_25))
-    {
-        return false;
-    }
-
     return true;
 }
 
