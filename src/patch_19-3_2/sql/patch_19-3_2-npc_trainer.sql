@@ -7,7 +7,6 @@ DELETE FROM `npc_trainer` WHERE `ID` = 200018 AND `SpellID` IN (66842, 66843, 66
 DELETE FROM `npc_trainer` WHERE `ID` = 200020 AND `SpellID` IN (13820, 23214);
 DELETE FROM `npc_trainer` WHERE `ID` = 200021 AND `SpellID` IN (34767, 34768);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
-(200006, 33950, 34000, 0, 0, 60, 0),
 (200010, 1710, 10000, 0, 0, 20, 0),
 (200010, 23161, 100000, 0, 0, 40, 0),
 (200018, 66842, 700, 0, 0, 30, 0),
