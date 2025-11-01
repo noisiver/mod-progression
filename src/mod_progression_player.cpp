@@ -13,7 +13,7 @@ void Progression::OnPlayerLogin(Player* player)
     }
 }
 
-bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* achievement)
+bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
 {
     if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM && sProgressionMgr->GetEnforceAchievements())
     {
