@@ -2,4 +2,3 @@ DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (269, 532, 534, 540
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (4, 5, 6, 7);
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4);
 DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` = 21;
-DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (21877, 27859, 27860, 31952);

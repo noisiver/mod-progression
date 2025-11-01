@@ -1,9 +1,0 @@
-UPDATE `creature_template` SET `pickpocketloot` = 1852 WHERE `entry` = 1852;
-UPDATE `creature_template` SET `pickpocketloot` = 10508 WHERE `entry` = 10508;
-UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (4624, 9460, 11190);
-UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN (68, 352, 523, 853, 866, 931, 1064, 1387, 1571, 1572, 1573, 1642, 1736, 1737, 1739, 1741, 1976, 2226, 2299, 2389, 2409, 2432, 2835, 2851, 2858, 2859, 2861, 2941, 2995, 3084, 3210, 3211, 3213, 3214, 3296, 3305, 3310, 3571, 3615, 3838, 3841, 4262, 4267, 4312, 4314, 4317, 4319, 4321, 4407, 4423, 4551, 5546, 5547, 5595, 5624, 5952, 6026, 6706, 6726, 7823, 7824, 7865, 7939, 7975, 7980, 8018, 8019, 8020, 8147, 8155, 8609, 8610, 10378, 10378, 10583, 10897, 11138, 11139, 11194, 11798, 11800, 11822, 11822, 11899, 11900, 11901, 12160, 12338, 12577, 12578, 12596, 12616, 12617, 12636, 12740, 13177, 14730, 15177, 15178, 16096, 16227);
-UPDATE `creature_template` SET `minlevel` = 68, `maxlevel` = 69 WHERE `entry` IN (7370, 12378);
-UPDATE `creature_template` SET `minlevel` = 69, `maxlevel` = 70 WHERE `entry` IN (12377, 12379, 12380);
-UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (8383, 15184, 16378);
-UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` IN (466, 2425, 11832);
-UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (1748, 2784, 2784, 3057, 3057, 4949, 4949, 7937, 7999, 10181, 10181, 10540);
