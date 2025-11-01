@@ -12,9 +12,9 @@ UPDATE `creature_template` SET `faction` = 111 WHERE `entry` IN (2952, 2953, 295
 UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (2966, 3101, 3102, 8554);
 UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183;
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748;
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `DamageModifier` = 15.05, `lootid` = 46000, `HealthModifier` = 330 WHERE `entry` = 10184;
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `DamageModifier` = 15.05, `mingold` = 914892, `maxgold` = 1066294, `HealthModifier` = 330, `ManaModifier` = 4 WHERE `entry` = 10184;
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `exp` = 0, `DamageModifier` = 3.7, `skinloot` = 0, `HealthModifier` = 1 WHERE `entry` = 11262;
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `DamageModifier` = 9.8, `lootid` = 0, `skinloot` = 0, `HealthModifier` = 25 WHERE `entry` = 12129;
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `DamageModifier` = 9.8, `lootid` = 0, `skinloot` = 0, `HealthModifier` = 25, `ManaModifier` = 3 WHERE `entry` = 12129;
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN (68, 352, 523, 853, 866, 931, 1064, 1387, 1571, 1572, 1573, 1642, 1736, 1737, 1739, 1741, 1976, 2226, 2299, 2389, 2409, 2432, 2835, 2851, 2858, 2859, 2861, 2941, 2995, 3084, 3210, 3211, 3213, 3214, 3296, 3305, 3310, 3571, 3615, 3838, 3841, 4262, 4267, 4312, 4314, 4317, 4319, 4321, 4407, 4423, 4551, 5546, 5547, 5595, 5624, 5952, 6026, 6706, 6726, 7823, 7824, 7865, 7939, 7975, 7980, 8018, 8019, 8020, 8147, 8155, 8609, 8610, 10378, 10378, 10583, 10897, 11138, 11139, 11194, 11822, 11822, 11899, 11900, 11901, 12160, 12338, 12577, 12578, 12596, 12616, 12617, 12636, 12740, 13177, 14730, 15177, 15178, 16096, 16227, 24841, 24842, 25079, 25080, 25081, 25083);
 UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` IN (4624, 9460, 11190);
 UPDATE `creature_template` SET `minlevel` = 58, `maxlevel` = 60 WHERE `entry` IN (7370, 12377);
