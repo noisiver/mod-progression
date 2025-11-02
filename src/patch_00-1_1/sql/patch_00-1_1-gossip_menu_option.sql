@@ -1,6 +1,6 @@
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 401 AND `OptionID` = 6;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 421 AND `OptionID` = 8;
-DELETE FROM `gossip_menu_option` WHERE `MenuID` = 435 AND `OptionID` = 12;
+DELETE FROM `gossip_menu_option` WHERE `MenuID` = 435 AND `OptionID` IN (2, 12);
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 751 AND `OptionID` = 7;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 1942 AND `OptionID` = 8;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 1949 AND `OptionID` = 7;

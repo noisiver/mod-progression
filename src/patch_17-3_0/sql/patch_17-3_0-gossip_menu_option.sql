@@ -1,5 +1,5 @@
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 421 AND `OptionID` = 8;
-DELETE FROM `gossip_menu_option` WHERE `MenuID` = 435 AND `OptionID` = 12;
+DELETE FROM `gossip_menu_option` WHERE `MenuID` = 435 AND `OptionID` IN (2, 12);
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 751 AND `OptionID` = 7;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 1942 AND `OptionID` = 8;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 1951 AND `OptionID` IN (11, 14);
@@ -24,6 +24,7 @@ DELETE FROM `gossip_menu_option` WHERE `MenuID` = 10767 AND `OptionID` = 8;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` = 10769 AND `OptionID` = 2;
 INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextID`, `OptionType`, `OptionNpcFlag`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (421, 8, 0, 'Inscription', 48811, 1, 1, 10010, 13, 0, 0, '', 0, 0),
+(435, 2, 0, 'Stormwind Harbor', 29416, 1, 1, 9767, 20, 0, 0, '', 0, 0),
 (435, 12, 0, 'Barber', 45376, 1, 1, 10011, 30, 0, 0, '', 0, 0),
 (751, 7, 0, 'Inscription', 48811, 1, 1, 10021, 296, 0, 0, '', 0, 0),
 (1942, 8, 0, 'Inscription', 48811, 1, 1, 10017, 189, 0, 0, '', 0, 0),
