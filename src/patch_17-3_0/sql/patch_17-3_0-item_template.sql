@@ -1,1 +1,0 @@
-UPDATE `item_template` SET `Quality` = 0, `SellPrice` = 20000, `spellid_1` = 0, `description` = 'Though the urn now appears to be empty, it might still be worth something to a vendor.' WHERE `entry` = 24140;
