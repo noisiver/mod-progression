@@ -1,5 +1,4 @@
 UPDATE `item_template` SET `spellid_1` = 9415 WHERE `entry` = 7714;
-UPDATE `item_template` SET `DisenchantID` = 7 WHERE `entry` = 9243;
 UPDATE `item_template` SET `Quality` = 2, `armor` = 76, `bonding` = 1, `DisenchantID` = 6 WHERE `entry` = 9398;
 UPDATE `item_template` SET `Quality` = 3, `stat_value2` = 10, `armor` = 58, `spellid_1` = 14248, `DisenchantID` = 46 WHERE `entry` = 10041;
 UPDATE `item_template` SET `spellid_1` = 21363, `spellid_2` = 21596 WHERE `entry` = 10659;
@@ -22,7 +21,6 @@ UPDATE `item_template` SET `Quality` = 4, `stat_value2` = 13, `stat_type3` = 6, 
 UPDATE `item_template` SET `Quality` = 4, `stat_type3` = 6, `stat_value3` = 9, `armor` = 41 WHERE `entry` = 19846;
 UPDATE `item_template` SET `Quality` = 4, `stat_type2` = 5, `stat_value2` = 8, `armor` = 41 WHERE `entry` = 19848;
 UPDATE `item_template` SET `Quality` = 4, `stat_value1` = 23, `stat_value2` = 19, `armor` = 71 WHERE `entry` = 19849;
-UPDATE `item_template` SET `DisenchantID` = 47 WHERE `entry` = 20036;
 UPDATE `item_template` SET `stat_value3` = 15 WHERE `entry` = 21361;
 UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 65, `stat_value1` = 11, `stat_value2` = 14 WHERE `entry` = 21393;
 UPDATE `item_template` SET `Quality` = 4, `ItemLevel` = 67, `stat_value3` = 9, `armor` = 52, `spellid_1` = 15464 WHERE `entry` = 21394;

@@ -57,7 +57,7 @@ UPDATE `item_template` SET `Quality` = 3, `ItemLevel` = 60, `RequiredLevel` = 55
 UPDATE `item_template` SET `Quality` = 3, `ItemLevel` = 60, `RequiredLevel` = 55, `stat_value1` = 17, `stat_type2` = 0, `stat_value2` = 0, `armor` = 288, `spellid_1` = 15808, `RandomProperty` = 3304, `DisenchantID` = 49 WHERE `entry` = 12953;
 UPDATE `item_template` SET `Quality` = 3, `ItemLevel` = 60, `RequiredLevel` = 55, `stat_type1` = 7, `stat_value1` = 12, `stat_type2` = 5, `stat_value2` = 15, `armor` = 137, `spellid_1` = 9318, `spellid_2` = 0, `RandomProperty` = 3304, `DisenchantID` = 49 WHERE `entry` = 12960;
 UPDATE `item_template` SET `stat_value1` = 16, `stat_value2` = 16, `stat_value3` = 13, `stat_type4` = 0, `stat_value4` = 0, `spellid_1` = 14254 WHERE `entry` = 12965;
-UPDATE `item_template` SET `stat_type2` = 4 WHERE `entry` IN (12966, 13400);
+UPDATE `item_template` SET `stat_type2` = 4 WHERE `entry` IN (12966);
 UPDATE `item_template` SET `stat_type3` = 5, `stat_type4` = 0, `stat_value4` = 0, `spellid_1` = 9342 WHERE `entry` = 13101;
 UPDATE `item_template` SET `stat_value1` = 14, `stat_type2` = 7, `stat_value2` = 8, `spellid_1` = 21361 WHERE `entry` = 13141;
 UPDATE `item_template` SET `stat_type3` = 0, `stat_value3` = 0, `spellid_1` = 15464 WHERE `entry` = 13142;

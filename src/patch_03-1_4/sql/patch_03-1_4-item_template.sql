@@ -1,4 +1,3 @@
-UPDATE `item_template` SET `stat_value2` = 3 WHERE `entry` = 1996;
 UPDATE `item_template` SET `Quality` = 2 WHERE `entry` = 4381;
 UPDATE `item_template` SET `spellid_1` = 23076 WHERE `entry` = 4396;
 UPDATE `item_template` SET `spellid_1` = 23075 WHERE `entry` = 10576;
