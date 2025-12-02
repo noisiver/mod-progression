@@ -39,7 +39,7 @@ UPDATE `item_template` SET `stat_value1` = 11, `stat_value2` = 6, `spellid_1` = 
 UPDATE `item_template` SET `stat_value2` = 13, `stat_value3` = 6, `spellid_1` = 15464 WHERE `entry` = 16937;
 UPDATE `item_template` SET `stat_value2` = 15, `stat_value3` = 8, `stat_value4` = 16, `spellid_1` = 15464, `spellid_2` = 7597 WHERE `entry` = 16938;
 UPDATE `item_template` SET `spellid_1` = 18384 WHERE `entry` = 16945;
-UPDATE `item_template` SET `spellid_2` = 9415, `spellid_3` = 9406 WHERE `entry` = 16947;
+UPDATE `item_template` SET `spellid_2` = 9415 WHERE `entry` = 16947;
 UPDATE `item_template` SET `spellid_2` = 9398, `spellid_3` = 7681 WHERE `entry` = 16948;
 UPDATE `item_template` SET `spellid_1` = 14047 WHERE `entry` = 16950;
 UPDATE `item_template` SET `stat_value1` = 9, `stat_value2` = 8, `stat_value3` = 21, `stat_type4` = 4, `stat_value4` = 9, `spellid_1` = 9397 WHERE `entry` = 16951;
