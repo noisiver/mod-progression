@@ -201,7 +201,6 @@ UPDATE `item_template` SET `stat_type3` = 31, `stat_type4` = 38, `stat_value4` =
 UPDATE `item_template` SET `stat_type1` = 7, `stat_value1` = 9, `stat_type2` = 6, `stat_value2` = 8, `stat_type3` = 5, `stat_value3` = 18 WHERE `entry` = 16718;
 UPDATE `item_template` SET `stat_type2` = 7, `stat_value2` = 17, `stat_type3` = 0, `stat_value3` = 0 WHERE `entry` = 16928;
 UPDATE `item_template` SET `spellid_2` = 9343, `spellid_3` = 0 WHERE `entry` = 16947;
-UPDATE `item_template` SET `spellid_2` = 9342, `spellid_3` = 0 WHERE `entry` = 16948;
 UPDATE `item_template` SET `dmg_min1` = 39, `dmg_max1` = 86 WHERE `entry` = 17070;
 UPDATE `item_template` SET `dmg_min1` = 79, `dmg_max1` = 162 WHERE `entry` = 17105;
 UPDATE `item_template` SET `spellid_1` = 9416, `spellid_2` = 0 WHERE `entry` = 17721;
