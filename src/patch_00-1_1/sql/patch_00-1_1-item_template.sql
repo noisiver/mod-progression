@@ -838,7 +838,7 @@ UPDATE `item_template` SET `stat_value1` = 11, `stat_value2` = 12, `stat_value3`
 UPDATE `item_template` SET `stat_value1` = 20, `stat_value2` = 13, `stat_value3` = 4, `stat_type4` = 4, `stat_value4` = 16, `armor` = 234, `shadow_res` = 0, `spellid_1` = 17371, `spellid_2` = 0 WHERE `entry` = 16944;
 UPDATE `item_template` SET `stat_value2` = 10, `armor` = 312, `fire_res` = 0, `shadow_res` = 9, `arcane_res` = 9, `spellid_1` = 9408 WHERE `entry` = 16945;
 UPDATE `item_template` SET `stat_value1` = 12, `stat_value2` = 33, `stat_value3` = 15, `stat_type4` = 4, `stat_value4` = 16, `stat_type5` = 3, `stat_value5` = 8, `armor` = 364, `fire_res` = 0, `arcane_res` = 6, `spellid_1` = 7679, `spellid_2` = 9401 WHERE `entry` = 16946;
-UPDATE `item_template` SET `stat_value1` = 23, `stat_value2` = 17, `stat_value3` = 16, `armor` = 338, `fire_res` = 8, `nature_res` = 8, `frost_res` = 0, `shadow_res` = 0, `spellid_1` = 17868, `spellid_2` = 17990 WHERE `entry` = 16947;
+UPDATE `item_template` SET `stat_value1` = 23, `stat_value2` = 17, `stat_value3` = 16, `armor` = 338, `fire_res` = 8, `nature_res` = 8, `frost_res` = 0, `shadow_res` = 0, `spellid_1` = 17868, `spellid_2` = 17990, `spellid_3` = 0 WHERE `entry` = 16947;
 UPDATE `item_template` SET `stat_type1` = 6, `stat_value1` = 23, `stat_type2` = 7, `stat_value2` = 7, `stat_type3` = 4, `stat_value3` = 13, `armor` = 260, `fire_res` = 6, `frost_res` = 6, `shadow_res` = 0, `spellid_1` = 9408, `spellid_2` = 9361 WHERE `entry` = 16948;
 UPDATE `item_template` SET `stat_type1` = 3, `stat_value1` = 17, `stat_value2` = 20, `stat_value3` = 13, `armor` = 286, `fire_res` = 0, `frost_res` = 3, `spellid_1` = 17892 WHERE `entry` = 16949;
 UPDATE `item_template` SET `stat_value2` = 20, `stat_type4` = 4, `stat_value4` = 15, `armor` = 416, `fire_res` = 0, `nature_res` = 0, `shadow_res` = 3, `arcane_res` = 3, `spellid_1` = 9408, `spellid_2` = 9404 WHERE `entry` = 16950;
@@ -1227,7 +1227,7 @@ UPDATE `item_template` SET `stat_type2` = 21 WHERE `entry` IN (24350, 25482, 255
 UPDATE `item_template` SET `stat_type3` = 18 WHERE `entry` IN (24359, 24361, 24453, 27462, 27493, 27537, 27543, 27743, 27758, 27781, 27795, 27821, 27845, 27905, 27948, 27981, 27994, 28231, 28507, 28530, 28585, 28766, 28793, 28810, 29241, 30044, 30064, 30894, 31766, 32270, 32351, 32367, 33283, 34009, 34611, 34792, 34808);
 UPDATE `item_template` SET `stat_type4` = 21 WHERE `entry` IN (24395, 25577, 25710, 25957, 27418, 27466, 27492, 27508, 27838, 28050, 28278, 29257, 29987, 30297, 30335, 30870, 30924, 30925, 30926, 31104, 31538, 31546, 33285, 34170);
 UPDATE `item_template` SET `stat_type4` = 18 WHERE `entry` IN (24450, 25637, 28220, 30268);
-UPDATE `item_template` SET `stat_type1` = 7, `stat_value1` = 0, `stat_type2` = 5, `stat_value2` = 15, `stat_type3` = 21, `stat_value3` = 11 WHERE `entry` = 24462;
+UPDATE `item_template` SET `stat_type1` = 7, `stat_type2` = 5, `stat_value2` = 15, `stat_type3` = 21, `stat_value3` = 11 WHERE `entry` = 24462;
 UPDATE `item_template` SET `stat_type2` = 18 WHERE `entry` IN (25503, 29808, 30519, 31140);
 UPDATE `item_template` SET `stat_type1` = 18 WHERE `entry` IN (25525, 25936, 28223, 30340, 32483);
 UPDATE `item_template` SET `stat_type1` = 4, `stat_value1` = 11, `stat_type3` = 3, `stat_value3` = 11, `stat_type4` = 5, `stat_value4` = 11, `spellid_1` = 9342 WHERE `entry` = 25673;

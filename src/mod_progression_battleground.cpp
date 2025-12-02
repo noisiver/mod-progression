@@ -5,14 +5,10 @@
 void Progression::OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId)
 {
     if (sProgressionMgr->GetPatchId() >= PATCH_FALL_OF_THE_LICH_KING)
-    {
         return;
-    }
 
     if (player->IsGameMaster())
-    {
         return;
-    }
 
     uint32 token = 0;
 
@@ -41,7 +37,5 @@ void Progression::OnBattlegroundEndReward(Battleground* bg, Player* player, Team
     }
 
     if (token > 0)
-    {
         player->AddItem(token, (player->GetTeamId() == winnerTeamId ? 3 : 1));
-    }
 }

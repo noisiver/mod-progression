@@ -29,9 +29,7 @@ void Addmod_progressionScripts()
     uint8 id = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
 
     if (id < PATCH_BEFORE_THE_STORM)
-    {
         AddSC_spell_mark_of_kazzak();
-    }
 
     if (id < PATCH_ECHOES_OF_DOOM)
     {
@@ -50,9 +48,7 @@ void Addmod_progressionScripts()
     AddSC_npc_archmage_landalock();
 
     if (id < PATCH_FALL_OF_THE_LICH_KING)
-    {
         AddSC_npc_archmage_timear();
-    }
 
     if (id < PATCH_FALL_OF_THE_LICH_KING)
     {

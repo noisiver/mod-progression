@@ -330,7 +330,7 @@ UPDATE `item_template` SET `armor` = 83 WHERE `entry` IN (16913, 16920, 19131);
 UPDATE `item_template` SET `armor` = 107 WHERE `entry` IN (16914, 16921, 16929, 19165);
 UPDATE `item_template` SET `armor` = 116 WHERE `entry` IN (16915, 16922, 16930, 21676);
 UPDATE `item_template` SET `armor` = 58 WHERE `entry` IN (16918, 16926, 16934, 18204);
-UPDATE `item_template` SET `stat_type2` = 6, `stat_value2` = 0, `stat_type3` = 7, `stat_value3` = 17, `armor` = 83 WHERE `entry` = 16928;
+UPDATE `item_template` SET `stat_type2` = 6, `stat_type3` = 7, `stat_value3` = 17, `armor` = 83 WHERE `entry` = 16928;
 UPDATE `item_template` SET `stat_value1` = 16, `armor` = 241, `spellid_1` = 9336 WHERE `entry` = 16935;
 UPDATE `item_template` SET `stat_value1` = 14, `armor` = 310, `spellid_2` = 9334 WHERE `entry` = 16936;
 UPDATE `item_template` SET `stat_value1` = 16, `armor` = 413, `spellid_2` = 9336 WHERE `entry` = 16937;

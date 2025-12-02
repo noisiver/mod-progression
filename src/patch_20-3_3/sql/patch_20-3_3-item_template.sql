@@ -256,7 +256,6 @@ UPDATE `item_template` SET `ItemLevel` = 60, `stat_value1` = 13, `stat_value2` =
 UPDATE `item_template` SET `ItemLevel` = 60, `stat_value1` = 11, `stat_value2` = 10, `stat_value3` = 11, `stat_type4` = 32, `stat_value4` = 15, `stat_type5` = 45, `stat_value5` = 12, `armor` = 488, `spellid_1` = 0, `spellid_2` = 0 WHERE `entry` = 22090;
 UPDATE `item_template` SET `ItemLevel` = 60, `stat_value1` = 10, `stat_value2` = 15, `stat_value3` = 13, `stat_type4` = 43, `stat_value4` = 6, `stat_type5` = 45, `stat_value5` = 13, `armor` = 276, `spellid_1` = 0, `spellid_2` = 0 WHERE `entry` = 22099;
 UPDATE `item_template` SET `ItemLevel` = 60, `stat_value1` = 11, `stat_value2` = 13, `stat_value3` = 10, `stat_value4` = 11, `stat_value5` = 11, `stat_type6` = 45, `stat_value6` = 12, `armor` = 132, `spellid_1` = 0 WHERE `entry` = 22110;
-UPDATE `item_template` SET `dmg_min1` = 72, `dmg_max1` = 143 WHERE `entry` = 22713;
 UPDATE `item_template` SET `stat_type1` = 32, `dmg_min1` = 28, `dmg_max1` = 114 WHERE `entry` = 23554;
 UPDATE `item_template` SET `stat_type1` = 31, `stat_value1` = 24, `stat_type2` = 32, `stat_value2` = 24, `stat_type3` = 36, `stat_value3` = 24, `stat_type4` = 35, `stat_value4` = 24, `stat_type5` = 7, `stat_value5` = 36, `spellid_1` = 0 WHERE `entry` = 23762;
 UPDATE `item_template` SET `stat_type1` = 32, `stat_type2` = 31 WHERE `entry` IN (24262, 24266, 30038, 30720, 32247);
@@ -359,7 +358,7 @@ UPDATE `item_template` SET `stat_type2` = 32, `spellid_1` = 14055 WHERE `entry` 
 UPDATE `item_template` SET `stat_type3` = 31, `spellid_1` = 18054 WHERE `entry` = 30668;
 UPDATE `item_template` SET `stat_type2` = 32, `spellid_1` = 28360 WHERE `entry` = 30673;
 UPDATE `item_template` SET `stat_type4` = 13, `stat_value4` = 10, `armor` = 250 WHERE `entry` = 30674;
-UPDATE `item_template` SET `stat_type2` = 31, `stat_type3` = 32, `dmg_min1` = 26, `dmg_max1` = 123 WHERE `entry` = 30723;
+UPDATE `item_template` SET `stat_type2` = 31, `stat_type3` = 32 WHERE `entry` = 30723;
 UPDATE `item_template` SET `stat_type1` = 31, `stat_type2` = 32 WHERE `entry` IN (30725, 32349, 33354);
 UPDATE `item_template` SET `stat_value3` = 24, `stat_type4` = 4, `stat_value4` = 25 WHERE `entry` = 30731;
 UPDATE `item_template` SET `stat_type2` = 31, `stat_type3` = 32 WHERE `entry` = 30734;
@@ -416,13 +415,13 @@ UPDATE `item_template` SET `stat_type2` = 32, `spellid_1` = 14127, `spellid_2` =
 UPDATE `item_template` SET `dmg_min1` = 153, `dmg_max1` = 231 WHERE `entry` = 32832;
 UPDATE `item_template` SET `stat_value3` = 18, `stat_type4` = 4, `stat_value4` = 19 WHERE `entry` IN (33191, 33481);
 UPDATE `item_template` SET `stat_type2` = 4, `stat_value2` = 34, `spellid_1` = 35074 WHERE `entry` = 33421;
-UPDATE `item_template` SET `stat_type3` = 36, `dmg_min1` = 21, `dmg_max1` = 128 WHERE `entry` = 33467;
+UPDATE `item_template` SET `stat_type3` = 36 WHERE `entry` = 33467;
 UPDATE `item_template` SET `stat_type2` = 36 WHERE `entry` = 33468;
 UPDATE `item_template` SET `stat_value3` = 26, `stat_type5` = 4, `stat_value5` = 27 WHERE `entry` = 33473;
 UPDATE `item_template` SET `stat_type1` = 36, `stat_type2` = 31 WHERE `entry` = 33497;
 UPDATE `item_template` SET `RequiredLevel` = 70 WHERE `entry` = 33820;
 UPDATE `item_template` SET `stat_type3` = 31, `dmg_min1` = 20, `dmg_max1` = 129 WHERE `entry` = 34009;
-UPDATE `item_template` SET `stat_type3` = 36, `dmg_min1` = 14, `dmg_max1` = 119 WHERE `entry` = 34176;
+UPDATE `item_template` SET `stat_type3` = 36 WHERE `entry` = 34176;
 UPDATE `item_template` SET `stat_type3` = 32, `stat_type4` = 36 WHERE `entry` IN (34181, 34186, 34332, 34350);
 UPDATE `item_template` SET `stat_type4` = 4, `stat_value4` = 30, `spellid_1` = 34592 WHERE `entry` = 34192;
 UPDATE `item_template` SET `stat_type1` = 31, `stat_type4` = 36 WHERE `entry` = 34204;
@@ -446,7 +445,7 @@ UPDATE `item_template` SET `stat_type4` = 36, `DisenchantID` = 67 WHERE `entry` 
 UPDATE `item_template` SET `dmg_min1` = 130, `dmg_max1` = 131 WHERE `entry` = 34419;
 UPDATE `item_template` SET `spellid_1` = 0, `spellid_3` = 45052, `DisenchantID` = 67 WHERE `entry` = 34430;
 UPDATE `item_template` SET `dmg_min1` = 182, `dmg_max1` = 274 WHERE `entry` = 34603;
-UPDATE `item_template` SET `stat_type3` = 36, `dmg_min1` = 27, `dmg_max1` = 122 WHERE `entry` = 34604;
+UPDATE `item_template` SET `stat_type3` = 36 WHERE `entry` = 34604;
 UPDATE `item_template` SET `dmg_min1` = 185, `dmg_max1` = 279 WHERE `entry` = 34622;
 UPDATE `item_template` SET `stat_type2` = 36, `armor` = 78 WHERE `entry` = 34702;
 UPDATE `item_template` SET `dmg_min1` = 164, `dmg_max1` = 246 WHERE `entry` = 34783;

@@ -20,7 +20,7 @@ UPDATE `item_template` SET `stat_type2` = 7, `stat_value2` = 8, `nature_res` = 5
 UPDATE `item_template` SET `stat_type2` = 7, `stat_value2` = 8, `nature_res` = 3 WHERE `entry` = 15061;
 UPDATE `item_template` SET `stat_value1` = 9, `armor` = 150 WHERE `entry` = 15855;
 UPDATE `item_template` SET `spellid_1` = 23074 WHERE `entry` = 16022;
-UPDATE `item_template` SET `stat_type1` = 5, `stat_value1` = 0, `stat_type4` = 3, `stat_value4` = 11 WHERE `entry` = 16837;
+UPDATE `item_template` SET `stat_type1` = 5, `stat_type4` = 3, `stat_value4` = 11 WHERE `entry` = 16837;
 UPDATE `item_template` SET `arcane_res` = 0 WHERE `entry` = 16904;
 UPDATE `item_template` SET `ItemLevel` = 68, `RequiredLevel` = 60, `stat_value1` = 13, `stat_value2` = 9 WHERE `entry` = 17065;
 UPDATE `item_template` SET `ItemLevel` = 74, `RequiredLevel` = 60, `spellid_1` = 23210 WHERE `entry` = 17082;

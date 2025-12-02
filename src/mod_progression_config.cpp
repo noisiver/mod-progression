@@ -57,13 +57,9 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, PatchId >= PATCH_FALL_OF_THE_LICH_KING);
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
-    {
         sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, true);
-    }
     if (PatchId < PATCH_FALL_OF_THE_LICH_KING && EnforceDungeonFinder)
-    {
         sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
-    }
     sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, (PatchId < PATCH_SECRETS_OF_ULDUAR && EnforceDualTalent ? 255 : 40));
     sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
     sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, PatchId >= PATCH_THE_GODS_OF_ZUL_AMAN);
@@ -72,9 +68,7 @@ void Progression::OnAfterConfigLoad(bool reload)
     sWorld->setBoolConfig(CONFIG_WEATHER, PatchId >= PATCH_STORMS_OF_AZEROTH);
     sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, (PatchId < PATCH_ECHOES_OF_DOOM ? 60000 : 180000));
     if (PatchId < PATCH_ECHOES_OF_DOOM)
-    {
         sWorld->setIntConfig(CONFIG_MAX_RECRUIT_A_FRIEND_BONUS_PLAYER_LEVEL, 0);
-    }
     sWorld->setIntConfig(CONFIG_WINTERGRASP_ENABLE, (PatchId < PATCH_ECHOES_OF_DOOM ? 2 : 1));
     sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, PatchId < PATCH_ECHOES_OF_DOOM);
 
@@ -89,23 +83,15 @@ void Progression::OnAfterConfigLoad(bool reload)
     }
 
     if (PatchId < PATCH_BATTLEGROUNDS)
-    {
         sWorld->setRate(RATE_HONOR, 0);
-    }
     else if (PatchId < PATCH_FALL_OF_THE_LICH_KING)
-    {
         sWorld->setRate(RATE_HONOR, 0.5f);
-    }
 
     if (PatchId < PATCH_BEFORE_THE_STORM)
-    {
         sWorld->setRate(RATE_ARENA_POINTS, 0);
-    }
 
     if (PatchId < PATCH_THE_GODS_OF_ZUL_AMAN)
-    {
         sWorld->setIntConfig(CONFIG_BATTLEGROUND_ALTERAC_REINFORCEMENTS, 0);
-    }
 
     if (PatchId < PATCH_CALL_OF_THE_CRUSADE)
     {
