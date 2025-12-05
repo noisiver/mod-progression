@@ -48,10 +48,8 @@ void Addmod_progressionScripts()
     AddSC_npc_archmage_landalock();
 
     if (id < PATCH_FALL_OF_THE_LICH_KING)
-        AddSC_npc_archmage_timear();
-
-    if (id < PATCH_FALL_OF_THE_LICH_KING)
     {
+        AddSC_npc_archmage_timear();
         AddSC_boss_skadi_progression();
         AddSC_boss_svala_progression();
     }

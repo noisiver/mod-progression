@@ -82,14 +82,10 @@ public:
             goRunes = GetClosestGameObjectWithEntry(me, GO_AHN_QIRAJ_GATE_RUNES, 150.0f, true);
 
             if (!goGate || !goRoots || !goRunes)
-            {
                 return;
-            }
 
             if (goGate->GetGoState() == GO_STATE_ACTIVE || goRoots->GetGoState() == GO_STATE_ACTIVE || goRunes->GetGoState() == GO_STATE_ACTIVE)
-            {
                 return;
-            }
 
             timer = 1000;
             stage = STAGE_ACTIVATE_ROOTS;
@@ -111,19 +107,13 @@ public:
     bool OnQuestReward(Player* /*player*/, GameObject* go, Quest const* quest, uint32 /*opt*/) override
     {
         if (quest->GetQuestId() != QUEST_BANG_A_GONG)
-        {
             return false;
-        }
 
         if (sWorldState->getWorldState(WORLD_STATE_AQ_GATE_OPENED))
-        {
             return true;
-        }
 
         if (auto* gongAI = dynamic_cast<go_scarab_gongAI*>(go->AI()))
-        {
             gongAI->OpenGate();
-        }
 
         return true;
     }

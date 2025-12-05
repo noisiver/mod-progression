@@ -61,9 +61,7 @@ enum Events
     EVENT_SPELL_BELLOWINGROAR       = 14,
     EVENT_WHELP_SPAM                = 15,
     EVENT_SUMMON_WHELP              = 16,
-    EVENT_OLG_SPELL_BLASTNOVA       = 17,
-    EVENT_OLG_SPELL_IGNITEWEAPON    = 18,
-    EVENT_ERUPTION                  = 19,
+    EVENT_ERUPTION                  = 17,
 
     EVENT_LIFTOFF                   = 31,
     EVENT_FLY_S_TO_N                = 32,
@@ -128,7 +126,6 @@ public:
             whelpSpam = false;
             whelpCount = 0;
             whelpSpamTimer = 0;
-            bManyWhelpsAvailable = false;
         }
 
         void SetPhase(uint8 ph)
@@ -137,18 +134,18 @@ public:
             Phase = ph;
             switch (ph)
             {
-            case PHASE_GROUNDED:
-                events.ScheduleEvent(EVENT_SPELL_WINGBUFFET, 10s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_FLAMEBREATH, 10s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_TAILSWEEP, 15s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_CLEAVE, 2s, 5s);
-                break;
-            case PHASE_AIRPHASE:
-                events.ScheduleEvent(EVENT_START_PHASE_2, 0ms);
-                break;
-            case PHASE_LANDED:
-                events.ScheduleEvent(EVENT_START_PHASE_3, 5s);
-                break;
+                case PHASE_GROUNDED:
+                    events.ScheduleEvent(EVENT_SPELL_WINGBUFFET, 10s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_FLAMEBREATH, 10s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_TAILSWEEP, 15s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_CLEAVE, 2s, 5s);
+                    break;
+                case PHASE_AIRPHASE:
+                    events.ScheduleEvent(EVENT_START_PHASE_2, 0ms);
+                    break;
+                case PHASE_LANDED:
+                    events.ScheduleEvent(EVENT_START_PHASE_3, 5s);
+                    break;
             }
         }
 
@@ -161,19 +158,6 @@ public:
             me->SetDisableGravity(false);
             me->SetSpeed(MOVE_RUN, me->GetCreatureTemplate()->speed_run, false);
             BossAI::Reset();
-        }
-
-        void DoAction(int32 param) override
-        {
-            switch (param)
-            {
-            case -1:
-                if (bManyWhelpsAvailable)
-                {
-                    instance->SetData(DATA_WHELP_SUMMONED, 1);
-                }
-                break;
-            }
         }
 
         void JustEngagedWith(Unit* who) override
@@ -234,24 +218,24 @@ public:
             {
                 switch (id)
                 {
-                case 10:
-                    me->SetFacingTo(OnyxiaMoveData[0].o);
-                    events.ScheduleEvent(EVENT_LIFTOFF, 0ms);
-                    break;
-                case 11:
-                    me->SetFacingTo(OnyxiaMoveData[1].o);
-                    events.ScheduleEvent(EVENT_FLY_S_TO_N, 0ms);
-                    break;
-                case 12:
-                    me->SetFacingTo(OnyxiaMoveData[1].o);
-                    events.ScheduleEvent(EVENT_LAND, 0ms);
-                    break;
-                case 13:
-                    me->SetCanFly(false);
-                    me->SetDisableGravity(false);
-                    me->SetSpeed(MOVE_RUN, me->GetCreatureTemplate()->speed_run, false);
-                    events.ScheduleEvent(EVENT_PHASE_3_ATTACK, 0ms);
-                    break;
+                    case 10:
+                        me->SetFacingTo(OnyxiaMoveData[0].o);
+                        events.ScheduleEvent(EVENT_LIFTOFF, 0ms);
+                        break;
+                    case 11:
+                        me->SetFacingTo(OnyxiaMoveData[1].o);
+                        events.ScheduleEvent(EVENT_FLY_S_TO_N, 0ms);
+                        break;
+                    case 12:
+                        me->SetFacingTo(OnyxiaMoveData[1].o);
+                        events.ScheduleEvent(EVENT_LAND, 0ms);
+                        break;
+                    case 13:
+                        me->SetCanFly(false);
+                        me->SetDisableGravity(false);
+                        me->SetSpeed(MOVE_RUN, me->GetCreatureTemplate()->speed_run, false);
+                        events.ScheduleEvent(EVENT_PHASE_3_ATTACK, 0ms);
+                        break;
                 }
             }
         }
@@ -266,7 +250,7 @@ public:
                     if (whelpSpamTimer <= 0)
                     {
                         float angle = rand_norm() * 2 * M_PI;
-                        float dist = rand_norm() * 4.0f;
+                        float dist  = rand_norm() * 4.0f;
                         me->CastSpell(-33.18f + cos(angle) * dist, -258.80f + std::sin(angle) * dist, -89.0f, 17646, true);
                         me->CastSpell(-32.535f + cos(angle) * dist, -170.190f + std::sin(angle) * dist, -89.0f, 17646, true);
                         whelpCount += 2;
@@ -275,8 +259,8 @@ public:
                 }
                 else
                 {
-                    whelpSpam = false;
-                    whelpCount = 0;
+                    whelpSpam      = false;
+                    whelpCount     = 0;
                     whelpSpamTimer = 0;
                 }
             }
@@ -313,208 +297,196 @@ public:
 
             switch (events.ExecuteEvent())
             {
-            case EVENT_SPELL_WINGBUFFET:
-            {
-                DoCastAOE(SPELL_WINGBUFFET);
-                events.Repeat(15s, 30s);
-                break;
-            }
-            case EVENT_SPELL_FLAMEBREATH:
-            {
-                DoCastAOE(SPELL_FLAMEBREATH);
-                events.Repeat(10s, 20s);
-                break;
-            }
-            case EVENT_SPELL_TAILSWEEP:
-            {
-                DoCastAOE(SPELL_TAILSWEEP);
-                events.Repeat(15s, 20s);
-                break;
-            }
-            case EVENT_SPELL_CLEAVE:
-            {
-                DoCastVictim(SPELL_CLEAVE);
-                events.Repeat(2s, 5s);
-                break;
-            }
-            case EVENT_START_PHASE_2:
-            {
-                me->AttackStop();
-                me->SetReactState(REACT_PASSIVE);
-                me->StopMoving();
-                DoResetThreatList();
-                me->GetMotionMaster()->MovePoint(10, OnyxiaMoveData[0].x, OnyxiaMoveData[0].y, OnyxiaMoveData[0].z);
-                break;
-            }
-            case EVENT_LIFTOFF:
-            {
-                Talk(SAY_PHASE_2_TRANS);
-                me->SendMeleeAttackStop(me->GetVictim());
-                me->GetMotionMaster()->MoveIdle();
-                me->DisableSpline();
-                me->SetCanFly(true);
-                me->SetDisableGravity(true);
-                me->SetOrientation(OnyxiaMoveData[0].o);
-                me->SendMovementFlagUpdate();
-                me->GetMotionMaster()->MoveTakeoff(11, OnyxiaMoveData[1].x + 1.0f, OnyxiaMoveData[1].y, OnyxiaMoveData[1].z, 12.0f);
-                bManyWhelpsAvailable = true;
+                case EVENT_SPELL_WINGBUFFET:
+                {
+                    DoCastAOE(SPELL_WINGBUFFET);
+                    events.Repeat(15s, 30s);
+                    break;
+                }
+                case EVENT_SPELL_FLAMEBREATH:
+                {
+                    DoCastAOE(SPELL_FLAMEBREATH);
+                    events.Repeat(10s, 20s);
+                    break;
+                }
+                case EVENT_SPELL_TAILSWEEP:
+                {
+                    DoCastAOE(SPELL_TAILSWEEP);
+                    events.Repeat(15s, 20s);
+                    break;
+                }
+                case EVENT_SPELL_CLEAVE:
+                {
+                    DoCastVictim(SPELL_CLEAVE);
+                    events.Repeat(2s, 5s);
+                    break;
+                }
+                case EVENT_START_PHASE_2:
+                {
+                    me->AttackStop();
+                    me->SetReactState(REACT_PASSIVE);
+                    me->StopMoving();
+                    DoResetThreatList();
+                    me->GetMotionMaster()->MovePoint(10, OnyxiaMoveData[0].x, OnyxiaMoveData[0].y, OnyxiaMoveData[0].z);
+                    break;
+                }
+                case EVENT_LIFTOFF:
+                {
+                    Talk(SAY_PHASE_2_TRANS);
+                    me->SendMeleeAttackStop(me->GetVictim());
+                    me->GetMotionMaster()->MoveIdle();
+                    me->DisableSpline();
+                    me->SetCanFly(true);
+                    me->SetDisableGravity(true);
+                    me->SetOrientation(OnyxiaMoveData[0].o);
+                    me->SendMovementFlagUpdate();
+                    me->GetMotionMaster()->MoveTakeoff(11, OnyxiaMoveData[1].x + 1.0f, OnyxiaMoveData[1].y, OnyxiaMoveData[1].z, 12.0f);
 
-                events.RescheduleEvent(EVENT_END_MANY_WHELPS_TIME, 10s);
-                break;
-            }
-            case EVENT_END_MANY_WHELPS_TIME:
-                bManyWhelpsAvailable = false;
-                break;
-            case EVENT_FLY_S_TO_N:
-            {
-                me->SetSpeed(MOVE_RUN, 2.95f, false);
-                me->GetMotionMaster()->MovePoint(5, OnyxiaMoveData[5].x, OnyxiaMoveData[5].y, OnyxiaMoveData[5].z);
+                    events.RescheduleEvent(EVENT_END_MANY_WHELPS_TIME, 10s);
+                    break;
+                }
+                case EVENT_FLY_S_TO_N:
+                {
+                    me->SetSpeed(MOVE_RUN, 2.95f, false);
+                    me->GetMotionMaster()->MovePoint(5, OnyxiaMoveData[5].x, OnyxiaMoveData[5].y, OnyxiaMoveData[5].z);
 
-                whelpSpam = true;
-                events.ScheduleEvent(EVENT_WHELP_SPAM, 90s);
-                break;
-            }
-            case EVENT_WHELP_SPAM:
-            {
-                whelpSpam = true;
-                events.Repeat(90s);
-                break;
-            }
-            case EVENT_LAND:
-            {
-                Talk(SAY_PHASE_3_TRANS);
-                me->SendMeleeAttackStop(me->GetVictim());
-                me->GetMotionMaster()->MoveLand(13, OnyxiaMoveData[0].x + 1.0f, OnyxiaMoveData[0].y, OnyxiaMoveData[0].z, 12.0f);
-                DoResetThreatList();
-                break;
-            }
-            case EVENT_SPELL_FIREBALL_FIRST:
-            {
-                if (Unit* v = SelectTarget(SelectTargetMethod::Random, 0, 200.0f, true))
-                {
-                    me->SetFacingToObject(v);
-                    DoCast(v, SPELL_FIREBALL);
+                    whelpSpam = true;
+                    events.ScheduleEvent(EVENT_WHELP_SPAM, 90s);
+                    break;
                 }
+                case EVENT_WHELP_SPAM:
+                {
+                    whelpSpam = true;
+                    events.Repeat(90s);
+                    break;
+                }
+                case EVENT_LAND:
+                {
+                    Talk(SAY_PHASE_3_TRANS);
+                    me->SendMeleeAttackStop(me->GetVictim());
+                    me->GetMotionMaster()->MoveLand(13, OnyxiaMoveData[0].x + 1.0f, OnyxiaMoveData[0].y, OnyxiaMoveData[0].z, 12.0f);
+                    DoResetThreatList();
+                    break;
+                }
+                case EVENT_SPELL_FIREBALL_FIRST:
+                {
+                    if (Unit* v = SelectTarget(SelectTargetMethod::Random, 0, 200.0f, true))
+                    {
+                        me->SetFacingToObject(v);
+                        DoCast(v, SPELL_FIREBALL);
+                    }
 
-                events.ScheduleEvent(EVENT_SPELL_FIREBALL_SECOND, 4s);
-                break;
-            }
-            case EVENT_SPELL_FIREBALL_SECOND:
-            {
-                if (Unit* v = SelectTarget(SelectTargetMethod::Random, 0, 200.0f, true))
-                {
-                    me->SetFacingToObject(v);
-                    DoCast(v, SPELL_FIREBALL);
+                    events.ScheduleEvent(EVENT_SPELL_FIREBALL_SECOND, 3s);
+                    break;
                 }
+                case EVENT_SPELL_FIREBALL_SECOND:
+                {
+                    if (Unit* v = SelectTarget(SelectTargetMethod::Random, 0, 200.0f, true))
+                    {
+                        me->SetFacingToObject(v);
+                        DoCast(v, SPELL_FIREBALL);
+                    }
 
-                uint8 rand = urand(0, 99);
-                if (rand < 33)
-                {
-                    events.ScheduleEvent(EVENT_PHASE_2_STEP_CW, 4s);
+                    uint8 rand = urand(0, 99);
+                    if (rand < 33)
+                    {
+                        events.ScheduleEvent(EVENT_PHASE_2_STEP_CW, 4s);
+                    }
+                    else if (rand < 66)
+                    {
+                        events.ScheduleEvent(EVENT_PHASE_2_STEP_ACW, 4s);
+                    }
+                    else
+                    {
+                        events.ScheduleEvent(EVENT_PHASE_2_STEP_ACROSS, 4s);
+                    }
+                    break;
                 }
-                else if (rand < 66)
+                case EVENT_PHASE_2_STEP_CW:
                 {
-                    events.ScheduleEvent(EVENT_PHASE_2_STEP_ACW, 4s);
+                    uint8 newWP = CurrentWP + 1;
+                    if (newWP > 8)
+                    {
+                        newWP = 1;
+                    }
+                    me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
+                    break;
                 }
-                else
+                case EVENT_PHASE_2_STEP_ACW:
                 {
-                    events.ScheduleEvent(EVENT_PHASE_2_STEP_ACROSS, 4s);
+                    uint8 newWP = CurrentWP - 1;
+                    if (newWP < 1)
+                    {
+                        newWP = 8;
+                    }
+                    me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
+                    break;
                 }
-                break;
-            }
-            case EVENT_PHASE_2_STEP_CW:
-            {
-                uint8 newWP = CurrentWP + 1;
-                if (newWP > 8)
+                case EVENT_PHASE_2_STEP_ACROSS:
                 {
-                    newWP = 1;
+                    Talk(EMOTE_BREATH);
+                    me->SetFacingTo(OnyxiaMoveData[CurrentWP].o);
+                    DoCastAOE(OnyxiaMoveData[CurrentWP].spellId);
+                    events.ScheduleEvent(EVENT_SPELL_BREATH, 8250ms);
+                    break;
                 }
-                me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
-                break;
-            }
-            case EVENT_PHASE_2_STEP_ACW:
-            {
-                uint8 newWP = CurrentWP - 1;
-                if (newWP < 1)
+                case EVENT_SPELL_BREATH:
                 {
-                    newWP = 8;
+                    uint8 newWP = OnyxiaMoveData[CurrentWP].DestId;
+                    me->SetSpeed(MOVE_RUN, 2.95f, false);
+                    me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
+                    break;
                 }
-                me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
-                break;
-            }
-            case EVENT_PHASE_2_STEP_ACROSS:
-            {
-                Talk(EMOTE_BREATH);
-                me->SetFacingTo(OnyxiaMoveData[CurrentWP].o);
-                DoCastAOE(OnyxiaMoveData[CurrentWP].spellId);
-                events.ScheduleEvent(EVENT_SPELL_BREATH, 8250ms);
-                break;
-            }
-            case EVENT_SPELL_BREATH:
-            {
-                uint8 newWP = OnyxiaMoveData[CurrentWP].DestId;
-                me->SetSpeed(MOVE_RUN, 2.95f, false);
-                me->GetMotionMaster()->MovePoint(newWP, OnyxiaMoveData[newWP].x, OnyxiaMoveData[newWP].y, OnyxiaMoveData[newWP].z);
-                break;
-            }
-            case EVENT_START_PHASE_3:
-            {
-                me->SetSpeed(MOVE_RUN, 2.95f, false);
-                me->GetMotionMaster()->MovePoint(12, OnyxiaMoveData[1].x, OnyxiaMoveData[1].y, OnyxiaMoveData[1].z);
-                break;
-            }
-            case EVENT_PHASE_3_ATTACK:
-            {
-                me->SetReactState(REACT_AGGRESSIVE);
+                case EVENT_START_PHASE_3:
+                {
+                    me->SetSpeed(MOVE_RUN, 2.95f, false);
+                    me->GetMotionMaster()->MovePoint(12, OnyxiaMoveData[1].x, OnyxiaMoveData[1].y, OnyxiaMoveData[1].z);
+                    break;
+                }
+                case EVENT_PHASE_3_ATTACK:
+                {
+                    me->SetReactState(REACT_AGGRESSIVE);
 
-                if (Unit* target = SelectTarget(SelectTargetMethod::MaxThreat, 0, 0, false))
-                {
-                    AttackStart(target);
+                    if (Unit* target = SelectTarget(SelectTargetMethod::MaxThreat, 0, 0, false))
+                    {
+                        AttackStart(target);
+                    }
+
+                    DoCastAOE(SPELL_BELLOWINGROAR);
+
+                    events.ScheduleEvent(EVENT_ERUPTION, 0ms);
+                    events.ScheduleEvent(EVENT_SPELL_WINGBUFFET, 10s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_FLAMEBREATH, 10s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_TAILSWEEP, 15s, 20s);
+                    events.ScheduleEvent(EVENT_SPELL_CLEAVE, 2s, 5s);
+                    events.ScheduleEvent(EVENT_SPELL_BELLOWINGROAR, 15s);
+                    events.ScheduleEvent(EVENT_SUMMON_WHELP, 5s);
+                    break;
                 }
-
-                DoCastAOE(SPELL_BELLOWINGROAR);
-
-                events.ScheduleEvent(EVENT_ERUPTION, 0ms);
-                events.ScheduleEvent(EVENT_SPELL_WINGBUFFET, 10s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_FLAMEBREATH, 10s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_TAILSWEEP, 15s, 20s);
-                events.ScheduleEvent(EVENT_SPELL_CLEAVE, 2s, 5s);
-                events.ScheduleEvent(EVENT_SPELL_BELLOWINGROAR, 15s);
-                events.ScheduleEvent(EVENT_SUMMON_WHELP, 10s);
-                break;
-            }
-            case EVENT_SPELL_BELLOWINGROAR:
-            {
-                DoCastAOE(SPELL_BELLOWINGROAR);
-                events.Repeat(22s);
-                events.ScheduleEvent(EVENT_ERUPTION, 0ms);
-                break;
-            }
-            case EVENT_ERUPTION:
-            {
-                if (Creature* trigger = me->SummonCreature(12758, *me, TEMPSUMMON_TIMED_DESPAWN, 1000))
+                case EVENT_SPELL_BELLOWINGROAR:
                 {
-                    trigger->CastSpell(trigger, 17731, false);
+                    DoCastAOE(SPELL_BELLOWINGROAR);
+                    events.Repeat(15s, 30s);
+                    events.ScheduleEvent(EVENT_ERUPTION, 0ms);
+                    break;
                 }
-                break;
-            }
-            case EVENT_SUMMON_WHELP:
-            {
-                float angle = rand_norm() * 2 * M_PI;
-                float dist = rand_norm() * 4.0f;
-                me->CastSpell(-33.18f + cos(angle) * dist, -258.80f + std::sin(angle) * dist, -89.0f, 17646, true);
-                me->CastSpell(-32.535f + cos(angle) * dist, -170.190f + std::sin(angle) * dist, -89.0f, 17646, true);
-                events.Repeat(30s);
-                break;
-            }
-            }
-        }
-
-        void SpellHitTarget(Unit* target, SpellInfo const* spell) override
-        {
-            if (target->IsPlayer() && spell->DurationEntry && spell->DurationEntry->ID == 328 && spell->Effects[EFFECT_1].TargetA.GetTarget() == 1 && (spell->Effects[EFFECT_1].Amplitude == 50 || spell->Effects[EFFECT_1].Amplitude == 215)) // Deep Breath
-            {
-                instance->SetData(DATA_DEEP_BREATH_FAILED, 1);
+                case EVENT_ERUPTION:
+                {
+                    if (Creature* trigger = me->SummonCreature(12758, *me, TEMPSUMMON_TIMED_DESPAWN, 1000))
+                    {
+                        trigger->CastSpell(trigger, 17731, false);
+                    }
+                    break;
+                }
+                case EVENT_SUMMON_WHELP:
+                {
+                    float angle = rand_norm() * 2 * M_PI;
+                    float dist  = rand_norm() * 4.0f;
+                    me->CastSpell(-33.18f + cos(angle) * dist, -258.80f + std::sin(angle) * dist, -89.0f, 17646, true);
+                    me->CastSpell(-32.535f + cos(angle) * dist, -170.190f + std::sin(angle) * dist, -89.0f, 17646, true);
+                    events.Repeat(1s, 10s);
+                    break;
+                }
             }
         }
 
@@ -525,7 +497,6 @@ public:
         bool  whelpSpam;
         uint8 whelpCount;
         int32 whelpSpamTimer;
-        bool  bManyWhelpsAvailable;
     };
 
     CreatureAI* GetAI(Creature* creature) const override

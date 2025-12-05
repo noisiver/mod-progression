@@ -19,9 +19,7 @@ public:
         bool Validate(SpellInfo const* /*spell*/) override
         {
             if (!sSpellMgr->GetSpellInfo(SPELL_MARK_OF_KAZZAK_DAMAGE))
-            {
                 return false;
-            }
 
             return true;
         }
