@@ -1,1 +1,2 @@
-DELETE FROM `creature_formations` WHERE `leaderGUID` = 5300002;
+SET @creatureId := 5200000;
+DELETE FROM `creature_formations` WHERE `leaderGUID` = @creatureId+3;

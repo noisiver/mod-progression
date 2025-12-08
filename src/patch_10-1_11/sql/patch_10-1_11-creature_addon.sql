@@ -1,1 +1,2 @@
-DELETE FROM `creature_addon` WHERE `guid` IN (5300000, 5300001, 5300002, 5300003);
+SET @creatureId := 5200000;
+DELETE FROM `creature_addon` WHERE `guid` IN (@creatureId+1, @creatureId+2, @creatureId+3, @creatureId+4);

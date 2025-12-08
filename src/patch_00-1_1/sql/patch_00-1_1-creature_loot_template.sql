@@ -3,17 +3,18 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `Entry` IN (29249, 2926
 UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `Entry` IN (32857, 32867, 32927, 33118, 33186, 33271, 33288, 33293, 33515) AND `Item` IN (45624, 47241);
 UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `Entry` IN (10184, 33190, 33449, 33692, 33693, 33694, 33724, 33885, 33955, 33993, 33994, 34175, 35013, 35360, 35490, 36538) AND `Item` = 47241;
 UPDATE `creature_loot_template` SET `Item` = 750 WHERE `Entry` IN (69, 299) AND `Item` = 50432;
+SET @lootId := 46000, @refId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = 4421 AND `Item` = 17008;
-DELETE FROM `creature_loot_template` WHERE `Entry` = 46000;
+DELETE FROM `creature_loot_template` WHERE `Entry` = @lootId+0;
 INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (4421, 17008, 0, 100, 0, 1, 0, 1, 1, 'Charlga Razorflank - Small Scroll'),
-(46000, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
-(46000, 46000, 46000, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
-(46000, 46001, 46001, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46002, 46002, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46003, 46003, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46004, 46004, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46005, 46005, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46006, 46006, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
-(46000, 46007, 46007, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(46000, 46008, 46008, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)');
+(@lootId+0, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
+(@lootId+0, @refId+0, 46000, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+1, 46001, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+2, 46002, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+3, 46003, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+4, 46004, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+5, 46005, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+6, 46006, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+7, 46007, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+0, @refId+8, 46008, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)');
