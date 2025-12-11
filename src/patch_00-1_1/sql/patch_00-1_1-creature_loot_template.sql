@@ -94,4 +94,4 @@ INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `Q
 (@lootId+2, @refId+9, @refId+9, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
 (@lootId+2, @refId+10, @refId+10, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
 (@lootId+2, @refId+11, @refId+11, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
-(@lootId+2, @refId+12, @refId+12, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
+(@lootId+2, @refId+12, @refId+12, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)');
