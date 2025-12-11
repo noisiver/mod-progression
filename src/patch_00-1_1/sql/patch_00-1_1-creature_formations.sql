@@ -10,6 +10,6 @@ INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, 
 (128073, 128073, 0, 0, @noFollowLeader, 0, 0),
 (128073, 128074, 0, 0, @noFollowMember, 0, 0),
 (128073, @creatureId+9, 0, 0, @noFollowMember, 0, 0),
-(128073, @creatureId+10, 0, 0, @noFollowMember, 0, 0, 0),
+(128073, @creatureId+10, 0, 0, @noFollowMember, 0, 0),
 (@creatureId+3, @creatureId+3, 0, 0, @followLeader, 0, 0),
 (@creatureId+3, @creatureId+4, 3, 90, @followMember, 0, 0);
