@@ -8,11 +8,13 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (1756, 2941, 3083, 3305
 UPDATE `creature` SET `phaseMask` = 16834 WHERE `id1` IN (14284, 14285) AND `map` = 0;
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (79011, 92890, 203492, 203493, 203494, 203495);
 UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213;
-UPDATE `creature` SET `spawntimesecs` = 7200 WHERE `guid` IN (128073, 128074, 128077);
+UPDATE `creature` SET `spawntimesecs` = 7200 WHERE `guid` IN (128070, 128071, 128073, 128074, 128077);
+UPDATE `creature` SET `position_x` = 3161.87, `position_y` = -3268.43, `position_z` = 294.94, `orientation` = 3.93 WHERE `guid` = 128070;
+UPDATE `creature` SET `position_x` = 3172.09, `position_y` = -3276.61, `position_z` = 295.02, `orientation` = 3.81 WHERE `guid` = 128071;
 UPDATE `creature` SET `id1` = 16017, `spawntimesecs` = 7200 WHERE `guid` IN (128075, 128084);
 SET @creatureId := 5200000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 2425, 11099, 12397, 16226);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+12;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+14;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@creatureId+0, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+1, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
@@ -26,4 +28,6 @@ INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, 
 (@creatureId+9, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3086.04, -3386.81, 298.401, 3.1765, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+10, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3053.63, -3354.67, 298.401, 4.95674, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+11, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3149.04, -3345.12, 294.592, 2.46091, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
-(@creatureId+12, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3096.72, -3292.51, 294.597, 5.60251, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
+(@creatureId+12, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3096.72, -3292.51, 294.597, 5.60251, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+13, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3152.14, -3264.34, 294.77, 4.18, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+14, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3175.32, -3285.62, 294.85, 3.71, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
