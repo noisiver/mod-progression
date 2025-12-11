@@ -18,3 +18,6 @@ UPDATE `creature_onkill_reputation` SET `MaxStanding1` = 4, `RewOnKillRepValue1`
 UPDATE `creature_onkill_reputation` SET `MaxStanding1` = 4, `RewOnKillRepValue1` = 1 WHERE `creature_id` IN (11880, 11881, 11882, 11883, 15213);
 UPDATE `creature_onkill_reputation` SET `MaxStanding1` = 4, `RewOnKillRepValue1` = 15 WHERE `creature_id` IN (1847, 10821, 10825, 10826);
 UPDATE `creature_onkill_reputation` SET `RewOnKillRepValue1` = 0 WHERE `creature_id` IN (7442, 9462, 9464, 14342);
+DELETE FROM `creature_onkill_reputation` WHERE `creature_id` = 16017;
+INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`, `RewOnKillRepFaction2`, `MaxStanding1`, `IsTeamAward1`, `RewOnKillRepValue1`, `MaxStanding2`, `IsTeamAward2`, `RewOnKillRepValue2`, `TeamDependent`) VALUES
+(16017, 529, 0, 5, 0, 25, 0, 0, 0, 0);

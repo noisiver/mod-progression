@@ -86,3 +86,4 @@ UPDATE `creature_template` SET `HealthModifier` = 807.8 WHERE `entry` = 25038;
 UPDATE `creature_template` SET `HealthModifier` = 1540 WHERE `entry` = 25315;
 UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (18994, 18995, 21138, 21139);
 UPDATE `creature_template` SET `HealthModifier` = 2.9 WHERE `entry` IN (23175, 23177, 23179);
+UPDATE `creature_template` SET `difficulty_entry_1` = 29347, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `maxgold` = 11953, `HealthModifier` = 11 WHERE `entry` = 16017;

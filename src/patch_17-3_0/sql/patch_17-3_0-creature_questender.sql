@@ -1,2 +1,11 @@
 DELETE FROM `creature_questender` WHERE `id` = 6171 AND `quest` = 1661;
 DELETE FROM `creature_questender` WHERE `id` = 6251 AND `quest` IN (3631, 4487, 4488, 4489, 4490);
+DELETE FROM `creature_questender` WHERE `id` = 16112 AND `quest` IN (9034, 9036, 9037, 9038, 9039, 9040, 9041, 9042);
+DELETE FROM `creature_questender` WHERE `id` = 16113 AND `quest` IN (9111, 9112, 9113, 9114, 9115, 9116, 9117, 9118);
+DELETE FROM `creature_questender` WHERE `id` = 16115 AND `quest` IN (9043, 9044, 9045, 9046, 9047, 9048, 9049, 9050);
+DELETE FROM `creature_questender` WHERE `id` = 16116 AND `quest` IN (9095, 9096, 9097, 9098, 9099, 9100, 9101, 9102);
+DELETE FROM `creature_questender` WHERE `id` = 16131 AND `quest` IN (9077, 9078, 9079, 9080, 9081, 9082, 9083, 9084);
+DELETE FROM `creature_questender` WHERE `id` = 16132 AND `quest` IN (9054, 9055, 9056, 9057, 9058, 9059, 9060, 9061);
+DELETE FROM `creature_questender` WHERE `id` = 16133 AND `quest` IN (9103, 9104, 9105, 9106, 9107, 9108, 9109, 9110);
+DELETE FROM `creature_questender` WHERE `id` = 16134 AND `quest` IN (9068, 9069, 9070, 9071, 9072, 9073, 9074, 9075);
+DELETE FROM `creature_questender` WHERE `id` = 16135 AND `quest` IN (9086, 9087, 9088, 9089, 9090, 9091, 9092, 9093);

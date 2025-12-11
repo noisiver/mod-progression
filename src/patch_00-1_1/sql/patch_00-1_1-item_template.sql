@@ -1423,3 +1423,12 @@ UPDATE `item_template` SET `spellid_2` = 30645, `spellid_3` = 40273 WHERE `entry
 UPDATE `item_template` SET `spellid_3` = 30645, `spellid_4` = 40273 WHERE `entry` = 35184;
 UPDATE `item_template` SET `stat_type3` = 21, `spellid_2` = 30645, `spellid_3` = 40273 WHERE `entry` = 35185;
 UPDATE `item_template` SET `stat_type4` = 21, `DisenchantID` = 0 WHERE `entry` = 35282;
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 | 1 & ~2 & ~4 & ~8 & ~16 & ~32 & ~64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22416, 22417, 22418, 22419, 22420, 22421, 22422, 22423);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 | 8 & ~16 & ~32 & ~64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22476, 22478, 22479, 22481, 22482, 22483, 22477, 22480);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 | 2 & ~4 & ~8 & ~16 & ~32 & ~64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22424, 22425, 22426, 22427, 22428, 22429, 22430, 22431);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 | 4 & ~8 & ~16 & ~32 & ~64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22436, 22437, 22438, 22439, 22440, 22441, 22442, 22443);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 & ~8 & ~16 & ~32 | 64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22464, 22465, 22466, 22467, 22468, 22469, 22470, 22471);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 & ~8 & ~16 & ~32 & ~64 & ~128 & ~256 | 1024 WHERE `entry` IN (22488, 22489, 22490, 22491, 22492, 22493, 22494, 22495);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 & ~8 & ~16 & ~32 & ~64 | 128 & ~256 & ~1024 WHERE `entry` IN (22496, 22497, 22498, 22499, 22500, 22501, 22502, 22503);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 & ~8 & ~16 & ~32 & ~64 & ~128 | 256 & ~1024 WHERE `entry` IN (22504, 22505, 22506, 22507, 22508, 22509, 22510, 22511);
+UPDATE `item_template` SET `AllowableClass` = `AllowableClass` & ~1 & ~2 & ~4 & ~8 | 16 & ~32 & ~64 & ~128 & ~256 & ~1024 WHERE `entry` IN (22512, 22513, 22514, 22515, 22516, 22517, 22518, 22519);

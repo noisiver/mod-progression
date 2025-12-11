@@ -5,7 +5,7 @@ UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `Entry` IN (10184, 3319
 UPDATE `creature_loot_template` SET `Item` = 750 WHERE `Entry` IN (69, 299) AND `Item` = 50432;
 SET @lootId := 46000, @refId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = 4421 AND `Item` = 17008;
-DELETE FROM `creature_loot_template` WHERE `Entry` = @lootId+0;
+DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+0 AND @lootId+1;
 INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (4421, 17008, 0, 100, 0, 1, 0, 1, 1, 'Charlga Razorflank - Small Scroll'),
 (@lootId+0, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
@@ -17,4 +17,42 @@ INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `Q
 (@lootId+0, @refId+5, 46005, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
 (@lootId+0, @refId+6, 46006, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
 (@lootId+0, @refId+7, 46007, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
-(@lootId+0, @refId+8, 46008, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)');
+(@lootId+0, @refId+8, 46008, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
+(@lootId+1, 5760, 0, 0.9632, 0, 1, 0, 1, 1, 'Patchwork Golem - Eternium Lockbox'),
+(@lootId+1, 7909, 0, 0.15, 0, 1, 0, 1, 1, 'Patchwork Golem - Aquamarine'),
+(@lootId+1, 7910, 0, 0.7005, 0, 1, 0, 1, 1, 'Patchwork Golem - Star Ruby'),
+(@lootId+1, 12704, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Plans: Thorium Leggings'),
+(@lootId+1, 12713, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Plans: Radiant Leggings'),
+(@lootId+1, 12808, 0, 1.3135, 0, 1, 0, 1, 1, 'Patchwork Golem - Essence of Undeath'),
+(@lootId+1, 13490, 0, 0.05, 0, 1, 0, 1, 1, 'Patchwork Golem - Recipe: Greater Stoneshield Potion'),
+(@lootId+1, 14491, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Pattern: Runecloth Pants'),
+(@lootId+1, 14504, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Pattern: Runecloth Shoulders'),
+(@lootId+1, 15765, 0, 0.06, 0, 1, 0, 1, 1, 'Patchwork Golem - Pattern: Runic Leather Pants'),
+(@lootId+1, 16251, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Formula: Enchant Bracer - Superior Stamina'),
+(@lootId+1, 17414, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Codex: Prayer of Fortitude II'),
+(@lootId+1, 17683, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Book: Gift of the Wild II'),
+(@lootId+1, 18600, 0, 0.03, 0, 1, 0, 1, 1, 'Patchwork Golem - Tome of Arcane Brilliance'),
+(@lootId+1, 22373, 0, 19.4396, 0, 1, 0, 1, 1, 'Patchwork Golem - Wartorn Leather Scrap'),
+(@lootId+1, 22374, 0, 11.4711, 0, 1, 0, 1, 1, 'Patchwork Golem - Wartorn Chain Scrap'),
+(@lootId+1, 22375, 0, 18.3012, 0, 1, 0, 1, 1, 'Patchwork Golem - Wartorn Plate Scrap'),
+(@lootId+1, 22376, 0, 26.5324, 0, 1, 0, 1, 1, 'Patchwork Golem - Wartorn Cloth Scrap'),
+(@lootId+1, 22393, 0, 0.16, 0, 1, 0, 1, 1, 'Patchwork Golem - Codex: Prayer of Shadow Protection'),
+(@lootId+1, 22708, 0, 1, 1, 1, 0, 1, 1, 'Patchwork Golem - Fate of Ramaladni'),
+(@lootId+1, 22890, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Tome of Frost Ward V'),
+(@lootId+1, 22891, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Grimoire of Shadow Ward IV'),
+(@lootId+1, 23044, 0, 0.49, 0, 1, 0, 1, 1, 'Patchwork Golem - Harbinger of Doom'),
+(@lootId+1, 23055, 0, 9.0193, 0, 1, 0, 1, 1, 'Patchwork Golem - Word of Thawing'),
+(@lootId+1, 23069, 0, 0.36, 0, 1, 0, 1, 1, 'Patchwork Golem - Necro-Knight\'s Garb'),
+(@lootId+1, 23221, 0, 0.49, 0, 1, 0, 1, 1, 'Patchwork Golem - Misplaced Servo Arm'),
+(@lootId+1, 23226, 0, 0.65, 0, 1, 0, 1, 1, 'Patchwork Golem - Ghoul Skin Tunic'),
+(@lootId+1, 23237, 0, 0.0876, 0, 1, 0, 1, 1, 'Patchwork Golem - Ring of the Eternal Flame'),
+(@lootId+1, 23238, 0, 0.34, 0, 1, 0, 1, 1, 'Patchwork Golem - Stygian Buckler'),
+(@lootId+1, 23663, 0, 0.33, 0, 1, 0, 1, 1, 'Patchwork Golem - Girdle of Elemental Fury'),
+(@lootId+1, 23664, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Pauldrons of Elemental Fury'),
+(@lootId+1, 23665, 0, 0.06, 0, 1, 0, 1, 1, 'Patchwork Golem - Leggings of Elemental Fury'),
+(@lootId+1, 23666, 0, 0.02, 0, 1, 0, 1, 1, 'Patchwork Golem - Belt of the Grand Crusader'),
+(@lootId+1, 23667, 0, 0.08, 0, 1, 0, 1, 1, 'Patchwork Golem - Spaulders of the Grand Crusader'),
+(@lootId+1, 23668, 0, 0.16, 0, 1, 0, 1, 1, 'Patchwork Golem - Leggings of the Grand Crusader'),
+(@lootId+1, @refId+9, @refId+9, 1, 0, 1, 0, 1, 1, 'Patchwork Golem - (ReferenceTable)'),
+(@lootId+1, @refId+10, @refId+10, 1, 0, 1, 0, 1, 1, 'Patchwork Golem - (ReferenceTable)'),
+(@lootId+1, @refId+11, @refId+11, 1, 0, 1, 0, 1, 1, 'Patchwork Golem - (ReferenceTable)');

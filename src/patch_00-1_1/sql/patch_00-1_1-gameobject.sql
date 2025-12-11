@@ -3,7 +3,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (178824, 178825, 17882
 UPDATE `gameobject` SET `id` = 180717 WHERE `id` = 180718;
 UPDATE `gameobject` SET `animprogress` = 100, `state` = 1 WHERE `id` IN (164725, 175528, 175529, 175530, 175531, 175532, 175533);
 SET @goId := 5300000;
-DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996);
+DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996, 181476);
 DELETE FROM `gameobject` WHERE `guid` = 5300004;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES
 (@goId+0, 176146, 1, 0, 0, 1, 1, -8133.34, 1525.13, 17.1904, 6.28103, 0, 0, 0.00107995, -0.999999, 600, 100, 1, NULL, NULL, NULL),
