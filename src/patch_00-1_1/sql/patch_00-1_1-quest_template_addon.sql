@@ -6,5 +6,4 @@ UPDATE `quest_template_addon` SET `AllowableClasses` = `AllowableClasses` | 128 
 UPDATE `quest_template_addon` SET `AllowableClasses` = `AllowableClasses` | 256 WHERE `ID` IN (9103, 9104, 9105, 9106, 9107, 9108, 9109, 9110);
 UPDATE `quest_template_addon` SET `AllowableClasses` = `AllowableClasses` | 16 WHERE `ID` IN (9111, 9112, 9113, 9114, 9115, 9116, 9117, 9118);
 UPDATE `quest_template_addon` SET `AllowableClasses` = `AllowableClasses` | 1 WHERE `ID` = 9131;
-UPDATE `quest_template_addon` SET `PrevQuestID` = 0 WHERE `ID` IN (10120, 10288);
 UPDATE `quest_template_addon` SET `ProvidedItemCount` = 1 WHERE `ID` = 9644;
