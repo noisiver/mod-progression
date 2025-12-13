@@ -14,7 +14,7 @@ UPDATE `creature` SET `position_x` = 3172.09, `position_y` = -3276.61, `position
 UPDATE `creature` SET `id1` = 16017, `spawntimesecs` = 7200 WHERE `guid` IN (128075, 128084);
 SET @creatureId := 5200000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 2425, 11099, 12397, 16226);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+14;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+15;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@creatureId+0, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+1, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
@@ -30,4 +30,5 @@ INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, 
 (@creatureId+11, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3149.04, -3345.12, 294.592, 2.46091, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+12, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3096.72, -3292.51, 294.597, 5.60251, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+13, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3152.14, -3264.34, 294.77, 4.18, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
-(@creatureId+14, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3175.32, -3285.62, 294.85, 3.71, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
+(@creatureId+14, 16017, 0, 0, 533, 0, 0, 1, 1, 0, 3175.32, -3285.62, 294.85, 3.71, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+15, 16018, 0, 0, 533, 0, 0, 1, 1, 0, 3163.7, -3310.84, 293.628, 3.94347, 7200, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL);

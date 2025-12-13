@@ -1,6 +1,6 @@
 UPDATE `reference_loot_template` SET `Item` = 45624 WHERE `Entry` = 34349 AND `Item` = 47241;
 SET @refId := 46000;
-DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+0 AND @refId+12;
+DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+0 AND @refId+13;
 INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (@refId+0, 16900, 0, 0, 0, 1, 1, 1, 1, 'Stormrage Cover'),
 (@refId+0, 16908, 0, 0, 0, 1, 1, 1, 1, 'Bloodfang Hood'),
@@ -604,4 +604,15 @@ INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `
 (@refId+12, 15890, 0, 100, 0, 1, 0, 1, 1, 'Vanguard Shield'),
 (@refId+12, 15938, 0, 100, 0, 1, 0, 1, 1, 'Mystical Orb'),
 (@refId+12, 15939, 0, 100, 0, 1, 0, 1, 1, 'Councillor\'s Scepter'),
-(@refId+12, 15967, 0, 100, 0, 1, 0, 1, 1, 'Highborne Star');
+(@refId+12, 15967, 0, 100, 0, 1, 0, 1, 1, 'Highborne Star'),
+-- 30437
+(@refId+13, 9402, 0, 100, 0, 1, 0, 1, 1, 'Earthborn Kilt'),
+(@refId+13, 13001, 0, 100, 0, 1, 0, 1, 1, 'Maiden\'s Circle'),
+(@refId+13, 13015, 0, 100, 0, 1, 0, 1, 1, 'Serathil'),
+(@refId+13, 13028, 0, 100, 0, 1, 0, 1, 1, 'Bludstone Hammer'),
+(@refId+13, 13053, 0, 100, 0, 1, 0, 1, 1, 'Doombringer'),
+(@refId+13, 13060, 0, 100, 0, 1, 0, 1, 1, 'The Needler'),
+(@refId+13, 13072, 0, 100, 0, 1, 0, 1, 1, 'Stonegrip Gauntlets'),
+(@refId+13, 13096, 0, 100, 0, 1, 0, 1, 1, 'Band of the Hierophant'),
+(@refId+13, 13116, 0, 100, 0, 1, 0, 1, 1, 'Spaulders of the Unseen'),
+(@refId+13, 13133, 0, 100, 0, 1, 0, 1, 1, 'Drakesfire Epaulets');

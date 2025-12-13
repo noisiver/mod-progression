@@ -5,7 +5,7 @@ UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `Entry` IN (10184, 3319
 UPDATE `creature_loot_template` SET `Item` = 750 WHERE `Entry` IN (69, 299) AND `Item` = 50432;
 SET @lootId := 46000, @refId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = 4421 AND `Item` = 17008;
-DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+0 AND @lootId+2;
+DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+0 AND @lootId+3;
 INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (4421, 17008, 0, 100, 0, 1, 0, 1, 1, 'Charlga Razorflank - Small Scroll'),
 (@lootId+0, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
@@ -94,4 +94,7 @@ INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `Q
 (@lootId+2, @refId+9, @refId+9, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
 (@lootId+2, @refId+10, @refId+10, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
 (@lootId+2, @refId+11, @refId+11, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
-(@lootId+2, @refId+12, @refId+12, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)');
+(@lootId+2, @refId+12, @refId+12, 1, 0, 1, 0, 1, 1, 'Bile Retcher - (ReferenceTable)'),
+(@lootId+3, 7910, 0, 0.11, 0, 1, 0, 1, 1, 'Sludge Belcher - Star Ruby'),
+(@lootId+3, @refId+11, @refId+11, 1, 0, 1, 0, 1, 1, 'Sludge Belcher - (ReferenceTable)'),
+(@lootId+3, @refId+13, @refId+13, 0.025, 0, 1, 0, 1, 1, 'Sludge Belcher - (ReferenceTable)');

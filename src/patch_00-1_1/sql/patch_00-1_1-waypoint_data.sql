@@ -1,5 +1,5 @@
 SET @creatureId := 5200000;
-DELETE FROM `waypoint_data` WHERE `id` IN (1280770, (@creatureId+0)*10, (@creatureId+3)*10);
+DELETE FROM `waypoint_data` WHERE `id` IN (1280770, (@creatureId+0)*10, (@creatureId+3)*10, (@creatureId+15)*10);
 INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES
 (1280770, 1, 3130.16, -3278.51, 293.629, NULL, 0, 0, 0, 100, 0),
 (1280770, 2, 3121.3, -3287.28, 293.629, NULL, 0, 0, 0, 100, 0),
@@ -55,4 +55,16 @@ INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `positio
 ((@creatureId+3)*10, 20, 2330.14, -5346.45, 84.7449, NULL, 0, 0, 0, 100, 0),
 ((@creatureId+3)*10, 21, 2328.36, -5357, 85.1194, NULL, 0, 0, 0, 100, 0),
 ((@creatureId+3)*10, 22, 2325.68, -5363.49, 86.23, NULL, 0, 0, 0, 100, 0),
-((@creatureId+3)*10, 23, 2318.86, -5369.25, 87.2393, NULL, 10000, 0, 0, 100, 0);
+((@creatureId+3)*10, 23, 2318.86, -5369.25, 87.2393, NULL, 10000, 0, 0, 100, 0),
+((@creatureId+15)*10, 1, 3154.95, -3319.89, 293.628, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 2, 3145.41, -3329.47, 293.622, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 3, 3133.08, -3341.03, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 4, 3121.64, -3330.66, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 5, 3109.65, -3319.58, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 6, 3098.69, -3309.44, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 7, 3109.65, -3319.58, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 8, 3121.64, -3330.66, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 9, 3133.08, -3341.03, 293.627, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 10, 3145.41, -3329.47, 293.622, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 11, 3154.95, -3319.89, 293.628, NULL, 0, 0, 0, 100, 0),
+((@creatureId+15)*10, 12, 3163.7, -3310.84, 293.628, NULL, 0, 0, 0, 100, 0);

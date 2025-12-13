@@ -1,5 +1,5 @@
 SET @creatureId := 5200000;
-DELETE FROM `waypoint_data` WHERE `id` = 1280770;
+DELETE FROM `waypoint_data` WHERE `id` IN (1280770, (@creatureId+15)*10);
 INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES
 (1280770, 1, 3133.79, -3280.2, 293.628, NULL, 0, 0, 0, 100, 0),
 (1280770, 2, 3124.37, -3283.02, 293.628, NULL, 0, 0, 0, 100, 0),
