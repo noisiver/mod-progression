@@ -16,6 +16,7 @@ void AddSC_instance_onyxias_lair_progression();
 void AddSC_boss_onyxia_progression();
 void AddSC_go_scarab_gong();
 void AddSC_go_scarab_gate();
+void AddSC_gy_naxxramas();
 void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_boss_skadi_progression();
@@ -36,6 +37,7 @@ void Addmod_progressionScripts()
         AddSC_instance_blackrock_spire_progression();
         AddSC_go_scarab_gong();
         AddSC_go_scarab_gate();
+        AddSC_gy_naxxramas();
         AddSC_spell_summon_nightbane();
     }
 
