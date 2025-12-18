@@ -28,9 +28,15 @@ UPDATE `creature` SET `position_x` = 3022.4, `position_y` = -3149.72, `position_
 UPDATE `creature` SET `position_x` = 3025.34, `position_y` = -3150.06, `position_z` = 294.077, `orientation` = 1.54345, `spawntimesecs` = 7200 WHERE `guid` = 128097;
 UPDATE `creature` SET `position_x` = 3028.73, `position_y` = -3149.77, `position_z` = 294.075, `orientation` = 1.8584, `spawntimesecs` = 7200 WHERE `guid` = 128087;
 UPDATE `creature` SET `position_x` = 3031.17, `position_y` = -3147.43, `position_z` = 294.075, `orientation` = 2.39954, `spawntimesecs` = 7200 WHERE `guid` = 128099;
+UPDATE `creature` SET `position_x` = 3110.33, `position_y` = -3085.8, `position_z` = 294.077, `orientation` = 4.66384, `spawntimesecs` = 7200 WHERE `guid` = 128093;
+UPDATE `creature` SET `position_x` = 3103.41, `position_y` = -3086.52, `position_z` = 294.078, `orientation` = 6.17966, `spawntimesecs` = 7200 WHERE `guid` = 128102;
+UPDATE `creature` SET `position_x` = 3103.16, `position_y` = -3090.63, `position_z` = 294.077, `orientation` = 0.567988, `spawntimesecs` = 7200 WHERE `guid` = 128089;
+UPDATE `creature` SET `position_x` = 3106.89, `position_y` = -3092.72, `position_z` = 294.077, `orientation` = 1.03923, `spawntimesecs` = 7200 WHERE `guid` = 128100;
+UPDATE `creature` SET `position_x` = 3109.07, `position_y` = -3094.98, `position_z` = 294.075, `orientation` = 1.56866, `spawntimesecs` = 7200 WHERE `guid` = 128090;
+UPDATE `creature` SET `position_x` = 3111.18, `position_y` = -3092.48, `position_z` = 294.076, `orientation` = 1.79321, `spawntimesecs` = 7200 WHERE `guid` = 128101;
 SET @creatureId := 5200000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 2425, 11099, 12397, 16226);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+41;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+44;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@creatureId+0, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+1, 11099, 0, 0, 0, 0, 0, 1, 1, 1, 2288.81, -5319.24, 89.053, 2.19912, 610, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
@@ -73,4 +79,7 @@ INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, 
 (@creatureId+38, 16021, 0, 0, 533, 0, 0, 1, 1, 0, 3062.14, -3104.68, 294.078, 5.35342, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+39, 16020, 0, 0, 533, 0, 0, 1, 1, 0, 3063.42, -3112.82, 294.076, 1.64241, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
 (@creatureId+40, 16020, 0, 0, 533, 0, 0, 1, 1, 0, 3070.48, -3106.15, 294.077, 2.92261, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
-(@creatureId+41, 16022, 0, 0, 533, 0, 0, 1, 1, 0, 3060.77, -3110.43, 294.078, 1.47355, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);
+(@creatureId+41, 16022, 0, 0, 533, 0, 0, 1, 1, 0, 3060.77, -3110.43, 294.078, 1.47355, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+42, 16020, 0, 0, 533, 0, 0, 1, 1, 0, 3114.84, -3093.64, 294.076, 2.00527, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+43, 16020, 0, 0, 533, 0, 0, 1, 1, 0, 3119.63, -3085.93, 294.078, 2.92811, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL),
+(@creatureId+44, 16022, 0, 0, 533, 0, 0, 1, 1, 0, 3115.66, -3089.89, 294.076, 2.57861, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL);

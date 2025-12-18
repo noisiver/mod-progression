@@ -21,5 +21,11 @@ UPDATE `creature` SET `position_x` = 3028.9, `position_y` = -3145.06, `position_
 UPDATE `creature` SET `position_x` = 3030.39, `position_y` = -3142.86, `position_z` = 294.16, `orientation` = 2.56563, `spawntimesecs` = 3600 WHERE `guid` = 128097;
 UPDATE `creature` SET `position_x` = 3031.03, `position_y` = -3140.48, `position_z` = 294.16, `orientation` = 2.82743, `spawntimesecs` = 3600 WHERE `guid` = 128087;
 UPDATE `creature` SET `position_x` = 3031.18, `position_y` = -3137.42, `position_z` = 294.161, `orientation` = 3.36848, `spawntimesecs` = 3600 WHERE `guid` = 128099;
+UPDATE `creature` SET `position_x` = 3105.27, `position_y` = -3085.36, `position_z` = 294.163, `orientation` = 3.75246, `spawntimesecs` = 3600 WHERE `guid` = 128093;
+UPDATE `creature` SET `position_x` = 3099.31, `position_y` = -3084.86, `position_z` = 294.16, `orientation` = 6.17846, `spawntimesecs` = 3600 WHERE `guid` = 128102;
+UPDATE `creature` SET `position_x` = 3100.32, `position_y` = -3086.68, `position_z` = 294.16, `orientation` = 0.314159, `spawntimesecs` = 3600 WHERE `guid` = 128089;
+UPDATE `creature` SET `position_x` = 3101.21, `position_y` = -3088.26, `position_z` = 294.16, `orientation` = 0.820305, `spawntimesecs` = 3600 WHERE `guid` = 128100;
+UPDATE `creature` SET `position_x` = 3102.75, `position_y` = -3089.39, `position_z` = 294.161, `orientation` = 1.18682, `spawntimesecs` = 3600 WHERE `guid` = 128090;
+UPDATE `creature` SET `position_x` = 3104.55, `position_y` = -3090.4, `position_z` = 294.16, `orientation` = 1.53589, `spawntimesecs` = 3600 WHERE `guid` = 128101;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+41;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+44;
