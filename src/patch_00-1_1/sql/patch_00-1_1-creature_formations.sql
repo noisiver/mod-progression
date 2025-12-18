@@ -1,6 +1,6 @@
 UPDATE `creature_formations` SET `groupAI` = 6 WHERE `leaderGUID` = 128103;
 SET @creatureId := 5200000, @noFollowLeader := 1, @noFollowMember := 2, @followLeader := 1, @followMember := 517;
-DELETE FROM `creature_formations` WHERE `leaderGUID` IN (128067, 128068, 128070, 128072, 128073, 128085, @creatureId+3);
+DELETE FROM `creature_formations` WHERE `leaderGUID` IN (128067, 128068, 128070, 128072, 128073, 128085, 128087, @creatureId+3, @creatureId+21);
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES
 (128067, 128067, 0, 0, @noFollowLeader, 0, 0),
 (128067, 128075, 0, 0, @noFollowMember, 0, 0),
@@ -29,5 +29,23 @@ INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, 
 (128085, @creatureId+18, 0, 0, @noFollowMember, 0, 0),
 (128085, @creatureId+19, 0, 0, @noFollowMember, 0, 0),
 (128085, @creatureId+20, 0, 0, @noFollowMember, 0, 0),
+(128087, 128087, 0, 0, @noFollowLeader, 0, 0),
+(128087, 128088, 0, 0, @noFollowMember, 0, 0),
+(128087, 128092, 0, 0, @noFollowMember, 0, 0),
+(128087, 128097, 0, 0, @noFollowMember, 0, 0),
+(128087, 128098, 0, 0, @noFollowMember, 0, 0),
+(128087, 128099, 0, 0, @noFollowMember, 0, 0),
+(128087, @creatureId+30, 0, 0, @noFollowMember, 0, 0),
+(128087, @creatureId+31, 0, 0, @noFollowMember, 0, 0),
+(128087, @creatureId+32, 0, 0, @noFollowMember, 0, 0),
 (@creatureId+3, @creatureId+3, 0, 0, @followLeader, 0, 0),
-(@creatureId+3, @creatureId+4, 3, 90, @followMember, 0, 0);
+(@creatureId+3, @creatureId+4, 3, 90, @followMember, 0, 0),
+(@creatureId+21, @creatureId+21, 0, 0, @noFollowLeader, 0, 0),
+(@creatureId+21, @creatureId+22, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+23, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+24, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+25, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+26, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+27, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+28, 0, 0, @noFollowMember, 0, 0),
+(@creatureId+21, @creatureId+29, 0, 0, @noFollowMember, 0, 0);
