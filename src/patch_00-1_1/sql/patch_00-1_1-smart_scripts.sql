@@ -34,5 +34,4 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (16022, 0, 0, 0, 0, 0, 100, 0, 0, 0, 10000, 10000, 0, 0, 11, 28310, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Surgical Assistant - In Combat - Cast \'Mind Flay\''),
 (16029, 0, 0, 0, 0, 0, 100, 0, 0, 0, 6000, 6000, 0, 0, 11, 27891, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Acidic Sludge\''),
 (16029, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 27889, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Spawn Bile Sludge\''),
-(16385, 0, 0, 0, 7, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - On Evade - Despawn Instant'),
-(16385, 0, 1, 0, 0, 0, 100, 0, 2000, 2500, 2000, 2500, 0, 0, 11, 28297, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - In Combat - Cast \'Shock\'');
+(16385, 0, 0, 0, 0, 0, 100, 0, 2000, 2500, 2000, 2500, 0, 0, 11, 28297, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - In Combat - Cast \'Shock\'');
