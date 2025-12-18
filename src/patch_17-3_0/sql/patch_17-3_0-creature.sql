@@ -22,4 +22,4 @@ UPDATE `creature` SET `position_x` = 3030.39, `position_y` = -3142.86, `position
 UPDATE `creature` SET `position_x` = 3031.03, `position_y` = -3140.48, `position_z` = 294.16, `orientation` = 2.82743, `spawntimesecs` = 3600 WHERE `guid` = 128087;
 UPDATE `creature` SET `position_x` = 3031.18, `position_y` = -3137.42, `position_z` = 294.161, `orientation` = 3.36848, `spawntimesecs` = 3600 WHERE `guid` = 128099;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+32;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+41;
