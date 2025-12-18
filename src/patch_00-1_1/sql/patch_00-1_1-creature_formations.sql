@@ -1,6 +1,6 @@
 UPDATE `creature_formations` SET `groupAI` = 6 WHERE `leaderGUID` = 128103;
 SET @creatureId := 5200000, @noFollowLeader := 1, @noFollowMember := 2, @followLeader := 1, @followMember := 517;
-DELETE FROM `creature_formations` WHERE `leaderGUID` IN (128067, 128068, 128070, 128072, 128073, @creatureId+3);
+DELETE FROM `creature_formations` WHERE `leaderGUID` IN (128067, 128068, 128070, 128072, 128073, 128085, @creatureId+3);
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES
 (128067, 128067, 0, 0, @noFollowLeader, 0, 0),
 (128067, 128075, 0, 0, @noFollowMember, 0, 0),
@@ -20,5 +20,14 @@ INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, 
 (128073, 128074, 0, 0, @noFollowMember, 0, 0),
 (128073, @creatureId+9, 0, 0, @noFollowMember, 0, 0),
 (128073, @creatureId+10, 0, 0, @noFollowMember, 0, 0),
+(128085, 128085, 0, 0, @noFollowLeader, 0, 0),
+(128085, 128086, 0, 0, @noFollowMember, 0, 0),
+(128085, 128091, 0, 0, @noFollowMember, 0, 0),
+(128085, 128094, 0, 0, @noFollowMember, 0, 0),
+(128085, 128095, 0, 0, @noFollowMember, 0, 0),
+(128085, 128096, 0, 0, @noFollowMember, 0, 0),
+(128085, @creatureId+18, 0, 0, @noFollowMember, 0, 0),
+(128085, @creatureId+19, 0, 0, @noFollowMember, 0, 0),
+(128085, @creatureId+20, 0, 0, @noFollowMember, 0, 0),
 (@creatureId+3, @creatureId+3, 0, 0, @followLeader, 0, 0),
 (@creatureId+3, @creatureId+4, 3, 90, @followMember, 0, 0);

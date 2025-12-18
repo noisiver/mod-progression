@@ -1,4 +1,4 @@
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (1748, 12397, 14435, 16017, 16018, 16029);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (1748, 12397, 14435, 16017, 16018, 16020, 16021, 16022, 16029, 16385);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
 (1748, 0, 0, 0, 2, 0, 100, 1, 1, 20, 0, 0, 0, 0, 11, 17233, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Lay on Hands at 1-20%'),
 (1748, 0, 1, 0, 2, 0, 100, 0, 1, 90, 60000, 120000, 0, 0, 11, 15062, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Highlord Bolvar Fordragon - Cast Shield Wall at 1-90%'),
@@ -27,5 +27,12 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (16017, 0, 0, 0, 0, 0, 100, 0, 7000, 7000, 10000, 14000, 0, 0, 11, 27758, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In Combat - Cast \'War Stomp\''),
 (16017, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 8000, 15000, 0, 0, 11, 27794, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In Combat - Cast \'Cleave\''),
 (16018, 0, 0, 0, 0, 0, 100, 0, 10000, 10000, 15000, 15000, 0, 0, 11, 27807, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In Combat - Cast \'Bile Vomit\''),
+(16020, 0, 0, 0, 0, 0, 100, 0, 10000, 10000, 7000, 7000, 0, 0, 11, 28301, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Mad Scientist - In Combat - Cast \'Mana Burn\''),
+(16021, 0, 0, 0, 0, 0, 100, 0, 6000, 12000, 8000, 12000, 0, 0, 11, 27990, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In Combat - Cast \'Fear\''),
+(16021, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 28293, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In Combat - Cast \'Chain Lightning\''),
+(16021, 0, 2, 0, 0, 0, 100, 0, 3000, 4000, 10000, 15000, 0, 0, 11, 28294, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Living Monstrosity - In Combat - Cast \'Lightning Totem\''),
+(16022, 0, 0, 0, 0, 0, 100, 0, 0, 0, 10000, 10000, 0, 0, 11, 28310, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Surgical Assistant - In Combat - Cast \'Mind Flay\''),
 (16029, 0, 0, 0, 0, 0, 100, 0, 0, 0, 6000, 6000, 0, 0, 11, 27891, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Acidic Sludge\''),
-(16029, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 27889, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Spawn Bile Sludge\'');
+(16029, 0, 1, 0, 0, 0, 100, 0, 5000, 5000, 10000, 10000, 0, 0, 11, 27889, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Spawn Bile Sludge\''),
+(16385, 0, 0, 0, 7, 0, 100, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - On Evade - Despawn Instant'),
+(16385, 0, 1, 0, 0, 0, 100, 0, 2000, 2500, 2000, 2500, 0, 0, 11, 28297, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Lightning Totem - In Combat - Cast \'Shock\'');
