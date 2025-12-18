@@ -7,5 +7,7 @@ UPDATE `creature` SET `position_x` = 3159.19, `position_y` = -3270.79, `position
 UPDATE `creature` SET `position_x` = 3168.32, `position_y` = -3280.82, `position_z` = 294.92, `orientation` = 4.06662 WHERE `guid` = 128071;
 UPDATE `creature` SET `id1` = 16018, `spawntimesecs` = 3600 WHERE `guid` = 128082;
 UPDATE `creature` SET `id1` = 16029, `spawntimesecs` = 3600 WHERE `guid` = 97747;
+UPDATE `creature` SET `position_x` = 3020.17, `position_y` = -3177.85, `position_z` = 294.146, `orientation` = 6.05629, `spawntimesecs` = 3600, `wander_distance` = 8 WHERE `guid` = 128068;
+UPDATE `creature` SET `position_x` = 3009.26, `position_y` = -3178.27, `position_z` = 294.146, `orientation` = 3.05433, `spawntimesecs` = 3600, `wander_distance` = 8 WHERE `guid` = 128069;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749);
-DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+15;
+DELETE FROM `creature` WHERE `guid` BETWEEN @creatureId+9 AND @creatureId+17;
