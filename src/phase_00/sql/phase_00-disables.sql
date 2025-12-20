@@ -1,5 +1,7 @@
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349, 409, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724);
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
+DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (12558, 12559, 12564, 12565, 12566, 12567, 12568, 12569);
+DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (2, 249, 3, '', '', 'Onyxia\'s Lair'),
 (2, 269, 3, '', '', 'The Black Morass'),
@@ -70,4 +72,19 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (3, 10, 0, '', '', 'Dalaran Arena'),
 (3, 11, 0, '', '', 'Ring of Valor'),
 (3, 30, 0, '', '', 'Isle of Conquest'),
-(3, 32, 0, '', '', 'Random Battleground');
+(3, 32, 0, '', '', 'Random Battleground'),
+(4, 12558, 0, '', '', 'Onyxia\'s Lair (10 player)'),
+(4, 12559, 0, '', '', 'Onyxia\'s Lair (25 player)'),
+(4, 12564, 0, '', '', 'More Dots! (10 player)'),
+(4, 12565, 0, '', '', 'Many Whelps! Handle It! (10 player)'),
+(4, 12566, 0, '', '', 'She Deep Breaths More (10 player)'),
+(4, 12567, 0, '', '', 'More Dots! (25 player)'),
+(4, 12568, 0, '', '', 'Many Whelps! Handle It! (25 player)'),
+(4, 12569, 0, '', '', 'She Deep Breaths More (25 player)'),
+(5, 1, 0, '', '', 'Hellfire Peninsula'),
+(5, 2, 0, '', '', 'Nagrand'),
+(5, 3, 0, '', '', 'Terokkar Forest'),
+(5, 4, 0, '', '', 'Zangarmarsh'),
+(5, 5, 0, '', '', 'Silithus'),
+(5, 6, 0, '', '', 'Eastern Plaguelands'),
+(5, 7, 0, '', '', 'Grizzly Hills');
