@@ -71,7 +71,7 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     if (PhaseId < 14)
     {
-        LOG_INFO("server.loading", ">> Wather breath timer set to 60 seconds");
+        LOG_INFO("server.loading", ">> Water breath timer set to 60 seconds");
         sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, 60000);
 
         LOG_INFO("server.loading", ">> Disabled Wintergrasp");
