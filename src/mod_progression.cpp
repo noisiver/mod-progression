@@ -8,7 +8,7 @@ ProgressionMgr* ProgressionMgr::instance()
     return &instance;
 }
 
-Progression::Progression() : DatabaseScript("ProgressionDatabaseScript"), WorldScript("ProgressionWorldScript") {}
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript") , UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript") {}
 
 void Addmod_progressionScripts()
 {

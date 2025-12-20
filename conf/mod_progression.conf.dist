@@ -28,4 +28,18 @@
 Progression.Phase = 19
 
 #
+#    Progression.IcecrownCitadel.Aura
+#        Description: Set the aura inside Icecrown Citadel
+#                     0 - No buff
+#                     1 - 5%
+#                     2 - 10%
+#                     3 - 15%
+#                     4 - 20%
+#                     5 - 25%
+#        Default:     6 - 30%
+#
+
+Progression.IcecrownCitadel.Aura = 6
+
+#
 ###################################################################################################
