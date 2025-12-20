@@ -42,4 +42,14 @@ Progression.Phase = 19
 Progression.IcecrownCitadel.Aura = 6
 
 #
+#    Progression.Reset
+#        Description: Reapply all SQL files on startup
+#                     This is useful when moving to an older phase, after making changes or to make sure it's up-to-date
+#        Default:     0 - Disabled
+#                     1 - Enabled
+#
+
+Progression.Reset = 0
+
+#
 ###################################################################################################
