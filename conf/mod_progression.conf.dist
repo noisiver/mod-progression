@@ -5,12 +5,12 @@
 #        Description: The currently active phase. It will always include all content up to and including the set phase.
 #                     0 - Phase 0: Leveling & Dungeons
 #                     1 - Phase 1: Maraudon, Molten Core, Onyxia's Lair
-#                     2 - Phase 2: Dire Maul, Battlegrounds, Azuregos, Lord Kazzak, Alterac Valley, Warsong Gulch
+#                     2 - Phase 2: Dire Maul, Azuregos, Lord Kazzak, Alterac Valley, Warsong Gulch
 #                     3 - Phase 3: Blackwing Lair, Darkmoon Faire, Arathi Basin
 #                     4 - Phase 4: Zul'Gurub, Dragons of Nightmare
 #                     5 - Phase 5: Ahn'Qiraj, Stranglethorn Fishing Extravaganza
 #                     6 - Phase 6: Naxxramas, Scourge Invasion
-#                     7 - Phase 7: Blood Elf, Draenei, Jewelcrafting
+#                     7 - Phase 7: Blood Elf, Draenei, Jewelcrafting, Eye of the Storm
 #                     8 - Phase 8: Outland Dungeons, Arena Season 1
 #                     9 - Phase 9: Karazhan, Gruul's Lair, Magtheridon's Lair
 #                     10 - Phase 10: Serpentshrine Cavern, Tempest Keep: The Eye, Ogri'la, Sha'tari Skyguard, Arena Season 2

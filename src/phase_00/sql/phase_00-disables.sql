@@ -1,4 +1,5 @@
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349, 409, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724);
+DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (2, 249, 3, '', '', 'Onyxia\'s Lair'),
 (2, 269, 3, '', '', 'The Black Morass'),
@@ -56,4 +57,17 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (2, 650, 3, '', '', 'Trial of the Champion'),
 (2, 658, 3, '', '', 'Pit of Saron'),
 (2, 668, 3, '', '', 'Halls of Reflection'),
-(2, 724, 15, '', '', 'The Ruby Sanctum');
+(2, 724, 15, '', '', 'The Ruby Sanctum'),
+(3, 1, 0, '', '', 'Alterac Valley'),
+(3, 2, 0, '', '', 'Warsong Gulch'),
+(3, 3, 0, '', '', 'Arathi Basin'),
+(3, 4, 0, '', '', 'Ring of Trials'),
+(3, 5, 0, '', '', 'Circle of Blood'),
+(3, 6, 0, '', '', 'All Arenas'),
+(3, 7, 0, '', '', 'Eye of the Storm'),
+(3, 8, 0, '', '', 'Ruins of Lordaeron'),
+(3, 9, 0, '', '', 'Strand of the Ancients'),
+(3, 10, 0, '', '', 'Dalaran Arena'),
+(3, 11, 0, '', '', 'Ring of Valor'),
+(3, 30, 0, '', '', 'Isle of Conquest'),
+(3, 32, 0, '', '', 'Random Battleground');
