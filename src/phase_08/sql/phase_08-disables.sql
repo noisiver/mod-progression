@@ -1,3 +1,29 @@
-DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (269, 540, 542, 543, 545, 546, 547, 552, 553, 554, 555, 556, 557, 558, 560);
-DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (4, 5, 6, 8);
-DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4);
+DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
+    269, -- The Black Morass
+    540, -- The Shattered Halls
+    542, -- The Blood Furnace
+    543, -- Hellfire Ramparts
+    545, -- The Steamvault
+    546, -- The Underbog
+    547, -- The Slave Pens
+    552, -- The Arcatraz
+    553, -- The Botanica
+    554, -- The Mechanar
+    555, -- Shadow Labyrinth
+    556, -- Sethekk Halls
+    557, -- Mana-Tombs
+    558, -- Auchenai Crypts
+    560 -- Old Hillsbrad Foothills
+);
+DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
+    4, -- Ring of Trials
+    5, -- Circle of Blood
+    6, -- All Arenas
+    8 -- Ruins of Lordaeron
+);
+DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
+    1, -- Hellfire Peninsula
+    2, -- Nagrand
+    3, -- Terokkar Forest
+    4 -- Zangarmarsh
+);
