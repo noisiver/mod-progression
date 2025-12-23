@@ -10,22 +10,21 @@
 #                     4 - Phase 4: Zul'Gurub, Dragons of Nightmare
 #                     5 - Phase 5: Ahn'Qiraj, Stranglethorn Fishing Extravaganza
 #                     6 - Phase 6: Naxxramas, Scourge Invasion
-#                     7 - Phase 7: Blood Elf, Draenei, Jewelcrafting, Eye of the Storm
-#                     8 - Phase 8: Outland Leveling & Dungeons
-#                     9 - Phase 9: Karazhan, Gruul's Lair, Magtheridon's Lair, Arena Season 1
-#                     10 - Phase 10: Serpentshrine Cavern, Tempest Keep: The Eye, Ogri'la, Sha'tari Skyguard, Arena Season 2
-#                     11 - Phase 11: Battle for Mount Hyjal, Black Temple, Arena Season 3
-#                     12 - Phase 12: Zul'Aman
-#                     13 - Phase 13: Isle of Quel'Danas, Magister's Terrace, Sunwell Plateau, Arena Season 4
-#                     14 - Phase 14: Death Knight, WotLK Leveling & Dungeons
-#                     15 - Phase 15: Naxxramas, Eye of Eternity, Obsidian Sanctum, Vault of Archavon, Arena Season 5
-#                     16 - Phase 16: Ulduar, Isle of Conquest, Arena Season 6
-#                     17 - Phase 17: Trial of the Crusader, Trial of the Champion, Argent Tournament Grounds, Onyxia's Lair, Arena Season 7
-#                     18 - Phase 18: Forge of Souls, Pit of Saron, Halls of Reflection, Icecrown Citadel, Arena Season 8
-#        Default:     19 - Phase 19: Ruby Sanctum
+#                     7 - Phase 7: Blood Elf, Draenei, Outland Leveling & Dungeons, Jewelcrafting, Eye of the Storm
+#                     8 - Phase 8: Karazhan, Gruul's Lair, Magtheridon's Lair, Arena Season 1
+#                     9 - Phase 9: Serpentshrine Cavern, Tempest Keep: The Eye, Ogri'la, Sha'tari Skyguard, Arena Season 2
+#                     10 - Phase 10: Battle for Mount Hyjal, Black Temple, Arena Season 3
+#                     11 - Phase 11: Zul'Aman
+#                     12 - Phase 12: Isle of Quel'Danas, Magister's Terrace, Sunwell Plateau, Arena Season 4
+#                     13 - Phase 13: Death Knight, WotLK Leveling & Dungeons
+#                     14 - Phase 14: Naxxramas, Eye of Eternity, Obsidian Sanctum, Vault of Archavon, Arena Season 5
+#                     15 - Phase 15: Ulduar, Isle of Conquest, Arena Season 6
+#                     16 - Phase 16: Trial of the Crusader, Trial of the Champion, Argent Tournament Grounds, Onyxia's Lair, Arena Season 7
+#                     17 - Phase 17: Forge of Souls, Pit of Saron, Halls of Reflection, Icecrown Citadel, Arena Season 8
+#        Default:     18 - Phase 18: Ruby Sanctum
 #
 
-Progression.Phase = 19
+Progression.Phase = 18
 
 #
 #    Progression.IcecrownCitadel.Aura

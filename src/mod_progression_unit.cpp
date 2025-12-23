@@ -11,7 +11,7 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 14)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 
@@ -24,7 +24,7 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 14)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 
@@ -37,7 +37,7 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 14)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 

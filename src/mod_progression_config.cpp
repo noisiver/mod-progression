@@ -6,13 +6,13 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     if (!reload)
     {
-        uint8 PhaseId = sConfigMgr->GetOption<uint8>("Progression.Phase", 19);
+        uint8 PhaseId = sConfigMgr->GetOption<uint8>("Progression.Phase", 18);
         uint8 AuraId = sConfigMgr->GetOption<uint8>("Progression.IcecrownCitadel.Aura", 6);
 
-        if (PhaseId > 19)
+        if (PhaseId > 18)
         {
-            LOG_ERROR("server.loading", "Phase ({}) must be in range 0..19. Using default value ({}).", PhaseId, 19);
-            PhaseId = 19;
+            LOG_ERROR("server.loading", "Phase ({}) must be in range 0..18. Using default value ({}).", PhaseId, 18);
+            PhaseId = 18;
         }
 
         LOG_INFO("server.loading", ">> Phase ID set to {}", PhaseId);
@@ -35,7 +35,7 @@ void Progression::OnAfterConfigLoad(bool reload)
             expansion = EXPANSION_CLASSIC;
             maxLevel = 60;
         }
-        else if (PhaseId < 14)
+        else if (PhaseId < 13)
         {
             expansion = EXPANSION_THE_BURNING_CRUSADE;
             maxLevel = 70;
@@ -57,7 +57,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setBoolConfig(CONFIG_WEATHER, false);
     }
 
-    if (PhaseId < 12)
+    if (PhaseId < 11)
     {
         LOG_INFO("server.loading", ">> Disabled object quest markers");
         sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, false);
@@ -69,7 +69,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_BATTLEGROUND_ALTERAC_REINFORCEMENTS, 0);
     }
 
-    if (PhaseId < 14)
+    if (PhaseId < 13)
     {
         LOG_INFO("server.loading", ">> Water breath timer set to 60 seconds");
         sWorld->setIntConfig(CONFIG_WATER_BREATH_TIMER, 60000);
@@ -81,7 +81,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, true);
     }
 
-    if (PhaseId < 17)
+    if (PhaseId < 16)
     {
         LOG_INFO("server.loading", ">> Disabled quest auto accept");
         sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, true);
@@ -107,7 +107,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setIntConfig(CONFIG_BATTLEGROUND_EYEOFTHESTORM_CAPTUREPOINTS, 2000);
     }
 
-    if (PhaseId < 18)
+    if (PhaseId < 17)
     {
         //LOG_INFO("server.loading", ">> Dungeon Finder disabled");
         //sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
