@@ -2,6 +2,7 @@ DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (12558, 12559, 12564, 12565, 12566, 12567, 12568, 12569);
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7);
+DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (18563, 18564, 18646, 18665, 18705, 18987, 21877, 27859, 27860, 31952);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (2, 249, 3, '', '', 'Onyxia\'s Lair'), -- Phase 1
 (2, 269, 3, '', '', 'The Black Morass'), -- Phase 8
@@ -87,4 +88,14 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (5, 4, 0, '', '', 'Zangarmarsh'), -- Phase 8
 (5, 5, 0, '', '', 'Silithus'), -- Phase 6
 (5, 6, 0, '', '', 'Eastern Plaguelands'), -- Phase 6
-(5, 7, 0, '', '', 'Grizzly Hills'); -- Phase 14
+(5, 7, 0, '', '', 'Grizzly Hills'), -- Phase 14
+(10, 18563, 0, '', '', 'Bindings of the Windseeker'), -- Phase 3
+(10, 18564, 0, '', '', 'Bindings of the Windseeker'), -- Phase 3
+(10, 18646, 0, '', '', 'The Eye of Divinity'), -- Phase 3
+(10, 18665, 0, '', '', 'The Eye of Shadow'), -- Phase 3
+(10, 18705, 0, '', '', 'Mature Black Dragon Sinew'), -- Phase 3
+(10, 18987, 0, '', '', 'Blackhand\'s Command'), -- Phase 3
+(10, 21877, 0, '', '', 'Netherweave Cloth'), -- Phase 8
+(10, 27859, 0, '', '', 'Zangar Caps'), -- Phase 8
+(10, 27860, 0, '', '', 'Purified Draenic Water'), -- Phase 8
+(10, 31952, 0, '', '', 'Khorium Lockbox'); -- Phase 8

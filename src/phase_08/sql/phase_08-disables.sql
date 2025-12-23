@@ -27,3 +27,9 @@ DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
     3, -- Terokkar Forest
     4 -- Zangarmarsh
 );
+DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (
+    21877, -- Netherweave Cloth
+    27859, -- Zangar Caps
+    27860, -- Purified Draenic Water
+    31952 -- Khorium Lockbox
+);
