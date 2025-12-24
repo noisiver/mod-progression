@@ -18,8 +18,11 @@ DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
     7 -- Grizzly Hills
 );
-
 DELETE FROM `disables` WHERE `sourceType` = 9 AND entry IN (
+    18, -- Call to Arms: Alterac Valley!
+    19, -- Call to Arms: Warsong Gulch!
+    20, -- Call to Arms: Arathi Basin!
+    21, -- Call to Arms: Eye of the Storm!
     26, -- Pilgrim's Bounty
     34, -- Brew of the Month October
     35, -- Brew of the Month November

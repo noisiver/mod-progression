@@ -105,10 +105,10 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (9, 14, 0, '', '', 'Stranglethorn Fishing Extravaganza Announce'), -- Phase 5
 (9, 15, 0, '', '', 'Stranglethorn Fishing Extravaganza Fishing Pools'), -- Phase 5
 -- (9, 16, 0, '', '', 'Gurubashi Arena Booty Run'), -- Phase 
-(9, 18, 0, '', '', 'Call to Arms: Alterac Valley!'), -- Phase 2
-(9, 19, 0, '', '', 'Call to Arms: Warsong Gulch!'), -- Phase 2
-(9, 20, 0, '', '', 'Call to Arms: Arathi Basin!'), -- Phase 3
-(9, 21, 0, '', '', 'Call to Arms: Eye of the Storm!'), -- Phase 7
+(9, 18, 0, '', '', 'Call to Arms: Alterac Valley!'), -- Phase 13
+(9, 19, 0, '', '', 'Call to Arms: Warsong Gulch!'), -- Phase 13
+(9, 20, 0, '', '', 'Call to Arms: Arathi Basin!'), -- Phase 13
+(9, 21, 0, '', '', 'Call to Arms: Eye of the Storm!'), -- Phase 13
 (9, 23, 0, '', '', 'Darkmoon Faire Building (Elwynn Forest, 0, XXX)'), -- Phase 3
 (9, 24, 0, '', '', 'Brewfest'), -- Phase 7
 (9, 26, 0, '', '', 'Pilgrim\'s Bounty'), -- Phase 13
