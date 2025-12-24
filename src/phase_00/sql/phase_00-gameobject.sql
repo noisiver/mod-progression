@@ -34,6 +34,17 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195619, -- Mailbox
     195620 -- Mailbox
 );
+UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
+    61967, -- Lexicon of Power
+    63170, -- Lexicon of Power
+    63171, -- Lexicon of Power
+    63172, -- Lexicon of Power
+    63173, -- Lexicon of Power
+    63174, -- Lexicon of Power
+    63175, -- Lexicon of Power
+    63176, -- Lexicon of Power
+    100257 -- Lexicon of Power
+);
 SET @goId := 5300000;
 DELETE FROM `gameobject` WHERE `guid` = @goId+0;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES
