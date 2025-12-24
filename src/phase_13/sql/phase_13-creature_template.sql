@@ -10,3 +10,7 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN
     14438, -- Officer Pomeroy
     14439 -- Officer Brady
 );
+UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
+    38, -- Defias Thug
+    103 -- Garrick Padfoot
+);

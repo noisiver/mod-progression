@@ -1,6 +1,7 @@
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN (
     68, -- Stormwind City Guard
     352, -- Dungar Longdrink <Gryphon Master>
+    1642, -- Northshire Guard
     1976 -- Stormwind City Patroller
 );
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
@@ -15,4 +16,8 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
     14423, -- Officer Jaxon
     14438, -- Officer Pomeroy
     14439 -- Officer Brady
+);
+UPDATE `creature_template` SET `faction` = 17 WHERE `entry` IN (
+    38, -- Defias Thug
+    103 -- Garrick Padfoot
 );
