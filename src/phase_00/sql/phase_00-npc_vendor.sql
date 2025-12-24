@@ -284,3 +284,125 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     33633, -- Enchantress Andiala <Master Enchanting Trainer>
     33674 -- Alchemist Kanhu <Master Alchemy Trainer>
 ) AND `item` = 37201; -- Corpse Dust
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    66, -- Tharynn Bouden <Trade Supplies>
+    1250, -- Drake Lindgren <General & Trade Supplies>
+    1316, -- Adair Gilroy <Librarian>
+    1448, -- Neal Allen <Engineering Supplies & General Goods>
+    1692, -- Golorn Frostbeard <Tradesman>
+    1694, -- Loslor Rudge <Engineering Supplies>
+    2118, -- Abigail Shiel <Trade Supplies>
+    2682, -- Fradd Swiftgear <Engineering Supplies>
+    2683, -- Namdo Bizzfizzle <Engineering Supplies>
+    2684, -- Rizz Loosebolt <Engineering Supplies>
+    2685, -- Mazk Snipeshot <Engineering Supplies>
+    2687, -- Gnaz Blunderflame <Engineering Supplies>
+    2688, -- Ruppo Zipcoil <Engineering Supplies>
+    3081, -- Wunna Darkmane <Trade Goods>
+    3133, -- Herble Baubbletump <Engineering & Mining Supplies>
+    3168, -- Flakk <Trade Supplies>
+    3187, -- Tai'tasi <Trade Supplies>
+    3413, -- Sovik <Engineering Supplies>
+    3495, -- Gagsprocket <Engineering Supplies>
+    3614, -- Narret Shadowgrove <Trade Supplies>
+    4453, -- Wizzle Brassbolts
+    4581, -- Salazar Bloch <Book Dealer>
+    4587, -- Elizabeth Van Talen <Engineering Supplies>
+    5175, -- Gearcutter Cogspinner <Engineering Supplies>
+    5519, -- Billibub Cogspinner <Engineering Supplies>
+    5817, -- Shimra <Trade Supplies>
+    6730, -- Jinky Twizzlefixxit <Engineering Supplies>
+    6777, -- Zan Shivsproket <Speciality Engineer>
+    8678, -- Jubie Gadgetspring <Engineering Supplies>
+    8679, -- Knaz Blunderflame <Engineering Supplies>
+    8934, -- Christopher Hewen <Trade Supplies>
+    9544, -- Yuka Screwspigot
+    11185, -- Xizzer Fizzbolt <Engineering Supplies>
+    14637, -- Zorbin Fandazzle <>
+    16261, -- Sathiel <Trade Supplies>
+    16262, -- Landraelanis <Tradesman>
+    16602, -- Floyd Pinkus <Innkeeper>
+    16657, -- Feera <Engineering Supplies>
+    16782, -- Yatheon <Engineering Supplies>
+    16826, -- Sid Limbardi <Innkeeper>
+    17222, -- Artificer Daelo <Engineering Trainer>
+    17421, -- Clopper Wizbang <Explorers' League>
+    17490, -- Ergh of the Stillpine <Trade Supplies>
+    18015, -- Gambarinka <Tradesman>
+    18278, -- Pilot Marsha <Engineering Supplies>
+    18484, -- Wind Trader Lathrai
+    18752, -- Zebig <Master Engineering Trainer>
+    18775, -- Lebowski <Master Engineering Trainer>
+    18907, -- Innkeeper Coryth Stoktron <Innkeeper>
+    18960, -- Rungor <Trade Goods>
+    19015, -- Mathar G'ochar <Trade Supplies>
+    19017, -- Borto <Trade Supplies>
+    19042, -- Leeli Longhaggle <Trade Goods>
+    19194, -- Ernie Packwell <Trade Goods>
+    19197, -- Eral <General Goods>
+    19345, -- Kalara <Trade Goods>
+    19372, -- Oran Blusterbrew <Trade Goods>
+    19383, -- Captured Gnome <Item Repair>
+    19450, -- Pol Snowhoof <Trade Goods>
+    19497, -- Caoileann <Trade Goods>
+    19533, -- Dealer Aljaan <Trade Goods>
+    19562, -- Peon Bolgar <Trade Goods>
+    19573, -- Dash <Trade Supplies>
+    19575, -- Qiff <Engineering Supplies>
+    19661, -- Viggz Shinesparked <Engineering Supplies>
+    20081, -- Bortega <Reagents & Poison Supplies>
+    20092, -- Dealer Hazzin <General Provisioner>
+    20194, -- Dealer Dunar <General Provisioner>
+    20250, -- Rashere Pridehoof <Trade Goods>
+    20890, -- Siflaed Coldhammer <Tinker>
+    20891, -- Skraa <Trade Goods>
+    21083, -- Erool <Trade Goods>
+    21112, -- Bossi Pentapiston <Engineering Supplies>
+    21113, -- Sassa Weldwell <Trade Goods>
+    22099, -- Wyrmcult Provisioner
+    22271, -- Ogri'la Trader <Trade Goods>
+    23363, -- Sahaak <Keeper of Scrolls>
+    25034, -- Tradesman Portanuus <Trade Supplies>
+    27711, -- Technician Halmaha <Engineering Supplies>
+    29208, -- Fester <Trade Goods>
+    33634, -- Engineer Sinbei <Master Engineering Trainer>
+    33677 -- Technician Mihila <Master Engineering Trainer>
+) AND `item` = 10648;
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    66, -- Tharynn Bouden <Trade Supplies>
+    777, -- Amy Davenport <Tradeswoman>
+    843, -- Gina MacGregor <Trade Supplies>
+    960, -- Gunder Thornbush <Tradesman>
+    1250, -- Drake Lindgren <General & Trade Supplies>
+    1456, -- Kersok Prond <Tradesman>
+    1465, -- Drac Roughcut <Tradesman>
+    1692, -- Golorn Frostbeard <Tradesman>
+    2118, -- Abigail Shiel <Trade Supplies>
+    2381, -- Micha Yance <Trade Goods>
+    2393, -- Christoph Jeffcoat <Tradesman>
+    3081, -- Wunna Darkmane <Trade Goods>
+    3168, -- Flakk <Trade Supplies>
+    3187, -- Tai'tasi <Trade Supplies>
+    3482, -- Tari'qa <Trade Supplies>
+    3499, -- Ranik <Trade Supplies>
+    3556, -- Andrew Hilbert <Trade Supplies>
+    3614, -- Narret Shadowgrove <Trade Supplies>
+    4194, -- Ullanna <Trade Supplies>
+    4877, -- Jandia <Trade Supplies>
+    5100, -- Fillius Fizzlespinner <Trade Supplies>
+    5817, -- Shimra <Trade Supplies>
+    6301, -- Gorbold Steelhand <Trade Supplies>
+    7947, -- Vivianna <Trade Supplies>
+    8145, -- Sheendra Tallgrass <Trade Supplies>
+    8934, -- Christopher Hewen <Trade Supplies>
+    9636, -- Kireena <Trade Goods>
+    12022, -- Lorelae Wintersong <Trade Supplies>
+    12028, -- Lah'Mawhani <Trade Supplies>
+    12043, -- Kulwia <Trade Supplies>
+    16224, -- Rathis Tomber <Trade Supplies>
+    16261, -- Sathiel <Trade Supplies>
+    16262, -- Landraelanis <Tradesman>
+    17490, -- Ergh of the Stillpine <Trade Supplies>
+    18426, -- Terellia <Trade Supplies>
+    18427 -- Fazu <Tradesman>
+) AND `item` = 39354;
