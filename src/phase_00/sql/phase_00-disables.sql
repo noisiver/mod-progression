@@ -90,18 +90,18 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (5, 5, 0, '', '', 'Silithus'), -- Phase 6
 (5, 6, 0, '', '', 'Eastern Plaguelands'), -- Phase 6
 (5, 7, 0, '', '', 'Grizzly Hills'), -- Phase 13
--- (9, 1, 0, '', '', 'Midsummer Fire Festival'), -- Phase 
--- (9, 2, 0, '', '', 'Winter Veil'), -- Phase 
+-- (9, 1, 0, '', '', 'Midsummer Fire Festival'), -- Phase ???
+-- (9, 2, 0, '', '', 'Winter Veil'), -- Phase ???
 (9, 3, 0, '', '', 'Darkmoon Faire (Terokkar Forest)'), -- Phase 3
 (9, 4, 0, '', '', 'Darkmoon Faire (Elwynn Forest)'), -- Phase 3
 (9, 5, 0, '', '', 'Darkmoon Faire (Mulgore)'), -- Phase 3
--- (9, 7, 0, '', '', 'Lunar Festival'), -- Phase 
--- (9, 8, 0, '', '', 'Love is in the Air'), -- Phase 
--- (9, 9, 0, '', '', 'Noblegarden'), -- Phase 
--- (9, 10, 0, '', '', 'Children\'s Week'), -- Phase 
--- (9, 11, 0, '', '', 'Harvest Festival'), -- Phase 
--- (9, 12, 0, '', '', 'Hallow\'s End'), -- Phase 
--- (9, 13, 0, '', '', 'Elemental Invasions'), -- Phase 
+-- (9, 7, 0, '', '', 'Lunar Festival'), -- Phase ???
+-- (9, 8, 0, '', '', 'Love is in the Air'), -- Phase ???
+-- (9, 9, 0, '', '', 'Noblegarden'), -- Phase ???
+-- (9, 10, 0, '', '', 'Children\'s Week'), -- Phase ???
+-- (9, 11, 0, '', '', 'Harvest Festival'), -- Phase ???
+-- (9, 12, 0, '', '', 'Hallow\'s End'), -- Phase ???
+-- (9, 13, 0, '', '', 'Elemental Invasions'), -- Phase ???
 (9, 14, 0, '', '', 'Stranglethorn Fishing Extravaganza Announce'), -- Phase 5
 (9, 15, 0, '', '', 'Stranglethorn Fishing Extravaganza Fishing Pools'), -- Phase 5
 -- (9, 16, 0, '', '', 'Gurubashi Arena Booty Run'), -- Phase 
@@ -126,7 +126,7 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (9, 45, 0, '', '', 'Brew of the Month September'), -- Phase 13
 (9, 50, 0, '', '', 'Pirates\' Day'), -- Phase 7
 (9, 51, 0, '', '', 'Day of the Dead'), -- Phase 13
--- (9, 52, 0, '', '', 'Winter Veil: Gifts'), -- Phase 
+-- (9, 52, 0, '', '', 'Winter Veil: Gifts'), -- Phase ???
 (9, 53, 0, '', '', 'Call to Arms: Strand of the Ancients!'), -- Phase 13
 (9, 54, 0, '', '', 'Call to Arms: Isle of Conquest!'), -- Phase 15
 (9, 55, 0, '', '', 'Arena Season 3'), -- Phase 10
