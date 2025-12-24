@@ -318,7 +318,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     8934, -- Christopher Hewen <Trade Supplies>
     9544, -- Yuka Screwspigot
     11185, -- Xizzer Fizzbolt <Engineering Supplies>
-    14637, -- Zorbin Fandazzle <>
+    14637, -- Zorbin Fandazzle
     16261, -- Sathiel <Trade Supplies>
     16262, -- Landraelanis <Tradesman>
     16602, -- Floyd Pinkus <Innkeeper>
@@ -367,7 +367,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     29208, -- Fester <Trade Goods>
     33634, -- Engineer Sinbei <Master Engineering Trainer>
     33677 -- Technician Mihila <Master Engineering Trainer>
-) AND `item` = 10648;
+) AND `item` = 10648; -- Common Parchment
 DELETE FROM `npc_vendor` WHERE `entry` IN (
     66, -- Tharynn Bouden <Trade Supplies>
     777, -- Amy Davenport <Tradeswoman>
@@ -405,4 +405,103 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     17490, -- Ergh of the Stillpine <Trade Supplies>
     18426, -- Terellia <Trade Supplies>
     18427 -- Fazu <Tradesman>
-) AND `item` = 39354;
+) AND `item` = 39354; -- Light Parchment
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    483, -- Elaine Trias <Mistress of Cheese>
+    4981, -- Ben Trias <Apprentice of Cheese>
+    6746, -- Innkeeper Pala <Innkeeper>
+    17630, -- Innkeeper Jovia <Innkeeper>
+    19232, -- Innkeeper Haelthol <Innkeeper>
+    19296, -- Innkeeper Biribi <Innkeeper>
+    19718, -- Provisioner Tsaalt
+    20080, -- Galgrom <Provisioner>
+    20916, -- Xerintha Ravenoak <Food & Drink>
+    21110, -- Fizit "Doc" Clocktock <Innkeeper>
+    21744, -- Roldemar <Innkeeper>
+    21746, -- Caretaker Aluuro <Innkeeper>
+    22266, -- Ogri'la Grubgiver <Food Vendor>
+    23521, -- Anne Summers <Cheese Vendor>
+    23604 -- Agnes Farwithers <Cheese Vendor>
+) AND `item` = 27857; -- Garadar Sharp
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    483, -- Elaine Trias <Mistress of Cheese>
+    4981, -- Ben Trias <Apprentice of Cheese>
+    6746, -- Innkeeper Pala <Innkeeper>
+    17630 -- Innkeeper Jovia <Innkeeper>
+) AND `item` = 33443; -- Sour Goat Cheese
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    483, -- Elaine Trias <Mistress of Cheese>
+    4981, -- Ben Trias <Apprentice of Cheese>
+    6746, -- Innkeeper Pala <Innkeeper>
+    17630 -- Innkeeper Jovia <Innkeeper>
+) AND `item` = 35952; -- Briny Hardcheese
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    1347, -- Alexandra Bolero <Tailoring Supplies>
+    1454, -- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
+    1474, -- Rann Flamespinner <Tailoring Supplies>
+    1672, -- Lohgan Eva <Tailoring Supplies>
+    2394, -- Mallen Swain <Tailoring Supplies>
+    2668, -- Danielle Zipstitch <Tailoring Supplies>
+    2669, -- Sheri Zipstitch <Tailoring Supplies>
+    2670, -- Xizk Goodstitch <Tailoring Supplies>
+    2672, -- Cowardly Crosby <Tailoring Supplies>
+    2697, -- Clyde Ranthal <Leatherworking Supplies>
+    2698, -- George Candarte <Leatherworking Supplies>
+    2699, -- Rikqiz <Leatherworking Supplies>
+    2816, -- Androd Fadran <Leatherworking Supplies>
+    2819, -- Tunkk <Leatherworking Supplies>
+    2846, -- Blixrez Goodstitch <Leatherworking Supplies>
+    3005, -- Mahu <Leatherworking & Tailoring Supplies>
+    3091, -- Franklin Hamar <Tailoring Supplies>
+    3096, -- Captured Servant of Azora <Specialist Tailoring Supplies>
+    3364, -- Borya <Tailoring Supplies>
+    3366, -- Tamar <Leatherworking Supplies>
+    3485, -- Wrahk <Tailoring Supplies>
+    3958, -- Lardan <Leatherworking Supplies>
+    4168, -- Elynna <Tailoring Supplies>
+    4189, -- Valdaron <Tailoring Supplies>
+    4225, -- Saenorion <Leatherworking Supplies>
+    4577, -- Millie Gregorian <Tailoring Supplies>
+    4589, -- Joseph Moore <Leatherworking Supplies>
+    5128, -- Bombus Finespindle <Leatherworking Supplies>
+    5154, -- Poranna Snowbraid <Tailoring Supplies>
+    5565, -- Jillian Tanner <Leatherworking Supplies>
+    5783, -- Kalldan Felmoon <Specialist Leatherworking Supplies>
+    5944, -- Yonada <Tailoring & Leatherworking Supplies>
+    6567, -- Ghok'kah <Tailoring Supplies>
+    6568, -- Vizzklick <Tailoring Supplies>
+    6574, -- Jun'ha <Tailoring Supplies>
+    6576, -- Brienna Starglow <Tailoring Supplies>
+    6731, -- Harlown Darkweave <Leatherworking Supplies>
+    7852, -- Pratt McGrubben <Leatherworking Supplies>
+    7854, -- Jangdor Swiftstrider <Leatherworking Supplies>
+    7940, -- Darnall <Tailoring Supplies>
+    8160, -- Nioma <Leatherworking Supplies>
+    8681, -- Outfitter Eric <Speciality Tailoring Supplies>
+    11557, -- Meilosh
+    11874, -- Masat T'andr <Superior Leatherworker>
+    12942, -- Leonard Porter <Leatherworking Supplies>
+    12943, -- Werg Thickblade <Leatherworking Supplies>
+    12956, -- Zannok Hidepiercer <Leatherworking Supplies>
+    15165, -- Haughty Modiste <Fashion Designer>
+    16366, -- Sempstress Ambershine <Tailoring Trainer>
+    16638, -- Deynna <Tailoring Supplies>
+    16689, -- Zaralda <Leatherworking Supplies>
+    16748, -- Haferet <Leatherworking Supplies>
+    16767, -- Neii <Tailoring Supplies>
+    18277, -- Kinamisa <Leatherworking Supplies>
+    18749, -- Dalinna <Master Tailoring Trainer>
+    18754, -- Barim Spilthoof <Master Leatherworking Trainer>
+    18771, -- Brumman <Master Leatherworking Trainer>
+    18772, -- Hama <Master Tailoring Trainer>
+    19196, -- Cro Threadstrong <Leatherworking Supplies>
+    19213, -- Eiin <Specialty Tailoring Supplies>
+    19521, -- Arrond <Tailoring Supplies>
+    19532, -- Dearny <Leatherworking Merchant>
+    19722, -- Muheru the Weaver <Tailoring Supplies>
+    21085, -- Ragar <Leatherworking Supplies>
+    33635, -- Daenril <Master Leatherworking Trainer>
+    33636, -- Miralisse <Master Tailoring Trainer>
+    33681, -- Korim <Master Leatherworking Trainer>
+    33684 -- Weaver Aoa <Master Tailoring Trainer>
+) AND `item` = 38426; -- Eternium Thread
