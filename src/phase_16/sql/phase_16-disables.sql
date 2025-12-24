@@ -12,3 +12,6 @@ DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (
     12568, -- Many Whelps! Handle It! (25 player)
     12569 -- She Deep Breaths More (25 player)
 );
+DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (
+    59 -- Arena Season 7
+);

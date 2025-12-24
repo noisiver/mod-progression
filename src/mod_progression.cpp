@@ -13,4 +13,12 @@ Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundSc
 void Addmod_progressionScripts()
 {
     new Progression();
+
+    uint8 phaseId = sConfigMgr->GetOption<uint8>("Progression.Phase", 18);
+
+    if (phaseId < 7)
+        AddSC_spell_mark_of_kazzak();
+
+    if (phaseId < 13)
+        AddSC_spell_summon_nightbane();
 }

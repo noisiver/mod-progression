@@ -18,3 +18,24 @@ DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
     7 -- Grizzly Hills
 );
+
+DELETE FROM `disables` WHERE `sourceType` = 9 AND entry IN (
+    26, -- Pilgrim's Bounty
+    34, -- Brew of the Month October
+    35, -- Brew of the Month November
+    36, -- Brew of the Month December
+    37, -- Brew of the Month January
+    38, -- Brew of the Month February
+    39, -- Brew of the Month March
+    40, -- Brew of the Month April
+    41, -- Brew of the Month May
+    42, -- Brew of the Month June
+    43, -- Brew of the Month July
+    44, -- Brew of the Month August
+    45, -- Brew of the Month September
+    51, -- Day of the Dead
+    53, -- Call to Arms: Strand of the Ancients!
+    61, -- Zalazane's Fall
+    63, -- Kalu'ak Fishing Derby Turn-ins
+    64 -- Kalu'ak Fishing Derby Fishing Pools
+);

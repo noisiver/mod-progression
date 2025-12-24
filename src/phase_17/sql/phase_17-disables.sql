@@ -7,3 +7,6 @@ DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
     32 -- Random Battleground
 );
+DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (
+    60 -- Arena Season 8
+);

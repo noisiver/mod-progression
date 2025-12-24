@@ -2,6 +2,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>
+    29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     31146, -- Heroic Training Dummy
     32666, -- Expert's Training Dummy
@@ -15,4 +16,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     120624, -- Stormwind Harbor Guard
     120637, -- Stormwind Harbor Guard
     120638 -- Stormwind Harbor Guard
+);
+DELETE FROM `creature` WHERE `id1` IN (
+    1748, -- Highlord Bolvar Fordragon
+    1749 -- Lady Katrana Prestor
 );

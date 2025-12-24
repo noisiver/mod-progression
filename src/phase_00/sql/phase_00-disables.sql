@@ -2,6 +2,7 @@ DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (12558, 12559, 12564, 12565, 12566, 12567, 12568, 12569);
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4, 5, 6, 7);
+DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (3, 4, 5, 14, 15, 18, 19, 20, 21, 23, 24, 26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 70, 71, 76, 77, 90, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115);
 DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (18563, 18564, 18646, 18665, 18705, 18987, 21877, 27859, 27860, 31952);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
 (2, 249, 3, '', '', 'Onyxia\'s Lair'), -- Phase 1
@@ -89,6 +90,75 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (5, 5, 0, '', '', 'Silithus'), -- Phase 6
 (5, 6, 0, '', '', 'Eastern Plaguelands'), -- Phase 6
 (5, 7, 0, '', '', 'Grizzly Hills'), -- Phase 13
+-- (9, 1, 0, '', '', 'Midsummer Fire Festival'), -- Phase 
+-- (9, 2, 0, '', '', 'Winter Veil'), -- Phase 
+(9, 3, 0, '', '', 'Darkmoon Faire (Terokkar Forest)'), -- Phase 3
+(9, 4, 0, '', '', 'Darkmoon Faire (Elwynn Forest)'), -- Phase 3
+(9, 5, 0, '', '', 'Darkmoon Faire (Mulgore)'), -- Phase 3
+-- (9, 7, 0, '', '', 'Lunar Festival'), -- Phase 
+-- (9, 8, 0, '', '', 'Love is in the Air'), -- Phase 
+-- (9, 9, 0, '', '', 'Noblegarden'), -- Phase 
+-- (9, 10, 0, '', '', 'Children\'s Week'), -- Phase 
+-- (9, 11, 0, '', '', 'Harvest Festival'), -- Phase 
+-- (9, 12, 0, '', '', 'Hallow\'s End'), -- Phase 
+-- (9, 13, 0, '', '', 'Elemental Invasions'), -- Phase 
+(9, 14, 0, '', '', 'Stranglethorn Fishing Extravaganza Announce'), -- Phase 5
+(9, 15, 0, '', '', 'Stranglethorn Fishing Extravaganza Fishing Pools'), -- Phase 5
+-- (9, 16, 0, '', '', 'Gurubashi Arena Booty Run'), -- Phase 
+(9, 18, 0, '', '', 'Call to Arms: Alterac Valley!'), -- Phase 2
+(9, 19, 0, '', '', 'Call to Arms: Warsong Gulch!'), -- Phase 2
+(9, 20, 0, '', '', 'Call to Arms: Arathi Basin!'), -- Phase 3
+(9, 21, 0, '', '', 'Call to Arms: Eye of the Storm!'), -- Phase 7
+(9, 23, 0, '', '', 'Darkmoon Faire Building (Elwynn Forest, 0, XXX)'), -- Phase 3
+(9, 24, 0, '', '', 'Brewfest'), -- Phase 7
+(9, 26, 0, '', '', 'Pilgrim\'s Bounty'), -- Phase 13
+(9, 34, 0, '', '', 'Brew of the Month October'), -- Phase 13
+(9, 35, 0, '', '', 'Brew of the Month November'), -- Phase 13
+(9, 36, 0, '', '', 'Brew of the Month December'), -- Phase 13
+(9, 37, 0, '', '', 'Brew of the Month January'), -- Phase 13
+(9, 38, 0, '', '', 'Brew of the Month February'), -- Phase 13
+(9, 39, 0, '', '', 'Brew of the Month March'), -- Phase 13
+(9, 40, 0, '', '', 'Brew of the Month April'), -- Phase 13
+(9, 41, 0, '', '', 'Brew of the Month May'), -- Phase 13
+(9, 42, 0, '', '', 'Brew of the Month June'), -- Phase 13
+(9, 43, 0, '', '', 'Brew of the Month July'), -- Phase 13
+(9, 44, 0, '', '', 'Brew of the Month August'), -- Phase 13
+(9, 45, 0, '', '', 'Brew of the Month September'), -- Phase 13
+(9, 50, 0, '', '', 'Pirates\' Day'), -- Phase 7
+(9, 51, 0, '', '', 'Day of the Dead'), -- Phase 13
+-- (9, 52, 0, '', '', 'Winter Veil: Gifts'), -- Phase 
+(9, 53, 0, '', '', 'Call to Arms: Strand of the Ancients!'), -- Phase 13
+(9, 54, 0, '', '', 'Call to Arms: Isle of Conquest!'), -- Phase 15
+(9, 55, 0, '', '', 'Arena Season 3'), -- Phase 10
+(9, 56, 0, '', '', 'Arena Season 4'), -- Phase 12
+(9, 57, 0, '', '', 'Arena Season 5'), -- Phase 14
+(9, 58, 0, '', '', 'Arena Season 6'), -- Phase 15
+(9, 59, 0, '', '', 'Arena Season 7'), -- Phase 16
+(9, 60, 0, '', '', 'Arena Season 8'), -- Phase 17
+(9, 61, 0, '', '', 'Zalazane\'s Fall'), -- Phase 13
+(9, 62, 0, '', '', 'Stranglethorn Fishing Extravaganza - The Crew'), -- Phase 5
+(9, 63, 0, '', '', 'Kalu\'ak Fishing Derby Turn-ins'), -- Phase 13
+(9, 64, 0, '', '', 'Kalu\'ak Fishing Derby Fishing Pools'), -- Phase 13
+(9, 70, 0, '', '', 'Brewfest Building (Iron Forge, 0, XXX)'), -- Phase 7
+(9, 71, 0, '', '', 'Darkmoon Faire Building (Mulgore, 0, XXX)'), -- Phase 3
+(9, 76, 0, '', '', 'Arena Season 2'), -- Phase 9
+(9, 77, 0, '', '', 'Darkmoon Faire Building (Terokkar Forest, 0, XXX)'), -- Phase 3
+(9, 90, 0, '', '', 'Stranglethorn Fishing Extravaganza - Turn-ins'), -- Phase 5
+(9, 101, 0, '', '', 'Sun\'s Reach Reclamation Phase 1'), -- Phase 12
+(9, 102, 0, '', '', 'Sun\'s Reach Reclamation Phase 2 Only'), -- Phase 12
+(9, 103, 0, '', '', 'Sun\'s Reach Reclamation Phase 2 Permanent'), -- Phase 12
+(9, 104, 0, '', '', 'Sun\'s Reach Reclamation Phase No Portal'), -- Phase 12
+(9, 105, 0, '', '', 'Sun\'s Reach Reclamation Phase Portal'), -- Phase 12
+(9, 106, 0, '', '', 'Sun\'s Reach Reclamation Phase 3 Only'), -- Phase 12
+(9, 107, 0, '', '', 'Sun\'s Reach Reclamation Phase 3 Permanent'), -- Phase 12
+(9, 108, 0, '', '', 'Sun\'s Reach Reclamation Phase No Anvil'), -- Phase 12
+(9, 109, 0, '', '', 'Sun\'s Reach Reclamation Phase Anvil'), -- Phase 12
+(9, 110, 0, '', '', 'Sun\'s Reach Reclamation Phase 4'), -- Phase 12
+(9, 111, 0, '', '', 'Sun\'s Reach Reclamation Phase No Monument'), -- Phase 12
+(9, 112, 0, '', '', 'Sun\'s Reach Reclamation Phase Monument'), -- Phase 12
+(9, 113, 0, '', '', 'Sun\'s Reach Reclamation Phase No Alchemy Lab'), -- Phase 12
+(9, 114, 0, '', '', 'Sun\'s Reach Reclamation Phase Alchemy Lab'), -- Phase 12
+(9, 115, 0, '', '', 'Sun\'s Reach Reclamation Phase K\'iru'), -- Phase 12
 (10, 18563, 0, '', '', 'Bindings of the Windseeker'), -- Phase 3
 (10, 18564, 0, '', '', 'Bindings of the Windseeker'), -- Phase 3
 (10, 18646, 0, '', '', 'The Eye of Divinity'), -- Phase 3

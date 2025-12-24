@@ -28,6 +28,12 @@ DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
     3, -- Terokkar Forest
     4 -- Zangarmarsh
 );
+DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (
+    21, -- Call to Arms: Eye of the Storm!
+    24, -- Brewfest
+    50, -- Pirates' Day
+    70 -- Brewfest Building (Iron Forge, 0, XXX)
+);
 DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (
     21877, -- Netherweave Cloth
     27859, -- Zangar Caps
