@@ -1,8 +1,10 @@
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN (
     68, -- Stormwind City Guard
     352, -- Dungar Longdrink <Gryphon Master>
+    931, -- Ariena Stormfeather <Gryphon Master>
     1642, -- Northshire Guard
-    1976 -- Stormwind City Patroller
+    1976, -- Stormwind City Patroller
+    10037 -- Lakeshire Guard
 );
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
@@ -20,4 +22,11 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
 UPDATE `creature_template` SET `faction` = 17 WHERE `entry` IN (
     38, -- Defias Thug
     103 -- Garrick Padfoot
+);
+UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
+    436, -- Blackrock Shadowcaster
+    4064, -- Blackrock Scout
+    4065, -- Blackrock Sentry
+    4462, -- Blackrock Hunter
+    4464 -- Blackrock Gladiator
 );
