@@ -19,7 +19,7 @@ DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
     4, -- Ring of Trials
     5, -- Circle of Blood
     6, -- All Arenas
-    7 -- Eye of the Storm
+    7, -- Eye of the Storm
     8 -- Ruins of Lordaeron
 );
 DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
