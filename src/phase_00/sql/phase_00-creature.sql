@@ -29,6 +29,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17104, -- Anchorite Delan
     17109, -- Cersei Dusksinger
     17103, -- Emissary Taluun
+    17238, -- Anchorite Truuen
     17249, -- Landro Longshot <The Black Flame>
     17613, -- Archmage Alturus
     17641, -- Sunhawk Ambusher
@@ -41,8 +42,21 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     21045, -- Hired Bodyguard <The Black Flame>
+    23559, -- Budd Nedreck
+    23560, -- Provisioner Ameenah <Reagents>
+    23718, -- Mack
+    23724, -- Samir
+    23745, -- Garg
+    23748, -- Kurzel <Food & Drink>
+    23761, -- Prigmon
+    23762, -- Brend
+    23764, -- Marge
+    23766, -- Morgom
+    23858, -- Donna Brascoe
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
+    24851, -- Kiz Coilspanner <Flight Master>
+    25145, -- Budd's Bodyguard
     27705, -- Lorrin Foxfire <Portal Trainer>
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
@@ -82,6 +96,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35365, -- Behsten <Experience Eliminator>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    37888, -- Frax Bucketdrop <Flight Master>
     37915 -- Timothy Cunningham <Bat Handler>
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
@@ -90,7 +105,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     120623, -- Stormwind Harbor Guard
     120624, -- Stormwind Harbor Guard
     120637, -- Stormwind Harbor Guard
-    120638 -- Stormwind Harbor Guard
+    120638, -- Stormwind Harbor Guard
+    139326, -- Overworked Nag
+    139327 -- Overworked Nag
 );
 UPDATE `creature` SET `position_x` = -8441.42, `position_y` = 333.102, `position_z` = 122.679, `orientation` = 2.23167 WHERE `guid` = 10494; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature` SET `position_x` = -4886.97, `position_y` = -978.31, `position_z` = 504.024, `orientation` = 5.39307 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>

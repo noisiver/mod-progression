@@ -34,6 +34,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     8609, -- Alexandra Constantine <Gryphon Master>
     10037, -- Lakeshire Guard
     11194, -- Argent Defender <The Argent Dawn>
+    12617, -- Khaelyn Steelwing <Gryphon Master>
+    12636, -- Georgia <Bat Handler>
     13177 -- Vahgruk <Wind Rider Master>
 );
 UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` = 4624; -- Booty Bay Bruiser
@@ -41,6 +43,9 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     436, -- Blackrock Shadowcaster
     594, -- Defias Henchman
     619, -- Defias Conjurer
+    1827, -- Scarlet Sentinel
+    1834, -- Scarlet Paladin
+    1832, -- Scarlet Magus
     1891, -- Pyrewood Watcher
     1894, -- Pyrewood Sentry
     1895, -- Pyrewood Elder
@@ -63,15 +68,23 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     4846, -- Shadowforge Digger
     4856, -- Stonevault Cave Hunter
     4851, -- Stonevault Rockchewer
+    6208, -- Caverndeep Invader
+    6210, -- Caverndeep Pillager
+    6213, -- Irradiated Invader
+    6231, -- Techbot
     9043, -- Scarshield Grunt <Scarshield Legion>
-    9044 -- Scarshield Sentry <Scarshield Legion>
+    9044, -- Scarshield Sentry <Scarshield Legion>
+    10608 -- Scarlet Priest
 );
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     7937 -- High Tinker Mekkatorque <King of Gnomes>
 );
-UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 8383; -- Master Wood
+UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (
+    8383, -- Master Wood
+    16378 -- Argent Sentry <The Argent Dawn>
+);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73, `BaseAttackTime` = 800, `mingold` = 28305, `maxgold` = 36968, `AIName` = '', `flags_extra` = `flags_extra` | 1 WHERE `entry` = 12397; -- Lord Kazzak
 UPDATE `creature_template` SET `minlevel` = 69, `maxlevel` = 70 WHERE `entry` IN (
     12377, -- Wailing Spectre

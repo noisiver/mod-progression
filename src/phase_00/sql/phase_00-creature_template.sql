@@ -34,6 +34,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     6026, -- Breyk <Wind Rider Master>
     10037, -- Lakeshire Guard
     11194, -- Argent Defender <The Argent Dawn>
+    12617, -- Khaelyn Steelwing <Gryphon Master>
+    12636, -- Georgia <Bat Handler>
     13177 -- Vahgruk <Wind Rider Master>
 );
 UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` = 4624; -- Booty Bay Bruiser
@@ -42,7 +44,10 @@ UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Dis
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` = 466; -- General Marcus Jonathan <High Commander of Stormwind Defense>
 UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
-UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` = 1756; -- Stormwind Royal Guard
+UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` IN (
+    1756, -- Stormwind Royal Guard
+    20672 -- Royal Guard
+);
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime` = 2000, `mingold` = 1065700, `maxgold` = 1065700, `AIName` = 'SmartAI', `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 12397; -- Lord Kazzak
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN (
     8383, -- Master Wood
@@ -51,7 +56,8 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
     14367, -- Thief Catcher Thunderbrew
     14423, -- Officer Jaxon
     14438, -- Officer Pomeroy
-    14439 -- Officer Brady
+    14439, -- Officer Brady
+    16378 -- Argent Sentry <The Argent Dawn>
 );
 UPDATE `creature_template` SET `faction` = 17 WHERE `entry` IN (
     38, -- Defias Thug
@@ -61,6 +67,9 @@ UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
     436, -- Blackrock Shadowcaster
     594, -- Defias Henchman
     619, -- Defias Conjurer
+    1827, -- Scarlet Sentinel
+    1834, -- Scarlet Paladin
+    1832, -- Scarlet Magus
     1891, -- Pyrewood Watcher
     1894, -- Pyrewood Sentry
     1895, -- Pyrewood Elder
@@ -83,8 +92,13 @@ UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
     4846, -- Shadowforge Digger
     4856, -- Stonevault Cave Hunter
     4851, -- Stonevault Rockchewer
+    6208, -- Caverndeep Invader
+    6210, -- Caverndeep Pillager
+    6213, -- Irradiated Invader
+    6231, -- Techbot
     9043, -- Scarshield Grunt <Scarshield Legion>
-    9044 -- Scarshield Sentry <Scarshield Legion>
+    9044, -- Scarshield Sentry <Scarshield Legion>
+    10608 -- Scarlet Priest
 );
 UPDATE `creature_template` SET `minlevel` = 59, `maxlevel` = 60 WHERE `entry` IN (
     12378, -- Damned Soul
@@ -108,4 +122,9 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` = 
 UPDATE `creature_template` SET `faction` = 22 WHERE `entry` IN (
     1505, -- Night Web Spider
     1688 -- Night Web Matriarch
+);
+UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` = 16222; -- Silvermoon City Guardian
+UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
+    16800, -- Grand Magister Rommath
+    16802 -- Lor'themar Theron <Regent Lord of Quel'Thalas>
 );

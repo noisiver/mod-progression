@@ -1,13 +1,17 @@
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (
     68, -- Stormwind City Guard
-    5595 -- Ironforge Guard
+    5595, -- Ironforge Guard
+    16222 -- Silvermoon City Guardian
 );
 UPDATE `creature_template` SET `name` = 'Diseased Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Diseased Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` = 466; -- General Marcus Jonathan <High Commander of Stormwind Defense>
 UPDATE `creature_template` SET `subname` = 'Prince of Stormwind' WHERE `entry` = 1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
-UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` = 1756; -- Stormwind Royal Guard
+UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (
+    1756, -- Stormwind Royal Guard
+    20672 -- Royal Guard
+);
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN (
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
@@ -31,5 +35,7 @@ UPDATE `creature_template` SET `faction` = 190 WHERE `entry` = 706; -- Frostmane
 UPDATE `creature_template` SET `faction` = 2136 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
-    7937 -- High Tinker Mekkatorque <King of Gnomes>
+    7937, -- High Tinker Mekkatorque <King of Gnomes>
+    16802 -- Lor'themar Theron <Regent Lord of Quel'Thalas>
 );
+UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 16800; -- Grand Magister Rommath

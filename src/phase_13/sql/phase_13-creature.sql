@@ -39,6 +39,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35365, -- Behsten <Experience Eliminator>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    37888, -- Frax Bucketdrop <Flight Master>
     37915 -- Timothy Cunningham <Bat Handler>
 );
 UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
