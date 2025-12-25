@@ -19,7 +19,9 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    4551, -- Michael Garrett <Bat Handler>
     5595, -- Ironforge Guard
+    5624, -- Undercity Guardian
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
     1064, -- Grom'gol Grunt
@@ -41,7 +43,10 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` = 4624; -- Booty Bay Bruiser
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
-UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` = 466; -- General Marcus Jonathan <High Commander of Stormwind Defense>
+UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` IN (
+    466, -- General Marcus Jonathan <High Commander of Stormwind Defense>
+    2425 -- Varimathras
+);
 UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` IN (
@@ -51,9 +56,13 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHER
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime` = 2000, `mingold` = 1065700, `maxgold` = 1065700, `AIName` = 'SmartAI', `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 12397; -- Lord Kazzak
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN (
     8383, -- Master Wood
+    13839, -- Royal Dreadguard
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
     14367, -- Thief Catcher Thunderbrew
+    14402, -- Seeker Cromwell
+    14403, -- Seeker Nahr
+    14404, -- Seeker Thompson
     14423, -- Officer Jaxon
     14438, -- Officer Pomeroy
     14439, -- Officer Brady
@@ -116,7 +125,8 @@ UPDATE `creature_template` SET `faction` = 107 WHERE `entry` IN (
 UPDATE `creature_template` SET `faction` = 37 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
-    7937 -- High Tinker Mekkatorque <King of Gnomes>
+    7937, -- High Tinker Mekkatorque <King of Gnomes>
+    10181 -- Lady Sylvanas Windrunner <Banshee Queen>
 );
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` = 2405; -- Tarren Mill Deathguard
 UPDATE `creature_template` SET `faction` = 22 WHERE `entry` IN (

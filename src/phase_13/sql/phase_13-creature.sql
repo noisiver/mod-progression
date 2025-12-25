@@ -6,6 +6,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     29143, -- Bebri Coifcurl <Barber>
     29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
+    29728, -- Walter Soref <Locksmith>
     30706, -- Jo'mah <Inscription Trainer>
     30709, -- Poshken Hardbinder <Inscription Trainer>
     30710, -- Zantasia <Inscription Trainer>
@@ -39,6 +40,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35365, -- Behsten <Experience Eliminator>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
+    36517, -- Aleric Hawkins <The Deathstalkers>
     37888, -- Frax Bucketdrop <Flight Master>
     37915 -- Timothy Cunningham <Bat Handler>
 );
@@ -54,3 +57,8 @@ DELETE FROM `creature` WHERE `id1` IN (
     1749 -- Lady Katrana Prestor
 );
 UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
+UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Kor'kron Overseer -> Undercity Guardian
+UPDATE `creature` SET `id1` = 36273 WHERE `id1` = 2425; -- Varimathras -> Bragor Bloodfist <Kor'kron Captain>
+UPDATE `creature` SET `id1` = 36224 WHERE `id1` = 14402; -- Seeker Cromwell -> Dark Ranger Clea
+UPDATE `creature` SET `id1` = 36225 WHERE `id1` = 14403; -- Seeker Nahr -> Dark Ranger Anya
+UPDATE `creature` SET `id1` = 36226 WHERE `id1` = 14404; -- Seeker Thompson -> Dark Ranger Cyndia

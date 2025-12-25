@@ -26,9 +26,11 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    4551, -- Michael Garrett <Bat Handler>
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     5595, -- Ironforge Guard
+    5624, -- Undercity Guardian
     6026, -- Breyk <Wind Rider Master>
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
@@ -79,10 +81,14 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
-    7937 -- High Tinker Mekkatorque <King of Gnomes>
+    7937, -- High Tinker Mekkatorque <King of Gnomes>
+    10181 -- Lady Sylvanas Windrunner <Banshee Queen>
 );
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (
     8383, -- Master Wood
+    14402, -- Seeker Cromwell
+    14403, -- Seeker Nahr
+    14404, -- Seeker Thompson
     16378 -- Argent Sentry <The Argent Dawn>
 );
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73, `BaseAttackTime` = 800, `mingold` = 28305, `maxgold` = 36968, `AIName` = '', `flags_extra` = `flags_extra` | 1 WHERE `entry` = 12397; -- Lord Kazzak
@@ -96,3 +102,4 @@ UPDATE `creature_template` SET `minlevel` = 68, `maxlevel` = 69 WHERE `entry` IN
     12378 -- Damned Soul
 );
 UPDATE `creature_template` SET `minlevel` = 45, `maxlevel` = 45 WHERE `entry` = 2405; -- Tarren Mill Deathguard
+UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` = 2425; -- Varimathras

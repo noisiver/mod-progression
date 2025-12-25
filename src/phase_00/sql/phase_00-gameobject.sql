@@ -39,7 +39,12 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195617, -- Mailbox
     195618, -- Mailbox
     195619, -- Mailbox
-    195620 -- Mailbox
+    195620, -- Mailbox
+    195625, -- Mailbox
+    195626, -- Mailbox
+    195627, -- Mailbox
+    195628, -- Mailbox
+    195629 -- Mailbox
 );
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
     61967, -- Lexicon of Power

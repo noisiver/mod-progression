@@ -1,5 +1,6 @@
 UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     7826, -- Ambassador Ardalan
+    16287, -- Ambassador Sunsorrow
     16288, -- Advisor Sorrelon
     16840, -- Advisor Sevel
     16841, -- Watch Commander Relthorn Netherwane
@@ -11,14 +12,17 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17103, -- Emissary Taluun
     17238, -- Anchorite Truuen
     17249, -- Landro Longshot <The Black Flame>
+    19909, -- Rex Pixem <Arena Battlemaster>
     19254, -- Warlord Dar'toon
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
+    20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
     21045, -- Hired Bodyguard <The Black Flame>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
-    27705 -- Lorrin Foxfire <Portal Trainer>
+    27705, -- Lorrin Foxfire <Portal Trainer>
+    29095 -- Edward Cairn <Elder>
 );
 UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     14740 -- Alliance Brigadier General
