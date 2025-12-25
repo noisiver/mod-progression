@@ -14,5 +14,6 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     14912, -- Captured Hakkari Zealot
     14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
     15070, -- Vinchaxa <Servitor of Zanza>
+    15076, -- Zandalarian Emissary
     15080 -- Servant of the Hand <Hand of Rastakhan>
 );

@@ -1,4 +1,5 @@
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
+    179879, -- Orb of Command
     180104, -- Zandalar Cage
     180367, -- Altar of Zanza
     180375, -- Altar of Zanza Spell Focus

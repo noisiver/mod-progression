@@ -1,5 +1,7 @@
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     6109, -- Azuregos
+    7826, -- Ambassador Ardalan
+    14387, -- Lothos Riftwaker
     14875, -- Molthor <Hand of Rastakhan>
     14876, -- Zandalar Headshrinker
     14887, -- Ysondre
@@ -15,21 +17,30 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     14912, -- Captured Hakkari Zealot
     14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
     15070, -- Vinchaxa <Servitor of Zanza>
+    15076, -- Zandalarian Emissary
     15080, -- Servant of the Hand <Hand of Rastakhan>
     15481, -- Spirit of Azuregos
+    16288, -- Advisor Sorrelon
     16840, -- Advisor Sevel
     16841, -- Watch Commander Relthorn Netherwane
+    17092, -- Advisor Duskingdawn
+    17094, -- Nemeth Hawkeye <Farstriders>
+    17097, -- Advisor Sarophas
+    17104, -- Anchorite Delan
     17109, -- Cersei Dusksinger
     17103, -- Emissary Taluun
+    17249, -- Landro Longshot <The Black Flame>
     17613, -- Archmage Alturus
     17641, -- Sunhawk Ambusher
     18253, -- Archmage Leryda
     18255, -- Apprentice Darius
+    19915, -- Max Xim <Arena Battlemaster>
     19254, -- Warlord Dar'toon
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
+    21045, -- Hired Bodyguard <The Black Flame>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     27705, -- Lorrin Foxfire <Portal Trainer>
@@ -64,10 +75,14 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
+    34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
+    35007, -- Lixa Felflinger <Battlemaster>
     35365, -- Behsten <Experience Eliminator>
-    35598 -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    37915 -- Timothy Cunningham <Bat Handler>
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     14740, -- Alliance Brigadier General
@@ -78,6 +93,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     120638 -- Stormwind Harbor Guard
 );
 UPDATE `creature` SET `position_x` = -8441.42, `position_y` = 333.102, `position_z` = 122.679, `orientation` = 2.23167 WHERE `guid` = 10494; -- Anduin Wrynn <Prince of Stormwind>
+UPDATE `creature` SET `position_x` = -4886.97, `position_y` = -978.31, `position_z` = 504.024, `orientation` = 5.39307 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
+UPDATE `creature` SET `position_x` = 1678.99, `position_y` = 1667.86, `position_z` = 135.855, `orientation` = 3.76991 WHERE `guid` = 29803; -- Undertaker Mordo
 SET @cId := 5300000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES

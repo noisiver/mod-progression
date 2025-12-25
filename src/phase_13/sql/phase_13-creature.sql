@@ -32,12 +32,15 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
+    34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
+    35007, -- Lixa Felflinger <Battlemaster>
     35365, -- Behsten <Experience Eliminator>
-    35598 -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    37915 -- Timothy Cunningham <Bat Handler>
 );
-
 UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     120616, -- Stormwind Harbor Guard
     120623, -- Stormwind Harbor Guard
@@ -49,3 +52,4 @@ DELETE FROM `creature` WHERE `id1` IN (
     1748, -- Highlord Bolvar Fordragon
     1749 -- Lady Katrana Prestor
 );
+UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
