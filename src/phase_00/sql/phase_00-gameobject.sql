@@ -1,4 +1,9 @@
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
+    180104, -- Zandalar Cage
+    180367, -- Altar of Zanza
+    180375, -- Altar of Zanza Spell Focus
+    181310, -- Outland Map
+    184463, -- Meeting Stone (Karazhan)
     187290, -- Guild Vault
     187292, -- Guild Vault
     187294, -- Guild Vault

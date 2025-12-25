@@ -1,10 +1,38 @@
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
+    6109, -- Azuregos
+    14875, -- Molthor <Hand of Rastakhan>
+    14876, -- Zandalar Headshrinker
+    14887, -- Ysondre
+    14888, -- Lethon
+    14889, -- Emeriss
+    14890, -- Taerar
+    14902, -- Jin'rokh the Breaker
+    14903, -- Al'tabim the All-Seeing
+    14904, -- Maywiki of Zuldazar
+    14905, -- Falthir the Sightless
+    14910, -- Exzhal <Servitor of Rastakhan>
+    14911, -- Zandalar Enforcer
+    14912, -- Captured Hakkari Zealot
+    14921, -- Rin'wosho the Trader <Zandalar Supplies & Repair>
+    15070, -- Vinchaxa <Servitor of Zanza>
+    15080, -- Servant of the Hand <Hand of Rastakhan>
+    15481, -- Spirit of Azuregos
+    16840, -- Advisor Sevel
+    16841, -- Watch Commander Relthorn Netherwane
+    17109, -- Cersei Dusksinger
     17103, -- Emissary Taluun
+    17613, -- Archmage Alturus
+    17641, -- Sunhawk Ambusher
+    18253, -- Archmage Leryda
+    18255, -- Apprentice Darius
+    19254, -- Warlord Dar'toon
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
+    24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
+    27705, -- Lorrin Foxfire <Portal Trainer>
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>

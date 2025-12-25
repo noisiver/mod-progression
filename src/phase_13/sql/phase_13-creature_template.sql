@@ -14,3 +14,7 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     38, -- Defias Thug
     103 -- Garrick Padfoot
 );
+UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (
+    4624 -- Booty Bay Bruiser
+);
+UPDATE `creature_template` SET `minlevel` = 70 WHERE `entry` = 12380; -- Unliving Resident
