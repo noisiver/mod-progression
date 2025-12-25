@@ -10,6 +10,9 @@ ProgressionMgr* ProgressionMgr::instance()
 
 Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript") , UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript") {}
 
+void AddSC_spell_mark_of_kazzak();
+void AddSC_spell_summon_nightbane();
+
 void Addmod_progressionScripts()
 {
     new Progression();
