@@ -4,6 +4,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     180367, -- Altar of Zanza
     180375, -- Altar of Zanza Spell Focus
     181310, -- Outland Map
+    183435, -- Marksman Regiment's Cooking Pot
     184463, -- Meeting Stone (Karazhan)
     186251, -- Meeting Stone (Zul'Aman)
     187290, -- Guild Vault

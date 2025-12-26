@@ -36,8 +36,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17641, -- Sunhawk Ambusher
     18253, -- Archmage Leryda
     18255, -- Apprentice Darius
+    19475, -- Harbinger Haronem
+    19715, -- Ezekiel
     19909, -- Rex Pixem <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
+    19202, -- Emissary Mordin
+    19216, -- Grand Anchorite Almonen
     19254, -- Warlord Dar'toon
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
@@ -45,6 +49,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     21045, -- Hired Bodyguard <The Black Flame>
+    21432, -- Almaador <Sha'tari Quartermaster>
+    22987, -- Skyguard Nether Ray
+    23449, -- Yuula <Recruitment Officer>
     23559, -- Budd Nedreck
     23560, -- Provisioner Ameenah <Reagents>
     23718, -- Mack
@@ -59,7 +66,20 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     24851, -- Kiz Coilspanner <Flight Master>
+    25134, -- Shattered Sun Trainee
+    25135, -- Shattered Sun Trainee
+    25136, -- Shattered Sun Trainee
+    25137, -- Shattered Sun Trainee
+    25138, -- Captain Dranarus
+    25140, -- Lord Torvos
+    25141, -- Commander Steele
+    25142, -- Shattered Sun Marksman
+    25143, -- Shattered Sun Veteran
     25145, -- Budd's Bodyguard
+    25153, -- Shattered Sun Magi
+    25155, -- Shattered Sun Cleric
+    25167, -- General Tiras'alan
+    25885, -- Whirligig Wafflefry <Gnomish Inventor>
     27705, -- Lorrin Foxfire <Portal Trainer>
     29095, -- Edward Cairn <Elder>
     29141, -- Pella Brassbrush <Barber>
@@ -88,9 +108,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     30733, -- Thargen Heavyquill <Inscription Supplies>
     30734, -- Jezebel Bican <Inscription Supplies>
     30735, -- Kul Inkspiller <Inscription Supplies>
+    31144, -- Grandmaster's Training Dummy
     31146, -- Heroic Training Dummy
     32666, -- Expert's Training Dummy
-    31144, -- Grandmaster's Training Dummy
     32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
@@ -98,6 +118,10 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35093, -- Wind Rider Jahubo <Riding Trainer>
+    35099, -- Bana Wildmane <Wind Rider Keeper>
+    35100, -- Hargen Bronzewing <Riding Trainer>
+    35101, -- Grunda Bronzewing <Gryphon Keeper>
     35365, -- Behsten <Experience Eliminator>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
@@ -108,6 +132,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     14740, -- Alliance Brigadier General
+    34138, -- Archery Target
+    34137, -- Archery Target
+    34139, -- Archery Target
     120616, -- Stormwind Harbor Guard
     120623, -- Stormwind Harbor Guard
     120624, -- Stormwind Harbor Guard

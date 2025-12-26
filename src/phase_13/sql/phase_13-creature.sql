@@ -27,9 +27,9 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     30733, -- Thargen Heavyquill <Inscription Supplies>
     30734, -- Jezebel Bican <Inscription Supplies>
     30735, -- Kul Inkspiller <Inscription Supplies>
+    31144, -- Grandmaster's Training Dummy
     31146, -- Heroic Training Dummy
     32666, -- Expert's Training Dummy
-    31144, -- Grandmaster's Training Dummy
     32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
@@ -37,6 +37,10 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35093, -- Wind Rider Jahubo <Riding Trainer>
+    35099, -- Bana Wildmane <Wind Rider Keeper>
+    35100, -- Hargen Bronzewing <Riding Trainer>
+    35101, -- Grunda Bronzewing <Gryphon Keeper>
     35365, -- Behsten <Experience Eliminator>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
