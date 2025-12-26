@@ -61,7 +61,7 @@ DELETE FROM `creature` WHERE `id1` IN (
     1749 -- Lady Katrana Prestor
 );
 UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
-UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Kor'kron Overseer -> Undercity Guardian
+UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Undercity Guardian -> Kor'kron Overseer
 UPDATE `creature` SET `id1` = 36273 WHERE `id1` = 2425; -- Varimathras -> Bragor Bloodfist <Kor'kron Captain>
 UPDATE `creature` SET `id1` = 36224 WHERE `id1` = 14402; -- Seeker Cromwell -> Dark Ranger Clea
 UPDATE `creature` SET `id1` = 36225 WHERE `id1` = 14403; -- Seeker Nahr -> Dark Ranger Anya

@@ -146,7 +146,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
 UPDATE `creature` SET `position_x` = -8441.42, `position_y` = 333.102, `position_z` = 122.679, `orientation` = 2.23167 WHERE `guid` = 10494; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature` SET `position_x` = -4886.97, `position_y` = -978.31, `position_z` = 504.024, `orientation` = 5.39307 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
 UPDATE `creature` SET `position_x` = 1678.99, `position_y` = 1667.86, `position_z` = 135.855, `orientation` = 3.76991 WHERE `guid` = 29803; -- Undertaker Mordo
-UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213; -- Undercity Guardian -> Kor'kron Overseer
+UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213; -- Kor'kron Overseer -> Undercity Guardian
 UPDATE `creature` SET `id1` = 2425 WHERE `id1` = 36273; -- Bragor Bloodfist <Kor'kron Captain> -> Varimathras
 UPDATE `creature` SET `id1` = 14402 WHERE `id1` = 36224; -- Dark Ranger Clea -> Seeker Cromwell
 UPDATE `creature` SET `id1` = 14403 WHERE `id1` = 36225; -- Dark Ranger Anya -> Seeker Nahr
