@@ -403,7 +403,10 @@ UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` IN (
     22952 -- Veras Darkshadow
 );
 UPDATE `creature_template` SET `HealthModifier` = 270 WHERE `entry` = 25840; -- Entropius
-UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 21214; -- Fathom-Lord Karathress
+UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` IN (
+    17711, -- Doomwalker
+    21214 -- Fathom-Lord Karathress
+);
 UPDATE `creature_template` SET `HealthModifier` = 360 WHERE `entry` = 25741; -- M'uru
 UPDATE `creature_template` SET `HealthModifier` = 400 WHERE `entry` = 19514; -- Al'ar <Phoenix God>
 UPDATE `creature_template` SET `HealthModifier` = 450 WHERE `entry` IN (
@@ -451,3 +454,4 @@ UPDATE `creature_template` SET `HealthModifier` = 1384 WHERE `entry` = 24882; --
 UPDATE `creature_template` SET `HealthModifier` = 2200 WHERE `entry` = 25315; -- Kil'jaeden <The Deceiver>
 UPDATE `creature_template` SET `DamageModifier` = 32, `HealthModifier` = 75 WHERE `entry` = 20039; -- Phoenix-Hawk
 UPDATE `creature_template` SET `HealthModifier` = 165, `ManaModifier` = 100 WHERE `entry` = 23089; -- Akama
+UPDATE `creature_template` SET `DamageModifier` = 90, `HealthModifier` = 160 WHERE `entry` = 18728; -- Doom Lord Kazzak
