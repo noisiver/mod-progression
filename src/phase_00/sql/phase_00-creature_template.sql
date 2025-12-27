@@ -19,6 +19,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    4317, -- Nyse <Wind Rider Master>
+    4319, -- Thyssiana <Hippogryph Master>
     4551, -- Michael Garrett <Bat Handler>
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
@@ -36,6 +38,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     6026, -- Breyk <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
+    8020, -- Shyn <Wind Rider Master>
+    8147, -- Camp Mojache Brave
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
