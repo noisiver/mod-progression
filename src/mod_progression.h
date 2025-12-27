@@ -33,6 +33,7 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
+    void OnStartup() override;
 
 private:
     inline std::vector<std::string> GetActivePhases();
