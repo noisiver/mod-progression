@@ -11,6 +11,8 @@ UPDATE `creature_template` SET `subname` = 'Prince of Stormwind' WHERE `entry` =
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    15350, -- Horde Warbringer
+    15351, -- Alliance Brigadier General
     20672 -- Royal Guard
 );
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN (

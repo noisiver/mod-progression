@@ -39,6 +39,26 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     195628, -- Mailbox
     195629 -- Mailbox
 );
+UPDATE `gameobject` SET `phaseMask` = 1 WHERE `guid` IN (
+    50675, -- Rope Line
+    50676, -- Rope Line
+    50677, -- Rope Line Pole
+    50678, -- Rope Line
+    50679, -- Rope Line
+    50680, -- Rope Line
+    50681, -- Rope Line
+    50682, -- Rope Line
+    50683, -- Rope Line
+    50684, -- Rope Line Pole
+    50685, -- Rope Line
+    50686, -- Rope Line
+    50687, -- Rope Line
+    50688, -- Rope Line
+    50689, -- Rope Line
+    50690, -- Rope Line
+    50691, -- Rope Line
+    50692 -- Rope Line
+);
 UPDATE `gameobject` SET `animprogress` = 0, `state` = 0 WHERE `id` = 164725; -- Dragonspine Door
 UPDATE `gameobject` SET `animprogress` = 255, `state` = 0 WHERE `id` IN (
     175528, -- Doodad_DarkIronBrazier01

@@ -63,6 +63,8 @@ UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    15350, -- Horde Warbringer
+    15351, -- Alliance Brigadier General
     20672 -- Royal Guard
 );
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime` = 2000, `mingold` = 1065700, `maxgold` = 1065700, `AIName` = 'SmartAI', `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 12397; -- Lord Kazzak

@@ -57,7 +57,7 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setBoolConfig(CONFIG_WEATHER, false);
     }
 
-    if (PhaseId < 11)
+    if (PhaseId < 7)
     {
         LOG_INFO("server.loading", ">> Disabled object quest markers");
         sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, false);

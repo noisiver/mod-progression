@@ -1,6 +1,7 @@
 UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
+    22836, -- Jheel
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>
@@ -31,24 +32,49 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     31146, -- Heroic Training Dummy
     32666, -- Expert's Training Dummy
     32667, -- Master's Training Dummy
+    33608, -- Alchemy
+    33609, -- Blacksmithing
+    33610, -- Enchanting
+    33611, -- Engineering
+    33612, -- Leatherworking
+    33613, -- Tailoring
+    33614, -- Jewelcrafting
+    33615, -- Inscription
+    33616, -- Herbalism
+    33617, -- Mining
+    33618, -- Skinning
+    33619, -- Cooking
+    33621, -- First Aid
+    33623, -- Fishing
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
+    34986, -- Liedel the Just <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
+    34999, -- Jonru <Battlemaster>
+    35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
     35365, -- Behsten <Experience Eliminator>
+    35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
+    35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
+    35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
+    35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
     36517, -- Aleric Hawkins <The Deathstalkers>
+    37523, -- Warden of the Sunwell
+    37527, -- Halduron Brightwing <Ranger General>
     37888, -- Frax Bucketdrop <Flight Master>
-    37915 -- Timothy Cunningham <Bat Handler>
+    37915, -- Timothy Cunningham <Bat Handler>
+    40405 -- Kieupid <Pet Trainer>
 );
+
 UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     120616, -- Stormwind Harbor Guard
     120623, -- Stormwind Harbor Guard

@@ -48,7 +48,28 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195628, -- Mailbox
     195629 -- Mailbox
 );
+
+UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (50683, 50688, 50679, 50686, 50692, 50687, 50676, 50680, 50677, 50684, 50690, 50682, 50685, 50678, 50681, 50689, 50675, 50691);
+
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
+    50675, -- Rope Line
+    50676, -- Rope Line
+    50677, -- Rope Line Pole
+    50678, -- Rope Line
+    50679, -- Rope Line
+    50680, -- Rope Line
+    50681, -- Rope Line
+    50682, -- Rope Line
+    50683, -- Rope Line
+    50684, -- Rope Line Pole
+    50685, -- Rope Line
+    50686, -- Rope Line
+    50687, -- Rope Line
+    50688, -- Rope Line
+    50689, -- Rope Line
+    50690, -- Rope Line
+    50691, -- Rope Line
+    50692, -- Rope Line
     61967, -- Lexicon of Power
     63170, -- Lexicon of Power
     63171, -- Lexicon of Power
