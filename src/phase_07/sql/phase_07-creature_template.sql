@@ -119,3 +119,4 @@ UPDATE `creature_template` SET `minlevel` = 68, `maxlevel` = 69 WHERE `entry` IN
 );
 UPDATE `creature_template` SET `minlevel` = 45, `maxlevel` = 45 WHERE `entry` = 2405; -- Tarren Mill Deathguard
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` = 2425; -- Varimathras
+UPDATE `creature_template` SET `mingold` = 1300000, `maxgold` = 1820000 WHERE `entry` = 10184; -- Onyxia
