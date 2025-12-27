@@ -36,9 +36,11 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17249, -- Landro Longshot <The Black Flame>
     17613, -- Archmage Alturus
     17641, -- Sunhawk Ambusher
+    17711, -- Doomwalker
     18253, -- Archmage Leryda
     18255, -- Apprentice Darius
     18594, -- Dathris Sunstriker
+    18728, -- Doom Lord Kazzak
     19475, -- Harbinger Haronem
     19715, -- Ezekiel
     19909, -- Rex Pixem <Arena Battlemaster>

@@ -1,4 +1,6 @@
 UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+    17711, -- Doomwalker
+    18728, -- Doom Lord Kazzak
     19715, -- Ezekiel
     20613, -- Arodis Sunblade <Keeper of Sha'tari Artifacts>
     20616, -- Asuur <Keeper of Sha'tari Artifacts>
