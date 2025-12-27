@@ -1,3 +1,4 @@
+DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (8800, 8286, 8556, 8557, 8558, 8689, 8690, 8691, 8692, 8693, 8694, 8695, 8696, 8697, 8698, 8699, 8700, 8701, 8702, 8703, 8704, 8705, 8706, 8707, 8708, 8709, 8710, 8711, 8712, 9023);
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349, 409, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724);
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (12558, 12559, 12564, 12565, 12566, 12567, 12568, 12569);
@@ -5,6 +6,36 @@ DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (1, 2, 3, 4, 5, 6, 
 DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (3, 4, 5, 14, 15, 18, 19, 20, 21, 23, 24, 26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 70, 71, 76, 77, 90, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115);
 DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (18563, 18564, 18646, 18665, 18705, 18987, 21877, 27859, 27860, 31952);
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
+(1, 8800, 0, '', '', 'Cenarion Battlegear'), -- Phase 5
+(1, 8286, 0, '', '', 'What Tomorrow Brings'), -- Phase 5
+(1, 8556, 0, '', '', 'Signet of Unyielding Strength'), -- Phase 5
+(1, 8557, 0, '', '', 'Drape of Unyielding Strength'), -- Phase 5
+(1, 8558, 0, '', '', 'Sickle of Unyielding Strength'), -- Phase 5
+(1, 8689, 0, '', '', 'Shroud of Infinite Wisdom'), -- Phase 5
+(1, 8690, 0, '', '', 'Cloak of the Gathering Storm'), -- Phase 5
+(1, 8691, 0, '', '', 'Drape of Vaulted Secrets'), -- Phase 5
+(1, 8692, 0, '', '', 'Cloak of Unending Life'), -- Phase 5
+(1, 8693, 0, '', '', 'Cloak of Veiled Shadows'), -- Phase 5
+(1, 8694, 0, '', '', 'Shroud of Unspoken Names'), -- Phase 5
+(1, 8695, 0, '', '', 'Cape of Eternal Justice'), -- Phase 5
+(1, 8696, 0, '', '', 'Cloak of the Unseen Path'), -- Phase 5
+(1, 8697, 0, '', '', 'Ring of Infinite Wisdom'), -- Phase 5
+(1, 8698, 0, '', '', 'Ring of the Gathering Storm'), -- Phase 5
+(1, 8699, 0, '', '', 'Band of Vaulted Secrets'), -- Phase 5
+(1, 8700, 0, '', '', 'Band of Unending Life'), -- Phase 5
+(1, 8701, 0, '', '', 'Band of Veiled Shadows'), -- Phase 5
+(1, 8702, 0, '', '', 'Ring of Unspoken Names'), -- Phase 5
+(1, 8703, 0, '', '', 'Ring of Eternal Justice'), -- Phase 5
+(1, 8704, 0, '', '', 'Signet of the Unseen Path'), -- Phase 5
+(1, 8705, 0, '', '', 'Gavel of Infinite Wisdom'), -- Phase 5
+(1, 8706, 0, '', '', 'Hammer of the Gathering Storm'), -- Phase 5
+(1, 8707, 0, '', '', 'Blade of Vaulted Secrets'), -- Phase 5
+(1, 8708, 0, '', '', 'Mace of Unending Life'), -- Phase 5
+(1, 8709, 0, '', '', 'Dagger of Veiled Shadows'), -- Phase 5
+(1, 8710, 0, '', '', 'Kris of Unspoken Names'), -- Phase 5
+(1, 8711, 0, '', '', 'Blade of Eternal Justice'), -- Phase 5
+(1, 8712, 0, '', '', 'Scythe of the Unseen Path'), -- Phase 5
+(1, 9023, 0, '', '', 'The Perfect Poison'), -- Phase 5
 (2, 249, 3, '', '', 'Onyxia\'s Lair'), -- Phase 1
 (2, 269, 3, '', '', 'The Black Morass'), -- Phase 7
 (2, 309, 1, '', '', 'Zul\'Gurub'), -- Phase 4

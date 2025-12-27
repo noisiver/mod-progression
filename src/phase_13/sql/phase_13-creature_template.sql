@@ -33,7 +33,8 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     1688 -- Night Web Matriarch
 );
 UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (
-    4624 -- Booty Bay Bruiser
+    4624, -- Booty Bay Bruiser
+    9460 -- Gadgetzan Bruiser
 );
 UPDATE `creature_template` SET `minlevel` = 70 WHERE `entry` = 12380; -- Unliving Resident
 UPDATE `creature_template` SET `faction` = 190 WHERE `entry` = 706; -- Frostmane Troll Whelp

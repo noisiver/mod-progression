@@ -32,15 +32,23 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
     6026, -- Breyk <Wind Rider Master>
+    7823, -- Bera Stonehammer <Gryphon Master>
+    7824, -- Bulkrek Ragefist <Wind Rider Master>
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
     10037, -- Lakeshire Guard
+    10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
-    13177 -- Vahgruk <Wind Rider Master>
+    13177, -- Vahgruk <Wind Rider Master>
+    15177, -- Cloud Skydancer <Hippogryph Master>
+    15178 -- Runk Windtamer <Wind Rider Master>
 );
-UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` = 4624; -- Booty Bay Bruiser
+UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (
+    4624, -- Booty Bay Bruiser
+    9460 -- Gadgetzan Bruiser
+);
 UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     436, -- Blackrock Shadowcaster
     594, -- Defias Henchman
@@ -70,6 +78,9 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     4846, -- Shadowforge Digger
     4856, -- Stonevault Cave Hunter
     4851, -- Stonevault Rockchewer
+    5645, -- Sandfury Hideskinner
+    5646, -- Sandfury Axe Thrower
+    5647, -- Sandfury Firecaller
     6208, -- Caverndeep Invader
     6210, -- Caverndeep Pillager
     6213, -- Irradiated Invader
@@ -89,6 +100,7 @@ UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
+    15184, -- Cenarion Hold Infantry
     16378 -- Argent Sentry <The Argent Dawn>
 );
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73, `BaseAttackTime` = 800, `mingold` = 28305, `maxgold` = 36968, `AIName` = '', `flags_extra` = `flags_extra` | 1 WHERE `entry` = 12397; -- Lord Kazzak

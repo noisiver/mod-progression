@@ -4,6 +4,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     180367, -- Altar of Zanza
     180375, -- Altar of Zanza Spell Focus
     181310, -- Outland Map
+    182560, -- Meeting Stone (Caverns of Time)
     183435, -- Marksman Regiment's Cooking Pot
     184463, -- Meeting Stone (Karazhan)
     186251, -- Meeting Stone (Zul'Aman)
@@ -58,7 +59,27 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
     63176, -- Lexicon of Power
     100257 -- Lexicon of Power
 );
+UPDATE `gameobject` SET `animprogress` = 100, `state` = 1 WHERE `id` IN (
+    164725, -- Dragonspine Door
+    175528, -- Doodad_DarkIronBrazier01
+    175529, -- Doodad_DarkIronBrazier02
+    175530, -- Doodad_DarkIronBrazier03
+    175531, -- Doodad_DarkIronBrazier04
+    175532, -- Doodad_DarkIronBrazier05
+    175533 -- Doodad_DarkIronBrazier06
+);
+UPDATE `gameobject` SET `id` = 180717, `phaseMask` = 16384 WHERE `guid` = 49451; -- The Scarab Gong
 SET @goId := 5300000;
-DELETE FROM `gameobject` WHERE `guid` = @goId+0;
+DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996);
+DELETE FROM `gameobject` WHERE `guid` = @goId+4;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES
-(@goId+0, 194323, 0, 0, 0, 1, 1, -8623.06, 951.028, 99.4455, 0.680017, -0, -0, -0.333495, -0.942752, 300, 0, 1, NULL, NULL, NULL);
+-- Gate of Ahn'Qiraj
+(@goId+0, 176146, 1, 0, 0, 1, 1, -8133.34, 1525.13, 17.1904, 6.28103, 0, 0, 0.00107995, -0.999999, 600, 100, 1, NULL, NULL, NULL),
+-- Ahn'Qiraj Gate Roots
+(@goId+1, 176147, 1, 0, 0, 1, 1, -8133.34, 1525.13, 17.1904, 6.28103, 0, 0, 0.00107995, -0.999999, 600, 100, 1, NULL, NULL, NULL),
+-- Ahn'Qiraj Gate Runes
+(@goId+2, 176148, 1, 0, 0, 1, 1, -8133.34, 1525.13, 17.1904, 6.28103, 0, 0, 0.00107995, -0.999999, 600, 100, 1, NULL, NULL, NULL),
+-- CavernDoor01
+(@goId+3, 176996, 1, 0, 0, 1, 1, -8173.02, -4747.2, 34.2107, 1.80084, 0, 0, -0.783588, -0.621281, 0, 100, 1, NULL, NULL, NULL),
+-- Wintergrasp Keep Collision Wall
+(@goId+4, 194323, 0, 0, 0, 1, 1, -8623.06, 951.028, 99.4455, 0.680017, -0, -0, -0.333495, -0.942752, 300, 0, 1, NULL, NULL, NULL);

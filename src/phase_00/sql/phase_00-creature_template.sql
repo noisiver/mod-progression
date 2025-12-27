@@ -34,13 +34,21 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     6026, -- Breyk <Wind Rider Master>
+    7823, -- Bera Stonehammer <Gryphon Master>
+    7824, -- Bulkrek Ragefist <Wind Rider Master>
     10037, -- Lakeshire Guard
+    10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
-    13177 -- Vahgruk <Wind Rider Master>
+    13177, -- Vahgruk <Wind Rider Master>
+    15177, -- Cloud Skydancer <Hippogryph Master>
+    15178 -- Runk Windtamer <Wind Rider Master>
 );
-UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` = 4624; -- Booty Bay Bruiser
+UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` IN (
+    4624, -- Booty Bay Bruiser
+    9460 -- Gadgetzan Bruiser
+);
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` IN (
@@ -66,6 +74,7 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
     14423, -- Officer Jaxon
     14438, -- Officer Pomeroy
     14439, -- Officer Brady
+    15184, -- Cenarion Hold Infantry
     16378 -- Argent Sentry <The Argent Dawn>
 );
 UPDATE `creature_template` SET `faction` = 17 WHERE `entry` IN (
@@ -101,6 +110,9 @@ UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
     4846, -- Shadowforge Digger
     4856, -- Stonevault Cave Hunter
     4851, -- Stonevault Rockchewer
+    5645, -- Sandfury Hideskinner
+    5646, -- Sandfury Axe Thrower
+    5647, -- Sandfury Firecaller
     6208, -- Caverndeep Invader
     6210, -- Caverndeep Pillager
     6213, -- Irradiated Invader

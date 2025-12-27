@@ -39,5 +39,20 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     195628, -- Mailbox
     195629 -- Mailbox
 );
+UPDATE `gameobject` SET `animprogress` = 0, `state` = 0 WHERE `id` = 164725; -- Dragonspine Door
+UPDATE `gameobject` SET `animprogress` = 255, `state` = 0 WHERE `id` IN (
+    175528, -- Doodad_DarkIronBrazier01
+    175529, -- Doodad_DarkIronBrazier02
+    175530, -- Doodad_DarkIronBrazier03
+    175531, -- Doodad_DarkIronBrazier04
+    175532, -- Doodad_DarkIronBrazier05
+    175533 -- Doodad_DarkIronBrazier06
+);
+UPDATE `gameobject` SET `id` = 180718 WHERE `guid` = 49451; -- The Scarab Gong
 SET @goId := 5300000;
-DELETE FROM `gameobject` WHERE `guid` = @goId+0;
+DELETE FROM `gameobject` WHERE `guid` = @goId+4; -- Wintergrasp Keep Collision Wall
+DELETE FROM `gameobject` WHERE `id` IN (
+    176146, -- Gate of Ahn'Qiraj
+    176147, -- Ahn'Qiraj Gate Roots
+    176148 -- Ahn'Qiraj Gate Runes
+);

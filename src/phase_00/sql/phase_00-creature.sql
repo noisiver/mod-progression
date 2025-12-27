@@ -43,6 +43,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     19202, -- Emissary Mordin
     19216, -- Grand Anchorite Almonen
     19254, -- Warlord Dar'toon
+    19859, -- Max Luna <Arena Battlemaster>
+    19860, -- Katrina Turner
+    19861, -- Bip Nigstrom <Arena Organizer>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
@@ -50,6 +53,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     20808, -- Scribe Veredis <Scryer Inscriptions>
     21045, -- Hired Bodyguard <The Black Flame>
     21432, -- Almaador <Sha'tari Quartermaster>
+    21448, -- Gadgetzan Sniper
     22987, -- Skyguard Nether Ray
     23449, -- Yuula <Recruitment Officer>
     23559, -- Budd Nedreck
@@ -132,6 +136,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     14740, -- Alliance Brigadier General
+    24664, -- Gadgetzan Bruiser
+    24665, -- Gadgetzan Bruiser
     34138, -- Archery Target
     34137, -- Archery Target
     34139, -- Archery Target
@@ -151,6 +157,10 @@ UPDATE `creature` SET `id1` = 2425 WHERE `id1` = 36273; -- Bragor Bloodfist <Kor
 UPDATE `creature` SET `id1` = 14402 WHERE `id1` = 36224; -- Dark Ranger Clea -> Seeker Cromwell
 UPDATE `creature` SET `id1` = 14403 WHERE `id1` = 36225; -- Dark Ranger Anya -> Seeker Nahr
 UPDATE `creature` SET `id1` = 14404 WHERE `id1` = 36226; -- Dark Ranger Cyndia -> Seeker Thompson
+UPDATE `creature` SET `position_x` = -8195.5, `position_y` = -4480.25, `position_z` = 9.20932, `wander_distance` = 7 WHERE `id1` = 8196; -- Occulus
+UPDATE `creature` SET `position_x` = -8185.17, `position_y` = -4695.1, `position_z` = 16.1702, `orientation` = 3.73691, `wander_distance` = 5 WHERE `id1` = 8197; -- Chronalis
+UPDATE `creature` SET `position_x` = -8189.83, `position_y` = -4586.73, `position_z` = 8.14232, `wander_distance` = 7 WHERE `id1` = 8198; -- Tick
+UPDATE `creature` SET `position_x` = -8175.67, `position_y` = -4718.28, `position_z` = 26.3489, `orientation` = 1.88496 WHERE `id1` = 15192; -- Anachronos
 SET @cId := 5300000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
