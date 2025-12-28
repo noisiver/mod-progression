@@ -2,9 +2,12 @@
 
 #include "mod_progression.h"
 
-void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker, uint32& damage, SpellInfo const* /*spellInfo*/)
+void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker, uint32& damage, SpellInfo const* spellInfo)
 {
     if (!attacker)
+        return;
+
+    if (spellInfo->HasAura(SPELL_AURA_PERIODIC_HEAL))
         return;
 
     bool isPet = attacker->GetOwner() && attacker->GetOwner()->IsPlayer();
