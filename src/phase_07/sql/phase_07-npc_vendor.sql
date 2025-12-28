@@ -1,13 +1,21 @@
 DELETE FROM `npc_vendor` WHERE `entry` IN (958, 983, 1257, 1275, 1307, 1308, 1351, 1463, 1673, 2805, 3323, 3335, 3351, 3490, 3500, 3542, 3562, 3700, 3970, 4083, 4220, 4562, 4575, 4878, 5110, 5151, 8361, 13476, 14739, 15175, 16015, 20081) AND `item` = 22147;
 DELETE FROM `npc_vendor` WHERE `entry` IN (958, 983, 1257, 1275, 1307, 1308, 1351, 1463, 1673, 2805, 3323, 3335, 3351, 3490, 3500, 3542, 3562, 3700, 3970, 4083, 4220, 4562, 4575, 4878, 5110, 5151, 8361, 13476, 14739, 15175, 16015, 20081) AND `item` = 22148;
 DELETE FROM `npc_vendor` WHERE `entry` IN (228, 734, 789, 1149, 1285, 1298, 1462, 2084, 2401, 2803, 2806, 2808, 2820, 2839, 2908, 3015, 3313, 3350, 3410, 3541, 4170, 4173, 4241, 4555, 4604, 4892, 4896, 5101, 5122, 6028, 7942, 8139, 8362, 9548, 9551, 9552, 9555, 11038, 11555, 12021, 12027, 12959, 12960, 14301, 14624, 15174, 17598, 20080) AND `item` = 28053;
+DELETE FROM `npc_vendor` WHERE `entry` IN (372, 790, 3002, 3133, 3167, 3358, 3392, 3578, 4256, 4599, 5514, 6298, 11186) AND `item` = 20815;
+DELETE FROM `npc_vendor` WHERE `entry` IN (372, 790, 3002, 3133, 3167, 3358, 3392, 3578, 4256, 4599, 5514, 6298, 11186) AND `item` = 20824;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Avette Fellwood <Bowyer>
 (228, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Karm Ironquill <Mining Supplies>
+(372, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(372, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Corporal Bluth <Camp Trader>
 (734, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Kimberly Hiett <Fletcher>
 (789, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Karen Taylor <Blacksmithing & Mining Supplies>
+(790, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(790, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Dawn Brightstar <Arcane Goods>
 (958, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (958, 22148, 0, 0, 0, 0), -- Wild Quillvine
@@ -60,8 +68,17 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (2839, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Grawl <General Goods>
 (2908, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Kurm Stonehoof <Mining Supplies>
+(3002, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3002, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Kuna Thunderhorn <Bowyer & Fletching Goods>
 (3015, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Herble Baubbletump <Engineering & Mining Supplies>
+(3133, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3133, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Wuark <Armorer & Shieldcrafter>
+(3167, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3167, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Trak'gen <General Goods>
 (3313, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Horthus <Reagents>
@@ -75,6 +92,15 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Magenius <Reagents>
 (3351, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (3351, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Gorina <Mining Supplies>
+(3358, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3358, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Dalaran Miner
+(3578, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3578, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Prospector Khazgorm <Explorers' League>
+(3392, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(3392, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Jin'sora <Bow Merchant>
 (3410, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Hula'mahi <Reagents, Herbs & Poison Supplies>
@@ -109,6 +135,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4220, 22148, 0, 0, 0, 0), -- Wild Quillvine
 -- Mydrannul <General Goods>
 (4241, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Golnir Bouldertoe <Mining Supplies>
+(4256, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(4256, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Eleanor Rusk <General Goods>
 (4555, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Thomas Mordan <Reagents>
@@ -117,6 +146,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Hannah Akeley <Reagents>
 (4575, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (4575, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Sarah Killian <Mining Supplies>
+(4599, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(4599, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Abigail Sawyer <Bow Merchant>
 (4604, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Montarr <Lorekeeper>
@@ -136,8 +168,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Ginny Longberry <Reagents>
 (5151, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (5151, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Brooke Stonebraid <Mining Supplies>
+(5514, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(5514, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Burkrum <Heavy Armor Merchant>
 (6028, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Thelgrum Stonehammer <Mining Supplies>
+(6298, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(6298, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Faralorn <General Supplies>
 (7942, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Jabbey <General Goods>
@@ -157,6 +195,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (9555, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Caretaker Alen <The Argent Dawn>
 (11038, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Lunnix Sprocketslip <Mining Supplies>
+(11186, 20815, 0, 0, 0, 0), -- Jeweler's Kit
+(11186, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Gorn One Eye
 (11555, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Daeolyn Summerleaf <General Goods>

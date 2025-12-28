@@ -642,3 +642,77 @@ DELETE FROM `npc_vendor` WHERE `entry` = 18525 AND `item` IN ( -- G'eras
     35324, -- Cloak of Swift Reprieve
     35326 -- Battlemaster's Alacrity
 );
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    844, -- Antonio Perelli <Traveling Salesman>
+    958, -- Dawn Brightstar <Arcane Goods>
+    983, -- Thultazor <Alchemy Supplies & Reagents>
+    1257, -- Keldric Boucher <Alchemy Supplies & Reagents>
+    1313, -- Maria Lumere <Alchemy Supplies>
+    1453, -- Dewin Shimmerdawn <Alchemy Supplies>
+    2380, -- Nandar Branson <Alchemy Supplies>
+    2480, -- Bro'kin <Alchemy Supplies>
+    2481, -- Bliztik <Alchemy Supplies>
+    2812, -- Drovnar Strongbrew <Alchemy Supplies>
+    2848, -- Glyx Brewright <Alchemy Supplies>
+    3010, -- Mani Winterhoof <Alchemy Supplies>
+    3014, -- Nida Winterhoof <Herbalism Supplies>
+    3348, -- Kor'geld <Alchemy Supplies>
+    3405, -- Zeal'aya <Herbalism Supplies>
+    3548, -- Selina Weston <Alchemy & Herbalism Supplies>
+    3956, -- Harklan Moongrove <Alchemy Supplies>
+    4216, -- Chardryn <Herbalism Supplies>
+    4226, -- Ulthir <Alchemy Supplies>
+    4610, -- Algernon <Alchemy Supplies>
+    4615, -- Katrina Alliestar <Herbalism Supplies>
+    4899, -- Uma Bartulm <Herbalism & Alchemy Supplies>
+    5138, -- Gwina Stonebranch <Herbalism Supplies>
+    5178, -- Soolie Berryfizz <Alchemy Supplies>
+    5503, -- Eldraeith <Herbalism Supplies>
+    5594, -- Alchemist Pestlezugg <Alchemy Supplies>
+    8157, -- Logannas <Alchemy Supplies>
+    8158, -- Bronk <Alchemy Supplies>
+    8177, -- Rartar <Alchemy Supplies>
+    8178, -- Nina Lightbrew <Alchemy Supplies>
+    8305, -- Kixxle <Potions & Herbs>
+    11188, -- Evie Whirlbrew <Alchemy Supplies>
+    16367, -- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+    16612, -- Velanni <Alchemy Supplies & Reagents>
+    16641, -- Melaris <Alchemy Supplies>
+    16705, -- Altaa <Alchemy Supplies>
+    16706, -- Musal <Alchemy Supplies & Reagents>
+    16829, -- Magus Zabraxis <Reagents>
+    18005, -- Haalrun <Alchemy Supplies>
+    19074, -- Skreah <Alchemy Supplies>
+    19837, -- Daga Ramba <Potions>
+    20989 -- Dealer Sadaqat <Potent Potables>
+) AND `item` = 40411; -- Enchanted Vial
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    372, -- Karm Ironquill <Mining Supplies>
+    790, -- Karen Taylor <Blacksmithing & Mining Supplies>
+    3002, -- Kurm Stonehoof <Mining Supplies>
+    3133, -- Herble Baubbletump <Engineering & Mining Supplies>
+    3167, -- Wuark <Armorer & Shieldcrafter>
+    3358, -- Gorina <Mining Supplies>
+    3392, -- Prospector Khazgorm <Explorers' League>
+    3578, -- Dalaran Miner
+    4256, -- Golnir Bouldertoe <Mining Supplies>
+    4599, -- Sarah Killian <Mining Supplies>
+    5514, -- Brooke Stonebraid <Mining Supplies>
+    6298, -- Thelgrum Stonehammer <Mining Supplies>
+    11186 -- Lunnix Sprocketslip <Mining Supplies>
+) AND `item` = 20815; -- Jeweler's Kit
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    372, -- Karm Ironquill <Mining Supplies>
+    790, -- Karen Taylor <Blacksmithing & Mining Supplies>
+    3002, -- Kurm Stonehoof <Mining Supplies>
+    3133, -- Herble Baubbletump <Engineering & Mining Supplies>
+    3167, -- Wuark <Armorer & Shieldcrafter>
+    3358, -- Gorina <Mining Supplies>
+    3392, -- Prospector Khazgorm <Explorers' League>
+    3578, -- Dalaran Miner
+    4256, -- Golnir Bouldertoe <Mining Supplies>
+    4599, -- Sarah Killian <Mining Supplies>
+    5514, -- Brooke Stonebraid <Mining Supplies>
+    6298, -- Thelgrum Stonehammer <Mining Supplies>
+    11186 -- Lunnix Sprocketslip <Mining Supplies>
+) AND `item` = 20824; -- Simple Grinder

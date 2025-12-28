@@ -15,6 +15,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630, 19232, 19296,
 DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630) AND `item` = 33443;
 DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630) AND `item` = 35952;
 DELETE FROM `npc_vendor` WHERE `entry` IN (1347, 1454, 1474, 1672, 2394, 2668, 2669, 2670, 2672, 2697, 2698, 2699, 2816, 2819, 2846, 3005, 3091, 3096, 3364, 3366, 3485, 3958, 4168, 4189, 4225, 4577, 4589, 5128, 5154, 5565, 5783, 5944, 6567, 6568, 6574, 6576, 6731, 7852, 7854, 7940, 8160, 8681, 11557, 11874, 12942, 12943, 12956, 15165, 16366, 16638, 16689, 16748, 16767, 18277, 18749, 18754, 18771, 18772, 19196, 19213, 19521, 19532, 19722, 21085, 33635, 33636, 33681, 33684) AND `item` = 38426;
+DELETE FROM `npc_vendor` WHERE `entry` IN (844, 958, 983, 1257, 1313, 1453, 2380, 2480, 2481, 2812, 2848, 3010, 3014, 3348, 3405, 3548, 3956, 4216, 4226, 4610, 4615, 4899, 5138, 5178, 5503, 5594, 8157, 8158, 8177, 8178, 8305, 11188, 16367, 16612, 16641, 16705, 16706, 16829, 18005, 19074, 19837, 20989) AND `item` = 40411;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -27,23 +28,30 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (777, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Gina MacGregor <Trade Supplies>
 (843, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Antonio Perelli <Traveling Salesman>
+(844, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Dawn Brightstar <Arcane Goods>
 (958, 37201, 0, 0, 0, 0), -- Corpse Dust
+(958, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Gunder Thornbush <Tradesman>
 (960, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Thultazor <Alchemy Supplies & Reagents>
 (983, 37201, 0, 0, 0, 0), -- Corpse Dust
+(983, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Drake Lindgren <General & Trade Supplies>
 (1250, 10648, 0, 0, 0, 0), -- Common Parchment
 (1250, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Keldric Boucher <Alchemy Supplies & Reagents>
 (1257, 37201, 0, 0, 0, 0), -- Corpse Dust
+(1257, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Kyra Boucher <Reagents>
 (1275, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Charys Yserian <Arcane Trinkets Vendor>
 (1307, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Owen Vaughn <Reagents>
 (1308, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Maria Lumere <Alchemy Supplies>
+(1313, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Adair Gilroy <Librarian>
 (1316, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Alexandra Bolero <Tailoring Supplies>
@@ -52,6 +60,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (1351, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Neal Allen <Engineering Supplies & General Goods>
 (1448, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Dewin Shimmerdawn <Alchemy Supplies>
+(1453, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 (1454, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Kersok Prond <Tradesman>
@@ -74,12 +84,22 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Abigail Shiel <Trade Supplies>
 (2118, 10648, 0, 0, 0, 0), -- Common Parchment
 (2118, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Nandar Branson <Alchemy Supplies>
+(2380, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Micha Yance <Trade Goods>
 (2381, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Christoph Jeffcoat <Tradesman>
 (2393, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Mallen Swain <Tailoring Supplies>
 (2394, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Bro'kin <Alchemy Supplies>
+(2480, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Bliztik <Alchemy Supplies>
+(2481, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Drovnar Strongbrew <Alchemy Supplies>
+(2812, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Glyx Brewright <Alchemy Supplies>
+(2848, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Danielle Zipstitch <Tailoring Supplies>
 (2668, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Sheri Zipstitch <Tailoring Supplies>
@@ -120,6 +140,10 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3003, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
 -- Mahu <Leatherworking & Tailoring Supplies>
 (3005, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Mani Winterhoof <Alchemy Supplies>
+(3010, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Nida Winterhoof <Herbalism Supplies>
+(3014, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Nan Mistrunner <Fruit Vendor>
 (3017, 27856, 0, 0, 0, 0), -- Skethyl Berries
 (3017, 35948, 0, 0, 0, 0), -- Savory Snowplum
@@ -147,12 +171,16 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3342, 27856, 0, 0, 0, 0), -- Skethyl Berries
 (3342, 35948, 0, 0, 0, 0), -- Savory Snowplum
 (3342, 35949, 0, 0, 0, 0), -- Tundra Berries
+-- Kor'geld <Alchemy Supplies>
+(3348, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Magenius <Reagents>
 (3351, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Borya <Tailoring Supplies>
 (3364, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Tamar <Leatherworking Supplies>
 (3366, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Zeal'aya <Herbalism Supplies>
+(3405, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Sovik <Engineering Supplies>
 (3413, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Tari'qa <Trade Supplies>
@@ -173,6 +201,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3518, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
 -- Jaysin Lanyda <Poisons & Reagents>
 (3542, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Selina Weston <Alchemy & Herbalism Supplies>
+(3548, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Andrew Hilbert <Trade Supplies>
 (3556, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Alaindia <Reagents>
@@ -182,6 +212,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3614, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Jadenvis Seawatcher <Reagents>
 (3700, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Harklan Moongrove <Alchemy Supplies>
+(3956, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Lardan <Leatherworking Supplies>
 (3958, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Llana <Reagent Supplies>
@@ -199,10 +231,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4189, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Ullanna <Trade Supplies>
 (4194, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Chardryn <Herbalism Supplies>
+(4216, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Cyroen <Reagents>
 (4220, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Saenorion <Leatherworking Supplies>
 (4225, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Ulthir <Alchemy Supplies>
+(4226, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Wizzle Brassbolts
 (4453, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Tawny Grisette <Mushroom Vendor>
@@ -227,10 +263,16 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4587, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Joseph Moore <Leatherworking Supplies>
 (4589, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Algernon <Alchemy Supplies>
+(4610, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Katrina Alliestar <Herbalism Supplies>
+(4615, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Jandia <Trade Supplies>
 (4877, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Montarr <Lorekeeper>
 (4878, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Uma Bartulm <Herbalism & Alchemy Supplies>
+(4899, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Ben Trias <Apprentice of Cheese>
 (4981, 27857, 0, 0, 0, 0), -- Garadar Sharp
 (4981, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
@@ -254,16 +296,24 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5111, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Bombus Finespindle <Leatherworking Supplies>
 (5128, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Gwina Stonebranch <Herbalism Supplies>
+(5138, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Ginny Longberry <Reagents>
 (5151, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Poranna Snowbraid <Tailoring Supplies>
 (5154, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Gearcutter Cogspinner <Engineering Supplies>
 (5175, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Soolie Berryfizz <Alchemy Supplies>
+(5178, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Eldraeith <Herbalism Supplies>
+(5503, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Billibub Cogspinner <Engineering Supplies>
 (5519, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Jillian Tanner <Leatherworking Supplies>
 (5565, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Alchemist Pestlezugg <Alchemy Supplies>
+(5594, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Kalldan Felmoon <Specialist Leatherworking Supplies>
 (5783, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Shimra <Trade Supplies>
@@ -339,8 +389,18 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (7978, 35949, 0, 0, 0, 0), -- Tundra Berries
 -- Sheendra Tallgrass <Trade Supplies>
 (8145, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Logannas <Alchemy Supplies>
+(8157, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Bronk <Alchemy Supplies>
+(8158, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Nioma <Leatherworking Supplies>
 (8160, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Rartar <Alchemy Supplies>
+(8177, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Nina Lightbrew <Alchemy Supplies>
+(8178, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Kixxle <Potions & Herbs>
+(8305, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Chepi <Reagents>
 (8361, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Outfitter Eric <Speciality Tailoring Supplies>
@@ -358,6 +418,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (9636, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Xizzer Fizzbolt <Engineering Supplies>
 (11185, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Evie Whirlbrew <Alchemy Supplies>
+(11188, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Meilosh
 (11557, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Masat T'andr <Superior Leatherworker>
@@ -396,6 +458,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16262, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Sempstress Ambershine <Tailoring Trainer>
 (16366, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+(16367, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Apothecary Antonivich <Master Alchemy Trainer>
 (16588, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Floyd Pinkus <Innkeeper>
@@ -404,18 +468,24 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16611, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Velanni <Alchemy Supplies & Reagents>
 (16612, 37201, 0, 0, 0, 0), -- Corpse Dust
+(16612, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Innkeeper Velandra <Innkeeper>
 (16618, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (16618, 33445, 0, 0, 0, 0), -- Honeymint Tea
 (16618, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Deynna <Tailoring Supplies>
 (16638, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Melaris <Alchemy Supplies>
+(16641, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Feera <Engineering Supplies>
 (16657, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Zaralda <Leatherworking Supplies>
 (16689, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Altaa <Alchemy Supplies>
+(16705, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Musal <Alchemy Supplies & Reagents>
 (16706, 37201, 0, 0, 0, 0), -- Corpse Dust
+(16706, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Caregiver Breel <Innkeeper>
 (16739, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (16739, 33445, 0, 0, 0, 0), -- Honeymint Tea
@@ -430,10 +500,11 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16767, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Yatheon <Engineering Supplies>
 (16782, 10648, 0, 0, 0, 0), -- Common Parchment
--- Magus Zabraxis <Reagents>
-(16829, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Sid Limbardi <Innkeeper>
 (16826, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Magus Zabraxis <Reagents>
+(16829, 37201, 0, 0, 0, 0), -- Corpse Dust
+(16829, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Artificer Daelo <Engineering Trainer>
 (17222, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Clopper Wizbang <Explorers' League>
@@ -452,6 +523,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (17630, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
 (17630, 35952, 0, 0, 0, 0), -- Briny Hardcheese
 (17630, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+-- Haalrun <Alchemy Supplies>
+(18005, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Noraani <Reagent Merchant>
 (18006, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Gambarinka <Tradesman>
@@ -504,6 +577,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (19017, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Leeli Longhaggle <Trade Goods>
 (19042, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Skreah <Alchemy Supplies>
+(19074, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Ernie Packwell <Trade Goods>
 (19194, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Cro Threadstrong <Leatherworking Supplies>
@@ -553,6 +628,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (19718, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Muheru the Weaver <Tailoring Supplies>
 (19722, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Daga Ramba <Potions>
+(19837, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Galgrom <Provisioner>
 (20080, 27857, 0, 0, 0, 0), -- Garadar Sharp
 (20080, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
@@ -574,6 +651,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (20915, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Xerintha Ravenoak <Food & Drink>
 (20916, 27857, 0, 0, 0, 0), -- Garadar Sharp
+-- Dealer Sadaqat <Potent Potables>
+(20989, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Erool <Trade Goods>
 (21083, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Ragar <Leatherworking Supplies>

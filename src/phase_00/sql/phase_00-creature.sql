@@ -138,10 +138,19 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33619, -- Cooking
     33621, -- First Aid
     33623, -- Fishing
+    33630, -- Aelthin <Master Alchemy Trainer>
+    33639, -- Botanist Alaenra <Master Herbalism Trainer>
     32666, -- Expert's Training Dummy
     32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
+    33674, -- Alchemist Kanhu <Master Alchemy Trainer>
+    33675, -- Onodo <Master Blacksmithing Trainer>
+    33677, -- Technician Mihila <Master Engineering Trainer>
+    33678, -- Jijia <Master Herbalism Trainer>
     33679, -- Recorder Lidio <Master Inscription Trainer>
+    33681, -- Korim <Master Leatherworking Trainer>
+    33683, -- Dremm <Master Skinning Trainer>
+    33684, -- Weaver Aoa <Master Tailoring Trainer>
     34986, -- Liedel the Just <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
