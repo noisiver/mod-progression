@@ -66,6 +66,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     21906, -- Kelara <Keeper of Sha'tari Heirlooms>
     22836, -- Jheel
     22987, -- Skyguard Nether Ray
+    23127, -- Farseer Javad <Shaman Trainer>
     23449, -- Yuula <Recruitment Officer>
     23559, -- Budd Nedreck
     23560, -- Provisioner Ameenah <Reagents>
@@ -166,6 +167,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     34999, -- Jonru <Battlemaster>
     35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>

@@ -71,6 +71,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     34999, -- Jonru <Battlemaster>
     35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>

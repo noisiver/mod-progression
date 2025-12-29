@@ -8,14 +8,10 @@ Stranglethorn Vale
 Swamp of Sorrows
 Blasted Lands
 Deadwind Pass
-Stormwind City: Trade District
-Storwmind City: Old Town
-Stormwind City: Dwarven District
-Stormwind City: Cathedral Square
-Stormwind City: Mage Quarter
-Stormwind City: The Park
+Stormwind City
 Burning Steppes
 Searing Gorge
 Badlands
 Loch Modan
 Dun Morogh
+Ironforge

@@ -24,6 +24,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20407, -- Farseer Umbrua <Shaman Trainer>
     21045, -- Hired Bodyguard <The Black Flame>
     21448, -- Gadgetzan Sniper
+    23127, -- Farseer Javad <Shaman Trainer>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     27705, -- Lorrin Foxfire <Portal Trainer>
