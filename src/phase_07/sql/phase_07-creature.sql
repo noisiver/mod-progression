@@ -10,6 +10,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17109, -- Cersei Dusksinger
     17103, -- Emissary Taluun
     17127, -- Anchorite Avuun
+    17218, -- Huraan
     17238, -- Anchorite Truuen
     17249, -- Landro Longshot <The Black Flame>
     17531, -- Draenei Protector
