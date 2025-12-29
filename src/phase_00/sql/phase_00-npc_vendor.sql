@@ -780,3 +780,100 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     43231, -- Instant Poison IX
     43233 -- Deadly Poison IX
 );
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    844, -- Antonio Perelli <Traveling Salesman>
+    958, -- Dawn Brightstar <Arcane Goods>
+    983, -- Thultazor <Alchemy Supplies & Reagents>
+    989, -- Banalash <Trade Supplies>
+    1148, -- Nerrist <Trade Goods>
+    1257, -- Keldric Boucher <Alchemy Supplies & Reagents>
+    1286, -- Edna Mullby <Trade Supplies>
+    1313, -- Maria Lumere <Alchemy Supplies>
+    1453, -- Dewin Shimmerdawn <Alchemy Supplies>
+    2380, -- Nandar Branson <Alchemy Supplies>
+    2480, -- Bro'kin <Alchemy Supplies>
+    2481, -- Bliztik <Alchemy Supplies>
+    2810, -- Hammon Karwn <Superior Tradesman>
+    2812, -- Drovnar Strongbrew <Alchemy Supplies>
+    2821, -- Keena <Trade Goods>
+    2848, -- Glyx Brewright <Alchemy Supplies>
+    3010, -- Mani Winterhoof <Alchemy Supplies>
+    3014, -- Nida Winterhoof <Herbalism Supplies>
+    3348, -- Kor'geld <Alchemy Supplies>
+    3367, -- Felika <Trade Supplies>
+    3405, -- Zeal'aya <Herbalism Supplies>
+    3548, -- Selina Weston <Alchemy & Herbalism Supplies>
+    3779, -- Syurana <Trade Supplies>
+    3954, -- Dalria <Trade Goods>
+    3955, -- Shandrina <Trade Goods>
+    3956, -- Harklan Moongrove <Alchemy Supplies>
+    4216, -- Chardryn <Herbalism Supplies>
+    4226, -- Ulthir <Alchemy Supplies>
+    4229, -- Mythrin'dir <Trade Supplies>
+    4561, -- Daniel Bartlett <Trade Supplies>
+    4610, -- Algernon <Alchemy Supplies>
+    4615, -- Katrina Alliestar <Herbalism Supplies>
+    4775, -- Felicia Doan <Trade Supplies>
+    4897, -- Helenia Olden <Trade Supplies>
+    4899, -- Uma Bartulm <Herbalism & Alchemy Supplies>
+    5138, -- Gwina Stonebranch <Herbalism Supplies>
+    5163, -- Burbik Gearspanner <Trade Supplies>
+    5178, -- Soolie Berryfizz <Alchemy Supplies>
+    5503, -- Eldraeith <Herbalism Supplies>
+    5594, -- Alchemist Pestlezugg <Alchemy Supplies>
+    5817, -- Shimra <Trade Supplies>
+    6301, -- Gorbold Steelhand <Trade Supplies>
+    7947, -- Vivianna <Trade Supplies>
+    8145, -- Sheendra Tallgrass <Trade Supplies>
+    8157, -- Logannas <Alchemy Supplies>
+    8158, -- Bronk <Alchemy Supplies>
+    8177, -- Rartar <Alchemy Supplies>
+    8178, -- Nina Lightbrew <Alchemy Supplies>
+    8305, -- Kixxle <Potions & Herbs>
+    8363, -- Shadi Mistrunner <Trade Supplies>
+    11188, -- Evie Whirlbrew <Alchemy Supplies>
+    11189, -- Qia <Trade Supplies>
+    12022, -- Lorelae Wintersong <Trade Supplies>
+    12028, -- Lah'Mawhani <Trade Supplies>
+    12941, -- Jase Farlane <Trade Supplies>
+    12957, -- Blimo Gadgetspring <Trade Supplies>
+    12958, -- Gigget Zipcoil <Trade Supplies>
+    15179 -- Mishta <Trade Supplies>
+)AND `item` = 18256; -- Imbued Vial
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    734, -- Corporal Bluth <Camp Trader>
+    1149, -- Uthok <General Supplies>
+    1285, -- Thurman Mullby <General Goods>
+    2084, -- Natheril Raincaller <General Goods>
+    2401, -- Kayren Soothallow <General Goods>
+    2685, -- Mazk Snipeshot <Engineering Supplies>
+    2803, -- Malygen <General Goods>
+    2806, -- Bale <General Goods>
+    2808, -- Vikki Lonsav <General Goods>
+    2820, -- Graud <General Goods>
+    2908, -- Grawl <General Goods>
+    3313, -- Trak'gen <General Goods>
+    3322, -- Kaja <Guns & Ammunition>
+    3350, -- Asoran <General Goods>
+    3541, -- Sarah Raycroft <General Goods>
+    4170, -- Ellandrieth <General Goods>
+    4241, -- Mydrannul <General Goods>
+    4555, -- Eleanor Rusk <General Goods>
+    4896, -- Charity Mipsy <General Goods>
+    5101, -- Bryllia Ironbrand <General Goods>
+    6028, -- Burkrum <Heavy Armor Merchant>
+    7942, -- Faralorn <General Supplies>
+    8131, -- Blizrik Buckshot <Gunsmith>
+    8139, -- Jabbey <General Goods>
+    8362, -- Kuruk <General Goods>
+    9548, -- Cawind Trueaim <Gunsmith & Bowyer>
+    11038, -- Caretaker Alen <The Argent Dawn>
+    11184, -- Wixxrak <Weaponsmith & Gunsmith>
+    11555, -- Gorn One Eye
+    12021, -- Daeolyn Summerleaf <General Goods>
+    12027, -- Tukk <General Goods>
+    12959, -- Nergal <General Goods>
+    12960, -- Christi Galvanis <General Goods>
+    14624, -- Master Smith Burninate <The Thorium Brotherhood>
+    15174 -- Calandrath <Innkeeper>
+) AND `item` = 28060; -- Impact Shot
