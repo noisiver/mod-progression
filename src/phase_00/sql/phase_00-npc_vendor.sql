@@ -917,6 +917,82 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     32828, -- Ogri'la Tabard
     35221 -- Tabard of the Shattered Sun
 );
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    1448, -- Neal Allen <Engineering Supplies & General Goods>
+    1694, -- Loslor Rudge <Engineering Supplies>
+    2682, -- Fradd Swiftgear <Engineering Supplies>
+    2683, -- Namdo Bizzfizzle <Engineering Supplies>
+    2684, -- Rizz Loosebolt <Engineering Supplies>
+    2685, -- Mazk Snipeshot <Engineering Supplies>
+    2687, -- Gnaz Blunderflame <Engineering Supplies>
+    2688, -- Ruppo Zipcoil <Engineering Supplies>
+    3133, -- Herble Baubbletump <Engineering & Mining Supplies>
+    3413, -- Sovik <Engineering Supplies>
+    3495, -- Gagsprocket <Engineering Supplies>
+    4453, -- Wizzle Brassbolts
+    4587, -- Elizabeth Van Talen <Engineering Supplies>
+    5175, -- Gearcutter Cogspinner <Engineering Supplies>
+    5519, -- Billibub Cogspinner <Engineering Supplies>
+    6730, -- Jinky Twizzlefixxit <Engineering Supplies>
+    6777, -- Zan Shivsproket <Speciality Engineer>
+    8678, -- Jubie Gadgetspring <Engineering Supplies>
+    8679, -- Knaz Blunderflame <Engineering Supplies>
+    9544, -- Yuka Screwspigot
+    11185, -- Xizzer Fizzbolt <Engineering Supplies>
+    14637, -- Zorbin Fandazzle
+    16657, -- Feera <Engineering Supplies>
+    16782, -- Yatheon <Engineering Supplies>
+    17222, -- Artificer Daelo <Engineering Trainer>
+    17421, -- Clopper Wizbang <Explorers' League>
+    18278, -- Pilot Marsha <Engineering Supplies>
+    18484, -- Wind Trader Lathrai
+    18752, -- Zebig <Master Engineering Trainer>
+    18775, -- Lebowski <Master Engineering Trainer>
+    19383, -- Captured Gnome <Item Repair>
+    20890, -- Siflaed Coldhammer <Tinker>
+    27711 -- Technician Halmaha <Engineering Supplies>
+) AND `item` IN (
+    39684, -- Hair Trigger
+    40533 -- Walnut Stock
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    1448, -- Neal Allen <Engineering Supplies & General Goods>
+    1694, -- Loslor Rudge <Engineering Supplies>
+    2682, -- Fradd Swiftgear <Engineering Supplies>
+    2683, -- Namdo Bizzfizzle <Engineering Supplies>
+    2684, -- Rizz Loosebolt <Engineering Supplies>
+    2685, -- Mazk Snipeshot <Engineering Supplies>
+    2687, -- Gnaz Blunderflame <Engineering Supplies>
+    2688, -- Ruppo Zipcoil <Engineering Supplies>
+    3133, -- Herble Baubbletump <Engineering & Mining Supplies>
+    3413, -- Sovik <Engineering Supplies>
+    3495, -- Gagsprocket <Engineering Supplies>
+    4453, -- Wizzle Brassbolts
+    4587, -- Elizabeth Van Talen <Engineering Supplies>
+    5175, -- Gearcutter Cogspinner <Engineering Supplies>
+    5519, -- Billibub Cogspinner <Engineering Supplies>
+    6730, -- Jinky Twizzlefixxit <Engineering Supplies>
+    6777, -- Zan Shivsproket <Speciality Engineer>
+    8678, -- Jubie Gadgetspring <Engineering Supplies>
+    8679, -- Knaz Blunderflame <Engineering Supplies>
+    9544, -- Yuka Screwspigot
+    11185, -- Xizzer Fizzbolt <Engineering Supplies>
+    14637, -- Zorbin Fandazzle
+    16657, -- Feera <Engineering Supplies>
+    16782, -- Yatheon <Engineering Supplies>
+    17222, -- Artificer Daelo <Engineering Trainer>
+    17421, -- Clopper Wizbang <Explorers' League>
+    18278, -- Pilot Marsha <Engineering Supplies>
+    18484, -- Wind Trader Lathrai
+    18752, -- Zebig <Master Engineering Trainer>
+    18775, -- Lebowski <Master Engineering Trainer>
+    19383, -- Captured Gnome <Item Repair>
+    20890, -- Siflaed Coldhammer <Tinker>
+    27711 -- Technician Halmaha <Engineering Supplies>
+) AND `item` IN (
+    39684, -- Hair Trigger
+    40533 -- Walnut Stock
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>

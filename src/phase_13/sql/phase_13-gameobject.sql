@@ -22,6 +22,7 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     195604, -- Mailbox
     195605, -- Mailbox
     195606, -- Mailbox
+    195607, -- Mailbox
     195608, -- Mailbox
     195609, -- Mailbox
     195610, -- Mailbox

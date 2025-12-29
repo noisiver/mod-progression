@@ -21,6 +21,7 @@ DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` IN (15196, 15198);
 DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` IN (19032, 19506, 23999, 31774);
 DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5188, 5189, 5190, 5191, 5193, 16610, 16766) AND `item` IN (31775, 31776, 31777, 31778, 31779, 31780, 31781, 31804, 32445, 32828, 35221);
+DELETE FROM `npc_vendor` WHERE `entry` IN (1448, 1694, 2682, 2683, 2684, 2685, 2687, 2688, 3133, 3413, 3495, 4453, 4587, 5175, 5519, 6730, 6777, 8678, 8679, 9544, 11185, 14637, 16657, 16782, 17222, 17421, 18278, 18484, 18752, 18775, 19383, 20890, 27711) AND `item` IN (39684, 40533);
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -81,6 +82,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (1351, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Neal Allen <Engineering Supplies & General Goods>
 (1448, 10648, 0, 0, 0, 0), -- Common Parchment
+(1448, 39684, 0, 0, 0, 0), -- Hair Trigger
+(1448, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Dewin Shimmerdawn <Alchemy Supplies>
 (1453, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
@@ -110,6 +113,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (1692, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Loslor Rudge <Engineering Supplies>
 (1694, 10648, 0, 0, 0, 0), -- Common Parchment
+(1694, 39684, 0, 0, 0, 0), -- Hair Trigger
+(1694, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Abigail Shiel <Trade Supplies>
 (2118, 10648, 0, 0, 0, 0), -- Common Parchment
 (2118, 39354, 0, 0, 0, 0), -- Light Parchment
@@ -143,16 +148,28 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (2672, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Fradd Swiftgear <Engineering Supplies>
 (2682, 10648, 0, 0, 0, 0), -- Common Parchment
+(2682, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2682, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Namdo Bizzfizzle <Engineering Supplies>
 (2683, 10648, 0, 0, 0, 0), -- Common Parchment
+(2683, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2683, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Rizz Loosebolt <Engineering Supplies>
 (2684, 10648, 0, 0, 0, 0), -- Common Parchment
+(2684, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2684, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Mazk Snipeshot <Engineering Supplies>
 (2685, 10648, 0, 0, 0, 0), -- Common Parchment
+(2685, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2685, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Gnaz Blunderflame <Engineering Supplies>
 (2687, 10648, 0, 0, 0, 0), -- Common Parchment
+(2687, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2687, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Ruppo Zipcoil <Engineering Supplies>
 (2688, 10648, 0, 0, 0, 0), -- Common Parchment
+(2688, 39684, 0, 0, 0, 0), -- Hair Trigger
+(2688, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Clyde Ranthal <Leatherworking Supplies>
 (2697, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- George Candarte <Leatherworking Supplies>
@@ -202,6 +219,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3096, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Herble Baubbletump <Engineering & Mining Supplies>
 (3133, 10648, 0, 0, 0, 0), -- Common Parchment
+(3133, 39684, 0, 0, 0, 0), -- Hair Trigger
+(3133, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Malissa <Poison Supplies>
 (3135, 43230, 0, 0, 0, 0), -- Instant Poison VIII
 (3135, 43231, 0, 0, 0, 0), -- Instant Poison IX
@@ -244,6 +263,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3405, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Sovik <Engineering Supplies>
 (3413, 10648, 0, 0, 0, 0), -- Common Parchment
+(3413, 39684, 0, 0, 0, 0), -- Hair Trigger
+(3413, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Tari'qa <Trade Supplies>
 (3482, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Wrahk <Tailoring Supplies>
@@ -259,6 +280,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3490, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Gagsprocket <Engineering Supplies>
 (3495, 10648, 0, 0, 0, 0), -- Common Parchment
+(3495, 39684, 0, 0, 0, 0), -- Hair Trigger
+(3495, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Ranik <Trade Supplies>
 (3499, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Tarhus <Reagents>
@@ -340,6 +363,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4226, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Wizzle Brassbolts
 (4453, 10648, 0, 0, 0, 0), -- Common Parchment
+(4453, 39684, 0, 0, 0, 0), -- Hair Trigger
+(4453, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Tawny Grisette <Mushroom Vendor>
 (4554, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (4554, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
@@ -368,6 +393,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4585, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Elizabeth Van Talen <Engineering Supplies>
 (4587, 10648, 0, 0, 0, 0), -- Common Parchment
+(4587, 39684, 0, 0, 0, 0), -- Hair Trigger
+(4587, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Joseph Moore <Leatherworking Supplies>
 (4589, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Algernon <Alchemy Supplies>
@@ -437,6 +464,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5169, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Gearcutter Cogspinner <Engineering Supplies>
 (5175, 10648, 0, 0, 0, 0), -- Common Parchment
+(5175, 39684, 0, 0, 0, 0), -- Hair Trigger
+(5175, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Soolie Berryfizz <Alchemy Supplies>
 (5178, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Garyl <Tabard Vendor>
@@ -515,6 +544,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5503, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Billibub Cogspinner <Engineering Supplies>
 (5519, 10648, 0, 0, 0, 0), -- Common Parchment
+(5519, 39684, 0, 0, 0, 0), -- Hair Trigger
+(5519, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Jillian Tanner <Leatherworking Supplies>
 (5565, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Alchemist Pestlezugg <Alchemy Supplies>
@@ -538,6 +569,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6576, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Jinky Twizzlefixxit <Engineering Supplies>
 (6730, 10648, 0, 0, 0, 0), -- Common Parchment
+(6730, 39684, 0, 0, 0, 0), -- Hair Trigger
+(6730, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Harlown Darkweave <Leatherworking Supplies>
 (6731, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Innkeeper Saelienne <Innkeeper>
@@ -575,6 +608,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6746, 27857, 0, 0, 0, 0), -- Garadar Sharp
 -- Zan Shivsproket <Speciality Engineer>
 (6777, 10648, 0, 0, 0, 0), -- Common Parchment
+(6777, 39684, 0, 0, 0, 0), -- Hair Trigger
+(6777, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Smudge Thunderwood <Poison Supplies>
 (6779, 43230, 0, 0, 0, 0), -- Instant Poison VIII
 (6779, 43231, 0, 0, 0, 0), -- Instant Poison IX
@@ -620,17 +655,25 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (8681, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Jubie Gadgetspring <Engineering Supplies>
 (8678, 10648, 0, 0, 0, 0), -- Common Parchment
+(8678, 39684, 0, 0, 0, 0), -- Hair Trigger
+(8678, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Knaz Blunderflame <Engineering Supplies>
 (8679, 10648, 0, 0, 0, 0), -- Common Parchment
+(8679, 39684, 0, 0, 0, 0), -- Hair Trigger
+(8679, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Christopher Hewen <Trade Supplies>
 (8934, 10648, 0, 0, 0, 0), -- Common Parchment
 (8934, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Yuka Screwspigot
 (9544, 10648, 0, 0, 0, 0), -- Common Parchment
+(9544, 39684, 0, 0, 0, 0), -- Hair Trigger
+(9544, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Kireena <Trade Goods>
 (9636, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Xizzer Fizzbolt <Engineering Supplies>
 (11185, 10648, 0, 0, 0, 0), -- Common Parchment
+(11185, 39684, 0, 0, 0, 0), -- Hair Trigger
+(11185, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Evie Whirlbrew <Alchemy Supplies>
 (11188, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Meilosh
@@ -653,6 +696,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (13476, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Zorbin Fandazzle
 (14637, 10648, 0, 0, 0, 0), -- Common Parchment
+(14637, 39684, 0, 0, 0, 0), -- Hair Trigger
+(14637, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Mystic Yayo'jin <Reagents>
 (14739, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Haughty Modiste <Fashion Designer>
@@ -719,6 +764,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16641, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Feera <Engineering Supplies>
 (16657, 10648, 0, 0, 0, 0), -- Common Parchment
+(16657, 39684, 0, 0, 0, 0), -- Hair Trigger
+(16657, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Darlia <Poison Supplies>
 (16683, 43230, 0, 0, 0, 0), -- Instant Poison VIII
 (16683, 43231, 0, 0, 0, 0), -- Instant Poison IX
@@ -766,6 +813,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16767, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Yatheon <Engineering Supplies>
 (16782, 10648, 0, 0, 0, 0), -- Common Parchment
+(16782, 39684, 0, 0, 0, 0), -- Hair Trigger
+(16782, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Sid Limbardi <Innkeeper>
 (16826, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Magus Zabraxis <Reagents>
@@ -773,8 +822,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16829, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Artificer Daelo <Engineering Trainer>
 (17222, 10648, 0, 0, 0, 0), -- Common Parchment
+(17222, 39684, 0, 0, 0, 0), -- Hair Trigger
+(17222, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Clopper Wizbang <Explorers' League>
 (17421, 10648, 0, 0, 0, 0), -- Common Parchment
+(17421, 39684, 0, 0, 0, 0), -- Hair Trigger
+(17421, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Ergh of the Stillpine <Trade Supplies>
 (17490, 10648, 0, 0, 0, 0), -- Common Parchment
 (17490, 39354, 0, 0, 0, 0), -- Light Parchment
@@ -812,16 +865,22 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (18277, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Pilot Marsha <Engineering Supplies>
 (18278, 10648, 0, 0, 0, 0), -- Common Parchment
+(18278, 39684, 0, 0, 0, 0), -- Hair Trigger
+(18278, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Terellia <Trade Supplies>
 (18426, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Fazu <Tradesman>
 (18427, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Wind Trader Lathrai
 (18484, 10648, 0, 0, 0, 0), -- Common Parchment
+(18484, 39684, 0, 0, 0, 0), -- Hair Trigger
+(18484, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Dalinna <Master Tailoring Trainer>
 (18749, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Zebig <Master Engineering Trainer>
 (18752, 10648, 0, 0, 0, 0), -- Common Parchment
+(18752, 39684, 0, 0, 0, 0), -- Hair Trigger
+(18752, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Barim Spilthoof <Master Leatherworking Trainer>
 (18754, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Brumman <Master Leatherworking Trainer>
@@ -830,6 +889,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (18772, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Lebowski <Master Engineering Trainer>
 (18775, 10648, 0, 0, 0, 0), -- Common Parchment
+(18775, 39684, 0, 0, 0, 0), -- Hair Trigger
+(18775, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Alchemist Gribble <Master Alchemy Trainer>
 (18802, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Lursa Sunfallow <Reagents>
@@ -874,6 +935,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (19372, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Captured Gnome <Item Repair>
 (19383, 10648, 0, 0, 0, 0), -- Common Parchment
+(19383, 39684, 0, 0, 0, 0), -- Hair Trigger
+(19383, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Pol Snowhoof <Trade Goods>
 (19450, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Caoileann <Trade Goods>
@@ -926,6 +989,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (20250, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Siflaed Coldhammer <Tinker>
 (20890, 10648, 0, 0, 0, 0), -- Common Parchment
+(20890, 39684, 0, 0, 0, 0), -- Hair Trigger
+(20890, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Skraa <Trade Goods>
 (20891, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Noko Moonwhisper <Reagents>
@@ -978,16 +1043,18 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (23603, 27855, 0, 0, 0, 0), -- Mag'har Grainbread
 -- Agnes Farwithers <Cheese Vendor>
 (23604, 27857, 0, 0, 0, 0), -- Garadar Sharp
+-- Technician Halmaha <Engineering Supplies>
+(27711, 10648, 0, 0, 0, 0), -- Common Parchment
+(27711, 39684, 0, 0, 0, 0), -- Hair Trigger
+(27711, 40533, 0, 0, 0, 0), -- Walnut Stock
+-- Fester <Trade Goods>
+(29208, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Aelthin <Master Alchemy Trainer>
 (33630, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Enchantress Andiala <Master Enchanting Trainer>
 (33633, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Alchemist Kanhu <Master Alchemy Trainer>
 (33674, 37201, 0, 0, 0, 0), -- Corpse Dust
--- Technician Halmaha <Engineering Supplies>
-(27711, 10648, 0, 0, 0, 0), -- Common Parchment
--- Fester <Trade Goods>
-(29208, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Engineer Sinbei <Master Engineering Trainer>
 (33634, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Daenril <Master Leatherworking Trainer>
