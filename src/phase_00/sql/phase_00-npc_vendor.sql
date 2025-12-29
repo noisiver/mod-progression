@@ -877,3 +877,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     14624, -- Master Smith Burninate <The Thorium Brotherhood>
     15174 -- Calandrath <Innkeeper>
 ) AND `item` = 28060; -- Impact Shot
+DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Old Man Heming <Fishing Supplies>
+(2626, 16083, 0, 0, 0, 0); -- Expert Fishing - The Bass and You
