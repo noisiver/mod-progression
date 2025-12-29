@@ -1,6 +1,5 @@
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     6109, -- Azuregos
-    7826, -- Ambassador Ardalan
     14373, -- Sage Korolusk
     14374, -- Scholar Runethorn
     14387, -- Lothos Riftwaker

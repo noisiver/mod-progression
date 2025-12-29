@@ -1,5 +1,4 @@
 UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
-    7826, -- Ambassador Ardalan
     16287, -- Ambassador Sunsorrow
     16288, -- Advisor Sorrelon
     16840, -- Advisor Sevel
