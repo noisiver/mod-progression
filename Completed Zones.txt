@@ -18,3 +18,4 @@ Ironforge
 Wetlands
 Arathi Highlands
 Hillsbrad Foothills
+Silverpine Forest

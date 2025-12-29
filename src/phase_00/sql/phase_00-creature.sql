@@ -39,6 +39,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17613, -- Archmage Alturus
     17641, -- Sunhawk Ambusher
     17711, -- Doomwalker
+    18165, -- Archmage Cedric
     18253, -- Archmage Leryda
     18255, -- Apprentice Darius
     18594, -- Dathris Sunstriker

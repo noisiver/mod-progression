@@ -14,6 +14,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17238, -- Anchorite Truuen
     17249, -- Landro Longshot <The Black Flame>
     17531, -- Draenei Protector
+    18165, -- Archmage Cedric
     19859, -- Max Luna <Arena Battlemaster>
     19860, -- Katrina Turner
     19861, -- Bip Nigstrom <Arena Organizer>
