@@ -3,6 +3,8 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (958, 983, 1257, 1275, 1307, 1308, 135
 DELETE FROM `npc_vendor` WHERE `entry` IN (228, 734, 789, 1149, 1285, 1298, 1462, 2084, 2401, 2803, 2806, 2808, 2820, 2839, 2908, 3015, 3313, 3350, 3410, 3541, 4170, 4173, 4241, 4555, 4604, 4892, 4896, 5101, 5122, 6028, 7942, 8139, 8362, 9548, 9551, 9552, 9555, 11038, 11555, 12021, 12027, 12959, 12960, 14301, 14624, 15174, 17598, 20080) AND `item` = 28053;
 DELETE FROM `npc_vendor` WHERE `entry` IN (372, 790, 3002, 3133, 3167, 3358, 3392, 3578, 4256, 4599, 5514, 6298, 11186) AND `item` = 20815;
 DELETE FROM `npc_vendor` WHERE `entry` IN (372, 790, 3002, 3133, 3167, 3358, 3392, 3578, 4256, 4599, 5514, 6298, 11186) AND `item` = 20824;
+DELETE FROM `npc_vendor` WHERE `entry` IN (1325, 1326, 1457, 2622, 3090, 3135, 3334, 3490, 3542, 3551, 3561, 3969, 4585, 5169, 6779, 15175, 28347) AND `item` IN (22053, 22055, 21927, 21835, 22054);
+DELETE FROM `npc_vendor` WHERE `entry` = 789 AND `item` = 11285; -- Kimberly Hiett <Fletcher>, Jagged Arrow
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Avette Fellwood <Bowyer>
 (228, 28053, 0, 0, 0, 0), -- Wicked Arrow
@@ -22,6 +24,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Thultazor <Alchemy Supplies & Reagents>
 (983, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (983, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Kimberly Hiett <Fletcher>
+(789, 0, 11285, 0, 0, 0, 0), -- Jagged Arrow
 -- Uthok <General Supplies>
 (1149, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Keldric Boucher <Alchemy Supplies & Reagents>
@@ -40,9 +44,27 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Owen Vaughn <Reagents>
 (1308, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (1308, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Jasper Fel <Shady Dealer>
+(1325, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(1325, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(1325, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(1325, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(1325, 22055, 0, 0, 0, 0), -- Wound Poison V
+-- Sloan McCoy <Poison Supplies>
+(1326, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(1326, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(1326, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(1326, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(1326, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Brother Cassius <Reagents>
 (1351, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (1351, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Samor Festivus <Shady Dealer>
+(1457, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(1457, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(1457, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(1457, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(1457, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Falkan Armonis <Reagents>
 (1463, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (1463, 22148, 0, 0, 0, 0), -- Wild Quillvine
@@ -53,6 +75,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (2084, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Kayren Soothallow <General Goods>
 (2401, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Sly Garrett <Shady Goods>
+(2622, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(2622, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(2622, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(2622, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(2622, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Malygen <General Goods>
 (2803, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Deneb Walker <Reagents>
@@ -73,9 +101,21 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3002, 20824, 0, 0, 0, 0), -- Simple Grinder
 -- Kuna Thunderhorn <Bowyer & Fletching Goods>
 (3015, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Gerald Crawley <Poison Supplies>
+(3090, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3090, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3090, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3090, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3090, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Herble Baubbletump <Engineering & Mining Supplies>
 (3133, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (3133, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Malissa <Poison Supplies>
+(3135, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3135, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3135, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3135, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3135, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Wuark <Armorer & Shieldcrafter>
 (3167, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (3167, 20824, 0, 0, 0, 0), -- Simple Grinder
@@ -84,6 +124,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Horthus <Reagents>
 (3323, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (3323, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Rekkul <Poison Supplies>
+(3334, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3334, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3334, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3334, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3334, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Hagrus <Reagents>
 (3335, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (3335, 22148, 0, 0, 0, 0), -- Wild Quillvine
@@ -95,6 +141,36 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Gorina <Mining Supplies>
 (3358, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (3358, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Hula'mahi <Reagents, Herbs & Poison Supplies>
+(3490, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3490, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3490, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3490, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3490, 22055, 0, 0, 0, 0), -- Wound Poison V
+-- Jaysin Lanyda <Poisons & Reagents>
+(3542, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3542, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3542, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3542, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3542, 22055, 0, 0, 0, 0), -- Wound Poison V
+-- Patrice Dwyer <Poison Supplies>
+(3551, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3551, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3551, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3551, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3551, 22055, 0, 0, 0, 0), -- Wound Poison V
+-- Kyrai <Poison Supplies>
+(3561, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3561, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3561, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3561, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3561, 22055, 0, 0, 0, 0), -- Wound Poison V
+-- Fahran Silentblade <Tools & Supplies>
+(3969, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(3969, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(3969, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(3969, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(3969, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Dalaran Miner
 (3578, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (3578, 20824, 0, 0, 0, 0), -- Simple Grinder
@@ -146,6 +222,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Hannah Akeley <Reagents>
 (4575, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (4575, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Ezekiel Graves <Poison Supplies>
+(4585, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(4585, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(4585, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(4585, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(4585, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Sarah Killian <Mining Supplies>
 (4599, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (4599, 20824, 0, 0, 0, 0), -- Simple Grinder
@@ -168,6 +250,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Ginny Longberry <Reagents>
 (5151, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (5151, 22148, 0, 0, 0, 0), -- Wild Quillvine
+-- Tynnus Venomsprout <Shady Dealer>
+(5169, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(5169, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(5169, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(5169, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(5169, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Brooke Stonebraid <Mining Supplies>
 (5514, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (5514, 20824, 0, 0, 0, 0), -- Simple Grinder
@@ -176,6 +264,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Thelgrum Stonehammer <Mining Supplies>
 (6298, 20815, 0, 0, 0, 0), -- Jeweler's Kit
 (6298, 20824, 0, 0, 0, 0), -- Simple Grinder
+-- Smudge Thunderwood <Poison Supplies>
+(6779, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(6779, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(6779, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(6779, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(6779, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Faralorn <General Supplies>
 (7942, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Jabbey <General Goods>
@@ -223,10 +317,21 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Khur Hornstriker <Reagents>
 (15175, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (15175, 22148, 0, 0, 0, 0), -- Wild Quillvine
+(15175, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(15175, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(15175, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(15175, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(15175, 22055, 0, 0, 0, 0), -- Wound Poison V
 -- Vi'el <Exotic Reagent Merchant>
 (16015, 22147, 0, 0, 0, 0), -- Flintweed Seed
 (16015, 22148, 0, 0, 0, 0), -- Wild Quillvine
 -- Renn'az <Ammunition Vendor>
 (17598, 28053, 0, 0, 0, 0), -- Wicked Arrow
 -- Galgrom <Provisioner>
-(20080, 28053, 0, 0, 0, 0); -- Wicked Arrow
+(20080, 28053, 0, 0, 0, 0), -- Wicked Arrow
+-- Miles Sidney <Poison Supplies>
+(28347, 21835, 0, 0, 0, 0), -- Anesthetic Poison
+(28347, 21927, 0, 0, 0, 0), -- Instant Poison VII
+(28347, 22053, 0, 0, 0, 0), -- Deadly Poison VI
+(28347, 22054, 0, 0, 0, 0), -- Deadly Poison VII
+(28347, 22055, 0, 0, 0, 0), -- Wound Poison V

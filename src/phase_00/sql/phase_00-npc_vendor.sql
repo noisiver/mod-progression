@@ -716,3 +716,67 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     6298, -- Thelgrum Stonehammer <Mining Supplies>
     11186 -- Lunnix Sprocketslip <Mining Supplies>
 ) AND `item` = 20824; -- Simple Grinder
+DELETE FROM `npc_vendor` WHERE `entry` = 789 AND `item` = 11285; -- Kimberly Hiett <Fletcher>, Jagged Arrow
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    1325, -- Jasper Fel <Shady Dealer>
+    1326, -- Sloan McCoy <Poison Supplies>
+    1457, -- Samor Festivus <Shady Dealer>
+    2622, -- Sly Garrett <Shady Goods>
+    3090, -- Gerald Crawley <Poison Supplies>
+    3135, -- Malissa <Poison Supplies>
+    3334, -- Rekkul <Poison Supplies>
+    3490, -- Hula'mahi <Reagents, Herbs & Poison Supplies>
+    3542, -- Jaysin Lanyda <Poisons & Reagents>
+    3551, -- Patrice Dwyer <Poison Supplies>
+    3561, -- Kyrai <Poison Supplies>
+    3969, -- Fahran Silentblade <Tools & Supplies>
+    4585, -- Ezekiel Graves <Poison Supplies>
+    5169, -- Tynnus Venomsprout <Shady Dealer>
+    6779, -- Smudge Thunderwood <Poison Supplies>
+    15175, -- Khur Hornstriker <Reagents>
+    28347 -- Miles Sidney <Poison Supplies>
+) AND `item` IN (
+    22053, -- Deadly Poison VI
+    22055, -- Wound Poison V
+    21927, -- Instant Poison VII
+    21835, -- Anesthetic Poison
+    22054, -- Deadly Poison VII
+    43234, -- Wound Poison VI
+    43230, -- Instant Poison VIII
+    43232, -- Deadly Poison VIII
+    43237, -- Anesthetic Poison II
+    43235, -- Wound Poison VII
+    43231, -- Instant Poison IX
+    43233 -- Deadly Poison IX
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    1325, -- Jasper Fel <Shady Dealer>
+    1326, -- Sloan McCoy <Poison Supplies>
+    1457, -- Samor Festivus <Shady Dealer>
+    2622, -- Sly Garrett <Shady Goods>
+    3090, -- Gerald Crawley <Poison Supplies>
+    3135, -- Malissa <Poison Supplies>
+    3334, -- Rekkul <Poison Supplies>
+    3490, -- Hula'mahi <Reagents, Herbs & Poison Supplies>
+    3542, -- Jaysin Lanyda <Poisons & Reagents>
+    3551, -- Patrice Dwyer <Poison Supplies>
+    3561, -- Kyrai <Poison Supplies>
+    3969, -- Fahran Silentblade <Tools & Supplies>
+    4585, -- Ezekiel Graves <Poison Supplies>
+    5169, -- Tynnus Venomsprout <Shady Dealer>
+    6779, -- Smudge Thunderwood <Poison Supplies>
+    15175, -- Khur Hornstriker <Reagents>
+    16268, -- Eralan <Poison Supplies>
+    16683, -- Darlia <Poison Supplies>
+    18006, -- Noraani <Reagent Merchant>
+    20121, -- Fingin <Poison Supplies>
+    28347 -- Miles Sidney <Poison Supplies>
+) AND `item` IN (
+    43234, -- Wound Poison VI
+    43230, -- Instant Poison VIII
+    43232, -- Deadly Poison VIII
+    43237, -- Anesthetic Poison II
+    43235, -- Wound Poison VII
+    43231, -- Instant Poison IX
+    43233 -- Deadly Poison IX
+);

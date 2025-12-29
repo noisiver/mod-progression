@@ -16,6 +16,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630) AND `item` = 
 DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630) AND `item` = 35952;
 DELETE FROM `npc_vendor` WHERE `entry` IN (1347, 1454, 1474, 1672, 2394, 2668, 2669, 2670, 2672, 2697, 2698, 2699, 2816, 2819, 2846, 3005, 3091, 3096, 3364, 3366, 3485, 3958, 4168, 4189, 4225, 4577, 4589, 5128, 5154, 5565, 5783, 5944, 6567, 6568, 6574, 6576, 6731, 7852, 7854, 7940, 8160, 8681, 11557, 11874, 12942, 12943, 12956, 15165, 16366, 16638, 16689, 16748, 16767, 18277, 18749, 18754, 18771, 18772, 19196, 19213, 19521, 19532, 19722, 21085, 33635, 33636, 33681, 33684) AND `item` = 38426;
 DELETE FROM `npc_vendor` WHERE `entry` IN (844, 958, 983, 1257, 1313, 1453, 2380, 2480, 2481, 2812, 2848, 3010, 3014, 3348, 3405, 3548, 3956, 4216, 4226, 4610, 4615, 4899, 5138, 5178, 5503, 5594, 8157, 8158, 8177, 8178, 8305, 11188, 16367, 16612, 16641, 16705, 16706, 16829, 18005, 19074, 19837, 20989) AND `item` = 40411;
+DELETE FROM `npc_vendor` WHERE `entry` IN (1325, 1326, 1457, 2622, 3090, 3135, 3334, 3490, 3542, 3551, 3561, 3969, 4585, 5169, 6779, 15175, 16268, 16683, 18006, 20121, 28347) AND `item` IN (43234, 43230, 43232, 43237, 43235, 43231, 43233);
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -54,6 +55,22 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (1313, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Adair Gilroy <Librarian>
 (1316, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Jasper Fel <Shady Dealer>
+(1325, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(1325, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(1325, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(1325, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(1325, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(1325, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(1325, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
+-- Sloan McCoy <Poison Supplies>
+(1326, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(1326, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(1326, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(1326, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(1326, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(1326, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(1326, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Alexandra Bolero <Tailoring Supplies>
 (1347, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Brother Cassius <Reagents>
@@ -66,6 +83,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (1454, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Kersok Prond <Tradesman>
 (1456, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Samor Festivus <Shady Dealer>
+(1457, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(1457, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(1457, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(1457, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(1457, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(1457, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(1457, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Falkan Armonis <Reagents>
 (1463, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Drac Roughcut <Tradesman>
@@ -96,10 +121,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (2480, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Bliztik <Alchemy Supplies>
 (2481, 40411, 0, 0, 0, 0), -- Enchanted Vial
--- Drovnar Strongbrew <Alchemy Supplies>
-(2812, 40411, 0, 0, 0, 0), -- Enchanted Vial
--- Glyx Brewright <Alchemy Supplies>
-(2848, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Sly Garrett <Shady Goods>
+(2622, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(2622, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(2622, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(2622, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(2622, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(2622, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(2622, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Danielle Zipstitch <Tailoring Supplies>
 (2668, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Sheri Zipstitch <Tailoring Supplies>
@@ -128,12 +157,16 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (2699, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Deneb Walker <Reagents>
 (2805, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Drovnar Strongbrew <Alchemy Supplies>
+(2812, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Androd Fadran <Leatherworking Supplies>
 (2816, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Tunkk <Leatherworking Supplies>
 (2819, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Blixrez Goodstitch <Leatherworking Supplies>
 (2846, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Glyx Brewright <Alchemy Supplies>
+(2848, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Fyr Mistrunner <Bread Vendor>
 (3003, 27855, 0, 0, 0, 0), -- Mag'har Grainbread
 (3003, 33449, 0, 0, 0, 0), -- Crusty Flatbread
@@ -151,12 +184,28 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Wunna Darkmane <Trade Goods>
 (3081, 10648, 0, 0, 0, 0), -- Common Parchment
 (3081, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Gerald Crawley <Poison Supplies>
+(3090, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3090, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3090, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3090, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3090, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3090, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3090, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Franklin Hamar <Tailoring Supplies>
 (3091, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Captured Servant of Azora <Specialist Tailoring Supplies>
 (3096, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Herble Baubbletump <Engineering & Mining Supplies>
 (3133, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Malissa <Poison Supplies>
+(3135, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3135, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3135, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3135, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3135, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3135, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3135, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Flakk <Trade Supplies>
 (3168, 10648, 0, 0, 0, 0), -- Common Parchment
 (3168, 39354, 0, 0, 0, 0), -- Light Parchment
@@ -165,6 +214,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3187, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Horthus <Reagents>
 (3323, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Rekkul <Poison Supplies>
+(3334, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3334, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3334, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3334, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3334, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3334, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3334, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Hagrus <Reagents>
 (3335, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Shan'ti <Fruit Vendor>
@@ -189,6 +246,13 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3485, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Hula'mahi <Reagents, Herbs & Poison Supplies>
 (3490, 37201, 0, 0, 0, 0), -- Corpse Dust
+(3490, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3490, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3490, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3490, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3490, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3490, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3490, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Gagsprocket <Engineering Supplies>
 (3495, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Ranik <Trade Supplies>
@@ -201,10 +265,33 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3518, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
 -- Jaysin Lanyda <Poisons & Reagents>
 (3542, 37201, 0, 0, 0, 0), -- Corpse Dust
+(3542, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3542, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3542, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3542, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3542, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3542, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3542, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Selina Weston <Alchemy & Herbalism Supplies>
 (3548, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Patrice Dwyer <Poison Supplies>
+(3551, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3551, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3551, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3551, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3551, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3551, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3551, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Andrew Hilbert <Trade Supplies>
 (3556, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Kyrai <Poison Supplies>
+(3561, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3561, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3561, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3561, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3561, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3561, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3561, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Alaindia <Reagents>
 (3562, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Narret Shadowgrove <Trade Supplies>
@@ -216,6 +303,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3956, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Lardan <Leatherworking Supplies>
 (3958, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Fahran Silentblade <Tools & Supplies>
+(3969, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(3969, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(3969, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(3969, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(3969, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(3969, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(3969, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Llana <Reagent Supplies>
 (3970, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Jeeda <Apprentice Witch Doctor>
@@ -259,6 +354,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4577, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Salazar Bloch <Book Dealer>
 (4581, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Ezekiel Graves <Poison Supplies>
+(4585, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(4585, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(4585, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(4585, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(4585, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(4585, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(4585, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Elizabeth Van Talen <Engineering Supplies>
 (4587, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Joseph Moore <Leatherworking Supplies>
@@ -302,6 +405,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5151, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Poranna Snowbraid <Tailoring Supplies>
 (5154, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Tynnus Venomsprout <Shady Dealer>
+(5169, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(5169, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(5169, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(5169, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(5169, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(5169, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(5169, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Gearcutter Cogspinner <Engineering Supplies>
 (5175, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Soolie Berryfizz <Alchemy Supplies>
@@ -370,6 +481,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6746, 27857, 0, 0, 0, 0), -- Garadar Sharp
 -- Zan Shivsproket <Speciality Engineer>
 (6777, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Smudge Thunderwood <Poison Supplies>
+(6779, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(6779, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(6779, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(6779, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(6779, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(6779, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(6779, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Innkeeper Gryshka <Innkeeper>
 (6929, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (6929, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
@@ -446,6 +565,13 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (15165, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Khur Hornstriker <Reagents>
 (15175, 37201, 0, 0, 0, 0), -- Corpse Dust
+(15175, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(15175, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(15175, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(15175, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(15175, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(15175, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(15175, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Vi'el <Exotic Reagent Merchant>
 (16015, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Rathis Tomber <Trade Supplies>
@@ -456,6 +582,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Landraelanis <Tradesman>
 (16262, 10648, 0, 0, 0, 0), -- Common Parchment
 (16262, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Eralan <Poison Supplies>
+(16268, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(16268, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(16268, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(16268, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(16268, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(16268, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(16268, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Sempstress Ambershine <Tailoring Trainer>
 (16366, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Botanist Tyniarrel <Herbalism Trainer & Supplies>
@@ -479,6 +613,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16641, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Feera <Engineering Supplies>
 (16657, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Darlia <Poison Supplies>
+(16683, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(16683, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(16683, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(16683, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(16683, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(16683, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(16683, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Zaralda <Leatherworking Supplies>
 (16689, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Altaa <Alchemy Supplies>
@@ -527,6 +669,13 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (18005, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Noraani <Reagent Merchant>
 (18006, 37201, 0, 0, 0, 0), -- Corpse Dust
+(18006, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(18006, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(18006, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(18006, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(18006, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(18006, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(18006, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Gambarinka <Tradesman>
 (18015, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Seer Janidi <Reagents>
@@ -639,6 +788,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Dealer Hazzin <General Provisioner>
 (20092, 10648, 0, 0, 0, 0), -- Common Parchment
 (20092, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Fingin <Poison Supplies>
+(20121, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(20121, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(20121, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(20121, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(20121, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(20121, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(20121, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Dealer Dunar <General Provisioner>
 (20194, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Rashere Pridehoof <Trade Goods>
@@ -705,6 +862,14 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (33674, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Technician Halmaha <Engineering Supplies>
 (27711, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Miles Sidney <Poison Supplies>
+(28347, 43230, 0, 0, 0, 0), -- Instant Poison VIII
+(28347, 43231, 0, 0, 0, 0), -- Instant Poison IX
+(28347, 43232, 0, 0, 0, 0), -- Deadly Poison VIII
+(28347, 43233, 0, 0, 0, 0), -- Deadly Poison IX
+(28347, 43234, 0, 0, 0, 0), -- Wound Poison VI
+(28347, 43235, 0, 0, 0, 0), -- Wound Poison VII
+(28347, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Fester <Trade Goods>
 (29208, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Engineer Sinbei <Master Engineering Trainer>
