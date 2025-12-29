@@ -20,3 +20,4 @@ Arathi Highlands
 Hillsbrad Foothills
 Silverpine Forest
 Tirisfal Glades
+Undercity
