@@ -17,7 +17,10 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (483, 4981, 6746, 17630) AND `item` = 
 DELETE FROM `npc_vendor` WHERE `entry` IN (1347, 1454, 1474, 1672, 2394, 2668, 2669, 2670, 2672, 2697, 2698, 2699, 2816, 2819, 2846, 3005, 3091, 3096, 3364, 3366, 3485, 3958, 4168, 4189, 4225, 4577, 4589, 5128, 5154, 5565, 5783, 5944, 6567, 6568, 6574, 6576, 6731, 7852, 7854, 7940, 8160, 8681, 11557, 11874, 12942, 12943, 12956, 15165, 16366, 16638, 16689, 16748, 16767, 18277, 18749, 18754, 18771, 18772, 19196, 19213, 19521, 19532, 19722, 21085, 33635, 33636, 33681, 33684) AND `item` = 38426;
 DELETE FROM `npc_vendor` WHERE `entry` IN (844, 958, 983, 1257, 1313, 1453, 2380, 2480, 2481, 2812, 2848, 3010, 3014, 3348, 3405, 3548, 3956, 4216, 4226, 4610, 4615, 4899, 5138, 5178, 5503, 5594, 8157, 8158, 8177, 8178, 8305, 11188, 16367, 16612, 16641, 16705, 16706, 16829, 18005, 19074, 19837, 20989) AND `item` = 40411;
 DELETE FROM `npc_vendor` WHERE `entry` IN (1325, 1326, 1457, 2622, 3090, 3135, 3334, 3490, 3542, 3551, 3561, 3969, 4585, 5169, 6779, 15175, 16268, 16683, 18006, 20121, 28347) AND `item` IN (43234, 43230, 43232, 43237, 43235, 43231, 43233);
-DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083; -- Old Man Heming <Fishing Supplies>, Expert Fishing - The Bass and You
+DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
+DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` IN (15196, 15198);
+DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` IN (19032, 19506, 23999, 31774);
+DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5188, 5189, 5190, 5191, 5193, 16610, 16766) AND `item` IN (31775, 31776, 31777, 31778, 31779, 31780, 31781, 31804, 32445, 32828, 35221);
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -385,6 +388,24 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4981, 33445, 0, 0, 0, 0), -- Honeymint Tea
 (4981, 35952, 0, 0, 0, 0), -- Briny Hardcheese
 (4981, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+-- Lyesa Steelbrow <Tabard Vendor>
+(5049, 15196, 0, 0, 1007, 0), -- Private's Tabard
+(5049, 15198, 0, 0, 1006, 0), -- Knight's Colors
+(5049, 19032, 0, 0, 1003, 0), -- Stormpike Battle Tabard
+(5049, 19506, 0, 0, 2969, 0), -- Silverwing Battle Tabard
+(5049, 23999, 0, 0, 0, 0), -- Honor Hold Tabard
+(5049, 31774, 0, 0, 0, 0), -- Kurenai Tabard
+(5049, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5049, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5049, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5049, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5049, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5049, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5049, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5049, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5049, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5049, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5049, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Fillius Fizzlespinner <Trade Supplies>
 (5100, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Myra Tyrngaarde <Bread Vendor>
@@ -418,6 +439,78 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5175, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Soolie Berryfizz <Alchemy Supplies>
 (5178, 40411, 0, 0, 0, 0), -- Enchanted Vial
+-- Garyl <Tabard Vendor>
+(5188, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5188, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5188, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5188, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5188, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5188, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5188, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5188, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5188, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5188, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5188, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
+-- Thrumn <Tabard Vendor>
+(5189, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5189, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5189, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5189, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5189, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5189, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5189, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5189, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5189, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5189, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5189, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
+-- Merill Pleasance <Tabard Vendor>
+(5190, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5190, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5190, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5190, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5190, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5190, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5190, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5190, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5190, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5190, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5190, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
+-- Shalumon <Tabard Vendor>
+(5191, 15196, 0, 0, 1007, 0), -- Private's Tabard
+(5191, 15198, 0, 0, 1006, 0), -- Knight's Colors
+(5191, 19032, 0, 0, 1003, 0), -- Stormpike Battle Tabard
+(5191, 19506, 0, 0, 2969, 0), -- Silverwing Battle Tabard
+(5191, 23999, 0, 0, 0, 0), -- Honor Hold Tabard
+(5191, 31774, 0, 0, 0, 0), -- Kurenai Tabard
+(5191, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5191, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5191, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5191, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5191, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5191, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5191, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5191, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5191, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5191, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5191, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
+-- Rebecca Laughlin <Tabard Designer>
+(5193, 15196, 0, 0, 1007, 0), -- Private's Tabard
+(5193, 15198, 0, 0, 1006, 0), -- Knight's Colors
+(5193, 19032, 0, 0, 1003, 0), -- Stormpike Battle Tabard
+(5193, 19506, 0, 0, 2969, 0), -- Silverwing Battle Tabard
+(5193, 23999, 0, 0, 0, 0), -- Honor Hold Tabard
+(5193, 31774, 0, 0, 0, 0), -- Kurenai Tabard
+(5193, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(5193, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(5193, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(5193, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(5193, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(5193, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(5193, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(5193, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(5193, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(5193, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(5193, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Eldraeith <Herbalism Supplies>
 (5503, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Billibub Cogspinner <Engineering Supplies>
@@ -599,6 +692,18 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16588, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Floyd Pinkus <Innkeeper>
 (16602, 10648, 0, 0, 0, 0), -- Common Parchment
+-- Kredis <Tabard Vendor>
+(16610, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(16610, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(16610, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(16610, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(16610, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(16610, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(16610, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(16610, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(16610, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(16610, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(16610, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Zalle <Reagents>
 (16611, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Velanni <Alchemy Supplies & Reagents>
@@ -639,6 +744,24 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16748, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Bildine <Reagents>
 (16757, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Issca <Tabard Vendor>
+(16766, 15196, 0, 0, 1007, 0), -- Private's Tabard
+(16766, 15198, 0, 0, 1006, 0), -- Knight's Colors
+(16766, 19032, 0, 0, 1003, 0), -- Stormpike Battle Tabard
+(16766, 19506, 0, 0, 2969, 0), -- Silverwing Battle Tabard
+(16766, 23999, 0, 0, 0, 0), -- Honor Hold Tabard
+(16766, 31774, 0, 0, 0, 0), -- Kurenai Tabard
+(16766, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
+(16766, 31776, 0, 0, 0, 0), -- Consortium Tabard
+(16766, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
+(16766, 31778, 0, 0, 0, 0), -- Lower City Tabard
+(16766, 31779, 0, 0, 0, 0), -- Aldor Tabard
+(16766, 31780, 0, 0, 0, 0), -- Scryers Tabard
+(16766, 31781, 0, 0, 0, 0), -- Sha'tar Tabard
+(16766, 31804, 0, 0, 0, 0), -- Cenarion Expedition Tabard
+(16766, 32445, 0, 0, 0, 0), -- Skyguard Tabard
+(16766, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
+(16766, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Neii <Tailoring Supplies>
 (16767, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Yatheon <Engineering Supplies>

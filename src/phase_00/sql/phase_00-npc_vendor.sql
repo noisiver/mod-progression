@@ -877,6 +877,48 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     14624, -- Master Smith Burninate <The Thorium Brotherhood>
     15174 -- Calandrath <Innkeeper>
 ) AND `item` = 28060; -- Impact Shot
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    5049, -- Lyesa Steelbrow <Tabard Vendor>
+    5191, -- Shalumon <Tabard Vendor>
+    5193, -- Rebecca Laughlin <Tabard Designer>
+    16766 --  Issca <Tabard Vendor>
+) AND `item` IN (
+    15196, -- Private's Tabard
+    15198 -- Knight's Colors
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    5049, -- Lyesa Steelbrow <Tabard Vendor>
+    5191, -- Shalumon <Tabard Vendor>
+    5193, -- Rebecca Laughlin <Tabard Designer>
+    16766 -- Issca <Tabard Vendor>
+) AND `item` IN (
+    19032, -- Stormpike Battle Tabard
+    19506, -- Silverwing Battle Tabard
+    23999, -- Honor Hold Tabard
+    31774 -- Kurenai Tabard
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    5049, -- Lyesa Steelbrow <Tabard Vendor>
+    5188, -- Garyl <Tabard Vendor>
+    5189, -- Thrumn <Tabard Vendor>
+    5190, -- Merill Pleasance <Tabard Vendor>
+    5191, -- Shalumon <Tabard Vendor>
+    5193, -- Rebecca Laughlin <Tabard Designer>
+    16610, -- Kredis <Tabard Vendor>
+    16766 -- Issca <Tabard Vendor>
+) AND `item` IN (
+    31775, -- Sporeggar Tabard
+    31776, -- Consortium Tabard
+    31777, -- Keepers of Time Tabard
+    31778, -- Lower City Tabard
+    31779, -- Aldor Tabard
+    31780, -- Scryers Tabard
+    31781, -- Sha'tar Tabard
+    31804, -- Cenarion Expedition Tabard
+    32445, -- Skyguard Tabard
+    32828, -- Ogri'la Tabard
+    35221 -- Tabard of the Shattered Sun
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
