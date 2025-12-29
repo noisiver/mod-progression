@@ -6,20 +6,28 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     853, -- Coldridge Mountaineer
     866, -- Stonard Grunt
     931, -- Ariena Stormfeather <Gryphon Master>
+    1064, -- Grom'gol Grunt
+    1387, -- Thysta <Wind Rider Master>
     1571, -- Shellei Brondir <Gryphon Master>
     1572, -- Thorgrum Borrelson <Gryphon Master>
     1573, -- Gryth Thurden <Gryphon Master>
+    1642, -- Northshire Guard
     1736, -- Deathguard Randolph
     1739, -- Deathguard Phillip
     1741, -- Deathguard Bartrand
+    1976, -- Stormwind City Patroller
     2226, -- Karos Razok <Bat Handler>
     2299, -- Borgus Stoutarm <Gryphon Master>
     2389, -- Zarise <Bat Handler>
+    2409, -- Felicia Maline <Gryphon Master>
     2835, -- Cedrik Prose <Gryphon Master>
     2851, -- Urda <Wind Rider Master>
+    2858, -- Gringer <Wind Rider Master>
+    2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
     4551, -- Michael Garrett <Bat Handler>
@@ -27,26 +35,25 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     5624, -- Undercity Guardian
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
-    1064, -- Grom'gol Grunt
-    1387, -- Thysta <Wind Rider Master>
-    1642, -- Northshire Guard
-    1976, -- Stormwind City Patroller
-    2409, -- Felicia Maline <Gryphon Master>
-    2858, -- Gringer <Wind Rider Master>
-    2859, -- Gyll <Gryphon Master>
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     6026, -- Breyk <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
+    7865, -- Wildhammer Sentry
+    8018, -- Guthrum Thunderfist <Gryphon Master>
     8020, -- Shyn <Wind Rider Master>
     8147, -- Camp Mojache Brave
+    9297, -- Enraged Wyvern
+    9521, -- Enraged Felbat
+    9526, -- Enraged Gryphon
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
     13177, -- Vahgruk <Wind Rider Master>
+    14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
     15178 -- Runk Windtamer <Wind Rider Master>
 );

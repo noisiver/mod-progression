@@ -26,9 +26,10 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
-    4551, -- Michael Garrett <Bat Handler>
+    4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
+    4551, -- Michael Garrett <Bat Handler>
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     5595, -- Ironforge Guard
@@ -36,16 +37,22 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     6026, -- Breyk <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
+    7865, -- Wildhammer Sentry
+    8018, -- Guthrum Thunderfist <Gryphon Master>
     8020, -- Shyn <Wind Rider Master>
     8147, -- Camp Mojache Brave
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
+    9297, -- Enraged Wyvern
+    9521, -- Enraged Felbat
+    9526, -- Enraged Gryphon
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
     13177, -- Vahgruk <Wind Rider Master>
+    14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
     15178 -- Runk Windtamer <Wind Rider Master>
 );
