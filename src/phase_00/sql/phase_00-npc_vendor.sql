@@ -733,8 +733,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     4585, -- Ezekiel Graves <Poison Supplies>
     5169, -- Tynnus Venomsprout <Shady Dealer>
     6779, -- Smudge Thunderwood <Poison Supplies>
-    15175, -- Khur Hornstriker <Reagents>
-    28347 -- Miles Sidney <Poison Supplies>
+    15175 -- Khur Hornstriker <Reagents>
 ) AND `item` IN (
     22053, -- Deadly Poison VI
     22055, -- Wound Poison V
@@ -769,8 +768,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     16268, -- Eralan <Poison Supplies>
     16683, -- Darlia <Poison Supplies>
     18006, -- Noraani <Reagent Merchant>
-    20121, -- Fingin <Poison Supplies>
-    28347 -- Miles Sidney <Poison Supplies>
+    20121 -- Fingin <Poison Supplies>
 ) AND `item` IN (
     43234, -- Wound Poison VI
     43230, -- Instant Poison VIII

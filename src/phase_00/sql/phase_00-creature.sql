@@ -96,6 +96,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25167, -- General Tiras'alan
     25885, -- Whirligig Wafflefry <Gnomish Inventor>
     27705, -- Lorrin Foxfire <Portal Trainer>
+    28347, -- Miles Sidney <Poison Supplies>
+    28355, -- Wright Williams
     29095, -- Edward Cairn <Elder>
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>

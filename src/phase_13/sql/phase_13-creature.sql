@@ -2,6 +2,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     22836, -- Jheel
+    28347, -- Miles Sidney <Poison Supplies>
+    28355, -- Wright Williams
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>
