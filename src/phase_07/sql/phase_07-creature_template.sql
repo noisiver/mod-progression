@@ -82,6 +82,14 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     4846, -- Shadowforge Digger
     4856, -- Stonevault Cave Hunter
     4851, -- Stonevault Rockchewer
+    5224, -- Murk Slitherer
+    5225, -- Murk Spitter
+    5235, -- Fungal Ooze
+    5243, -- Cursed Atal'ai
+    5261, -- Enthralled Atal'ai
+    5263, -- Mummified Atal'ai
+    5269, -- Atal'ai Priest
+    5401, -- Kazkaz the Unholy
     5645, -- Sandfury Hideskinner
     5646, -- Sandfury Axe Thrower
     5647, -- Sandfury Firecaller
