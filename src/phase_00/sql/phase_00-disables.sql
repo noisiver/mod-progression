@@ -132,38 +132,29 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (9, 3, 0, '', '', 'Darkmoon Faire (Terokkar Forest)'), -- Phase 3
 (9, 4, 0, '', '', 'Darkmoon Faire (Elwynn Forest)'), -- Phase 3
 (9, 5, 0, '', '', 'Darkmoon Faire (Mulgore)'), -- Phase 3
--- (9, 7, 0, '', '', 'Lunar Festival'), -- Phase ???
--- (9, 8, 0, '', '', 'Love is in the Air'), -- Phase ???
--- (9, 9, 0, '', '', 'Noblegarden'), -- Phase ???
--- (9, 10, 0, '', '', 'Children\'s Week'), -- Phase ???
--- (9, 11, 0, '', '', 'Harvest Festival'), -- Phase ???
--- (9, 12, 0, '', '', 'Hallow\'s End'), -- Phase ???
--- (9, 13, 0, '', '', 'Elemental Invasions'), -- Phase ???
 (9, 14, 0, '', '', 'Stranglethorn Fishing Extravaganza Announce'), -- Phase 5
 (9, 15, 0, '', '', 'Stranglethorn Fishing Extravaganza Fishing Pools'), -- Phase 5
--- (9, 16, 0, '', '', 'Gurubashi Arena Booty Run'), -- Phase 
-(9, 18, 0, '', '', 'Call to Arms: Alterac Valley!'), -- Phase 13
-(9, 19, 0, '', '', 'Call to Arms: Warsong Gulch!'), -- Phase 13
-(9, 20, 0, '', '', 'Call to Arms: Arathi Basin!'), -- Phase 13
-(9, 21, 0, '', '', 'Call to Arms: Eye of the Storm!'), -- Phase 13
+(9, 18, 0, '', '', 'Call to Arms: Alterac Valley!'), -- Phase 2
+(9, 19, 0, '', '', 'Call to Arms: Warsong Gulch!'), -- Phase 2
+(9, 20, 0, '', '', 'Call to Arms: Arathi Basin!'), -- Phase 3
+(9, 21, 0, '', '', 'Call to Arms: Eye of the Storm!'), -- Phase 7
 (9, 23, 0, '', '', 'Darkmoon Faire Building (Elwynn Forest, 0, XXX)'), -- Phase 3
 (9, 24, 0, '', '', 'Brewfest'), -- Phase 7
 (9, 26, 0, '', '', 'Pilgrim\'s Bounty'), -- Phase 13
-(9, 34, 0, '', '', 'Brew of the Month October'), -- Phase 13
-(9, 35, 0, '', '', 'Brew of the Month November'), -- Phase 13
-(9, 36, 0, '', '', 'Brew of the Month December'), -- Phase 13
-(9, 37, 0, '', '', 'Brew of the Month January'), -- Phase 13
-(9, 38, 0, '', '', 'Brew of the Month February'), -- Phase 13
-(9, 39, 0, '', '', 'Brew of the Month March'), -- Phase 13
-(9, 40, 0, '', '', 'Brew of the Month April'), -- Phase 13
-(9, 41, 0, '', '', 'Brew of the Month May'), -- Phase 13
-(9, 42, 0, '', '', 'Brew of the Month June'), -- Phase 13
-(9, 43, 0, '', '', 'Brew of the Month July'), -- Phase 13
-(9, 44, 0, '', '', 'Brew of the Month August'), -- Phase 13
-(9, 45, 0, '', '', 'Brew of the Month September'), -- Phase 13
+(9, 34, 0, '', '', 'Brew of the Month October'), -- Phase 7
+(9, 35, 0, '', '', 'Brew of the Month November'), -- Phase 7
+(9, 36, 0, '', '', 'Brew of the Month December'), -- Phase 7
+(9, 37, 0, '', '', 'Brew of the Month January'), -- Phase 7
+(9, 38, 0, '', '', 'Brew of the Month February'), -- Phase 7
+(9, 39, 0, '', '', 'Brew of the Month March'), -- Phase 7
+(9, 40, 0, '', '', 'Brew of the Month April'), -- Phase 7
+(9, 41, 0, '', '', 'Brew of the Month May'), -- Phase 7
+(9, 42, 0, '', '', 'Brew of the Month June'), -- Phase 7
+(9, 43, 0, '', '', 'Brew of the Month July'), -- Phase 7
+(9, 44, 0, '', '', 'Brew of the Month August'), -- Phase 7
+(9, 45, 0, '', '', 'Brew of the Month September'), -- Phase 7
 (9, 50, 0, '', '', 'Pirates\' Day'), -- Phase 7
 (9, 51, 0, '', '', 'Day of the Dead'), -- Phase 13
--- (9, 52, 0, '', '', 'Winter Veil: Gifts'), -- Phase ???
 (9, 53, 0, '', '', 'Call to Arms: Strand of the Ancients!'), -- Phase 13
 (9, 54, 0, '', '', 'Call to Arms: Isle of Conquest!'), -- Phase 15
 (9, 55, 0, '', '', 'Arena Season 3'), -- Phase 10
