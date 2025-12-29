@@ -1,4 +1,6 @@
-Westfall,
+These are the zones I have gone through so far, and it's possible that I've missed stuff. This doesn't include trainers either, I will take care of them when I'm done with the zones.
+
+Westfall
 Elwynn Forest
 Redridge Mountains
 Duskwood
@@ -15,3 +17,5 @@ Stormwind City: The Park
 Burning Steppes
 Searing Gorge
 Badlands
+Loch Modan
+Dun Morogh

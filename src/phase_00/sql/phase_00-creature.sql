@@ -200,6 +200,20 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     139326, -- Overworked Nag
     139327 -- Overworked Nag
 );
+UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
+    39263, -- Disassembled Mechano-Tank
+    39275, -- Gnomeregan Medic
+    39349, -- Gnomeregan Trainee
+    39368, -- Drill Sergeant Steamcrank
+    39386, -- Pilot Muzzlesprock
+    39396, -- 'Thunderflash'
+    39675, -- Captain Tread Sparknozzle
+    39678, -- Toby Zeigear <Speechwriter>
+    39711, -- Mechano-Tank Attack Target
+    39715, -- Ejector Mechano-Tank
+    39716, -- Scuttling Mechano-Tank
+    39717 -- Shooting Mechano-Tank
+);
 UPDATE `creature` SET `position_x` = -8441.42, `position_y` = 333.102, `position_z` = 122.679, `orientation` = 2.23167 WHERE `guid` = 10494; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature` SET `position_x` = -4886.97, `position_y` = -978.31, `position_z` = 504.024, `orientation` = 5.39307 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
 UPDATE `creature` SET `position_x` = 1678.99, `position_y` = 1667.86, `position_z` = 135.855, `orientation` = 3.76991 WHERE `guid` = 29803; -- Undertaker Mordo
