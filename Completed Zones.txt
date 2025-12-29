@@ -12,3 +12,6 @@ Stormwind City: Dwarven District
 Stormwind City: Cathedral Square
 Stormwind City: Mage Quarter
 Stormwind City: The Park
+Burning Steppes
+Searing Gorge
+Badlands
