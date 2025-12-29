@@ -1,7 +1,7 @@
 # Progression
 This module offers a different take on progression. It handles content based on phases instead of brackets or by conquering content. It is server-wide and always the same for all players.
 
-# Patches
+# Phases
 These are all the phases included with this module. Phase 0 through 6 simulates 1.12, 7 through 12 simulates 2.4, and 13 through 18 simulates 3.3.5. Each phase locks content in order to create progression. What each phase unlocks can be changed as this is not meant to mirror what Blizzard did with Classic
 
 - Phase 0: Leveling & Dungeons
