@@ -33,7 +33,7 @@ Eastern Kingdoms
 ✅ Wetlands
 
 Kalimdor
-❌ Ashenvale
+✅ Ashenvale
 ❌ Azshara
 ❌ Azuremyst Isle
 ❌ Bloodmyst Isle

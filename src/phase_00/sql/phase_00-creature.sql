@@ -28,15 +28,25 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17092, -- Advisor Duskingdawn
     17094, -- Nemeth Hawkeye <Farstriders>
     17097, -- Advisor Sarophas
+    17100, -- Advisor Sunsworn
     17104, -- Anchorite Delan
-    17109, -- Cersei Dusksinger
     17103, -- Emissary Taluun
+    17106, -- Vindicator Palanaar
+    17109, -- Cersei Dusksinger
     17127, -- Anchorite Avuun
     17218, -- Huraan
     17223, -- Ambassador Rualeth
     17238, -- Anchorite Truuen
     17249, -- Landro Longshot <The Black Flame>
+    17287, -- Sentinel Luciel Starwhisper <Silverwing Sentinels>
+    17291, -- Architect Nemos
+    17303, -- Vindicator Vedaar <Hand of Argus>
+    17310, -- Gnarl <Ancient of War>
+    17406, -- Artificer
+    17409, -- Apprentice Boulian <Apprentice Architect>
+    17412, -- Phaedra <Weapon Merchant>
     17531, -- Draenei Protector
+    17541, -- Draenei Quartermaster
     17613, -- Archmage Alturus
     17641, -- Sunhawk Ambusher
     17711, -- Doomwalker
@@ -47,6 +57,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     18728, -- Doom Lord Kazzak
     19475, -- Harbinger Haronem
     19715, -- Ezekiel
+    19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
     19909, -- Rex Pixem <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
     19202, -- Emissary Mordin
@@ -68,6 +79,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     21905, -- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
     21906, -- Kelara <Keeper of Sha'tari Heirlooms>
     22836, -- Jheel
+    22935, -- Suralais Farwind <Hippogryph Master>
+    22936, -- Auhula <Apprentice Hippogryph Master>
     22987, -- Skyguard Nether Ray
     23127, -- Farseer Javad <Shaman Trainer>
     23449, -- Yuula <Recruitment Officer>
@@ -231,6 +244,8 @@ UPDATE `creature` SET `position_x` = -8195.5, `position_y` = -4480.25, `position
 UPDATE `creature` SET `position_x` = -8185.17, `position_y` = -4695.1, `position_z` = 16.1702, `orientation` = 3.73691, `wander_distance` = 5 WHERE `id1` = 8197; -- Chronalis
 UPDATE `creature` SET `position_x` = -8189.83, `position_y` = -4586.73, `position_z` = 8.14232, `wander_distance` = 7 WHERE `id1` = 8198; -- Tick
 UPDATE `creature` SET `position_x` = -8175.67, `position_y` = -4718.28, `position_z` = 26.3489, `orientation` = 1.88496 WHERE `id1` = 15192; -- Anachronos
+UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_z` = 74.1523, `orientation` = 5.58505 WHERE `id1` = 3880; -- Sentinel Melyria Frostshadow
+UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id1` = 3901; -- Illiyana
 SET @cId := 5300000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES

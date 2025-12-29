@@ -26,6 +26,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    4267, -- Daelyshia <Hippogryph Master>
     4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
@@ -49,6 +50,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
+    11901, -- Andruk <Wind Rider Master>
+    12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
     13177, -- Vahgruk <Wind Rider Master>

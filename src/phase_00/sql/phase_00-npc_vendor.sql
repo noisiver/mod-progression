@@ -109,7 +109,6 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     4896, -- Charity Mipsy <General Goods>
     5101, -- Bryllia Ironbrand <General Goods>
     5122, -- Skolmin Goldfury <Bow Merchant>
-    6028, -- Burkrum <Heavy Armor Merchant>
     7942, -- Faralorn <General Supplies>
     8139, -- Jabbey <General Goods>
     8362, -- Kuruk <General Goods>
@@ -859,7 +858,6 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     4555, -- Eleanor Rusk <General Goods>
     4896, -- Charity Mipsy <General Goods>
     5101, -- Bryllia Ironbrand <General Goods>
-    6028, -- Burkrum <Heavy Armor Merchant>
     7942, -- Faralorn <General Supplies>
     8131, -- Blizrik Buckshot <Gunsmith>
     8139, -- Jabbey <General Goods>
@@ -1034,6 +1032,21 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
 ) AND `item` IN (
     33451, -- Fillet of Icefin
     35951 -- Poached Emperor Salmon
+);
+DELETE FROM `npc_vendor` WHERE `entry` = 6028 AND `item` IN ( -- Burkrum <Heavy Armor Merchant>
+    2102, -- Small Ammo Pouch
+    2512, -- Rough Arrow
+    2515, -- Sharp Arrow
+    2516, -- Light Shot
+    2519, -- Heavy Shot
+    3030, -- Razor Arrow
+    3033, -- Solid Shot
+    5439, -- Small Quiver
+    11284, -- Accurate Slugs
+    11285, -- Jagged Arrow
+    11363, -- Medium Shot Pouch
+    28053, -- Wicked Arrow
+    28060 -- Impact Shot
 );
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
