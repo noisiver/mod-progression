@@ -16,3 +16,4 @@ Loch Modan
 Dun Morogh
 Ironforge
 Wetlands
+Arathi Highlands
