@@ -24,3 +24,4 @@ Undercity
 Western Plaguelands
 Eastern Plaguelands
 Eversong Woods
+Silvermoon City

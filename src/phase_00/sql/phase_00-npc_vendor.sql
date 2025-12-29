@@ -918,6 +918,19 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     35221 -- Tabard of the Shattered Sun
 );
 DELETE FROM `npc_vendor` WHERE `entry` IN (
+    5188, -- Garyl <Tabard Vendor>
+    5189, -- Thrumn <Tabard Vendor>
+    5190, -- Merill Pleasance <Tabard Vendor>
+    16610 -- Kredis <Tabard Vendor>
+) AND `item` IN (
+    15197, -- Scout's Tabard
+    15199, -- Stone Guard's Herald
+    19031, -- Frostwolf Battle Tabard
+    19505, -- Warsong Battle Tabard
+    24004, -- Thrallmar Tabard
+    31773 -- Mag'har Tabard
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
     1448, -- Neal Allen <Engineering Supplies & General Goods>
     1694, -- Loslor Rudge <Engineering Supplies>
     2682, -- Fradd Swiftgear <Engineering Supplies>
@@ -992,6 +1005,35 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
 ) AND `item` IN (
     39684, -- Hair Trigger
     40533 -- Walnut Stock
+);
+DELETE FROM `npc_vendor` WHERE `entry` = 17630 AND `item` IN ( -- Innkeeper Jovia <Innkeeper>
+    27854, -- Smoked Talbuk Venison
+    27855, -- Mag'har Grainbread
+    27856, -- Skethyl Berries
+    33454 -- Salted Venison
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    3025, -- Kaga Mistrunner <Meat Vendor>
+    3312, -- Olvia <Meat Vendor>
+    3368, -- Borstan <Meat Vendor>
+    4169, -- Jaeana <Meat Vendor>
+    5111, -- Innkeeper Firebrew <Innkeeper>
+    5124, -- Sognar Cliffbeard <Meat Vendor>
+    6929, -- Innkeeper Gryshka <Innkeeper>
+    16618, -- Innkeeper Velandra <Innkeeper>
+    16739, -- Caregiver Breel <Innkeeper>
+    17630 -- Innkeeper Jovia <Innkeeper>
+) AND `item` IN (
+    33454, -- Salted Venison
+    35953 -- Mead Basted Caribou
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    4221, -- Talaelar <Fish Vendor>
+    16618, -- Innkeeper Velandra <Innkeeper>
+    16739 -- Caregiver Breel <Innkeeper>
+) AND `item` IN (
+    33451, -- Fillet of Icefin
+    35951 -- Poached Emperor Salmon
 );
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES

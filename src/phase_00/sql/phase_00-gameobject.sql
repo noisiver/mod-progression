@@ -8,6 +8,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     182560, -- Meeting Stone (Caverns of Time)
     183435, -- Marksman Regiment's Cooking Pot
     184463, -- Meeting Stone (Karazhan)
+    184503, -- Orb of Translocation
     186251, -- Meeting Stone (Zul'Aman)
     187290, -- Guild Vault
     187292, -- Guild Vault

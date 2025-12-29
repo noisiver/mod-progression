@@ -22,6 +22,9 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` I
 DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5191, 5193, 16766) AND `item` IN (19032, 19506, 23999, 31774);
 DELETE FROM `npc_vendor` WHERE `entry` IN (5049, 5188, 5189, 5190, 5191, 5193, 16610, 16766) AND `item` IN (31775, 31776, 31777, 31778, 31779, 31780, 31781, 31804, 32445, 32828, 35221);
 DELETE FROM `npc_vendor` WHERE `entry` IN (1448, 1694, 2682, 2683, 2684, 2685, 2687, 2688, 3133, 3413, 3495, 4453, 4587, 5175, 5519, 6730, 6777, 8678, 8679, 9544, 11185, 14637, 16657, 16782, 17222, 17421, 18278, 18484, 18752, 18775, 19383, 20890, 27711) AND `item` IN (39684, 40533);
+DELETE FROM `npc_vendor` WHERE `entry` IN (5188, 5189, 5190, 16610) AND `item` IN (15197, 15199, 19505, 19031, 24004, 31773);
+DELETE FROM `npc_vendor` WHERE `entry` IN (3025, 3312, 3368, 4169, 5111, 5124, 6929, 16618, 16739, 17630) AND `item` IN (33454, 35953);
+DELETE FROM `npc_vendor` WHERE `entry` IN (4221, 16618, 16739) AND `item` IN (33451, 35951);
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -202,6 +205,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3017, 27856, 0, 0, 0, 0), -- Skethyl Berries
 (3017, 35948, 0, 0, 0, 0), -- Savory Snowplum
 (3017, 35949, 0, 0, 0, 0), -- Tundra Berries
+-- Kaga Mistrunner <Meat Vendor>
+(3025, 33454, 0, 0, 0, 0), -- Salted Venison
+(3025, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Wunna Darkmane <Trade Goods>
 (3081, 10648, 0, 0, 0, 0), -- Common Parchment
 (3081, 39354, 0, 0, 0, 0), -- Light Parchment
@@ -235,6 +241,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Tai'tasi <Trade Supplies>
 (3187, 10648, 0, 0, 0, 0), -- Common Parchment
 (3187, 39354, 0, 0, 0, 0), -- Light Parchment
+-- Olvia <Meat Vendor>
+(3312, 33454, 0, 0, 0, 0), -- Salted Venison
+(3312, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Horthus <Reagents>
 (3323, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Rekkul <Poison Supplies>
@@ -259,6 +268,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3364, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Tamar <Leatherworking Supplies>
 (3366, 38426, 0, 0, 0, 0), -- Eternium Thread
+-- Borstan <Meat Vendor>
+(3368, 33454, 0, 0, 0, 0), -- Salted Venison
+(3368, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Zeal'aya <Herbalism Supplies>
 (3405, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Sovik <Engineering Supplies>
@@ -348,6 +360,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4169, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (4169, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (4169, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(4169, 33454, 0, 0, 0, 0), -- Salted Venison
+(4169, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (4169, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Valdaron <Tailoring Supplies>
 (4189, 38426, 0, 0, 0, 0), -- Eternium Thread
@@ -357,6 +371,9 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4216, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Cyroen <Reagents>
 (4220, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Talaelar <Fish Vendor>
+(4221, 33451, 0, 0, 0, 0), -- Fillet of Icefin
+(4221, 35951, 0, 0, 0, 0), -- Poached Emperor Salmon
 -- Saenorion <Leatherworking Supplies>
 (4225, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Ulthir <Alchemy Supplies>
@@ -445,7 +462,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5111, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (5111, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (5111, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(5111, 33454, 0, 0, 0, 0), -- Salted Venison
+(5111, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (5111, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+-- Sognar Cliffbeard <Meat Vendor>
+(5124, 33454, 0, 0, 0, 0), -- Salted Venison
+(5124, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Bombus Finespindle <Leatherworking Supplies>
 (5128, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Gwina Stonebranch <Herbalism Supplies>
@@ -469,6 +491,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Soolie Berryfizz <Alchemy Supplies>
 (5178, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Garyl <Tabard Vendor>
+(5188, 15197, 0, 0, 1007, 0), -- Scout's Tabard
+(5188, 15199, 0, 0, 1006, 0), -- Stone Guard's Herald
+(5188, 19031, 0, 0, 1003, 0), -- Frostwolf Battle Tabard
+(5188, 19505, 0, 0, 2969, 0), -- Warsong Battle Tabard
+(5188, 24004, 0, 0, 0, 0), -- Thrallmar Tabard
+(5188, 31773, 0, 0, 0, 0), -- Mag'har Tabard
 (5188, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
 (5188, 31776, 0, 0, 0, 0), -- Consortium Tabard
 (5188, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
@@ -481,6 +509,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5188, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
 (5188, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Thrumn <Tabard Vendor>
+(5189, 15197, 0, 0, 1007, 0), -- Scout's Tabard
+(5189, 15199, 0, 0, 1006, 0), -- Stone Guard's Herald
+(5189, 19031, 0, 0, 1003, 0), -- Frostwolf Battle Tabard
+(5189, 19505, 0, 0, 2969, 0), -- Warsong Battle Tabard
+(5189, 24004, 0, 0, 0, 0), -- Thrallmar Tabard
+(5189, 31773, 0, 0, 0, 0), -- Mag'har Tabard
 (5189, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
 (5189, 31776, 0, 0, 0, 0), -- Consortium Tabard
 (5189, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
@@ -493,6 +527,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5189, 32828, 0, 0, 1958, 0), -- Ogri'la Tabard
 (5189, 35221, 0, 0, 0, 0), -- Tabard of the Shattered Sun
 -- Merill Pleasance <Tabard Vendor>
+(5190, 15197, 0, 0, 1007, 0), -- Scout's Tabard
+(5190, 15199, 0, 0, 1006, 0), -- Stone Guard's Herald
+(5190, 19031, 0, 0, 1003, 0), -- Frostwolf Battle Tabard
+(5190, 19505, 0, 0, 2969, 0), -- Warsong Battle Tabard
+(5190, 24004, 0, 0, 0, 0), -- Thrallmar Tabard
+(5190, 31773, 0, 0, 0, 0), -- Mag'har Tabard
 (5190, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
 (5190, 31776, 0, 0, 0, 0), -- Consortium Tabard
 (5190, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
@@ -622,6 +662,8 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6929, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (6929, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (6929, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(6929, 33454, 0, 0, 0, 0), -- Salted Venison
+(6929, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (6929, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Pratt McGrubben <Leatherworking Supplies>
 (7852, 38426, 0, 0, 0, 0), -- Eternium Thread
@@ -738,6 +780,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Floyd Pinkus <Innkeeper>
 (16602, 10648, 0, 0, 0, 0), -- Common Parchment
 -- Kredis <Tabard Vendor>
+(16610, 15197, 0, 0, 1007, 0), -- Scout's Tabard
+(16610, 15199, 0, 0, 1006, 0), -- Stone Guard's Herald
+(16610, 19031, 0, 0, 1003, 0), -- Frostwolf Battle Tabard
+(16610, 19505, 0, 0, 2969, 0), -- Warsong Battle Tabard
+(16610, 24004, 0, 0, 0, 0), -- Thrallmar Tabard
+(16610, 31773, 0, 0, 0, 0), -- Mag'har Tabard
 (16610, 31775, 0, 0, 1994, 0), -- Sporeggar Tabard
 (16610, 31776, 0, 0, 0, 0), -- Consortium Tabard
 (16610, 31777, 0, 0, 0, 0), -- Keepers of Time Tabard
@@ -755,8 +803,12 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16612, 37201, 0, 0, 0, 0), -- Corpse Dust
 (16612, 40411, 0, 0, 0, 0), -- Enchanted Vial
 -- Innkeeper Velandra <Innkeeper>
+(16618, 33451, 0, 0, 0, 0), -- Fillet of Icefin
 (16618, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (16618, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(16618, 33454, 0, 0, 0, 0), -- Salted Venison
+(16618, 35951, 0, 0, 0, 0), -- Poached Emperor Salmon
+(16618, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (16618, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Deynna <Tailoring Supplies>
 (16638, 38426, 0, 0, 0, 0), -- Eternium Thread
@@ -785,7 +837,11 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (16739, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (16739, 33445, 0, 0, 0, 0), -- Honeymint Tea
 (16739, 33449, 0, 0, 0, 0), -- Crusty Flatbread
+(16739, 33451, 0, 0, 0, 0), -- Fillet of Icefin
+(16739, 33454, 0, 0, 0, 0), -- Salted Venison
+(16739, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (16739, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
+(16739, 35951, 0, 0, 0, 0), -- Poached Emperor Salmon
 (16739, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Haferet <Leatherworking Supplies>
 (16748, 38426, 0, 0, 0, 0), -- Eternium Thread
@@ -832,11 +888,16 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (17490, 10648, 0, 0, 0, 0), -- Common Parchment
 (17490, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Innkeeper Jovia <Innkeeper>
+(17630, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
+(17630, 27855, 0, 0, 0, 0), -- Mag'har Grainbread
+(17630, 27856, 0, 0, 0, 0), -- Skethyl Berries
 (17630, 27857, 0, 0, 0, 0), -- Garadar Sharp
 (17630, 33443, 0, 0, 0, 0), -- Sour Goat Cheese
 (17630, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (17630, 33445, 0, 0, 0, 0), -- Honeymint Tea
 (17630, 33449, 0, 0, 0, 0), -- Crusty Flatbread
+(17630, 33454, 0, 0, 0, 0), -- Salted Venison
+(17630, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (17630, 35948, 0, 0, 0, 0), -- Savory Snowplum
 (17630, 35949, 0, 0, 0, 0), -- Tundra Berries
 (17630, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
