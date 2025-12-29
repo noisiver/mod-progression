@@ -21,3 +21,4 @@ Hillsbrad Foothills
 Silverpine Forest
 Tirisfal Glades
 Undercity
+Western Plaguelands
