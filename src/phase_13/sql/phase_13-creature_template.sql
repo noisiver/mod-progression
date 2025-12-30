@@ -32,7 +32,8 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     103, -- Garrick Padfoot
     946, -- Frostmane Novice
     1505, -- Night Web Spider
-    1688 -- Night Web Matriarch
+    1688, -- Night Web Matriarch
+    16537 -- Mutated Owlkin
 );
 UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser

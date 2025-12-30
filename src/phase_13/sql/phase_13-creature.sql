@@ -109,3 +109,4 @@ UPDATE `creature` SET `id1` = 36273, `equipment_id` = 1 WHERE `id1` = 2425; -- V
 UPDATE `creature` SET `id1` = 36224 WHERE `id1` = 14402; -- Seeker Cromwell -> Dark Ranger Clea
 UPDATE `creature` SET `id1` = 36225 WHERE `id1` = 14403; -- Seeker Nahr -> Dark Ranger Anya
 UPDATE `creature` SET `id1` = 36226 WHERE `id1` = 14404; -- Seeker Thompson -> Dark Ranger Cyndia
+UPDATE `creature` SET `position_x` = -3962, `position_y` = -13926.3, `position_z` = 101.238, `orientation` = 4.1889 WHERE `id1` = 16475; -- Megelon

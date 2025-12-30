@@ -176,6 +176,7 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     16800, -- Grand Magister Rommath
     16802 -- Lor'themar Theron <Regent Lord of Quel'Thalas>
 );
+UPDATE `creature_template` SET `faction` = 14 WHERE `entry` = 16537; -- Mutated Owlkin
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `skinloot` = 0 WHERE `entry` = 11262; -- Onyxian Whelp
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `lootid` = 0 WHERE `entry` = 12129; -- Onyxian Warder
