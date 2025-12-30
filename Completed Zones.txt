@@ -34,7 +34,7 @@ Eastern Kingdoms
 
 Kalimdor
 ✅ Ashenvale
-❌ Azshara
+✅ Azshara
 ❌ Azuremyst Isle
 ❌ Bloodmyst Isle
 ❌ Darkshore

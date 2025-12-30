@@ -34,8 +34,6 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     4551, -- Michael Garrett <Bat Handler>
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
-    8155, -- Kargath Grunt
-    8609, -- Alexandra Constantine <Gryphon Master>
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     6026, -- Breyk <Wind Rider Master>
@@ -45,6 +43,9 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     8018, -- Guthrum Thunderfist <Gryphon Master>
     8020, -- Shyn <Wind Rider Master>
     8147, -- Camp Mojache Brave
+    8155, -- Kargath Grunt
+    8609, -- Alexandra Constantine <Gryphon Master>    
+    8610, -- Kroum <Wind Rider Master>
     9297, -- Enraged Wyvern
     9521, -- Enraged Felbat
     9526, -- Enraged Gryphon

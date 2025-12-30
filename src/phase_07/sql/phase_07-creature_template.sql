@@ -44,6 +44,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     8147, -- Camp Mojache Brave
     8155, -- Kargath Grunt
     8609, -- Alexandra Constantine <Gryphon Master>
+    8610, -- Kroum <Wind Rider Master>
     9297, -- Enraged Wyvern
     9521, -- Enraged Felbat
     9526, -- Enraged Gryphon
