@@ -1,4 +1,4 @@
-SET @lootId := 46000;
+SET @lootId := 46000, @cId := 5300000;
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN (
     68, -- Stormwind City Guard
     352, -- Dungar Longdrink <Gryphon Master>
@@ -480,3 +480,4 @@ UPDATE `creature_template` SET `HealthModifier` = 2200 WHERE `entry` = 25315; --
 UPDATE `creature_template` SET `DamageModifier` = 32, `HealthModifier` = 75 WHERE `entry` = 20039; -- Phoenix-Hawk
 UPDATE `creature_template` SET `HealthModifier` = 165, `ManaModifier` = 100 WHERE `entry` = 23089; -- Akama
 UPDATE `creature_template` SET `DamageModifier` = 90, `HealthModifier` = 160 WHERE `entry` = 18728; -- Doom Lord Kazzak
+UPDATE `creature_template` SET `gossip_menu_id` = @cId+3, `npcflag` = `npcflag` & ~2 | 1 WHERE `entry` = 12657; -- Don Pompa

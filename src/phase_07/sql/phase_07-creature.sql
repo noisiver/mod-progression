@@ -43,6 +43,16 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     23127, -- Farseer Javad <Shaman Trainer>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
+    25009, -- Captain Angelina Soluna <The Bravery>
+    25010, -- Engineer Brightbuckle <The Bravery>
+    25011, -- First Mate Wavesinger <The Bravery>
+    25012, -- Galley Chief Gathers <The Bravery>
+    25013, -- Sentinel Brightgrass
+    25014, -- Sentinel Winterdew
+    25015, -- Navigator Landerson <The Bravery>
+    25016, -- Sailor Wills <The Bravery>
+    25017, -- Sailor Fairfolk <The Bravery>
+    25018, -- Sailor Stoneheel <The Bravery>
     27705, -- Lorrin Foxfire <Portal Trainer>
     29095 -- Edward Cairn <Elder>
 );

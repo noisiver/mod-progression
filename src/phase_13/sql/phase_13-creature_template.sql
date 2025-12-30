@@ -1,3 +1,4 @@
+SET @cId := 5300000;
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (
     68, -- Stormwind City Guard
     5595, -- Ironforge Guard
@@ -347,3 +348,4 @@ UPDATE `creature_template` SET `HealthModifier` = 1540 WHERE `entry` = 25315; --
 UPDATE `creature_template` SET `DamageModifier` = 16, `HealthModifier` = 52.5 WHERE `entry` = 20039; -- Phoenix-Hawk
 UPDATE `creature_template` SET `HealthModifier` = 50, `ManaModifier` = 10 WHERE `entry` = 23089; -- Akama
 UPDATE `creature_template` SET `DamageModifier` = 65, `HealthModifier` = 112 WHERE `entry` = 18728; -- Doom Lord Kazzak
+UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2 WHERE `entry` = 12657; -- Don Pompa

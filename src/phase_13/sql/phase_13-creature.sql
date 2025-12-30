@@ -101,7 +101,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
 );
 DELETE FROM `creature` WHERE `id1` IN (
     1748, -- Highlord Bolvar Fordragon
-    1749 -- Lady Katrana Prestor
+    1749, -- Lady Katrana Prestor
+    12657 -- Don Pompa
 );
 UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
 UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Undercity Guardian -> Kor'kron Overseer

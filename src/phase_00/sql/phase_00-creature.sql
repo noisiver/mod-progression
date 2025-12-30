@@ -98,6 +98,16 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     24851, -- Kiz Coilspanner <Flight Master>
+    25009, -- Captain Angelina Soluna <The Bravery>
+    25010, -- Engineer Brightbuckle <The Bravery>
+    25011, -- First Mate Wavesinger <The Bravery>
+    25012, -- Galley Chief Gathers <The Bravery>
+    25013, -- Sentinel Brightgrass
+    25014, -- Sentinel Winterdew
+    25015, -- Navigator Landerson <The Bravery>
+    25016, -- Sailor Wills <The Bravery>
+    25017, -- Sailor Fairfolk <The Bravery>
+    25018, -- Sailor Stoneheel <The Bravery>
     25134, -- Shattered Sun Trainee
     25135, -- Shattered Sun Trainee
     25136, -- Shattered Sun Trainee
@@ -248,8 +258,9 @@ UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_
 UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id1` = 3901; -- Illiyana
 UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `position_z` = 92.0423, `orientation` = 5.13127 WHERE `id1` = 16475; -- Megelon
 SET @cId := 5300000;
-DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397);
+DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@cId+0, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8442.99, 331.755, 122.58, 2.24057, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Highlord Bolvar Fordragon
 (@cId+1, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Lady Katrana Prestor
-(@cId+2, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL); -- Lord Kazzak
+(@cId+2, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL), -- Lord Kazzak
+(@cId+3, 12657, 0, 0, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- Don Pompa
