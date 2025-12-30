@@ -2,7 +2,8 @@ UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN
     68, -- Stormwind City Guard
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
-    16222 -- Silvermoon City Guardian
+    16222, -- Silvermoon City Guardian
+    16733 -- Exodar Peacekeeper
 );
 UPDATE `creature_template` SET `name` = 'Diseased Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Diseased Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
@@ -13,7 +14,8 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHER
     1756, -- Stormwind Royal Guard
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
-    20672 -- Royal Guard
+    20672, -- Royal Guard
+    20674 -- Shield of Velen
 );
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN (
     13839, -- Royal Dreadguard
@@ -46,7 +48,8 @@ UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
-    16802 -- Lor'themar Theron <Regent Lord of Quel'Thalas>
+    16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
+    17468 -- Prophet Velen
 );
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 16800; -- Grand Magister Rommath
 UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` IN (

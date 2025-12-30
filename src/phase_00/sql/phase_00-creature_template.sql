@@ -77,7 +77,8 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHER
     1756, -- Stormwind Royal Guard
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
-    20672 -- Royal Guard
+    20672, -- Royal Guard
+    20674 -- Shield of Velen
 );
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime` = 2000, `mingold` = 1065700, `maxgold` = 1065700, `AIName` = 'SmartAI', `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 12397; -- Lord Kazzak
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN (
@@ -171,10 +172,14 @@ UPDATE `creature_template` SET `faction` = 22 WHERE `entry` IN (
     1505, -- Night Web Spider
     1688 -- Night Web Matriarch
 );
-UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` = 16222; -- Silvermoon City Guardian
+UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN (
+    16222, -- Silvermoon City Guardian
+    16733 -- Exodar Peacekeeper
+);
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
     16800, -- Grand Magister Rommath
-    16802 -- Lor'themar Theron <Regent Lord of Quel'Thalas>
+    16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
+    17468 -- Prophet Velen
 );
 UPDATE `creature_template` SET `faction` = 14 WHERE `entry` = 16537; -- Mutated Owlkin
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia

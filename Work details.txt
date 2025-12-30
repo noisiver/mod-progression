@@ -52,7 +52,7 @@ Kalimdor
 ❌ Tanaris
 ❌ Teldrassil
 ❌ The Barrens
-❌ The Exodar
+✅ The Exodar
 ❌ Thousand Needles
 ❌ Thunder Bluff
 ❌ Un'Goro Crater
@@ -113,3 +113,10 @@ Class Quests
 ❌ Shaman
 ❌ Warlock
 ❌ Warrior
+
+## Config
+❌ Lower max level than the expansion offers
+❌ Quest information (POI etc)
+❌ Dual talent specialization
+❌ Dungeon finder
+❌ Achievements? Needs a check when they are turned on
