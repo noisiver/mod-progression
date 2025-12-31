@@ -832,6 +832,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     11189, -- Qia <Trade Supplies>
     12022, -- Lorelae Wintersong <Trade Supplies>
     12028, -- Lah'Mawhani <Trade Supplies>
+    12245, -- Vendor-Tron 1000
     12941, -- Jase Farlane <Trade Supplies>
     12957, -- Blimo Gadgetspring <Trade Supplies>
     12958, -- Gigget Zipcoil <Trade Supplies>

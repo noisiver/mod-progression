@@ -1,4 +1,5 @@
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
+    178827, -- Meeting Stone (Maraudon)
     179553, -- Core Fragment
     179879, -- Orb of Command
     180104, -- Zandalar Cage

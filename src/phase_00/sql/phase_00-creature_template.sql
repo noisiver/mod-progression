@@ -40,6 +40,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
     6026, -- Breyk <Wind Rider Master>
+    6706, -- Baritanas Skyriver <Hippogryph Master>
+    6726, -- Thalon <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
     7865, -- Wildhammer Sentry
@@ -56,6 +58,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
     11901, -- Andruk <Wind Rider Master>
+    12338, -- Shadowprey Guardian
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
@@ -130,6 +133,10 @@ UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
     4285, -- Scarlet Disciple
     4462, -- Blackrock Hunter
     4464, -- Blackrock Gladiator
+    4788, -- Fallenroot Satyr
+    4789, -- Fallenroot Rogue
+    4802, -- Blackfathom Tide Priestess
+    4803, -- Blackfathom Oracle
     4844, -- Shadowforge Surveyor
     4845, -- Shadowforge Ruffian
     4846, -- Shadowforge Digger
@@ -152,7 +159,15 @@ UPDATE `creature_template` SET `rank` = 1 WHERE `entry` IN (
     6231, -- Techbot
     9043, -- Scarshield Grunt <Scarshield Legion>
     9044, -- Scarshield Sentry <Scarshield Legion>
-    10608 -- Scarlet Priest
+    10608, -- Scarlet Priest
+    11777, -- Shadowshard Rumbler
+    11778, -- Shadowshard Smasher
+    11781, -- Ambershard Crusher
+    11782, -- Ambershard Destroyer
+    11785, -- Ambereye Basilisk
+    11786, -- Ambereye Reaver
+    11787, -- Rock Borer
+    11788 -- Rock Worm
 );
 UPDATE `creature_template` SET `minlevel` = 59, `maxlevel` = 60 WHERE `entry` IN (
     12378, -- Damned Soul
