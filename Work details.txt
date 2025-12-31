@@ -38,7 +38,7 @@ Kalimdor
 ✅ Azuremyst Isle
 ✅ Bloodmyst Isle
 ✅ Darkshore
-❌ Darnassus
+✅ Darnassus
 ❌ Desolace
 ❌ Durotar
 ❌ Dustwallow Marsh

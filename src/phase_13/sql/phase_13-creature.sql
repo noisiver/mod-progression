@@ -76,6 +76,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
+    35281, -- Rukua <Paladin Trainer>
     35365, -- Behsten <Experience Eliminator>
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
@@ -84,6 +85,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
+    36479, -- Archmage Mordent Evenshade <The Highborne>
+    36481, -- Sentinel Stillbough
     36517, -- Aleric Hawkins <The Deathstalkers>
     37523, -- Warden of the Sunwell
     37527, -- Halduron Brightwing <Ranger General>

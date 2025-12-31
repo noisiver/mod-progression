@@ -1,6 +1,7 @@
 SET @cId := 5300000;
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (
     68, -- Stormwind City Guard
+    4262, -- Darnassus Sentinel
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
     16222, -- Silvermoon City Guardian
@@ -23,6 +24,9 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
     14367, -- Thief Catcher Thunderbrew
+    14378, -- Huntress Skymane
+    14379, -- Huntress Ravenoak
+    14380, -- Huntress Leafrunner
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
@@ -48,6 +52,7 @@ UPDATE `creature_template` SET `faction` = 2136 WHERE `entry` = 808; -- Grik'nir
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
+    7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
     16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
     17468 -- Prophet Velen

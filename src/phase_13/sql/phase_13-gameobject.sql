@@ -18,6 +18,9 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     190712, -- Barbershop Chair
     195141, -- Portal to Blasted Lands
     195142, -- Portal to Blasted Lands
+    195528, -- Mailbox
+    195529, -- Mailbox
+    195530, -- Mailbox
     195603, -- Mailbox
     195604, -- Mailbox
     195605, -- Mailbox

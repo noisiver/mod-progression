@@ -9,6 +9,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17100, -- Advisor Sunsworn
     17103, -- Emissary Taluun
     17104, -- Anchorite Delan
+    17105, -- Emissary Valustraa <Mage Trainer>
     17106, -- Vindicator Palanaar
     17109, -- Cersei Dusksinger
     17127, -- Anchorite Avuun

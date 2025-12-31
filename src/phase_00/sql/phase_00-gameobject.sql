@@ -18,6 +18,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     187299, -- Guild Vault
     187329, -- Guild Vault
     187337, -- Guild Vault
+    188123, -- Mailbox
     190683, -- Barbershop Chair
     190684, -- Barbershop Chair
     190697, -- Barbershop Chair
@@ -29,6 +30,9 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     190712, -- Barbershop Chair
     195141, -- Portal to Blasted Lands
     195142, -- Portal to Blasted Lands
+    195528, -- Mailbox
+    195529, -- Mailbox
+    195530, -- Mailbox
     195603, -- Mailbox
     195604, -- Mailbox
     195605, -- Mailbox

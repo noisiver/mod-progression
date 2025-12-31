@@ -31,6 +31,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17100, -- Advisor Sunsworn
     17104, -- Anchorite Delan
     17103, -- Emissary Taluun
+    17105, -- Emissary Valustraa <Mage Trainer>
     17106, -- Vindicator Palanaar
     17109, -- Cersei Dusksinger
     17127, -- Anchorite Avuun
@@ -154,6 +155,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     30735, -- Kul Inkspiller <Inscription Supplies>
     31144, -- Grandmaster's Training Dummy
     31146, -- Heroic Training Dummy
+    32666, -- Expert's Training Dummy
+    32667, -- Master's Training Dummy
     33608, -- Alchemy
     33609, -- Blacksmithing
     33610, -- Enchanting
@@ -175,8 +178,6 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33636, -- Miralisse <Master Tailoring Trainer>
     33639, -- Botanist Alaenra <Master Herbalism Trainer>
     33641, -- Irduil <Master Skinning Trainer>
-    32666, -- Expert's Training Dummy
-    32667, -- Master's Training Dummy
     33638, -- Scribe Lanloer <Master Inscription Trainer>
     33674, -- Alchemist Kanhu <Master Alchemy Trainer>
     33675, -- Onodo <Master Blacksmithing Trainer>
@@ -198,6 +199,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
+    35281, -- Rukua <Paladin Trainer>
     35365, -- Behsten <Experience Eliminator>
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
@@ -206,6 +208,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
+    36479, -- Archmage Mordent Evenshade <The Highborne>
+    36481, -- Sentinel Stillbough
     36517, -- Aleric Hawkins <The Deathstalkers>
     37523, -- Warden of the Sunwell
     37527, -- Halduron Brightwing <Ranger General>

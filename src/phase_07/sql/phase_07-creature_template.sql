@@ -26,10 +26,13 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    3838, -- Vesprystus <Hippogryph Master>
+    4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
     4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
+    4423, -- Darnassian Protector
     4551, -- Michael Garrett <Bat Handler>
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
@@ -116,6 +119,7 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
+    7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181 -- Lady Sylvanas Windrunner <Banshee Queen>
 );
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (

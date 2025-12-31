@@ -27,10 +27,13 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
     3305, -- Grisha <Wind Rider Master>
+    3838, -- Vesprystus <Hippogryph Master>
+    4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
     4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
+    4423, -- Darnassian Protector
     4551, -- Michael Garrett <Bat Handler>
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
@@ -87,6 +90,9 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
     14367, -- Thief Catcher Thunderbrew
+    14378, -- Huntress Skymane
+    14379, -- Huntress Ravenoak
+    14380, -- Huntress Leafrunner
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
@@ -165,6 +171,7 @@ UPDATE `creature_template` SET `faction` = 37 WHERE `entry` = 808; -- Grik'nir t
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
+    7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181 -- Lady Sylvanas Windrunner <Banshee Queen>
 );
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` = 2405; -- Tarren Mill Deathguard
