@@ -47,6 +47,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
     7865, -- Wildhammer Sentry
+    7980, -- Deathguard Elite
     8018, -- Guthrum Thunderfist <Gryphon Master>
     8020, -- Shyn <Wind Rider Master>
     8147, -- Camp Mojache Brave

@@ -76,7 +76,12 @@ UPDATE `gameobject` SET `animprogress` = 255, `state` = 0 WHERE `id` IN (
 );
 UPDATE `gameobject` SET `id` = 180718 WHERE `guid` = 49451; -- The Scarab Gong
 SET @goId := 5300000;
-DELETE FROM `gameobject` WHERE `guid` = @goId+4; -- Wintergrasp Keep Collision Wall
+DELETE FROM `gameobject` WHERE `guid` IN (
+    @goId+4, -- Wintergrasp Keep Collision Wall
+    @goId+5, -- Gate
+    @goId+6, -- Gate
+    @goId+7 -- Gate
+);
 DELETE FROM `gameobject` WHERE `id` IN (
     176146, -- Gate of Ahn'Qiraj
     176147, -- Ahn'Qiraj Gate Roots

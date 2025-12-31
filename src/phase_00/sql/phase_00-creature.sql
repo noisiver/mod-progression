@@ -107,6 +107,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     24929, -- Crewman Crosswire <The Iron Eagle>
     24930, -- Crewman Gazzlegear <The Iron Eagle>
     24931, -- Crewman Fastwrench <The Iron Eagle>
+    24934, -- Snack-O-Matic IV
     24935, -- Vend-O-Tron D-Luxe
     25009, -- Captain Angelina Soluna <The Bravery>
     25010, -- Engineer Brightbuckle <The Bravery>
@@ -128,6 +129,14 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25080, -- Grunt Umgor
     25081, -- Grunt Ounda
     25083, -- Deathguard Lawson <The Thundercaller>
+    25100, -- Chief Officer Hammerflange <The Purple Princess>
+    25101, -- Crewman Cutpipe <The Purple Princess>
+    25102, -- Crewman Spinshaft <The Purple Princess>
+    25103, -- Crewman Boltshine <The Purple Princess>
+    25104, -- Navigator Hatch <The Purple Princess>
+    25105, -- Sky-Captain Cableclamp <The Purple Princess>
+    25106, -- Watcher Du'una
+    25107, -- Watcher Umjin
     25134, -- Shattered Sun Trainee
     25135, -- Shattered Sun Trainee
     25136, -- Shattered Sun Trainee
@@ -143,6 +152,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25167, -- General Tiras'alan
     25885, -- Whirligig Wafflefry <Gnomish Inventor>
     26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
+    26539, -- Meefi Farthrottle <Howling Fjord Zeppelin Master>
     27705, -- Lorrin Foxfire <Portal Trainer>
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
@@ -252,7 +262,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     120638, -- Stormwind Harbor Guard
     139326, -- Overworked Nag
     139327, -- Overworked Nag
-
+    200118, -- Deathguard Elite
+    200119, -- Deathguard Elite
+    200120, -- Deathguard Elite
+    200121, -- Death Guard Elite
+    200122, -- Steamwheedle Bruiser
+    200123, -- Steamwheedle Bruiser
     203492, -- Orgrimmar Grunt
     203493, -- Orgrimmar Grunt
     203494, -- Orgrimmar Grunt

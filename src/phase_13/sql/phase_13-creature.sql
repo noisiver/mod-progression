@@ -8,6 +8,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     24929, -- Crewman Crosswire <The Iron Eagle>
     24930, -- Crewman Gazzlegear <The Iron Eagle>
     24931, -- Crewman Fastwrench <The Iron Eagle>
+    24934, -- Snack-O-Matic IV
     24935, -- Vend-O-Tron D-Luxe
     25070, -- Chief Officer Coppernut <The Thundercaller>
     25071, -- Crewman Rusthammer <The Thundercaller>
@@ -19,7 +20,16 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     25080, -- Grunt Umgor
     25081, -- Grunt Ounda
     25083, -- Deathguard Lawson <The Thundercaller>
+    25100, -- Chief Officer Hammerflange <The Purple Princess>
+    25101, -- Crewman Cutpipe <The Purple Princess>
+    25102, -- Crewman Spinshaft <The Purple Princess>
+    25103, -- Crewman Boltshine <The Purple Princess>
+    25104, -- Navigator Hatch <The Purple Princess>
+    25105, -- Sky-Captain Cableclamp <The Purple Princess>
+    25106, -- Watcher Du'una
+    25107, -- Watcher Umjin
     26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
+    26539, -- Meefi Farthrottle <Howling Fjord Zeppelin Master>
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
     29141, -- Pella Brassbrush <Barber>
@@ -120,6 +130,12 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     120624, -- Stormwind Harbor Guard
     120637, -- Stormwind Harbor Guard
     120638, -- Stormwind Harbor Guard
+    200118, -- Deathguard Elite
+    200119, -- Deathguard Elite
+    200120, -- Deathguard Elite
+    200121, -- Death Guard Elite
+    200122, -- Steamwheedle Bruiser
+    200123, -- Steamwheedle Bruiser
     203492, -- Orgrimmar Grunt
     203493, -- Orgrimmar Grunt
     203494, -- Orgrimmar Grunt

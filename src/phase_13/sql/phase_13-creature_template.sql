@@ -5,6 +5,7 @@ UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN
     4262, -- Darnassus Sentinel
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
+    7980, -- Deathguard Elite
     16096 -- Steamwheedle Bruiser
     16222, -- Silvermoon City Guardian
     16733 -- Exodar Peacekeeper
