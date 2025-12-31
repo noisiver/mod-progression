@@ -40,7 +40,7 @@ Kalimdor
 ✅ Darkshore
 ✅ Darnassus
 ✅ Desolace
-❌ Durotar
+✅ Durotar
 ❌ Dustwallow Marsh
 ❌ Felwood
 ❌ Feralas

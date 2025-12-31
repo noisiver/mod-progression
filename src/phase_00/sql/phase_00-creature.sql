@@ -101,6 +101,13 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     24851, -- Kiz Coilspanner <Flight Master>
+    24924, -- Sky-Captain Bomblast <The Iron Eagle>
+    24926, -- Chief Officer Brassbolt <The Iron Eagle>
+    24927, -- Navigator Sparksizzle <The Iron Eagle>
+    24929, -- Crewman Crosswire <The Iron Eagle>
+    24930, -- Crewman Gazzlegear <The Iron Eagle>
+    24931, -- Crewman Fastwrench <The Iron Eagle>
+    24935, -- Vend-O-Tron D-Luxe
     25009, -- Captain Angelina Soluna <The Bravery>
     25010, -- Engineer Brightbuckle <The Bravery>
     25011, -- First Mate Wavesinger <The Bravery>
@@ -111,6 +118,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25016, -- Sailor Wills <The Bravery>
     25017, -- Sailor Fairfolk <The Bravery>
     25018, -- Sailor Stoneheel <The Bravery>
+    25080, -- Grunt Umgor
+    25081, -- Grunt Ounda
     25134, -- Shattered Sun Trainee
     25135, -- Shattered Sun Trainee
     25136, -- Shattered Sun Trainee
@@ -125,6 +134,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25155, -- Shattered Sun Cleric
     25167, -- General Tiras'alan
     25885, -- Whirligig Wafflefry <Gnomish Inventor>
+    26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
     27705, -- Lorrin Foxfire <Portal Trainer>
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
@@ -189,6 +199,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33681, -- Korim <Master Leatherworking Trainer>
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
+    34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
     34986, -- Liedel the Just <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
@@ -232,7 +243,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     120637, -- Stormwind Harbor Guard
     120638, -- Stormwind Harbor Guard
     139326, -- Overworked Nag
-    139327 -- Overworked Nag
+    139327, -- Overworked Nag
+
+    203492, -- Orgrimmar Grunt
+    203493, -- Orgrimmar Grunt
+    203494, -- Orgrimmar Grunt
+    203495 -- Orgrimmar Grunt
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
     39263, -- Disassembled Mechano-Tank

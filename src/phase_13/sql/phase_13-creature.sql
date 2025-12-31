@@ -2,6 +2,16 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     22836, -- Jheel
+    24924, -- Sky-Captain Bomblast <The Iron Eagle>
+    24926, -- Chief Officer Brassbolt <The Iron Eagle>
+    24927, -- Navigator Sparksizzle <The Iron Eagle>
+    24929, -- Crewman Crosswire <The Iron Eagle>
+    24930, -- Crewman Gazzlegear <The Iron Eagle>
+    24931, -- Crewman Fastwrench <The Iron Eagle>
+    24935, -- Vend-O-Tron D-Luxe
+    25080, -- Grunt Umgor
+    25081, -- Grunt Ounda
+    26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
     29141, -- Pella Brassbrush <Barber>
@@ -64,6 +74,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     33681, -- Korim <Master Leatherworking Trainer>
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
+    34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
     34986, -- Liedel the Just <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
@@ -100,7 +111,11 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     120623, -- Stormwind Harbor Guard
     120624, -- Stormwind Harbor Guard
     120637, -- Stormwind Harbor Guard
-    120638 -- Stormwind Harbor Guard
+    120638, -- Stormwind Harbor Guard
+    203492, -- Orgrimmar Grunt
+    203493, -- Orgrimmar Grunt
+    203494, -- Orgrimmar Grunt
+    203495 -- Orgrimmar Grunt
 );
 DELETE FROM `creature` WHERE `id1` IN (
     1748, -- Highlord Bolvar Fordragon

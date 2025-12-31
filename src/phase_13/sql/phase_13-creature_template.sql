@@ -1,9 +1,11 @@
 SET @cId := 5300000;
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (
     68, -- Stormwind City Guard
+    3296, -- Orgrimmar Grunt
     4262, -- Darnassus Sentinel
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
+    16096 -- Steamwheedle Bruiser
     16222, -- Silvermoon City Guardian
     16733 -- Exodar Peacekeeper
 );
@@ -40,6 +42,9 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     946, -- Frostmane Novice
     1505, -- Night Web Spider
     1688, -- Night Web Matriarch
+    3101, -- Vile Familiar
+    3102, -- Felstalker
+    3183, -- Yarrog Baneshadow
     16537 -- Mutated Owlkin
 );
 UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (

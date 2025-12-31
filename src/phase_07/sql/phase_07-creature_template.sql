@@ -25,6 +25,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     4262, -- Darnassus Sentinel
@@ -38,6 +39,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     5547, -- Grunt Tharlak
     5595, -- Ironforge Guard
     5624, -- Undercity Guardian
+    5952, -- Den Grunt
     6026, -- Breyk <Wind Rider Master>
     6706, -- Baritanas Skyriver <Hippogryph Master>
     6726, -- Thalon <Wind Rider Master>
@@ -64,7 +66,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     13177, -- Vahgruk <Wind Rider Master>
     14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
-    15178 -- Runk Windtamer <Wind Rider Master>
+    15178, -- Runk Windtamer <Wind Rider Master>
+    16096 -- Steamwheedle Bruiser
 );
 UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser

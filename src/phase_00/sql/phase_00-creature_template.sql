@@ -26,6 +26,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     4262, -- Darnassus Sentinel
@@ -36,9 +37,10 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     4423, -- Darnassian Protector
     4551, -- Michael Garrett <Bat Handler>
     5595, -- Ironforge Guard
-    5624, -- Undercity Guardian
     5546, -- Grunt Zuul
     5547, -- Grunt Tharlak
+    5624, -- Undercity Guardian
+    5952, -- Den Grunt
     6026, -- Breyk <Wind Rider Master>
     6706, -- Baritanas Skyriver <Hippogryph Master>
     6726, -- Thalon <Wind Rider Master>
@@ -65,7 +67,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     13177, -- Vahgruk <Wind Rider Master>
     14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
-    15178 -- Runk Windtamer <Wind Rider Master>
+    15178, -- Runk Windtamer <Wind Rider Master>
+    16096 -- Steamwheedle Bruiser
 );
 UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser
@@ -203,7 +206,12 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
     17468 -- Prophet Velen
 );
-UPDATE `creature_template` SET `faction` = 14 WHERE `entry` = 16537; -- Mutated Owlkin
+UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (
+    3101, -- Vile Familiar
+    3102, -- Felstalker
+    16537 -- Mutated Owlkin
+);
+UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Baneshadow
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `skinloot` = 0 WHERE `entry` = 11262; -- Onyxian Whelp
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `lootid` = 0 WHERE `entry` = 12129; -- Onyxian Warder

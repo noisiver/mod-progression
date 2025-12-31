@@ -133,7 +133,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN ( -- These are for t
 UPDATE `gameobject` SET `id` = 180717, `phaseMask` = 16384 WHERE `guid` = 49451; -- The Scarab Gong
 SET @goId := 5300000;
 DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996);
-DELETE FROM `gameobject` WHERE `guid` = @goId+4;
+DELETE FROM `gameobject` WHERE `guid` IN (@goId+4, @goId+5);
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES
 -- Gate of Ahn'Qiraj
 (@goId+0, 176146, 1, 0, 0, 1, 1, -8133.34, 1525.13, 17.1904, 6.28103, 0, 0, 0.00107995, -0.999999, 600, 100, 1, NULL, NULL, NULL),
@@ -144,4 +144,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, 
 -- CavernDoor01
 (@goId+3, 176996, 1, 0, 0, 1, 1, -8173.02, -4747.2, 34.2107, 1.80084, 0, 0, -0.783588, -0.621281, 0, 100, 1, NULL, NULL, NULL),
 -- Wintergrasp Keep Collision Wall
-(@goId+4, 194323, 0, 0, 0, 1, 1, -8623.06, 951.028, 99.4455, 0.680017, -0, -0, -0.333495, -0.942752, 300, 0, 1, NULL, NULL, NULL);
+(@goId+4, 194323, 0, 0, 0, 1, 1, -8623.06, 951.028, 99.4455, 0.680017, -0, -0, -0.333495, -0.942752, 300, 0, 1, NULL, NULL, NULL),
+-- Gate
+(@goId+5, 177371, 1, 0, 0, 1, 1, 1170.67, -4166.2, 22.7307, 3.77777, -0, -0, -0.949835, 0.31275, 0, 0, 1, '', NULL, NULL);
