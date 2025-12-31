@@ -118,8 +118,16 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     25016, -- Sailor Wills <The Bravery>
     25017, -- Sailor Fairfolk <The Bravery>
     25018, -- Sailor Stoneheel <The Bravery>
+    25070, -- Chief Officer Coppernut <The Thundercaller>
+    25071, -- Crewman Rusthammer <The Thundercaller>
+    25072, -- Crewman Quickfix <The Thundercaller>
+    25074, -- Crewman Sparkfly <The Thundercaller>
+    25076, -- Navigator Fairweather <The Thundercaller>
+    25077, -- Sky-Captain Cloudkicker <The Thundercaller>
+    25079, -- Deathguard Fowles <The Thundercaller>
     25080, -- Grunt Umgor
     25081, -- Grunt Ounda
+    25083, -- Deathguard Lawson <The Thundercaller>
     25134, -- Shattered Sun Trainee
     25135, -- Shattered Sun Trainee
     25136, -- Shattered Sun Trainee

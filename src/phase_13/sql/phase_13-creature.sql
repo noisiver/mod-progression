@@ -9,8 +9,16 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     24930, -- Crewman Gazzlegear <The Iron Eagle>
     24931, -- Crewman Fastwrench <The Iron Eagle>
     24935, -- Vend-O-Tron D-Luxe
+    25070, -- Chief Officer Coppernut <The Thundercaller>
+    25071, -- Crewman Rusthammer <The Thundercaller>
+    25072, -- Crewman Quickfix <The Thundercaller>
+    25074, -- Crewman Sparkfly <The Thundercaller>
+    25076, -- Navigator Fairweather <The Thundercaller>
+    25077, -- Sky-Captain Cloudkicker <The Thundercaller>
+    25079, -- Deathguard Fowles <The Thundercaller>
     25080, -- Grunt Umgor
     25081, -- Grunt Ounda
+    25083, -- Deathguard Lawson <The Thundercaller>
     26537, -- Greeb Ramrocket <Borean Tundra Zeppelin Master>
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
