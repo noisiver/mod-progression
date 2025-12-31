@@ -27,6 +27,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2941, -- Lanie Reed <Gryphon Master>
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
+    3310, -- Doras <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
@@ -137,12 +138,17 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    4949, -- Thrall <Warchief>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
-    10181 -- Lady Sylvanas Windrunner <Banshee Queen>
+    10181, -- Lady Sylvanas Windrunner <Banshee Queen>
+    10540 -- Vol'jin
 );
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` IN (
     8383, -- Master Wood
+    14375, -- Scout Stronghand
+    14376, -- Scout Manslayer
+    14377, -- Scout Tharr
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
@@ -160,5 +166,9 @@ UPDATE `creature_template` SET `minlevel` = 68, `maxlevel` = 69 WHERE `entry` IN
     12378 -- Damned Soul
 );
 UPDATE `creature_template` SET `minlevel` = 45, `maxlevel` = 45 WHERE `entry` = 2405; -- Tarren Mill Deathguard
-UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` = 2425; -- Varimathras
+UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` IN (
+    2425, -- Varimathras
+    14720 -- High Overlord Saurfang
+);
 UPDATE `creature_template` SET `mingold` = 1300000, `maxgold` = 1820000 WHERE `entry` = 10184; -- Onyxia
+UPDATE `creature_template` SET `DamageModifier` = 60 WHERE `entry` = 14720; -- High Overlord Saurfang

@@ -69,6 +69,7 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     3518, -- Thomas Miller <Baker>
     5109, -- Myra Tyrngaarde <Bread Vendor>
     6740, -- Innkeeper Allison <Innkeeper>
+    17630, -- Innkeeper Jovia <Innkeeper>
     23522, -- Arlen Lochlan <Bread Vendor>
     23603 -- Uta Roughdough <Bread Vendor>
 ) AND `item` = 27855; -- Mag'har Grainbread
@@ -77,7 +78,8 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     3342, -- Shan'ti <Fruit Vendor>
     6735, -- Innkeeper Saelienne <Innkeeper>
     6740, -- Innkeeper Allison <Innkeeper>
-    7978 -- Bimble Longberry <Fruit Vendor>
+    7978, -- Bimble Longberry <Fruit Vendor>
+    17630 -- Innkeeper Jovia <Innkeeper>
 ) AND `item` = 27856; -- Skethyl Berries
 DELETE FROM `npc_vendor` WHERE `entry` IN (
     228, -- Avette Fellwood <Bowyer>
@@ -1005,12 +1007,6 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     39684, -- Hair Trigger
     40533 -- Walnut Stock
 );
-DELETE FROM `npc_vendor` WHERE `entry` = 17630 AND `item` IN ( -- Innkeeper Jovia <Innkeeper>
-    27854, -- Smoked Talbuk Venison
-    27855, -- Mag'har Grainbread
-    27856, -- Skethyl Berries
-    33454 -- Salted Venison
-);
 DELETE FROM `npc_vendor` WHERE `entry` IN (
     3025, -- Kaga Mistrunner <Meat Vendor>
     3312, -- Olvia <Meat Vendor>
@@ -1048,6 +1044,26 @@ DELETE FROM `npc_vendor` WHERE `entry` = 6028 AND `item` IN ( -- Burkrum <Heavy 
     11363, -- Medium Shot Pouch
     28053, -- Wicked Arrow
     28060 -- Impact Shot
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    3025, -- Kaga Mistrunner <Meat Vendor>
+    3312, -- Olvia <Meat Vendor>
+    3368, -- Borstan <Meat Vendor>
+    4169, -- Jaeana <Meat Vendor>
+    5111, -- Innkeeper Firebrew <Innkeeper>
+    5124, -- Sognar Cliffbeard <Meat Vendor>
+    6929, -- Innkeeper Gryshka <Innkeeper>
+    17630 -- Innkeeper Jovia <Innkeeper>
+) AND `item` = 27854; -- Smoked Talbuk Venison
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    3329, -- Kor'jus <Mushroom Vendor>
+    4554, -- Tawny Grisette <Mushroom Vendor>
+    4571, -- Morley Bates <Fungus Vendor>
+    6741 -- Innkeeper Norman <Innkeeper>
+) AND `item` IN (
+    27859, -- Zangar Caps
+    33452, -- Honey-Spiced Lichen
+    35947 -- Sparkling Frostcap
 );
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES

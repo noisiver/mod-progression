@@ -17,6 +17,7 @@ UPDATE `creature_template` SET `subname` = 'Prince of Stormwind' WHERE `entry` =
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    14304, -- Kor'kron Elite
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
     20672, -- Royal Guard
@@ -24,6 +25,9 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHER
 );
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN (
     13839, -- Royal Dreadguard
+    14375, -- Scout Stronghand
+    14376, -- Scout Manslayer
+    14377, -- Scout Tharr
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
     14367, -- Thief Catcher Thunderbrew
@@ -57,9 +61,11 @@ UPDATE `creature_template` SET `faction` = 190 WHERE `entry` = 706; -- Frostmane
 UPDATE `creature_template` SET `faction` = 2136 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    4949, -- Thrall <Warchief>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>
+    10540, -- Vol'jin
     16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
     17468 -- Prophet Velen
 );
@@ -360,3 +366,4 @@ UPDATE `creature_template` SET `DamageModifier` = 16, `HealthModifier` = 52.5 WH
 UPDATE `creature_template` SET `HealthModifier` = 50, `ManaModifier` = 10 WHERE `entry` = 23089; -- Akama
 UPDATE `creature_template` SET `DamageModifier` = 65, `HealthModifier` = 112 WHERE `entry` = 18728; -- Doom Lord Kazzak
 UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2 WHERE `entry` = 12657; -- Don Pompa
+UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2, `speed_run` = 2.28571, `AIName` = '' WHERE `entry` = 14720; -- High Overlord Saurfang

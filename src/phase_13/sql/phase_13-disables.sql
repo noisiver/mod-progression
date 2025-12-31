@@ -1,3 +1,7 @@
+DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
+    14100, -- Relic of the Earthen Ring
+    14111 -- Relic of the Earthen Ring
+);
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
     574, -- Utgarde Keep
     575, -- Utgarde Pinnacle

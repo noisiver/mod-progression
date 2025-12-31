@@ -30,6 +30,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17092, -- Advisor Duskingdawn
     17094, -- Nemeth Hawkeye <Farstriders>
     17097, -- Advisor Sarophas
+    17098, -- Ambassador Dawnsinger
     17100, -- Advisor Sunsworn
     17104, -- Anchorite Delan
     17103, -- Emissary Taluun
@@ -70,6 +71,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     19860, -- Katrina Turner
     19861, -- Bip Nigstrom <Arena Organizer>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
+    19912, -- Zeggon Botsnap <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20613, -- Arodis Sunblade <Keeper of Sha'tari Artifacts>
@@ -86,9 +88,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     22936, -- Auhula <Apprentice Hippogryph Master>
     22987, -- Skyguard Nether Ray
     23127, -- Farseer Javad <Shaman Trainer>
+    23128, -- Master Pyreanor <Paladin Trainer>
+    23131, -- Blood Knight Honor Guard
     23449, -- Yuula <Recruitment Officer>
     23559, -- Budd Nedreck
     23560, -- Provisioner Ameenah <Reagents>
+    23635, -- Krixx <Zeppelin Engineer>
     23718, -- Mack
     23724, -- Samir
     23745, -- Garg
@@ -160,9 +165,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>
+    29346, -- Apothecary Karlov
     29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
+    30610, -- War-Hunter Molog <Arena Battlemaster>
+    30611, -- Greela "The Grunt" Crankchain <Arena Organizer>
     30706, -- Jo'mah <Inscription Trainer>
     30709, -- Poshken Hardbinder <Inscription Trainer>
     30710, -- Zantasia <Inscription Trainer>
@@ -218,6 +226,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
+    34955, -- Karg Skullgore <Battlemaster>
     34986, -- Liedel the Just <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
@@ -225,23 +234,27 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     34999, -- Jonru <Battlemaster>
     35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35008, -- Sawemba <Battlemaster>
     35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
     35281, -- Rukua <Paladin Trainer>
+    35364, -- Slahtz <Experience Eliminator>
     35365, -- Behsten <Experience Eliminator>
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
+    35602, -- Magister Savarin <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
     36479, -- Archmage Mordent Evenshade <The Highborne>
     36481, -- Sentinel Stillbough
     36517, -- Aleric Hawkins <The Deathstalkers>
+    37072, -- Rogg
     37523, -- Warden of the Sunwell
     37527, -- Halduron Brightwing <Ranger General>
     37888, -- Frax Bucketdrop <Flight Master>
@@ -303,9 +316,10 @@ UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_
 UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id1` = 3901; -- Illiyana
 UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `position_z` = 92.0423, `orientation` = 5.13127 WHERE `id1` = 16475; -- Megelon
 SET @cId := 5300000;
-DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657);
+DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657, 14720);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@cId+0, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8442.99, 331.755, 122.58, 2.24057, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Highlord Bolvar Fordragon
 (@cId+1, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Lady Katrana Prestor
 (@cId+2, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL), -- Lord Kazzak
-(@cId+3, 12657, 0, 0, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- Don Pompa
+(@cId+3, 12657, 0, 0, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Don Pompa
+(@cId+4, 14720, 0, 0, 1, 0, 0, 1, 1, 1, 1565.79, -4395.27, 7.131, 3.22088, 300, 0, 0, 1476000, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- High Overlord Saurfang

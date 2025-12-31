@@ -6,6 +6,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17092, -- Advisor Duskingdawn
     17094, -- Nemeth Hawkeye <Farstriders>
     17097, -- Advisor Sarophas
+    17098, -- Ambassador Dawnsinger
     17100, -- Advisor Sunsworn
     17103, -- Emissary Taluun
     17104, -- Anchorite Delan
@@ -34,6 +35,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
     19909, -- Rex Pixem <Arena Battlemaster>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
+    19912, -- Zeggon Botsnap <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
@@ -42,6 +44,9 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     22935, -- Suralais Farwind <Hippogryph Master>
     22936, -- Auhula <Apprentice Hippogryph Master>
     23127, -- Farseer Javad <Shaman Trainer>
+    23128, -- Master Pyreanor <Paladin Trainer>
+    23131, -- Blood Knight Honor Guard
+    23635, -- Krixx <Zeppelin Engineer>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     25009, -- Captain Angelina Soluna <The Bravery>

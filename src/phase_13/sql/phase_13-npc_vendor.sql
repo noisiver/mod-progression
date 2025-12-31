@@ -25,6 +25,8 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (1448, 1694, 2682, 2683, 2684, 2685, 2
 DELETE FROM `npc_vendor` WHERE `entry` IN (5188, 5189, 5190, 16610) AND `item` IN (15197, 15199, 19505, 19031, 24004, 31773);
 DELETE FROM `npc_vendor` WHERE `entry` IN (3025, 3312, 3368, 4169, 5111, 5124, 6929, 16618, 16739, 17630) AND `item` IN (33454, 35953);
 DELETE FROM `npc_vendor` WHERE `entry` IN (4221, 16618, 16739) AND `item` IN (33451, 35951);
+DELETE FROM `npc_vendor` WHERE `entry` IN (3025, 3312, 3368, 4169, 5111, 5124, 6929, 17630) AND `item` = 27854;
+DELETE FROM `npc_vendor` WHERE `entry` IN (3329, 4554, 4571, 6741) AND `item` IN (27859, 33452, 35947);
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tharynn Bouden <Trade Supplies>
 (66, 10648, 0, 0, 0, 0), -- Common Parchment
@@ -206,6 +208,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3017, 35948, 0, 0, 0, 0), -- Savory Snowplum
 (3017, 35949, 0, 0, 0, 0), -- Tundra Berries
 -- Kaga Mistrunner <Meat Vendor>
+(3025, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (3025, 33454, 0, 0, 0, 0), -- Salted Venison
 (3025, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Wunna Darkmane <Trade Goods>
@@ -242,10 +245,15 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (3187, 10648, 0, 0, 0, 0), -- Common Parchment
 (3187, 39354, 0, 0, 0, 0), -- Light Parchment
 -- Olvia <Meat Vendor>
+(3312, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (3312, 33454, 0, 0, 0, 0), -- Salted Venison
 (3312, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Horthus <Reagents>
 (3323, 37201, 0, 0, 0, 0), -- Corpse Dust
+-- Kor'jus <Mushroom Vendor>
+(3329, 27859, 0, 0, 0, 0), -- Zangar Caps
+(3329, 33452, 0, 0, 0, 0), -- Honey-Spiced Lichen
+(3329, 35947, 0, 0, 0, 0), -- Sparkling Frostcap
 -- Rekkul <Poison Supplies>
 (3334, 43230, 0, 0, 0, 0), -- Instant Poison VIII
 (3334, 43231, 0, 0, 0, 0), -- Instant Poison IX
@@ -269,6 +277,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Tamar <Leatherworking Supplies>
 (3366, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Borstan <Meat Vendor>
+(3368, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (3368, 33454, 0, 0, 0, 0), -- Salted Venison
 (3368, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Zeal'aya <Herbalism Supplies>
@@ -357,6 +366,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Elynna <Tailoring Supplies>
 (4168, 38426, 0, 0, 0, 0), -- Eternium Thread
 -- Jaeana <Meat Vendor>
+(4169, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (4169, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (4169, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (4169, 33445, 0, 0, 0, 0), -- Honeymint Tea
@@ -383,17 +393,23 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (4453, 39684, 0, 0, 0, 0), -- Hair Trigger
 (4453, 40533, 0, 0, 0, 0), -- Walnut Stock
 -- Tawny Grisette <Mushroom Vendor>
+(4554, 27859, 0, 0, 0, 0), -- Zangar Caps
 (4554, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (4554, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (4554, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(4554, 33452, 0, 0, 0, 0), -- Honey-Spiced Lichen
 (4554, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+(4554, 35947, 0, 0, 0, 0), -- Sparkling Frostcap
 -- Thomas Mordan <Reagents>
 (4562, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Morley Bates <Fungus Vendor>
+(4571, 27859, 0, 0, 0, 0), -- Zangar Caps
 (4571, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (4571, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (4571, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(4571, 33452, 0, 0, 0, 0), -- Honey-Spiced Lichen
 (4571, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+(4571, 35947, 0, 0, 0, 0), -- Sparkling Frostcap
 -- Hannah Akeley <Reagents>
 (4575, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Millie Gregorian <Tailoring Supplies>
@@ -459,6 +475,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 -- Barim Jurgenstaad <Reagents>
 (5110, 37201, 0, 0, 0, 0), -- Corpse Dust
 -- Innkeeper Firebrew <Innkeeper>
+(5111, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (5111, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (5111, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (5111, 33445, 0, 0, 0, 0), -- Honeymint Tea
@@ -466,6 +483,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (5111, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 (5111, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Sognar Cliffbeard <Meat Vendor>
+(5124, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (5124, 33454, 0, 0, 0, 0), -- Salted Venison
 (5124, 35953, 0, 0, 0, 0), -- Mead Basted Caribou
 -- Bombus Finespindle <Leatherworking Supplies>
@@ -633,10 +651,13 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6740, 35950, 0, 0, 0, 0), -- Sweet Potato Bread
 (6740, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
 -- Innkeeper Norman <Innkeeper>
+(6741, 27859, 0, 0, 0, 0), -- Zangar Caps
 (6741, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (6741, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (6741, 33445, 0, 0, 0, 0), -- Honeymint Tea
+(6741, 33452, 0, 0, 0, 0), -- Honey-Spiced Lichen
 (6741, 35954, 0, 0, 0, 0), -- Sweetened Goat's Milk
+(6741, 35947, 0, 0, 0, 0), -- Sparkling Frostcap
 -- Innkeeper Pala <Innkeeper>
 (6746, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (6746, 33443, 0, 0, 0, 0), -- Sour Goat Cheese
@@ -659,6 +680,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost
 (6779, 43235, 0, 0, 0, 0), -- Wound Poison VII
 (6779, 43237, 0, 0, 0, 0), -- Anesthetic Poison II
 -- Innkeeper Gryshka <Innkeeper>
+(6929, 27854, 0, 0, 0, 0), -- Smoked Talbuk Venison
 (6929, 28399, 0, 0, 0, 0), -- Filtered Draenic Water
 (6929, 33444, 0, 0, 0, 0), -- Pungent Seal Whey
 (6929, 33445, 0, 0, 0, 0), -- Honeymint Tea

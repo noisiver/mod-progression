@@ -10,6 +10,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     24931, -- Crewman Fastwrench <The Iron Eagle>
     24934, -- Snack-O-Matic IV
     24935, -- Vend-O-Tron D-Luxe
+    34955, -- Karg Skullgore <Battlemaster>
     25070, -- Chief Officer Coppernut <The Thundercaller>
     25071, -- Crewman Rusthammer <The Thundercaller>
     25072, -- Crewman Quickfix <The Thundercaller>
@@ -35,9 +36,12 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     29141, -- Pella Brassbrush <Barber>
     29142, -- Jelinek Sharpshear <Barber>
     29143, -- Bebri Coifcurl <Barber>
+    29346, -- Apothecary Karlov
     29611, -- King Varian Wrynn <King of Stormwind>
     29725, -- Benik Boltshear <Locksmith>
     29728, -- Walter Soref <Locksmith>
+    30610, -- War-Hunter Molog <Arena Battlemaster>
+    30611, -- Greela "The Grunt" Crankchain <Arena Organizer>
     30706, -- Jo'mah <Inscription Trainer>
     30709, -- Poshken Hardbinder <Inscription Trainer>
     30710, -- Zantasia <Inscription Trainer>
@@ -100,23 +104,27 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     34999, -- Jonru <Battlemaster>
     35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
+    35008, -- Sawemba <Battlemaster>
     35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
     35281, -- Rukua <Paladin Trainer>
+    35364, -- Slahtz <Experience Eliminator>
     35365, -- Behsten <Experience Eliminator>
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
+    35602, -- Magister Savarin <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
     36479, -- Archmage Mordent Evenshade <The Highborne>
     36481, -- Sentinel Stillbough
     36517, -- Aleric Hawkins <The Deathstalkers>
+    37072, -- Rogg
     37523, -- Warden of the Sunwell
     37527, -- Halduron Brightwing <Ranger General>
     37888, -- Frax Bucketdrop <Flight Master>
@@ -144,7 +152,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
 DELETE FROM `creature` WHERE `id1` IN (
     1748, -- Highlord Bolvar Fordragon
     1749, -- Lady Katrana Prestor
-    12657 -- Don Pompa
+    12657, -- Don Pompa
+    14720 -- High Overlord Saurfang
 );
 UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
 UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Undercity Guardian -> Kor'kron Overseer

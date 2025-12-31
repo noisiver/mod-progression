@@ -34,6 +34,15 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195528, -- Mailbox
     195529, -- Mailbox
     195530, -- Mailbox
+    195554, -- Mailbox
+    195555, -- Mailbox
+    195556, -- Mailbox
+    195557, -- Mailbox
+    195558, -- Mailbox
+    195559, -- Mailbox
+    195560, -- Mailbox
+    195561, -- Mailbox
+    195562, -- Mailbox
     195603, -- Mailbox
     195604, -- Mailbox
     195605, -- Mailbox
@@ -59,6 +68,8 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195629 -- Mailbox
 );
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
+    347, -- Blacksmith's Anvil
+    387, -- Forge
     50675, -- Rope Line
     50676, -- Rope Line
     50677, -- Rope Line Pole

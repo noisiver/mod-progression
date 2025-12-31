@@ -28,6 +28,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2941, -- Lanie Reed <Gryphon Master>
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
+    3310, -- Doras <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
@@ -79,12 +80,14 @@ UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Dis
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` IN (
     466, -- General Marcus Jonathan <High Commander of Stormwind Defense>
-    2425 -- Varimathras
+    2425, -- Varimathras
+    14720 -- High Overlord Saurfang
 );
 UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1747; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    14304, -- Kor'kron Elite
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
     20672, -- Royal Guard
@@ -93,10 +96,14 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHER
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime` = 2000, `mingold` = 1065700, `maxgold` = 1065700, `AIName` = 'SmartAI', `flags_extra` = `flags_extra` & ~1 WHERE `entry` = 12397; -- Lord Kazzak
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN (
     8383, -- Master Wood
+    10540, -- Vol'jin
     13839, -- Royal Dreadguard
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
     14367, -- Thief Catcher Thunderbrew
+    14375, -- Scout Stronghand
+    14376, -- Scout Manslayer
+    14377, -- Scout Tharr
     14378, -- Huntress Skymane
     14379, -- Huntress Ravenoak
     14380, -- Huntress Leafrunner
@@ -189,6 +196,7 @@ UPDATE `creature_template` SET `faction` = 107 WHERE `entry` IN (
 UPDATE `creature_template` SET `faction` = 37 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    4949, -- Thrall <Warchief>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181 -- Lady Sylvanas Windrunner <Banshee Queen>
@@ -512,3 +520,4 @@ UPDATE `creature_template` SET `DamageModifier` = 32, `HealthModifier` = 75 WHER
 UPDATE `creature_template` SET `HealthModifier` = 165, `ManaModifier` = 100 WHERE `entry` = 23089; -- Akama
 UPDATE `creature_template` SET `DamageModifier` = 90, `HealthModifier` = 160 WHERE `entry` = 18728; -- Doom Lord Kazzak
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+3, `npcflag` = `npcflag` & ~2 | 1 WHERE `entry` = 12657; -- Don Pompa
+UPDATE `creature_template` SET `gossip_menu_id` = @cId+4, `npcflag` = `npcflag` & ~2 | 1, `speed_run` = 1, `DamageModifier` = 15, `AIName` = 'SmartAI' WHERE `entry` = 14720; -- High Overlord Saurfang

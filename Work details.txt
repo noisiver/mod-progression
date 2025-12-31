@@ -46,7 +46,7 @@ Kalimdor
 ❌ Feralas
 ❌ Moonglade
 ❌ Mulgore
-❌ Orgrimmar
+✅ Orgrimmar
 ❌ Silithus
 ❌ Stonetalon Mountains
 ❌ Tanaris
