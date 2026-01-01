@@ -521,3 +521,28 @@ UPDATE `creature_template` SET `HealthModifier` = 165, `ManaModifier` = 100 WHER
 UPDATE `creature_template` SET `DamageModifier` = 90, `HealthModifier` = 160 WHERE `entry` = 18728; -- Doom Lord Kazzak
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+3, `npcflag` = `npcflag` & ~2 | 1 WHERE `entry` = 12657; -- Don Pompa
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+4, `npcflag` = `npcflag` & ~2 | 1, `speed_run` = 1, `DamageModifier` = 15, `AIName` = 'SmartAI' WHERE `entry` = 14720; -- High Overlord Saurfang
+UPDATE `creature_template` SET `subname` = 'Journeyman Alchemist' WHERE `entry` IN (
+    1215, -- Alchemist Mallory <Alchemy Trainer>
+    1470, -- Ghak Healtouch <Alchemy Trainer>
+    2132, -- Carolai Anise <Alchemy Trainer>
+    3184, -- Miao'zan <Alchemy Trainer>
+    3603 -- Cyndra Kindwhisper <Alchemy Trainer>
+);
+UPDATE `creature_template` SET `subname` = 'Expert Alchemist' WHERE `entry` IN (
+    2391, -- Serge Hinott <Alchemy Trainer>
+    2837, -- Jaxin Chong <Alchemy Trainer>
+    3009, -- Bena Winterhoof <Alchemy Trainer>
+    3347, -- Yelmak <Alchemy Trainer>
+    3964, -- Kylanna <Alchemy Trainer>
+    4900, -- Alchemist Narett <Alchemy Trainer>
+    5177, -- Tally Berryfizz <Alchemy Trainer>
+    5499 -- Lilyssia Nightbreeze <Alchemy Trainer>
+);
+UPDATE `creature_template` SET `subname` = 'Artisan Alchemist' WHERE `entry` IN (
+    4160, -- Ainethil <Alchemy Trainer>
+    4611 -- Doctor Herbert Halsey <Alchemy Trainer>
+);
+UPDATE `creature_template` SET `subname` = 'Master Alchemist' WHERE `entry` IN (
+    1386, -- Rogvar <Alchemy Trainer>
+    7948 -- Kylanna Windwhisper <Alchemy Trainer>
+);

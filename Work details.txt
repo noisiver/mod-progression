@@ -82,7 +82,7 @@ Northrend
 ❌ Zul'Drak
 
 Profession Trainers
-❌ Alchemy
+✅ Alchemy
 ❌ Blacksmithing
 ❌ Cooking
 ❌ Enchanting
