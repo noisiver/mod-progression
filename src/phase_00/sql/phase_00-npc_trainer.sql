@@ -2,7 +2,7 @@ UPDATE `npc_trainer` SET `MoneyCost` = 900000, `ReqLevel` = 40 WHERE `SpellID` =
 UPDATE `npc_trainer` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellID` = 33391; -- Journeyman Riding
 UPDATE `npc_trainer` SET `MoneyCost` = 8000000, `ReqLevel` = 70 WHERE `SpellID` = 34090; -- Expert Riding
 SET @TrainerId := 300000;
-DELETE FROM `npc_trainer` WHERE `ID` IN (1215, 1246, 1386, 1470, 2132, 2391, 2837, 3009, 3184, 3347, 3603, 3964, 4160, 4611, 4900, 5177, 5499, 7948, 16161, 16588, 16642, 16723, 18802, 19052);
+DELETE FROM `npc_trainer` WHERE `ID` IN (1215, 1246, 1386, 1470, 2132, 2391, 2837, 3009, 3184, 3347, 3603, 3964, 4160, 4611, 4609, 4900, 5177, 5499, 5500, 7948, 11041, 11042, 11044, 11046, 11047, 16161, 16588, 16642, 16723, 18802, 19052);
 DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+4;
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 -- Alchemist Mallory <Alchemy Trainer>
@@ -41,6 +41,9 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (4160, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 (4160, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
 (4160, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+-- Doctor Marsh <Apprentice Alchemist>
+(4609, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(4609, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
 -- Doctor Herbert Halsey <Alchemy Trainer>
 (4611, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 (4611, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
@@ -54,11 +57,24 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Lilyssia Nightbreeze <Alchemy Trainer>
 (5499, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 (5499, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+-- Tel'Athir <Apprentice Alchemist>
+(5500, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 -- Kylanna Windwhisper <Alchemy Trainer>
 (7948, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 (7948, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
 (7948, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
 (7948, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
+-- Milla Fairancora <Apprentice Alchemist>
+(11041, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+-- Sylvanna Forestmoon <Apprentice Alchemist>
+(11042, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(11042, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+-- Doctor Martin Felben <Apprentice Alchemist>
+(11044, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+-- Whuut <Apprentice Alchemist>
+(11046, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+-- Kray <Apprentice Alchemist>
+(11047, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 -- Arcanist Sheynathren <Alchemy Trainer>
 (16161, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 -- Apothecary Antonivich <Master Alchemy Trainer>
@@ -162,9 +178,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+0 WHERE `Creature
     2132, -- Carolai Anise <Alchemy Trainer>
     3184, -- Miao'zan <Alchemy Trainer>
     3603, -- Cyndra Kindwhisper <Alchemy Trainer>
-    16161, -- Arcanist Sheynathren <Alchemy Trainer>
-    16642, -- Camberon <Alchemy Trainer>
-    16723 -- Lucc <Alchemy Trainer>
+    16161 -- Arcanist Sheynathren <Alchemy Trainer>
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+1 WHERE `CreatureId` IN (
     2391, -- Serge Hinott <Alchemy Trainer>
@@ -182,7 +196,9 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+2 WHERE `Creature
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+3 WHERE `CreatureId` IN (
     1386, -- Rogvar <Alchemy Trainer>
-    7948 -- Kylanna Windwhisper <Alchemy Trainer>
+    7948, -- Kylanna Windwhisper <Alchemy Trainer>
+    16642 -- Camberon <Alchemy Trainer>
+    16723 -- Lucc <Alchemy Trainer>
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `CreatureId` IN (
     16588, -- Apothecary Antonivich <Master Alchemy Trainer>
@@ -190,10 +206,24 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `Creature
     19052 -- Lorokeem <Master Alchemy Trainer>
 );
 
-DELETE FROM `creature_default_trainer` WHERE `CreatureId` = 1246;
+DELETE FROM `creature_default_trainer` WHERE `CreatureId`  IN (1246, 4609, 5500, 11041, 11042, 11044, 11046, 11047);
 INSERT INTO `creature_default_trainer` (`CreatureId`, `TrainerId`) VALUES
 -- Vosur Brakthel <Apprentice Alchemist>
-(1246, @TrainerId+0); -- Apprentice Alchemy
+(1246, @TrainerId+0), -- Apprentice Alchemy
+-- Doctor Marsh <Apprentice Alchemist>
+(4609, @TrainerId+1), -- Apprentice Alchemy
+-- Tel'Athir <Apprentice Alchemist>
+(5500, @TrainerId+0), -- Apprentice Alchemy
+-- Milla Fairancora <Apprentice Alchemist>
+(11041, @TrainerId+0), -- Apprentice Alchemy
+-- Sylvanna Forestmoon <Apprentice Alchemist>
+(11042, @TrainerId+1), -- Journeyman Alchemy
+-- Doctor Martin Felben <Apprentice Alchemist>
+(11044, @TrainerId+0), -- Apprentice Alchemy
+-- Whuut <Apprentice Alchemist>
+(11046, @TrainerId+0), -- Apprentice Alchemy
+-- Kray <Apprentice Alchemist>
+(11047, @TrainerId+0); -- Apprentice Alchemy
 
 UPDATE `trainer_spell` SET `MoneyCost` = 900000, `ReqLevel` = 40 WHERE `SpellId` = 33388; -- Apprentice Riding
 UPDATE `trainer_spell` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellId` = 33391; -- Journeyman Riding

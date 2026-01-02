@@ -546,4 +546,15 @@ UPDATE `creature_template` SET `subname` = 'Master Alchemist' WHERE `entry` IN (
     1386, -- Rogvar <Alchemy Trainer>
     7948 -- Kylanna Windwhisper <Alchemy Trainer>
 );
-UPDATE `creature_template` SET `npcflag` = `npcflag` | 16, `trainer_type` = 2 WHERE `entry` = 1246; -- Vosur Brakthel <Apprentice Alchemist>
+UPDATE `creature_template` SET `subname` = 'Journeyman Alchemist', `npcflag` = `npcflag` | 16, `trainer_type` = 2 WHERE `entry` IN (
+    1246, -- Vosur Brakthel <Apprentice Alchemist>
+    5500, -- Tel'Athir <Apprentice Alchemist>
+    11041, -- Milla Fairancora <Apprentice Alchemist>
+    11044, -- Doctor Martin Felben <Apprentice Alchemist>
+    11046, -- Whuut <Apprentice Alchemist>
+    11047 -- Kray <Apprentice Alchemist>
+);
+UPDATE `creature_template` SET `subname` = 'Expert Alchemist', `npcflag` = `npcflag` | 16, `trainer_type` = 2 WHERE `entry` IN (
+    4609, -- Doctor Marsh <Apprentice Alchemist>
+    11042 -- Sylvanna Forestmoon <Apprentice Alchemist>
+);
