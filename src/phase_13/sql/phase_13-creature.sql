@@ -98,6 +98,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     33684, -- Weaver Aoa <Master Tailoring Trainer>
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
     34986, -- Liedel the Just <Battlemaster>
+    34988, -- Landuen Moonclaw <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
@@ -116,6 +117,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35599, -- Arcanist Dulial <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35602, -- Magister Savarin <Wintergrasp Battle-Mage>

@@ -74,6 +74,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     19912, -- Zeggon Botsnap <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
+    20497, -- Fima Five-Fingers <Arena Battlemaster>
     20613, -- Arodis Sunblade <Keeper of Sha'tari Artifacts>
     20616, -- Asuur <Keeper of Sha'tari Artifacts>
     20807, -- Scribe Saalyn <Aldor Inscriptions>
@@ -228,6 +229,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
     34955, -- Karg Skullgore <Battlemaster>
     34986, -- Liedel the Just <Battlemaster>
+    34988, -- Landuen Moonclaw <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
     34997, -- Devin Fardale <Battlemaster>
     34998, -- Alison Devay <Battlemaster>
@@ -246,6 +248,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
+    35599, -- Arcanist Dulial <Wintergrasp Battle-Mage>
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35602, -- Magister Savarin <Wintergrasp Battle-Mage>
