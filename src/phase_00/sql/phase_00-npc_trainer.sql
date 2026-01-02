@@ -197,7 +197,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+2 WHERE `Creature
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+3 WHERE `CreatureId` IN (
     1386, -- Rogvar <Alchemy Trainer>
     7948, -- Kylanna Windwhisper <Alchemy Trainer>
-    16642 -- Camberon <Alchemy Trainer>
+    16642, -- Camberon <Alchemy Trainer>
     16723 -- Lucc <Alchemy Trainer>
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `CreatureId` IN (

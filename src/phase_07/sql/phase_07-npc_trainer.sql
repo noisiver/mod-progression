@@ -93,7 +93,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+3 WHERE `Creature
 DELETE FROM `creature_default_trainer` WHERE `CreatureId` IN (
     1246, -- Vosur Brakthel <Apprentice Alchemist>
     4609, -- Doctor Marsh <Apprentice Alchemist>
-    5500, -- Tel'Athir <Apprentice Alchemist>
+    5500 -- Tel'Athir <Apprentice Alchemist>
 );
 
 UPDATE `trainer_spell` SET `MoneyCost` = 350000, `ReqLevel` = 30 WHERE `SpellId` = 33388; -- Apprentice Riding
