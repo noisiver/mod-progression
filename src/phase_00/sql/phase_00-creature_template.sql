@@ -546,3 +546,4 @@ UPDATE `creature_template` SET `subname` = 'Master Alchemist' WHERE `entry` IN (
     1386, -- Rogvar <Alchemy Trainer>
     7948 -- Kylanna Windwhisper <Alchemy Trainer>
 );
+UPDATE `creature_template` SET `npcflag` = `npcflag` | 16, `trainer_type` = 2 WHERE `entry` = 1246; -- Vosur Brakthel <Apprentice Alchemist>

@@ -2,11 +2,13 @@ UPDATE `npc_trainer` SET `MoneyCost` = 900000, `ReqLevel` = 40 WHERE `SpellID` =
 UPDATE `npc_trainer` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellID` = 33391; -- Journeyman Riding
 UPDATE `npc_trainer` SET `MoneyCost` = 8000000, `ReqLevel` = 70 WHERE `SpellID` = 34090; -- Expert Riding
 SET @TrainerId := 300000;
-DELETE FROM `npc_trainer` WHERE `ID` IN (1215, 1386, 1470, 2132, 2391, 2837, 3009, 3184, 3347, 3603, 3964, 4160, 4611, 4900, 5177, 5499, 7948, 16161, 16588, 16642, 16723, 18802, 19052);
+DELETE FROM `npc_trainer` WHERE `ID` IN (1215, 1246, 1386, 1470, 2132, 2391, 2837, 3009, 3184, 3347, 3603, 3964, 4160, 4611, 4900, 5177, 5499, 7948, 16161, 16588, 16642, 16723, 18802, 19052);
 DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+4;
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 -- Alchemist Mallory <Alchemy Trainer>
 (1215, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+-- Vosur Brakthel <Apprentice Alchemist>
+(1246, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 -- Rogvar <Alchemy Trainer>
 (1386, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 (1386, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
@@ -60,15 +62,33 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Arcanist Sheynathren <Alchemy Trainer>
 (16161, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
 -- Apothecary Antonivich <Master Alchemy Trainer>
-(16588, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(16588, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(16588, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+(16588, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+(16588, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
+(16588, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Master Alchemy
 -- Camberon <Alchemy Trainer>
 (16642, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(16642, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+(16642, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+(16642, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
 -- Lucc <Alchemy Trainer>
 (16723, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(16723, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+(16723, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+(16723, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
 -- Alchemist Gribble <Master Alchemy Trainer>
-(18802, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(18802, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(18802, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+(18802, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+(18802, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
+(18802, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Master Alchemy
 -- Lorokeem <Master Alchemy Trainer>
-(19052, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(19052, -(@TrainerId+0), 0, 0, 0, 0, 0), -- Apprentice Alchemy
+(19052, -(@TrainerId+1), 0, 0, 0, 0, 0), -- Journeyman Alchemy
+(19052, -(@TrainerId+2), 0, 0, 0, 0, 0), -- Expert Alchemy
+(19052, -(@TrainerId+3), 0, 0, 0, 0, 0), -- Artisan Alchemy
+(19052, -(@TrainerId+4), 0, 0, 0, 0, 0), -- Master Alchemy
 -- Apprentice Alchemy
 (@TrainerId+0, 2275, 10, 0, 0, 5, 0), -- Apprentice Alchemist
 (@TrainerId+0, 2331, 100, 171, 25, 0, 0), -- Minor Mana Potion
@@ -113,7 +133,25 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+3, 17556, 20000, 171, 275, 0, 0), -- Major Healing Potion
 (@TrainerId+3, 17557, 20000, 171, 275, 0, 0), -- Elixir of Brute Force
 (@TrainerId+3, 17572, 20000, 171, 285, 0, 0), -- Purification Potion
-(@TrainerId+3, 22808, 10000, 171, 215, 0, 0); -- Elixir of Greater Water Breathing
+(@TrainerId+3, 22808, 10000, 171, 215, 0, 0), -- Elixir of Greater Water Breathing
+-- Master Alchemy
+(@TrainerId+4, 11465, 12000, 171, 235, 0, 0), -- Elixir of Greater Intellect
+(@TrainerId+4, 11467, 12000, 171, 240, 0, 0), -- Elixir of Greater Agility
+(@TrainerId+4, 11478, 14000, 171, 250, 0, 0), -- Elixir of Detect Demon
+(@TrainerId+4, 17573, 20000, 171, 285, 0, 0), -- Greater Arcane Elixir
+(@TrainerId+4, 28544, 25000, 171, 305, 0, 0), -- Elixir of Major Strength
+(@TrainerId+4, 28545, 25000, 171, 310, 0, 0), -- Elixir of Healing Power
+(@TrainerId+4, 28551, 50000, 171, 325, 0, 0), -- Super Healing Potion
+(@TrainerId+4, 28597, 100000, 171, 275, 50, 0), -- Master Alchemist
+(@TrainerId+4, 33732, 20000, 171, 300, 0, 0), -- Volatile Healing Potion
+(@TrainerId+4, 33733, 25000, 171, 310, 0, 0), -- Unstable Mana Potion
+(@TrainerId+4, 33738, 20000, 171, 300, 0, 0), -- Onslaught Elixir
+(@TrainerId+4, 33740, 20000, 171, 300, 0, 0), -- Adept's Elixir
+(@TrainerId+4, 33741, 30000, 171, 315, 0, 0), -- Elixir of Mastery
+(@TrainerId+4, 38070, 20000, 171, 325, 0, 0), -- Mercurial Stone
+(@TrainerId+4, 39636, 25000, 171, 310, 0, 0), -- Elixir of Major Fortitude
+(@TrainerId+4, 39638, 30000, 171, 320, 0, 0), -- Elixir of Draenic Wisdom
+(@TrainerId+4, 45061, 30000, 171, 325, 0, 0); -- Mad Alchemist's Potion
 
 /* Preparation for new trainer system
 SET @TrainerId := 200;
@@ -151,6 +189,11 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `Creature
     18802, -- Alchemist Gribble <Master Alchemy Trainer>
     19052 -- Lorokeem <Master Alchemy Trainer>
 );
+
+DELETE FROM `creature_default_trainer` WHERE `CreatureId` = 1246;
+INSERT INTO `creature_default_trainer` (`CreatureId`, `TrainerId`) VALUES
+-- Vosur Brakthel <Apprentice Alchemist>
+(1246, @TrainerId+0); -- Apprentice Alchemy
 
 UPDATE `trainer_spell` SET `MoneyCost` = 900000, `ReqLevel` = 40 WHERE `SpellId` = 33388; -- Apprentice Riding
 UPDATE `trainer_spell` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellId` = 33391; -- Journeyman Riding
@@ -252,5 +295,63 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+3, 17556, 20000, 171, 275, 0, 0, 0, 0, 0), -- Major Healing Potion
 (@TrainerId+3, 17557, 20000, 171, 275, 0, 0, 0, 0, 0), -- Elixir of Brute Force
 (@TrainerId+3, 17572, 20000, 171, 285, 0, 0, 0, 0, 0), -- Purification Potion
-(@TrainerId+3, 22808, 10000, 171, 215, 0, 0, 0, 0, 0); -- Elixir of Greater Water Breathing
+(@TrainerId+3, 22808, 10000, 171, 215, 0, 0, 0, 0, 0), -- Elixir of Greater Water Breathing
+-- Master Alchemy
+(@TrainerId+4, 2275, 10, 0, 0, 0, 0, 0, 5, 0), -- Apprentice Alchemist
+(@TrainerId+4, 2280, 500, 171, 50, 2259, 0, 0, 10, 0), -- Journeyman Alchemist
+(@TrainerId+4, 2331, 100, 171, 25, 0, 0, 0, 0, 0), -- Minor Mana Potion
+(@TrainerId+4, 2332, 150, 171, 40, 0, 0, 0, 0, 0), -- Minor Rejuvenation Potion
+(@TrainerId+4, 2334, 250, 171, 50, 0, 0, 0, 0, 0), -- Elixir of Minor Fortitude
+(@TrainerId+4, 2337, 1000, 171, 55, 0, 0, 0, 0, 0), -- Lesser Healing Potion
+(@TrainerId+4, 3170, 50, 171, 15, 0, 0, 0, 0, 0), -- Weak Troll's Blood Elixir
+(@TrainerId+4, 3171, 500, 171, 90, 0, 0, 0, 0, 0), -- Elixir of Wisdom
+(@TrainerId+4, 3173, 1500, 171, 120, 0, 0, 0, 0, 0), -- Lesser Mana Potion
+(@TrainerId+4, 3176, 1500, 171, 125, 0, 0, 0, 0, 0), -- Strong Troll's Blood Elixir
+(@TrainerId+4, 3177, 2000, 171, 130, 0, 0, 0, 0, 0), -- Elixir of Defense
+(@TrainerId+4, 3447, 4000, 171, 110, 0, 0, 0, 0, 0), -- Healing Potion
+(@TrainerId+4, 3448, 5000, 171, 165, 0, 0, 0, 0, 0), -- Lesser Invisibility Potion
+(@TrainerId+4, 3450, 6000, 171, 175, 0, 0, 0, 0, 0), -- Elixir of Fortitude
+(@TrainerId+4, 3452, 5000, 171, 160, 0, 0, 0, 0, 0), -- Mana Potion
+(@TrainerId+4, 3465, 5000, 171, 125, 3101, 0, 0, 20, 0), -- Expert Alchemist
+(@TrainerId+4, 7179, 450, 171, 90, 0, 0, 0, 0, 0), -- Elixir of Water Breathing
+(@TrainerId+4, 7181, 5000, 171, 155, 0, 0, 0, 0, 0), -- Greater Healing Potion
+(@TrainerId+4, 7836, 250, 171, 80, 0, 0, 0, 0, 0), -- Blackmouth Oil
+(@TrainerId+4, 7837, 1000, 171, 130, 0, 0, 0, 0, 0), -- Fire Oil
+(@TrainerId+4, 7841, 1000, 171, 100, 0, 0, 0, 0, 0), -- Swim Speed Potion
+(@TrainerId+4, 7845, 3000, 171, 140, 0, 0, 0, 0, 0), -- Elixir of Firepower
+(@TrainerId+4, 11448, 9000, 171, 205, 0, 0, 0, 0, 0), -- Greater Mana Potion
+(@TrainerId+4, 11449, 6500, 171, 185, 0, 0, 0, 0, 0), -- Elixir of Agility
+(@TrainerId+4, 11450, 7500, 171, 195, 0, 0, 0, 0, 0), -- Elixir of Greater Defense
+(@TrainerId+4, 11451, 8000, 171, 205, 0, 0, 0, 0, 0), -- Oil of Immolation
+(@TrainerId+4, 11457, 10000, 171, 215, 0, 0, 0, 0, 0), -- Superior Healing Potion
+(@TrainerId+4, 11460, 5000, 171, 230, 0, 0, 0, 0, 0), -- Elixir of Detect Undead
+(@TrainerId+4, 11461, 10000, 171, 235, 0, 0, 0, 0, 0), -- Arcane Elixir
+(@TrainerId+4, 11465, 12000, 171, 235, 0, 0, 0, 0, 0), -- Elixir of Greater Intellect
+(@TrainerId+4, 11467, 12000, 171, 240, 0, 0, 0, 0, 0), -- Elixir of Greater Agility
+(@TrainerId+4, 11478, 14000, 171, 250, 0, 0, 0, 0, 0), -- Elixir of Detect Demon
+(@TrainerId+4, 11612, 50000, 171, 200, 3464, 0, 0, 35, 0), -- Artisan Alchemist
+(@TrainerId+4, 12609, 8000, 171, 200, 0, 0, 0, 0, 0), -- Catseye Elixir
+(@TrainerId+4, 15833, 10000, 171, 230, 0, 0, 0, 0, 0), -- Dreamless Sleep Potion
+(@TrainerId+4, 17551, 15000, 171, 250, 0, 0, 0, 0, 0), -- Stonescale Oil
+(@TrainerId+4, 17552, 15000, 171, 255, 0, 0, 0, 0, 0), -- Mighty Rage Potion
+(@TrainerId+4, 17553, 15000, 171, 260, 0, 0, 0, 0, 0), -- Superior Mana Potion
+(@TrainerId+4, 17555, 15000, 171, 270, 0, 0, 0, 0, 0), -- Elixir of the Sages
+(@TrainerId+4, 17556, 20000, 171, 275, 0, 0, 0, 0, 0), -- Major Healing Potion
+(@TrainerId+4, 17557, 20000, 171, 275, 0, 0, 0, 0, 0), -- Elixir of Brute Force
+(@TrainerId+4, 17572, 20000, 171, 285, 0, 0, 0, 0, 0), -- Purification Potion
+(@TrainerId+4, 17573, 20000, 171, 285, 0, 0, 0, 0, 0), -- Greater Arcane Elixir
+(@TrainerId+4, 22808, 10000, 171, 215, 0, 0, 0, 0, 0), -- Elixir of Greater Water Breathing
+(@TrainerId+4, 28544, 25000, 171, 305, 0, 0, 0, 0, 0), -- Elixir of Major Strength
+(@TrainerId+4, 28545, 25000, 171, 310, 0, 0, 0, 0, 0), -- Elixir of Healing Power
+(@TrainerId+4, 28551, 50000, 171, 325, 0, 0, 0, 0, 0), -- Super Healing Potion
+(@TrainerId+4, 28597, 100000, 171, 275, 11611, 0, 0, 50, 0), -- Master Alchemist
+(@TrainerId+4, 33732, 20000, 171, 300, 0, 0, 0, 0, 0), -- Volatile Healing Potion
+(@TrainerId+4, 33733, 25000, 171, 310, 0, 0, 0, 0, 0), -- Unstable Mana Potion
+(@TrainerId+4, 33738, 20000, 171, 300, 0, 0, 0, 0, 0), -- Onslaught Elixir
+(@TrainerId+4, 33740, 20000, 171, 300, 0, 0, 0, 0, 0), -- Adept's Elixir
+(@TrainerId+4, 33741, 30000, 171, 315, 0, 0, 0, 0, 0), -- Elixir of Mastery
+(@TrainerId+4, 38070, 20000, 171, 325, 0, 0, 0, 0, 0), -- Mercurial Stone
+(@TrainerId+4, 39636, 25000, 171, 310, 0, 0, 0, 0, 0), -- Elixir of Major Fortitude
+(@TrainerId+4, 39638, 30000, 171, 320, 0, 0, 0, 0, 0), -- Elixir of Draenic Wisdom
+(@TrainerId+4, 45061, 30000, 171, 325, 0, 0, 0, 0, 0); -- Mad Alchemist's Potion
 */
