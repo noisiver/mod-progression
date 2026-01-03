@@ -101,7 +101,7 @@ Class Trainers
 ❌ Rogue
 ❌ Shaman
 ❌ Warlock
-❌ Warrior
+✅ Warrior
 
 Class Quests
 ❌ Druid
