@@ -6,6 +6,7 @@ DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+0 AND `SpellID` IN (469, 2048,
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+2 AND `SpellID` IN (13820,25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31801, 31884, 32223, 32699, 32700, 33072);
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+3 AND `SpellID` IN (25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31884, 32223, 32699, 32700, 33072, 34768);
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+4 AND `SpellID` = 498;
+DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+5 AND `SpellID` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -35,8 +36,7 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+0, 30356, 71000, 0, 0, 70, 0), -- Shield Slam (Rank 6)
 (@TrainerId+0, 30357, 260000, 0, 0, 70, 0), -- Revenge (Rank 8)
 (@TrainerId+0, 34428, 58000, 0, 0, 62, 0), -- Victory Rush
--- Paladin
--- Human/Dwarf/Draenei: Outside starting zones
+-- Paladin - Human/Dwarf/Draenei: Outside starting zones
 (@TrainerId+2, 13820, 3500, 0, 0, 30, 0), -- Summon Warhorse (Summon)
 (@TrainerId+2, 25290, 50000, 0, 0, 60, 0), -- Blessing of Wisdom (Rank 6)
 (@TrainerId+2, 25291, 50000, 0, 0, 60, 0), -- Blessing of Might (Rank 7)
@@ -67,7 +67,7 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+2, 32699, 2300, 0, 0, 60, 0), -- Avenger's Shield (Rank 2)
 (@TrainerId+2, 32700, 5000, 0, 0, 70, 0), -- Avenger's Shield (Rank 3)
 (@TrainerId+2, 33072, 6500, 0, 0, 70, 0), -- Holy Shock (Rank 5)
--- Blood Elf: Outside starting zones
+-- Paladin - Blood Elf: Outside starting zones
 (@TrainerId+3, 25290, 50000, 0, 0, 60, 0), -- Blessing of Wisdom (Rank 6)
 (@TrainerId+3, 25291, 50000, 0, 0, 60, 0), -- Blessing of Might (Rank 7)
 (@TrainerId+3, 25292, 46000, 0, 0, 60, 0), -- Holy Light (Rank 9)
@@ -98,7 +98,46 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+3, 33072, 6500, 0, 0, 70, 0), -- Holy Shock (Rank 5)
 (@TrainerId+3, 34768, 3500, 0, 0, 20, 0), -- Summon Warhorse
 -- Paladin: Starting zones
-(@TrainerId+4, 498, 100, 0, 0, 6, 0); -- Divine Protection
+(@TrainerId+4, 498, 100, 0, 0, 6, 0), -- Divine Protection
+-- Hunter: Outside starting zones
+(@TrainerId+5, 19801, 50000, 0, 0, 60, 0), -- Tranquilizing Shot
+(@TrainerId+5, 25294, 50000, 0, 0, 60, 0), -- Multi-Shot (Rank 5)
+(@TrainerId+5, 25295, 50000, 0, 0, 60, 0), -- Serpent Sting (Rank 9)
+(@TrainerId+5, 25296, 50000, 0, 0, 60, 0), -- Aspect of the Hawk (Rank 7)
+(@TrainerId+5, 27014, 87000, 0, 0, 63, 0), -- Raptor Strike (Rank 9)
+(@TrainerId+5, 27016, 140000, 0, 0, 67, 0), -- Serpent Sting (Rank 10)
+(@TrainerId+5, 27019, 170000, 0, 0, 69, 0), -- Arcane Shot (Rank 9)
+(@TrainerId+5, 27021, 140000, 0, 0, 67, 0), -- Multi-Shot (Rank 6)
+(@TrainerId+5, 27022, 140000, 0, 0, 67, 0), -- Volley (Rank 4)
+(@TrainerId+5, 27023, 110000, 0, 0, 65, 0), -- Immolation Trap (Rank 6)
+(@TrainerId+5, 27025, 68000, 0, 0, 61, 0), -- Explosive Trap (Rank 4)
+(@TrainerId+5, 27044, 150000, 0, 0, 68, 0), -- Aspect of the Hawk (Rank 8)
+(@TrainerId+5, 27045, 150000, 0, 0, 68, 0), -- Aspect of the Wild (Rank 3)
+(@TrainerId+5, 27046, 150000, 0, 0, 68, 0), -- Mend Pet (Rank 8)
+(@TrainerId+5, 27065, 10000, 0, 0, 70, 0), -- Aimed Shot (Rank 7)
+(@TrainerId+5, 27067, 2500, 0, 0, 66, 0), -- Counterattack (Rank 4)
+(@TrainerId+5, 27068, 5000, 0, 0, 70, 0), -- Wyvern Sting (Rank 4)
+(@TrainerId+5, 34026, 120000, 0, 0, 66, 0), -- Kill Command
+(@TrainerId+5, 34074, 2200, 0, 0, 20, 0), -- Aspect of the Viper
+(@TrainerId+5, 34477, 190000, 0, 0, 70, 0), -- Misdirection
+(@TrainerId+5, 34600, 150000, 0, 0, 68, 0), -- Snake Trap
+(@TrainerId+5, 36916, 300000, 0, 0, 70, 0), -- Mongoose Bite (Rank 5)
+(@TrainerId+5, 56641, 77000, 0, 0, 62, 0), -- Steady Shot (Rank 1)
+(@TrainerId+5, 60051, 400, 0, 0, 70, 0), -- Explosive Shot (Rank 2)
+(@TrainerId+5, 63669, 7000, 0, 0, 63, 0), -- Black Arrow (Rank 3)
+(@TrainerId+5, 63670, 10000, 0, 0, 69, 0); -- Black Arrow (Rank 4)
+-- Rogue: Outside starting zones
+-- Rogue: Starting zones
+-- Priest: Outside starting zones
+-- Priest: Starting zones
+-- Shaman: Outside starting zones
+-- Shaman: Starting zones
+-- Mage: Outside starting zones
+-- Mage: Starting zones
+-- Warlock: Outside starting zones
+-- Warlock: Starting zones
+-- Druid: Outside starting zones
+-- Druid: Starting zones
 
 /*
 UPDATE `trainer_spell` SET `MoneyCost` = 350000, `ReqLevel` = 30 WHERE `SpellId` = 33388; -- Apprentice Riding
@@ -109,6 +148,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+0 AND `SpellId` IN (4
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+2 AND `SpellId` IN (13820,25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31801, 31884, 32223, 32699, 32700, 33072);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+3 AND `SpellId` IN (25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31884, 32223, 32699, 32700, 33072, 34768);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` = 498;
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+5 AND `SpellId` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -138,8 +178,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+0, 30356, 71000, 0, 0, 25258, 0, 0, 70, 0), -- Shield Slam (Rank 6)
 (@TrainerId+0, 30357, 260000, 0, 0, 25269, 0, 0, 70, 0), -- Revenge (Rank 8)
 (@TrainerId+0, 34428, 58000, 0, 0, 0, 0, 0, 62, 0), -- Victory Rush
--- Paladin
--- Human/Dwarf/Draenei: Outside starting zones
+-- Paladin - Human/Dwarf/Draenei: Outside starting zones
 (@TrainerId+2, 13820, 3500, 0, 0, 0, 0, 0, 30, 0), -- Summon Warhorse
 (@TrainerId+2, 25290, 50000, 0, 0, 19854, 0, 0, 60, 0), -- Blessing of Wisdom (Rank 6)
 (@TrainerId+2, 25291, 50000, 0, 0, 19838, 0, 0, 60, 0), -- Blessing of Might (Rank 7)
@@ -170,7 +209,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+2, 32699, 2300, 0, 0, 31935, 0, 0, 60, 0), -- Avenger's Shield (Rank 2)
 (@TrainerId+2, 32700, 5000, 0, 0, 32699, 0, 0, 70, 0), -- Avenger's Shield (Rank 3)
 (@TrainerId+2, 33072, 6500, 0, 0, 27174, 0, 0, 70, 0), -- Holy Shock (Rank 5)
--- Blood Elf: Outside starting zones
+-- Paladin - Blood Elf: Outside starting zones
 (@TrainerId+3, 25290, 50000, 0, 0, 19854, 0, 0, 60, 0), -- Blessing of Wisdom (Rank 6)
 (@TrainerId+3, 25291, 50000, 0, 0, 19838, 0, 0, 60, 0), -- Blessing of Might (Rank 7)
 (@TrainerId+3, 25292, 46000, 0, 0, 10329, 0, 0, 60, 0), -- Holy Light (Rank 9)
@@ -201,5 +240,44 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+3, 33072, 6500, 0, 0, 27174, 0, 0, 70, 0), -- Holy Shock (Rank 5)
 (@TrainerId+3, 34768, 3500, 0, 0, 0, 0, 0, 30, 0), -- Summon Warhorse
 -- Paladin: Starting zones
-(@TrainerId+4, 498, 100, 0, 0, 0, 0, 0, 6, 0); -- Divine Protection
+(@TrainerId+4, 498, 100, 0, 0, 0, 0, 0, 6, 0), -- Divine Protection
+-- Hunter: Outside starting zones
+(@TrainerId+5, 19801, 50000, 0, 0, 0, 0, 0, 60, 0), -- Tranquilizing Shot
+(@TrainerId+5, 25294, 50000, 0, 0, 14290, 0, 0, 60, 0), -- Multi-Shot (Rank 5)
+(@TrainerId+5, 25295, 50000, 0, 0, 13555, 0, 0, 60, 0), -- Serpent Sting (Rank 9)
+(@TrainerId+5, 25296, 50000, 0, 0, 14322, 0, 0, 60, 0), -- Aspect of the Hawk (Rank 7)
+(@TrainerId+5, 27014, 87000, 0, 0, 14266, 0, 0, 63, 0), -- Raptor Strike (Rank 9)
+(@TrainerId+5, 27016, 140000, 0, 0, 25295, 0, 0, 67, 0), -- Serpent Sting (Rank 10)
+(@TrainerId+5, 27019, 170000, 0, 0, 14287, 0, 0, 69, 0), -- Arcane Shot (Rank 9)
+(@TrainerId+5, 27021, 140000, 0, 0, 25294, 0, 0, 67, 0), -- Multi-Shot (Rank 6)
+(@TrainerId+5, 27022, 140000, 0, 0, 14295, 0, 0, 67, 0), -- Volley (Rank 4)
+(@TrainerId+5, 27023, 110000, 0, 0, 14305, 0, 0, 65, 0), -- Immolation Trap (Rank 6)
+(@TrainerId+5, 27025, 68000, 0, 0, 14317, 0, 0, 61, 0), -- Explosive Trap (Rank 4)
+(@TrainerId+5, 27044, 150000, 0, 0, 25296, 0, 0, 68, 0), -- Aspect of the Hawk (Rank 8)
+(@TrainerId+5, 27045, 150000, 0, 0, 20190, 0, 0, 68, 0), -- Aspect of the Wild (Rank 3)
+(@TrainerId+5, 27046, 150000, 0, 0, 13544, 0, 0, 68, 0), -- Mend Pet (Rank 8)
+(@TrainerId+5, 27065, 10000, 0, 0, 20904, 0, 0, 70, 0), -- Aimed Shot (Rank 7)
+(@TrainerId+5, 27067, 2500, 0, 0, 20910, 0, 0, 66, 0), -- Counterattack (Rank 4)
+(@TrainerId+5, 27068, 5000, 0, 0, 24133, 0, 0, 70, 0), -- Wyvern Sting (Rank 4)
+(@TrainerId+5, 34026, 120000, 0, 0, 0, 0, 0, 66, 0), -- Kill Command
+(@TrainerId+5, 34074, 2200, 0, 0, 0, 0, 0, 20, 0), -- Aspect of the Viper
+(@TrainerId+5, 34477, 190000, 0, 0, 0, 0, 0, 70, 0), -- Misdirection
+(@TrainerId+5, 34600, 150000, 0, 0, 0, 0, 0, 68, 0), -- Snake Trap
+(@TrainerId+5, 36916, 300000, 0, 0, 14271, 0, 0, 70, 0), -- Mongoose Bite (Rank 5)
+(@TrainerId+5, 56641, 77000, 0, 0, 0, 0, 0, 62, 0), -- Steady Shot (Rank 1)
+(@TrainerId+5, 60051, 400, 0, 0, 53301, 0, 0, 70, 0), -- Explosive Shot (Rank 2)
+(@TrainerId+5, 63669, 7000, 0, 0, 63668, 0, 0, 63, 0), -- Black Arrow (Rank 3)
+(@TrainerId+5, 63670, 10000, 0, 0, 63669, 0, 0, 69, 0); -- Black Arrow (Rank 4)
+-- Rogue: Outside starting zones
+-- Rogue: Starting zones
+-- Priest: Outside starting zones
+-- Priest: Starting zones
+-- Shaman: Outside starting zones
+-- Shaman: Starting zones
+-- Mage: Outside starting zones
+-- Mage: Starting zones
+-- Warlock: Outside starting zones
+-- Warlock: Starting zones
+-- Druid: Outside starting zones
+-- Druid: Starting zones
 */

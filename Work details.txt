@@ -94,7 +94,7 @@ Profession Trainers
 
 Class Trainers
 ❌ Druid
-❌ Hunter
+✅ Hunter
 ❌ Mage
 ✅ Paladin
 ❌ Priest
