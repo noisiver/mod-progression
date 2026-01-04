@@ -98,7 +98,7 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+3, 33072, 6500, 0, 0, 70, 0), -- Holy Shock (Rank 5)
 (@TrainerId+3, 34768, 3500, 0, 0, 20, 0), -- Summon Warhorse
 -- Paladin: Starting zones
-(@TrainerId+4, 498, 100, 0, 0, 6, 0), -- Divine Protection
+(@TrainerId+4, 498, 100, 0, 0, 6, 0); -- Divine Protection
 
 /*
 UPDATE `trainer_spell` SET `MoneyCost` = 350000, `ReqLevel` = 30 WHERE `SpellId` = 33388; -- Apprentice Riding
