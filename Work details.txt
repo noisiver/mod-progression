@@ -1,0 +1,121 @@
+These are the zones I have gone through so far, and it's possible that I've missed stuff. This doesn't include trainers either, I will take care of them when I'm done with the zones.
+
+Eastern Kingdoms
+✅ Alterac Mountains
+✅ Arathi Highlands
+✅ Badlands
+✅ Blackrock Mountain
+✅ Blasted Lands
+✅ Burning Steppes
+✅ Deadwind Pass
+✅ Deeprun Tram
+✅ Dun Morogh
+✅ Duskwood
+✅ Eastern Plaguelands
+✅ Elwynn Forest
+✅ Eversong Woods
+✅ Ghostlands
+✅ Hillsbrad Foothills
+✅ Ironforge
+❌ Isle of Quel'Danas
+✅ Loch Modan
+✅ Redridge Mountains
+✅ Searing Gorge
+✅ Silvermoon City
+✅ Stormwind City
+✅ Stranglethorn Vale
+✅ Swamp of Sorrows
+✅ The Hinterlands
+✅ Tirisfal Glades
+✅ Undercity
+✅ Western Plaguelands
+✅ Westfall
+✅ Wetlands
+
+Kalimdor
+✅ Ashenvale
+✅ Azshara
+✅ Azuremyst Isle
+✅ Bloodmyst Isle
+✅ Darkshore
+✅ Darnassus
+✅ Desolace
+✅ Durotar
+❌ Dustwallow Marsh
+❌ Felwood
+❌ Feralas
+❌ Moonglade
+❌ Mulgore
+✅ Orgrimmar
+❌ Silithus
+❌ Stonetalon Mountains
+❌ Tanaris
+❌ Teldrassil
+❌ The Barrens
+✅ The Exodar
+❌ Thousand Needles
+❌ Thunder Bluff
+❌ Un'Goro Crater
+❌ Winterspring
+
+Outland
+❌ Blade's Edge Mountains
+❌ Hellfire Peninsula
+❌ Nagrand
+❌ Netherstorm
+❌ Shadowmoon Valley
+❌ Shattrath City
+❌ Terokkar Forest
+❌ Zangarmarsh
+
+Northrend
+❌ Borean Tundra
+❌ Crystalsong Forest
+❌ Dalaran
+❌ Dragonblight
+❌ Grizzly Hills
+❌ Howling Fjord
+❌ Icecrown
+❌ Sholazar Basin
+❌ The Storm Peaks
+❌ Wintergrasp
+❌ Zul'Drak
+
+Profession Trainers
+❌ Alchemy
+❌ Blacksmithing
+❌ Cooking
+❌ Enchanting
+❌ Engineering
+❌ First Aid
+❌ Fishing
+❌ Herbalism
+❌ Jewelcrafting
+
+Class Trainers
+❌ Druid
+✅ Hunter
+❌ Mage
+✅ Paladin
+❌ Priest
+❌ Rogue
+❌ Shaman
+❌ Warlock
+✅ Warrior
+
+Class Quests
+❌ Druid
+❌ Hunter
+❌ Mage
+❌ Paladin
+❌ Priest
+❌ Rogue
+❌ Shaman
+❌ Warlock
+❌ Warrior
+
+## Config
+❌ Lower max level than the expansion offers
+❌ Quest information (POI etc)
+❌ Dual talent specialization
+❌ Dungeon finder
