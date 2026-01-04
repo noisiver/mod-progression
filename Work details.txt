@@ -96,7 +96,7 @@ Class Trainers
 ❌ Druid
 ❌ Hunter
 ❌ Mage
-❌ Paladin
+✅ Paladin
 ❌ Priest
 ❌ Rogue
 ❌ Shaman
