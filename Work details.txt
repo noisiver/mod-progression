@@ -114,8 +114,11 @@ Class Quests
 ❌ Warlock
 ❌ Warrior
 
-## Config
+Config
 ❌ Lower max level than the expansion offers
 ❌ Quest information (POI etc)
 ❌ Dual talent specialization
 ❌ Dungeon finder
+
+Others
+❌ Gossip options in major cities

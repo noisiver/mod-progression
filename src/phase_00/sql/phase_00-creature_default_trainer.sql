@@ -1,0 +1,151 @@
+SET @TrainerId := 200;
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+0 WHERE `CreatureId` IN (
+    913, -- Lyria Du Lac <Warrior Trainer>
+    914, -- Ander Germaine <Warrior Trainer>
+    985, -- Malosh <Warrior Trainer>
+    1229, -- Granis Swiftaxe <Warrior Trainer>
+    1901, -- Kelstrum Stonebreaker <Warrior Trainer>
+    2131, -- Austil de Mon <Warrior Trainer>
+    3041, -- Torm Ragetotem <Warrior Trainer>
+    3042, -- Sark Ragetotem <Warrior Trainer>
+    3043, -- Ker Ragetotem <Warrior Trainer>
+    3063, -- Krang Stonehoof <Warrior Trainer>
+    3169, -- Tarshaw Jaggedscar <Warrior Trainer>
+    3353, -- Grezz Ragefist <Warrior Trainer>
+    3354, -- Sorek <Warrior Trainer>
+    3408, -- Zel'mak <Warrior Trainer>
+    3598, -- Kyra Windblade <Warrior Trainer>
+    4087, -- Arias'ta Bladesinger <Warrior Trainer>
+    4089, -- Sildanair <Warrior Trainer>
+    4593, -- Christoph Walker <Warrior Trainer>
+    4594, -- Angela Curthas <Warrior Trainer>
+    4595, -- Baltus Fowler <Warrior Trainer>
+    5113, -- Kelv Sternhammer <Warrior Trainer>
+    5114, -- Bilban Tosslespanner <Warrior Trainer>
+    5479, -- Wu Shen <Warrior Trainer>
+    5480, -- Ilsa Corbin <Warrior Trainer>
+    7315, -- Darnath Bladesinger <Warrior Trainer>
+    8141, -- Captain Evencane <Warrior Trainer>
+    16771, -- Ahonan <Warrior Trainer>
+    17120, -- Behomat <Warrior Trainer>
+    17480, -- Ruada <Warrior Trainer>
+    17504 -- Kazi <Warrior Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+1 WHERE `CreatureId` IN (
+    911, -- Llane Beshere <Warrior Trainer>
+    912, -- Thran Khorman <Warrior Trainer>
+    2119, -- Dannal Stern <Warrior Trainer>
+    3059, -- Harutt Thunderhorn <Warrior Trainer>
+    3153, -- Frang <Warrior Trainer>
+    3593, -- Alyissia <Warrior Trainer>
+    16503 -- Kore <Warrior Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+2 WHERE `CreatureId` IN (
+    927, -- Brother Wilhelm <Paladin Trainer>
+    928, -- Lord Grayson Shadowbreaker <Paladin Trainer>
+    1232, -- Azar Stronghammer <Paladin Trainer>
+    5147, -- Valgar Highforge <Paladin Trainer>
+    5148, -- Beldruk Doombrow <Paladin Trainer>
+    5149, -- Brandur Ironhammer <Paladin Trainer>
+    5491, -- Arthur the Faithful <Paladin Trainer>
+    5492, -- Katherine the Pure <Paladin Trainer>
+    8140, -- Brother Karman <Paladin Trainer>
+    16761, -- Baatun <Paladin Trainer>
+    17121, -- Kavaan <Paladin Trainer>
+    17483, -- Tullas <Paladin Trainer>
+    17509, -- Jol <Paladin Trainer>
+    17844, -- Vindicator Aesom <Triumvirate of the Hand>
+    35281 -- Rukua <Paladin Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+3 WHERE `CreatureId` IN (
+    16679, -- Osselan <Paladin Trainer>
+    16680, -- Ithelis <Paladin Trainer>
+    16681, -- Champion Bachi <Paladin Trainer>
+    20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
+    23128 -- Master Pyreanor <Paladin Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `CreatureId` IN (
+    925, -- Brother Sammuel <Paladin Trainer>
+    926, -- Bromos Grummner <Paladin Trainer>
+    15280, -- Jesthenis Sunstriker <Paladin Trainer>
+    16275, -- Noellene <Paladin Trainer>
+    16501 -- Aurelon <Paladin Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+5 WHERE `CreatureId` IN (
+    987, -- Ogromm <Hunter Trainer>
+    1231, -- Grif Wildheart <Hunter Trainer>
+    1404, -- Kragg <Hunter Trainer>
+    3038, -- Kary Thunderhorn <Hunter Trainer>
+    3039, -- Holt Thunderhorn <Hunter Trainer>
+    3040, -- Urek Thunderhorn <Hunter Trainer>
+    3065, -- Yaw Sharpmane <Hunter Trainer>
+    3171, -- Thotar <Hunter Trainer>
+    3352, -- Ormak Grimshot <Hunter Trainer>
+    3406, -- Xor'juul <Hunter Trainer>
+    3407, -- Sian'dur <Hunter Trainer>
+    3601, -- Dazalar <Hunter Trainer>
+    3963, -- Danlaar Nightstride <Hunter Trainer>
+    4138, -- Jeen'ra Nightrunner <Hunter Trainer>
+    4146, -- Jocaste <Hunter Trainer>
+    4205, -- Dorion <Hunter Trainer>
+    5115, -- Daera Brightspear <Hunter Trainer>
+    5116, -- Olmin Burningbeard <Hunter Trainer>
+    5117, -- Regnus Thundergranite <Hunter Trainer>
+    5501, -- Kaerbrus <Hunter Trainer>
+    5515, -- Einris Brightspear <Hunter Trainer>
+    5516, -- Ulfir Ironbeard <Hunter Trainer>
+    5517, -- Thorfin Stoneshield <Hunter Trainer>
+    8308, -- Alenndaar Lapidaar <Hunter Trainer>
+    10930, -- Dargh Trueaim <Hunter Trainer>
+    16270, -- Hannovia <Hunter Trainer>
+    16672, -- Tana <Hunter Trainer>
+    16673, -- Oninath <Hunter Trainer>
+    16674, -- Zandine <Hunter Trainer>
+    16738, -- Deremiis <Hunter Trainer>
+    17110, -- Acteon <Hunter Trainer>
+    17122, -- Vord <Hunter Trainer>
+    17505 -- Killac <Hunter Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+6 WHERE `CreatureId` IN (
+    895, -- Thorgas Grimson <Hunter Trainer>
+    3061, -- Lanka Farshot <Hunter Trainer>
+    3154, -- Jen'shan <Hunter Trainer>
+    3596, -- Ayanna Everstride <Hunter Trainer>
+    15513, -- Ranger Sallina <Hunter Trainer>
+    16499 -- Keilnei <Hunter Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+7 WHERE `CreatureId` IN (
+    917, -- Keryn Sylvius <Rogue Trainer>
+    918, -- Osborne the Night Man <Rogue Trainer>
+    1234, -- Hogral Bakkan <Rogue Trainer>
+    1411, -- Ian Strom <Rogue Trainer>
+    2130, -- Marion Call <Rogue Trainer>
+    3170, -- Kaplak <Rogue Trainer>
+    3327, -- Gest <Rogue Trainer>
+    3328, -- Ormok <Rogue Trainer>
+    3401, -- Shenthul <Rogue Trainer>
+    3599, -- Jannok Breezesong <Rogue Trainer>
+    4163, -- Syurna <Rogue Trainer>
+    4214, -- Erion Shadewhisper <Rogue Trainer>
+    4215, -- Anishar <Rogue Trainer>
+    4582, -- Carolyn Ward <Rogue Trainer>
+    4583, -- Miles Dexter <Rogue Trainer>
+    4584, -- Gregory Charles <Rogue Trainer>
+    5165, -- Hulfdan Blackbeard <Rogue Trainer>
+    5166, -- Ormyr Flinteye <Rogue Trainer>
+    5167, -- Fenthwick <Rogue Trainer>
+    6707, -- Fahrad <Grand Master Rogue>
+    13283, -- Lord Tony Romano <Rogue Trainer>
+    16279, -- Tannaria <Rogue Trainer>
+    16684, -- Zelanis <Rogue Trainer>
+    16685, -- Elara <Rogue Trainer>
+    16686 -- Nerisen <Rogue Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `CreatureId` IN (
+    915, -- Jorik Kerridan <Rogue Trainer>
+    916, -- Solm Hargrin <Rogue Trainer>
+    2122, -- David Trias <Rogue Trainer>
+    3155, -- Rwag <Rogue Trainer>
+    3594, -- Frahun Shadewhisper <Rogue Trainer>
+    15285 -- Pathstalker Kariel <Rogue Trainer>
+);
