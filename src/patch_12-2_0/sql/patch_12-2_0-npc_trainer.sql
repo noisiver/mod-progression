@@ -1,4 +1,4 @@
-UPDATE `npc_trainer` SET `MoneyCost` = 6000000 WHERE `SpellID` = 33391;
+/*UPDATE `npc_trainer` SET `MoneyCost` = 6000000 WHERE `SpellID` = 33391;
 DELETE FROM `npc_trainer` WHERE `ID` = 200002 AND `SpellID` IN (25286, 25288, 25289);
 DELETE FROM `npc_trainer` WHERE `ID` = 200004 AND `SpellID` IN (25290, 25291, 25292, 31789);
 DELETE FROM `npc_trainer` WHERE `ID` = 200006 AND `SpellID` IN (21849, 21850, 25297, 25298, 25299, 31018, 31709);
@@ -48,4 +48,4 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (200018, 25357, 6500, 0, 0, 60, 0),
 (200018, 25361, 34000, 0, 0, 60, 0),
 (200018, 29228, 65000, 0, 0, 60, 0),
-(200018, 36936, 7000, 0, 0, 30, 0);
+(200018, 36936, 7000, 0, 0, 30, 0);*/

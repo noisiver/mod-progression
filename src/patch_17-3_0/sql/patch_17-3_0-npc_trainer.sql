@@ -1,4 +1,4 @@
-DELETE FROM `npc_trainer` WHERE `ID` IN (17215, 201001, 201003) AND `SpellID` = 53042;
+/*DELETE FROM `npc_trainer` WHERE `ID` IN (17215, 201001, 201003) AND `SpellID` = 53042;
 DELETE FROM `npc_trainer` WHERE `ID` = 200004 AND `SpellID` = 62124;
 DELETE FROM `npc_trainer` WHERE `ID` = 200006 AND `SpellID` IN (1066, 26991);
 DELETE FROM `npc_trainer` WHERE `ID` = 200008 AND `SpellID` IN (27090, 27127, 33717);
@@ -31,4 +31,4 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (200021, 34768, 3500, 0, 0, 30, 0),
 (200021, 53736, 100000, 0, 0, 66, 0),
 (201001, 53042, 10000, 171, 50, 0, 0),
-(201003, 53042, 10000, 171, 50, 0, 0);
+(201003, 53042, 10000, 171, 50, 0, 0);*/
