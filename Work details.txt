@@ -98,7 +98,7 @@ Class Trainers
 ❌ Mage
 ✅ Paladin
 ❌ Priest
-❌ Rogue
+✅ Rogue
 ❌ Shaman
 ❌ Warlock
 ✅ Warrior

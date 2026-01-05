@@ -3,13 +3,11 @@ UPDATE `npc_trainer` SET `MoneyCost` = 500000, `ReqLevel` = 40 WHERE `SpellID` =
 UPDATE `npc_trainer` SET `MoneyCost` = 2500000, `ReqLevel` = 60 WHERE `SpellID` = 34090; -- Expert Riding
 
 SET @TrainerId := 300000;
-DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+6;
-DELETE FROM `npc_trainer` WHERE `ID` IN (895, 911, 912, 913, 914, 925, 926, 927, 928, 985, 987, 1229, 1231, 1232, 1404, 1901, 2119, 2131, 3038, 3039, 3040, 3041, 3042, 3043, 3059, 3061, 3063, 3065, 3153, 3154, 3169, 3171, 3352, 3353, 3354, 3406, 3407, 3408, 3593, 3596, 3598, 3601, 3963, 4087, 4089, 4138, 4146, 4205, 4593, 4594, 4595, 5113, 5114, 5115, 5116, 5117, 5147, 5148, 5149, 5479, 5480, 5491, 5492, 5501, 5515, 5516, 5517, 7315, 8140, 8141, 8308, 10930, 15280, 15513, 16270, 16275, 16499, 16501, 16503, 16672, 16673, 16674, 16679, 16680, 16681, 16738, 16761, 16771, 17110, 17120, 17121, 17122, 17480, 17483, 17504, 17505, 17509, 17844, 20406, 23128, 35281);
+DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+8;
+DELETE FROM `npc_trainer` WHERE `ID` IN (895, 911, 912, 913, 914, 915, 916, 917, 918, 925, 926, 927, 928, 985, 987, 1229, 1231, 1232, 1234, 1404, 1411, 1901, 2119, 2122, 2130, 2131, 3038, 3039, 3040, 3041, 3042, 3043, 3059, 3061, 3063, 3065, 3153, 3154, 3155, 3169, 3170, 3171, 3327, 3328, 3352, 3353, 3354, 3401, 3406, 3407, 3408, 3593, 3594, 3596, 3598, 3599, 3601, 3963, 4087, 4089, 4138, 4146, 4163, 4205, 4214, 4215, 4582, 4583, 4584, 4593, 4594, 4595, 5113, 5114, 5115, 5116, 5117, 5147, 5148, 5149, 5165, 5166, 5167, 5479, 5480, 5491, 5492, 5501, 5515, 5516, 5517, 6707, 7315, 8140, 8141, 8308, 10930, 13283, 15280, 15285, 15513, 16270, 16275, 16279, 16499, 16501, 16503, 16672, 16673, 16674, 16679, 16680, 16681, 16684, 16685, 16686, 16738, 16761, 16771, 17110, 17120, 17121, 17122, 17480, 17483, 17504, 17505, 17509, 17844, 20406, 23128, 35281);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
-
 -- Thorgas Grimson <Hunter Trainer>
 (895, -200013, 0, 0, 0, 0, 0),
-
 -- Llane Beshere <Warrior Trainer>
 (911, -200001, 0, 0, 0, 0, 0),
 -- Thran Khorman <Warrior Trainer>
@@ -20,6 +18,16 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Ander Germaine <Warrior Trainer>
 (914, -200002, 0, 0, 0, 0, 0),
 (914, -200001, 0, 0, 0, 0, 0),
+-- Jorik Kerridan <Rogue Trainer>
+(915, -200015, 0, 0, 0, 0, 0),
+-- Solm Hargrin <Rogue Trainer>
+(916, -200015, 0, 0, 0, 0, 0),
+-- Keryn Sylvius <Rogue Trainer>
+(917, -200016, 0, 0, 0, 0, 0),
+(917, -200015, 0, 0, 0, 0, 0),
+-- Osborne the Night Man <Rogue Trainer>
+(918, -200016, 0, 0, 0, 0, 0),
+(918, -200015, 0, 0, 0, 0, 0),
 -- Brother Sammuel <Paladin Trainer>
 (925, -200003, 0, 0, 0, 0, 0),
 -- Bromos Grummner <Paladin Trainer>
@@ -48,14 +56,25 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (1232, -200020, 0, 0, 0, 0, 0),
 (1232, -200004, 0, 0, 0, 0, 0),
 (1232, -200003, 0, 0, 0, 0, 0),
+-- Hogral Bakkan <Rogue Trainer>
+(1234, -200016, 0, 0, 0, 0, 0),
+(1234, -200015, 0, 0, 0, 0, 0),
 -- Kragg <Hunter Trainer>
 (1404, -200014, 0, 0, 0, 0, 0),
 (1404, -200013, 0, 0, 0, 0, 0),
+-- Ian Strom <Rogue Trainer>
+(1411, -200016, 0, 0, 0, 0, 0),
+(1411, -200015, 0, 0, 0, 0, 0),
 -- Kelstrum Stonebreaker <Warrior Trainer>
 (1901, -200002, 0, 0, 0, 0, 0),
 (1901, -200001, 0, 0, 0, 0, 0),
 -- Dannal Stern <Warrior Trainer>
 (2119, -200001, 0, 0, 0, 0, 0),
+-- David Trias <Rogue Trainer>
+(2122, -200015, 0, 0, 0, 0, 0),
+-- Marion Call <Rogue Trainer>
+(2130, -200016, 0, 0, 0, 0, 0),
+(2130, -200015, 0, 0, 0, 0, 0),
 -- Austil de Mon <Warrior Trainer>
 (2131, -200002, 0, 0, 0, 0, 0),
 (2131, -200001, 0, 0, 0, 0, 0),
@@ -91,12 +110,23 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (3153, -300000, 0, 0, 0, 0, 0),
 -- Jen'shan <Hunter Trainer>
 (3154, -200013, 0, 0, 0, 0, 0),
+-- Rwag <Rogue Trainer>
+(3155, -200015, 0, 0, 0, 0, 0),
 -- Tarshaw Jaggedscar <Warrior Trainer>
 (3169, -200002, 0, 0, 0, 0, 0),
 (3169, -200001, 0, 0, 0, 0, 0),
+-- Kaplak <Rogue Trainer>
+(3170, -200016, 0, 0, 0, 0, 0),
+(3170, -200015, 0, 0, 0, 0, 0),
 -- Thotar <Hunter Trainer>
 (3171, -200014, 0, 0, 0, 0, 0),
 (3171, -200013, 0, 0, 0, 0, 0),
+-- Gest <Rogue Trainer>
+(3327, -200016, 0, 0, 0, 0, 0),
+(3327, -200015, 0, 0, 0, 0, 0),
+-- Ormok <Rogue Trainer>
+(3328, -200016, 0, 0, 0, 0, 0),
+(3328, -200015, 0, 0, 0, 0, 0),
 -- Ormak Grimshot <Hunter Trainer>
 (3352, -200014, 0, 0, 0, 0, 0),
 (3352, -200013, 0, 0, 0, 0, 0),
@@ -106,6 +136,9 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Sorek <Warrior Trainer>
 (3354, -200002, 0, 0, 0, 0, 0),
 (3354, -200001, 0, 0, 0, 0, 0),
+-- Shenthul <Rogue Trainer>
+(3401, -200016, 0, 0, 0, 0, 0),
+(3401, -200015, 0, 0, 0, 0, 0),
 -- Xor'juul <Hunter Trainer>
 (3406, -200014, 0, 0, 0, 0, 0),
 (3406, -200013, 0, 0, 0, 0, 0),
@@ -117,11 +150,16 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (3408, -200001, 0, 0, 0, 0, 0),
 -- Alyissia <Warrior Trainer>
 (3593, -200001, 0, 0, 0, 0, 0),
+-- Frahun Shadewhisper <Rogue Trainer>
+(3594, -200015, 0, 0, 0, 0, 0),
 -- Ayanna Everstride <Hunter Trainer>
 (3596, -200013, 0, 0, 0, 0, 0),
 -- Kyra Windblade <Warrior Trainer>
 (3598, -200002, 0, 0, 0, 0, 0),
 (3598, -200001, 0, 0, 0, 0, 0),
+-- Jannok Breezesong <Rogue Trainer>
+(3599, -200016, 0, 0, 0, 0, 0),
+(3599, -200015, 0, 0, 0, 0, 0),
 -- Dazalar <Hunter Trainer>
 (3601, -200014, 0, 0, 0, 0, 0),
 (3601, -200013, 0, 0, 0, 0, 0),
@@ -140,9 +178,27 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Jocaste <Hunter Trainer>
 (4146, -200014, 0, 0, 0, 0, 0),
 (4146, -200013, 0, 0, 0, 0, 0),
+-- Syurna <Rogue Trainer>
+(4163, -200016, 0, 0, 0, 0, 0),
+(4163, -200015, 0, 0, 0, 0, 0),
 -- Dorion <Hunter Trainer>
 (4205, -200014, 0, 0, 0, 0, 0),
 (4205, -200013, 0, 0, 0, 0, 0),
+-- Erion Shadewhisper <Rogue Trainer>
+(4214, -200016, 0, 0, 0, 0, 0),
+(4214, -200015, 0, 0, 0, 0, 0),
+-- Anishar <Rogue Trainer>
+(4215, -200016, 0, 0, 0, 0, 0),
+(4215, -200015, 0, 0, 0, 0, 0),
+-- Carolyn Ward <Rogue Trainer>
+(4582, -200016, 0, 0, 0, 0, 0),
+(4582, -200015, 0, 0, 0, 0, 0),
+-- Miles Dexter <Rogue Trainer>
+(4583, -200016, 0, 0, 0, 0, 0),
+(4583, -200015, 0, 0, 0, 0, 0),
+-- Gregory Charles <Rogue Trainer>
+(4584, -200016, 0, 0, 0, 0, 0),
+(4584, -200015, 0, 0, 0, 0, 0),
 -- Christoph Walker <Warrior Trainer>
 (4593, -200002, 0, 0, 0, 0, 0),
 (4593, -200001, 0, 0, 0, 0, 0),
@@ -179,6 +235,15 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (5149, -200020, 0, 0, 0, 0, 0),
 (5149, -200004, 0, 0, 0, 0, 0),
 (5149, -200003, 0, 0, 0, 0, 0),
+-- Hulfdan Blackbeard <Rogue Trainer>
+(5165, -200016, 0, 0, 0, 0, 0),
+(5165, -200015, 0, 0, 0, 0, 0),
+-- Ormyr Flinteye <Rogue Trainer>
+(5166, -200016, 0, 0, 0, 0, 0),
+(5166, -200015, 0, 0, 0, 0, 0),
+-- Fenthwick <Rogue Trainer>
+(5167, -200016, 0, 0, 0, 0, 0),
+(5167, -200015, 0, 0, 0, 0, 0),
 -- Wu Shen <Warrior Trainer>
 (5479, -200002, 0, 0, 0, 0, 0),
 (5479, -200001, 0, 0, 0, 0, 0),
@@ -205,6 +270,9 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Thorfin Stoneshield <Hunter Trainer>
 (5517, -200014, 0, 0, 0, 0, 0),
 (5517, -200013, 0, 0, 0, 0, 0),
+-- Fahrad <Grand Master Rogue>
+(6707, -200016, 0, 0, 0, 0, 0),
+(6707, -200015, 0, 0, 0, 0, 0),
 -- Darnath Bladesinger <Warrior Trainer>
 (7315, -200002, 0, 0, 0, 0, 0),
 (7315, -200001, 0, 0, 0, 0, 0),
@@ -221,8 +289,13 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 -- Dargh Trueaim <Hunter Trainer>
 (10930, -200014, 0, 0, 0, 0, 0),
 (10930, -200013, 0, 0, 0, 0, 0),
+-- Lord Tony Romano <Rogue Trainer>
+(13283, -200016, 0, 0, 0, 0, 0),
+(13283, -200015, 0, 0, 0, 0, 0),
 -- Ranger Sallina <Hunter Trainer>
 (15513, -200013, 0, 0, 0, 0, 0),
+-- Pathstalker Kariel <Rogue Trainer>
+(15285, -200015, 0, 0, 0, 0, 0),
 -- Hannovia <Hunter Trainer>
 (16270, -200014, 0, 0, 0, 0, 0),
 (16270, -200013, 0, 0, 0, 0, 0),
@@ -230,6 +303,9 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (16275, -200021, 0, 0, 0, 0, 0),
 (16275, -200004, 0, 0, 0, 0, 0),
 (16275, -200003, 0, 0, 0, 0, 0),
+-- Tannaria <Rogue Trainer>
+(16279, -200016, 0, 0, 0, 0, 0),
+(16279, -200015, 0, 0, 0, 0, 0),
 -- Jesthenis Sunstriker <Paladin Trainer>
 (15280, -200003, 0, 0, 0, 0, 0),
 -- Keilnei <Hunter Trainer>
@@ -238,6 +314,15 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (16501, -200003, 0, 0, 0, 0, 0),
 -- Kore <Warrior Trainer>
 (16503, -200001, 0, 0, 0, 0, 0),
+-- Zelanis <Rogue Trainer>
+(16684, -200016, 0, 0, 0, 0, 0),
+(16684, -200015, 0, 0, 0, 0, 0),
+-- Elara <Rogue Trainer>
+(16685, -200016, 0, 0, 0, 0, 0),
+(16685, -200015, 0, 0, 0, 0, 0),
+-- Nerisen <Rogue Trainer>
+(16686, -200016, 0, 0, 0, 0, 0),
+(16686, -200015, 0, 0, 0, 0, 0),
 -- Ahonan <Warrior Trainer>
 (16771, -200002, 0, 0, 0, 0, 0),
 (16771, -200001, 0, 0, 0, 0, 0),
@@ -436,7 +521,42 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 8 WHERE `CreatureId` IN (
     15513, -- Ranger Sallina <Hunter Trainer>
     16499 -- Keilnei <Hunter Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = 9 WHERE `CreatureId` IN (
+    917, -- Keryn Sylvius <Rogue Trainer>
+    918, -- Osborne the Night Man <Rogue Trainer>
+    1234, -- Hogral Bakkan <Rogue Trainer>
+    1411, -- Ian Strom <Rogue Trainer>
+    2130, -- Marion Call <Rogue Trainer>
+    3170, -- Kaplak <Rogue Trainer>
+    3327, -- Gest <Rogue Trainer>
+    3328, -- Ormok <Rogue Trainer>
+    3401, -- Shenthul <Rogue Trainer>
+    3599, -- Jannok Breezesong <Rogue Trainer>
+    4163, -- Syurna <Rogue Trainer>
+    4214, -- Erion Shadewhisper <Rogue Trainer>
+    4215, -- Anishar <Rogue Trainer>
+    4582, -- Carolyn Ward <Rogue Trainer>
+    4583, -- Miles Dexter <Rogue Trainer>
+    4584, -- Gregory Charles <Rogue Trainer>
+    5165, -- Hulfdan Blackbeard <Rogue Trainer>
+    5166, -- Ormyr Flinteye <Rogue Trainer>
+    5167, -- Fenthwick <Rogue Trainer>
+    6707, -- Fahrad <Grand Master Rogue>
+    13283, -- Lord Tony Romano <Rogue Trainer>
+    16279, -- Tannaria <Rogue Trainer>
+    16684, -- Zelanis <Rogue Trainer>
+    16685, -- Elara <Rogue Trainer>
+    16686 -- Nerisen <Rogue Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 10 WHERE `CreatureId` IN (
+    915, -- Jorik Kerridan <Rogue Trainer>
+    916, -- Solm Hargrin <Rogue Trainer>
+    2122, -- David Trias <Rogue Trainer>
+    3155, -- Rwag <Rogue Trainer>
+    3594, -- Frahun Shadewhisper <Rogue Trainer>
+    15285 -- Pathstalker Kariel <Rogue Trainer>
+);
 
 SET @TrainerId := 300000;
-DELETE FROM `trainer_spell` WHERE `TrainerId` BETWEEN @TrainerId+0 AND @TrainerId+6;
+DELETE FROM `trainer_spell` WHERE `TrainerId` BETWEEN @TrainerId+0 AND @TrainerId+8;
 */

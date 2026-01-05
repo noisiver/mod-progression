@@ -3,13 +3,13 @@ UPDATE `npc_trainer` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellID` 
 UPDATE `npc_trainer` SET `MoneyCost` = 8000000, `ReqLevel` = 70 WHERE `SpellID` = 34090; -- Expert Riding
 
 /*
-Outside starting zones: 5115, 5515, 3039, 4138, 3352, 17122, 16674, 5501, 16738, 4205, 3038, 987, 5116, 16673, 5516, 3406, 4146, 17505, 1404, 5117, 3407, 16672, 5517, 3040, 3963, 8308, 10930, 3601, 3171, 16270, 3065, 17110, 1231, 
-Starting zones: 3061, 3596, 3154, 16499, 15513, 895
+Outside starting zones: 4214, 6707, 4584, 5165, 13283, 918, 3401, 16684, 4215, 16685, 4583, 3328, 5166, 1411, 4582, 5167, 3327, 16686, 4163, 3599, 3170, 2130, 1234, 16279, 917
+Starting zones: 3594, 3155, 2122, 915, 15285, 916
 */
 
 SET @TrainerId := 300000;
-DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+6;
-DELETE FROM `npc_trainer` WHERE `ID` IN (895, 911, 912, 913, 914, 925, 926, 927, 928, 985, 987, 1229, 1231, 1232, 1404, 1901, 2119, 2131, 3038, 3039, 3040, 3041, 3042, 3043, 3059, 3061, 3063, 3065, 3153, 3154, 3169, 3171, 3352, 3353, 3354, 3406, 3407, 3408, 3593, 3596, 3598, 3601, 3963, 4087, 4089, 4138, 4146, 4205, 4593, 4594, 4595, 5113, 5114, 5115, 5116, 5117, 5147, 5148, 5149, 5479, 5480, 5491, 5492, 5501, 5515, 5516, 5517, 7315, 8140, 8141, 8308, 10930, 15280, 15513, 16270, 16275, 16499, 16501, 16503, 16672, 16673, 16674, 16679, 16680, 16681, 16738, 16761, 16771, 17110, 17120, 17121, 17122, 17480, 17483, 17504, 17505, 17509, 17844, 20406, 23128, 35281);
+DELETE FROM `npc_trainer` WHERE `ID` BETWEEN @TrainerId+0 AND @TrainerId+8;
+DELETE FROM `npc_trainer` WHERE `ID` IN (895, 911, 912, 913, 914, 915, 916, 917, 918, 925, 926, 927, 928, 985, 987, 1229, 1231, 1232, 1234, 1404, 1411, 1901, 2119, 2122, 2130, 2131, 3038, 3039, 3040, 3041, 3042, 3043, 3059, 3061, 3063, 3065, 3153, 3154, 3155, 3169, 3170, 3171, 3327, 3328, 3352, 3353, 3354, 3401, 3406, 3407, 3408, 3593, 3594, 3596, 3598, 3599, 3601, 3963, 4087, 4089, 4138, 4146, 4163, 4205, 4214, 4215, 4582, 4583, 4584, 4593, 4594, 4595, 5113, 5114, 5115, 5116, 5117, 5147, 5148, 5149, 5165, 5166, 5167, 5479, 5480, 5491, 5492, 5501, 5515, 5516, 5517, 6707, 7315, 8140, 8141, 8308, 10930, 13283, 15280, 15285, 15513, 16270, 16275, 16279, 16499, 16501, 16503, 16672, 16673, 16674, 16679, 16680, 16681, 16684, 16685, 16686, 16738, 16761, 16771, 17110, 17120, 17121, 17122, 17480, 17483, 17504, 17505, 17509, 17844, 20406, 23128, 35281);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 -- Thorgas Grimson <Hunter Trainer>
 (895, -(@TrainerId+6), 0, 0, 0, 0, 0),
@@ -21,6 +21,14 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (913, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Ander Germaine <Warrior Trainer>
 (914, -(@TrainerId+0), 0, 0, 0, 0, 0),
+-- Jorik Kerridan <Rogue Trainer>
+(915, -(@TrainerId+8), 0, 0, 0, 0, 0),
+-- Solm Hargrin <Rogue Trainer>
+(916, -(@TrainerId+8), 0, 0, 0, 0, 0),
+-- Keryn Sylvius <Rogue Trainer>
+(917, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Osborne the Night Man <Rogue Trainer>
+(918, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Brother Sammuel <Paladin Trainer>
 (925, -(@TrainerId+4), 0, 0, 0, 0, 0),
 -- Bromos Grummner <Paladin Trainer>
@@ -39,12 +47,20 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (1231, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Azar Stronghammer <Paladin Trainer>
 (1232, -(@TrainerId+2), 0, 0, 0, 0, 0),
+-- Hogral Bakkan <Rogue Trainer>
+(1234, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Kragg <Hunter Trainer>
 (1404, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Ian Strom <Rogue Trainer>
+(1411, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Kelstrum Stonebreaker <Warrior Trainer>
 (1901, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Dannal Stern <Warrior Trainer>
 (2119, -(@TrainerId+1), 0, 0, 0, 0, 0),
+-- David Trias <Rogue Trainer>
+(2122, -(@TrainerId+8), 0, 0, 0, 0, 0),
+-- Marion Call <Rogue Trainer>
+(2130, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Austil de Mon <Warrior Trainer>
 (2131, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Kary Thunderhorn <Hunter Trainer>
@@ -71,16 +87,26 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (3153, -(@TrainerId+1), 0, 0, 0, 0, 0),
 -- Jen'shan <Hunter Trainer>
 (3154, -(@TrainerId+6), 0, 0, 0, 0, 0),
+-- Rwag <Rogue Trainer>
+(3155, -(@TrainerId+8), 0, 0, 0, 0, 0),
 -- Tarshaw Jaggedscar <Warrior Trainer>
 (3169, -(@TrainerId+0), 0, 0, 0, 0, 0),
+-- Kaplak <Rogue Trainer>
+(3170, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Thotar <Hunter Trainer>
 (3171, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Gest <Rogue Trainer>
+(3327, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Ormok <Rogue Trainer>
+(3328, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Ormak Grimshot <Hunter Trainer>
 (3352, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Grezz Ragefist <Warrior Trainer>
 (3353, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Sorek <Warrior Trainer>
 (3354, -(@TrainerId+0), 0, 0, 0, 0, 0),
+-- Shenthul <Rogue Trainer>
+(3401, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Xor'juul <Hunter Trainer>
 (3406, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Sian'dur <Hunter Trainer>
@@ -89,10 +115,14 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (3408, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Alyissia <Warrior Trainer>
 (3593, -(@TrainerId+1), 0, 0, 0, 0, 0),
+-- Frahun Shadewhisper <Rogue Trainer>
+(3594, -(@TrainerId+8), 0, 0, 0, 0, 0),
 -- Ayanna Everstride <Hunter Trainer>
 (3596, -(@TrainerId+6), 0, 0, 0, 0, 0),
 -- Kyra Windblade <Warrior Trainer>
 (3598, -(@TrainerId+0), 0, 0, 0, 0, 0),
+-- Jannok Breezesong <Rogue Trainer>
+(3599, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Dazalar <Hunter Trainer>
 (3601, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Danlaar Nightstride <Hunter Trainer>
@@ -105,8 +135,20 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (4138, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Jocaste <Hunter Trainer>
 (4146, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Syurna <Rogue Trainer>
+(4163, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Dorion <Hunter Trainer>
 (4205, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Erion Shadewhisper <Rogue Trainer>
+(4214, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Anishar <Rogue Trainer>
+(4215, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Carolyn Ward <Rogue Trainer>
+(4582, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Miles Dexter <Rogue Trainer>
+(4583, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Gregory Charles <Rogue Trainer>
+(4584, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Christoph Walker <Warrior Trainer>
 (4593, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Angela Curthas <Warrior Trainer>
@@ -129,6 +171,12 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (5148, -(@TrainerId+2), 0, 0, 0, 0, 0),
 -- Brandur Ironhammer <Paladin Trainer>
 (5149, -(@TrainerId+2), 0, 0, 0, 0, 0),
+-- Hulfdan Blackbeard <Rogue Trainer>
+(5165, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Ormyr Flinteye <Rogue Trainer>
+(5166, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Fenthwick <Rogue Trainer>
+(5167, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Wu Shen <Warrior Trainer>
 (5479, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Ilsa Corbin <Warrior Trainer>
@@ -145,6 +193,8 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (5516, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Thorfin Stoneshield <Hunter Trainer>
 (5517, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Fahrad <Grand Master Rogue>
+(6707, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Darnath Bladesinger <Warrior Trainer>
 (7315, -(@TrainerId+0), 0, 0, 0, 0, 0),
 -- Brother Karman <Paladin Trainer>
@@ -155,20 +205,32 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (8308, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Dargh Trueaim <Hunter Trainer>
 (10930, -(@TrainerId+5), 0, 0, 0, 0, 0),
+-- Lord Tony Romano <Rogue Trainer>
+(13283, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Jesthenis Sunstriker <Paladin Trainer>
 (15280, -(@TrainerId+4), 0, 0, 0, 0, 0),
+-- Pathstalker Kariel <Rogue Trainer>
+(15285, -(@TrainerId+8), 0, 0, 0, 0, 0),
 -- Ranger Sallina <Hunter Trainer>
 (15513, -(@TrainerId+6), 0, 0, 0, 0, 0),
 -- Hannovia <Hunter Trainer>
 (16270, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Noellene <Paladin Trainer>
 (16275, -(@TrainerId+4), 0, 0, 0, 0, 0),
+-- Tannaria <Rogue Trainer>
+(16279, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Keilnei <Hunter Trainer>
 (16499, -(@TrainerId+6), 0, 0, 0, 0, 0),
 -- Aurelon <Paladin Trainer>
 (16501, -(@TrainerId+4), 0, 0, 0, 0, 0),
 -- Kore <Warrior Trainer>
 (16503, -(@TrainerId+1), 0, 0, 0, 0, 0),
+-- Zelanis <Rogue Trainer>
+(16684, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Elara <Rogue Trainer>
+(16685, -(@TrainerId+7), 0, 0, 0, 0, 0),
+-- Nerisen <Rogue Trainer>
+(16686, -(@TrainerId+7), 0, 0, 0, 0, 0),
 -- Tana <Hunter Trainer>
 (16672, -(@TrainerId+5), 0, 0, 0, 0, 0),
 -- Oninath <Hunter Trainer>
@@ -624,9 +686,89 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+6, 1494, 10, 0, 0, 2, 0), -- Track Beasts
 (@TrainerId+6, 1978, 100, 0, 0, 4, 0), -- Serpent Sting (Rank 1)
 (@TrainerId+6, 3044, 100, 0, 0, 6, 0), -- Arcane Shot (Rank 1)
-(@TrainerId+6, 13163, 100, 0, 0, 4, 0); -- Aspect of the Monkey
+(@TrainerId+6, 13163, 100, 0, 0, 4, 0), -- Aspect of the Monkey
 -- Rogue: Outside starting zones
+(@TrainerId+7, 53, 100, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+7, 408, 10000, 0, 0, 30, 0), -- Kidney Shot (Rank 1)
+(@TrainerId+7, 674, 300, 0, 0, 10, 0), -- Dual Wield (Passive)
+(@TrainerId+7, 703, 1200, 0, 0, 14, 0), -- Garrote (Rank 1)
+(@TrainerId+7, 921, 100, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+7, 1725, 4000, 0, 0, 22, 0), -- Distract
+(@TrainerId+7, 1757, 100, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+7, 1758, 1200, 0, 0, 14, 0), -- Sinister Strike (Rank 3)
+(@TrainerId+7, 1759, 4000, 0, 0, 22, 0), -- Sinister Strike (Rank 4)
+(@TrainerId+7, 1760, 10000, 0, 0, 30, 0), -- Sinister Strike (Rank 5)
+(@TrainerId+7, 1766, 800, 0, 0, 12, 0), -- Kick
+(@TrainerId+7, 1776, 100, 0, 0, 6, 0), -- Gouge
+(@TrainerId+7, 1784, 10, 0, 0, 1, 0), -- Stealth
+(@TrainerId+7, 1804, 1800, 0, 0, 16, 0), -- Pick Lock
+(@TrainerId+7, 1833, 6000, 0, 0, 26, 0), -- Cheap Shot
+(@TrainerId+7, 1842, 10000, 0, 0, 30, 0), -- Disarm Trap
+(@TrainerId+7, 1856, 4000, 0, 0, 22, 0), -- Vanish (Rank 1)
+(@TrainerId+7, 1857, 27000, 0, 0, 42, 0), -- Vanish (Rank 2)
+(@TrainerId+7, 1860, 20000, 0, 0, 40, 0), -- Safe Fall (Passive)
+(@TrainerId+7, 1943, 3000, 0, 0, 20, 0), -- Rupture (Rank 1)
+(@TrainerId+7, 1966, 1800, 0, 0, 16, 0), -- Feint (Rank 1)
+(@TrainerId+7, 2070, 8000, 0, 0, 28, 0), -- Sap (Rank 2)
+(@TrainerId+7, 2094, 14000, 0, 0, 34, 0), -- Blind
+(@TrainerId+7, 2589, 800, 0, 0, 12, 0), -- Backstab (Rank 2)
+(@TrainerId+7, 2590, 3000, 0, 0, 20, 0), -- Backstab (Rank 3)
+(@TrainerId+7, 2591, 8000, 0, 0, 28, 0), -- Backstab (Rank 4)
+(@TrainerId+7, 2836, 5000, 0, 0, 24, 0), -- Detect Traps (Passive)
+(@TrainerId+7, 2983, 300, 0, 0, 10, 0), -- Sprint (Rank 1)
+(@TrainerId+7, 3127, 800, 0, 0, 12, 0), -- Parry (Passive)
+(@TrainerId+7, 5171, 300, 0, 0, 10, 0), -- Slice and Dice (Rank 1)
+(@TrainerId+7, 5277, 200, 0, 0, 8, 0), -- Evasion (Rank 1)
+(@TrainerId+7, 6760, 200, 0, 0, 8, 0), -- Eviscerate (Rank 2)
+(@TrainerId+7, 6761, 1800, 0, 0, 16, 0), -- Eviscerate (Rank 3)
+(@TrainerId+7, 6762, 5000, 0, 0, 24, 0), -- Eviscerate (Rank 4)
+(@TrainerId+7, 6768, 8000, 0, 0, 28, 0), -- Feint (Rank 2)
+(@TrainerId+7, 6770, 300, 0, 0, 10, 0), -- Sap (Rank 1)
+(@TrainerId+7, 6774, 27000, 0, 0, 42, 0), -- Slice and Dice (Rank 2)
+(@TrainerId+7, 8621, 18000, 0, 0, 38, 0), -- Sinister Strike (Rank 6)
+(@TrainerId+7, 8623, 12000, 0, 0, 32, 0), -- Eviscerate (Rank 5)
+(@TrainerId+7, 8624, 20000, 0, 0, 40, 0), -- Eviscerate (Rank 6)
+(@TrainerId+7, 8631, 4000, 0, 0, 22, 0), -- Garrote (Rank 2)
+(@TrainerId+7, 8632, 10000, 0, 0, 30, 0), -- Garrote (Rank 3)
+(@TrainerId+7, 8633, 18000, 0, 0, 38, 0), -- Garrote (Rank 4)
+(@TrainerId+7, 8637, 20000, 0, 0, 40, 0), -- Feint (Rank 3)
+(@TrainerId+7, 8639, 8000, 0, 0, 28, 0), -- Rupture (Rank 2)
+(@TrainerId+7, 8640, 16000, 0, 0, 36, 0), -- Rupture (Rank 3)
+(@TrainerId+7, 8643, 35000, 0, 0, 50, 0), -- Kidney Shot (Rank 2)
+(@TrainerId+7, 8647, 1200, 0, 0, 14, 0), -- Expose Armor
+(@TrainerId+7, 8676, 2900, 0, 0, 18, 0), -- Ambush (Rank 1)
+(@TrainerId+7, 8696, 14000, 0, 0, 34, 0), -- Sprint (Rank 2)
+(@TrainerId+7, 8721, 16000, 0, 0, 36, 0), -- Backstab (Rank 5)
+(@TrainerId+7, 8724, 6000, 0, 0, 26, 0), -- Ambush (Rank 2)
+(@TrainerId+7, 8725, 14000, 0, 0, 34, 0), -- Ambush (Rank 3)
+(@TrainerId+7, 11267, 27000, 0, 0, 42, 0), -- Ambush (Rank 4)
+(@TrainerId+7, 11268, 35000, 0, 0, 50, 0), -- Ambush (Rank 5)
+(@TrainerId+7, 11269, 52000, 0, 0, 58, 0), -- Ambush (Rank 6)
+(@TrainerId+7, 11273, 29000, 0, 0, 44, 0), -- Rupture (Rank 4)
+(@TrainerId+7, 11274, 46000, 0, 0, 52, 0), -- Rupture (Rank 5)
+(@TrainerId+7, 11275, 54000, 0, 0, 60, 0), -- Rupture (Rank 6)
+(@TrainerId+7, 11279, 29000, 0, 0, 44, 0), -- Backstab (Rank 6)
+(@TrainerId+7, 11280, 46000, 0, 0, 52, 0), -- Backstab (Rank 7)
+(@TrainerId+7, 11281, 54000, 0, 0, 60, 0), -- Backstab (Rank 8)
+(@TrainerId+7, 11289, 31000, 0, 0, 46, 0), -- Garrote (Rank 5)
+(@TrainerId+7, 11290, 48000, 0, 0, 54, 0), -- Garrote (Rank 6)
+(@TrainerId+7, 11293, 31000, 0, 0, 46, 0), -- Sinister Strike (Rank 7)
+(@TrainerId+7, 11294, 48000, 0, 0, 54, 0), -- Sinister Strike (Rank 8)
+(@TrainerId+7, 11297, 33000, 0, 0, 48, 0), -- Sap (Rank 3)
+(@TrainerId+7, 11299, 33000, 0, 0, 48, 0), -- Eviscerate (Rank 7)
+(@TrainerId+7, 11300, 50000, 0, 0, 56, 0), -- Eviscerate (Rank 8)
+(@TrainerId+7, 11303, 46000, 0, 0, 52, 0), -- Feint (Rank 4)
+(@TrainerId+7, 11305, 52000, 0, 0, 58, 0), -- Sprint (Rank 3)
+(@TrainerId+7, 17347, 384, 0, 0, 46, 0), -- Hemorrhage (Rank 2)
+(@TrainerId+7, 17348, 650, 0, 0, 58, 0), -- Hemorrhage (Rank 3)
+(@TrainerId+7, 34411, 5500, 0, 0, 50, 0), -- Mutilate (Rank 2)
+(@TrainerId+7, 34412, 6500, 0, 0, 60, 0), -- Mutilate (Rank 3)
 -- Rogue: Starting zones
+(@TrainerId+8, 53, 100, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+8, 921, 100, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+8, 1757, 100, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+8, 1776, 100, 0, 0, 6, 0), -- Gouge
+(@TrainerId+8, 1784, 10, 0, 0, 1, 0); -- Stealth
 -- Priest: Outside starting zones
 -- Priest: Starting zones
 -- Shaman: Outside starting zones
@@ -759,8 +901,43 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+6 WHERE `Creature
     15513, -- Ranger Sallina <Hunter Trainer>
     16499 -- Keilnei <Hunter Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+7 WHERE `CreatureId` IN (
+    917, -- Keryn Sylvius <Rogue Trainer>
+    918, -- Osborne the Night Man <Rogue Trainer>
+    1234, -- Hogral Bakkan <Rogue Trainer>
+    1411, -- Ian Strom <Rogue Trainer>
+    2130, -- Marion Call <Rogue Trainer>
+    3170, -- Kaplak <Rogue Trainer>
+    3327, -- Gest <Rogue Trainer>
+    3328, -- Ormok <Rogue Trainer>
+    3401, -- Shenthul <Rogue Trainer>
+    3599, -- Jannok Breezesong <Rogue Trainer>
+    4163, -- Syurna <Rogue Trainer>
+    4214, -- Erion Shadewhisper <Rogue Trainer>
+    4215, -- Anishar <Rogue Trainer>
+    4582, -- Carolyn Ward <Rogue Trainer>
+    4583, -- Miles Dexter <Rogue Trainer>
+    4584, -- Gregory Charles <Rogue Trainer>
+    5165, -- Hulfdan Blackbeard <Rogue Trainer>
+    5166, -- Ormyr Flinteye <Rogue Trainer>
+    5167, -- Fenthwick <Rogue Trainer>
+    6707, -- Fahrad <Grand Master Rogue>
+    13283, -- Lord Tony Romano <Rogue Trainer>
+    16279, -- Tannaria <Rogue Trainer>
+    16684, -- Zelanis <Rogue Trainer>
+    16685, -- Elara <Rogue Trainer>
+    16686 -- Nerisen <Rogue Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `CreatureId` IN (
+    915, -- Jorik Kerridan <Rogue Trainer>
+    916, -- Solm Hargrin <Rogue Trainer>
+    2122, -- David Trias <Rogue Trainer>
+    3155, -- Rwag <Rogue Trainer>
+    3594, -- Frahun Shadewhisper <Rogue Trainer>
+    15285 -- Pathstalker Kariel <Rogue Trainer>
+);
 
-DELETE FROM `trainer_spell` WHERE `TrainerId` BETWEEN @TrainerId+0 AND @TrainerId+6;
+DELETE FROM `trainer_spell` WHERE `TrainerId` BETWEEN @TrainerId+0 AND @TrainerId+8;
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 72, 1000, 0, 0, 0, 0, 0, 12, 0), -- Shield Bash
@@ -1174,9 +1351,89 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+6, 1494, 10, 0, 0, 0, 0, 0, 2, 0), -- Track Beasts
 (@TrainerId+6, 1978, 100, 0, 0, 0, 0, 0, 4, 0), -- Serpent Sting (Rank 1)
 (@TrainerId+6, 3044, 100, 0, 0, 0, 0, 0, 6, 0), -- Arcane Shot (Rank 1)
-(@TrainerId+6, 13163, 100, 0, 0, 0, 0, 0, 4, 0); -- Aspect of the Monkey
+(@TrainerId+6, 13163, 100, 0, 0, 0, 0, 0, 4, 0), -- Aspect of the Monkey
 -- Rogue: Outside starting zones
+(@TrainerId+7, 53, 100, 0, 0, 0, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+7, 408, 10000, 0, 0, 0, 0, 0, 30, 0), -- Kidney Shot (Rank 1)
+(@TrainerId+7, 674, 300, 0, 0, 0, 0, 0, 10, 0), -- Dual Wield (Passive)
+(@TrainerId+7, 703, 1200, 0, 0, 0, 0, 0, 14, 0), -- Garrote (Rank 1)
+(@TrainerId+7, 921, 100, 0, 0, 0, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+7, 1725, 4000, 0, 0, 0, 0, 0, 22, 0), -- Distract
+(@TrainerId+7, 1757, 100, 0, 0, 1752, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+7, 1758, 1200, 0, 0, 1757, 0, 0, 14, 0), -- Sinister Strike (Rank 3)
+(@TrainerId+7, 1759, 4000, 0, 0, 1758, 0, 0, 22, 0), -- Sinister Strike (Rank 4)
+(@TrainerId+7, 1760, 10000, 0, 0, 1759, 0, 0, 30, 0), -- Sinister Strike (Rank 5)
+(@TrainerId+7, 1766, 800, 0, 0, 0, 0, 0, 12, 0), -- Kick
+(@TrainerId+7, 1776, 100, 0, 0, 0, 0, 0, 6, 0), -- Gouge
+(@TrainerId+7, 1784, 10, 0, 0, 0, 0, 0, 1, 0), -- Stealth
+(@TrainerId+7, 1804, 1800, 0, 0, 0, 0, 0, 16, 0), -- Pick Lock
+(@TrainerId+7, 1833, 6000, 0, 0, 0, 0, 0, 26, 0), -- Cheap Shot
+(@TrainerId+7, 1842, 10000, 0, 0, 0, 0, 0, 30, 0), -- Disarm Trap
+(@TrainerId+7, 1856, 4000, 0, 0, 0, 0, 0, 22, 0), -- Vanish (Rank 1)
+(@TrainerId+7, 1857, 27000, 0, 0, 1856, 0, 0, 42, 0), -- Vanish (Rank 2)
+(@TrainerId+7, 1860, 20000, 0, 0, 0, 0, 0, 40, 0), -- Safe Fall (Passive)
+(@TrainerId+7, 1943, 3000, 0, 0, 0, 0, 0, 20, 0), -- Rupture (Rank 1)
+(@TrainerId+7, 1966, 1800, 0, 0, 0, 0, 0, 16, 0), -- Feint (Rank 1)
+(@TrainerId+7, 2070, 8000, 0, 0, 6770, 0, 0, 28, 0), -- Sap (Rank 2)
+(@TrainerId+7, 2094, 14000, 0, 0, 0, 0, 0, 34, 0), -- Blind
+(@TrainerId+7, 2589, 800, 0, 0, 53, 0, 0, 12, 0), -- Backstab (Rank 2)
+(@TrainerId+7, 2590, 3000, 0, 0, 2589, 0, 0, 20, 0), -- Backstab (Rank 3)
+(@TrainerId+7, 2591, 8000, 0, 0, 2590, 0, 0, 28, 0), -- Backstab (Rank 4)
+(@TrainerId+7, 2836, 5000, 0, 0, 0, 0, 0, 24, 0), -- Detect Traps (Passive)
+(@TrainerId+7, 2983, 300, 0, 0, 0, 0, 0, 10, 0), -- Sprint (Rank 1)
+(@TrainerId+7, 3127, 800, 0, 0, 0, 0, 0, 12, 0), -- Parry (Passive)
+(@TrainerId+7, 5171, 300, 0, 0, 0, 0, 0, 10, 0), -- Slice and Dice (Rank 1)
+(@TrainerId+7, 5277, 200, 0, 0, 0, 0, 0, 8, 0), -- Evasion (Rank 1)
+(@TrainerId+7, 6760, 200, 0, 0, 2098, 0, 0, 8, 0), -- Eviscerate (Rank 2)
+(@TrainerId+7, 6761, 1800, 0, 0, 6760, 0, 0, 16, 0), -- Eviscerate (Rank 3)
+(@TrainerId+7, 6762, 5000, 0, 0, 6761, 0, 0, 24, 0), -- Eviscerate (Rank 4)
+(@TrainerId+7, 6768, 8000, 0, 0, 1966, 0, 0, 28, 0), -- Feint (Rank 2)
+(@TrainerId+7, 6770, 300, 0, 0, 0, 0, 0, 10, 0), -- Sap (Rank 1)
+(@TrainerId+7, 6774, 27000, 0, 0, 5171, 0, 0, 42, 0), -- Slice and Dice (Rank 2)
+(@TrainerId+7, 8621, 18000, 0, 0, 1760, 0, 0, 38, 0), -- Sinister Strike (Rank 6)
+(@TrainerId+7, 8623, 12000, 0, 0, 6762, 0, 0, 32, 0), -- Eviscerate (Rank 5)
+(@TrainerId+7, 8624, 20000, 0, 0, 8623, 0, 0, 40, 0), -- Eviscerate (Rank 6)
+(@TrainerId+7, 8631, 4000, 0, 0, 703, 0, 0, 22, 0), -- Garrote (Rank 2)
+(@TrainerId+7, 8632, 10000, 0, 0, 8631, 0, 0, 30, 0), -- Garrote (Rank 3)
+(@TrainerId+7, 8633, 18000, 0, 0, 8632, 0, 0, 38, 0), -- Garrote (Rank 4)
+(@TrainerId+7, 8637, 20000, 0, 0, 6768, 0, 0, 40, 0), -- Feint (Rank 3)
+(@TrainerId+7, 8639, 8000, 0, 0, 1943, 0, 0, 28, 0), -- Rupture (Rank 2)
+(@TrainerId+7, 8640, 16000, 0, 0, 8639, 0, 0, 36, 0), -- Rupture (Rank 3)
+(@TrainerId+7, 8643, 35000, 0, 0, 408, 0, 0, 50, 0), -- Kidney Shot (Rank 2)
+(@TrainerId+7, 8647, 1200, 0, 0, 0, 0, 0, 14, 0), -- Expose Armor
+(@TrainerId+7, 8676, 2900, 0, 0, 0, 0, 0, 18, 0), -- Ambush (Rank 1)
+(@TrainerId+7, 8696, 14000, 0, 0, 2983, 0, 0, 34, 0), -- Sprint (Rank 2)
+(@TrainerId+7, 8721, 16000, 0, 0, 2591, 0, 0, 36, 0), -- Backstab (Rank 5)
+(@TrainerId+7, 8724, 6000, 0, 0, 8676, 0, 0, 26, 0), -- Ambush (Rank 2)
+(@TrainerId+7, 8725, 14000, 0, 0, 8724, 0, 0, 34, 0), -- Ambush (Rank 3)
+(@TrainerId+7, 11267, 27000, 0, 0, 8725, 0, 0, 42, 0), -- Ambush (Rank 4)
+(@TrainerId+7, 11268, 35000, 0, 0, 11267, 0, 0, 50, 0), -- Ambush (Rank 5)
+(@TrainerId+7, 11269, 52000, 0, 0, 11268, 0, 0, 58, 0), -- Ambush (Rank 6)
+(@TrainerId+7, 11273, 29000, 0, 0, 8640, 0, 0, 44, 0), -- Rupture (Rank 4)
+(@TrainerId+7, 11274, 46000, 0, 0, 11273, 0, 0, 52, 0), -- Rupture (Rank 5)
+(@TrainerId+7, 11275, 54000, 0, 0, 11274, 0, 0, 60, 0), -- Rupture (Rank 6)
+(@TrainerId+7, 11279, 29000, 0, 0, 8721, 0, 0, 44, 0), -- Backstab (Rank 6)
+(@TrainerId+7, 11280, 46000, 0, 0, 11279, 0, 0, 52, 0), -- Backstab (Rank 7)
+(@TrainerId+7, 11281, 54000, 0, 0, 11280, 0, 0, 60, 0), -- Backstab (Rank 8)
+(@TrainerId+7, 11289, 31000, 0, 0, 8633, 0, 0, 46, 0), -- Garrote (Rank 5)
+(@TrainerId+7, 11290, 48000, 0, 0, 11289, 0, 0, 54, 0), -- Garrote (Rank 6)
+(@TrainerId+7, 11293, 31000, 0, 0, 8621, 0, 0, 46, 0), -- Sinister Strike (Rank 7)
+(@TrainerId+7, 11294, 48000, 0, 0, 11293, 0, 0, 54, 0), -- Sinister Strike (Rank 8)
+(@TrainerId+7, 11297, 33000, 0, 0, 2070, 0, 0, 48, 0), -- Sap (Rank 3)
+(@TrainerId+7, 11299, 33000, 0, 0, 8624, 0, 0, 48, 0), -- Eviscerate (Rank 7)
+(@TrainerId+7, 11300, 50000, 0, 0, 11299, 0, 0, 56, 0), -- Eviscerate (Rank 8)
+(@TrainerId+7, 11303, 46000, 0, 0, 8637, 0, 0, 52, 0), -- Feint (Rank 4)
+(@TrainerId+7, 11305, 52000, 0, 0, 8696, 0, 0, 58, 0), -- Sprint (Rank 3)
+(@TrainerId+7, 17347, 384, 0, 0, 16511, 0, 0, 46, 0), -- Hemorrhage (Rank 2)
+(@TrainerId+7, 17348, 650, 0, 0, 17347, 0, 0, 58, 0), -- Hemorrhage (Rank 3)
+(@TrainerId+7, 34411, 5500, 0, 0, 1329, 0, 0, 50, 0), -- Mutilate (Rank 2)
+(@TrainerId+7, 34412, 6500, 0, 0, 34411, 0, 0, 60, 0), -- Mutilate (Rank 3)
 -- Rogue: Starting zones
+(@TrainerId+8, 53, 100, 0, 0, 0, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+8, 921, 100, 0, 0, 0, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+8, 1757, 100, 0, 0, 1752, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+8, 1776, 100, 0, 0, 0, 0, 0, 6, 0), -- Gouge
+(@TrainerId+8, 1784, 10, 0, 0, 0, 0, 0, 1, 0); -- Stealth
 -- Priest: Outside starting zones
 -- Priest: Starting zones
 -- Shaman: Outside starting zones

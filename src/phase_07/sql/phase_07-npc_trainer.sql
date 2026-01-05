@@ -7,6 +7,7 @@ DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+2 AND `SpellID` IN (13820,2529
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+3 AND `SpellID` IN (25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31884, 32223, 32699, 32700, 33072, 34768);
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+4 AND `SpellID` = 498;
 DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+5 AND `SpellID` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
+DELETE FROM `npc_trainer` WHERE `ID` = @TrainerId+7 AND `SpellID` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
 INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqLevel`, `ReqSpell`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -125,9 +126,28 @@ INSERT INTO `npc_trainer` (`ID`, `SpellID`, `MoneyCost`, `ReqSkillLine`, `ReqSki
 (@TrainerId+5, 56641, 77000, 0, 0, 62, 0), -- Steady Shot (Rank 1)
 (@TrainerId+5, 60051, 400, 0, 0, 70, 0), -- Explosive Shot (Rank 2)
 (@TrainerId+5, 63669, 7000, 0, 0, 63, 0), -- Black Arrow (Rank 3)
-(@TrainerId+5, 63670, 10000, 0, 0, 69, 0); -- Black Arrow (Rank 4)
+(@TrainerId+5, 63670, 10000, 0, 0, 69, 0), -- Black Arrow (Rank 4)
 -- Rogue: Outside starting zones
--- Rogue: Starting zones
+(@TrainerId+7, 5938, 100000, 0, 0, 70, 0), -- Shiv
+(@TrainerId+7, 25300, 72000, 0, 0, 60, 0), -- Backstab (Rank 9)
+(@TrainerId+7, 25302, 50000, 0, 0, 60, 0), -- Feint (Rank 5)
+(@TrainerId+7, 26669, 35000, 0, 0, 50, 0), -- Evasion (Rank 2)
+(@TrainerId+7, 26839, 50000, 0, 0, 61, 0), -- Garrote (Rank 7)
+(@TrainerId+7, 26861, 50000, 0, 0, 62, 0), -- Sinister Strike (Rank 9)
+(@TrainerId+7, 26862, 100000, 0, 0, 70, 0), -- Sinister Strike (Rank 10)
+(@TrainerId+7, 26863, 110000, 0, 0, 68, 0), -- Backstab (Rank 10)
+(@TrainerId+7, 26864, 2700, 0, 0, 70, 0), -- Hemorrhage (Rank 4)
+(@TrainerId+7, 26865, 140000, 0, 0, 64, 0), -- Eviscerate (Rank 10)
+(@TrainerId+7, 26867, 120000, 0, 0, 68, 0), -- Rupture (Rank 7)
+(@TrainerId+7, 26884, 100000, 0, 0, 70, 0), -- Garrote (Rank 8)
+(@TrainerId+7, 26889, 59000, 0, 0, 62, 0), -- Vanish (Rank 3)
+(@TrainerId+7, 27441, 80000, 0, 0, 66, 0), -- Ambush (Rank 7)
+(@TrainerId+7, 27448, 72000, 0, 0, 64, 0), -- Feint (Rank 6)
+(@TrainerId+7, 31016, 65000, 0, 0, 60, 0), -- Eviscerate (Rank 9)
+(@TrainerId+7, 31224, 89000, 0, 0, 66, 0), -- Cloak of Shadows
+(@TrainerId+7, 32645, 59000, 0, 0, 62, 0), -- Envenom (Rank 1)
+(@TrainerId+7, 32684, 100000, 0, 0, 69, 0), -- Envenom (Rank 2)
+(@TrainerId+7, 34413, 7500, 0, 0, 70, 0); -- Mutilate (Rank 4)
 -- Priest: Outside starting zones
 -- Priest: Starting zones
 -- Shaman: Outside starting zones
@@ -149,6 +169,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+2 AND `SpellId` IN (1
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+3 AND `SpellId` IN (25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31884, 32223, 32699, 32700, 33072, 34768);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` = 498;
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+5 AND `SpellId` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+7 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -267,9 +288,28 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+5, 56641, 77000, 0, 0, 0, 0, 0, 62, 0), -- Steady Shot (Rank 1)
 (@TrainerId+5, 60051, 400, 0, 0, 53301, 0, 0, 70, 0), -- Explosive Shot (Rank 2)
 (@TrainerId+5, 63669, 7000, 0, 0, 63668, 0, 0, 63, 0), -- Black Arrow (Rank 3)
-(@TrainerId+5, 63670, 10000, 0, 0, 63669, 0, 0, 69, 0); -- Black Arrow (Rank 4)
+(@TrainerId+5, 63670, 10000, 0, 0, 63669, 0, 0, 69, 0), -- Black Arrow (Rank 4)
 -- Rogue: Outside starting zones
--- Rogue: Starting zones
+(@TrainerId+7, 5938, 100000, 0, 0, 0, 0, 0, 70, 0), -- Shiv
+(@TrainerId+7, 25300, 72000, 0, 0, 11281, 0, 0, 60, 0), -- Backstab (Rank 9)
+(@TrainerId+7, 25302, 50000, 0, 0, 11303, 0, 0, 60, 0), -- Feint (Rank 5)
+(@TrainerId+7, 26669, 35000, 0, 0, 5277, 0, 0, 50, 0), -- Evasion (Rank 2)
+(@TrainerId+7, 26839, 50000, 0, 0, 11290, 0, 0, 61, 0), -- Garrote (Rank 7)
+(@TrainerId+7, 26861, 50000, 0, 0, 11294, 0, 0, 62, 0), -- Sinister Strike (Rank 9)
+(@TrainerId+7, 26862, 100000, 0, 0, 26861, 0, 0, 70, 0), -- Sinister Strike (Rank 10)
+(@TrainerId+7, 26863, 110000, 0, 0, 25300, 0, 0, 68, 0), -- Backstab (Rank 10)
+(@TrainerId+7, 26864, 2700, 0, 0, 17348, 0, 0, 70, 0), -- Hemorrhage (Rank 4)
+(@TrainerId+7, 26865, 140000, 0, 0, 31016, 0, 0, 64, 0), -- Eviscerate (Rank 10)
+(@TrainerId+7, 26867, 120000, 0, 0, 11275, 0, 0, 68, 0), -- Rupture (Rank 7)
+(@TrainerId+7, 26884, 100000, 0, 0, 26839, 0, 0, 70, 0), -- Garrote (Rank 8)
+(@TrainerId+7, 26889, 59000, 0, 0, 1857, 0, 0, 62, 0), -- Vanish (Rank 3)
+(@TrainerId+7, 27441, 80000, 0, 0, 11269, 0, 0, 66, 0), -- Ambush (Rank 7)
+(@TrainerId+7, 27448, 72000, 0, 0, 25302, 0, 0, 64, 0), -- Feint (Rank 6)
+(@TrainerId+7, 31016, 65000, 0, 0, 11300, 0, 0, 60, 0), -- Eviscerate (Rank 9)
+(@TrainerId+7, 31224, 89000, 0, 0, 0, 0, 0, 66, 0), -- Cloak of Shadows
+(@TrainerId+7, 32645, 59000, 0, 0, 0, 0, 0, 62, 0), -- Envenom (Rank 1)
+(@TrainerId+7, 32684, 100000, 0, 0, 32645, 0, 0, 69, 0), -- Envenom (Rank 2)
+(@TrainerId+7, 34413, 7500, 0, 0, 34412, 0, 0, 70, 0); -- Mutilate (Rank 4)
 -- Priest: Outside starting zones
 -- Priest: Starting zones
 -- Shaman: Outside starting zones
