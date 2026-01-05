@@ -1,0 +1,511 @@
+UPDATE `trainer_spell` SET `MoneyCost` = 900000, `ReqLevel` = 40 WHERE `SpellId` = 33388; -- Apprentice Riding
+UPDATE `trainer_spell` SET `MoneyCost` = 9000000, `ReqLevel` = 60 WHERE `SpellId` = 33391; -- Journeyman Riding
+UPDATE `trainer_spell` SET `MoneyCost` = 8000000, `ReqLevel` = 70 WHERE `SpellId` = 34090; -- Expert Riding
+SET @TrainerId := 200;
+DELETE FROM `trainer_spell` WHERE `TrainerId` BETWEEN @TrainerId+0 AND @TrainerId+8;
+INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
+-- Warrior: Outside starting zones
+(@TrainerId+0, 72, 1000, 0, 0, 0, 0, 0, 12, 0), -- Shield Bash
+(@TrainerId+0, 100, 100, 0, 0, 0, 0, 0, 4, 0), -- Charge (Rank 1)
+(@TrainerId+0, 284, 200, 0, 0, 78, 0, 0, 8, 0), -- Heroic Strike (Rank 2)
+(@TrainerId+0, 285, 2000, 0, 0, 284, 0, 0, 16, 0), -- Heroic Strike (Rank 3)
+(@TrainerId+0, 674, 4000, 0, 0, 0, 0, 0, 20, 0), -- Dual Wield (Passive)
+(@TrainerId+0, 676, 3000, 0, 0, 0, 0, 0, 18, 0), -- Disarm
+(@TrainerId+0, 694, 2000, 0, 0, 0, 0, 0, 16, 0), -- Mocking Blow
+(@TrainerId+0, 750, 22000, 0, 0, 0, 0, 0, 40, 0), -- Plate Mail
+(@TrainerId+0, 772, 100, 0, 0, 0, 0, 0, 4, 0), -- Rend (Rank 1)
+(@TrainerId+0, 845, 4000, 0, 0, 0, 0, 0, 20, 0), -- Cleave (Rank 1)
+(@TrainerId+0, 871, 11000, 0, 0, 0, 0, 0, 28, 0), -- Shield Wall
+(@TrainerId+0, 1160, 1500, 0, 0, 0, 0, 0, 14, 0), -- Demoralizing Shout (Rank 1)
+(@TrainerId+0, 1161, 10000, 0, 0, 0, 0, 0, 26, 0), -- Challenging Shout
+(@TrainerId+0, 1464, 12000, 0, 0, 0, 0, 0, 30, 0), -- Slam (Rank 1)
+(@TrainerId+0, 1608, 8000, 0, 0, 285, 0, 0, 24, 0), -- Heroic Strike (Rank 4)
+(@TrainerId+0, 1680, 18000, 0, 0, 0, 0, 0, 36, 0), -- Whirlwind
+(@TrainerId+0, 1715, 200, 0, 0, 0, 0, 0, 8, 0), -- Hamstring
+(@TrainerId+0, 1719, 42000, 0, 0, 0, 0, 0, 50, 0), -- Recklessness
+(@TrainerId+0, 2565, 2000, 0, 0, 0, 0, 0, 16, 0), -- Shield Block
+(@TrainerId+0, 2687, 600, 0, 0, 0, 0, 0, 10, 0), -- Bloodrage
+(@TrainerId+0, 3127, 100, 0, 0, 0, 0, 0, 6, 0), -- Parry (Passive)
+(@TrainerId+0, 5242, 1000, 0, 0, 6673, 0, 0, 12, 0), -- Battle Shout (Rank 2)
+(@TrainerId+0, 5246, 6000, 0, 0, 0, 0, 0, 22, 0), -- Intimidating Shout
+(@TrainerId+0, 5308, 8000, 0, 0, 0, 0, 0, 24, 0), -- Execute (Rank 1)
+(@TrainerId+0, 6178, 10000, 0, 0, 100, 0, 0, 26, 0), -- Charge (Rank 2)
+(@TrainerId+0, 6190, 8000, 0, 0, 1160, 0, 0, 24, 0), -- Demoralizing Shout (Rank 2)
+(@TrainerId+0, 6192, 6000, 0, 0, 5242, 0, 0, 22, 0), -- Battle Shout (Rank 3)
+(@TrainerId+0, 6343, 100, 0, 0, 0, 0, 0, 6, 0), -- Thunder Clap (Rank 1)
+(@TrainerId+0, 6546, 600, 0, 0, 772, 0, 0, 10, 0), -- Rend (Rank 2)
+(@TrainerId+0, 6547, 4000, 0, 0, 6546, 0, 0, 20, 0), -- Rend (Rank 3)
+(@TrainerId+0, 6548, 12000, 0, 0, 6547, 0, 0, 30, 0), -- Rend (Rank 4)
+(@TrainerId+0, 6552, 20000, 0, 0, 0, 0, 0, 38, 0), -- Pummel
+(@TrainerId+0, 6572, 1500, 0, 0, 0, 0, 0, 14, 0), -- Revenge (Rank 1)
+(@TrainerId+0, 6574, 8000, 0, 0, 6572, 0, 0, 24, 0), -- Revenge (Rank 2)
+(@TrainerId+0, 6673, 10, 0, 0, 0, 0, 0, 1, 0), -- Battle Shout (Rank 1)
+(@TrainerId+0, 7369, 12000, 0, 0, 845, 0, 0, 30, 0), -- Cleave (Rank 2)
+(@TrainerId+0, 7379, 16000, 0, 0, 6574, 0, 0, 34, 0), -- Revenge (Rank 3)
+(@TrainerId+0, 7384, 1000, 0, 0, 0, 0, 0, 12, 0), -- Overpower
+(@TrainerId+0, 8198, 3000, 0, 0, 6343, 0, 0, 18, 0), -- Thunder Clap (Rank 2)
+(@TrainerId+0, 8204, 11000, 0, 0, 8198, 0, 0, 28, 0), -- Thunder Clap (Rank 3)
+(@TrainerId+0, 8205, 20000, 0, 0, 8204, 0, 0, 38, 0), -- Thunder Clap (Rank 4)
+(@TrainerId+0, 8820, 20000, 0, 0, 1464, 0, 0, 38, 0), -- Slam (Rank 2)
+(@TrainerId+0, 11549, 14000, 0, 0, 6192, 0, 0, 32, 0), -- Battle Shout (Rank 4)
+(@TrainerId+0, 11550, 32000, 0, 0, 11549, 0, 0, 42, 0), -- Battle Shout (Rank 5)
+(@TrainerId+0, 11551, 54000, 0, 0, 11550, 0, 0, 52, 0), -- Battle Shout (Rank 6)
+(@TrainerId+0, 11554, 16000, 0, 0, 6190, 0, 0, 34, 0), -- Demoralizing Shout (Rank 3)
+(@TrainerId+0, 11555, 34000, 0, 0, 11554, 0, 0, 44, 0), -- Demoralizing Shout (Rank 4)
+(@TrainerId+0, 11556, 56000, 0, 0, 11555, 0, 0, 54, 0), -- Demoralizing Shout (Rank 5)
+(@TrainerId+0, 11564, 14000, 0, 0, 1608, 0, 0, 32, 0), -- Heroic Strike (Rank 5)
+(@TrainerId+0, 11565, 22000, 0, 0, 11564, 0, 0, 40, 0), -- Heroic Strike (Rank 6)
+(@TrainerId+0, 11566, 40000, 0, 0, 11565, 0, 0, 48, 0), -- Heroic Strike (Rank 7)
+(@TrainerId+0, 11567, 58000, 0, 0, 11566, 0, 0, 56, 0), -- Heroic Strike (Rank 8)
+(@TrainerId+0, 11572, 22000, 0, 0, 6548, 0, 0, 40, 0), -- Rend (Rank 5)
+(@TrainerId+0, 11573, 42000, 0, 0, 11572, 0, 0, 50, 0), -- Rend (Rank 6)
+(@TrainerId+0, 11574, 62000, 0, 0, 11573, 0, 0, 60, 0), -- Rend (Rank 7)
+(@TrainerId+0, 11578, 36000, 0, 0, 6178, 0, 0, 46, 0), -- Charge (Rank 3)
+(@TrainerId+0, 11580, 40000, 0, 0, 8205, 0, 0, 48, 0), -- Thunder Clap (Rank 5)
+(@TrainerId+0, 11581, 60000, 0, 0, 11580, 0, 0, 58, 0), -- Thunder Clap (Rank 6)
+(@TrainerId+0, 11600, 34000, 0, 0, 7379, 0, 0, 44, 0), -- Revenge (Rank 4)
+(@TrainerId+0, 11601, 56000, 0, 0, 11600, 0, 0, 54, 0), -- Revenge (Rank 5)
+(@TrainerId+0, 11604, 36000, 0, 0, 8820, 0, 0, 46, 0), -- Slam (Rank 3)
+(@TrainerId+0, 11605, 56000, 0, 0, 11604, 0, 0, 54, 0), -- Slam (Rank 4)
+(@TrainerId+0, 11608, 22000, 0, 0, 7369, 0, 0, 40, 0), -- Cleave (Rank 3)
+(@TrainerId+0, 11609, 42000, 0, 0, 11608, 0, 0, 50, 0), -- Cleave (Rank 4)
+(@TrainerId+0, 18499, 14000, 0, 0, 0, 0, 0, 32, 0), -- Berserker Rage
+(@TrainerId+0, 20230, 4000, 0, 0, 0, 0, 0, 20, 0), -- Retaliation
+(@TrainerId+0, 20252, 12000, 0, 0, 0, 0, 0, 30, 0), -- Intercept
+(@TrainerId+0, 20569, 62000, 0, 0, 11609, 0, 0, 60, 0), -- Cleave (Rank 5)
+(@TrainerId+0, 20658, 14000, 0, 0, 5308, 0, 0, 32, 0), -- Execute (Rank 2)
+(@TrainerId+0, 20660, 22000, 0, 0, 20658, 0, 0, 40, 0), -- Execute (Rank 3)
+(@TrainerId+0, 20661, 40000, 0, 0, 20660, 0, 0, 48, 0), -- Execute (Rank 4)
+(@TrainerId+0, 20662, 58000, 0, 0, 20661, 0, 0, 56, 0), -- Execute (Rank 5)
+(@TrainerId+0, 21551, 2000, 0, 0, 12294, 0, 0, 48, 0), -- Mortal Strike (Rank 2)
+(@TrainerId+0, 21552, 2800, 0, 0, 21551, 0, 0, 54, 0), -- Mortal Strike (Rank 3)
+(@TrainerId+0, 21553, 3100, 0, 0, 21552, 0, 0, 60, 0), -- Mortal Strike (Rank 4)
+(@TrainerId+0, 23922, 22000, 0, 0, 0, 0, 0, 40, 0), -- Shield Slam (Rank 1)
+(@TrainerId+0, 23923, 40000, 0, 0, 23922, 0, 0, 48, 0), -- Shield Slam (Rank 2)
+(@TrainerId+0, 23924, 56000, 0, 0, 23923, 0, 0, 54, 0), -- Shield Slam (Rank 3)
+(@TrainerId+0, 23925, 62000, 0, 0, 23924, 0, 0, 60, 0), -- Shield Slam (Rank 4)
+-- Warrior: Starting zones
+(@TrainerId+1, 100, 100, 0, 0, 0, 0, 0, 4, 0), -- Charge (Rank 1)
+(@TrainerId+1, 772, 100, 0, 0, 0, 0, 0, 4, 0), -- Rend (Rank 1)
+(@TrainerId+1, 3127, 100, 0, 0, 0, 0, 0, 6, 0), -- Parry (Passive)
+(@TrainerId+1, 6343, 100, 0, 0, 0, 0, 0, 6, 0), -- Thunder Clap (Rank 1)
+(@TrainerId+1, 6673, 10, 0, 0, 0, 0, 0, 1, 0), -- Battle Shout (Rank 1)
+-- Paladin
+-- Human/Dwarf/Draenei: Outside starting zones
+(@TrainerId+2, 465, 10, 0, 0, 0, 0, 0, 1, 0), -- Devotion Aura (Rank 1)
+(@TrainerId+2, 498, 100, 0, 0, 0, 0, 0, 6, 0), -- Divine Protection
+(@TrainerId+2, 633, 300, 0, 0, 0, 0, 0, 10, 0), -- Lay on Hands (Rank 1)
+(@TrainerId+2, 639, 100, 0, 0, 635, 0, 0, 6, 0), -- Holy Light (Rank 2)
+(@TrainerId+2, 642, 13000, 0, 0, 0, 0, 0, 34, 0), -- Divine Shield
+(@TrainerId+2, 643, 4000, 0, 0, 10290, 0, 0, 20, 0), -- Devotion Aura (Rank 3)
+(@TrainerId+2, 647, 2000, 0, 0, 639, 0, 0, 14, 0), -- Holy Light (Rank 3)
+(@TrainerId+2, 750, 20000, 0, 0, 0, 0, 0, 40, 0), -- Plate Mail
+(@TrainerId+2, 853, 100, 0, 0, 0, 0, 0, 8, 0), -- Hammer of Justice (Rank 1)
+(@TrainerId+2, 879, 4000, 0, 0, 0, 0, 0, 20, 0), -- Exorcism (Rank 1)
+(@TrainerId+2, 1022, 300, 0, 0, 0, 0, 0, 10, 0), -- Hand of Protection (Rank 1)
+(@TrainerId+2, 1026, 4000, 0, 0, 647, 0, 0, 22, 0), -- Holy Light (Rank 4)
+(@TrainerId+2, 1032, 20000, 0, 0, 10291, 0, 0, 40, 0), -- Devotion Aura (Rank 5)
+(@TrainerId+2, 1038, 6000, 0, 0, 0, 0, 0, 26, 0), -- Hand of Salvation
+(@TrainerId+2, 1042, 11000, 0, 0, 1026, 0, 0, 30, 0), -- Holy Light (Rank 5)
+(@TrainerId+2, 1044, 3500, 0, 0, 0, 0, 0, 18, 0), -- Hand of Freedom
+(@TrainerId+2, 1152, 100, 0, 0, 0, 0, 0, 8, 0), -- Purify
+(@TrainerId+2, 2800, 11000, 0, 0, 633, 0, 0, 30, 0), -- Lay on Hands (Rank 2)
+(@TrainerId+2, 2812, 28000, 0, 0, 0, 0, 0, 50, 0), -- Holy Wrath (Rank 1)
+(@TrainerId+2, 3127, 100, 0, 0, 0, 0, 0, 8, 0), -- Parry (Passive)
+(@TrainerId+2, 3472, 16000, 0, 0, 1042, 0, 0, 38, 0), -- Holy Light (Rank 6)
+(@TrainerId+2, 4987, 21000, 0, 0, 0, 0, 0, 42, 0), -- Cleanse
+(@TrainerId+2, 5588, 5000, 0, 0, 853, 0, 0, 24, 0), -- Hammer of Justice (Rank 2)
+(@TrainerId+2, 5589, 20000, 0, 0, 5588, 0, 0, 40, 0), -- Hammer of Justice (Rank 3)
+(@TrainerId+2, 5599, 5000, 0, 0, 1022, 0, 0, 24, 0), -- Hand of Protection (Rank 2)
+(@TrainerId+2, 5614, 9000, 0, 0, 879, 0, 0, 28, 0), -- Exorcism (Rank 2)
+(@TrainerId+2, 5615, 14000, 0, 0, 5614, 0, 0, 36, 0), -- Exorcism (Rank 3)
+(@TrainerId+2, 6940, 24000, 0, 0, 0, 0, 0, 46, 0), -- Hand of Sacrifice
+(@TrainerId+2, 7294, 3000, 0, 0, 0, 0, 0, 16, 0), -- Retribution Aura (Rank 1)
+(@TrainerId+2, 10278, 16000, 0, 0, 5599, 0, 0, 38, 0), -- Hand of Protection (Rank 3)
+(@TrainerId+2, 10290, 300, 0, 0, 465, 0, 0, 10, 0), -- Devotion Aura (Rank 2)
+(@TrainerId+2, 10291, 11000, 0, 0, 643, 0, 0, 30, 0), -- Devotion Aura (Rank 4)
+(@TrainerId+2, 10292, 28000, 0, 0, 1032, 0, 0, 50, 0), -- Devotion Aura (Rank 6)
+(@TrainerId+2, 10293, 46000, 0, 0, 10292, 0, 0, 60, 0), -- Devotion Aura (Rank 7)
+(@TrainerId+2, 10298, 6000, 0, 0, 7294, 0, 0, 26, 0), -- Retribution Aura (Rank 2)
+(@TrainerId+2, 10299, 14000, 0, 0, 10298, 0, 0, 36, 0), -- Retribution Aura (Rank 3)
+(@TrainerId+2, 10300, 24000, 0, 0, 10299, 0, 0, 46, 0), -- Retribution Aura (Rank 4)
+(@TrainerId+2, 10301, 42000, 0, 0, 10300, 0, 0, 56, 0), -- Retribution Aura (Rank 5)
+(@TrainerId+2, 10308, 40000, 0, 0, 5589, 0, 0, 54, 0), -- Hammer of Justice (Rank 4)
+(@TrainerId+2, 10310, 28000, 0, 0, 2800, 0, 0, 50, 0), -- Lay on Hands (Rank 3)
+(@TrainerId+2, 10312, 22000, 0, 0, 5615, 0, 0, 44, 0), -- Exorcism (Rank 4)
+(@TrainerId+2, 10313, 34000, 0, 0, 10312, 0, 0, 52, 0), -- Exorcism (Rank 5)
+(@TrainerId+2, 10314, 46000, 0, 0, 10313, 0, 0, 60, 0), -- Exorcism (Rank 6)
+(@TrainerId+2, 10318, 46000, 0, 0, 2812, 0, 0, 60, 0), -- Holy Wrath (Rank 2)
+(@TrainerId+2, 10322, 5000, 0, 0, 7328, 0, 0, 24, 0), -- Redemption (Rank 2)
+(@TrainerId+2, 10324, 14000, 0, 0, 10322, 0, 0, 36, 0), -- Redemption (Rank 3)
+(@TrainerId+2, 10326, 5000, 0, 0, 0, 0, 0, 24, 0), -- Turn Evil
+(@TrainerId+2, 10328, 24000, 0, 0, 3472, 0, 0, 46, 0), -- Holy Light (Rank 7)
+(@TrainerId+2, 10329, 40000, 0, 0, 10328, 0, 0, 54, 0), -- Holy Light (Rank 8)
+(@TrainerId+2, 19740, 100, 0, 0, 0, 0, 0, 4, 0), -- Blessing of Might (Rank 1)
+(@TrainerId+2, 19742, 2000, 0, 0, 0, 0, 0, 14, 0), -- Blessing of Wisdom (Rank 1)
+(@TrainerId+2, 19746, 4000, 0, 0, 0, 0, 0, 22, 0), -- Concentration Aura
+(@TrainerId+2, 19750, 4000, 0, 0, 0, 0, 0, 20, 0), -- Flash of Light (Rank 1)
+(@TrainerId+2, 19752, 11000, 0, 0, 0, 0, 0, 30, 0), -- Divine Intervention
+(@TrainerId+2, 19834, 1000, 0, 0, 19740, 0, 0, 12, 0), -- Blessing of Might (Rank 2)
+(@TrainerId+2, 19835, 4000, 0, 0, 19834, 0, 0, 22, 0), -- Blessing of Might (Rank 3)
+(@TrainerId+2, 19836, 12000, 0, 0, 19835, 0, 0, 32, 0), -- Blessing of Might (Rank 4)
+(@TrainerId+2, 19837, 21000, 0, 0, 19836, 0, 0, 42, 0), -- Blessing of Might (Rank 5)
+(@TrainerId+2, 19838, 34000, 0, 0, 19837, 0, 0, 52, 0), -- Blessing of Might (Rank 6)
+(@TrainerId+2, 19850, 5000, 0, 0, 19742, 0, 0, 24, 0), -- Blessing of Wisdom (Rank 2)
+(@TrainerId+2, 19852, 13000, 0, 0, 19850, 0, 0, 34, 0), -- Blessing of Wisdom (Rank 3)
+(@TrainerId+2, 19853, 22000, 0, 0, 19852, 0, 0, 44, 0), -- Blessing of Wisdom (Rank 4)
+(@TrainerId+2, 19854, 40000, 0, 0, 19853, 0, 0, 54, 0), -- Blessing of Wisdom (Rank 5)
+(@TrainerId+2, 19876, 9000, 0, 0, 0, 0, 0, 28, 0), -- Shadow Resistance Aura (Rank 1)
+(@TrainerId+2, 19888, 12000, 0, 0, 0, 0, 0, 32, 0), -- Frost Resistance Aura (Rank 1)
+(@TrainerId+2, 19891, 14000, 0, 0, 0, 0, 0, 36, 0), -- Fire Resistance Aura (Rank 1)
+(@TrainerId+2, 19895, 20000, 0, 0, 19876, 0, 0, 40, 0), -- Shadow Resistance Aura (Rank 2)
+(@TrainerId+2, 19896, 34000, 0, 0, 19895, 0, 0, 52, 0), -- Shadow Resistance Aura (Rank 3)
+(@TrainerId+2, 19897, 22000, 0, 0, 19888, 0, 0, 44, 0), -- Frost Resistance Aura (Rank 2)
+(@TrainerId+2, 19898, 42000, 0, 0, 19897, 0, 0, 56, 0), -- Frost Resistance Aura (Rank 3)
+(@TrainerId+2, 19899, 26000, 0, 0, 19891, 0, 0, 48, 0), -- Fire Resistance Aura (Rank 2)
+(@TrainerId+2, 19900, 46000, 0, 0, 19899, 0, 0, 60, 0), -- Fire Resistance Aura (Rank 3)
+(@TrainerId+2, 19939, 6000, 0, 0, 19750, 0, 0, 26, 0), -- Flash of Light (Rank 2)
+(@TrainerId+2, 19940, 13000, 0, 0, 19939, 0, 0, 34, 0), -- Flash of Light (Rank 3)
+(@TrainerId+2, 19941, 21000, 0, 0, 19940, 0, 0, 42, 0), -- Flash of Light (Rank 4)
+(@TrainerId+2, 19942, 28000, 0, 0, 19941, 0, 0, 50, 0), -- Flash of Light (Rank 5)
+(@TrainerId+2, 19943, 44000, 0, 0, 19942, 0, 0, 58, 0), -- Flash of Light (Rank 6)
+(@TrainerId+2, 20116, 11000, 0, 0, 26573, 0, 0, 30, 0), -- Consecration (Rank 2)
+(@TrainerId+2, 20164, 4000, 0, 0, 0, 0, 0, 22, 0), -- Seal of Justice
+(@TrainerId+2, 20165, 11000, 0, 0, 0, 0, 0, 30, 0), -- Seal of Light
+(@TrainerId+2, 20166, 16000, 0, 0, 0, 0, 0, 38, 0), -- Seal of Wisdom
+(@TrainerId+2, 20217, 4000, 0, 0, 0, 0, 0, 20, 0), -- Blessing of Kings
+(@TrainerId+2, 20271, 100, 0, 0, 0, 0, 0, 4, 0), -- Judgement of Light
+(@TrainerId+2, 20772, 26000, 0, 0, 10324, 0, 0, 48, 0), -- Redemption (Rank 4)
+(@TrainerId+2, 20773, 46000, 0, 0, 20772, 0, 0, 60, 0), -- Redemption (Rank 5)
+(@TrainerId+2, 20922, 20000, 0, 0, 20116, 0, 0, 40, 0), -- Consecration (Rank 3)
+(@TrainerId+2, 20923, 28000, 0, 0, 20922, 0, 0, 50, 0), -- Consecration (Rank 4)
+(@TrainerId+2, 20924, 46000, 0, 0, 20923, 0, 0, 60, 0), -- Consecration (Rank 5)
+(@TrainerId+2, 20927, 1400, 0, 0, 20925, 0, 0, 50, 0), -- Holy Shield (Rank 2)
+(@TrainerId+2, 20928, 2300, 0, 0, 20927, 0, 0, 60, 0), -- Holy Shield (Rank 3)
+(@TrainerId+2, 20929, 1300, 0, 0, 20473, 0, 0, 48, 0), -- Holy Shock (Rank 2)
+(@TrainerId+2, 20930, 2100, 0, 0, 20929, 0, 0, 56, 0), -- Holy Shock (Rank 3)
+(@TrainerId+2, 24239, 46000, 0, 0, 24274, 0, 0, 60, 0), -- Hammer of Wrath (Rank 3)
+(@TrainerId+2, 24274, 34000, 0, 0, 24275, 0, 0, 52, 0), -- Hammer of Wrath (Rank 2)
+(@TrainerId+2, 24275, 22000, 0, 0, 0, 0, 0, 44, 0), -- Hammer of Wrath (Rank 1)
+(@TrainerId+2, 25780, 3000, 0, 0, 0, 0, 0, 16, 0), -- Righteous Fury
+(@TrainerId+2, 25782, 46000, 0, 0, 19838, 0, 0, 52, 0), -- Greater Blessing of Might (Rank 1)
+(@TrainerId+2, 25894, 46000, 0, 0, 19854, 0, 0, 54, 0), -- Greater Blessing of Wisdom (Rank 1)
+(@TrainerId+2, 25898, 2300, 0, 0, 0, 0, 0, 60, 0), -- Greater Blessing of Kings
+(@TrainerId+2, 25899, 2300, 0, 0, 20911, 0, 0, 60, 0), -- Greater Blessing of Sanctuary
+(@TrainerId+2, 25916, 46000, 0, 0, 25782, 25291, 0, 60, 0), -- Greater Blessing of Might (Rank 2)
+(@TrainerId+2, 25918, 46000, 0, 0, 25894, 25290, 0, 60, 0), -- Greater Blessing of Wisdom (Rank 2)
+(@TrainerId+2, 26573, 4000, 0, 0, 0, 0, 0, 20, 0), -- Consecration (Rank 1)
+-- Blood Elf: Outside starting zones
+(@TrainerId+3, 465, 10, 0, 0, 0, 0, 0, 1, 0), -- Devotion Aura (Rank 1)
+(@TrainerId+3, 498, 100, 0, 0, 0, 0, 0, 6, 0), -- Divine Protection
+(@TrainerId+3, 633, 300, 0, 0, 0, 0, 0, 10, 0), -- Lay on Hands (Rank 1)
+(@TrainerId+3, 639, 100, 0, 0, 635, 0, 0, 6, 0), -- Holy Light (Rank 2)
+(@TrainerId+3, 642, 13000, 0, 0, 0, 0, 0, 34, 0), -- Divine Shield
+(@TrainerId+3, 643, 4000, 0, 0, 10290, 0, 0, 20, 0), -- Devotion Aura (Rank 3)
+(@TrainerId+3, 647, 2000, 0, 0, 639, 0, 0, 14, 0), -- Holy Light (Rank 3)
+(@TrainerId+3, 750, 20000, 0, 0, 0, 0, 0, 40, 0), -- Plate Mail
+(@TrainerId+3, 853, 100, 0, 0, 0, 0, 0, 8, 0), -- Hammer of Justice (Rank 1)
+(@TrainerId+3, 879, 4000, 0, 0, 0, 0, 0, 20, 0), -- Exorcism (Rank 1)
+(@TrainerId+3, 1022, 300, 0, 0, 0, 0, 0, 10, 0), -- Hand of Protection (Rank 1)
+(@TrainerId+3, 1026, 4000, 0, 0, 647, 0, 0, 22, 0), -- Holy Light (Rank 4)
+(@TrainerId+3, 1032, 20000, 0, 0, 10291, 0, 0, 40, 0), -- Devotion Aura (Rank 5)
+(@TrainerId+3, 1038, 6000, 0, 0, 0, 0, 0, 26, 0), -- Hand of Salvation
+(@TrainerId+3, 1042, 11000, 0, 0, 1026, 0, 0, 30, 0), -- Holy Light (Rank 5)
+(@TrainerId+3, 1044, 3500, 0, 0, 0, 0, 0, 18, 0), -- Hand of Freedom
+(@TrainerId+3, 1152, 100, 0, 0, 0, 0, 0, 8, 0), -- Purify
+(@TrainerId+3, 2800, 11000, 0, 0, 633, 0, 0, 30, 0), -- Lay on Hands (Rank 2)
+(@TrainerId+3, 2812, 28000, 0, 0, 0, 0, 0, 50, 0), -- Holy Wrath (Rank 1)
+(@TrainerId+3, 3127, 100, 0, 0, 0, 0, 0, 8, 0), -- Parry (Passive)
+(@TrainerId+3, 3472, 16000, 0, 0, 1042, 0, 0, 38, 0), -- Holy Light (Rank 6)
+(@TrainerId+3, 4987, 21000, 0, 0, 0, 0, 0, 42, 0), -- Cleanse
+(@TrainerId+3, 5588, 5000, 0, 0, 853, 0, 0, 24, 0), -- Hammer of Justice (Rank 2)
+(@TrainerId+3, 5589, 20000, 0, 0, 5588, 0, 0, 40, 0), -- Hammer of Justice (Rank 3)
+(@TrainerId+3, 5599, 5000, 0, 0, 1022, 0, 0, 24, 0), -- Hand of Protection (Rank 2)
+(@TrainerId+3, 5614, 9000, 0, 0, 879, 0, 0, 28, 0), -- Exorcism (Rank 2)
+(@TrainerId+3, 5615, 14000, 0, 0, 5614, 0, 0, 36, 0), -- Exorcism (Rank 3)
+(@TrainerId+3, 6940, 24000, 0, 0, 0, 0, 0, 46, 0), -- Hand of Sacrifice
+(@TrainerId+3, 7294, 3000, 0, 0, 0, 0, 0, 16, 0), -- Retribution Aura (Rank 1)
+(@TrainerId+3, 10278, 16000, 0, 0, 5599, 0, 0, 38, 0), -- Hand of Protection (Rank 3)
+(@TrainerId+3, 10290, 300, 0, 0, 465, 0, 0, 10, 0), -- Devotion Aura (Rank 2)
+(@TrainerId+3, 10291, 11000, 0, 0, 643, 0, 0, 30, 0), -- Devotion Aura (Rank 4)
+(@TrainerId+3, 10292, 28000, 0, 0, 1032, 0, 0, 50, 0), -- Devotion Aura (Rank 6)
+(@TrainerId+3, 10293, 46000, 0, 0, 10292, 0, 0, 60, 0), -- Devotion Aura (Rank 7)
+(@TrainerId+3, 10298, 6000, 0, 0, 7294, 0, 0, 26, 0), -- Retribution Aura (Rank 2)
+(@TrainerId+3, 10299, 14000, 0, 0, 10298, 0, 0, 36, 0), -- Retribution Aura (Rank 3)
+(@TrainerId+3, 10300, 24000, 0, 0, 10299, 0, 0, 46, 0), -- Retribution Aura (Rank 4)
+(@TrainerId+3, 10301, 42000, 0, 0, 10300, 0, 0, 56, 0), -- Retribution Aura (Rank 5)
+(@TrainerId+3, 10308, 40000, 0, 0, 5589, 0, 0, 54, 0), -- Hammer of Justice (Rank 4)
+(@TrainerId+3, 10310, 28000, 0, 0, 2800, 0, 0, 50, 0), -- Lay on Hands (Rank 3)
+(@TrainerId+3, 10312, 22000, 0, 0, 5615, 0, 0, 44, 0), -- Exorcism (Rank 4)
+(@TrainerId+3, 10313, 34000, 0, 0, 10312, 0, 0, 52, 0), -- Exorcism (Rank 5)
+(@TrainerId+3, 10314, 46000, 0, 0, 10313, 0, 0, 60, 0), -- Exorcism (Rank 6)
+(@TrainerId+3, 10318, 46000, 0, 0, 2812, 0, 0, 60, 0), -- Holy Wrath (Rank 2)
+(@TrainerId+3, 10322, 5000, 0, 0, 7328, 0, 0, 24, 0), -- Redemption (Rank 2)
+(@TrainerId+3, 10324, 14000, 0, 0, 10322, 0, 0, 36, 0), -- Redemption (Rank 3)
+(@TrainerId+3, 10326, 5000, 0, 0, 0, 0, 0, 24, 0), -- Turn Evil
+(@TrainerId+3, 10328, 24000, 0, 0, 3472, 0, 0, 46, 0), -- Holy Light (Rank 7)
+(@TrainerId+3, 10329, 40000, 0, 0, 10328, 0, 0, 54, 0), -- Holy Light (Rank 8)
+(@TrainerId+3, 19740, 100, 0, 0, 0, 0, 0, 4, 0), -- Blessing of Might (Rank 1)
+(@TrainerId+3, 19742, 2000, 0, 0, 0, 0, 0, 14, 0), -- Blessing of Wisdom (Rank 1)
+(@TrainerId+3, 19746, 4000, 0, 0, 0, 0, 0, 22, 0), -- Concentration Aura
+(@TrainerId+3, 19750, 4000, 0, 0, 0, 0, 0, 20, 0), -- Flash of Light (Rank 1)
+(@TrainerId+3, 19752, 11000, 0, 0, 0, 0, 0, 30, 0), -- Divine Intervention
+(@TrainerId+3, 19834, 1000, 0, 0, 19740, 0, 0, 12, 0), -- Blessing of Might (Rank 2)
+(@TrainerId+3, 19835, 4000, 0, 0, 19834, 0, 0, 22, 0), -- Blessing of Might (Rank 3)
+(@TrainerId+3, 19836, 12000, 0, 0, 19835, 0, 0, 32, 0), -- Blessing of Might (Rank 4)
+(@TrainerId+3, 19837, 21000, 0, 0, 19836, 0, 0, 42, 0), -- Blessing of Might (Rank 5)
+(@TrainerId+3, 19838, 34000, 0, 0, 19837, 0, 0, 52, 0), -- Blessing of Might (Rank 6)
+(@TrainerId+3, 19850, 5000, 0, 0, 19742, 0, 0, 24, 0), -- Blessing of Wisdom (Rank 2)
+(@TrainerId+3, 19852, 13000, 0, 0, 19850, 0, 0, 34, 0), -- Blessing of Wisdom (Rank 3)
+(@TrainerId+3, 19853, 22000, 0, 0, 19852, 0, 0, 44, 0), -- Blessing of Wisdom (Rank 4)
+(@TrainerId+3, 19854, 40000, 0, 0, 19853, 0, 0, 54, 0), -- Blessing of Wisdom (Rank 5)
+(@TrainerId+3, 19876, 9000, 0, 0, 0, 0, 0, 28, 0), -- Shadow Resistance Aura (Rank 1)
+(@TrainerId+3, 19888, 12000, 0, 0, 0, 0, 0, 32, 0), -- Frost Resistance Aura (Rank 1)
+(@TrainerId+3, 19891, 14000, 0, 0, 0, 0, 0, 36, 0), -- Fire Resistance Aura (Rank 1)
+(@TrainerId+3, 19895, 20000, 0, 0, 19876, 0, 0, 40, 0), -- Shadow Resistance Aura (Rank 2)
+(@TrainerId+3, 19896, 34000, 0, 0, 19895, 0, 0, 52, 0), -- Shadow Resistance Aura (Rank 3)
+(@TrainerId+3, 19897, 22000, 0, 0, 19888, 0, 0, 44, 0), -- Frost Resistance Aura (Rank 2)
+(@TrainerId+3, 19898, 42000, 0, 0, 19897, 0, 0, 56, 0), -- Frost Resistance Aura (Rank 3)
+(@TrainerId+3, 19899, 26000, 0, 0, 19891, 0, 0, 48, 0), -- Fire Resistance Aura (Rank 2)
+(@TrainerId+3, 19900, 46000, 0, 0, 19899, 0, 0, 60, 0), -- Fire Resistance Aura (Rank 3)
+(@TrainerId+3, 19939, 6000, 0, 0, 19750, 0, 0, 26, 0), -- Flash of Light (Rank 2)
+(@TrainerId+3, 19940, 13000, 0, 0, 19939, 0, 0, 34, 0), -- Flash of Light (Rank 3)
+(@TrainerId+3, 19941, 21000, 0, 0, 19940, 0, 0, 42, 0), -- Flash of Light (Rank 4)
+(@TrainerId+3, 19942, 28000, 0, 0, 19941, 0, 0, 50, 0), -- Flash of Light (Rank 5)
+(@TrainerId+3, 19943, 44000, 0, 0, 19942, 0, 0, 58, 0), -- Flash of Light (Rank 6)
+(@TrainerId+3, 20116, 11000, 0, 0, 26573, 0, 0, 30, 0), -- Consecration (Rank 2)
+(@TrainerId+3, 20164, 4000, 0, 0, 0, 0, 0, 22, 0), -- Seal of Justice
+(@TrainerId+3, 20165, 11000, 0, 0, 0, 0, 0, 30, 0), -- Seal of Light
+(@TrainerId+3, 20166, 16000, 0, 0, 0, 0, 0, 38, 0), -- Seal of Wisdom
+(@TrainerId+3, 20217, 4000, 0, 0, 0, 0, 0, 20, 0), -- Blessing of Kings
+(@TrainerId+3, 20271, 100, 0, 0, 0, 0, 0, 4, 0), -- Judgement of Light
+(@TrainerId+3, 20772, 26000, 0, 0, 10324, 0, 0, 48, 0), -- Redemption (Rank 4)
+(@TrainerId+3, 20773, 46000, 0, 0, 20772, 0, 0, 60, 0), -- Redemption (Rank 5)
+(@TrainerId+3, 20922, 20000, 0, 0, 20116, 0, 0, 40, 0), -- Consecration (Rank 3)
+(@TrainerId+3, 20923, 28000, 0, 0, 20922, 0, 0, 50, 0), -- Consecration (Rank 4)
+(@TrainerId+3, 20924, 46000, 0, 0, 20923, 0, 0, 60, 0), -- Consecration (Rank 5)
+(@TrainerId+3, 20927, 1400, 0, 0, 20925, 0, 0, 50, 0), -- Holy Shield (Rank 2)
+(@TrainerId+3, 20928, 2300, 0, 0, 20927, 0, 0, 60, 0), -- Holy Shield (Rank 3)
+(@TrainerId+3, 20929, 1300, 0, 0, 20473, 0, 0, 48, 0), -- Holy Shock (Rank 2)
+(@TrainerId+3, 20930, 2100, 0, 0, 20929, 0, 0, 56, 0), -- Holy Shock (Rank 3)
+(@TrainerId+3, 24239, 46000, 0, 0, 24274, 0, 0, 60, 0), -- Hammer of Wrath (Rank 3)
+(@TrainerId+3, 24274, 34000, 0, 0, 24275, 0, 0, 52, 0), -- Hammer of Wrath (Rank 2)
+(@TrainerId+3, 24275, 22000, 0, 0, 0, 0, 0, 44, 0), -- Hammer of Wrath (Rank 1)
+(@TrainerId+3, 25780, 3000, 0, 0, 0, 0, 0, 16, 0), -- Righteous Fury
+(@TrainerId+3, 25782, 46000, 0, 0, 19838, 0, 0, 52, 0), -- Greater Blessing of Might (Rank 1)
+(@TrainerId+3, 25894, 46000, 0, 0, 19854, 0, 0, 54, 0), -- Greater Blessing of Wisdom (Rank 1)
+(@TrainerId+3, 25898, 2300, 0, 0, 0, 0, 0, 60, 0), -- Greater Blessing of Kings
+(@TrainerId+3, 25899, 2300, 0, 0, 20911, 0, 0, 60, 0), -- Greater Blessing of Sanctuary
+(@TrainerId+3, 25916, 46000, 0, 0, 25782, 25291, 0, 60, 0), -- Greater Blessing of Might (Rank 2)
+(@TrainerId+3, 25918, 46000, 0, 0, 25894, 25290, 0, 60, 0), -- Greater Blessing of Wisdom (Rank 2)
+(@TrainerId+3, 26573, 4000, 0, 0, 0, 0, 0, 20, 0), -- Consecration (Rank 1)
+-- Paladin: Starting zones
+(@TrainerId+4, 465, 10, 0, 0, 0, 0, 0, 1, 0), -- Devotion Aura (Rank 1)
+(@TrainerId+4, 639, 100, 0, 0, 635, 0, 0, 6, 0), -- Holy Light (Rank 2)
+(@TrainerId+4, 19740, 100, 0, 0, 0, 0, 0, 4, 0), -- Blessing of Might (Rank 1)
+(@TrainerId+4, 20271, 100, 0, 0, 0, 0, 0, 4, 0), -- Judgement of Light
+-- Hunter: Outside starting zones
+(@TrainerId+5, 136, 600, 0, 0, 0, 0, 0, 12, 0), -- Mend Pet (Rank 1)
+(@TrainerId+5, 674, 2200, 0, 0, 0, 0, 0, 20, 0), -- Dual Wield (Passive)
+(@TrainerId+5, 781, 2200, 0, 0, 0, 0, 0, 20, 0), -- Disengage
+(@TrainerId+5, 1002, 1200, 0, 0, 0, 0, 0, 14, 0), -- Eyes of the Beast
+(@TrainerId+5, 1130, 100, 0, 0, 0, 0, 0, 6, 0), -- Hunter's Mark (Rank 1)
+(@TrainerId+5, 1462, 7000, 0, 0, 0, 0, 0, 24, 0), -- Beast Lore
+(@TrainerId+5, 1494, 10, 0, 0, 0, 0, 0, 2, 0), -- Track Beasts
+(@TrainerId+5, 1495, 1800, 0, 0, 0, 0, 0, 16, 0), -- Mongoose Bite (Rank 1)
+(@TrainerId+5, 1499, 2200, 0, 0, 0, 0, 0, 20, 0), -- Freezing Trap (Rank 1)
+(@TrainerId+5, 1510, 18000, 0, 0, 0, 0, 0, 40, 0), -- Volley (Rank 1)
+(@TrainerId+5, 1513, 1200, 0, 0, 0, 0, 0, 14, 0), -- Scare Beast (Rank 1)
+(@TrainerId+5, 1543, 10000, 0, 0, 0, 0, 0, 32, 0), -- Flare
+(@TrainerId+5, 1978, 100, 0, 0, 0, 0, 0, 4, 0), -- Serpent Sting (Rank 1)
+(@TrainerId+5, 2643, 2000, 0, 0, 0, 0, 0, 18, 0), -- Multi-Shot (Rank 1)
+(@TrainerId+5, 2974, 600, 0, 0, 0, 0, 0, 12, 0), -- Wing Clip
+(@TrainerId+5, 3034, 14000, 0, 0, 0, 0, 0, 36, 0), -- Viper Sting
+(@TrainerId+5, 3043, 6000, 0, 0, 0, 0, 0, 22, 0), -- Scorpid Sting
+(@TrainerId+5, 3044, 100, 0, 0, 0, 0, 0, 6, 0), -- Arcane Shot (Rank 1)
+(@TrainerId+5, 3045, 7000, 0, 0, 0, 0, 0, 26, 0), -- Rapid Fire
+(@TrainerId+5, 3111, 2200, 0, 0, 136, 0, 0, 20, 0), -- Mend Pet (Rank 2)
+(@TrainerId+5, 3127, 200, 0, 0, 0, 0, 0, 8, 0), -- Parry (Passive)
+(@TrainerId+5, 3661, 8000, 0, 0, 3111, 0, 0, 28, 0), -- Mend Pet (Rank 3)
+(@TrainerId+5, 3662, 14000, 0, 0, 3661, 0, 0, 36, 0), -- Mend Pet (Rank 4)
+(@TrainerId+5, 5116, 200, 0, 0, 0, 0, 0, 8, 0), -- Concussive Shot
+(@TrainerId+5, 5118, 2200, 0, 0, 0, 0, 0, 16, 0), -- Aspect of the Cheetah
+(@TrainerId+5, 5384, 8000, 0, 0, 0, 0, 0, 30, 0), -- Feign Death
+(@TrainerId+5, 6197, 1200, 0, 0, 0, 0, 0, 14, 0), -- Eagle Eye
+(@TrainerId+5, 8737, 18000, 0, 0, 0, 0, 0, 40, 0), -- Mail
+(@TrainerId+5, 13159, 18000, 0, 0, 0, 0, 0, 40, 0), -- Aspect of the Pack
+(@TrainerId+5, 13161, 8000, 0, 0, 0, 0, 0, 30, 0), -- Aspect of the Beast
+(@TrainerId+5, 13163, 100, 0, 0, 0, 0, 0, 4, 0), -- Aspect of the Monkey
+(@TrainerId+5, 13165, 400, 0, 0, 0, 0, 0, 10, 0), -- Aspect of the Hawk (Rank 1)
+(@TrainerId+5, 13542, 26000, 0, 0, 3662, 0, 0, 44, 0), -- Mend Pet (Rank 5)
+(@TrainerId+5, 13543, 40000, 0, 0, 13542, 0, 0, 52, 0), -- Mend Pet (Rank 6)
+(@TrainerId+5, 13544, 50000, 0, 0, 13543, 0, 0, 60, 0), -- Mend Pet (Rank 7)
+(@TrainerId+5, 13549, 400, 0, 0, 1978, 0, 0, 10, 0), -- Serpent Sting (Rank 2)
+(@TrainerId+5, 13550, 2000, 0, 0, 13549, 0, 0, 18, 0), -- Serpent Sting (Rank 3)
+(@TrainerId+5, 13551, 7000, 0, 0, 13550, 0, 0, 26, 0), -- Serpent Sting (Rank 4)
+(@TrainerId+5, 13552, 12000, 0, 0, 13551, 0, 0, 34, 0), -- Serpent Sting (Rank 5)
+(@TrainerId+5, 13553, 24000, 0, 0, 13552, 0, 0, 42, 0), -- Serpent Sting (Rank 6)
+(@TrainerId+5, 13554, 36000, 0, 0, 13553, 0, 0, 50, 0), -- Serpent Sting (Rank 7)
+(@TrainerId+5, 13555, 48000, 0, 0, 13554, 0, 0, 58, 0), -- Serpent Sting (Rank 8)
+(@TrainerId+5, 13795, 1800, 0, 0, 0, 0, 0, 16, 0), -- Immolation Trap (Rank 1)
+(@TrainerId+5, 13809, 8000, 0, 0, 0, 0, 0, 28, 0), -- Frost Trap
+(@TrainerId+5, 13813, 12000, 0, 0, 0, 0, 0, 34, 0), -- Explosive Trap (Rank 1)
+(@TrainerId+5, 14260, 200, 0, 0, 2973, 0, 0, 8, 0), -- Raptor Strike (Rank 2)
+(@TrainerId+5, 14261, 1800, 0, 0, 14260, 0, 0, 16, 0), -- Raptor Strike (Rank 3)
+(@TrainerId+5, 14262, 7000, 0, 0, 14261, 0, 0, 24, 0), -- Raptor Strike (Rank 4)
+(@TrainerId+5, 14263, 10000, 0, 0, 14262, 0, 0, 32, 0), -- Raptor Strike (Rank 5)
+(@TrainerId+5, 14264, 18000, 0, 0, 14263, 0, 0, 40, 0), -- Raptor Strike (Rank 6)
+(@TrainerId+5, 14265, 32000, 0, 0, 14264, 0, 0, 48, 0), -- Raptor Strike (Rank 7)
+(@TrainerId+5, 14266, 46000, 0, 0, 14265, 0, 0, 56, 0), -- Raptor Strike (Rank 8)
+(@TrainerId+5, 14269, 8000, 0, 0, 1495, 0, 0, 30, 0), -- Mongoose Bite (Rank 2)
+(@TrainerId+5, 14270, 26000, 0, 0, 14269, 0, 0, 44, 0), -- Mongoose Bite (Rank 3)
+(@TrainerId+5, 14271, 48000, 0, 0, 14270, 0, 0, 58, 0), -- Mongoose Bite (Rank 4)
+(@TrainerId+5, 14281, 600, 0, 0, 3044, 0, 0, 12, 0), -- Arcane Shot (Rank 2)
+(@TrainerId+5, 14282, 2200, 0, 0, 14281, 0, 0, 20, 0), -- Arcane Shot (Rank 3)
+(@TrainerId+5, 14283, 8000, 0, 0, 14282, 0, 0, 28, 0), -- Arcane Shot (Rank 4)
+(@TrainerId+5, 14284, 14000, 0, 0, 14283, 0, 0, 36, 0), -- Arcane Shot (Rank 5)
+(@TrainerId+5, 14285, 26000, 0, 0, 14284, 0, 0, 44, 0), -- Arcane Shot (Rank 6)
+(@TrainerId+5, 14286, 40000, 0, 0, 14285, 0, 0, 52, 0), -- Arcane Shot (Rank 7)
+(@TrainerId+5, 14287, 50000, 0, 0, 14286, 0, 0, 60, 0), -- Arcane Shot (Rank 8)
+(@TrainerId+5, 14288, 8000, 0, 0, 2643, 0, 0, 30, 0), -- Multi-Shot (Rank 2)
+(@TrainerId+5, 14289, 24000, 0, 0, 14288, 0, 0, 42, 0), -- Multi-Shot (Rank 3)
+(@TrainerId+5, 14290, 42000, 0, 0, 14289, 0, 0, 54, 0), -- Multi-Shot (Rank 4)
+(@TrainerId+5, 14294, 36000, 0, 0, 1510, 0, 0, 50, 0), -- Volley (Rank 2)
+(@TrainerId+5, 14295, 48000, 0, 0, 14294, 0, 0, 58, 0), -- Volley (Rank 3)
+(@TrainerId+5, 14302, 7000, 0, 0, 13795, 0, 0, 26, 0), -- Immolation Trap (Rank 2)
+(@TrainerId+5, 14303, 14000, 0, 0, 14302, 0, 0, 36, 0), -- Immolation Trap (Rank 3)
+(@TrainerId+5, 14304, 28000, 0, 0, 14303, 0, 0, 46, 0), -- Immolation Trap (Rank 4)
+(@TrainerId+5, 14305, 46000, 0, 0, 14304, 0, 0, 56, 0), -- Immolation Trap (Rank 5)
+(@TrainerId+5, 14310, 18000, 0, 0, 1499, 0, 0, 40, 0), -- Freezing Trap (Rank 2)
+(@TrainerId+5, 14311, 50000, 0, 0, 14310, 0, 0, 60, 0), -- Freezing Trap (Rank 3)
+(@TrainerId+5, 14316, 26000, 0, 0, 13813, 0, 0, 44, 0), -- Explosive Trap (Rank 2)
+(@TrainerId+5, 14317, 42000, 0, 0, 14316, 0, 0, 54, 0), -- Explosive Trap (Rank 3)
+(@TrainerId+5, 14318, 2000, 0, 0, 13165, 0, 0, 18, 0), -- Aspect of the Hawk (Rank 2)
+(@TrainerId+5, 14319, 8000, 0, 0, 14318, 0, 0, 28, 0), -- Aspect of the Hawk (Rank 3)
+(@TrainerId+5, 14320, 16000, 0, 0, 14319, 0, 0, 38, 0), -- Aspect of the Hawk (Rank 4)
+(@TrainerId+5, 14321, 32000, 0, 0, 14320, 0, 0, 48, 0), -- Aspect of the Hawk (Rank 5)
+(@TrainerId+5, 14322, 48000, 0, 0, 14321, 0, 0, 58, 0), -- Aspect of the Hawk (Rank 6)
+(@TrainerId+5, 14323, 6000, 0, 0, 1130, 0, 0, 22, 0), -- Hunter's Mark (Rank 2)
+(@TrainerId+5, 14324, 18000, 0, 0, 14323, 0, 0, 40, 0), -- Hunter's Mark (Rank 3)
+(@TrainerId+5, 14325, 48000, 0, 0, 14324, 0, 0, 58, 0), -- Hunter's Mark (Rank 4)
+(@TrainerId+5, 14326, 8000, 0, 0, 1513, 0, 0, 30, 0), -- Scare Beast (Rank 2)
+(@TrainerId+5, 14327, 28000, 0, 0, 14326, 0, 0, 46, 0), -- Scare Beast (Rank 3)
+(@TrainerId+5, 19263, 2200, 0, 0, 0, 0, 0, 60, 0), -- Deterrence
+(@TrainerId+5, 19878, 10000, 0, 0, 0, 0, 0, 32, 0), -- Track Demons
+(@TrainerId+5, 19879, 36000, 0, 0, 0, 0, 0, 50, 0), -- Track Dragonkin
+(@TrainerId+5, 19880, 7000, 0, 0, 0, 0, 0, 26, 0), -- Track Elementals
+(@TrainerId+5, 19882, 18000, 0, 0, 0, 0, 0, 40, 0), -- Track Giants
+(@TrainerId+5, 19883, 400, 0, 0, 0, 0, 0, 10, 0), -- Track Humanoids
+(@TrainerId+5, 19884, 2000, 0, 0, 0, 0, 0, 18, 0), -- Track Undead
+(@TrainerId+5, 19885, 7000, 0, 0, 0, 0, 0, 24, 0), -- Track Hidden
+(@TrainerId+5, 20043, 28000, 0, 0, 0, 0, 0, 46, 0), -- Aspect of the Wild (Rank 1)
+(@TrainerId+5, 20190, 46000, 0, 0, 20043, 0, 0, 56, 0), -- Aspect of the Wild (Rank 2)
+(@TrainerId+5, 20736, 600, 0, 0, 0, 0, 0, 12, 0), -- Distracting Shot (Rank 1)
+(@TrainerId+5, 20900, 400, 0, 0, 19434, 0, 0, 28, 0), -- Aimed Shot (Rank 2)
+(@TrainerId+5, 20901, 700, 0, 0, 20900, 0, 0, 36, 0), -- Aimed Shot (Rank 3)
+(@TrainerId+5, 20902, 1300, 0, 0, 20901, 0, 0, 44, 0), -- Aimed Shot (Rank 4)
+(@TrainerId+5, 20903, 2000, 0, 0, 20902, 0, 0, 52, 0), -- Aimed Shot (Rank 5)
+(@TrainerId+5, 20904, 2500, 0, 0, 20903, 0, 0, 60, 0), -- Aimed Shot (Rank 6)
+(@TrainerId+5, 20909, 1200, 0, 0, 19306, 0, 0, 42, 0), -- Counterattack (Rank 2)
+(@TrainerId+5, 20910, 2100, 0, 0, 20909, 0, 0, 54, 0), -- Counterattack (Rank 3)
+(@TrainerId+5, 24132, 1800, 0, 0, 19386, 0, 0, 50, 0), -- Wyvern Sting (Rank 2)
+(@TrainerId+5, 24133, 2500, 0, 0, 24132, 0, 0, 60, 0), -- Wyvern Sting (Rank 3)
+(@TrainerId+5, 63668, 1800, 0, 0, 3674, 0, 0, 57, 0), -- Black Arrow (Rank 2)
+-- Hunter: Starting zones
+(@TrainerId+6, 1130, 100, 0, 0, 0, 0, 0, 6, 0), -- Hunter's Mark (Rank 1)
+(@TrainerId+6, 1494, 10, 0, 0, 0, 0, 0, 2, 0), -- Track Beasts
+(@TrainerId+6, 1978, 100, 0, 0, 0, 0, 0, 4, 0), -- Serpent Sting (Rank 1)
+(@TrainerId+6, 3044, 100, 0, 0, 0, 0, 0, 6, 0), -- Arcane Shot (Rank 1)
+(@TrainerId+6, 13163, 100, 0, 0, 0, 0, 0, 4, 0), -- Aspect of the Monkey
+-- Rogue: Outside starting zones
+(@TrainerId+7, 53, 100, 0, 0, 0, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+7, 408, 10000, 0, 0, 0, 0, 0, 30, 0), -- Kidney Shot (Rank 1)
+(@TrainerId+7, 674, 300, 0, 0, 0, 0, 0, 10, 0), -- Dual Wield (Passive)
+(@TrainerId+7, 703, 1200, 0, 0, 0, 0, 0, 14, 0), -- Garrote (Rank 1)
+(@TrainerId+7, 921, 100, 0, 0, 0, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+7, 1725, 4000, 0, 0, 0, 0, 0, 22, 0), -- Distract
+(@TrainerId+7, 1757, 100, 0, 0, 1752, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+7, 1758, 1200, 0, 0, 1757, 0, 0, 14, 0), -- Sinister Strike (Rank 3)
+(@TrainerId+7, 1759, 4000, 0, 0, 1758, 0, 0, 22, 0), -- Sinister Strike (Rank 4)
+(@TrainerId+7, 1760, 10000, 0, 0, 1759, 0, 0, 30, 0), -- Sinister Strike (Rank 5)
+(@TrainerId+7, 1766, 800, 0, 0, 0, 0, 0, 12, 0), -- Kick
+(@TrainerId+7, 1776, 100, 0, 0, 0, 0, 0, 6, 0), -- Gouge
+(@TrainerId+7, 1784, 10, 0, 0, 0, 0, 0, 1, 0), -- Stealth
+(@TrainerId+7, 1804, 1800, 0, 0, 0, 0, 0, 16, 0), -- Pick Lock
+(@TrainerId+7, 1833, 6000, 0, 0, 0, 0, 0, 26, 0), -- Cheap Shot
+(@TrainerId+7, 1842, 10000, 0, 0, 0, 0, 0, 30, 0), -- Disarm Trap
+(@TrainerId+7, 1856, 4000, 0, 0, 0, 0, 0, 22, 0), -- Vanish (Rank 1)
+(@TrainerId+7, 1857, 27000, 0, 0, 1856, 0, 0, 42, 0), -- Vanish (Rank 2)
+(@TrainerId+7, 1860, 20000, 0, 0, 0, 0, 0, 40, 0), -- Safe Fall (Passive)
+(@TrainerId+7, 1943, 3000, 0, 0, 0, 0, 0, 20, 0), -- Rupture (Rank 1)
+(@TrainerId+7, 1966, 1800, 0, 0, 0, 0, 0, 16, 0), -- Feint (Rank 1)
+(@TrainerId+7, 2070, 8000, 0, 0, 6770, 0, 0, 28, 0), -- Sap (Rank 2)
+(@TrainerId+7, 2094, 14000, 0, 0, 0, 0, 0, 34, 0), -- Blind
+(@TrainerId+7, 2589, 800, 0, 0, 53, 0, 0, 12, 0), -- Backstab (Rank 2)
+(@TrainerId+7, 2590, 3000, 0, 0, 2589, 0, 0, 20, 0), -- Backstab (Rank 3)
+(@TrainerId+7, 2591, 8000, 0, 0, 2590, 0, 0, 28, 0), -- Backstab (Rank 4)
+(@TrainerId+7, 2836, 5000, 0, 0, 0, 0, 0, 24, 0), -- Detect Traps (Passive)
+(@TrainerId+7, 2983, 300, 0, 0, 0, 0, 0, 10, 0), -- Sprint (Rank 1)
+(@TrainerId+7, 3127, 800, 0, 0, 0, 0, 0, 12, 0), -- Parry (Passive)
+(@TrainerId+7, 5171, 300, 0, 0, 0, 0, 0, 10, 0), -- Slice and Dice (Rank 1)
+(@TrainerId+7, 5277, 200, 0, 0, 0, 0, 0, 8, 0), -- Evasion (Rank 1)
+(@TrainerId+7, 6760, 200, 0, 0, 2098, 0, 0, 8, 0), -- Eviscerate (Rank 2)
+(@TrainerId+7, 6761, 1800, 0, 0, 6760, 0, 0, 16, 0), -- Eviscerate (Rank 3)
+(@TrainerId+7, 6762, 5000, 0, 0, 6761, 0, 0, 24, 0), -- Eviscerate (Rank 4)
+(@TrainerId+7, 6768, 8000, 0, 0, 1966, 0, 0, 28, 0), -- Feint (Rank 2)
+(@TrainerId+7, 6770, 300, 0, 0, 0, 0, 0, 10, 0), -- Sap (Rank 1)
+(@TrainerId+7, 6774, 27000, 0, 0, 5171, 0, 0, 42, 0), -- Slice and Dice (Rank 2)
+(@TrainerId+7, 8621, 18000, 0, 0, 1760, 0, 0, 38, 0), -- Sinister Strike (Rank 6)
+(@TrainerId+7, 8623, 12000, 0, 0, 6762, 0, 0, 32, 0), -- Eviscerate (Rank 5)
+(@TrainerId+7, 8624, 20000, 0, 0, 8623, 0, 0, 40, 0), -- Eviscerate (Rank 6)
+(@TrainerId+7, 8631, 4000, 0, 0, 703, 0, 0, 22, 0), -- Garrote (Rank 2)
+(@TrainerId+7, 8632, 10000, 0, 0, 8631, 0, 0, 30, 0), -- Garrote (Rank 3)
+(@TrainerId+7, 8633, 18000, 0, 0, 8632, 0, 0, 38, 0), -- Garrote (Rank 4)
+(@TrainerId+7, 8637, 20000, 0, 0, 6768, 0, 0, 40, 0), -- Feint (Rank 3)
+(@TrainerId+7, 8639, 8000, 0, 0, 1943, 0, 0, 28, 0), -- Rupture (Rank 2)
+(@TrainerId+7, 8640, 16000, 0, 0, 8639, 0, 0, 36, 0), -- Rupture (Rank 3)
+(@TrainerId+7, 8643, 35000, 0, 0, 408, 0, 0, 50, 0), -- Kidney Shot (Rank 2)
+(@TrainerId+7, 8647, 1200, 0, 0, 0, 0, 0, 14, 0), -- Expose Armor
+(@TrainerId+7, 8676, 2900, 0, 0, 0, 0, 0, 18, 0), -- Ambush (Rank 1)
+(@TrainerId+7, 8696, 14000, 0, 0, 2983, 0, 0, 34, 0), -- Sprint (Rank 2)
+(@TrainerId+7, 8721, 16000, 0, 0, 2591, 0, 0, 36, 0), -- Backstab (Rank 5)
+(@TrainerId+7, 8724, 6000, 0, 0, 8676, 0, 0, 26, 0), -- Ambush (Rank 2)
+(@TrainerId+7, 8725, 14000, 0, 0, 8724, 0, 0, 34, 0), -- Ambush (Rank 3)
+(@TrainerId+7, 11267, 27000, 0, 0, 8725, 0, 0, 42, 0), -- Ambush (Rank 4)
+(@TrainerId+7, 11268, 35000, 0, 0, 11267, 0, 0, 50, 0), -- Ambush (Rank 5)
+(@TrainerId+7, 11269, 52000, 0, 0, 11268, 0, 0, 58, 0), -- Ambush (Rank 6)
+(@TrainerId+7, 11273, 29000, 0, 0, 8640, 0, 0, 44, 0), -- Rupture (Rank 4)
+(@TrainerId+7, 11274, 46000, 0, 0, 11273, 0, 0, 52, 0), -- Rupture (Rank 5)
+(@TrainerId+7, 11275, 54000, 0, 0, 11274, 0, 0, 60, 0), -- Rupture (Rank 6)
+(@TrainerId+7, 11279, 29000, 0, 0, 8721, 0, 0, 44, 0), -- Backstab (Rank 6)
+(@TrainerId+7, 11280, 46000, 0, 0, 11279, 0, 0, 52, 0), -- Backstab (Rank 7)
+(@TrainerId+7, 11281, 54000, 0, 0, 11280, 0, 0, 60, 0), -- Backstab (Rank 8)
+(@TrainerId+7, 11289, 31000, 0, 0, 8633, 0, 0, 46, 0), -- Garrote (Rank 5)
+(@TrainerId+7, 11290, 48000, 0, 0, 11289, 0, 0, 54, 0), -- Garrote (Rank 6)
+(@TrainerId+7, 11293, 31000, 0, 0, 8621, 0, 0, 46, 0), -- Sinister Strike (Rank 7)
+(@TrainerId+7, 11294, 48000, 0, 0, 11293, 0, 0, 54, 0), -- Sinister Strike (Rank 8)
+(@TrainerId+7, 11297, 33000, 0, 0, 2070, 0, 0, 48, 0), -- Sap (Rank 3)
+(@TrainerId+7, 11299, 33000, 0, 0, 8624, 0, 0, 48, 0), -- Eviscerate (Rank 7)
+(@TrainerId+7, 11300, 50000, 0, 0, 11299, 0, 0, 56, 0), -- Eviscerate (Rank 8)
+(@TrainerId+7, 11303, 46000, 0, 0, 8637, 0, 0, 52, 0), -- Feint (Rank 4)
+(@TrainerId+7, 11305, 52000, 0, 0, 8696, 0, 0, 58, 0), -- Sprint (Rank 3)
+(@TrainerId+7, 17347, 384, 0, 0, 16511, 0, 0, 46, 0), -- Hemorrhage (Rank 2)
+(@TrainerId+7, 17348, 650, 0, 0, 17347, 0, 0, 58, 0), -- Hemorrhage (Rank 3)
+(@TrainerId+7, 34411, 5500, 0, 0, 1329, 0, 0, 50, 0), -- Mutilate (Rank 2)
+(@TrainerId+7, 34412, 6500, 0, 0, 34411, 0, 0, 60, 0), -- Mutilate (Rank 3)
+-- Rogue: Starting zones
+(@TrainerId+8, 53, 100, 0, 0, 0, 0, 0, 4, 0), -- Backstab (Rank 1)
+(@TrainerId+8, 921, 100, 0, 0, 0, 0, 0, 4, 0), -- Pick Pocket
+(@TrainerId+8, 1757, 100, 0, 0, 1752, 0, 0, 6, 0), -- Sinister Strike (Rank 2)
+(@TrainerId+8, 1776, 100, 0, 0, 0, 0, 0, 6, 0), -- Gouge
+(@TrainerId+8, 1784, 10, 0, 0, 0, 0, 0, 1, 0); -- Stealth
+-- Priest: Outside starting zones
+-- Priest: Starting zones
+-- Shaman: Outside starting zones
+-- Shaman: Starting zones
+-- Mage: Outside starting zones
+-- Mage: Starting zones
+-- Warlock: Outside starting zones
+-- Warlock: Starting zones
+-- Druid: Outside starting zones
+-- Druid: Starting zones

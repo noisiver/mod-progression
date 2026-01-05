@@ -1,23 +1,6 @@
-#include "Chat.h"
 #include "Player.h"
 
 #include "mod_progression.h"
-
-void Progression::OnPlayerLogin(Player* player)
-{
-    ChatHandler(player->GetSession()).SendSysMessage(sProgressionMgr->GetPatchTitle());
-
-    if (sProgressionMgr->GetPatchId() < PATCH_FALL_OF_THE_LICH_KING && sProgressionMgr->GetEnforceDungeonFinder())
-        ChatHandler(player->GetSession()).SendSysMessage("Note: The Dungeon Finder is not available in this patch.");
-}
-
-bool Progression::OnPlayerBeforeAchievementComplete(Player* /*player*/, AchievementEntry const* /*achievement*/)
-{
-    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM && sProgressionMgr->GetEnforceAchievements())
-        return false;
-
-    return true;
-}
 
 void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea)
 {
@@ -27,7 +10,7 @@ void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 
     if (player->IsInFlight())
         return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_SECRETS_OF_ULDUAR)
+    if (sProgressionMgr->GetPhaseId() < 16)
     {
         if (newArea == AREA_ARGENT_TOURNAMENT_GROUNDS)
         {
@@ -39,12 +22,12 @@ void Progression::OnPlayerUpdateArea(Player* player, uint32 /*oldArea*/, uint32 
 
 bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 {
-    if (sProgressionMgr->GetPatchId() < PATCH_STORMS_OF_AZEROTH)
+    if (sProgressionMgr->GetPhaseId() < 6)
         return false;
 
-    if ((player->GetLevel() == 60 && (sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_CLASSIC || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) == 60)) ||
-        (player->GetLevel() == 70 && (sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_THE_BURNING_CRUSADE || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) == 70)) ||
-        (player->GetLevel() == 80 && (sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_WRATH_OF_THE_LICH_KING || sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) == 80)))
+    if ((player->GetLevel() == 60 && sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_CLASSIC) ||
+        (player->GetLevel() == 70 && sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_THE_BURNING_CRUSADE) ||
+        (player->GetLevel() == 80 && sWorld->getIntConfig(CONFIG_EXPANSION) == EXPANSION_WRATH_OF_THE_LICH_KING))
         return true;
 
     return false;
@@ -52,7 +35,7 @@ bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 
 bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 chance, int32 roll)
 {
-    if (sProgressionMgr->GetPatchId() < PATCH_SECRETS_OF_ULDUAR)
+    if (sProgressionMgr->GetPhaseId() < 15)
         if (chance < roll)
             return false;
 
@@ -61,7 +44,7 @@ bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/
 
 bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID, int32& /*standing*/, bool /*incremental*/)
 {
-    if ((factionID == FACTION_SILVERMOON_CITY || factionID == FACTION_EXODAR) && sProgressionMgr->GetPatchId() < PATCH_BEFORE_THE_STORM)
+    if ((factionID == 911 || factionID == 930) && sProgressionMgr->GetPhaseId() < 7)
         return false;
 
     return true;
@@ -69,12 +52,12 @@ bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID,
 
 void Progression::OnPlayerQuestComputeXP(Player* /*player*/, Quest const* quest, uint32& xpValue)
 {
-    if (sProgressionMgr->GetPatchId() < PATCH_THE_GODS_OF_ZUL_AMAN && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
+    if (sProgressionMgr->GetPhaseId() < 11 && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
         xpValue = uint32(ceilf(xpValue / 1.428571429f));
 }
 
 void Progression::OnPlayerGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
 {
-    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && sProgressionMgr->GetPatchId() < PATCH_CALL_OF_THE_CRUSADE)
+    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && sProgressionMgr->GetPhaseId() < 16)
         amount = 0;
 }

@@ -14,7 +14,7 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 
@@ -27,7 +27,7 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 
@@ -40,7 +40,7 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (sProgressionMgr->GetPhaseId() < 13)
         damage *= sProgressionMgr->GetDamageModifier();
 }
 
@@ -56,9 +56,9 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
     if (spellInfo->HasAttribute(SPELL_ATTR0_NO_IMMUNITIES) && spellInfo->Mechanic == MECHANIC_BANDAGE)
         return;
 
-    if (spellInfo->Id == SPELL_RUNE_TAP || spellInfo->Id == SPELL_LIFE_STEAL)
+    if (spellInfo->Id == 48982 || spellInfo->Id == 20004)
         return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_ECHOES_OF_DOOM)
+    if (sProgressionMgr->GetPhaseId() < 14)
         heal *= sProgressionMgr->GetHealingModifier();
 }

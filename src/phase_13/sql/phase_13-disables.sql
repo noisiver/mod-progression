@@ -1,0 +1,32 @@
+DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
+    14100, -- Relic of the Earthen Ring
+    14111 -- Relic of the Earthen Ring
+);
+DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
+    574, -- Utgarde Keep
+    575, -- Utgarde Pinnacle
+    576, -- The Nexus
+    578, -- The Oculus
+    595, -- The Culling of Stratholme
+    599, -- Halls of Stone
+    600, -- Drak'Tharon Keep
+    601, -- Azjol-Nerub
+    602, -- Halls of Lightning
+    604, -- Gundrak
+    608, -- Violet Hold
+    619 -- Ahn'kahet: The Old Kingdom
+);
+DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (
+    9 -- Strand of the Ancients
+);
+DELETE FROM `disables` WHERE `sourceType` = 5 AND `entry` IN (
+    7 -- Grizzly Hills
+);
+DELETE FROM `disables` WHERE `sourceType` = 9 AND entry IN (
+    26, -- Pilgrim's Bounty
+    51, -- Day of the Dead
+    53, -- Call to Arms: Strand of the Ancients!
+    61, -- Zalazane's Fall
+    63, -- Kalu'ak Fishing Derby Turn-ins
+    64 -- Kalu'ak Fishing Derby Fishing Pools
+);

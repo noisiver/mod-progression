@@ -1,41 +1,38 @@
 # Progression
-This module offers a different take on progression. It handles content based on patches instead of brackets or by conquering content. It is server-wide and always the same for all players.
+This module offers a different take on progression. It handles content based on phases instead of brackets or by conquering content. It is server-wide and always the same for all players.
 
-# Patches
-These are all the patches included with this module. Every patch includes changes to simulate that patch as best as possible. Information about what's new in each patch will be added soon.
+# Phases
+These are all the phases included with this module. Phase 0 through 6 simulates 1.12, 7 through 12 simulates 2.4, and 13 through 18 simulates 3.3.5. Each phase locks content in order to create progression. What each phase unlocks can be changed as this is not meant to mirror what Blizzard did with Classic
 
-- Patch 1.1: World of Warcraft
-- Patch 1.2: Mysteries of Maraudon
-- Patch 1.3: Ruins of the Dire Maul
-- Patch 1.4: The Call to War
-- Patch 1.5: Battlegrounds
-- Patch 1.6: Assault on Blackwing Lair
-- Patch 1.7: Rise of the Blood God
-- Patch 1.8: Dragons of Nightmare
-- Patch 1.9: The Gates of Ahn'Qiraj
-- Patch 1.10: Storms of Azeroth
-- Patch 1.11: Shadow of the Necropolis
-- Patch 1.12: Drums of War
-- Patch 2.0: Before the Storm
-- Patch 2.1: Black Temple
-- Patch 2.2: Voice Chat
-- Patch 2.3: The Gods of Zul'Aman
-- Patch 2.4: Fury of the Sunwell
-- Patch 3.0: Echoes of Doom
-- Patch 3.1: Secrets of Ulduar
-- Patch 3.2: Call of the Crusade
-- Patch 3.3: Fall of the Lich King
-- Patch 3.3.5: Assault on the Ruby Sanctum
+- Phase 0: Leveling & Dungeons
+- Phase 1: Maraudon, Molten Core, Onyxia's Lair
+- Phase 2: Dire Maul, Azuregos, Lord Kazzak, Alterac Valley, Warsong Gulch
+- Phase 3: Blackwing Lair, Darkmoon Faire, Arathi Basin
+- Phase 4: Zul'Gurub, Dragons of Nightmare
+- Phase 5: Ahn'Qiraj, Stranglethorn Fishing Extravaganza
+- Phase 6: Naxxramas, Scourge Invasion
+- Phase 7: Blood Elf, Draenei, Outland Leveling & Dungeons, Jewelcrafting, Eye of the Storm
+- Phase 8: Karazhan, Gruul's Lair, Magtheridon's Lair, Arena Season 1
+- Phase 9: Serpentshrine Cavern, Tempest Keep: The Eye, Ogri'la, Sha'tari Skyguard, Arena Season 2
+- Phase 10: Battle for Mount Hyjal, Black Temple, Arena Season 3
+- Phase 11: Zul'Aman
+- Phase 12: Isle of Quel'Danas, Magister's Terrace, Sunwell Plateau, Arena Season 4
+- Phase 13: Death Knight, WotLK Leveling & Dungeons
+- Phase 14: Naxxramas, Eye of Eternity, Obsidian Sanctum, Vault of Archavon, Arena Season 5
+- Phase 15: Ulduar, Isle of Conquest, Arena Season 6
+- Phase 16: Trial of the Crusader, Trial of the Champion, Argent Tournament Grounds, Onyxia's Lair, Arena Season 7
+- Phase 17: Forge of Souls, Pit of Saron, Halls of Reflection, Icecrown Citadel, Arena Season 8
+- Phase 18: Ruby Sanctum
 
 # Note
 Keep in mind that it's not complete even if there seems to be a lot done. It's not meant to be 1:1 compared to retail because with changes to spells and so forth that's impossible without client and core edits, and those kind of edits are not what I want.
 
-I haven't added the level 60 versions of Naxxramas yet and I'm not sure if I ever will. The event for opening the Gate of Ahn'Qiraj just requires a player to complete the line of quests required to obtain The Scepter of the Shifting Sands too. I have no plans to fully implement the War Effort event.
+Phase 6 does include Naxxramas and the Scourge Invasion event but those are not implemented yet. I do plan to implement Naxxramas eventually but it's not high priority.
 
-Wrath of the Lich King patches are by far the most complete and I am currently focusing on The Burning Crusade but I'm busy with other things a lot of the time.
+The event for opening the Gate of Ahn'Qiraj just requires a player to complete the line of quests required to obtain The Scepter of the Shifting Sands too. I have no plans to fully implement the War Effort event.
 
 # Corrections
-Create issue reports for anything that isn't correct and I will look into it as soon as I have the time to. If something isn't intended to be in a certain patch, or if it is, I want to change it and would greatly appreciate reports for it.
+Create issue reports for anything that isn't correct and I will look into it as soon as I have the time to. If something isn't intended to be in a certain phase, or if it is, I want to change it and would greatly appreciate reports for it.
 
 The same can be said for improvements to the code. I'm not a professional developer in any way so it might not be clean or very optimized and therefore I welcome suggestions for that too.
 
