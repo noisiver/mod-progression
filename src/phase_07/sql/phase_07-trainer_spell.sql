@@ -7,6 +7,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+3 AND `SpellId` IN (2
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` = 498;
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+5 AND `SpellId` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+7 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+9 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -146,9 +147,53 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+7, 31224, 89000, 0, 0, 0, 0, 0, 66, 0), -- Cloak of Shadows
 (@TrainerId+7, 32645, 59000, 0, 0, 0, 0, 0, 62, 0), -- Envenom (Rank 1)
 (@TrainerId+7, 32684, 100000, 0, 0, 32645, 0, 0, 69, 0), -- Envenom (Rank 2)
-(@TrainerId+7, 34413, 7500, 0, 0, 34412, 0, 0, 70, 0); -- Mutilate (Rank 4)
+(@TrainerId+7, 34413, 7500, 0, 0, 34412, 0, 0, 70, 0), -- Mutilate (Rank 4)
 -- Priest: Outside starting zones
--- Priest: Starting zones
+(@TrainerId+9, 10955, 46000, 0, 0, 9485, 0, 0, 60, 0), -- Shackle Undead (Rank 3)
+(@TrainerId+9, 21562, 28000, 0, 0, 0, 0, 0, 48, 0), -- Prayer of Fortitude (Rank 1)
+(@TrainerId+9, 21564, 46000, 0, 0, 21562, 0, 0, 60, 0), -- Prayer of Fortitude (Rank 2)
+(@TrainerId+9, 25210, 65000, 0, 0, 25314, 0, 0, 63, 0), -- Greater Heal (Rank 6)
+(@TrainerId+9, 25213, 110000, 0, 0, 25210, 0, 0, 68, 0), -- Greater Heal (Rank 7)
+(@TrainerId+9, 25217, 80000, 0, 0, 10901, 0, 0, 65, 0), -- Power Word: Shield (Rank 11)
+(@TrainerId+9, 25218, 140000, 0, 0, 25217, 0, 0, 70, 0), -- Power Word: Shield (Rank 12)
+(@TrainerId+9, 25221, 80000, 0, 0, 25315, 0, 0, 65, 0), -- Renew (Rank 11)
+(@TrainerId+9, 25222, 140000, 0, 0, 25221, 0, 0, 70, 0), -- Renew (Rank 12)
+(@TrainerId+9, 25233, 53000, 0, 0, 10917, 0, 0, 61, 0), -- Flash Heal (Rank 8)
+(@TrainerId+9, 25235, 99000, 0, 0, 25233, 0, 0, 67, 0), -- Flash Heal (Rank 9)
+(@TrainerId+9, 25308, 110000, 0, 0, 25316, 0, 0, 68, 0), -- Prayer of Healing (Rank 6)
+(@TrainerId+9, 25312, 2300, 0, 0, 27841, 0, 0, 70, 0), -- Divine Spirit (Rank 5)
+(@TrainerId+9, 25314, 65000, 0, 0, 10965, 0, 0, 60, 0), -- Greater Heal (Rank 5)
+(@TrainerId+9, 25315, 6500, 0, 0, 10929, 0, 0, 60, 0), -- Renew (Rank 10)
+(@TrainerId+9, 25316, 6500, 0, 0, 10961, 0, 0, 60, 0), -- Prayer of Healing (Rank 5)
+(@TrainerId+9, 25331, 110000, 0, 0, 27801, 0, 0, 68, 0), -- Holy Nova (Rank 7)
+(@TrainerId+9, 25363, 53000, 0, 0, 10934, 0, 0, 61, 0), -- Smite (Rank 9)
+(@TrainerId+9, 25364, 65000, 0, 0, 25363, 0, 0, 69, 0), -- Smite (Rank 10)
+(@TrainerId+9, 25367, 80000, 0, 0, 10894, 0, 0, 65, 0), -- Shadow Word: Pain (Rank 9)
+(@TrainerId+9, 25368, 140000, 0, 0, 25367, 0, 0, 70, 0), -- Shadow Word: Pain (Rank 10)
+(@TrainerId+9, 25372, 65000, 0, 0, 10947, 0, 0, 63, 0), -- Mind Blast (Rank 10)
+(@TrainerId+9, 25375, 65000, 0, 0, 25372, 0, 0, 69, 0), -- Mind Blast (Rank 11)
+(@TrainerId+9, 25384, 65000, 0, 0, 15261, 0, 0, 66, 0), -- Holy Fire (Rank 9)
+(@TrainerId+9, 25387, 6500, 0, 0, 18807, 0, 0, 68, 0), -- Mind Flay (Rank 7)
+(@TrainerId+9, 25389, 65000, 0, 0, 10938, 0, 0, 70, 0), -- Power Word: Fortitude (Rank 7)
+(@TrainerId+9, 25431, 65000, 0, 0, 10952, 0, 0, 69, 0), -- Inner Fire (Rank 7)
+(@TrainerId+9, 25433, 110000, 0, 0, 10958, 0, 0, 68, 0), -- Shadow Protection (Rank 4)
+(@TrainerId+9, 25435, 110000, 0, 0, 20770, 0, 0, 68, 0), -- Resurrection (Rank 6)
+(@TrainerId+9, 25437, 2200, 0, 0, 19243, 0, 0, 66, 0), -- Desperate Prayer (Rank 7)
+(@TrainerId+9, 25467, 110000, 0, 0, 19280, 0, 0, 68, 0), -- Devouring Plague (Rank 7)
+(@TrainerId+9, 27683, 42000, 0, 0, 0, 0, 0, 56, 0), -- Prayer of Shadow Protection (Rank 1)
+(@TrainerId+9, 28275, 1500, 0, 0, 27871, 0, 0, 70, 0), -- Lightwell (Rank 4)
+(@TrainerId+9, 32375, 110000, 0, 0, 0, 0, 0, 70, 0), -- Mass Dispel
+(@TrainerId+9, 32379, 59000, 0, 0, 0, 0, 0, 62, 0), -- Shadow Word: Death (Rank 1)
+(@TrainerId+9, 32996, 110000, 0, 0, 32379, 0, 0, 70, 0), -- Shadow Word: Death (Rank 2)
+(@TrainerId+9, 32999, 3400, 0, 0, 27681, 0, 0, 70, 0), -- Prayer of Spirit (Rank 2)
+(@TrainerId+9, 33076, 110000, 0, 0, 0, 0, 0, 68, 0), -- Prayer of Mending (Rank 1)
+(@TrainerId+9, 34433, 89000, 0, 0, 0, 0, 0, 66, 0), -- Shadowfiend
+(@TrainerId+9, 34863, 2100, 0, 0, 34861, 0, 0, 56, 0), -- Circle of Healing (Rank 2)
+(@TrainerId+9, 34864, 2300, 0, 0, 34863, 0, 0, 60, 0), -- Circle of Healing (Rank 3)
+(@TrainerId+9, 34865, 4000, 0, 0, 34864, 0, 0, 65, 0), -- Circle of Healing (Rank 4)
+(@TrainerId+9, 34866, 7000, 0, 0, 34865, 0, 0, 70, 0), -- Circle of Healing (Rank 5)
+(@TrainerId+9, 34917, 2300, 0, 0, 34916, 0, 0, 70, 0), -- Vampiric Touch (Rank 3)
+(@TrainerId+9, 53005, 5000, 0, 0, 47540, 0, 0, 70, 0); -- Penance (Rank 2)
 -- Shaman: Outside starting zones
 -- Shaman: Starting zones
 -- Mage: Outside starting zones

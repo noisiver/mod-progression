@@ -149,3 +149,48 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `Creature
     3594, -- Frahun Shadewhisper <Rogue Trainer>
     15285 -- Pathstalker Kariel <Rogue Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+9 WHERE `CreatureId` IN (
+    376, -- High Priestess Laurena <Priest Trainer>
+    377, -- Priestess Josetta <Priest Trainer>
+    1226, -- Maxan Anvol <Priest Trainer>
+    2129, -- Dark Cleric Beryl <Priest Trainer>
+    3044, -- Miles Welsh <Priest Trainer>
+    3045, -- Malakai Cross <Priest Trainer>
+    3046, -- Father Cobb <Priest Trainer>
+    3600, -- Laurna Morninglight <Priest Trainer>
+    3706, -- Tai'jin <Priest Trainer>
+    4090, -- Astarii Starseeker <Priest Trainer>
+    4091, -- Jandria <Priest Trainer>
+    4092, -- Lariia <Priest Trainer>
+    4606, -- Aelthalyste <Priest Trainer>
+    4607, -- Father Lankester <Priest Trainer>
+    4608, -- Father Lazarus <Priest Trainer>
+    5141, -- Theodrus Frostbeard <Priest Trainer>
+    5142, -- Braenna Flintcrag <Priest Trainer>
+    5143, -- Toldren Deepiron <Priest Trainer>
+    5484, -- Brother Benjamin <Priest Trainer>
+    5489, -- Brother Joshua <Priest Trainer>
+    5994, -- Zayus <High Priest>
+    6014, -- X'yera <Priest Trainer>
+    6018, -- Ur'kyo <Priest Trainer>
+    11397, -- Nara Meideros <Priest Trainer>
+    11401, -- Priestess Alathea <Priest Trainer>
+    11406, -- High Priest Rohan <Priest Trainer>
+    16276, -- Ponaris <Priest Trainer>
+    16658, -- Aldrae <Priest Trainer>
+    16659, -- Lotheolan <Priest Trainer>
+    16660, -- Belestra <Priest Trainer>
+    16756, -- Caedmos <Priest Trainer>
+    17482, -- Guvan <Priest Trainer>
+    17510, -- Izmir <Priest Trainer>
+    17511 -- Fallat <Priest Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+10 WHERE `CreatureId` IN (
+    375, -- Priestess Anetta <Priest Trainer>
+    837, -- Branstock Khalder <Priest Trainer>
+    2123, -- Dark Cleric Duesten <Priest Trainer>
+    3595, -- Shanda <Priest Trainer>
+    3707, -- Ken'jai <Priest Trainer>
+    15284, -- Matron Arena <Priest Trainer>
+    16502 -- Zalduun <Priest Trainer>
+);
