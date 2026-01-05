@@ -71,7 +71,6 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+0, 11609, 42000, 0, 0, 11608, 0, 0, 50, 0), -- Cleave (Rank 4)
 (@TrainerId+0, 18499, 14000, 0, 0, 0, 0, 0, 32, 0), -- Berserker Rage
 (@TrainerId+0, 20230, 4000, 0, 0, 0, 0, 0, 20, 0), -- Retaliation
-(@TrainerId+0, 20252, 12000, 0, 0, 0, 0, 0, 30, 0), -- Intercept
 (@TrainerId+0, 20569, 62000, 0, 0, 11609, 0, 0, 60, 0), -- Cleave (Rank 5)
 (@TrainerId+0, 20658, 14000, 0, 0, 5308, 0, 0, 32, 0), -- Execute (Rank 2)
 (@TrainerId+0, 20660, 22000, 0, 0, 20658, 0, 0, 40, 0), -- Execute (Rank 3)
