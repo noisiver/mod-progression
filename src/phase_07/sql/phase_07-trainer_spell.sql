@@ -7,7 +7,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+3 AND `SpellId` IN (2
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` = 498;
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+5 AND `SpellId` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+7 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
-DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+9 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+9 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32546, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -184,6 +184,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+9, 28275, 1500, 0, 0, 27871, 0, 0, 70, 0), -- Lightwell (Rank 4)
 (@TrainerId+9, 32375, 110000, 0, 0, 0, 0, 0, 70, 0), -- Mass Dispel
 (@TrainerId+9, 32379, 59000, 0, 0, 0, 0, 0, 62, 0), -- Shadow Word: Death (Rank 1)
+(@TrainerId+9, 32546, 72000, 0, 0, 0, 0, 0, 64, 0), -- Binding Heal (Rank 1)
 (@TrainerId+9, 32996, 110000, 0, 0, 32379, 0, 0, 70, 0), -- Shadow Word: Death (Rank 2)
 (@TrainerId+9, 32999, 3400, 0, 0, 27681, 0, 0, 70, 0), -- Prayer of Spirit (Rank 2)
 (@TrainerId+9, 33076, 110000, 0, 0, 0, 0, 0, 68, 0), -- Prayer of Mending (Rank 1)
