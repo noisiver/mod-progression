@@ -8,6 +8,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` IN (1
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+6 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+8 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32546, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+10 AND `SpellId` IN (2062, 2825, 2894, 3738, 24398, 25357, 25361, 25391, 25396, 25420, 25422, 25423, 25439, 25442, 25448, 25449, 25454, 25457, 25464, 25469, 25472, 25489, 25500, 25505, 25508, 25509, 25525, 25528, 25533, 25546, 25547, 25552, 25557, 25560, 25563, 25567, 25570, 25574, 29228, 32182, 32593, 32594, 33736, 36936, 52127, 52129, 52131, 52134, 52136, 52138, 61299);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (10140, 23028, 25304, 25345, 27071, 27072, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27101, 27124, 27126, 27128, 27130, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 32796, 33042, 33043, 33405, 33933, 33944, 33946, 37420, 38699);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -217,9 +218,44 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+10, 52134, 12000, 0, 0, 52131, 0, 0, 41, 0), -- Water Shield (Rank 4)
 (@TrainerId+10, 52136, 22000, 0, 0, 52134, 0, 0, 48, 0), -- Water Shield (Rank 5)
 (@TrainerId+10, 52138, 29000, 0, 0, 52136, 0, 0, 55, 0), -- Water Shield (Rank 6)
-(@TrainerId+10, 61299, 9000, 0, 0, 61295, 0, 0, 70, 0); -- Riptide (Rank 2)
+(@TrainerId+10, 61299, 9000, 0, 0, 61295, 0, 0, 70, 0), -- Riptide (Rank 2)
 -- Mage: Outside starting zones
--- Mage: Starting zones
+(@TrainerId+12, 10140, 42000, 0, 0, 10139, 0, 0, 60, 0), -- Conjure Water (Rank 7)
+(@TrainerId+12, 23028, 38000, 0, 0, 0, 0, 0, 56, 0), -- Arcane Brilliance (Rank 1)
+(@TrainerId+12, 25304, 42000, 0, 0, 10181, 0, 0, 60, 0), -- Frostbolt (Rank 11)
+(@TrainerId+12, 25345, 42000, 0, 0, 10212, 0, 0, 60, 0), -- Arcane Missiles (Rank 8)
+(@TrainerId+12, 27071, 57000, 0, 0, 25304, 0, 0, 63, 0), -- Frostbolt (Rank 12)
+(@TrainerId+12, 27072, 110000, 0, 0, 27071, 0, 0, 69, 0), -- Frostbolt (Rank 13)
+(@TrainerId+12, 27075, 57000, 0, 0, 25345, 0, 0, 63, 0), -- Arcane Missiles (Rank 9)
+(@TrainerId+12, 27078, 46000, 0, 0, 10199, 0, 0, 61, 0), -- Fire Blast (Rank 8)
+(@TrainerId+12, 27079, 120000, 0, 0, 27078, 0, 0, 70, 0), -- Fire Blast (Rank 9)
+(@TrainerId+12, 27080, 51000, 0, 0, 10202, 0, 0, 62, 0), -- Arcane Explosion (Rank 7)
+(@TrainerId+12, 27082, 120000, 0, 0, 27080, 0, 0, 70, 0), -- Arcane Explosion (Rank 8)
+(@TrainerId+12, 27085, 96000, 0, 0, 10187, 0, 0, 68, 0), -- Blizzard (Rank 7)
+(@TrainerId+12, 27086, 63000, 0, 0, 10216, 0, 0, 64, 0), -- Flamestrike (Rank 7)
+(@TrainerId+12, 27087, 70000, 0, 0, 10161, 0, 0, 65, 0), -- Cone of Cold (Rank 6)
+(@TrainerId+12, 27088, 87000, 0, 0, 10230, 0, 0, 67, 0), -- Frost Nova (Rank 5)
+(@TrainerId+12, 27101, 96000, 0, 0, 10054, 0, 0, 68, 0), -- Conjure Mana Gem (Rank 5)
+(@TrainerId+12, 27124, 110000, 0, 0, 10220, 0, 0, 69, 0), -- Ice Armor (Rank 5)
+(@TrainerId+12, 27126, 120000, 0, 0, 10157, 0, 0, 70, 0), -- Arcane Intellect (Rank 6)
+(@TrainerId+12, 27128, 110000, 0, 0, 10225, 0, 0, 69, 0), -- Fire Ward (Rank 6)
+(@TrainerId+12, 27130, 57000, 0, 0, 10170, 0, 0, 63, 0), -- Amplify Magic (Rank 5)
+(@TrainerId+12, 27133, 3500, 0, 0, 13021, 0, 0, 65, 0), -- Blast Wave (Rank 6)
+(@TrainerId+12, 27134, 2500, 0, 0, 13033, 0, 0, 64, 0), -- Ice Barrier (Rank 5)
+(@TrainerId+12, 28609, 42000, 0, 0, 10177, 0, 0, 60, 0), -- Frost Ward (Rank 5)
+(@TrainerId+12, 28612, 42000, 0, 0, 10145, 0, 0, 60, 0), -- Conjure Food (Rank 7)
+(@TrainerId+12, 30451, 63000, 0, 0, 0, 0, 0, 64, 0), -- Arcane Blast (Rank 1)
+(@TrainerId+12, 30455, 78000, 0, 0, 0, 0, 0, 66, 0), -- Ice Lance (Rank 1)
+(@TrainerId+12, 30449, 120000, 0, 0, 0, 0, 0, 70, 0), -- Spellsteal
+(@TrainerId+12, 32796, 120000, 0, 0, 28609, 0, 0, 70, 0), -- Frost Ward (Rank 6)
+(@TrainerId+12, 33042, 2200, 0, 0, 33041, 0, 0, 64, 0), -- Dragon's Breath (Rank 3)
+(@TrainerId+12, 33043, 2500, 0, 0, 33042, 0, 0, 70, 0), -- Dragon's Breath (Rank 4)
+(@TrainerId+12, 33405, 6000, 0, 0, 27134, 0, 0, 70, 0), -- Ice Barrier (Rank 6)
+(@TrainerId+12, 33933, 6000, 0, 0, 27133, 0, 0, 70, 0), -- Blast Wave (Rank 7)
+(@TrainerId+12, 33944, 100000, 0, 0, 10174, 0, 0, 67, 0), -- Dampen Magic (Rank 6)
+(@TrainerId+12, 33946, 110000, 0, 0, 27130, 0, 0, 69, 0), -- Amplify Magic (Rank 6)
+(@TrainerId+12, 37420, 70000, 0, 0, 10140, 0, 0, 65, 0), -- Conjure Water (Rank 8)
+(@TrainerId+12, 38699, 87000, 0, 0, 27075, 0, 0, 69, 0); -- Arcane Missiles (Rank 10)
 -- Warlock: Outside starting zones
 -- Warlock: Starting zones
 -- Druid: Outside starting zones

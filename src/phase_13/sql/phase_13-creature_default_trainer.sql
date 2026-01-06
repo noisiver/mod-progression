@@ -217,3 +217,45 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 15 WHERE `CreatureId` IN (
     3157, -- Shikrik <Shaman Trainer>
     17089 -- Firmanvaar <Shaman Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = 16 WHERE `CreatureId` IN (
+    328, -- Zaldimar Wefhellt <Mage Trainer>
+    331, -- Maginor Dumas <Master Mage>
+    1228, -- Magis Sparkmantle <Mage Trainer>
+    2128, -- Cain Firesong <Mage Trainer>
+    3047, -- Archmage Shymm <Mage Trainer>
+    3048, -- Ursyn Ghull <Mage Trainer>
+    3049, -- Thurston Xane <Mage Trainer>
+    4566, -- Kaelystia Hatebringer <Mage Trainer>
+    4567, -- Pierce Shackleton <Mage Trainer>
+    4568, -- Anastasia Hartwell <Mage Trainer>
+    5144, -- Bink <Mage Trainer>
+    5145, -- Juli Stormkettle <Mage Trainer>
+    5146, -- Nittlebur Sparkfizzle <Mage Trainer>
+    5497, -- Jennea Cannon <Mage Trainer>
+    5498, -- Elsharin <Mage Trainer>
+    5880, -- Un'Thuwa <Mage Trainer>
+    5882, -- Pephredo <Mage Trainer>
+    5883, -- Enyo <Mage Trainer>
+    5884, -- Mai'ah <Mage Trainer>
+    5885, -- Deino <Mage Trainer>
+    7311, -- Uthel'nay <Mage Trainer>
+    7312, -- Dink <Mage Trainer>
+    16269, -- Garridel <Mage Trainer>
+    16651, -- Zaedana <Mage Trainer>
+    16652, -- Quithas <Mage Trainer>
+    16653, -- Inethven <Mage Trainer>
+    16749, -- Edirah <Mage Trainer>
+    17105, -- Emissary Valustraa <Mage Trainer>
+    17481, -- Semid <Mage Trainer>
+    17513, -- Harnan <Mage Trainer>
+    17514, -- Bati <Mage Trainer>
+    23103, -- Derek the Undying <Mage Trainer>
+    27704 -- Horace Alder <Mage Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 17 WHERE `CreatureId` IN (
+    198, -- Khelden Bremen <Mage Trainer>
+    944, -- Marryk Nurribit <Mage Trainer>
+    2124, -- Isabella <Mage Trainer>
+    15279, -- Julia Sunstriker <Mage Trainer>
+    16500 -- Valaatu <Mage Trainer>
+);
