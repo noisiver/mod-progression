@@ -50,28 +50,26 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+2 WHERE `Creature
     5491, -- Arthur the Faithful <Paladin Trainer>
     5492, -- Katherine the Pure <Paladin Trainer>
     8140, -- Brother Karman <Paladin Trainer>
+    16679, -- Osselan <Paladin Trainer>
+    16680, -- Ithelis <Paladin Trainer>
+    16681, -- Champion Bachi <Paladin Trainer>
     16761, -- Baatun <Paladin Trainer>
     17121, -- Kavaan <Paladin Trainer>
     17483, -- Tullas <Paladin Trainer>
     17509, -- Jol <Paladin Trainer>
     17844, -- Vindicator Aesom <Triumvirate of the Hand>
+    20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
+    23128, -- Master Pyreanor <Paladin Trainer>
     35281 -- Rukua <Paladin Trainer>
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+3 WHERE `CreatureId` IN (
-    16679, -- Osselan <Paladin Trainer>
-    16680, -- Ithelis <Paladin Trainer>
-    16681, -- Champion Bachi <Paladin Trainer>
-    20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
-    23128 -- Master Pyreanor <Paladin Trainer>
-);
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `CreatureId` IN (
     925, -- Brother Sammuel <Paladin Trainer>
     926, -- Bromos Grummner <Paladin Trainer>
     15280, -- Jesthenis Sunstriker <Paladin Trainer>
     16275, -- Noellene <Paladin Trainer>
     16501 -- Aurelon <Paladin Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+5 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+4 WHERE `CreatureId` IN (
     987, -- Ogromm <Hunter Trainer>
     1231, -- Grif Wildheart <Hunter Trainer>
     1404, -- Kragg <Hunter Trainer>
@@ -106,7 +104,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+5 WHERE `Creature
     17122, -- Vord <Hunter Trainer>
     17505 -- Killac <Hunter Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+6 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+5 WHERE `CreatureId` IN (
     895, -- Thorgas Grimson <Hunter Trainer>
     3061, -- Lanka Farshot <Hunter Trainer>
     3154, -- Jen'shan <Hunter Trainer>
@@ -114,7 +112,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+6 WHERE `Creature
     15513, -- Ranger Sallina <Hunter Trainer>
     16499 -- Keilnei <Hunter Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+7 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+6 WHERE `CreatureId` IN (
     917, -- Keryn Sylvius <Rogue Trainer>
     918, -- Osborne the Night Man <Rogue Trainer>
     1234, -- Hogral Bakkan <Rogue Trainer>
@@ -141,7 +139,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+7 WHERE `Creature
     16685, -- Elara <Rogue Trainer>
     16686 -- Nerisen <Rogue Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+7 WHERE `CreatureId` IN (
     915, -- Jorik Kerridan <Rogue Trainer>
     916, -- Solm Hargrin <Rogue Trainer>
     2122, -- David Trias <Rogue Trainer>
@@ -149,7 +147,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `Creature
     3594, -- Frahun Shadewhisper <Rogue Trainer>
     15285 -- Pathstalker Kariel <Rogue Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+9 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+8 WHERE `CreatureId` IN (
     376, -- High Priestess Laurena <Priest Trainer>
     377, -- Priestess Josetta <Priest Trainer>
     1226, -- Maxan Anvol <Priest Trainer>
@@ -185,7 +183,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+9 WHERE `Creature
     17510, -- Izmir <Priest Trainer>
     17511 -- Fallat <Priest Trainer>
 );
-UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+10 WHERE `CreatureId` IN (
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+9 WHERE `CreatureId` IN (
     375, -- Priestess Anetta <Priest Trainer>
     837, -- Branstock Khalder <Priest Trainer>
     2123, -- Dark Cleric Duesten <Priest Trainer>
@@ -193,4 +191,27 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+10 WHERE `Creatur
     3707, -- Ken'jai <Priest Trainer>
     15284, -- Matron Arena <Priest Trainer>
     16502 -- Zalduun <Priest Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+10 WHERE `CreatureId` IN (
+    986, -- Haromm <Shaman Trainer>
+    3030, -- Siln Skychaser <Shaman Trainer>
+    3031, -- Tigor Skychaser <Shaman Trainer>
+    3032, -- Beram Skychaser <Shaman Trainer>
+    3066, -- Narm Skychaser <Shaman Trainer>
+    3173, -- Swart <Shaman Trainer>
+    3344, -- Kardris Dreamseeker <Shaman Trainer>
+    3403, -- Sian'tsu <Shaman Trainer>
+    13417, -- Sagorne Creststrider <Shaman Trainer>
+    17204, -- Farseer Nobundo <Shaman Trainer>
+    17212, -- Tuluun <Shaman Trainer>
+    17219, -- Sulaa <Shaman Trainer>
+    17519, -- Hobahken <Shaman Trainer>
+    17520, -- Gurrag <Shaman Trainer>
+    20407, -- Farseer Umbrua <Shaman Trainer>
+    23127 -- Farseer Javad <Shaman Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+11 WHERE `CreatureId` IN (
+    3062, -- Meela Dawnstrider <Shaman Trainer>
+    3157, -- Shikrik <Shaman Trainer>
+    17089 -- Firmanvaar <Shaman Trainer>
 );

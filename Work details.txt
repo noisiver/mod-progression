@@ -1,5 +1,3 @@
-These are the zones I have gone through so far, and it's possible that I've missed stuff. This doesn't include trainers either, I will take care of them when I'm done with the zones.
-
 Eastern Kingdoms
 ✅ Alterac Mountains
 ✅ Arathi Highlands
@@ -99,7 +97,7 @@ Class Trainers
 ✅ Paladin
 ✅ Priest
 ✅ Rogue
-❌ Shaman
+✅ Shaman
 ❌ Warlock
 ✅ Warrior
 
@@ -122,3 +120,4 @@ Config
 
 Others
 ❌ Gossip options in major cities
+❌ Currency (Badges, emblems)

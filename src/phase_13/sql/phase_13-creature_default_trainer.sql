@@ -177,7 +177,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 11 WHERE `CreatureId` IN (
     11401, -- Priestess Alathea <Priest Trainer>
     11406, -- High Priest Rohan <Priest Trainer>
     16276, -- Ponaris <Priest Trainer>
-    16502 -- Zalduun <Priest Trainer>
+    16502, -- Zalduun <Priest Trainer>
     16658, -- Aldrae <Priest Trainer>
     16659, -- Lotheolan <Priest Trainer>
     16660, -- Belestra <Priest Trainer>
@@ -193,4 +193,27 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 12 WHERE `CreatureId` IN (
     3707, -- Ken'jai <Priest Trainer>
     15284, -- Matron Arena <Priest Trainer>
     17482 -- Guvan <Priest Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 14 WHERE `CreatureId` IN (
+    986, -- Haromm <Shaman Trainer>
+    3030, -- Siln Skychaser <Shaman Trainer>
+    3031, -- Tigor Skychaser <Shaman Trainer>
+    3032, -- Beram Skychaser <Shaman Trainer>
+    3066, -- Narm Skychaser <Shaman Trainer>
+    3173, -- Swart <Shaman Trainer>
+    3344, -- Kardris Dreamseeker <Shaman Trainer>
+    3403, -- Sian'tsu <Shaman Trainer>
+    13417, -- Sagorne Creststrider <Shaman Trainer>
+    17204, -- Farseer Nobundo <Shaman Trainer>
+    17212, -- Tuluun <Shaman Trainer>
+    17219, -- Sulaa <Shaman Trainer>
+    17519, -- Hobahken <Shaman Trainer>
+    17520, -- Gurrag <Shaman Trainer>
+    20407, -- Farseer Umbrua <Shaman Trainer>
+    23127 -- Farseer Javad <Shaman Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 15 WHERE `CreatureId` IN (
+    3062, -- Meela Dawnstrider <Shaman Trainer>
+    3157, -- Shikrik <Shaman Trainer>
+    17089 -- Firmanvaar <Shaman Trainer>
 );
