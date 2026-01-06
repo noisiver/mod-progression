@@ -188,7 +188,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+2, 25780, 3000, 0, 0, 0, 0, 0, 16, 0), -- Righteous Fury
 (@TrainerId+2, 25782, 46000, 0, 0, 19838, 0, 0, 52, 0), -- Greater Blessing of Might (Rank 1)
 (@TrainerId+2, 25894, 46000, 0, 0, 19854, 0, 0, 54, 0), -- Greater Blessing of Wisdom (Rank 1)
-(@TrainerId+2, 25898, 2300, 0, 0, 0, 0, 0, 60, 0), -- Greater Blessing of Kings
+(@TrainerId+2, 25898, 2300, 0, 0, 20217, 0, 0, 60, 0), -- Greater Blessing of Kings
 (@TrainerId+2, 25899, 2300, 0, 0, 20911, 0, 0, 60, 0), -- Greater Blessing of Sanctuary
 (@TrainerId+2, 25916, 46000, 0, 0, 25782, 25291, 0, 60, 0), -- Greater Blessing of Might (Rank 2)
 (@TrainerId+2, 25918, 46000, 0, 0, 25894, 25290, 0, 60, 0), -- Greater Blessing of Wisdom (Rank 2)
