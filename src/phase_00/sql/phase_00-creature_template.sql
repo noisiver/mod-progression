@@ -30,6 +30,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
+    3841, -- Caylais Moonfeather <Hippogryph Master>
     4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
     4314, -- Gorkas <Wind Rider Master>
