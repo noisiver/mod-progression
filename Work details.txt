@@ -98,7 +98,7 @@ Class Trainers
 ✅ Priest
 ✅ Rogue
 ✅ Shaman
-❌ Warlock
+✅ Warlock
 ✅ Warrior
 
 Class Quests

@@ -9,6 +9,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+6 AND `SpellId` IN (5
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+8 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32546, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+10 AND `SpellId` IN (2062, 2825, 2894, 3738, 24398, 25357, 25361, 25391, 25396, 25420, 25422, 25423, 25439, 25442, 25448, 25449, 25454, 25457, 25464, 25469, 25472, 25489, 25500, 25505, 25508, 25509, 25525, 25528, 25533, 25546, 25547, 25552, 25557, 25560, 25563, 25567, 25570, 25574, 29228, 32182, 32593, 32594, 33736, 36936, 52127, 52129, 52131, 52134, 52136, 52138, 61299);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (10140, 23028, 25304, 25345, 27071, 27072, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27101, 27124, 27126, 27128, 27130, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 32796, 33042, 33043, 33405, 33933, 33944, 33946, 37420, 38699);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+14 AND `SpellId` IN (5784, 11668, 25307, 25309, 25311, 27209, 27210, 27211, 27212, 27213, 27215, 27216, 27217, 27218, 27219, 27220, 27222, 27223, 27224, 27228, 27230, 27238, 27243, 27250, 27259, 27260, 27263, 27265, 28172, 28176, 28189, 28610, 29722, 29858, 29893, 30404, 30405, 30413, 30414, 30459, 30545, 30546, 30909, 30910, 32231);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -255,8 +256,52 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+12, 33944, 100000, 0, 0, 10174, 0, 0, 67, 0), -- Dampen Magic (Rank 6)
 (@TrainerId+12, 33946, 110000, 0, 0, 27130, 0, 0, 69, 0), -- Amplify Magic (Rank 6)
 (@TrainerId+12, 37420, 70000, 0, 0, 10140, 0, 0, 65, 0), -- Conjure Water (Rank 8)
-(@TrainerId+12, 38699, 87000, 0, 0, 27075, 0, 0, 69, 0); -- Arcane Missiles (Rank 10)
+(@TrainerId+12, 38699, 87000, 0, 0, 27075, 0, 0, 69, 0), -- Arcane Missiles (Rank 10)
 -- Warlock: Outside starting zones
--- Warlock: Starting zones
+(@TrainerId+14, 5784, 10000, 0, 0, 33388, 0, 0, 30, 0), -- Felsteed
+(@TrainerId+14, 11668, 26000, 0, 0, 11667, 0, 0, 60, 0), -- Immolate (Rank 7)
+(@TrainerId+14, 25307, 26000, 0, 0, 11661, 0, 0, 62, 0), -- Shadow Bolt (Rank 10)
+(@TrainerId+14, 25309, 26000, 0, 0, 11668, 0, 0, 60, 0), -- Immolate (Rank 8)
+(@TrainerId+14, 25311, 26000, 0, 0, 11672, 0, 0, 60, 0), -- Corruption (Rank 7)
+(@TrainerId+14, 27209, 70000, 0, 0, 25307, 0, 0, 69, 0), -- Shadow Bolt (Rank 11)
+(@TrainerId+14, 27210, 46000, 0, 0, 17923, 0, 0, 65, 0), -- Searing Pain (Rank 7)
+(@TrainerId+14, 27211, 42000, 0, 0, 17924, 0, 0, 64, 0), -- Soul Fire (Rank 3)
+(@TrainerId+14, 27212, 70000, 0, 0, 11678, 0, 0, 69, 0), -- Rain of Fire (Rank 5)
+(@TrainerId+14, 27213, 63000, 0, 0, 11684, 0, 0, 68, 0), -- Hellfire (Rank 4)
+(@TrainerId+14, 27215, 70000, 0, 0, 25309, 0, 0, 69, 0), -- Immolate (Rank 9)
+(@TrainerId+14, 27216, 46000, 0, 0, 25311, 0, 0, 65, 0), -- Corruption (Rank 8)
+(@TrainerId+14, 27217, 57000, 0, 0, 11675, 0, 0, 67, 0), -- Drain Soul (Rank 5)
+(@TrainerId+14, 27218, 57000, 0, 0, 11713, 0, 0, 67, 0), -- Curse of Agony (Rank 7)
+(@TrainerId+14, 27219, 30000, 0, 0, 11700, 0, 0, 62, 0), -- Drain Life (Rank 7)
+(@TrainerId+14, 27220, 70000, 0, 0, 27219, 0, 0, 69, 0), -- Drain Life (Rank 8)
+(@TrainerId+14, 27222, 56700, 0, 0, 11689, 0, 0, 68, 0), -- Life Tap (Rank 7)
+(@TrainerId+14, 27223, 63000, 0, 0, 17926, 0, 0, 68, 0), -- Death Coil (Rank 4)
+(@TrainerId+14, 27224, 30000, 0, 0, 11708, 0, 0, 61, 0), -- Curse of Weakness (Rank 7)
+(@TrainerId+14, 27228, 70000, 0, 0, 11722, 0, 0, 69, 0), -- Curse of the Elements (Rank 4)
+(@TrainerId+14, 27230, 63000, 0, 0, 11730, 0, 0, 68, 0), -- Create Healthstone (Rank 6)
+(@TrainerId+14, 27238, 78000, 0, 0, 20757, 0, 0, 70, 0), -- Create Soulstone (Rank 6)
+(@TrainerId+14, 27243, 78000, 0, 0, 0, 0, 0, 70, 0), -- Seed of Corruption (Rank 1)
+(@TrainerId+14, 27250, 51000, 0, 0, 17953, 0, 0, 66, 0), -- Create Firestone (Rank 5)
+(@TrainerId+14, 27259, 57000, 0, 0, 11695, 0, 0, 67, 0), -- Health Funnel (Rank 8)
+(@TrainerId+14, 27260, 78000, 0, 0, 11735, 0, 0, 70, 0), -- Demon Armor (Rank 6)
+(@TrainerId+14, 27263, 1300, 0, 0, 18871, 0, 0, 63, 0), -- Shadowburn (Rank 7)
+(@TrainerId+14, 27265, 1300, 0, 0, 18938, 0, 0, 70, 0), -- Dark Pact (Rank 4)
+(@TrainerId+14, 28172, 51000, 0, 0, 17728, 0, 0, 66, 0), -- Create Spellstone (Rank 4)
+(@TrainerId+14, 28176, 34000, 0, 0, 0, 0, 0, 62, 0), -- Fel Armor (Rank 1)
+(@TrainerId+14, 28189, 70000, 0, 0, 28176, 0, 0, 69, 0), -- Fel Armor (Rank 2)
+(@TrainerId+14, 28610, 34000, 0, 0, 11740, 0, 0, 60, 0), -- Shadow Ward (Rank 4)
+(@TrainerId+14, 29722, 42000, 0, 0, 0, 0, 0, 64, 0), -- Incinerate (Rank 1)
+(@TrainerId+14, 29858, 51000, 0, 0, 0, 0, 0, 66, 0), -- Soulshatter
+(@TrainerId+14, 29893, 63000, 0, 0, 0, 0, 0, 68, 0), -- Ritual of Souls (Rank 1)
+(@TrainerId+14, 30404, 2500, 0, 0, 30108, 0, 0, 60, 0), -- Unstable Affliction (Rank 2)
+(@TrainerId+14, 30405, 2500, 0, 0, 30404, 0, 0, 70, 0), -- Unstable Affliction (Rank 3)
+(@TrainerId+14, 30413, 2500, 0, 0, 30283, 0, 0, 60, 0), -- Shadowfury (Rank 2)
+(@TrainerId+14, 30414, 2500, 0, 0, 30413, 0, 0, 70, 0), -- Shadowfury (Rank 3)
+(@TrainerId+14, 30459, 78000, 0, 0, 27210, 0, 0, 70, 0), -- Searing Pain (Rank 8)
+(@TrainerId+14, 30545, 78000, 0, 0, 27211, 0, 0, 70, 0), -- Soul Fire (Rank 4)
+(@TrainerId+14, 30546, 3900, 0, 0, 27263, 0, 0, 70, 0), -- Shadowburn (Rank 8)
+(@TrainerId+14, 30909, 70000, 0, 0, 27224, 0, 0, 69, 0), -- Curse of Weakness (Rank 8)
+(@TrainerId+14, 30910, 78000, 0, 0, 603, 0, 0, 70, 0), -- Curse of Doom (Rank 2)
+(@TrainerId+14, 32231, 78000, 0, 0, 29722, 0, 0, 70, 0); -- Incinerate (Rank 2)
 -- Druid: Outside starting zones
 -- Druid: Starting zones

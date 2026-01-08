@@ -259,3 +259,32 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 17 WHERE `CreatureId` IN (
     15279, -- Julia Sunstriker <Mage Trainer>
     16500 -- Valaatu <Mage Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = 31 WHERE `CreatureId` IN (
+    461, -- Demisette Cloyce <Warlock Trainer>
+    906, -- Maximillian Crowe <Warlock Trainer>
+    988, -- Kartosh <Warlock Trainer>
+    2127, -- Rupert Boch <Warlock Trainer>
+    3324, -- Grol'dar <Warlock Trainer>
+    3325, -- Mirket <Warlock Trainer>
+    3326, -- Zevrost <Warlock Trainer>
+    4563, -- Kaal Soulreaper <Warlock Trainer>
+    4564, -- Luther Pickman <Warlock Trainer>
+    4565, -- Richard Kerwin <Warlock Trainer>
+    5171, -- Thistleheart <Warlock Trainer>
+    5172, -- Briarthorn <Warlock Trainer>
+    5173, -- Alexander Calder <Warlock Trainer>
+    5495, -- Ursula Deline <Warlock Trainer>
+    5496, -- Sandahl <Warlock Trainer>
+    16266, -- Celoenus <Warlock Trainer>
+    16646, -- Alamma <Warlock Trainer>
+    16647, -- Talionia <Warlock Trainer>
+    16648, -- Zanien <Warlock Trainer>
+    23534 -- Babagaya Shadowcleft <Warlock Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 32 WHERE `CreatureId` IN (
+    459, -- Drusilla La Salle <Warlock Trainer>
+    460, -- Alamar Grimm <Warlock Trainer>
+    2126, -- Maximillion <Warlock Trainer>
+    3156, -- Nartok <Warlock Trainer>
+    15283 -- Summoner Teli'Larien <Warlock Trainer>
+);

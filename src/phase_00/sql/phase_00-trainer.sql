@@ -1,5 +1,5 @@
 SET @TrainerId := 200;
-DELETE FROM `trainer` WHERE `Id` BETWEEN @TrainerId+0 AND @TrainerId+13;
+DELETE FROM `trainer` WHERE `Id` BETWEEN @TrainerId+0 AND @TrainerId+17;
 INSERT INTO `trainer` (`Id`, `Type`, `Requirement`, `Greeting`, `VerifiedBuild`) VALUES
 (@TrainerId+0, 0, 1, 'Hello, warrior!  Ready for some training?', 0),
 (@TrainerId+1, 0, 1, 'Hello, warrior!  Ready for some training?', 0),
@@ -14,4 +14,8 @@ INSERT INTO `trainer` (`Id`, `Type`, `Requirement`, `Greeting`, `VerifiedBuild`)
 (@TrainerId+10, 0, 7, 'Hello, shaman!  Ready for some training?', 0),
 (@TrainerId+11, 0, 7, 'Hello, shaman!  Ready for some training?', 0),
 (@TrainerId+12, 0, 8, 'Hello, mage!  Ready for some training?', 0),
-(@TrainerId+13, 0, 8, 'Hello, mage!  Ready for some training?', 0);
+(@TrainerId+13, 0, 8, 'Hello, mage!  Ready for some training?', 0),
+(@TrainerId+14, 0, 9, 'Hello, warlock!  Ready for some training?', 0),
+(@TrainerId+15, 0, 9, 'Hello, warlock!  Ready for some training?', 0),
+(@TrainerId+16, 0, 11, 'Hello, druid!  Ready for some training?', 0),
+(@TrainerId+17, 0, 11, 'Hello, druid!  Ready for some training?', 0);
