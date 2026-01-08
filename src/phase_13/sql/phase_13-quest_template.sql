@@ -2,3 +2,10 @@ UPDATE `quest_template` SET `LogDescription` = 'Bring 8 Diseased Wolf Pelts to E
 UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0 WHERE `ID` = 6607; -- Nat Pagle, Angler Extreme
 UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0, `RewardItem2` = 49192, `RewardAmount2` = 1 WHERE `ID` = 6622; -- Triage
 UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0, `RewardItem2` = 49193, `RewardAmount2` = 1 WHERE `ID` = 6624; -- Triage
+UPDATE `quest_template` SET `Flags` = `Flags` | 16384 WHERE `ID` IN (
+    1470, -- Piercing the Veil
+    1485, -- Vile Familiars
+    1598, -- The Stolen Tome
+    1599, -- Beginnings
+    8344 -- Windows to the Source
+);

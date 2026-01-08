@@ -4,3 +4,10 @@ UPDATE `quest_template` SET `RewardDisplaySpell` = 10846, `RewardSpell` = 19902,
     6622, -- Triage
     6624 -- Triage
 );
+UPDATE `quest_template` SET `Flags` = `Flags` & ~16384 WHERE `ID` IN (
+    1470, -- Piercing the Veil
+    1485, -- Vile Familiars
+    1598, -- The Stolen Tome
+    1599, -- Beginnings
+    8344 -- Windows to the Source
+);
