@@ -75,4 +75,5 @@ UPDATE `creature` SET `position_x` = -8145.5, `position_y` = -4540.84, `position
 UPDATE `creature` SET `position_x` = -8240.33, `position_y` = -4648.71, `position_z` = 0.334381, `orientation` = 0.750492 WHERE `id1` = 15192; -- Anachronos
 UPDATE `creature` SET `position_x` = 2977.16, `position_y` = -3261.14, `position_z` = 160.496, `orientation` = 2.79253 WHERE `id1` = 3880; -- Sentinel Melyria Frostshadow
 UPDATE `creature` SET `position_x` = 3001.16, `position_y` = -3322.58, `position_z` = 152.267, `orientation` = 2.1293 WHERE `id1` = 3901; -- Illiyana
+UPDATE `creature` SET `position_x` = 6482.97, `position_y` = 729.743, `position_z` = 8.40589, `orientation` = 1.8326 WHERE `id1` = 4456; -- Fiora Longears
 DELETE FROM `creature` WHERE `id1` = 12397; -- Lord Kazzak

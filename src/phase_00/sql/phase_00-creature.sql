@@ -318,6 +318,7 @@ UPDATE `creature` SET `position_x` = -8175.67, `position_y` = -4718.28, `positio
 UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_z` = 74.1523, `orientation` = 5.58505 WHERE `id1` = 3880; -- Sentinel Melyria Frostshadow
 UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id1` = 3901; -- Illiyana
 UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `position_z` = 92.0423, `orientation` = 5.13127 WHERE `id1` = 16475; -- Megelon
+UPDATE `creature` SET `position_x` = -3613.43, `position_y` = -4463.9, `position_z` = 13.6227, `orientation` = 2.97522 WHERE `id1` = 4456; -- Fiora Longears
 SET @cId := 5300000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657, 14720);
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
