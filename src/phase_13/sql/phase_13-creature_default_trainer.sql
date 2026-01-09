@@ -288,3 +288,25 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 32 WHERE `CreatureId` IN (
     3156, -- Nartok <Warlock Trainer>
     15283 -- Summoner Teli'Larien <Warlock Trainer>
 );
+UPDATE `creature_default_trainer` SET `TrainerId` = 33 WHERE `CreatureId` IN (
+    3033, -- Turak Runetotem <Druid Trainer>
+    3034, -- Sheal Runetotem <Druid Trainer>
+    3036, -- Kym Wildmane <Druid Trainer>
+    3064, -- Gennia Runetotem <Druid Trainer>
+    3602, -- Kal <Druid Trainer>
+    4217, -- Mathrengyl Bearwalker <Druid Trainer>
+    4218, -- Denatharion <Druid Trainer>
+    4219, -- Fylerian Nightwing <Druid Trainer>
+    5504, -- Sheldras Moontree <Druid Trainer>
+    5505, -- Theridran <Druid Trainer>
+    5506, -- Maldryn <Druid Trainer>
+    8142, -- Jannos Lighthoof <Druid Trainer>
+    9465, -- Golhine the Hooded <Druid Trainer>
+    12042, -- Loganaar <Druid Trainer>
+    16655, -- Harene Plainwalker <Druid Trainer>
+    16721 -- Shalannius <Druid Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 34 WHERE `CreatureId` IN (
+    3060, -- Gart Mistrunner <Druid Trainer>
+    3597 -- Mardant Strongoak <Druid Trainer>
+);

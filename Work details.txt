@@ -91,7 +91,7 @@ Profession Trainers
 ❌ Jewelcrafting
 
 Class Trainers
-❌ Druid
+✅ Druid
 ✅ Hunter
 ✅ Mage
 ✅ Paladin

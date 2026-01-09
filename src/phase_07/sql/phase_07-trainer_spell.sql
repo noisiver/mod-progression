@@ -2,14 +2,15 @@ UPDATE `trainer_spell` SET `MoneyCost` = 350000, `ReqLevel` = 30 WHERE `SpellId`
 UPDATE `trainer_spell` SET `MoneyCost` = 6000000, `ReqLevel` = 60 WHERE `SpellId` = 33391; -- Journeyman Riding
 SET @TrainerId := 200;
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+0 AND `SpellId` IN (469, 2048, 3411, 12678, 23920, 25202, 25203, 25208, 25231, 25234, 25236, 25241, 25242, 25248, 25258, 25264, 25269, 25286, 25288, 25289, 29707, 30016, 30022, 30330, 30356, 30357, 34428);
-DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+2 AND `SpellId` IN (13819, 25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31801, 31884, 32223, 32699, 32700, 33072);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+2 AND `SpellId` IN (13819, 25290, 25291, 25292, 27135, 27136, 27137, 27138, 27139, 27140, 27141, 27142, 27143, 27149, 27150, 27151, 27152, 27153, 27154, 27173, 27174, 27179, 27180, 31789, 31801, 31884, 32223, 32699, 32700, 33072, 34769);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+3 AND `SpellId` = 498;
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` IN (19801, 25294, 25295, 25296, 27014, 27016, 27019, 27021, 27022, 27023, 27025, 27044, 27045, 27046, 27065, 27067, 27068, 34026, 34074, 34477, 34600, 36916, 56641, 60051, 63669, 63670);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+6 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34413);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+8 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32546, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34917, 53005);
-DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+10 AND `SpellId` IN (2062, 2825, 2894, 3738, 24398, 25357, 25361, 25391, 25396, 25420, 25422, 25423, 25439, 25442, 25448, 25449, 25454, 25457, 25464, 25469, 25472, 25489, 25500, 25505, 25508, 25509, 25525, 25528, 25533, 25546, 25547, 25552, 25557, 25560, 25563, 25567, 25570, 25574, 29228, 32182, 32593, 32594, 33736, 36936, 52127, 52129, 52131, 52134, 52136, 52138, 61299);
-DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (10140, 23028, 25304, 25345, 27071, 27072, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27101, 27124, 27126, 27128, 27130, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 32796, 33042, 33043, 33405, 33933, 33944, 33946, 37420, 38699);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+10 AND `SpellId` IN (2062, 2825, 2894, 3738, 24398, 25357, 25361, 25391, 25396, 25420, 25422, 25423, 25439, 25442, 25448, 25449, 25454, 25457, 25464, 25469, 25472, 25489, 25500, 25505, 25508, 25509, 25525, 25528, 25533, 25546, 25547, 25552, 25557, 25560, 25563, 25567, 25570, 25574, 29228, 32182, 32593, 32594, 33736, 36936, 52127, 52129, 52131, 52134, 52136, 52138, 59156, 61299);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (10140, 23028, 25304, 25345, 27071, 27072, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27101, 27124, 27126, 27128, 27130, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 32796, 33042, 33043, 33405, 33933, 33944, 33946, 37420, 38699, 44780, 55359);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+14 AND `SpellId` IN (5784, 11668, 25307, 25309, 25311, 27209, 27210, 27211, 27212, 27213, 27215, 27216, 27217, 27218, 27219, 27220, 27222, 27223, 27224, 27228, 27230, 27238, 27243, 27250, 27259, 27260, 27263, 27265, 28172, 28176, 28189, 28610, 29722, 29858, 29893, 30404, 30405, 30413, 30414, 30459, 30545, 30546, 30909, 30910, 32231, 59161, 59170);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+16 AND `SpellId` IN (21849, 21850, 22570, 24248, 25297, 25298, 25299, 26978, 26979, 26980, 26981, 26982, 26983, 26984, 26985, 26986, 26987, 26988, 26989, 26990, 26992, 26994, 26995, 26996, 26997, 26998, 27000, 27001, 27002, 27003, 27004, 27005, 27006, 27008, 27009, 27012, 27013, 31018, 31709, 33357, 33745, 33763, 33786, 33950, 33982, 33983, 33986, 33987, 53199, 53223, 53225, 53248);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
 -- Warrior: Outside starting zones
 (@TrainerId+0, 469, 65000, 0, 0, 0, 0, 0, 68, 0), -- Commanding Shout (Rank 1)
@@ -219,6 +220,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+10, 52134, 12000, 0, 0, 52131, 0, 0, 41, 0), -- Water Shield (Rank 4)
 (@TrainerId+10, 52136, 22000, 0, 0, 52134, 0, 0, 48, 0), -- Water Shield (Rank 5)
 (@TrainerId+10, 52138, 29000, 0, 0, 52136, 0, 0, 55, 0), -- Water Shield (Rank 6)
+(@TrainerId+10, 59156, 88000, 0, 0, 51490, 0, 0, 70, 0), -- Thunderstorm (Rank 2)
 (@TrainerId+10, 61299, 9000, 0, 0, 61295, 0, 0, 70, 0), -- Riptide (Rank 2)
 -- Mage: Outside starting zones
 (@TrainerId+12, 10140, 42000, 0, 0, 10139, 0, 0, 60, 0), -- Conjure Water (Rank 7)
@@ -257,6 +259,8 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+12, 33946, 110000, 0, 0, 27130, 0, 0, 69, 0), -- Amplify Magic (Rank 6)
 (@TrainerId+12, 37420, 70000, 0, 0, 10140, 0, 0, 65, 0), -- Conjure Water (Rank 8)
 (@TrainerId+12, 38699, 87000, 0, 0, 27075, 0, 0, 69, 0), -- Arcane Missiles (Rank 10)
+(@TrainerId+12, 44780, 10000, 0, 0, 44425, 0, 0, 70, 0), -- Arcane Barrage (Rank 2)
+(@TrainerId+12, 55359, 5000, 0, 0, 44457, 0, 0, 70, 0), -- Living Bomb (Rank 2)
 -- Warlock: Outside starting zones
 (@TrainerId+14, 5784, 10000, 0, 0, 33388, 0, 0, 30, 0), -- Felsteed
 (@TrainerId+14, 11668, 26000, 0, 0, 11667, 0, 0, 60, 0), -- Immolate (Rank 7)
@@ -304,6 +308,57 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+14, 30910, 78000, 0, 0, 603, 0, 0, 70, 0), -- Curse of Doom (Rank 2)
 (@TrainerId+14, 32231, 78000, 0, 0, 29722, 0, 0, 70, 0), -- Incinerate (Rank 2)
 (@TrainerId+14, 59161, 2500, 0, 0, 48181, 0, 0, 70, 0), -- Haunt (Rank 2)
-(@TrainerId+14, 59170, 2500, 0, 0, 50796, 0, 0, 70, 0); -- Chaos Bolt (Rank 2)
+(@TrainerId+14, 59170, 2500, 0, 0, 50796, 0, 0, 70, 0), -- Chaos Bolt (Rank 2)
 -- Druid: Outside starting zones
--- Druid: Starting zones
+(@TrainerId+16, 21849, 23000, 0, 0, 0, 0, 0, 50, 0), -- Gift of the Wild (Rank 1)
+(@TrainerId+16, 21850, 34000, 0, 0, 21849, 0, 0, 60, 0), -- Gift of the Wild (Rank 2)
+(@TrainerId+16, 22570, 43000, 0, 0, 0, 0, 0, 62, 0), -- Maim (Rank 1)
+(@TrainerId+16, 24248, 48000, 0, 0, 31018, 0, 0, 63, 0), -- Ferocious Bite (Rank 6)
+(@TrainerId+16, 25297, 34000, 0, 0, 9889, 0, 0, 60, 0), -- Healing Touch (Rank 11)
+(@TrainerId+16, 25298, 34000, 0, 0, 9876, 0, 0, 60, 0), -- Starfire (Rank 7)
+(@TrainerId+16, 25299, 34000, 0, 0, 9841, 0, 0, 60, 0), -- Rejuvenation (Rank 11)
+(@TrainerId+16, 26978, 43000, 0, 0, 25297, 0, 0, 62, 0), -- Healing Touch (Rank 12)
+(@TrainerId+16, 26979, 90000, 0, 0, 26978, 0, 0, 69, 0), -- Healing Touch (Rank 13)
+(@TrainerId+16, 26980, 59000, 0, 0, 9858, 0, 0, 65, 0), -- Regrowth (Rank 10)
+(@TrainerId+16, 26981, 48000, 0, 0, 25299, 0, 0, 63, 0), -- Rejuvenation (Rank 12)
+(@TrainerId+16, 26982, 90000, 0, 0, 26981, 0, 0, 69, 0), -- Rejuvenation (Rank 13)
+(@TrainerId+16, 26983, 100000, 0, 0, 9863, 0, 0, 70, 0), -- Tranquility (Rank 5)
+(@TrainerId+16, 26984, 39000, 0, 0, 9912, 0, 0, 61, 0), -- Wrath (Rank 9)
+(@TrainerId+16, 26985, 90000, 0, 0, 26984, 0, 0, 69, 0), -- Wrath (Rank 10)
+(@TrainerId+16, 26986, 73000, 0, 0, 25298, 0, 0, 67, 0), -- Starfire (Rank 8)
+(@TrainerId+16, 26987, 48000, 0, 0, 9835, 0, 0, 63, 0), -- Moonfire (Rank 11)
+(@TrainerId+16, 26988, 100000, 0, 0, 26987, 0, 0, 70, 0), -- Moonfire (Rank 12)
+(@TrainerId+16, 26989, 81000, 0, 0, 9853, 0, 0, 68, 0), -- Entangling Roots (Rank 7)
+(@TrainerId+16, 26990, 100000, 0, 0, 9885, 0, 0, 70, 0), -- Mark of the Wild (Rank 8)
+(@TrainerId+16, 26992, 53000, 0, 0, 9910, 0, 0, 64, 0), -- Thorns (Rank 7)
+(@TrainerId+16, 26994, 90000, 0, 0, 20748, 0, 0, 69, 0), -- Rebirth (Rank 6)
+(@TrainerId+16, 26995, 100000, 0, 0, 9901, 0, 0, 70, 0), -- Soothe Animal (Rank 4)
+(@TrainerId+16, 26996, 73000, 0, 0, 9881, 0, 0, 67, 0), -- Maul (Rank 8)
+(@TrainerId+16, 26997, 53000, 0, 0, 9908, 0, 0, 64, 0), -- Swipe (Bear) (Rank 6)
+(@TrainerId+16, 26998, 43000, 0, 0, 9898, 0, 0, 62, 0), -- Demoralizing Roar (Rank 6)
+(@TrainerId+16, 27000, 73000, 0, 0, 9850, 0, 0, 67, 0), -- Claw (Rank 6)
+(@TrainerId+16, 27001, 39000, 0, 0, 9830, 0, 0, 61, 0), -- Shred (Rank 6)
+(@TrainerId+16, 27002, 100000, 0, 0, 27001, 0, 0, 70, 0), -- Shred (Rank 7)
+(@TrainerId+16, 27003, 53000, 0, 0, 9904, 0, 0, 64, 0), -- Rake (Rank 5)
+(@TrainerId+16, 27004, 90000, 0, 0, 31709, 0, 0, 69, 0), -- Cower (Rank 5)
+(@TrainerId+16, 27005, 66000, 0, 0, 9867, 0, 0, 66, 0), -- Ravage (Rank 5)
+(@TrainerId+16, 27006, 66000, 0, 0, 9827, 0, 0, 66, 0), -- Pounce (Rank 4)
+(@TrainerId+16, 27008, 73000, 0, 0, 9896, 0, 0, 67, 0), -- Rip (Rank 7)
+(@TrainerId+16, 27009, 81000, 0, 0, 17329, 26989, 0, 68, 0), -- Nature's Grasp (Rank 7)
+(@TrainerId+16, 27012, 100000, 0, 0, 17402, 0, 0, 70, 0), -- Hurricane (Rank 4)
+(@TrainerId+16, 27013, 200000, 0, 0, 24977, 0, 0, 70, 0), -- Insect Swarm (Rank 6)
+(@TrainerId+16, 31018, 30000, 0, 0, 22829, 0, 0, 60, 0), -- Ferocious Bite (Rank 5)
+(@TrainerId+16, 31709, 34000, 0, 0, 9892, 0, 0, 60, 0), -- Cower (Rank 4)
+(@TrainerId+16, 33357, 59000, 0, 0, 9821, 0, 0, 65, 0), -- Dash (Rank 3)
+(@TrainerId+16, 33745, 66000, 0, 0, 0, 0, 0, 66, 0), -- Lacerate (Rank 1)
+(@TrainerId+16, 33763, 53000, 0, 0, 0, 0, 0, 64, 0), -- Lifebloom (Rank 1)
+(@TrainerId+16, 33786, 100000, 0, 0, 0, 0, 0, 70, 0), -- Cyclone
+(@TrainerId+16, 33950, 34000, 0, 0, 33391, 0, 0, 60, 0), -- Flight Form (Shapeshift)
+(@TrainerId+16, 33982, 1700, 0, 0, 33876, 0, 0, 58, 0), -- Mangle (Cat) (Rank 2)
+(@TrainerId+16, 33983, 1700, 0, 0, 33982, 0, 0, 68, 0), -- Mangle (Cat) (Rank 3)
+(@TrainerId+16, 33986, 1700, 0, 0, 33878, 0, 0, 58, 0), -- Mangle (Bear) (Rank 2)
+(@TrainerId+16, 33987, 1900, 0, 0, 33986, 0, 0, 68, 0), -- Mangle (Bear) (Rank 3)
+(@TrainerId+16, 53199, 10000, 0, 0, 48505, 0, 0, 70, 0), -- Starfall (Rank 2)
+(@TrainerId+16, 53223, 600, 0, 0, 50516, 0, 0, 60, 0), -- Typhoon (Rank 2)
+(@TrainerId+16, 53225, 1700, 0, 0, 53223, 0, 0, 70, 0), -- Typhoon (Rank 3)
+(@TrainerId+16, 53248, 1700, 0, 0, 48438, 0, 0, 70, 0); -- Wild Growth (Rank 2)

@@ -1,3 +1,6 @@
+-- Outside starting zones: 9465,16655,4217,16721,3034,5504,12042,4218,8142,5505,3033,4219,3036,5506,3602,3064
+-- Starting zones: 3597,3060
+
 SET @TrainerId := 200;
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+0 WHERE `CreatureId` IN (
     913, -- Lyria Du Lac <Warrior Trainer>
@@ -285,4 +288,26 @@ UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+15 WHERE `Creatur
     2126, -- Maximillion <Warlock Trainer>
     3156, -- Nartok <Warlock Trainer>
     15283 -- Summoner Teli'Larien <Warlock Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+16 WHERE `CreatureId` IN (
+    3033, -- Turak Runetotem <Druid Trainer>
+    3034, -- Sheal Runetotem <Druid Trainer>
+    3036, -- Kym Wildmane <Druid Trainer>
+    3064, -- Gennia Runetotem <Druid Trainer>
+    3602, -- Kal <Druid Trainer>
+    4217, -- Mathrengyl Bearwalker <Druid Trainer>
+    4218, -- Denatharion <Druid Trainer>
+    4219, -- Fylerian Nightwing <Druid Trainer>
+    5504, -- Sheldras Moontree <Druid Trainer>
+    5505, -- Theridran <Druid Trainer>
+    5506, -- Maldryn <Druid Trainer>
+    8142, -- Jannos Lighthoof <Druid Trainer>
+    9465, -- Golhine the Hooded <Druid Trainer>
+    12042, -- Loganaar <Druid Trainer>
+    16655, -- Harene Plainwalker <Druid Trainer>
+    16721 -- Shalannius <Druid Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+17 WHERE `CreatureId` IN (
+    3060, -- Gart Mistrunner <Druid Trainer>
+    3597 -- Mardant Strongoak <Druid Trainer>
 );
