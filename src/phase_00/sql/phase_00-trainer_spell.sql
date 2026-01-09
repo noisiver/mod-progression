@@ -304,7 +304,6 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+4, 20910, 2100, 0, 0, 20909, 0, 0, 54, 0), -- Counterattack (Rank 3)
 (@TrainerId+4, 24132, 1800, 0, 0, 19386, 0, 0, 50, 0), -- Wyvern Sting (Rank 2)
 (@TrainerId+4, 24133, 2500, 0, 0, 24132, 0, 0, 60, 0), -- Wyvern Sting (Rank 3)
-(@TrainerId+4, 63668, 1800, 0, 0, 3674, 0, 0, 57, 0), -- Black Arrow (Rank 2)
 -- Hunter: Starting zones
 (@TrainerId+5, 1130, 100, 0, 0, 0, 0, 0, 6, 0), -- Hunter's Mark (Rank 1)
 (@TrainerId+5, 1494, 10, 0, 0, 0, 0, 0, 2, 0), -- Track Beasts
@@ -386,7 +385,6 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+6, 17347, 384, 0, 0, 16511, 0, 0, 46, 0), -- Hemorrhage (Rank 2)
 (@TrainerId+6, 17348, 650, 0, 0, 17347, 0, 0, 58, 0), -- Hemorrhage (Rank 3)
 (@TrainerId+6, 34411, 5500, 0, 0, 1329, 0, 0, 50, 0), -- Mutilate (Rank 2)
-(@TrainerId+6, 34412, 6500, 0, 0, 34411, 0, 0, 60, 0), -- Mutilate (Rank 3)
 -- Rogue: Starting zones
 (@TrainerId+7, 53, 100, 0, 0, 0, 0, 0, 4, 0), -- Backstab (Rank 1)
 (@TrainerId+7, 921, 100, 0, 0, 0, 0, 0, 4, 0), -- Pick Pocket
@@ -532,7 +530,6 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+8, 27841, 2300, 0, 0, 14819, 0, 0, 60, 0), -- Divine Spirit (Rank 4)
 (@TrainerId+8, 27870, 1200, 0, 0, 724, 0, 0, 50, 0), -- Lightwell (Rank 2)
 (@TrainerId+8, 27871, 1500, 0, 0, 27870, 0, 0, 60, 0), -- Lightwell (Rank 3)
-(@TrainerId+8, 34916, 2300, 0, 0, 34914, 0, 0, 60, 0), -- Vampiric Touch (Rank 2)
 -- Priest: Starting zones
 (@TrainerId+9, 17, 100, 0, 0, 0, 0, 0, 6, 0), -- Power Word: Shield (Rank 1)
 (@TrainerId+9, 589, 100, 0, 0, 0, 0, 0, 4, 0), -- Shadow Word: Pain (Rank 1)
@@ -834,7 +831,6 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+12, 18809, 2100, 0, 0, 12526, 0, 0, 60, 0), -- Pyroblast (Rank 8)
 (@TrainerId+12, 22782, 1400, 0, 0, 6117, 0, 0, 46, 0), -- Mage Armor (Rank 2)
 (@TrainerId+12, 22783, 40000, 0, 0, 22782, 0, 0, 58, 0), -- Mage Armor (Rank 3)
-(@TrainerId+12, 33041, 1900, 0, 0, 31661, 0, 0, 56, 0), -- Dragon's Breath (Rank 2)
 (@TrainerId+12, 45438, 8000, 0, 0, 0, 0, 0, 30, 0), -- Ice Block
 -- Mage: Starting zones
 (@TrainerId+13, 116, 100, 0, 0, 0, 0, 0, 4, 0), -- Frostbolt (Rank 1)
