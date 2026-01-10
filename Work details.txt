@@ -40,7 +40,7 @@ Kalimdor
 ✅ Desolace
 ✅ Durotar
 ✅ Dustwallow Marsh
-❌ Felwood
+✅ Felwood
 ❌ Feralas
 ❌ Moonglade
 ❌ Mulgore

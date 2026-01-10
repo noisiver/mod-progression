@@ -87,6 +87,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     21905, -- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
     21906, -- Kelara <Keeper of Sha'tari Heirlooms>
     22836, -- Jheel
+    22931, -- Gorrim <Emerald Circle Flight Master>
     22935, -- Suralais Farwind <Hippogryph Master>
     22936, -- Auhula <Apprentice Hippogryph Master>
     22987, -- Skyguard Nether Ray

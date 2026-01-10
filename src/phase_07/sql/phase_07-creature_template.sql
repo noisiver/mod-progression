@@ -62,8 +62,10 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     10036, -- Brackenwall Enforcer
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
+    11180, -- Bloodvenom Post Brave
     11194, -- Argent Defender <The Argent Dawn>
     11899, -- Shardi <Wind Rider Master>
+    11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
     12338, -- Shadowprey Guardian
     12616, -- Vhulgra <Wind Rider Master>

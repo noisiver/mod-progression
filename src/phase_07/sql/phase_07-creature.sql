@@ -44,6 +44,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20497, -- Fima Five-Fingers <Arena Battlemaster>
     21045, -- Hired Bodyguard <The Black Flame>
     21448, -- Gadgetzan Sniper
+    22931, -- Gorrim <Emerald Circle Flight Master>
     22935, -- Suralais Farwind <Hippogryph Master>
     22936, -- Auhula <Apprentice Hippogryph Master>
     23127, -- Farseer Javad <Shaman Trainer>
