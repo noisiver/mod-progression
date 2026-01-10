@@ -5,6 +5,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     16841, -- Watch Commander Relthorn Netherwane
     17092, -- Advisor Duskingdawn
     17094, -- Nemeth Hawkeye <Farstriders>
+    17095, -- Balandar Brightstar
     17097, -- Advisor Sarophas
     17098, -- Ambassador Dawnsinger
     17100, -- Advisor Sunsworn
@@ -13,6 +14,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     17105, -- Emissary Valustraa <Mage Trainer>
     17106, -- Vindicator Palanaar
     17109, -- Cersei Dusksinger
+    17119, -- Ithania
     17127, -- Anchorite Avuun
     17218, -- Huraan
     17223, -- Ambassador Rualeth
@@ -47,7 +49,35 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     23127, -- Farseer Javad <Shaman Trainer>
     23128, -- Master Pyreanor <Paladin Trainer>
     23131, -- Blood Knight Honor Guard
+    23566, -- Calia Hastings <SI:7>
+    23567, -- Inspector Tarem
+    23568, -- Captain Darill
+    23570, -- Gizzix Grimegurgle
+    23571, -- Razbo Rustgear <Weapon & Armor Merchant>
+    23572, -- Drazzit Dripvalve
+    23573, -- Krixil Slogswitch <Food & Drink>
+    23579, -- Brogg <Stonemaul Survivor>
+    23600, -- Apprentice Morlann <Tabetha's Apprentice>
+    23601, -- Apprentice Garion <Tabetha's Apprentice>
+    23602, -- Deserter Agitator
+    23612, -- Dyslix Silvergrub <Flight Master>
+    23620, -- Privateer
     23635, -- Krixx <Zeppelin Engineer>
+    23636, -- Mudsprocket Bruiser
+    23704, -- Cassa Crimsonwing <Apprentice Gryphon Master>
+    23723, -- Sergeant Lukas
+    23797, -- Moxie Steelgrille
+    23835, -- Sergeant Amelyn
+    23896, -- "Dirty" Michael Crowe <Fish Merchant>
+    23905, -- Major Mills
+    23942, -- Andello Porter <SI:7>
+    23950, -- Lieutenant Khand
+    23951, -- Lieutenant Aden
+    23995, -- Axle <Innkeeper>
+    24005, -- Mill Worker
+    24006, -- Foreman Tionn
+    24007, -- Mill Courier
+    24208, -- "Little" Logok <Innkeeper>
     24366, -- Nizzle <Gryphon Master>
     24729, -- Alicia
     25009, -- Captain Angelina Soluna <The Bravery>
@@ -60,6 +90,8 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     25016, -- Sailor Wills <The Bravery>
     25017, -- Sailor Fairfolk <The Bravery>
     25018, -- Sailor Stoneheel <The Bravery>
+    27703, -- Ysuria <Portal Trainer>
+    27704, -- Horace Alder <Mage Trainer>
     27705, -- Lorrin Foxfire <Portal Trainer>
     29095 -- Edward Cairn <Elder>
 );

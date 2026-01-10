@@ -6,11 +6,20 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     180367, -- Altar of Zanza
     180375, -- Altar of Zanza Spell Focus
     181310, -- Outland Map
+    181626, -- Warped Crates
     182560, -- Meeting Stone (Caverns of Time)
     183435, -- Marksman Regiment's Cooking Pot
     184463, -- Meeting Stone (Karazhan)
     184503, -- Orb of Translocation
+    185321, -- Meeting Stone (Onyxia's Lair)
+    186230, -- Mailbox
+    186231, -- Forge
+    186232, -- Anvil
+    186233, -- Campfire
+    186241, -- Mudsprocket
     186251, -- Meeting Stone (Zul'Aman)
+    186426, -- Wanted Poster
+    186432, -- Cove Cannon
     187290, -- Guild Vault
     187292, -- Guild Vault
     187294, -- Guild Vault

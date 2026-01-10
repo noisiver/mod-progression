@@ -1,3 +1,7 @@
+DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
+    11211, -- Help for Mudsprocket
+    11215 -- Help Mudsprocket
+);
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
     269, -- The Black Morass
     540, -- The Shattered Halls

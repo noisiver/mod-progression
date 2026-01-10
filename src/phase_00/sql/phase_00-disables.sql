@@ -1,4 +1,4 @@
-DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (4903, 7441, 7492, 7494, 8800, 8286, 8556, 8557, 8558, 8689, 8690, 8691, 8692, 8693, 8694, 8695, 8696, 8697, 8698, 8699, 8700, 8701, 8702, 8703, 8704, 8705, 8706, 8707, 8708, 8709, 8710, 8711, 8712, 8922, 8923, 9023, 11481, 14100, 14111);
+DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (4903, 7441, 7492, 7494, 8800, 8286, 8556, 8557, 8558, 8689, 8690, 8691, 8692, 8693, 8694, 8695, 8696, 8697, 8698, 8699, 8700, 8701, 8702, 8703, 8704, 8705, 8706, 8707, 8708, 8709, 8710, 8711, 8712, 8922, 8923, 9023, 11211, 11215, 11481, 14100, 14111);
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (249, 269, 309, 349, 409, 429, 469, 509, 531, 532, 533, 534, 540, 542, 543, 544, 545, 546, 547, 548, 550, 552, 553, 554, 555, 556, 557, 558, 560, 564, 565, 568, 574, 575, 576, 578, 580, 585, 595, 599, 600, 601, 602, 603, 604, 608, 615, 616, 619, 624, 631, 632, 649, 650, 658, 668, 724);
 DELETE FROM `disables` WHERE `sourceType` = 3 AND `entry` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 30, 32);
 DELETE FROM `disables` WHERE `sourceType` = 4 AND `entry` IN (12558, 12559, 12564, 12565, 12566, 12567, 12568, 12569);
@@ -42,6 +42,8 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (1, 8922, 0, '', '', 'A Supernatural Device'), -- Phase 4
 (1, 8923, 0, '', '', 'A Supernatural Device'), -- Phase 4
 (1, 9023, 0, '', '', 'The Perfect Poison'), -- Phase 5
+(1, 11211, 0, '', '', 'Help for Mudsprocket'), -- Phase 7
+(1, 11215, 0, '', '', 'Help Mudsprocket'), -- Phase 7
 (1, 11481, 0, '', '', 'Crisis at the Sunwell'), -- Phase 12
 (1, 14100, 0, '', '', 'Relic of the Earthen Ring'), -- Phase 13
 (1, 14111, 0, '', '', 'Relic of the Earthen Ring'), -- Phase 13

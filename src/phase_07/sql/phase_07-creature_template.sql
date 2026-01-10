@@ -35,6 +35,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
+    4321, -- Baldruc <Gryphon Master>
     4423, -- Darnassian Protector
     4551, -- Michael Garrett <Bat Handler>
     5546, -- Grunt Zuul
@@ -58,9 +59,11 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     9297, -- Enraged Wyvern
     9521, -- Enraged Felbat
     9526, -- Enraged Gryphon
+    10036, -- Brackenwall Enforcer
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     11194, -- Argent Defender <The Argent Dawn>
+    11899, -- Shardi <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
     12338, -- Shadowprey Guardian
     12616, -- Vhulgra <Wind Rider Master>
@@ -140,6 +143,7 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     4949, -- Thrall <Warchief>
+    4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
     7999, -- Tyrande Whisperwind <High Priestess of Elune>
     10181, -- Lady Sylvanas Windrunner <Banshee Queen>

@@ -39,21 +39,21 @@ Kalimdor
 ✅ Darnassus
 ✅ Desolace
 ✅ Durotar
-❌ Dustwallow Marsh
+✅ Dustwallow Marsh
 ❌ Felwood
 ❌ Feralas
 ❌ Moonglade
 ❌ Mulgore
 ✅ Orgrimmar
-❌ Silithus
+✅ Silithus
 ❌ Stonetalon Mountains
-❌ Tanaris
+✅ Tanaris
 ❌ Teldrassil
 ❌ The Barrens
 ✅ The Exodar
-❌ Thousand Needles
+✅ Thousand Needles
 ❌ Thunder Bluff
-❌ Un'Goro Crater
+✅ Un'Goro Crater
 ❌ Winterspring
 
 Outland
