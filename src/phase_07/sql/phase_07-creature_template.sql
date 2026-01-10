@@ -48,9 +48,11 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     6726, -- Thalon <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
+    7939, -- Feathermoon Sentinel
     7865, -- Wildhammer Sentry
     7980, -- Deathguard Elite
     8018, -- Guthrum Thunderfist <Gryphon Master>
+    8019, -- Fyldren Moonfeather <Hippogryph Master>
     8020, -- Shyn <Wind Rider Master>
     8147, -- Camp Mojache Brave
     8155, -- Kargath Grunt
@@ -132,6 +134,9 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     9043, -- Scarshield Grunt <Scarshield Legion>
     9044, -- Scarshield Sentry <Scarshield Legion>
     10608, -- Scarlet Priest
+    11440, -- Gordok Enforcer
+    11442, -- Gordok Mauler
+    11443, -- Gordok Ogre-Mage
     11777, -- Shadowshard Rumbler
     11778, -- Shadowshard Smasher
     11781, -- Ambershard Crusher

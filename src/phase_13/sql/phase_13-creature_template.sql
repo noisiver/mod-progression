@@ -368,3 +368,4 @@ UPDATE `creature_template` SET `HealthModifier` = 50, `ManaModifier` = 10 WHERE 
 UPDATE `creature_template` SET `DamageModifier` = 65, `HealthModifier` = 112 WHERE `entry` = 18728; -- Doom Lord Kazzak
 UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2 WHERE `entry` = 12657; -- Don Pompa
 UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2, `speed_run` = 2.28571, `AIName` = '' WHERE `entry` = 14720; -- High Overlord Saurfang
+UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `rank` = 3 WHERE `entry` = 3936; -- Shandris Feathermoon <General of the Sentinel Army>

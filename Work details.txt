@@ -41,7 +41,7 @@ Kalimdor
 ✅ Durotar
 ✅ Dustwallow Marsh
 ✅ Felwood
-❌ Feralas
+✅ Feralas
 ❌ Moonglade
 ❌ Mulgore
 ✅ Orgrimmar
