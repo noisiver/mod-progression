@@ -12,6 +12,14 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     184463, -- Meeting Stone (Karazhan)
     184503, -- Orb of Translocation
     185321, -- Meeting Stone (Onyxia's Lair)
+    185491, -- Emerald Dream Tree 001
+    185492, -- Emerald Dream Flower 001
+    185493, -- Moonglade Fountain
+    185494, -- Emerald Dream Flower 002
+    185495, -- Emerald Dream Flower 003
+    185503, -- Barrow Chest
+    185504, -- Moonglade Dream Catcher
+    185518, -- Dream Catcher Glow
     186230, -- Mailbox
     186231, -- Forge
     186232, -- Anvil
@@ -40,6 +48,8 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     190712, -- Barbershop Chair
     195141, -- Portal to Blasted Lands
     195142, -- Portal to Blasted Lands
+    195218, -- Mailbox
+    195219, -- Mailbox
     195528, -- Mailbox
     195529, -- Mailbox
     195530, -- Mailbox
@@ -79,6 +89,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
     347, -- Blacksmith's Anvil
     387, -- Forge
+    49222, -- The Sleeper's Bed
     50675, -- Rope Line
     50676, -- Rope Line
     50677, -- Rope Line Pole

@@ -64,8 +64,11 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     10036, -- Brackenwall Enforcer
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
+    10897, -- Sindrayl <Hippogryph Master>
     11180, -- Bloodvenom Post Brave
     11194, -- Argent Defender <The Argent Dawn>
+    11798, -- Bunthen Plainswind <Thunder Bluff Flight Master>
+    11822, -- Moonglade Warden
     11899, -- Shardi <Wind Rider Master>
     11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
@@ -73,6 +76,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
+    12740, -- Faustron <Wind Rider Master>
     13177, -- Vahgruk <Wind Rider Master>
     14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
@@ -180,7 +184,9 @@ UPDATE `creature_template` SET `minlevel` = 68, `maxlevel` = 69 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 45, `maxlevel` = 45 WHERE `entry` = 2405; -- Tarren Mill Deathguard
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72 WHERE `entry` IN (
     2425, -- Varimathras
+    11832, -- Keeper Remulos
     14720 -- High Overlord Saurfang
 );
 UPDATE `creature_template` SET `mingold` = 1300000, `maxgold` = 1820000 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `DamageModifier` = 60 WHERE `entry` = 14720; -- High Overlord Saurfang
+UPDATE `creature_template` SET `maxlevel` = 70 WHERE `entry` = 11802; -- Dendrite Starblaze

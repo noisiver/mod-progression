@@ -65,8 +65,10 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     10036, -- Brackenwall Enforcer
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
+    10897, -- Sindrayl <Hippogryph Master>
     11180, -- Bloodvenom Post Brave
     11194, -- Argent Defender <The Argent Dawn>
+    11822, -- Moonglade Warden
     11899, -- Shardi <Wind Rider Master>
     11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
@@ -74,6 +76,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
+    12740, -- Faustron <Wind Rider Master>
     13177, -- Vahgruk <Wind Rider Master>
     14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
@@ -89,6 +92,7 @@ UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Dis
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62 WHERE `entry` IN (
     466, -- General Marcus Jonathan <High Commander of Stormwind Defense>
     2425, -- Varimathras
+    11832, -- Keeper Remulos
     14720 -- High Overlord Saurfang
 );
 UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1747; -- Anduin Wrynn <Prince of Stormwind>
@@ -105,6 +109,7 @@ UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `BaseAttackTime
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN (
     8383, -- Master Wood
     10540, -- Vol'jin
+    11798, -- Bunthen Plainswind <Thunder Bluff Flight Master>
     13839, -- Royal Dreadguard
     14363, -- Thief Catcher Shadowdelve
     14365, -- Thief Catcher Farmountain
@@ -534,3 +539,4 @@ UPDATE `creature_template` SET `DamageModifier` = 90, `HealthModifier` = 160 WHE
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+3, `npcflag` = `npcflag` & ~2 | 1 WHERE `entry` = 12657; -- Don Pompa
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+4, `npcflag` = `npcflag` & ~2 | 1, `speed_run` = 1, `DamageModifier` = 15, `AIName` = 'SmartAI' WHERE `entry` = 14720; -- High Overlord Saurfang
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62, `rank` = 0 WHERE `entry` = 3936; -- Shandris Feathermoon <General of the Sentinel Army>
+UPDATE `creature_template` SET `maxlevel` = 60 WHERE `entry` = 11802; -- Dendrite Starblaze

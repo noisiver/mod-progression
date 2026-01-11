@@ -86,7 +86,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     21448, -- Gadgetzan Sniper
     21905, -- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
     21906, -- Kelara <Keeper of Sha'tari Heirlooms>
+    22834, -- Clintar Dreamwalker
+    22835, -- Cenarion Dreamwarden
     22836, -- Jheel
+    22837, -- Dreamwarden Lurosa
+    22889, -- Manifest Nightmare
+    22902, -- Phantasmal Lash
     22931, -- Gorrim <Emerald Circle Flight Master>
     22935, -- Suralais Farwind <Hippogryph Master>
     22936, -- Auhula <Apprentice Hippogryph Master>

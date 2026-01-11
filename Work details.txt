@@ -42,7 +42,7 @@ Kalimdor
 ✅ Dustwallow Marsh
 ✅ Felwood
 ✅ Feralas
-❌ Moonglade
+✅ Moonglade
 ❌ Mulgore
 ✅ Orgrimmar
 ✅ Silithus
