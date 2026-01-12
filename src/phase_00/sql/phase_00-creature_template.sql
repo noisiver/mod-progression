@@ -26,6 +26,9 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    3210, -- Brave Proudsnout
+    3211, -- Brave Lightninghorn
+    3214, -- Brave Greathoof
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
@@ -49,8 +52,9 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     6726, -- Thalon <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
-    7939, -- Feathermoon Sentinel
     7865, -- Wildhammer Sentry
+    7939, -- Feathermoon Sentinel
+    7975, -- Mulgore Protector
     7980, -- Deathguard Elite
     8018, -- Guthrum Thunderfist <Gryphon Master>
     8019, -- Fyldren Moonfeather <Hippogryph Master>
@@ -233,8 +237,11 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     17468 -- Prophet Velen
 );
 UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (
+    2966, -- Battleboar
     3101, -- Vile Familiar
     3102, -- Felstalker
+    3229, -- "Squealer" Thornmantle
+    8554, -- Chief Sharptusk Thornmantle
     16537 -- Mutated Owlkin
 );
 UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Baneshadow
@@ -540,3 +547,8 @@ UPDATE `creature_template` SET `gossip_menu_id` = @cId+3, `npcflag` = `npcflag` 
 UPDATE `creature_template` SET `gossip_menu_id` = @cId+4, `npcflag` = `npcflag` & ~2 | 1, `speed_run` = 1, `DamageModifier` = 15, `AIName` = 'SmartAI' WHERE `entry` = 14720; -- High Overlord Saurfang
 UPDATE `creature_template` SET `minlevel` = 62, `maxlevel` = 62, `rank` = 0 WHERE `entry` = 3936; -- Shandris Feathermoon <General of the Sentinel Army>
 UPDATE `creature_template` SET `maxlevel` = 60 WHERE `entry` = 11802; -- Dendrite Starblaze
+UPDATE `creature_template` SET `faction` = 111 WHERE `entry` IN (
+    2952, -- Bristleback Quilboar
+    2953, -- Bristleback Shaman
+    2954 -- Bristleback Battleboar
+);

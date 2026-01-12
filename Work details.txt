@@ -43,7 +43,7 @@ Kalimdor
 ✅ Felwood
 ✅ Feralas
 ✅ Moonglade
-❌ Mulgore
+✅ Mulgore
 ✅ Orgrimmar
 ✅ Silithus
 ❌ Stonetalon Mountains

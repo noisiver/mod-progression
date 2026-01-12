@@ -47,9 +47,14 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     946, -- Frostmane Novice
     1505, -- Night Web Spider
     1688, -- Night Web Matriarch
+    2953, -- Bristleback Shaman
+    2954, -- Bristleback Battleboar
+    2966, -- Battleboar
     3101, -- Vile Familiar
     3102, -- Felstalker
     3183, -- Yarrog Baneshadow
+    3229, -- "Squealer" Thornmantle
+    8554, -- Chief Sharptusk Thornmantle
     16537 -- Mutated Owlkin
 );
 UPDATE `creature_template` SET `minlevel` = 77, `maxlevel` = 77 WHERE `entry` IN (
@@ -369,3 +374,4 @@ UPDATE `creature_template` SET `DamageModifier` = 65, `HealthModifier` = 112 WHE
 UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2 WHERE `entry` = 12657; -- Don Pompa
 UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = `npcflag` & ~1 | 2, `speed_run` = 2.28571, `AIName` = '' WHERE `entry` = 14720; -- High Overlord Saurfang
 UPDATE `creature_template` SET `minlevel` = 72, `maxlevel` = 72, `rank` = 3 WHERE `entry` = 3936; -- Shandris Feathermoon <General of the Sentinel Army>
+UPDATE `creature_template` SET `faction` = 189 WHERE `entry` = 2952; -- Bristleback Quilboar

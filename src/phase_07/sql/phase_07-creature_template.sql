@@ -25,6 +25,9 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    3210, -- Brave Proudsnout
+    3211, -- Brave Lightninghorn
+    3214, -- Brave Greathoof
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
@@ -48,8 +51,9 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     6726, -- Thalon <Wind Rider Master>
     7823, -- Bera Stonehammer <Gryphon Master>
     7824, -- Bulkrek Ragefist <Wind Rider Master>
-    7939, -- Feathermoon Sentinel
     7865, -- Wildhammer Sentry
+    7939, -- Feathermoon Sentinel
+    7975, -- Mulgore Protector
     7980, -- Deathguard Elite
     8018, -- Guthrum Thunderfist <Gryphon Master>
     8019, -- Fyldren Moonfeather <Hippogryph Master>
