@@ -46,7 +46,7 @@ Kalimdor
 ✅ Mulgore
 ✅ Orgrimmar
 ✅ Silithus
-❌ Stonetalon Mountains
+✅ Stonetalon Mountains
 ✅ Tanaris
 ❌ Teldrassil
 ✅ The Barrens

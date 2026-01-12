@@ -36,10 +36,12 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     3841, -- Caylais Moonfeather <Hippogryph Master>
     4262, -- Darnassus Sentinel
     4267, -- Daelyshia <Hippogryph Master>
+    4312, -- Tharm <Wind Rider Master>
     4314, -- Gorkas <Wind Rider Master>
     4317, -- Nyse <Wind Rider Master>
     4319, -- Thyssiana <Hippogryph Master>
     4321, -- Baldruc <Gryphon Master>
+    4407, -- Teloren <Hippogryph Master>
     4423, -- Darnassian Protector
     4551, -- Michael Garrett <Bat Handler>
     5546, -- Grunt Zuul
