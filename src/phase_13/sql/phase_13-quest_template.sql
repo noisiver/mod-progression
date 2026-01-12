@@ -3,6 +3,7 @@ UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0 WHERE `I
 UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0, `RewardItem2` = 49192, `RewardAmount2` = 1 WHERE `ID` = 6622; -- Triage
 UPDATE `quest_template` SET `RewardDisplaySpell` = 0, `RewardSpell` = 0, `RewardItem2` = 49193, `RewardAmount2` = 1 WHERE `ID` = 6624; -- Triage
 UPDATE `quest_template` SET `Flags` = `Flags` | 16384 WHERE `ID` IN (
+    781, -- Attack on Camp Narache
     1470, -- Piercing the Veil
     1485, -- Vile Familiars
     1598, -- The Stolen Tome
