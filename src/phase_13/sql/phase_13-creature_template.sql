@@ -47,6 +47,8 @@ UPDATE `creature_template` SET `faction` = 7 WHERE `entry` IN (
     946, -- Frostmane Novice
     1505, -- Night Web Spider
     1688, -- Night Web Matriarch
+    1986, -- Webwood Spider
+    1994, -- Githyiss the Vile
     2953, -- Bristleback Shaman
     2954, -- Bristleback Battleboar
     2966, -- Battleboar

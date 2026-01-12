@@ -31,6 +31,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
+    3571, -- Teldrassil Sentinel
     3615, -- Devrak <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     3841, -- Caylais Moonfeather <Hippogryph Master>
@@ -79,6 +80,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     11899, -- Shardi <Wind Rider Master>
     11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
+    12160, -- Shadowglen Sentinel
     12338, -- Shadowprey Guardian
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>

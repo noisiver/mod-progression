@@ -32,6 +32,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
+    3571, -- Teldrassil Sentinel
     3615, -- Devrak <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     3841, -- Caylais Moonfeather <Hippogryph Master>
@@ -79,6 +80,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     11899, -- Shardi <Wind Rider Master>
     11900, -- Brakkar <Wind Rider Master>
     11901, -- Andruk <Wind Rider Master>
+    12160, -- Shadowglen Sentinel
     12338, -- Shadowprey Guardian
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
@@ -234,7 +236,9 @@ UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN
 UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` = 2405; -- Tarren Mill Deathguard
 UPDATE `creature_template` SET `faction` = 22 WHERE `entry` IN (
     1505, -- Night Web Spider
-    1688 -- Night Web Matriarch
+    1688, -- Night Web Matriarch
+    1986, -- Webwood Spider
+    1994 -- Githyiss the Vile
 );
 UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN (
     16222, -- Silvermoon City Guardian

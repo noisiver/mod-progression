@@ -48,7 +48,7 @@ Kalimdor
 ✅ Silithus
 ✅ Stonetalon Mountains
 ✅ Tanaris
-❌ Teldrassil
+✅ Teldrassil
 ✅ The Barrens
 ✅ The Exodar
 ✅ Thousand Needles
