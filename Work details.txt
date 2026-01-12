@@ -54,7 +54,7 @@ Kalimdor
 ✅ Thousand Needles
 ❌ Thunder Bluff
 ✅ Un'Goro Crater
-❌ Winterspring
+✅ Winterspring
 
 Outland
 ❌ Blade's Edge Mountains

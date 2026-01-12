@@ -74,6 +74,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     10897, -- Sindrayl <Hippogryph Master>
+    11138, -- Maethrya <Hippogryph Master>
+    11139, -- Yugrek <Wind Rider Master>
     11180, -- Bloodvenom Post Brave
     11194, -- Argent Defender <The Argent Dawn>
     11822, -- Moonglade Warden
@@ -96,7 +98,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
 );
 UPDATE `creature_template` SET `minlevel` = 57, `maxlevel` = 57 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser
-    9460 -- Gadgetzan Bruiser
+    9460, -- Gadgetzan Bruiser
+    11190 -- Everlook Bruiser
 );
 UPDATE `creature_template` SET `name` = 'Timber Wolf' WHERE `entry` = 69; -- Diseased Timber Wolf
 UPDATE `creature_template` SET `name` = 'Young Wolf' WHERE `entry` = 299; -- Diseased Young Wolf

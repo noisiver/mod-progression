@@ -73,6 +73,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     10037, -- Lakeshire Guard
     10583, -- Gryfe <Flight Master>
     10897, -- Sindrayl <Hippogryph Master>
+    11138, -- Maethrya <Hippogryph Master>
+    11139, -- Yugrek <Wind Rider Master>
     11180, -- Bloodvenom Post Brave
     11194, -- Argent Defender <The Argent Dawn>
     11798, -- Bunthen Plainswind <Thunder Bluff Flight Master>
@@ -96,7 +98,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
 );
 UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser
-    9460 -- Gadgetzan Bruiser
+    9460, -- Gadgetzan Bruiser
+    11190 -- Everlook Bruiser
 );
 UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     436, -- Blackrock Shadowcaster
