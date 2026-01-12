@@ -49,7 +49,7 @@ Kalimdor
 ❌ Stonetalon Mountains
 ✅ Tanaris
 ❌ Teldrassil
-❌ The Barrens
+✅ The Barrens
 ✅ The Exodar
 ✅ Thousand Needles
 ❌ Thunder Bluff

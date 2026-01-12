@@ -36,6 +36,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     19861, -- Bip Nigstrom <Arena Organizer>
     19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
     19909, -- Rex Pixem <Arena Battlemaster>
+    19910, -- Gargok <Warsong Gulch Battlemaster>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     19912, -- Zeggon Botsnap <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
@@ -55,6 +56,9 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     23127, -- Farseer Javad <Shaman Trainer>
     23128, -- Master Pyreanor <Paladin Trainer>
     23131, -- Blood Knight Honor Guard
+    23534, -- Babagaya Shadowcleft <Warlock Trainer>
+    23535, -- Matero Zeshuwal
+    23536, -- Nagulon <Matero Zeshuwal's Minion>
     23566, -- Calia Hastings <SI:7>
     23567, -- Inspector Tarem
     23568, -- Captain Darill

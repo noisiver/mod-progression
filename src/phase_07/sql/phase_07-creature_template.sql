@@ -31,6 +31,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     3296, -- Orgrimmar Grunt
     3305, -- Grisha <Wind Rider Master>
     3310, -- Doras <Wind Rider Master>
+    3615, -- Devrak <Wind Rider Master>
     3838, -- Vesprystus <Hippogryph Master>
     3841, -- Caylais Moonfeather <Hippogryph Master>
     4262, -- Darnassus Sentinel
@@ -82,10 +83,12 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     12636, -- Georgia <Bat Handler>
     12740, -- Faustron <Wind Rider Master>
     13177, -- Vahgruk <Wind Rider Master>
+    14717, -- Horde Elite
     14730, -- Revantusk Watcher
     15177, -- Cloud Skydancer <Hippogryph Master>
     15178, -- Runk Windtamer <Wind Rider Master>
-    16096 -- Steamwheedle Bruiser
+    16096, -- Steamwheedle Bruiser
+    16227 -- Bragok <Flight Master>
 );
 UPDATE `creature_template` SET `minlevel` = 67, `maxlevel` = 67 WHERE `entry` IN (
     4624, -- Booty Bay Bruiser
@@ -135,10 +138,14 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
     5645, -- Sandfury Hideskinner
     5646, -- Sandfury Axe Thrower
     5647, -- Sandfury Firecaller
+    6132, -- Razorfen Servitor
     6208, -- Caverndeep Invader
     6210, -- Caverndeep Pillager
     6213, -- Irradiated Invader
     6231, -- Techbot
+    7873, -- Razorfen Battleguard
+    7874, -- Razorfen Thornweaver
+    7872, -- Death's Head Cultist
     9043, -- Scarshield Grunt <Scarshield Legion>
     9044, -- Scarshield Sentry <Scarshield Legion>
     10608, -- Scarlet Priest

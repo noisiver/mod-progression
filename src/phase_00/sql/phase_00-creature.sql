@@ -72,6 +72,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     19859, -- Max Luna <Arena Battlemaster>
     19860, -- Katrina Turner
     19861, -- Bip Nigstrom <Arena Organizer>
+    19910, -- Gargok <Warsong Gulch Battlemaster>
     19911, -- Beka Zipwhistle <Arena Battlemaster>
     19912, -- Zeggon Botsnap <Arena Battlemaster>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
@@ -100,6 +101,9 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     23128, -- Master Pyreanor <Paladin Trainer>
     23131, -- Blood Knight Honor Guard
     23449, -- Yuula <Recruitment Officer>
+    23534, -- Babagaya Shadowcleft <Warlock Trainer>
+    23535, -- Matero Zeshuwal
+    23536, -- Nagulon <Matero Zeshuwal's Minion>
     23559, -- Budd Nedreck
     23560, -- Provisioner Ameenah <Reagents>
     23566, -- Calia Hastings <SI:7>
