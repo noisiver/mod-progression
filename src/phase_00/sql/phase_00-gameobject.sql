@@ -15,6 +15,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     184463, -- Meeting Stone (Karazhan)
     184503, -- Orb of Translocation
     185321, -- Meeting Stone (Onyxia's Lair)
+    185474, -- Cage
     185491, -- Emerald Dream Tree 001
     185492, -- Emerald Dream Flower 001
     185493, -- Moonglade Fountain

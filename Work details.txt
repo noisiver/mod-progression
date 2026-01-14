@@ -113,7 +113,7 @@ Class Quests
 ❌ Warrior
 
 Factions
-❌ Ashtongue Deathsworn
+✅ Ashtongue Deathsworn
 ❌ Cenarion Expedition
 ❌ Honor Hold
 ❌ Keepers of Time
@@ -130,7 +130,7 @@ Factions
 ❌ The Scale of the Sands
 ❌ The Scryers
 ❌ The Sha'tar
-❌ The Violet Eye
+✅ The Violet Eye
 ❌ Thrallmar
 
 Config

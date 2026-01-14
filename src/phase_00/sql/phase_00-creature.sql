@@ -86,8 +86,13 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     21045, -- Hired Bodyguard <The Black Flame>
     21432, -- Almaador <Sha'tari Quartermaster>
     21448, -- Gadgetzan Sniper
+    21700, -- Akama
+    21701, -- Ashtongue Deathsworn
+    22820, -- Seer Olum
+    21826, -- Sanoru
     21905, -- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
     21906, -- Kelara <Keeper of Sha'tari Heirlooms>
+    21962, -- Udalo
     22264, -- Ogri'la Steelshaper <Blacksmithing Supplies>
     22266, -- Ogri'la Grubgiver <Food Vendor>
     22270, -- Ogri'la Merchant <General Goods>
@@ -169,6 +174,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     23896, -- "Dirty" Michael Crowe <Fish Merchant>
     23905, -- Major Mills
     23942, -- Andello Porter <SI:7>
+    23948, -- Apprentice Tasserel
     23950, -- Lieutenant Khand
     23951, -- Lieutenant Aden
     23995, -- Axle <Innkeeper>
