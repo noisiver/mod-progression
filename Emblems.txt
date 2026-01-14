@@ -1,35 +1,35 @@
 Phase 14
-Heroic Dungeons: Emblem of Heroism
-Naxxramas: Emblem of Heroism / Emblem of Valor
-Obsidian Sanctum: Emblem of Heroism / Emblem of Valor
-Eye of Eternity: Emblem of Heroism / Emblem of Valor
+❌ Heroic Dungeons: Emblem of Heroism
+✅ Naxxramas: Emblem of Heroism / Emblem of Valor
+✅ Obsidian Sanctum: Emblem of Heroism / Emblem of Valor
+✅ Eye of Eternity: Emblem of Heroism / Emblem of Valor
 
 Phase 15
-Ulduar: Emblem of Valor / Emblem of Conquest
+❌ Ulduar: Emblem of Valor / Emblem of Conquest
 
 Phase 16
-Heroic Dungeons: Emblem of Valor
-Naxxramas: Emblem of Valor / Emblem of Conquest
-Obsidian Sanctum: Emblem of Valor / Emblem of Conquest
-Eye of Eternity: Emblem of Valor / Emblem of Conquest
-Ulduar: Emblem of Valor / Emblem of Conquest
-Onyxia's Lair: Emblem of Valor / Emblem of Conquest
-Trial of the Crusader: Emblem of Triumph / Emblem of Triumph
+❌ Heroic Dungeons: Emblem of Valor
+✅ Naxxramas: Emblem of Valor / Emblem of Conquest
+✅ Obsidian Sanctum: Emblem of Valor / Emblem of Conquest
+✅ Eye of Eternity: Emblem of Valor / Emblem of Conquest
+❌ Ulduar: Emblem of Valor / Emblem of Conquest
+❌ Onyxia's Lair: Emblem of Valor / Emblem of Conquest
+✅ Trial of the Crusader: Emblem of Triumph / Emblem of Triumph
 
 Phase 17
 Heroic Dungeons: Emblem of Conquest
-Naxxramas: Emblem of Conquest / Emblem of Triumph
-Obsidian Sanctum: Emblem of Conquest / Emblem of Triumph
-Eye of Eternity: Emblem of Conquest / Emblem of Triumph
-Ulduar: Emblem of Conquest / Emblem of Triumph
-Onyxia's Lair: Emblem of Conquest / Emblem of Triumph
-Icecrown Citadel: Emblem of Frost / Emblem of Frost
+✅ Naxxramas: Emblem of Conquest / Emblem of Triumph
+✅ Obsidian Sanctum: Emblem of Conquest / Emblem of Triumph
+✅ Eye of Eternity: Emblem of Conquest / Emblem of Triumph
+❌ Ulduar: Emblem of Conquest / Emblem of Triumph
+❌ Onyxia's Lair: Emblem of Conquest / Emblem of Triumph
+✅ Icecrown Citadel: Emblem of Frost / Emblem of Frost
 
 Phase 18
-Heroic Dungeons: Emblem of Triumph
-Naxxramas: Emblem of Triumph / Emblem of Triumph
-Obsidian Sanctum: Emblem of Triumph / Emblem of Triumph
-Eye of Eternity: Emblem of Triumph / Emblem of Triumph
-Ulduar: Emblem of Triumph / Emblem of Triumph
-Onyxia's Lair: Emblem of Triumph / Emblem of Triumph
-Ruby Sanctum: Emblem of Frost / Emblem of Frost
+❌ Heroic Dungeons: Emblem of Triumph
+✅ Naxxramas: Emblem of Triumph / Emblem of Triumph
+✅ Obsidian Sanctum: Emblem of Triumph / Emblem of Triumph
+✅ Eye of Eternity: Emblem of Triumph / Emblem of Triumph
+❌ Ulduar: Emblem of Triumph / Emblem of Triumph
+❌ Onyxia's Lair: Emblem of Triumph / Emblem of Triumph
+✅ Ruby Sanctum: Emblem of Frost / Emblem of Frost
