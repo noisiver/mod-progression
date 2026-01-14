@@ -312,6 +312,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33681, -- Korim <Master Leatherworking Trainer>
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
+    33963, -- Magister Sarien <Emblem of Conquest Quartermaster>
+    33964, -- Arcanist Firael <Emblem of Conquest Quartermaster>
     34526, -- Aponi Brightmane
     34528, -- Tahu Sagewind
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
@@ -336,6 +338,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35281, -- Rukua <Paladin Trainer>
     35364, -- Slahtz <Experience Eliminator>
     35365, -- Behsten <Experience Eliminator>
+    35494, -- Arcanist Miluria <Emblem of Triumph Quartermaster>
+    35495, -- Magistrix Vesara <Emblem of Triumph Quartermaster>
     35596, -- Arcanist Iramhir <Wintergrasp Battle-Mage>
     35597, -- Magistrix Aldessia <Wintergrasp Battle-Mage>
     35598, -- Arcanist Paharin <Wintergrasp Battle-Mage>
@@ -352,8 +356,12 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     37072, -- Rogg
     37523, -- Warden of the Sunwell
     37527, -- Halduron Brightwing <Ranger General>
+    37776, -- Apprentice Nelphi <Kirin Tor>
+    37780, -- Dark Ranger Vorel
     37888, -- Frax Bucketdrop <Flight Master>
     37915, -- Timothy Cunningham <Bat Handler>
+    37941, -- Magister Arlan <Emblem of Frost Quartermaster>
+    37942, -- Arcanist Uovril <Emblem of Frost Quartermaster>
     40405 -- Kieupid <Pet Trainer>
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
