@@ -12,7 +12,8 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem 
     15928, -- Thaddius
     15952, -- Maexxna
     15989, -- Sapphiron
-    15990 -- Kel'Thuzad
+    15990, -- Kel'Thuzad
+    28860 -- Sartharion <The Onyx Guardian>
 ) AND `Item` = 40752; -- Emblem of Heroism
 UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem of Conquest
     29373, -- Grobbulus (1)
@@ -28,7 +29,8 @@ UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem 
     29448, -- Thaddius (1)
     29278, -- Maexxna (1)
     29991, -- Sapphiron (1)
-    30061 -- Kel'Thuzad (1)
+    30061, -- Kel'Thuzad (1)
+    31311 -- Sartharion <The Onyx Guardian> (1)
 ) AND `Item` = 40753; -- Emblem of Valor
 SET @lootId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = @lootId+0; -- Onyxia

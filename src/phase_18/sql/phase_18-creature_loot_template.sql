@@ -12,5 +12,6 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     15928, -- Thaddius
     15952, -- Maexxna
     15989, -- Sapphiron
-    15990 -- Kel'Thuzad
+    15990, -- Kel'Thuzad
+    28860 -- Sartharion <The Onyx Guardian>
 ) AND `Item` = 45624; -- Emblem of Conquest
