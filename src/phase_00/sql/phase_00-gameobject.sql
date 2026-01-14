@@ -8,7 +8,10 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     181310, -- Outland Map
     181626, -- Warped Crates
     182560, -- Meeting Stone (Caverns of Time)
+    183421, -- Bonfire
     183435, -- Marksman Regiment's Cooking Pot
+    183930, -- Cauldron
+    184146, -- Forge
     184463, -- Meeting Stone (Karazhan)
     184503, -- Orb of Translocation
     185321, -- Meeting Stone (Onyxia's Lair)
@@ -20,6 +23,10 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     185503, -- Barrow Chest
     185504, -- Moonglade Dream Catcher
     185518, -- Dream Catcher Glow
+    185544, -- Campfire
+    185602, -- Anvil
+    185906, -- Kronk's Book
+    185965, -- Mailbox
     186230, -- Mailbox
     186231, -- Forge
     186232, -- Anvil
@@ -92,6 +99,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
     85, -- Stranglekelp Sack
     347, -- Blacksmith's Anvil
     387, -- Forge
+    14130, -- Arakkoa Cage
     49222, -- The Sleeper's Bed
     50675, -- Rope Line
     50676, -- Rope Line
