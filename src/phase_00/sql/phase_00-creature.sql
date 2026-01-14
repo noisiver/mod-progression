@@ -280,6 +280,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     30735, -- Kul Inkspiller <Inscription Supplies>
     31144, -- Grandmaster's Training Dummy
     31146, -- Heroic Training Dummy
+    31579, -- Arcanist Adurin <Emblem of Valor Quartermaster>
+    31581, -- Magister Brasael <Emblem of Valor Quartermaster>
     32666, -- Expert's Training Dummy
     32667, -- Master's Training Dummy
     33608, -- Alchemy
