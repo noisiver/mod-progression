@@ -112,6 +112,27 @@ Class Quests
 ❌ Warlock
 ❌ Warrior
 
+Factions
+❌ Ashtongue Deathsworn
+❌ Cenarion Expedition
+❌ Honor Hold
+❌ Keepers of Time
+❌ Kurenai
+❌ Lower City
+❌ Netherwing
+✅ Ogri'la
+✅ Sha'tari Skyguard
+✅ Shattered Sun Offensive
+❌ Sporeggar
+❌ The Aldor
+❌ The Consortium
+❌ The Mag'har
+❌ The Scale of the Sands
+❌ The Scryers
+❌ The Sha'tar
+❌ The Violet Eye
+❌ Thrallmar
+
 Config
 ❌ Lower max level than the expansion offers
 ❌ Quest information (POI etc)
