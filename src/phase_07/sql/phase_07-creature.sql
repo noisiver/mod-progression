@@ -43,6 +43,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20497, -- Fima Five-Fingers <Arena Battlemaster>
+    20499, -- Fizim Blastwrench <Arena Battlemaster>
     21045, -- Hired Bodyguard <The Black Flame>
     21448, -- Gadgetzan Sniper
     22834, -- Clintar Dreamwalker

@@ -78,6 +78,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
     20497, -- Fima Five-Fingers <Arena Battlemaster>
+    20499, -- Fizim Blastwrench <Arena Battlemaster>
     20613, -- Arodis Sunblade <Keeper of Sha'tari Artifacts>
     20616, -- Asuur <Keeper of Sha'tari Artifacts>
     20807, -- Scribe Saalyn <Aldor Inscriptions>
@@ -274,8 +275,13 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33681, -- Korim <Master Leatherworking Trainer>
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
+    34526, -- Aponi Brightmane
+    34528, -- Tahu Sagewind
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
+    34766, -- Krendle Bigpockets <Orgrimmar Zeppelin Master>
     34955, -- Karg Skullgore <Battlemaster>
+    34976, -- Ruk Warstomper <Battlemaster>
+    34978, -- Mosha Starhorn <Battlemaster>
     34986, -- Liedel the Just <Battlemaster>
     34988, -- Landuen Moonclaw <Battlemaster>
     34991, -- Borim Goldhammer <Battlemaster>
@@ -300,6 +306,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35600, -- Arcanist Laniria <Wintergrasp Battle-Mage>
     35601, -- Arcanist Nazalia <Wintergrasp Battle-Mage>
     35602, -- Magister Savarin <Wintergrasp Battle-Mage>
+    35603, -- Magister Dalhyr <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
     36479, -- Archmage Mordent Evenshade <The Highborne>

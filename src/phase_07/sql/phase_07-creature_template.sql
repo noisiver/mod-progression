@@ -25,6 +25,8 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    2995, -- Tal <Wind Rider Master>
+    3084, -- Bluffwatcher
     3210, -- Brave Proudsnout
     3211, -- Brave Lightninghorn
     3214, -- Brave Greathoof
@@ -171,6 +173,7 @@ UPDATE `creature_template` SET `rank` = 0 WHERE `entry` IN (
 UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN (
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    3057, -- Cairne Bloodhoof <High Chieftain>
     4949, -- Thrall <Warchief>
     4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>

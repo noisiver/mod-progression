@@ -1,6 +1,7 @@
 SET @cId := 5300000;
 UPDATE `creature_template` SET `minlevel` = 75, `maxlevel` = 75 WHERE `entry` IN (
     68, -- Stormwind City Guard
+    3084, -- Bluffwatcher
     3296, -- Orgrimmar Grunt
     4262, -- Darnassus Sentinel
     5595, -- Ironforge Guard
@@ -17,6 +18,7 @@ UPDATE `creature_template` SET `subname` = 'Prince of Stormwind' WHERE `entry` =
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `rank` = 1 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    3083, -- Honor Guard
     14304, -- Kor'kron Elite
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
@@ -34,6 +36,8 @@ UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80 WHERE `entry` IN
     14378, -- Huntress Skymane
     14379, -- Huntress Ravenoak
     14380, -- Huntress Leafrunner
+    14440, -- Hunter Sagewind
+    14441, -- Hunter Ragetotem
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
@@ -69,6 +73,7 @@ UPDATE `creature_template` SET `faction` = 190 WHERE `entry` = 706; -- Frostmane
 UPDATE `creature_template` SET `faction` = 2136 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    3057, -- Cairne Bloodhoof <High Chieftain>
     4949, -- Thrall <Warchief>
     4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>

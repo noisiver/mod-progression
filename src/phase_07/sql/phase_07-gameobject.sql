@@ -19,5 +19,10 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     186432, -- Cove Cannon
     188123 -- Mailbox
 );
-UPDATE `gameobject` SET `phaseMask` = 1 WHERE `guid` = 49222; -- The Sleeper's Bed
+UPDATE `gameobject` SET `phaseMask` = 1 WHERE `guid` IN (
+    38, -- Mag'har Rug
+    84, -- Stranglekelp Sack
+    85, -- Stranglekelp Sack
+    49222 -- The Sleeper's Bed
+);
 DELETE FROM `gameobject` WHERE `id` = 176996; -- CavernDoor01

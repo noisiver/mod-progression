@@ -87,6 +87,9 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     195629 -- Mailbox
 );
 UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN (
+    38, -- Mag'har Rug
+    84, -- Stranglekelp Sack
+    85, -- Stranglekelp Sack
     347, -- Blacksmith's Anvil
     387, -- Forge
     49222, -- The Sleeper's Bed

@@ -26,6 +26,8 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     2859, -- Gyll <Gryphon Master>
     2861, -- Gorrik <Wind Rider Master>
     2941, -- Lanie Reed <Gryphon Master>
+    2995, -- Tal <Wind Rider Master>
+    3084, -- Bluffwatcher
     3210, -- Brave Proudsnout
     3211, -- Brave Lightninghorn
     3214, -- Brave Greathoof
@@ -113,6 +115,7 @@ UPDATE `creature_template` SET `subname` = 'King of Stormwind' WHERE `entry` = 1
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `AIName` = 'SmartAI' WHERE `entry` = 1748; -- Highlord Bolvar Fordragon
 UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60, `rank` = 0 WHERE `entry` IN (
     1756, -- Stormwind Royal Guard
+    3083, -- Honor Guard
     14304, -- Kor'kron Elite
     15350, -- Horde Warbringer
     15351, -- Alliance Brigadier General
@@ -134,6 +137,8 @@ UPDATE `creature_template` SET `minlevel` = 60, `maxlevel` = 60 WHERE `entry` IN
     14378, -- Huntress Skymane
     14379, -- Huntress Ravenoak
     14380, -- Huntress Leafrunner
+    14440, -- Hunter Sagewind
+    14441, -- Hunter Ragetotem
     14402, -- Seeker Cromwell
     14403, -- Seeker Nahr
     14404, -- Seeker Thompson
@@ -230,6 +235,7 @@ UPDATE `creature_template` SET `faction` = 107 WHERE `entry` IN (
 UPDATE `creature_template` SET `faction` = 37 WHERE `entry` = 808; -- Grik'nir the Cold
 UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
+    3057, -- Cairne Bloodhoof <High Chieftain>
     4949, -- Thrall <Warchief>
     4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
