@@ -113,6 +113,7 @@ Class Quests
 ❌ Warrior
 
 Factions
+The Burning Crusade
 ✅ Ashtongue Deathsworn
 ❌ Cenarion Expedition
 ❌ Honor Hold
@@ -132,6 +133,25 @@ Factions
 ❌ The Sha'tar
 ✅ The Violet Eye
 ❌ Thrallmar
+Wrath of the Lich King
+❌ Alliance Vanguard
+❌ Argent Crusade
+❌ Explorers' League
+❌ Frenzyheart Tribe
+❌ Horde Expedition
+❌ Kirin Tor
+❌ Knights of the Ebon Blade
+❌ The Ashen Verdict
+❌ The Hand of Vengeance
+❌ The Kalu'ak
+❌ The Oracles
+❌ The Silver Covenant
+❌ The Sons of Hodir
+❌ The Sunreavers
+❌ The Taunka
+❌ The Wyrmrest Accord
+❌ Valiance Expedition
+❌ Warsong Offensive
 
 Config
 ❌ Lower max level than the expansion offers
