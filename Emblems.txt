@@ -12,12 +12,11 @@ Phase 16
 ✅ Naxxramas: Emblem of Valor / Emblem of Conquest
 ✅ Obsidian Sanctum: Emblem of Valor / Emblem of Conquest
 ✅ Eye of Eternity: Emblem of Valor / Emblem of Conquest
-❌ Ulduar: Emblem of Valor / Emblem of Conquest
 ❌ Onyxia's Lair: Emblem of Valor / Emblem of Conquest
 ✅ Trial of the Crusader: Emblem of Triumph / Emblem of Triumph
 
 Phase 17
-Heroic Dungeons: Emblem of Conquest
+❌ Heroic Dungeons: Emblem of Conquest
 ✅ Naxxramas: Emblem of Conquest / Emblem of Triumph
 ✅ Obsidian Sanctum: Emblem of Conquest / Emblem of Triumph
 ✅ Eye of Eternity: Emblem of Conquest / Emblem of Triumph
