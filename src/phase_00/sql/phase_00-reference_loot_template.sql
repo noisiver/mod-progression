@@ -1,3 +1,6 @@
+UPDATE `reference_loot_template` SET `Item` = 40752 WHERE `entry` IN ( -- Emblem of Heroism
+    34349 -- Sartharion (1), Flame Leviathan, Yogg-Saron, Yogg-Saron (1), Flame Leviathan (1)
+) AND `Item` = 47241; -- Emblem of Triumph
 SET @refId := 46000;
 DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+0 AND @refId+8;
 INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES

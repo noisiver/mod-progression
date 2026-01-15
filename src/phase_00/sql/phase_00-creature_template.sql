@@ -574,3 +574,4 @@ UPDATE `creature_template` SET `faction` = 111 WHERE `entry` IN (
     2953, -- Bristleback Shaman
     2954 -- Bristleback Battleboar
 );
+UPDATE `creature_template` SET `ScriptName` = 'npc_archmage_timear' WHERE `entry` = 31439; -- Archmage Timear
