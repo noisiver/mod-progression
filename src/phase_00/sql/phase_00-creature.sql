@@ -316,6 +316,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     33684, -- Weaver Aoa <Master Tailoring Trainer>
     33963, -- Magister Sarien <Emblem of Conquest Quartermaster>
     33964, -- Arcanist Firael <Emblem of Conquest Quartermaster>
+    33993, -- Emalon the Storm Watcher
+    34015, -- Tempest Warder
     34526, -- Aponi Brightmane
     34528, -- Tahu Sagewind
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
@@ -332,11 +334,13 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     35000, -- Mijiri <Battlemaster>
     35007, -- Lixa Felflinger <Battlemaster>
     35008, -- Sawemba <Battlemaster>
+    35013, -- Koralon the Flame Watcher
     35073, -- Farseer Eannu <The Earthen Ring>
     35093, -- Wind Rider Jahubo <Riding Trainer>
     35099, -- Bana Wildmane <Wind Rider Keeper>
     35100, -- Hargen Bronzewing <Riding Trainer>
     35101, -- Grunda Bronzewing <Gryphon Keeper>
+    35143, -- Flame Warder
     35281, -- Rukua <Paladin Trainer>
     35364, -- Slahtz <Experience Eliminator>
     35365, -- Behsten <Experience Eliminator>
@@ -364,6 +368,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     37915, -- Timothy Cunningham <Bat Handler>
     37941, -- Magister Arlan <Emblem of Frost Quartermaster>
     37942, -- Arcanist Uovril <Emblem of Frost Quartermaster>
+    38433, -- Toravon the Ice Watcher
+    38482, -- Frost Warder
     40405 -- Kieupid <Pet Trainer>
 );
 UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
