@@ -1,3 +1,6 @@
+UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem of Valor
+    31125 -- Archavon the Stone Watcher
+);
 UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem of Conquest
     15931, -- Grobbulus
     15932, -- Gluth
@@ -63,7 +66,9 @@ UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem 
     31612, -- Krik'thir the Gatewatcher (1)
     31656, -- Dalronn the Controller (1)
     31673, -- Ingvar the Plunderer (1)
-    32313 -- Infinite Corruptor (1)
+    31722, -- Archavon the Stone Watcher (1)
+    32313, -- Infinite Corruptor (1)
+    33994 -- Emalon the Storm Watcher (1)
 ) AND `Item` = 40753; -- Emblem of Valor
 UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem of Triumph
     29373, -- Grobbulus (1)

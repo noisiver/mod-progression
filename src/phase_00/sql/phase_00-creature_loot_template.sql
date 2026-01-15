@@ -33,6 +33,7 @@ UPDATE `creature_loot_template` SET `Item` = 40752 WHERE `entry` IN ( -- Emblem 
     30788, -- King Ymiron (1)
     30807, -- Skadi the Ruthless (1)
     30810, -- Svala Sorrowgrave (1)
+    31125, -- Archavon the Stone Watcher
     31211, -- Meathook (1)
     31212, -- Salramm the Fleshcrafter (1)
     31215, -- Chrono-Lord Epoch (1)
@@ -87,7 +88,15 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem 
     29278, -- Maexxna (1)
     29991, -- Sapphiron (1)
     30061, -- Kel'Thuzad (1)
-    31311 -- Sartharion <The Onyx Guardian> (1)
+    31722, -- Archavon the Stone Watcher (1)
+    31311, -- Sartharion <The Onyx Guardian> (1)
+    33993, -- Emalon the Storm Watcher
+    33994, -- Emalon the Storm Watcher (1)
+    35013 -- Koralon the Flame Watcher
+) AND `Item` = 47241; -- Emblem of Triumph
+UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem of Conquest
+    35360, -- Koralon the Flame Watcher (1)
+    38433 -- Toravon the Ice Watcher
 ) AND `Item` = 47241; -- Emblem of Triumph
 SET @lootId := 46000, @refId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = @lootId+0;

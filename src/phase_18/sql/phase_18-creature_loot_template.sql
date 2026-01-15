@@ -26,6 +26,7 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     30788, -- King Ymiron (1)
     30807, -- Skadi the Ruthless (1)
     30810, -- Svala Sorrowgrave (1)
+    31125, -- Archavon the Stone Watcher
     31211, -- Meathook (1)
     31212, -- Salramm the Fleshcrafter (1)
     31215, -- Chrono-Lord Epoch (1)
@@ -63,5 +64,11 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     31612, -- Krik'thir the Gatewatcher (1)
     31656, -- Dalronn the Controller (1)
     31673, -- Ingvar the Plunderer (1)
-    32313 -- Infinite Corruptor (1)
+    31722, -- Archavon the Stone Watcher (1)
+    32313, -- Infinite Corruptor (1)
+    33993, -- Emalon the Storm Watcher
+    33994, -- Emalon the Storm Watcher (1)
+    35013, -- Koralon the Flame Watcher
+    35360, -- Koralon the Flame Watcher (1)
+    38433 -- Toravon the Ice Watcher
 ) AND `Item` = 45624; -- Emblem of Conquest
