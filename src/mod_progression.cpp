@@ -17,6 +17,8 @@ void AddSC_go_scarab_gate();
 void AddSC_spell_summon_nightbane();
 void AddSC_instance_onyxias_lair_progression();
 void AddSC_boss_onyxia_progression();
+void AddSC_npc_archmage_landalock();
+void AddSC_npc_archmage_timear();
 
 void Addmod_progressionScripts()
 {
@@ -40,4 +42,9 @@ void Addmod_progressionScripts()
         AddSC_instance_onyxias_lair_progression();
         AddSC_boss_onyxia_progression();
     }
+
+    AddSC_npc_archmage_landalock();
+
+    if (phaseId < 17)
+        AddSC_npc_archmage_timear();
 }
