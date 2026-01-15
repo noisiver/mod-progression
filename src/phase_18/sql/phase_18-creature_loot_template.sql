@@ -1,4 +1,5 @@
 UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem of Triumph
+    10184, -- Onyxia
     15931, -- Grobbulus
     15932, -- Gluth
     15936, -- Heigan the Unclean

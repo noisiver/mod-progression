@@ -74,6 +74,7 @@ UPDATE `creature_loot_template` SET `Item` = 40752 WHERE `entry` IN ( -- Emblem 
     32313 -- Infinite Corruptor (1)
 ) AND `Item` = 47241; -- Emblem of Triumph
 UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem of Valor
+    10184, -- Onyxia
     29373, -- Grobbulus (1)
     29417, -- Gluth (1)
     29701, -- Heigan the Unclean (1)
@@ -96,6 +97,7 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem 
 ) AND `Item` = 47241; -- Emblem of Triumph
 UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem of Conquest
     35360, -- Koralon the Flame Watcher (1)
+    36538, -- Onyxia (1)
     38433 -- Toravon the Ice Watcher
 ) AND `Item` = 47241; -- Emblem of Triumph
 SET @lootId := 46000, @refId := 46000;

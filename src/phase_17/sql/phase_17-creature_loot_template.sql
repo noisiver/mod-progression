@@ -2,6 +2,7 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem 
     31125 -- Archavon the Stone Watcher
 );
 UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem of Conquest
+    10184, -- Onyxia
     15931, -- Grobbulus
     15932, -- Gluth
     15936, -- Heigan the Unclean
@@ -85,7 +86,8 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     29278, -- Maexxna (1)
     29991, -- Sapphiron (1)
     30061, -- Kel'Thuzad (1)
-    31311 -- Sartharion <The Onyx Guardian> (1)
+    31311, -- Sartharion <The Onyx Guardian> (1)
+    36538 -- Onyxia (1)
 ) AND `Item` = 45624; -- Emblem of Conquest
 SET @lootId := 46000;
 DELETE FROM `creature_loot_template` WHERE `Entry` = @lootId+0; -- Onyxia

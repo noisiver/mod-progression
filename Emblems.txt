@@ -16,7 +16,7 @@ Phase 16
 ✅ Naxxramas: Emblem of Valor / Emblem of Conquest
 ✅ Obsidian Sanctum: Emblem of Valor / Emblem of Conquest
 ✅ Eye of Eternity: Emblem of Valor / Emblem of Conquest
-❌ Onyxia's Lair: Emblem of Valor / Emblem of Conquest
+✅ Onyxia's Lair: Emblem of Valor / Emblem of Conquest
 ✅ Trial of the Crusader: Emblem of Triumph / Emblem of Triumph
 ✅ Vault of Archavon: Koralon the Flame Watcher: Emblem of Valor / Emblem of Conquest
 
@@ -26,7 +26,7 @@ Phase 17
 ✅ Obsidian Sanctum: Emblem of Conquest / Emblem of Triumph
 ✅ Eye of Eternity: Emblem of Conquest / Emblem of Triumph
 ❌ Ulduar: Emblem of Conquest / Emblem of Triumph
-❌ Onyxia's Lair: Emblem of Conquest / Emblem of Triumph
+✅ Onyxia's Lair: Emblem of Conquest / Emblem of Triumph
 ✅ Icecrown Citadel: Emblem of Frost / Emblem of Frost
 ✅ Vault of Archavon: Archavon the Stone Watcher: Emblem of Valor / Emblem of Conquest
 ✅ Vault of Archavon: Emalon the Storm Watcher: Emblem of Valor / Emblem of Conquest
@@ -38,7 +38,7 @@ Phase 18
 ✅ Obsidian Sanctum: Emblem of Triumph / Emblem of Triumph
 ✅ Eye of Eternity: Emblem of Triumph / Emblem of Triumph
 ❌ Ulduar: Emblem of Triumph / Emblem of Triumph
-❌ Onyxia's Lair: Emblem of Triumph / Emblem of Triumph
+✅ Onyxia's Lair: Emblem of Triumph / Emblem of Triumph
 ✅ Ruby Sanctum: Emblem of Frost / Emblem of Frost
 ✅ Vault of Archavon: Archavon the Stone Watcher: Emblem of Triumph / Emblem of Triumph
 ✅ Vault of Archavon: Emalon the Storm Watcher: Emblem of Triumph / Emblem of Triumph
