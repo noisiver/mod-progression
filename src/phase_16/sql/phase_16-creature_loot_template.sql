@@ -63,6 +63,7 @@ UPDATE `creature_loot_template` SET `Item` = 40753 WHERE `entry` IN ( -- Emblem 
     31612, -- Krik'thir the Gatewatcher (1)
     31656, -- Dalronn the Controller (1)
     31673, -- Ingvar the Plunderer (1)
+    31679, -- Skarvald the Constructor (1)
     32313 -- Infinite Corruptor (1)
 ) AND `Item` = 40752; -- Emblem of Heroism
 UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem of Conquest

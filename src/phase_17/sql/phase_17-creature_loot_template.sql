@@ -67,8 +67,19 @@ UPDATE `creature_loot_template` SET `Item` = 45624 WHERE `entry` IN ( -- Emblem 
     31612, -- Krik'thir the Gatewatcher (1)
     31656, -- Dalronn the Controller (1)
     31673, -- Ingvar the Plunderer (1)
+    31679, -- Skarvald the Constructor (1)
     31722, -- Archavon the Stone Watcher (1)
     32313, -- Infinite Corruptor (1)
+    32857, -- Stormcaller Brundir
+    32867, -- Steelbreaker
+    32927, -- Runemaster Molgeim
+    33113, -- Flame Leviathan
+    33118, -- Ignis the Furnace Master
+    33186, -- Razorscale
+    33271, -- General Vezax
+    33288, -- Yogg-Saron
+    33293, -- XT-002 Deconstructor
+    33515, -- Auriaya
     33994 -- Emalon the Storm Watcher (1)
 ) AND `Item` = 40753; -- Emblem of Valor
 UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem of Triumph
@@ -87,6 +98,16 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     29991, -- Sapphiron (1)
     30061, -- Kel'Thuzad (1)
     31311, -- Sartharion <The Onyx Guardian> (1)
+    33190, -- Ignis the Furnace Master (1)
+    33449, -- General Vezax (1)
+    33692, -- Runemaster Molgeim (1)
+    33693, -- Steelbreaker (1)
+    33694, -- Stormcaller Brundir (1)
+    33724, -- Razorscale (1)
+    33885, -- XT-002 Deconstructor (1)
+    33955, -- Yogg-Saron (1)
+    34003, -- Flame Leviathan (1)
+    34175, -- Auriaya (1)
     36538 -- Onyxia (1)
 ) AND `Item` = 45624; -- Emblem of Conquest
 SET @lootId := 46000;

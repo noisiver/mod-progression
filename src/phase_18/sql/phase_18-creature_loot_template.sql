@@ -65,8 +65,19 @@ UPDATE `creature_loot_template` SET `Item` = 47241 WHERE `entry` IN ( -- Emblem 
     31612, -- Krik'thir the Gatewatcher (1)
     31656, -- Dalronn the Controller (1)
     31673, -- Ingvar the Plunderer (1)
+    31679, -- Skarvald the Constructor (1)
     31722, -- Archavon the Stone Watcher (1)
     32313, -- Infinite Corruptor (1)
+    32857, -- Stormcaller Brundir
+    32867, -- Steelbreaker
+    32927, -- Runemaster Molgeim
+    33113, -- Flame Leviathan
+    33118, -- Ignis the Furnace Master
+    33186, -- Razorscale
+    33271, -- General Vezax
+    33288, -- Yogg-Saron
+    33293, -- XT-002 Deconstructor
+    33515, -- Auriaya
     33993, -- Emalon the Storm Watcher
     33994, -- Emalon the Storm Watcher (1)
     35013, -- Koralon the Flame Watcher
