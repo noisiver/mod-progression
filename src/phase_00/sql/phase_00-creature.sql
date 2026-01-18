@@ -33,6 +33,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     17095, -- Balandar Brightstar
     17097, -- Advisor Sarophas
     17098, -- Ambassador Dawnsinger
+    17099, -- Mehlar Dawnblade
     17100, -- Advisor Sunsworn
     17104, -- Anchorite Delan
     17103, -- Emissary Taluun
