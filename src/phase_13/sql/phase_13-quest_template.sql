@@ -10,3 +10,4 @@ UPDATE `quest_template` SET `Flags` = `Flags` | 16384 WHERE `ID` IN (
     1599, -- Beginnings
     8344 -- Windows to the Source
 );
+UPDATE `quest_template` SET `LogDescription` = 'Take Darthalia\'s Sealed Commendation to Bragor Bloodfist in the Undercity.', `QuestDescription` = 'Because you fought with such valor and perseverance in the Battle of Hillsbrad, I have written this commendation, extolling your heroics in combat for the high command to recognize.$b$bTake this sealed commendation to Bragor Bloodfist in the Undercity.  Go with pride, $c.' WHERE `ID` = 550; -- Battle of Hillsbrad

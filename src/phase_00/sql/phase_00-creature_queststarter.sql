@@ -1,10 +1,12 @@
 DELETE FROM `creature_queststarter` WHERE `id` IN (20735, 31439);
-DELETE FROM `creature_queststarter` WHERE `quest` IN (1599, 1470, 1598, 1485, 8344);
+DELETE FROM `creature_queststarter` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 8344);
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Drusilla La Salle <Warlock Trainer>
 (459, 1598), -- The Stolen Tome
 -- Alamar Grimm <Warlock Trainer>
 (460, 1599), -- Beginnings
+-- High Executor Darthalia
+(2215, 550), -- Battle of Hillsbrad
 -- Venya Marthand
 (5667, 1470), -- Piercing the Veil
 -- Ruzan

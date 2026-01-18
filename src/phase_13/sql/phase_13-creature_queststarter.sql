@@ -1,4 +1,5 @@
 DELETE FROM `creature_queststarter` WHERE `quest` IN (
+    550, -- Battle of Hillsbrad
     1599, -- Beginnings
     1470, -- Piercing the Veil
     1598, -- The Stolen Tome

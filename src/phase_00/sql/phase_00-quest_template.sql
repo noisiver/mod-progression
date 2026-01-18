@@ -35,3 +35,4 @@ UPDATE `quest_template` SET `RewardItem1` = 40752 WHERE `ID` IN ( -- Emblem of H
     13255, -- Proof of Demise: Herald Volazj
     13256 -- Proof of Demise: Cyanigosa
 );
+UPDATE `quest_template` SET `LogDescription` = 'Take Darthalia\'s Sealed Commendation to Varimathras in the Undercity.', `QuestDescription` = 'Because you fought with such valor and perseverance in the Battle of Hillsbrad, I have written this commendation, extolling your heroics in combat for the high command to recognize.$B$BTake this sealed commendation to Varimathras in the Undercity.  Go with pride, $c.' WHERE `ID` = 550; -- Battle of Hillsbrad
