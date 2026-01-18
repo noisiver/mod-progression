@@ -28,7 +28,8 @@ DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     8710, -- Kris of Unspoken Names
     8711, -- Blade of Eternal Justice
     8712, -- Scythe of the Unseen Path
-    9023 -- The Perfect Poison
+    9023, -- The Perfect Poison
+    9248 -- A Humble Offering
 );
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
     509, -- Ruins of Ahn'Qiraj
