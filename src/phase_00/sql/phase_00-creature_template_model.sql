@@ -4,3 +4,4 @@ UPDATE `creature_template_model` SET `CreatureDisplayID` = 11658 WHERE `Creature
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 4691 WHERE `CreatureID` = 4456; -- Fiora Longears
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 4244 WHERE `CreatureID` = 3465; -- Gilthares Firebough
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 2240 WHERE `CreatureID` = 4198; -- Braelyn Firehand
+UPDATE `creature_template_model` SET `CreatureDisplayID` = 9149 WHERE `CreatureID` = 9836; -- Mathredis Firestar
