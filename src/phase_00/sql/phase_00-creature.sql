@@ -28,6 +28,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     16840, -- Advisor Sevel
     16841, -- Watch Commander Relthorn Netherwane
     17092, -- Advisor Duskingdawn
+    17093, -- Magistrix Elosai
     17094, -- Nemeth Hawkeye <Farstriders>
     17095, -- Balandar Brightstar
     17097, -- Advisor Sarophas
