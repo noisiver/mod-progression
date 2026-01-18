@@ -1,4 +1,6 @@
 DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
+    11123, -- Inspecting the Ruins
+    11124, -- Inspecting the Ruins
     11211, -- Help for Mudsprocket
     11215 -- Help Mudsprocket
 );
