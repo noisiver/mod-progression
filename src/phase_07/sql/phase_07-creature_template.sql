@@ -86,6 +86,7 @@ UPDATE `creature_template` SET `minlevel` = 65, `maxlevel` = 65 WHERE `entry` IN
     11901, -- Andruk <Wind Rider Master>
     12160, -- Shadowglen Sentinel
     12338, -- Shadowprey Guardian
+    12596, -- Bibilfaz Featherwhistle <Gryphon Master>
     12616, -- Vhulgra <Wind Rider Master>
     12617, -- Khaelyn Steelwing <Gryphon Master>
     12636, -- Georgia <Bat Handler>
