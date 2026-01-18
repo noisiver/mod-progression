@@ -1,3 +1,4 @@
+UPDATE `creature_queststarter` SET `id` = 3216 WHERE `quest` = 3122; -- Neeru Fireblade, Return to Witch Doctor Uzer'i
 DELETE FROM `creature_queststarter` WHERE `id` IN (20735, 31439);
 DELETE FROM `creature_queststarter` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 8344);
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES

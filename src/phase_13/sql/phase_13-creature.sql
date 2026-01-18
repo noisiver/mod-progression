@@ -136,6 +136,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
     35603, -- Magister Dalhyr <Wintergrasp Battle-Mage>
     35611, -- Magistrix Erembria <Wintergrasp Battle-Mage>
     35612, -- Magistrix Caradess <Wintergrasp Battle-Mage>
+    36208, -- Xerash Fireblade
     36479, -- Archmage Mordent Evenshade <The Highborne>
     36481, -- Sentinel Stillbough
     36517, -- Aleric Hawkins <The Deathstalkers>
