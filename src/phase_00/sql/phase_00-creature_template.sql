@@ -268,9 +268,9 @@ UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (
     16537 -- Mutated Owlkin
 );
 UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Baneshadow
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `skinloot` = 0 WHERE `entry` = 11262; -- Onyxian Whelp
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `lootid` = 0 WHERE `entry` = 12129; -- Onyxian Warder
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `HealthModifier` = 330, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `exp` = 0, `skinloot` = 0, `HealthModifier` = 1 WHERE `entry` = 11262; -- Onyxian Whelp
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `lootid` = 0, `HealthModifier` = 25 WHERE `entry` = 12129; -- Onyxian Warder
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (
     16481, -- Ghastly Haunt
     16482, -- Trapped Soul
