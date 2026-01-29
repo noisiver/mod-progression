@@ -426,6 +426,7 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+8, 2052, 100, 0, 0, 2050, 0, 0, 4, 0), -- Lesser Heal (Rank 2)
 (@TrainerId+8, 2053, 300, 0, 0, 2052, 0, 0, 10, 0), -- Lesser Heal (Rank 3)
 (@TrainerId+8, 2054, 1600, 0, 0, 0, 0, 0, 16, 0), -- Heal (Rank 1)
+(@TrainerId+8, 6346, 800, 0, 0, 0, 0, 0, 20, 0), -- Fear Ward
 (@TrainerId+8, 2055, 4000, 0, 0, 2054, 0, 0, 22, 0), -- Heal (Rank 2)
 (@TrainerId+8, 2060, 18000, 0, 0, 0, 0, 0, 40, 0), -- Greater Heal (Rank 1)
 (@TrainerId+8, 2061, 3000, 0, 0, 0, 0, 0, 20, 0), -- Flash Heal (Rank 1)
