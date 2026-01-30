@@ -8,7 +8,7 @@ DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+4 AND `SpellId` IN (1
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+6 AND `SpellId` IN (5938, 25300, 25302, 26669, 26839, 26861, 26862, 26863, 26864, 26865, 26867, 26884, 26889, 27441, 27448, 31016, 31224, 32645, 32684, 34412, 34413);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+8 AND `SpellId` IN (10955, 21562, 21564, 25210, 25213, 25217, 25218, 25221, 25222, 25233, 25235, 25308, 25312, 25314, 25315, 25316, 25331, 25363, 25364, 25367, 25368, 25372, 25375, 25384, 25387, 25389, 25431, 25433, 25435, 25437, 25467, 27683, 28275, 32375, 32379, 32546, 32996, 32999, 33076, 34433, 34863, 34864, 34865, 34866, 34916, 34917, 53005);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+10 AND `SpellId` IN (2062, 2825, 2894, 3738, 24398, 25357, 25361, 25391, 25396, 25420, 25422, 25423, 25439, 25442, 25448, 25449, 25454, 25457, 25464, 25469, 25472, 25489, 25500, 25505, 25508, 25509, 25525, 25528, 25533, 25546, 25547, 25552, 25557, 25560, 25563, 25567, 25570, 25574, 25590, 29228, 32182, 32593, 32594, 33736, 36936, 52127, 52129, 52131, 52134, 52136, 52138, 57720, 59156, 61299);
-DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (10140, 23028, 25304, 25345, 27071, 27072, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27101, 27124, 27126, 27128, 27130, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 32796, 33041, 33042, 33043, 33405, 33933, 33944, 33946, 37420, 38699, 44780, 55359);
+DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+12 AND `SpellId` IN (66, 10140, 23028, 25304, 25306, 25345, 27070, 27071, 27072, 27073, 27074, 27075, 27078, 27079, 27080, 27082, 27085, 27086, 27087, 27088, 27090, 27101, 27124, 27125, 27126, 27127, 27128, 27130, 27131, 27132, 27133, 27134, 28609, 28612, 30451, 30455, 30449, 30482, 32796, 33041, 33042, 33043, 33405, 33717, 33933, 33938, 33944, 33946, 37420, 38692, 38697, 38699, 38704, 43987, 44780, 55359);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+14 AND `SpellId` IN (5784, 11668, 25307, 25309, 25311, 27209, 27210, 27211, 27212, 27213, 27215, 27216, 27217, 27218, 27219, 27220, 27222, 27223, 27224, 27228, 27230, 27238, 27243, 27250, 27259, 27260, 27263, 27265, 28172, 28176, 28189, 28610, 29722, 29858, 29893, 30404, 30405, 30413, 30414, 30459, 30545, 30546, 30909, 30910, 32231, 59161, 59170);
 DELETE FROM `trainer_spell` WHERE `TrainerId` = @TrainerId+16 AND `SpellId` IN (21849, 21850, 22570, 24248, 25297, 25298, 25299, 26978, 26979, 26980, 26981, 26982, 26983, 26984, 26985, 26986, 26987, 26988, 26989, 26990, 26992, 26994, 26995, 26996, 26997, 26998, 27000, 27001, 27002, 27003, 27004, 27005, 27006, 27008, 27009, 27012, 27013, 31018, 31709, 33357, 33745, 33763, 33786, 33950, 33982, 33983, 33986, 33987, 53199, 53223, 53225, 53248);
 INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`, `ReqSkillRank`, `ReqAbility1`, `ReqAbility2`, `ReqAbility3`, `ReqLevel`, `VerifiedBuild`) VALUES
@@ -228,12 +228,17 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+10, 59156, 88000, 0, 0, 51490, 0, 0, 70, 0), -- Thunderstorm (Rank 2)
 (@TrainerId+10, 61299, 9000, 0, 0, 61295, 0, 0, 70, 0), -- Riptide (Rank 2)
 -- Mage: Outside starting zones
+(@TrainerId+12, 66, 96000, 0, 0, 0, 0, 0, 68, 0), -- Invisibility
 (@TrainerId+12, 10140, 42000, 0, 0, 10139, 0, 0, 60, 0), -- Conjure Water (Rank 7)
 (@TrainerId+12, 23028, 38000, 0, 0, 0, 0, 0, 56, 0), -- Arcane Brilliance (Rank 1)
 (@TrainerId+12, 25304, 42000, 0, 0, 10181, 0, 0, 60, 0), -- Frostbolt (Rank 11)
 (@TrainerId+12, 25345, 42000, 0, 0, 10212, 0, 0, 60, 0), -- Arcane Missiles (Rank 8)
+(@TrainerId+12, 25306, 42000, 0, 0, 10151, 0, 0, 62, 0), -- Fireball (Rank 12)
+(@TrainerId+12, 27070, 78000, 0, 0, 25306, 0, 0, 66, 0), -- Fireball (Rank 13)
 (@TrainerId+12, 27071, 57000, 0, 0, 25304, 0, 0, 63, 0), -- Frostbolt (Rank 12)
 (@TrainerId+12, 27072, 110000, 0, 0, 27071, 0, 0, 69, 0), -- Frostbolt (Rank 13)
+(@TrainerId+12, 27073, 70000, 0, 0, 10207, 0, 0, 65, 0), -- Scorch (Rank 8)
+(@TrainerId+12, 27074, 120000, 0, 0, 27073, 0, 0, 70, 0), -- Scorch (Rank 9)
 (@TrainerId+12, 27075, 57000, 0, 0, 25345, 0, 0, 63, 0), -- Arcane Missiles (Rank 9)
 (@TrainerId+12, 27078, 46000, 0, 0, 10199, 0, 0, 61, 0), -- Fire Blast (Rank 8)
 (@TrainerId+12, 27079, 120000, 0, 0, 27078, 0, 0, 70, 0), -- Fire Blast (Rank 9)
@@ -245,9 +250,12 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+12, 27088, 87000, 0, 0, 10230, 0, 0, 67, 0), -- Frost Nova (Rank 5)
 (@TrainerId+12, 27101, 96000, 0, 0, 10054, 0, 0, 68, 0), -- Conjure Mana Gem (Rank 5)
 (@TrainerId+12, 27124, 110000, 0, 0, 10220, 0, 0, 69, 0), -- Ice Armor (Rank 5)
+(@TrainerId+12, 27125, 110000, 0, 0, 22783, 0, 0, 69, 0), -- Mage Armor (Rank 4)
 (@TrainerId+12, 27126, 120000, 0, 0, 10157, 0, 0, 70, 0), -- Arcane Intellect (Rank 6)
 (@TrainerId+12, 27128, 110000, 0, 0, 10225, 0, 0, 69, 0), -- Fire Ward (Rank 6)
 (@TrainerId+12, 27130, 57000, 0, 0, 10170, 0, 0, 63, 0), -- Amplify Magic (Rank 5)
+(@TrainerId+12, 27131, 96000, 0, 0, 10193, 0, 0, 68, 0), -- Mana Shield (Rank 7)
+(@TrainerId+12, 27132, 3900, 0, 0, 18809, 0, 0, 66, 0), -- Pyroblast (Rank 9)
 (@TrainerId+12, 27133, 3500, 0, 0, 13021, 0, 0, 65, 0), -- Blast Wave (Rank 6)
 (@TrainerId+12, 27134, 2500, 0, 0, 13033, 0, 0, 64, 0), -- Ice Barrier (Rank 5)
 (@TrainerId+12, 28609, 42000, 0, 0, 10177, 0, 0, 60, 0), -- Frost Ward (Rank 5)
@@ -255,16 +263,22 @@ INSERT INTO `trainer_spell` (`TrainerId`, `SpellId`, `MoneyCost`, `ReqSkillLine`
 (@TrainerId+12, 30451, 63000, 0, 0, 0, 0, 0, 64, 0), -- Arcane Blast (Rank 1)
 (@TrainerId+12, 30455, 78000, 0, 0, 0, 0, 0, 66, 0), -- Ice Lance (Rank 1)
 (@TrainerId+12, 30449, 120000, 0, 0, 0, 0, 0, 70, 0), -- Spellsteal
+(@TrainerId+12, 30482, 51000, 0, 0, 0, 0, 0, 62, 0), -- Molten Armor (Rank 1)
 (@TrainerId+12, 32796, 120000, 0, 0, 28609, 0, 0, 70, 0), -- Frost Ward (Rank 6)
 (@TrainerId+12, 33041, 1900, 0, 0, 31661, 0, 0, 56, 0), -- Dragon's Breath (Rank 2)
 (@TrainerId+12, 33042, 2200, 0, 0, 33041, 0, 0, 64, 0), -- Dragon's Breath (Rank 3)
 (@TrainerId+12, 33043, 2500, 0, 0, 33042, 0, 0, 70, 0), -- Dragon's Breath (Rank 4)
 (@TrainerId+12, 33405, 6000, 0, 0, 27134, 0, 0, 70, 0), -- Ice Barrier (Rank 6)
 (@TrainerId+12, 33933, 6000, 0, 0, 27133, 0, 0, 70, 0), -- Blast Wave (Rank 7)
+(@TrainerId+12, 33938, 7500, 0, 0, 27132, 0, 0, 70, 0), -- Pyroblast (Rank 10)
 (@TrainerId+12, 33944, 100000, 0, 0, 10174, 0, 0, 67, 0), -- Dampen Magic (Rank 6)
 (@TrainerId+12, 33946, 110000, 0, 0, 27130, 0, 0, 69, 0), -- Amplify Magic (Rank 6)
+(@TrainerId+12, 38692, 150000, 0, 0, 27070, 0, 0, 70, 0), -- Fireball (Rank 14)
+(@TrainerId+12, 38697, 150000, 0, 0, 27072, 0, 0, 70, 0), -- Frostbolt (Rank 14)
+(@TrainerId+12, 38704, 100000, 0, 0, 38699, 0, 0, 70, 0), -- Arcane Missiles (Rank 11)
 (@TrainerId+12, 37420, 70000, 0, 0, 10140, 0, 0, 65, 0), -- Conjure Water (Rank 8)
 (@TrainerId+12, 38699, 87000, 0, 0, 27075, 0, 0, 69, 0), -- Arcane Missiles (Rank 10)
+(@TrainerId+12, 43987, 120000, 0, 0, 0, 0, 0, 70, 0), -- Ritual of Refreshment (Rank 1)
 (@TrainerId+12, 44780, 10000, 0, 0, 44425, 0, 0, 70, 0), -- Arcane Barrage (Rank 2)
 (@TrainerId+12, 55359, 5000, 0, 0, 44457, 0, 0, 70, 0), -- Living Bomb (Rank 2)
 -- Warlock: Outside starting zones

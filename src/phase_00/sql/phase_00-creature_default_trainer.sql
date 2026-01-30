@@ -1,6 +1,3 @@
--- Outside starting zones: 9465,16655,4217,16721,3034,5504,12042,4218,8142,5505,3033,4219,3036,5506,3602,3064
--- Starting zones: 3597,3060
-
 SET @TrainerId := 200;
 UPDATE `creature_default_trainer` SET `TrainerId` = @TrainerId+0 WHERE `CreatureId` IN (
     913, -- Lyria Du Lac <Warrior Trainer>
