@@ -1065,6 +1065,115 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     33452, -- Honey-Spiced Lichen
     35947 -- Sparkling Frostcap
 );
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    32294, -- Knight Dameron <Wintergrasp Quartermaster>
+    32296 -- Stone Guard Mukar <Wintergrasp Quartermaster>
+) AND `item` IN (
+    44891, -- Titan-Forged Boots of Dominance
+    44892, -- Titan-Forged Boots of Salvation
+    44893, -- Titan-Forged Boots of Triumph
+    44894, -- Titan-Forged Greaves of Salvation
+    44895, -- Titan-Forged Greaves of Triumph
+    44896, -- Titan-Forged Sabatons of Dominance
+    44897, -- Titan-Forged Sabatons of Salvation
+    44898, -- Titan-Forged Sabatons of Triumph
+    44899, -- Titan-Forged Slippers of Dominance
+    44900, -- Titan-Forged Slippers of Salvation
+    44901, -- Titan-Forged Plate Headcover of Salvation
+    44902, -- Titan-Forged Plate Helm of Triumph
+    44903, -- Titan-Forged Chain Helm of Triumph
+    44904, -- Titan-Forged Mail Helm of Dominance
+    44905, -- Titan-Forged Ringmail Helm of Salvation
+    44906, -- Titan-Forged Leather Helm of Salvation
+    44907, -- Titan-Forged Leather Helm of Dominance
+    44908, -- Titan-Forged Leather Helm of Triumph
+    44909, -- Titan-Forged Hood of Salvation
+    44910, -- Titan-Forged Hood of Dominance
+    44912, -- Flow of Knowledge
+    44914, -- Anvil of Titans
+    46057, -- Titan-Forged Chestguard of Salvation
+    46058, -- Titan-Forged Breastplate of Triumph
+    46059, -- Titan-Forged Chain Armor of Triumph
+    46060, -- Titan-Forged Ringmail of Salvation
+    46061, -- Titan-Forged Mail Armor of Domination
+    46062, -- Titan-Forged Leather Tunic of Triumph
+    46063, -- Titan-Forged Leather Chestguard of Salvation
+    46064, -- Titan-Forged Leather Chestguard of Dominance
+    46065, -- Titan-Forged Raiment of Dominance
+    46066, -- Titan-Forged Raiment of Salvation
+    46071, -- Titan-Forged Girdle of Salvation
+    46072, -- Titan-Forged Girdle of Triumph
+    46073, -- Titan-Forged Waistguard of Dominance
+    46074, -- Titan-Forged Waistguard of Salvation
+    46075, -- Titan-Forged Waistguard of Triumph
+    46076, -- Titan-Forged Belt of Dominance
+    46077, -- Titan-Forged Belt of Salvation
+    46078, -- Titan-Forged Belt of Triumph
+    46079, -- Titan-Forged Cord of Dominance
+    46080, -- Titan-Forged Cord of Salvation
+    46081, -- Titan-Forged Rune of Audacity
+    46082, -- Titan-Forged Rune of Determination
+    46083, -- Titan-Forged Rune of Accuracy
+    46084, -- Titan-Forged Rune of Cruelty
+    46085, -- Titan-Forged Rune of Alacrity
+    46086, -- Platinum Disks of Battle
+    46087, -- Platinum Disks of Sorcery
+    46088, -- Platinum Disks of Swiftness
+    48974, -- Titan-Forged Armwraps of Dominance
+    48975, -- Titan-Forged Armwraps of Salvation
+    48976, -- Titan-Forged Armwraps of Triumph
+    48977, -- Titan-Forged Bracers of Salvation
+    48978, -- Titan-Forged Bracers of Triumph
+    48979, -- Titan-Forged Cuffs of Salvation
+    48980, -- Titan-Forged Wristguards of Dominance
+    48981, -- Titan-Forged Wristguards of Salvation
+    48982, -- Titan-Forged Wristguards of Triumph
+    48983, -- Titan-Forged Chain Leggings of Triumph
+    48987, -- Titan-Forged Leather Legguards of Salvation
+    48988, -- Titan-Forged Leather Legguards of Triumph
+    48990, -- Titan-Forged Mail Leggings of Dominance
+    48991, -- Titan-Forged Cloth Leggings of Salvation
+    48992, -- Titan-Forged Plate Legguards of Salvation
+    48993, -- Titan-Forged Plate Legguards of Triumph
+    48994, -- Titan-Forged Ringmail Leggings of Salvation
+    48997, -- Titan-Forged Cloth Trousers of Domination
+    48998, -- Titan-Forged Leather Legguards of Dominance
+    48999, -- Titan-Forged Band of Ascendancy
+    49000 -- Titan-Forged Band of Victory
+);
+DELETE FROM `npc_vendor` WHERE `entry` IN (
+    39172, -- Marshal Magruder <Wintergrasp Quartermaster>
+    39173 -- Champion Ros'slai <Wintergrasp Quartermaster>
+) AND `item` IN (
+    51568, -- Titan-Forged Pendant of Ascendancy
+    51569, -- Titan-Forged Pendant of Victory
+    51570, -- Titan-Forged Cloak of Ascendancy
+    51571, -- Titan-Forged Cloak of Victory
+    51572, -- Titan-Forged Shoulderpads of Salvation
+    51573, -- Titan-Forged Shoulderpads of Domination
+    51574, -- Titan-Forged Spaulders of Dominance
+    51575, -- Titan-Forged Spaulders of Salvation
+    51576, -- Titan-Forged Spaulders of Triumph
+    51577, -- Titan-Forged Shoulders of Triumph
+    51578, -- Titan-Forged Shoulders of Dominance
+    51579, -- Titan-Forged Shoulders of Salvation
+    51580, -- Titan-Forged Shoulderplates of Triumph
+    51581, -- Titan-Forged Shoulderplates of Salvation
+    51568, -- Titan-Forged Pendant of Ascendancy
+    51569, -- Titan-Forged Pendant of Victory
+    51570, -- Titan-Forged Cloak of Ascendancy
+    51571, -- Titan-Forged Cloak of Victory
+    51572, -- Titan-Forged Shoulderpads of Salvation
+    51573, -- Titan-Forged Shoulderpads of Domination
+    51574, -- Titan-Forged Spaulders of Dominance
+    51575, -- Titan-Forged Spaulders of Salvation
+    51576, -- Titan-Forged Spaulders of Triumph
+    51577, -- Titan-Forged Shoulders of Triumph
+    51578, -- Titan-Forged Shoulders of Dominance
+    51579, -- Titan-Forged Shoulders of Salvation
+    51580, -- Titan-Forged Shoulderplates of Triumph
+    51581 -- Titan-Forged Shoulderplates of Salvation
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
