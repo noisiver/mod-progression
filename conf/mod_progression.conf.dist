@@ -41,6 +41,59 @@ Progression.Phase = 18
 Progression.IcecrownCitadel.Aura = 6
 
 #
+#    Progression.QuestInfo.Enforced
+#        Description: Enforce quest-related information based on the active phase
+#                     This includes quest markers on the map, object sparkles and point of interests
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.QuestInfo.Enforced = 1
+
+#
+#    Progression.DualTalent.Enforced
+#        Description: Enforce the availability of dual talent specialization based on the active phase
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.DualTalent.Enforced = 1
+
+#
+#    Progression.TradableBindsOnPickup.Enforced
+#        Description: Enforce binds on pickup items being tradable based on the active phase
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.TradableBindsOnPickup.Enforced = 1
+
+#
+#    Progression.DungeonFinder.Enforced
+#        Description: Enforce the availability of the dungeon finder based on the active patch
+#                     0 - Disabled
+#        Default:     1 - Enabled
+#
+
+Progression.DungeonFinder.Enforced = 1
+
+#
+#    Progression.Multiplier.Damage
+#        Description: Set the multiplier for damage done by players in phases prior to 13
+#        Default:     0.6
+#
+
+Progression.Multiplier.Damage = 0.6
+
+#
+#    Progression.Multiplier.Healing
+#        Description: Set the multiplier for healing done by player in phases prior to 13
+#        Default:     0.5
+#
+
+Progression.Multiplier.Healing = 0.5
+
+#
 #    Progression.Reset
 #        Description: Reapply all SQL files on startup
 #                     This is useful when moving to an older phase, after making changes or to make sure it's up-to-date

@@ -4,6 +4,9 @@
 
 void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker, uint32& damage, SpellInfo const* spellInfo)
 {
+    if (sProgressionMgr->GetPhaseId() >= 13)
+        return;
+
     if (!attacker)
         return;
 
@@ -14,12 +17,14 @@ void Progression::ModifyPeriodicDamageAurasTick(Unit* /*target*/, Unit* attacker
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 13)
-        damage *= sProgressionMgr->GetDamageModifier();
+    damage *= sProgressionMgr->GetDamageMultiplier();
 }
 
 void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& damage)
 {
+    if (sProgressionMgr->GetPhaseId() >= 13)
+        return;
+
     if (!attacker)
         return;
 
@@ -27,12 +32,14 @@ void Progression::ModifyMeleeDamage(Unit* /*target*/, Unit* attacker, uint32& da
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 13)
-        damage *= sProgressionMgr->GetDamageModifier();
+    damage *= sProgressionMgr->GetDamageMultiplier();
 }
 
 void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32& damage, SpellInfo const* /*spellInfo*/)
 {
+    if (sProgressionMgr->GetPhaseId() >= 13)
+        return;
+
     if (!attacker)
         return;
 
@@ -40,12 +47,14 @@ void Progression::ModifySpellDamageTaken(Unit* /*target*/, Unit* attacker, int32
     if (!isPet && !attacker->IsPlayer())
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 13)
-        damage *= sProgressionMgr->GetDamageModifier();
+    damage *= sProgressionMgr->GetDamageMultiplier();
 }
 
 void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& heal, SpellInfo const* spellInfo)
 {
+    if (sProgressionMgr->GetPhaseId() >= 13)
+        return;
+
     if (!healer)
         return;
 
@@ -59,6 +68,5 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
     if (spellInfo->Id == 48982 || spellInfo->Id == 20004)
         return;
 
-    if (sProgressionMgr->GetPhaseId() < 14)
-        heal *= sProgressionMgr->GetHealingModifier();
+    heal *= sProgressionMgr->GetHealingMultiplier();
 }

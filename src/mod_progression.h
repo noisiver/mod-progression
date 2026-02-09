@@ -48,14 +48,18 @@ public:
     uint8 GetPhaseId() { return phaseId; }
     void SetAuraId(uint8 id) { auraId = id; }
     uint8 GetAuraId() { return auraId; }
-    float GetDamageModifier() { return 0.6f; }
-    float GetHealingModifier() { return 1.0f; }
+    float GetDamageMultiplier() { return 0.6f; }
+    void SetDamageMultiplier(float value) { damageMultiplier = value; }
+    float GetHealingMultiplier() { return 1.0f; }
+    void SetHealingMultiplier(float value) { healingMultiplier = value; }
     void SetResetDatabase(bool value) { resetDatabase = value; }
     bool GetResetDatabase() { return resetDatabase; }
 
 private:
     uint8 phaseId;
     uint8 auraId;
+    float damageMultiplier;
+    float healingMultiplier;
     bool resetDatabase;
 };
 

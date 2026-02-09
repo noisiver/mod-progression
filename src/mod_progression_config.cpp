@@ -46,6 +46,24 @@ void Progression::OnAfterConfigLoad(bool reload)
 
         LOG_INFO("server.loading", ">> Max level set to {}", maxLevel);
         sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, maxLevel);
+
+        if (sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true))
+        {
+            if (PhaseId < 7)
+            {
+                LOG_INFO("server.loading", ">> Disabled object quest markers");
+                sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, false);
+
+                LOG_INFO("server.loading", ">> Disabled object sparkles");
+                sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, false);
+            }
+
+            if (PhaseId < 17)
+            {
+                LOG_INFO("server.loading", ">> Points of interest for quests disabled");
+                sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, false);
+            }
+        }
     }
 
     uint8 PhaseId = sProgressionMgr->GetPhaseId();
@@ -59,12 +77,6 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     if (PhaseId < 7)
     {
-        LOG_INFO("server.loading", ">> Disabled object quest markers");
-        sWorld->setBoolConfig(CONFIG_OBJECT_QUEST_MARKERS, false);
-
-        LOG_INFO("server.loading", ">> Disabled object sparkles");
-        sWorld->setBoolConfig(CONFIG_OBJECT_SPARKLES, false);
-
         LOG_INFO("server.loading", ">> Disabled Alterac Valley reinforcements");
         sWorld->setIntConfig(CONFIG_BATTLEGROUND_ALTERAC_REINFORCEMENTS, 0);
     }
@@ -79,6 +91,14 @@ void Progression::OnAfterConfigLoad(bool reload)
 
         LOG_INFO("server.loading", ">> Enabled legacy arena points calculation");
         sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, true);
+
+        float DamageMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", true);
+        LOG_INFO("server.loading", ">> Damage multiplier set to {}", DamageMultiplier);
+        sProgressionMgr->SetDamageMultiplier(DamageMultiplier);
+
+        float HealingMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", true);
+        LOG_INFO("server.loading", ">> Healing multiplier set to {}", HealingMultiplier);
+        sProgressionMgr->SetHealingMultiplier(HealingMultiplier);
     }
 
     if (PhaseId < 16)
@@ -86,11 +106,17 @@ void Progression::OnAfterConfigLoad(bool reload)
         LOG_INFO("server.loading", ">> Disabled quest auto accept");
         sWorld->setBoolConfig(CONFIG_QUEST_IGNORE_AUTO_ACCEPT, true);
 
-        LOG_INFO("server.loading", ">> Disabled dual specialization");
-        sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, 255);
+        if (sConfigMgr->GetOption<bool>("Progression.DualTalent.Enforced", true))
+        {
+            LOG_INFO("server.loading", ">> Disabled dual talent specialization");
+            sWorld->setIntConfig(CONFIG_MIN_DUALSPEC_LEVEL, 255);
+        }
 
-        //LOG_INFO("server.loading", ">> Disabled BoP item trades");
-        //sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, false);
+        if (sConfigMgr->GetOption<bool>("Progression.TradableBindsOnPickup.Enforced", true))
+        {
+            LOG_INFO("server.loading", ">> Disabled BoP item trades");
+            sWorld->setBoolConfig(CONFIG_SET_BOP_ITEM_TRADEABLE, false);
+        }
 
         LOG_INFO("server.loading", ">> Disabled experience rate in battlegrounds");
         sWorld->setRate(RATE_XP_BG_KILL_AV, 0.0f);
@@ -109,14 +135,14 @@ void Progression::OnAfterConfigLoad(bool reload)
 
     if (PhaseId < 17)
     {
-        //LOG_INFO("server.loading", ">> Dungeon Finder disabled");
-        //sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
+        if (sConfigMgr->GetOption<bool>("Progression.DungeonFinder.Enforced", true))
+        {
+            LOG_INFO("server.loading", ">> Dungeon Finder disabled");
+            sWorld->setIntConfig(CONFIG_LFG_OPTIONSMASK, 0);
+        }
 
         LOG_INFO("server.loading", ">> Low level regen boost disabled");
         sWorld->setBoolConfig(CONFIG_LOW_LEVEL_REGEN_BOOST, false);
-
-        LOG_INFO("server.loading", ">> Points of interest for quests disabled");
-        sWorld->setBoolConfig(CONFIG_QUEST_POI_ENABLED, false);
 
         float honorRate = sWorld->getRate(RATE_HONOR);
         if (PhaseId < 2)
@@ -128,35 +154,39 @@ void Progression::OnAfterConfigLoad(bool reload)
         sWorld->setRate(RATE_HONOR, honorRate);
     }
 
+    uint32 allianceBuffId = 73828;
+    uint32 hordeBuffId = 73822;
+
     switch (AuraId)
     {
     case 0:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 0);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 0);
+        allianceBuffId = 0;
+        hordeBuffId = 0;
         break;
     case 1:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73762);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73816);
+        allianceBuffId = 73762;
+        hordeBuffId = 73816;
         break;
     case 2:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73824);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73818);
+        allianceBuffId = 73824;
+        hordeBuffId = 73818;
         break;
     case 3:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73825);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73819);
+        allianceBuffId = 73825;
+        hordeBuffId = 73819;
         break;
     case 4:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73826);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73820);
+        allianceBuffId = 73826;
+        hordeBuffId = 73820;
         break;
     case 5:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73827);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73821);
+        allianceBuffId = 73827;
+        hordeBuffId = 73821;
         break;
     default:
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, 73828);
-        sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, 73822);
         break;
     }
+
+    sWorld->setIntConfig(CONFIG_ICC_BUFF_ALLIANCE, allianceBuffId);
+    sWorld->setIntConfig(CONFIG_ICC_BUFF_HORDE, hordeBuffId);
 }
