@@ -1174,6 +1174,18 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (
     51580, -- Titan-Forged Shoulderplates of Triumph
     51581 -- Titan-Forged Shoulderplates of Salvation
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 29529 AND `item` IN ( -- Ninsianna <Relics>
+    39728, -- Totem of Misery
+    39757, -- Idol of Worship
+    40191, -- Libram of Radiance
+    40207, -- Sigil of Awareness
+    40267, -- Totem of Hex
+    40268, -- Libram of Tolerance
+    40321, -- Idol of the Shooting Star
+    40322, -- Totem of Dueling
+    40337, -- Libram of Resurgence
+    40342 -- Idol of Awakening
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>

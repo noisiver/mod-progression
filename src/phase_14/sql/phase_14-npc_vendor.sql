@@ -1,5 +1,17 @@
+DELETE FROM `npc_vendor` WHERE `entry` = 29529 AND `item` IN (39728, 39757, 40191, 40207, 40267, 40268, 40321, 40322, 40337, 40342);
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (44891, 44892, 44893, 44894, 44895, 44896, 44897, 44898, 44899, 44900, 44901, 44902, 44903, 44904, 44905, 44906, 44907, 44908, 44909, 44910, 44912, 44914);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Ninsianna <Relics>
+(29529, 0, 39728, 0, 0, 25340), -- Totem of Misery
+(29529, 0, 39757, 0, 0, 25340), -- Idol of Worship
+(29529, 0, 40191, 0, 0, 25340), -- Libram of Radiance
+(29529, 0, 40207, 0, 0, 25340), -- Sigil of Awareness
+(29529, 0, 40267, 0, 0, 25340), -- Totem of Hex
+(29529, 0, 40268, 0, 0, 25340), -- Libram of Tolerance
+(29529, 0, 40321, 0, 0, 25340), -- Idol of the Shooting Star
+(29529, 0, 40322, 0, 0, 25340), -- Totem of Dueling
+(29529, 0, 40337, 0, 0, 25340), -- Libram of Resurgence
+(29529, 0, 40342, 0, 0, 25340), -- Idol of Awakening
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 44891, 0, 0, 2577, 0), -- Titan-Forged Boots of Dominance
 (32294, 0, 44892, 0, 0, 2577, 0), -- Titan-Forged Boots of Salvation
