@@ -1,7 +1,13 @@
 DELETE FROM `npc_vendor` WHERE `entry` = 29529 AND `item` IN (39728, 39757, 40191, 40207, 40267, 40268, 40321, 40322, 40337, 40342);
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (44891, 44892, 44893, 44894, 44895, 44896, 44897, 44898, 44899, 44900, 44901, 44902, 44903, 44904, 44905, 44906, 44907, 44908, 44909, 44910, 44912, 44914);
 DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN (40742, 40743, 40745, 40746, 40747, 40748, 40749, 40750, 40751);
+DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN (40721, 40722, 40723, 40724);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Norvin Alderman <Cloaks>
+(29495, 0, 40721, 0, 0, 25340), -- Hammerhead Sharkskin Cloak
+(29495, 0, 40722, 0, 0, 25340), -- Platinum Mesh Cloak
+(29495, 0, 40723, 0, 0, 25340), -- Disguise of the Kumiho
+(29495, 0, 40724, 0, 0, 25340), -- Cloak of Kea Feathers
 -- Ninsianna <Relics>
 (29529, 0, 39728, 0, 0, 25340), -- Totem of Misery
 (29529, 0, 39757, 0, 0, 25340), -- Idol of Worship

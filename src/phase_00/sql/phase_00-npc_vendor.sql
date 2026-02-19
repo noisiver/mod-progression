@@ -1197,6 +1197,12 @@ DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN ( -- Sheddle Glossg
     40750, -- Xintor's Expeditionary Boots
     40751 -- Slippers of the Holy Light
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN ( -- Norvin Alderman <Cloaks>
+    40721, -- Hammerhead Sharkskin Cloak
+    40722, -- Platinum Mesh Cloak
+    40723, -- Disguise of the Kumiho
+    40724 -- Cloak of Kea Feathers
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
