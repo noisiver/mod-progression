@@ -3,7 +3,10 @@ DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (44891, 4
 DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN (40742, 40743, 40745, 40746, 40747, 40748, 40749, 40750, 40751);
 DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN (40721, 40722, 40723, 40724);
 DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN (39491, 39492, 39493, 39494, 39495, 39496, 39497, 39498, 39499, 39500, 39514, 39515, 39517, 39518, 39519, 39521, 39523, 39528, 39529, 39530, 40415, 40416, 40417, 40418, 40419, 40420, 40421, 40422, 40423, 40424, 40445, 40447, 40448, 40449, 40450, 40454, 40456, 40457, 40458, 40459, 40696, 40697, 40740, 40750, 40751);
+DELETE FROM `npc_vendor` WHERE `entry` = 28721 AND `item` = 43597;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Tiffany Cartier <Jewelcrafting Supplies>
+(28721, 0, 43597, 0, 0, 2558, 0), -- Design: Titanium Frostguard Ring
 -- Paldesse <Cloth Armor Merchant>
 (28995, 0, 39491, 0, 0, 24870), -- Heroes' Frostfire Circlet
 (28995, 0, 39492, 0, 0, 24850), -- Heroes' Frostfire Robe

@@ -1395,6 +1395,7 @@ DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN ( -- Rueben Lauren 
     51283, -- Sanctified Bloodmage Robe
     51284 -- Sanctified Bloodmage Shoulderpads
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 28721 AND `item` = 43597; -- Tiffany Cartier <Jewelcrafting Supplies>, Design: Titanium Frostguard Ring
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
