@@ -28,7 +28,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 1 WHERE `CreatureId` IN (
     16771, -- Ahonan <Warrior Trainer>
     17120, -- Behomat <Warrior Trainer>
     17480, -- Ruada <Warrior Trainer>
-    17504 -- Kazi <Warrior Trainer>
+    17504, -- Kazi <Warrior Trainer>
+    26332 -- Warrior Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 2 WHERE `CreatureId` IN (
     911, -- Llane Beshere <Warrior Trainer>
@@ -63,6 +64,9 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 4 WHERE `CreatureId` IN (
     16681, -- Champion Bachi <Paladin Trainer>
     20406, -- Champion Cyssa Dawnrose <Paladin Trainer>
     23128 -- Master Pyreanor <Paladin Trainer>
+);
+UPDATE `creature_default_trainer` SET `TrainerId` = 5 WHERE `CreatureId` IN (
+    26327 -- Paladin Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 6 WHERE `CreatureId` IN (
     925, -- Brother Sammuel <Paladin Trainer>
@@ -103,7 +107,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 7 WHERE `CreatureId` IN (
     16738, -- Deremiis <Hunter Trainer>
     17110, -- Acteon <Hunter Trainer>
     17122, -- Vord <Hunter Trainer>
-    17505 -- Killac <Hunter Trainer>
+    17505, -- Killac <Hunter Trainer>
+    26325 -- Hunter Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 8 WHERE `CreatureId` IN (
     895, -- Thorgas Grimson <Hunter Trainer>
@@ -138,7 +143,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 9 WHERE `CreatureId` IN (
     16279, -- Tannaria <Rogue Trainer>
     16684, -- Zelanis <Rogue Trainer>
     16685, -- Elara <Rogue Trainer>
-    16686 -- Nerisen <Rogue Trainer>
+    16686, -- Nerisen <Rogue Trainer>
+    26329 -- Rogue Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 10 WHERE `CreatureId` IN (
     915, -- Jorik Kerridan <Rogue Trainer>
@@ -184,7 +190,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 11 WHERE `CreatureId` IN (
     16756, -- Caedmos <Priest Trainer>
     17482, -- Guvan <Priest Trainer>
     17510, -- Izmir <Priest Trainer>
-    17511 -- Fallat <Priest Trainer>
+    17511, -- Fallat <Priest Trainer>
+    26328 -- Priest Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 12 WHERE `CreatureId` IN (
     375, -- Priestess Anetta <Priest Trainer>
@@ -210,7 +217,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 14 WHERE `CreatureId` IN (
     17519, -- Hobahken <Shaman Trainer>
     17520, -- Gurrag <Shaman Trainer>
     20407, -- Farseer Umbrua <Shaman Trainer>
-    23127 -- Farseer Javad <Shaman Trainer>
+    23127, -- Farseer Javad <Shaman Trainer>
+    26330 -- Shaman Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 15 WHERE `CreatureId` IN (
     3062, -- Meela Dawnstrider <Shaman Trainer>
@@ -250,7 +258,10 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 16 WHERE `CreatureId` IN (
     17513, -- Harnan <Mage Trainer>
     17514, -- Bati <Mage Trainer>
     23103, -- Derek the Undying <Mage Trainer>
-    27704 -- Horace Alder <Mage Trainer>
+    26326, -- Mage Trainer
+    27704, -- Horace Alder <Mage Trainer>
+    28956, -- Warcaster Fanoraithe <Mage Trainer>
+    28958 -- Jessa Weaver <Mage Trainer>
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 17 WHERE `CreatureId` IN (
     198, -- Khelden Bremen <Mage Trainer>
@@ -264,6 +275,7 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 31 WHERE `CreatureId` IN (
     906, -- Maximillian Crowe <Warlock Trainer>
     988, -- Kartosh <Warlock Trainer>
     2127, -- Rupert Boch <Warlock Trainer>
+    3172, -- Dhugru Gorelust <Warlock Trainer>
     3324, -- Grol'dar <Warlock Trainer>
     3325, -- Mirket <Warlock Trainer>
     3326, -- Zevrost <Warlock Trainer>
@@ -275,11 +287,13 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 31 WHERE `CreatureId` IN (
     5173, -- Alexander Calder <Warlock Trainer>
     5495, -- Ursula Deline <Warlock Trainer>
     5496, -- Sandahl <Warlock Trainer>
+    5612, -- Gimrizz Shadowcog <Warlock Trainer>
     16266, -- Celoenus <Warlock Trainer>
     16646, -- Alamma <Warlock Trainer>
     16647, -- Talionia <Warlock Trainer>
     16648, -- Zanien <Warlock Trainer>
-    23534 -- Babagaya Shadowcleft <Warlock Trainer>
+    23534, -- Babagaya Shadowcleft <Warlock Trainer>
+    26331 -- Warlock Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 32 WHERE `CreatureId` IN (
     459, -- Drusilla La Salle <Warlock Trainer>
@@ -304,7 +318,8 @@ UPDATE `creature_default_trainer` SET `TrainerId` = 33 WHERE `CreatureId` IN (
     9465, -- Golhine the Hooded <Druid Trainer>
     12042, -- Loganaar <Druid Trainer>
     16655, -- Harene Plainwalker <Druid Trainer>
-    16721 -- Shalannius <Druid Trainer>
+    16721, -- Shalannius <Druid Trainer>
+    26324 -- Druid Trainer
 );
 UPDATE `creature_default_trainer` SET `TrainerId` = 34 WHERE `CreatureId` IN (
     3060, -- Gart Mistrunner <Druid Trainer>
