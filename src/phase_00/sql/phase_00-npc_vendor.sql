@@ -1203,6 +1203,96 @@ DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN ( -- Norvin Alderma
     40723, -- Disguise of the Kumiho
     40724 -- Cloak of Kea Feathers
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN ( -- Paldesse <Cloth Armor Merchant>
+    39491, -- Heroes' Frostfire Circlet
+    39492, -- Heroes' Frostfire Robe
+    39493, -- Heroes' Frostfire Leggings
+    39494, -- Heroes' Frostfire Shoulderpads
+    39495, -- Heroes' Frostfire Gloves
+    39496, -- Heroes' Plagueheart Circlet
+    39497, -- Heroes' Plagueheart Robe
+    39498, -- Heroes' Plagueheart Leggings
+    39499, -- Heroes' Plagueheart Shoulderpads
+    39500, -- Heroes' Plagueheart Gloves
+    39514, -- Heroes' Crown of Faith
+    39515, -- Heroes' Robe of Faith
+    39517, -- Heroes' Leggings of Faith
+    39518, -- Heroes' Shoulderpads of Faith
+    39519, -- Heroes' Gloves of Faith
+    39521, -- Heroes' Circlet of Faith
+    39523, -- Heroes' Raiments of Faith
+    39528, -- Heroes' Pants of Faith
+    39529, -- Heroes' Mantle of Faith
+    39530, -- Heroes' Handwraps of Faith
+    40415, -- Valorous Frostfire Gloves
+    40416, -- Valorous Frostfire Circlet
+    40417, -- Valorous Frostfire Leggings
+    40418, -- Valorous Frostfire Robe
+    40419, -- Valorous Frostfire Shoulderpads
+    40420, -- Valorous Plagueheart Gloves
+    40421, -- Valorous Plagueheart Circlet
+    40422, -- Valorous Plagueheart Leggings
+    40423, -- Valorous Plagueheart Robe
+    40424, -- Valorous Plagueheart Shoulderpads
+    40445, -- Valorous Gloves of Faith
+    40447, -- Valorous Crown of Faith
+    40448, -- Valorous Leggings of Faith
+    40449, -- Valorous Robe of Faith
+    40450, -- Valorous Shoulderpads of Faith
+    40454, -- Valorous Handwraps of Faith
+    40456, -- Valorous Circlet of Faith
+    40457, -- Valorous Pants of Faith
+    40458, -- Valorous Raiments of Faith
+    40459, -- Valorous Mantle of Faith
+    40696, -- Plush Sash of Guzbah
+    40697, -- Elegant Temple Gardens' Girdle
+    40740, -- Wraps of the Astral Traveler
+    40750, -- Xintor's Expeditionary Boots
+    40751, -- Slippers of the Holy Light
+    45365, -- Valorous Kirin Tor Hood
+    45367, -- Valorous Kirin Tor Leggings
+    45368, -- Valorous Kirin Tor Tunic
+    45369, -- Valorous Kirin Tor Shoulderpads
+    45386, -- Valorous Cowl of Sanctification
+    45387, -- Valorous Gloves of Sanctification
+    45388, -- Valorous Leggings of Sanctification
+    45389, -- Valorous Robe of Sanctification
+    45390, -- Valorous Shoulderpads of Sanctification
+    45391, -- Valorous Circlet of Sanctification
+    45392, -- Valorous Handwraps of Sanctification
+    45393, -- Valorous Mantle of Sanctification
+    45394, -- Valorous Pants of Sanctification
+    45395, -- Valorous Raiments of Sanctification
+    45417, -- Valorous Deathbringer Hood
+    45419, -- Valorous Deathbringer Gloves
+    45420, -- Valorous Deathbringer Leggings
+    45421, -- Valorous Deathbringer Robe
+    45422, -- Valorous Deathbringer Shoulderpads
+    45831, -- Sash of Potent Incantations
+    45840, -- Touch of the Occult
+    45848, -- Legwraps of the Master Conjurer
+    46129, -- Conqueror's Kirin Tor Hood
+    46130, -- Conqueror's Kirin Tor Tunic
+    46131, -- Valorous Kirin Tor Gauntlets
+    46132, -- Conqueror's Kirin Tor Gauntlets
+    46133, -- Conqueror's Kirin Tor Leggings
+    46134, -- Conqueror's Kirin Tor Shoulderpads
+    46135, -- Conqueror's Deathbringer Gloves
+    46136, -- Conqueror's Deathbringer Shoulderpads
+    46137, -- Conqueror's Deathbringer Robe
+    46139, -- Conqueror's Deathbringer Leggings
+    46140, -- Conqueror's Deathbringer Hood
+    46163, -- Conqueror's Handwraps of Sanctification
+    46165, -- Conqueror's Mantle of Sanctification
+    46168, -- Conqueror's Raiments of Sanctification
+    46170, -- Conqueror's Pants of Sanctification
+    46172, -- Conqueror's Circlet of Sanctification
+    46188, -- Conqueror's Gloves of Sanctification
+    46190, -- Conqueror's Shoulderpads of Sanctification
+    46193, -- Conqueror's Robe of Sanctification
+    46195, -- Conqueror's Leggings of Sanctification
+    46197 -- Conqueror's Cowl of Sanctification
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>

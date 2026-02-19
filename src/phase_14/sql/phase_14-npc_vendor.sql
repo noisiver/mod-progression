@@ -2,7 +2,54 @@ DELETE FROM `npc_vendor` WHERE `entry` = 29529 AND `item` IN (39728, 39757, 4019
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (44891, 44892, 44893, 44894, 44895, 44896, 44897, 44898, 44899, 44900, 44901, 44902, 44903, 44904, 44905, 44906, 44907, 44908, 44909, 44910, 44912, 44914);
 DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN (40742, 40743, 40745, 40746, 40747, 40748, 40749, 40750, 40751);
 DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN (40721, 40722, 40723, 40724);
+DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN (39491, 39492, 39493, 39494, 39495, 39496, 39497, 39498, 39499, 39500, 39514, 39515, 39517, 39518, 39519, 39521, 39523, 39528, 39529, 39530, 40415, 40416, 40417, 40418, 40419, 40420, 40421, 40422, 40423, 40424, 40445, 40447, 40448, 40449, 40450, 40454, 40456, 40457, 40458, 40459, 40696, 40697, 40740, 40750, 40751);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Paldesse <Cloth Armor Merchant>
+(28995, 0, 39491, 0, 0, 24870), -- Heroes' Frostfire Circlet
+(28995, 0, 39492, 0, 0, 24850), -- Heroes' Frostfire Robe
+(28995, 0, 39493, 0, 0, 24880), -- Heroes' Frostfire Leggings
+(28995, 0, 39494, 0, 0, 24890), -- Heroes' Frostfire Shoulderpads
+(28995, 0, 39495, 0, 0, 24860), -- Heroes' Frostfire Gloves
+(28995, 0, 39496, 0, 0, 24900), -- Heroes' Plagueheart Circlet
+(28995, 0, 39497, 0, 0, 24910), -- Heroes' Plagueheart Robe
+(28995, 0, 39498, 0, 0, 24920), -- Heroes' Plagueheart Leggings
+(28995, 0, 39499, 0, 0, 24930), -- Heroes' Plagueheart Shoulderpads
+(28995, 0, 39500, 0, 0, 24940), -- Heroes' Plagueheart Gloves
+(28995, 0, 39514, 0, 0, 24900), -- Heroes' Crown of Faith
+(28995, 0, 39515, 0, 0, 24910), -- Heroes' Robe of Faith
+(28995, 0, 39517, 0, 0, 24920), -- Heroes' Leggings of Faith
+(28995, 0, 39518, 0, 0, 24930), -- Heroes' Shoulderpads of Faith
+(28995, 0, 39519, 0, 0, 24940), -- Heroes' Gloves of Faith
+(28995, 0, 39521, 0, 0, 24900), -- Heroes' Circlet of Faith
+(28995, 0, 39523, 0, 0, 24910), -- Heroes' Raiments of Faith
+(28995, 0, 39528, 0, 0, 24920), -- Heroes' Pants of Faith
+(28995, 0, 39529, 0, 0, 24930), -- Heroes' Mantle of Faith
+(28995, 0, 39530, 0, 0, 24940), -- Heroes' Handwraps of Faith
+(28995, 0, 40415, 0, 0, 25150), -- Valorous Frostfire Gloves
+(28995, 0, 40416, 0, 0, 25140), -- Valorous Frostfire Circlet
+(28995, 0, 40417, 0, 0, 25160), -- Valorous Frostfire Leggings
+(28995, 0, 40418, 0, 0, 25130), -- Valorous Frostfire Robe
+(28995, 0, 40419, 0, 0, 25170), -- Valorous Frostfire Shoulderpads
+(28995, 0, 40420, 0, 0, 25030), -- Valorous Plagueheart Gloves
+(28995, 0, 40421, 0, 0, 25050), -- Valorous Plagueheart Circlet
+(28995, 0, 40422, 0, 0, 25060), -- Valorous Plagueheart Leggings
+(28995, 0, 40423, 0, 0, 25040), -- Valorous Plagueheart Robe
+(28995, 0, 40424, 0, 0, 25070), -- Valorous Plagueheart Shoulderpads
+(28995, 0, 40445, 0, 0, 25030), -- Valorous Gloves of Faith
+(28995, 0, 40447, 0, 0, 25050), -- Valorous Crown of Faith
+(28995, 0, 40448, 0, 0, 25060), -- Valorous Leggings of Faith
+(28995, 0, 40449, 0, 0, 25040), -- Valorous Robe of Faith
+(28995, 0, 40450, 0, 0, 25070), -- Valorous Shoulderpads of Faith
+(28995, 0, 40454, 0, 0, 25030), -- Valorous Handwraps of Faith
+(28995, 0, 40456, 0, 0, 25050), -- Valorous Circlet of Faith
+(28995, 0, 40457, 0, 0, 25060), -- Valorous Pants of Faith
+(28995, 0, 40458, 0, 0, 25040), -- Valorous Raiments of Faith
+(28995, 0, 40459, 0, 0, 25070), -- Valorous Mantle of Faith
+(28995, 0, 40696, 0, 0, 25240), -- Plush Sash of Guzbah
+(28995, 0, 40697, 0, 0, 25240), -- Elegant Temple Gardens' Girdle
+(28995, 0, 40740, 0, 0, 25370), -- Wraps of the Astral Traveler
+(28995, 0, 40750, 0, 0, 25360), -- Xintor's Expeditionary Boots
+(28995, 0, 40751, 0, 0, 25360), -- Slippers of the Holy Light
 -- Norvin Alderman <Cloaks>
 (29495, 0, 40721, 0, 0, 25340), -- Hammerhead Sharkskin Cloak
 (29495, 0, 40722, 0, 0, 25340), -- Platinum Mesh Cloak

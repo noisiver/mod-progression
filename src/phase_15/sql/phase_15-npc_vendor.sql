@@ -1,5 +1,49 @@
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (46057, 46058, 46059, 46060, 46061, 46062, 46063, 46064, 46065, 46066, 46071, 46072, 46073, 46074, 46075, 46076, 46077, 46078, 46079, 46080, 46081, 46082, 46083, 46084, 46085, 46086, 46087, 46088);
+DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN (45365, 45367, 45368, 45369, 45386, 45387, 45388, 45389, 45390, 45391, 45392, 45393, 45394, 45395, 45417, 45419, 45420, 45421, 45422, 45831, 45840, 45848, 46129, 46130, 46131, 46132, 46133, 46134, 46135, 46136, 46137, 46139, 46140, 46163, 46165, 46168, 46170, 46172, 46188, 46190, 46193, 46195, 46197);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+(28995, 0, 45365, 0, 0, 26680), -- Valorous Kirin Tor Hood
+(28995, 0, 45367, 0, 0, 26640), -- Valorous Kirin Tor Leggings
+(28995, 0, 45368, 0, 0, 26660), -- Valorous Kirin Tor Tunic
+(28995, 0, 45369, 0, 0, 26620), -- Valorous Kirin Tor Shoulderpads
+(28995, 0, 45386, 0, 0, 26480), -- Valorous Cowl of Sanctification
+(28995, 0, 45387, 0, 0, 26400), -- Valorous Gloves of Sanctification
+(28995, 0, 45388, 0, 0, 26440), -- Valorous Leggings of Sanctification
+(28995, 0, 45389, 0, 0, 26460), -- Valorous Robe of Sanctification
+(28995, 0, 45390, 0, 0, 26420), -- Valorous Shoulderpads of Sanctification
+(28995, 0, 45391, 0, 0, 26480), -- Valorous Circlet of Sanctification
+(28995, 0, 45392, 0, 0, 26400), -- Valorous Handwraps of Sanctification
+(28995, 0, 45393, 0, 0, 26420), -- Valorous Mantle of Sanctification
+(28995, 0, 45394, 0, 0, 26440), -- Valorous Pants of Sanctification
+(28995, 0, 45395, 0, 0, 26460), -- Valorous Raiments of Sanctification
+(28995, 0, 45417, 0, 0, 26480), -- Valorous Deathbringer Hood
+(28995, 0, 45419, 0, 0, 26400), -- Valorous Deathbringer Gloves
+(28995, 0, 45420, 0, 0, 26440), -- Valorous Deathbringer Leggings
+(28995, 0, 45421, 0, 0, 26460), -- Valorous Deathbringer Robe
+(28995, 0, 45422, 0, 0, 26420), -- Valorous Deathbringer Shoulderpads
+(28995, 0, 45831, 0, 0, 26070), -- Sash of Potent Incantations
+(28995, 0, 45840, 0, 0, 26070), -- Touch of the Occult
+(28995, 0, 45848, 0, 0, 26300), -- Legwraps of the Master Conjurer
+(28995, 0, 46129, 0, 0, 26690), -- Conqueror's Kirin Tor Hood
+(28995, 0, 46130, 0, 0, 26670), -- Conqueror's Kirin Tor Tunic
+(28995, 0, 46131, 0, 0, 26600), -- Valorous Kirin Tor Gauntlets
+(28995, 0, 46132, 0, 0, 26610), -- Conqueror's Kirin Tor Gauntlets
+(28995, 0, 46133, 0, 0, 26650), -- Conqueror's Kirin Tor Leggings
+(28995, 0, 46134, 0, 0, 26630), -- Conqueror's Kirin Tor Shoulderpads
+(28995, 0, 46135, 0, 0, 26410), -- Conqueror's Deathbringer Gloves
+(28995, 0, 46136, 0, 0, 26430), -- Conqueror's Deathbringer Shoulderpads
+(28995, 0, 46137, 0, 0, 26470), -- Conqueror's Deathbringer Robe
+(28995, 0, 46139, 0, 0, 26450), -- Conqueror's Deathbringer Leggings
+(28995, 0, 46140, 0, 0, 26490), -- Conqueror's Deathbringer Hood
+(28995, 0, 46163, 0, 0, 26410), -- Conqueror's Handwraps of Sanctification
+(28995, 0, 46165, 0, 0, 26430), -- Conqueror's Mantle of Sanctification
+(28995, 0, 46168, 0, 0, 26470), -- Conqueror's Raiments of Sanctification
+(28995, 0, 46170, 0, 0, 26450), -- Conqueror's Pants of Sanctification
+(28995, 0, 46172, 0, 0, 26490), -- Conqueror's Circlet of Sanctification
+(28995, 0, 46188, 0, 0, 26410), -- Conqueror's Gloves of Sanctification
+(28995, 0, 46190, 0, 0, 26430), -- Conqueror's Shoulderpads of Sanctification
+(28995, 0, 46193, 0, 0, 26470), -- Conqueror's Robe of Sanctification
+(28995, 0, 46195, 0, 0, 26450), -- Conqueror's Leggings of Sanctification
+(28995, 0, 46197, 0, 0, 26490), -- Conqueror's Cowl of Sanctification
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 46057, 0, 0, 2579, 0), -- Titan-Forged Chestguard of Salvation
 (32294, 0, 46058, 0, 0, 2579, 0), -- Titan-Forged Breastplate of Triumph
