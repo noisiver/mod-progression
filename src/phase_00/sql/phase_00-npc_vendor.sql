@@ -1186,6 +1186,17 @@ DELETE FROM `npc_vendor` WHERE `entry` = 29529 AND `item` IN ( -- Ninsianna <Rel
     40337, -- Libram of Resurgence
     40342 -- Idol of Awakening
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN ( -- Sheddle Glossgleam <Cobbler>
+    40742, -- Bladed Steelboots
+    40743, -- Kyzoc's Ground Stompers
+    40745, -- Sabatons of Rapid Recovery
+    40746, -- Pack-Ice Striders
+    40747, -- Treads of Coastal Wandering
+    40748, -- Boots of Captain Ellis
+    40749, -- Rainey's Chewed Boots
+    40750, -- Xintor's Expeditionary Boots
+    40751 -- Slippers of the Holy Light
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
