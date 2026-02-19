@@ -1293,6 +1293,108 @@ DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN ( -- Paldesse <Clot
     46195, -- Conqueror's Leggings of Sanctification
     46197 -- Conqueror's Cowl of Sanctification
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN ( -- Rueben Lauren <Cloth Armor Merchant>
+    47748, -- Khadgar's Hood of Conquest
+    47749, -- Khadgar's Robe of Conquest
+    47750, -- Khadgar's Leggings of Conquest
+    47751, -- Khadgar's Shoulderpads of Conquest
+    47752, -- Khadgar's Gauntlets of Conquest
+    47773, -- Sunstrider's Gauntlets of Conquest
+    47774, -- Sunstrider's Hood of Conquest
+    47775, -- Sunstrider's Leggings of Conquest
+    47776, -- Sunstrider's Robe of Conquest
+    47777, -- Sunstrider's Shoulderpads of Conquest
+    47783, -- Kel'Thuzad's Gloves of Conquest
+    47784, -- Kel'Thuzad's Hood of Conquest
+    47785, -- Kel'Thuzad's Leggings of Conquest
+    47786, -- Kel'Thuzad's Robe of Conquest
+    47787, -- Kel'Thuzad's Shoulderpads of Conquest
+    47798, -- Gul'dan's Shoulderpads of Conquest
+    47799, -- Gul'dan's Robe of Conquest
+    47800, -- Gul'dan's Leggings of Conquest
+    47801, -- Gul'dan's Hood of Conquest
+    47802, -- Gul'dan's Gloves of Conquest
+    47914, -- Velen's Cowl of Conquest
+    47936, -- Velen's Robe of Conquest
+    47980, -- Velen's Leggings of Conquest
+    47981, -- Velen's Shoulderpads of Conquest
+    47982, -- Velen's Gloves of Conquest
+    48067, -- Zabra's Gloves of Conquest
+    48068, -- Zabra's Cowl of Conquest
+    48069, -- Zabra's Leggings of Conquest
+    48070, -- Zabra's Robe of Conquest
+    48071, -- Zabra's Shoulderpads of Conquest
+    48072, -- Velen's Handwraps of Conquest
+    48073, -- Velen's Circlet of Conquest
+    48074, -- Velen's Pants of Conquest
+    48075, -- Velen's Raiments of Conquest
+    48076, -- Velen's Mantle of Conquest
+    48097, -- Zabra's Handwraps of Conquest
+    48098, -- Zabra's Circlet of Conquest
+    48099, -- Zabra's Pants of Conquest
+    48100, -- Zabra's Raiments of Conquest
+    48101, -- Zabra's Mantle of Conquest
+    50240, -- Dark Coven Gloves
+    50241, -- Dark Coven Hood
+    50242, -- Dark Coven Leggings
+    50243, -- Dark Coven Robe
+    50244, -- Dark Coven Shoulderpads
+    50275, -- Bloodmage Gloves
+    50276, -- Bloodmage Hood
+    50277, -- Bloodmage Leggings
+    50278, -- Bloodmage Robe
+    50279, -- Bloodmage Shoulderpads
+    50391, -- Crimson Acolyte Handwraps
+    50392, -- Crimson Acolyte Cowl
+    50393, -- Crimson Acolyte Pants
+    50394, -- Crimson Acolyte Raiments
+    50396, -- Crimson Acolyte Mantle
+    50765, -- Crimson Acolyte Hood
+    50766, -- Crimson Acolyte Gloves
+    50767, -- Crimson Acolyte Shoulderpads
+    50768, -- Crimson Acolyte Robe
+    50769, -- Crimson Acolyte Leggings
+    51155, -- Sanctified Bloodmage Shoulderpads
+    51156, -- Sanctified Bloodmage Robe
+    51157, -- Sanctified Bloodmage Leggings
+    51158, -- Sanctified Bloodmage Hood
+    51159, -- Sanctified Bloodmage Gloves
+    51175, -- Sanctified Crimson Acolyte Shoulderpads
+    51176, -- Sanctified Crimson Acolyte Robe
+    51177, -- Sanctified Crimson Acolyte Leggings
+    51178, -- Sanctified Crimson Acolyte Hood
+    51179, -- Sanctified Crimson Acolyte Gloves
+    51180, -- Sanctified Crimson Acolyte Raiments
+    51181, -- Sanctified Crimson Acolyte Pants
+    51182, -- Sanctified Crimson Acolyte Mantle
+    51183, -- Sanctified Crimson Acolyte Handwraps
+    51184, -- Sanctified Crimson Acolyte Cowl
+    51205, -- Sanctified Dark Coven Shoulderpads
+    51206, -- Sanctified Dark Coven Robe
+    51207, -- Sanctified Dark Coven Leggings
+    51208, -- Sanctified Dark Coven Hood
+    51209, -- Sanctified Dark Coven Gloves
+    51230, -- Sanctified Dark Coven Gloves
+    51231, -- Sanctified Dark Coven Hood
+    51232, -- Sanctified Dark Coven Leggings
+    51233, -- Sanctified Dark Coven Robe
+    51234, -- Sanctified Dark Coven Shoulderpads
+    51255, -- Sanctified Crimson Acolyte Cowl
+    51256, -- Sanctified Crimson Acolyte Handwraps
+    51257, -- Sanctified Crimson Acolyte Mantle
+    51258, -- Sanctified Crimson Acolyte Pants
+    51259, -- Sanctified Crimson Acolyte Raiments
+    51260, -- Sanctified Crimson Acolyte Gloves
+    51261, -- Sanctified Crimson Acolyte Hood
+    51262, -- Sanctified Crimson Acolyte Leggings
+    51263, -- Sanctified Crimson Acolyte Robe
+    51264, -- Sanctified Crimson Acolyte Shoulderpads
+    51280, -- Sanctified Bloodmage Gloves
+    51281, -- Sanctified Bloodmage Hood
+    51282, -- Sanctified Bloodmage Leggings
+    51283, -- Sanctified Bloodmage Robe
+    51284 -- Sanctified Bloodmage Shoulderpads
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
