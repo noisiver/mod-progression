@@ -1,6 +1,13 @@
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (48974, 48975, 48976, 48977, 48978, 48979, 48980, 48981, 48982, 48999, 49000);
 DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN (47748, 47749, 47750, 47751, 47752, 47773, 47774, 47775, 47776, 47777, 47783, 47784, 47785, 47786, 47787, 47798, 47799, 47800, 47801, 47802, 47914, 47936, 47980, 47981, 47982, 48067, 48068, 48069, 48070, 48071, 48072, 48073, 48074, 48075, 48076, 48097, 48098, 48099, 48100, 48101);
+DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (47729, 47730, 47731, 47732, 47733);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Harold Winston <Jewelry Vendor>
+(32172, 0, 47729, 0, 0, 26850), -- Bloodshed Band
+(32172, 0, 47730, 0, 0, 26850), -- Dexterous Brightstone Ring
+(32172, 0, 47731, 0, 0, 26850), -- Clutch of Fortification
+(32172, 0, 47732, 0, 0, 26850), -- Band of the Invoker
+(32172, 0, 47733, 0, 0, 26850), -- Heartmender Circle
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 48974, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Dominance
 (32294, 0, 48975, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Salvation

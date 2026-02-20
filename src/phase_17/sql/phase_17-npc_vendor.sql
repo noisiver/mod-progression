@@ -1,7 +1,13 @@
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (48983, 48987, 48988, 48990, 48991, 48992, 48993, 48994, 48997, 48998);
 DELETE FROM `npc_vendor` WHERE `entry` IN (39172, 39173) AND `item` IN (51568, 51569, 51570, 51571);
 DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN (50240, 50241, 50242, 50243, 50244, 50275, 50276, 50277, 50278, 50279, 50391, 50392, 50393, 50394, 50396, 50765, 50766, 50767, 50768, 50769, 51155, 51156, 51157, 51158, 51159, 51175, 51176, 51177, 51178, 51179, 51180, 51181, 51182, 51183, 51184, 51205, 51206, 51207, 51208, 51209, 51230, 51231, 51232, 51233, 51234, 51255, 51256, 51257, 51258, 51259, 51260, 51261, 51262, 51263, 51264, 51280, 51281, 51282, 51283, 51284);
+DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (51557, 51558, 51559, 51560);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+-- Harold Winston <Jewelry Vendor>
+(32172, 0, 51557, 0, 0, 27350), -- Runed Signet of the Kirin Tor
+(32172, 0, 51558, 0, 0, 27370), -- Runed Loop of the Kirin Tor
+(32172, 0, 51559, 0, 0, 27360), -- Runed Ring of the Kirin Tor
+(32172, 0, 51560, 0, 0, 27380), -- Runed Band of the Kirin Tor
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 48983, 0, 0, 2579, 0), -- Titan-Forged Chain Leggings of Triumph
 (32294, 0, 48987, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Salvation

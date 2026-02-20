@@ -4,6 +4,7 @@ DELETE FROM `npc_vendor` WHERE `entry` = 29703 AND `item` IN (40742, 40743, 4074
 DELETE FROM `npc_vendor` WHERE `entry` = 29495 AND `item` IN (40721, 40722, 40723, 40724);
 DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN (39491, 39492, 39493, 39494, 39495, 39496, 39497, 39498, 39499, 39500, 39514, 39515, 39517, 39518, 39519, 39521, 39523, 39528, 39529, 39530, 40415, 40416, 40417, 40418, 40419, 40420, 40421, 40422, 40423, 40424, 40445, 40447, 40448, 40449, 40450, 40454, 40456, 40457, 40458, 40459, 40696, 40697, 40740, 40750, 40751);
 DELETE FROM `npc_vendor` WHERE `entry` = 28721 AND `item` = 43597;
+DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (40585, 40586, 40717, 40718, 40719, 40720, 44934, 44935);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Tiffany Cartier <Jewelcrafting Supplies>
 (28721, 0, 43597, 0, 0, 2558, 0), -- Design: Titanium Frostguard Ring
@@ -79,6 +80,15 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (29703, 0, 40749, 0, 0, 25360), -- Rainey's Chewed Boots
 (29703, 0, 40750, 0, 0, 25360), -- Xintor's Expeditionary Boots
 (29703, 0, 40751, 0, 0, 25360), -- Slippers of the Holy Light
+-- Harold Winston <Jewelry Vendor>
+(32172, 0, 40585, 0, 0, 0, 0), -- Signet of the Kirin Tor
+(32172, 0, 40586, 0, 0, 0, 0), -- Band of the Kirin Tor
+(32172, 0, 40717, 0, 0, 25340), -- Ring of Invincibility
+(32172, 0, 40718, 0, 0, 25340), -- Signet of the Impregnable Fortress
+(32172, 0, 40719, 0, 0, 25340), -- Band of Channeled Magic
+(32172, 0, 40720, 0, 0, 25340), -- Renewal of Life
+(32172, 0, 44934, 0, 0, 0, 0), -- Loop of the Kirin Tor
+(32172, 0, 44935, 0, 0, 0, 0), -- Ring of the Kirin Tor
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 44891, 0, 0, 2577, 0), -- Titan-Forged Boots of Dominance
 (32294, 0, 44892, 0, 0, 2577, 0), -- Titan-Forged Boots of Salvation

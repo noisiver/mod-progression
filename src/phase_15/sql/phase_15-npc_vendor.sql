@@ -1,5 +1,6 @@
 DELETE FROM `npc_vendor` WHERE `entry` IN (32294, 32296) AND `item` IN (46057, 46058, 46059, 46060, 46061, 46062, 46063, 46064, 46065, 46066, 46071, 46072, 46073, 46074, 46075, 46076, 46077, 46078, 46079, 46080, 46081, 46082, 46083, 46084, 46085, 46086, 46087, 46088);
 DELETE FROM `npc_vendor` WHERE `entry` = 28995 AND `item` IN (45365, 45367, 45368, 45369, 45386, 45387, 45388, 45389, 45390, 45391, 45392, 45393, 45394, 45395, 45417, 45419, 45420, 45421, 45422, 45831, 45840, 45848, 46129, 46130, 46131, 46132, 46133, 46134, 46135, 46136, 46137, 46139, 46140, 46163, 46165, 46168, 46170, 46172, 46188, 46190, 46193, 46195, 46197);
+DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (45688, 45689, 45690, 45691, 45819, 45820, 45821, 45822, 45823);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 (28995, 0, 45365, 0, 0, 26680), -- Valorous Kirin Tor Hood
 (28995, 0, 45367, 0, 0, 26640), -- Valorous Kirin Tor Leggings
@@ -44,6 +45,16 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (28995, 0, 46193, 0, 0, 26470), -- Conqueror's Robe of Sanctification
 (28995, 0, 46195, 0, 0, 26450), -- Conqueror's Leggings of Sanctification
 (28995, 0, 46197, 0, 0, 26490), -- Conqueror's Cowl of Sanctification
+-- Harold Winston <Jewelry Vendor>
+(32172, 0, 45688, 0, 0, 25920), -- Inscribed Band of the Kirin Tor
+(32172, 0, 45689, 0, 0, 25930), -- Inscribed Loop of the Kirin Tor
+(32172, 0, 45690, 0, 0, 25940), -- Inscribed Ring of the Kirin Tor
+(32172, 0, 45691, 0, 0, 25950), -- Inscribed Signet of the Kirin Tor
+(32172, 0, 45819, 0, 0, 26060), -- Spiked Battleguard Choker
+(32172, 0, 45820, 0, 0, 26060), -- Broach of the Wailing Night
+(32172, 0, 45821, 0, 0, 26060), -- Shard of the Crystal Forest
+(32172, 0, 45822, 0, 0, 26060), -- Evoker's Charm
+(32172, 0, 45823, 0, 0, 26060), -- Frozen Tear of Elune
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 46057, 0, 0, 2579, 0), -- Titan-Forged Chestguard of Salvation
 (32294, 0, 46058, 0, 0, 2579, 0), -- Titan-Forged Breastplate of Triumph

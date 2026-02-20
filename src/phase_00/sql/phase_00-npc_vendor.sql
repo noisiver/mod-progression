@@ -1395,6 +1395,38 @@ DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN ( -- Rueben Lauren 
     51283, -- Sanctified Bloodmage Robe
     51284 -- Sanctified Bloodmage Shoulderpads
 );
+DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN ( -- Harold Winston <Jewelry Vendor>
+    40585, -- Signet of the Kirin Tor
+    40586, -- Band of the Kirin Tor
+    40717, -- Ring of Invincibility
+    40718, -- Signet of the Impregnable Fortress
+    40719, -- Band of Channeled Magic
+    40720, -- Renewal of Life
+    44934, -- Loop of the Kirin Tor
+    44935, -- Ring of the Kirin Tor
+    45688, -- Inscribed Band of the Kirin Tor
+    45689, -- Inscribed Loop of the Kirin Tor
+    45690, -- Inscribed Ring of the Kirin Tor
+    45691, -- Inscribed Signet of the Kirin Tor
+    45819, -- Spiked Battleguard Choker
+    45820, -- Broach of the Wailing Night
+    45821, -- Shard of the Crystal Forest
+    45822, -- Evoker's Charm
+    45823, -- Frozen Tear of Elune
+    47729, -- Bloodshed Band
+    47730, -- Dexterous Brightstone Ring
+    47731, -- Clutch of Fortification
+    47732, -- Band of the Invoker
+    47733, -- Heartmender Circle
+    48954, -- Etched Band of the Kirin Tor
+    48955, -- Etched Loop of the Kirin Tor
+    48956, -- Etched Ring of the Kirin Tor
+    48957, -- Etched Signet of the Kirin Tor
+    51557, -- Runed Signet of the Kirin Tor
+    51558, -- Runed Loop of the Kirin Tor
+    51559, -- Runed Ring of the Kirin Tor
+    51560 -- Runed Band of the Kirin Tor
+);
 DELETE FROM `npc_vendor` WHERE `entry` = 28721 AND `item` = 43597; -- Tiffany Cartier <Jewelcrafting Supplies>, Design: Titanium Frostguard Ring
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
