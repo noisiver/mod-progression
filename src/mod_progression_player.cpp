@@ -35,7 +35,7 @@ bool Progression::OnPlayerShouldBeRewardedWithMoneyInsteadOfExp(Player* player)
 
 bool Progression::OnPlayerUpdateFishingSkill(Player* /*player*/, int32 /*skill*/, int32 /*zone_skill*/, int32 chance, int32 roll)
 {
-    if (sProgressionMgr->GetPhaseId() < 15)
+    if (sProgressionMgr->GetPhaseId() < 13)
         if (chance < roll)
             return false;
 
@@ -52,12 +52,12 @@ bool Progression::OnPlayerReputationChange(Player* /*player*/, uint32 factionID,
 
 void Progression::OnPlayerQuestComputeXP(Player* /*player*/, Quest const* quest, uint32& xpValue)
 {
-    if (sProgressionMgr->GetPhaseId() < 11 && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
+    if (sProgressionMgr->GetPhaseId() < 7 && quest->GetQuestLevel() >= 30 && quest->GetQuestLevel() <= 60)
         xpValue = uint32(ceilf(xpValue / 1.428571429f));
 }
 
 void Progression::OnPlayerGiveXP(Player* /*player*/, uint32& amount, Unit* /*victim*/, uint8 xpSource)
 {
-    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && sProgressionMgr->GetPhaseId() < 16)
+    if (xpSource == PlayerXPSource::XPSOURCE_BATTLEGROUND && sProgressionMgr->GetPhaseId() < 13)
         amount = 0;
 }

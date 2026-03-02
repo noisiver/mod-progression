@@ -4,7 +4,7 @@
 
 void Progression::OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId)
 {
-    if (sProgressionMgr->GetPhaseId() >= 17)
+    if (sProgressionMgr->GetPhaseId() >= 13)
         return;
 
     if (player->IsGameMaster())

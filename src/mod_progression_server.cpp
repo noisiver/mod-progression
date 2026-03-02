@@ -21,6 +21,6 @@ void Progression::OnStartup()
     else
         sArenaSeasonMgr->ChangeCurrentSeason(8);
 
-    if (sProgressionMgr->GetPhaseId() < 7 || sProgressionMgr->GetPhaseId() == 13)
+    if (sProgressionMgr->GetPhaseId() < 8 || sProgressionMgr->GetPhaseId() == 13)
         sArenaSeasonMgr->SetSeasonState(ARENA_SEASON_STATE_DISABLED);
 }
