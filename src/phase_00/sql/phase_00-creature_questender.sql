@@ -1,17 +1,22 @@
 UPDATE `creature_questender` SET `id` = 3216 WHERE `quest` = 3121; -- Neeru Fireblade, A Strange Request
+UPDATE `creature_questender` SET `id` = 1748 WHERE `quest` = 7781; -- Highlord Bolvar Fordragon, The Lord of Blackrock
 DELETE FROM `creature_questender` WHERE `id` IN (20735, 31439);
-DELETE FROM `creature_questender` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 8344);
+DELETE FROM `creature_questender` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 7495, 7496, 8344);
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES
 -- Drusilla La Salle <Warlock Trainer>
 (459, 1598), -- The Stolen Tome
 -- Alamar Grimm <Warlock Trainer>
 (460, 1599), -- Beginnings
+-- Highlord Bolvar Fordragon
+(1748, 7495), -- Victory for the Alliance
 -- Varimathras
 (2425, 550), -- Battle of Hillsbrad
 -- Venya Marthand
 (5667, 1470), -- Piercing the Veil
 -- Ruzan
 (5765, 1485), -- Vile Familiars
+-- Major Mattingly
+(14394, 7496), -- Celebrating Good Times
 -- Summoner Teli'Larien <Warlock Trainer>
 (15283, 8344), -- Windows to the Source
 -- Archmage Lan'dalock

@@ -5,5 +5,6 @@ DELETE FROM `creature_queststarter` WHERE `quest` IN (
     1470, -- Piercing the Veil
     1598, -- The Stolen Tome
     1485, -- Vile Familiars
+    7496, -- Celebrating Good Times
     8344 -- Windows to the Source
 );
