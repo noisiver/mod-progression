@@ -64,7 +64,6 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
     18594, -- Dathris Sunstriker
     18728, -- Doom Lord Kazzak
     19475, -- Harbinger Haronem
-    19715, -- Ezekiel
     19908, -- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
     19909, -- Rex Pixem <Arena Battlemaster>
     19915, -- Max Xim <Arena Battlemaster>
