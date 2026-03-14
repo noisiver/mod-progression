@@ -1429,6 +1429,6 @@ DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN ( -- Harold Winston
 );
 DELETE FROM `npc_vendor` WHERE `entry` = 28721 AND `item` = 43597; -- Tiffany Cartier <Jewelcrafting Supplies>, Design: Titanium Frostguard Ring
 DELETE FROM `npc_vendor` WHERE `entry` = 2626 AND `item` = 16083;
-INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Old Man Heming <Fishing Supplies>
-(2626, 16083, 0, 0, 0, 0); -- Expert Fishing - The Bass and You
+(2626, 0, 16083, 0, 0, 0, 0); -- Expert Fishing - The Bass and You
