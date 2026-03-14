@@ -3,11 +3,11 @@ DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN (47748, 47749, 4775
 DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (47729, 47730, 47731, 47732, 47733);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Harold Winston <Jewelry Vendor>
-(32172, 0, 47729, 0, 0, 26850, 0), -- Bloodshed Band
-(32172, 0, 47730, 0, 0, 26850, 0), -- Dexterous Brightstone Ring
-(32172, 0, 47731, 0, 0, 26850, 0), -- Clutch of Fortification
-(32172, 0, 47732, 0, 0, 26850, 0), -- Band of the Invoker
-(32172, 0, 47733, 0, 0, 26850, 0), -- Heartmender Circle
+(32172, 0, 47729, 0, 0, 2685, 0), -- Bloodshed Band
+(32172, 0, 47730, 0, 0, 2685, 0), -- Dexterous Brightstone Ring
+(32172, 0, 47731, 0, 0, 2685, 0), -- Clutch of Fortification
+(32172, 0, 47732, 0, 0, 2685, 0), -- Band of the Invoker
+(32172, 0, 47733, 0, 0, 2685, 0), -- Heartmender Circle
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 48974, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Dominance
 (32294, 0, 48975, 0, 0, 2577, 0), -- Titan-Forged Armwraps of Salvation
@@ -33,43 +33,43 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (32296, 0, 48999, 0, 0, 2577, 0), -- Titan-Forged Band of Ascendancy
 (32296, 0, 49000, 0, 0, 2577, 0), -- Titan-Forged Band of Victory
 -- Rueben Lauren <Cloth Armor Merchant>
-(35496, 0, 47748, 0, 0, 26860, 0), -- Khadgar's Hood of Conquest
-(35496, 0, 47749, 0, 0, 26860, 0), -- Khadgar's Robe of Conquest
-(35496, 0, 47750, 0, 0, 26860, 0), -- Khadgar's Leggings of Conquest
-(35496, 0, 47751, 0, 0, 26870, 0), -- Khadgar's Shoulderpads of Conquest
-(35496, 0, 47752, 0, 0, 26870, 0), -- Khadgar's Gauntlets of Conquest
-(35496, 0, 47773, 0, 0, 26870, 0), -- Sunstrider's Gauntlets of Conquest
-(35496, 0, 47774, 0, 0, 26860, 0), -- Sunstrider's Hood of Conquest
-(35496, 0, 47775, 0, 0, 26860, 0), -- Sunstrider's Leggings of Conquest
-(35496, 0, 47776, 0, 0, 26860, 0), -- Sunstrider's Robe of Conquest
-(35496, 0, 47777, 0, 0, 26870, 0), -- Sunstrider's Shoulderpads of Conquest
-(35496, 0, 47783, 0, 0, 26870, 0), -- Kel'Thuzad's Gloves of Conquest
-(35496, 0, 47784, 0, 0, 26860, 0), -- Kel'Thuzad's Hood of Conquest
-(35496, 0, 47785, 0, 0, 26860, 0), -- Kel'Thuzad's Leggings of Conquest
-(35496, 0, 47786, 0, 0, 26860, 0), -- Kel'Thuzad's Robe of Conquest
-(35496, 0, 47787, 0, 0, 26870, 0), -- Kel'Thuzad's Shoulderpads of Conquest
-(35496, 0, 47798, 0, 0, 26870, 0), -- Gul'dan's Shoulderpads of Conquest
-(35496, 0, 47799, 0, 0, 26860, 0), -- Gul'dan's Robe of Conquest
-(35496, 0, 47800, 0, 0, 26860, 0), -- Gul'dan's Leggings of Conquest
-(35496, 0, 47801, 0, 0, 26860, 0), -- Gul'dan's Hood of Conquest
-(35496, 0, 47802, 0, 0, 26870, 0), -- Gul'dan's Gloves of Conquest
-(35496, 0, 47914, 0, 0, 26860, 0), -- Velen's Cowl of Conquest
-(35496, 0, 47936, 0, 0, 26860, 0), -- Velen's Robe of Conquest
-(35496, 0, 47980, 0, 0, 26860, 0), -- Velen's Leggings of Conquest
-(35496, 0, 47981, 0, 0, 26870, 0), -- Velen's Shoulderpads of Conquest
-(35496, 0, 47982, 0, 0, 26870, 0), -- Velen's Gloves of Conquest
-(35496, 0, 48067, 0, 0, 26870, 0), -- Zabra's Gloves of Conquest
-(35496, 0, 48068, 0, 0, 26860, 0), -- Zabra's Cowl of Conquest
-(35496, 0, 48069, 0, 0, 26860, 0), -- Zabra's Leggings of Conquest
-(35496, 0, 48070, 0, 0, 26860, 0), -- Zabra's Robe of Conquest
-(35496, 0, 48071, 0, 0, 26870, 0), -- Zabra's Shoulderpads of Conquest
-(35496, 0, 48072, 0, 0, 26870, 0), -- Velen's Handwraps of Conquest
-(35496, 0, 48073, 0, 0, 26860, 0), -- Velen's Circlet of Conquest
-(35496, 0, 48074, 0, 0, 26860, 0), -- Velen's Pants of Conquest
-(35496, 0, 48075, 0, 0, 26860, 0), -- Velen's Raiments of Conquest
-(35496, 0, 48076, 0, 0, 26870, 0), -- Velen's Mantle of Conquest
-(35496, 0, 48097, 0, 0, 26870, 0), -- Zabra's Handwraps of Conquest
-(35496, 0, 48098, 0, 0, 26860, 0), -- Zabra's Circlet of Conquest
-(35496, 0, 48099, 0, 0, 26860, 0), -- Zabra's Pants of Conquest
-(35496, 0, 48100, 0, 0, 26860, 0), -- Zabra's Raiments of Conquest
-(35496, 0, 48101, 0, 0, 26870); -- Zabra's Mantle of Conquest
+(35496, 0, 47748, 0, 0, 2686, 0), -- Khadgar's Hood of Conquest
+(35496, 0, 47749, 0, 0, 2686, 0), -- Khadgar's Robe of Conquest
+(35496, 0, 47750, 0, 0, 2686, 0), -- Khadgar's Leggings of Conquest
+(35496, 0, 47751, 0, 0, 2687, 0), -- Khadgar's Shoulderpads of Conquest
+(35496, 0, 47752, 0, 0, 2687, 0), -- Khadgar's Gauntlets of Conquest
+(35496, 0, 47773, 0, 0, 2687, 0), -- Sunstrider's Gauntlets of Conquest
+(35496, 0, 47774, 0, 0, 2686, 0), -- Sunstrider's Hood of Conquest
+(35496, 0, 47775, 0, 0, 2686, 0), -- Sunstrider's Leggings of Conquest
+(35496, 0, 47776, 0, 0, 2686, 0), -- Sunstrider's Robe of Conquest
+(35496, 0, 47777, 0, 0, 2687, 0), -- Sunstrider's Shoulderpads of Conquest
+(35496, 0, 47783, 0, 0, 2687, 0), -- Kel'Thuzad's Gloves of Conquest
+(35496, 0, 47784, 0, 0, 2686, 0), -- Kel'Thuzad's Hood of Conquest
+(35496, 0, 47785, 0, 0, 2686, 0), -- Kel'Thuzad's Leggings of Conquest
+(35496, 0, 47786, 0, 0, 2686, 0), -- Kel'Thuzad's Robe of Conquest
+(35496, 0, 47787, 0, 0, 2687, 0), -- Kel'Thuzad's Shoulderpads of Conquest
+(35496, 0, 47798, 0, 0, 2687, 0), -- Gul'dan's Shoulderpads of Conquest
+(35496, 0, 47799, 0, 0, 2686, 0), -- Gul'dan's Robe of Conquest
+(35496, 0, 47800, 0, 0, 2686, 0), -- Gul'dan's Leggings of Conquest
+(35496, 0, 47801, 0, 0, 2686, 0), -- Gul'dan's Hood of Conquest
+(35496, 0, 47802, 0, 0, 2687, 0), -- Gul'dan's Gloves of Conquest
+(35496, 0, 47914, 0, 0, 2686, 0), -- Velen's Cowl of Conquest
+(35496, 0, 47936, 0, 0, 2686, 0), -- Velen's Robe of Conquest
+(35496, 0, 47980, 0, 0, 2686, 0), -- Velen's Leggings of Conquest
+(35496, 0, 47981, 0, 0, 2687, 0), -- Velen's Shoulderpads of Conquest
+(35496, 0, 47982, 0, 0, 2687, 0), -- Velen's Gloves of Conquest
+(35496, 0, 48067, 0, 0, 2687, 0), -- Zabra's Gloves of Conquest
+(35496, 0, 48068, 0, 0, 2686, 0), -- Zabra's Cowl of Conquest
+(35496, 0, 48069, 0, 0, 2686, 0), -- Zabra's Leggings of Conquest
+(35496, 0, 48070, 0, 0, 2686, 0), -- Zabra's Robe of Conquest
+(35496, 0, 48071, 0, 0, 2687, 0), -- Zabra's Shoulderpads of Conquest
+(35496, 0, 48072, 0, 0, 2687, 0), -- Velen's Handwraps of Conquest
+(35496, 0, 48073, 0, 0, 2686, 0), -- Velen's Circlet of Conquest
+(35496, 0, 48074, 0, 0, 2686, 0), -- Velen's Pants of Conquest
+(35496, 0, 48075, 0, 0, 2686, 0), -- Velen's Raiments of Conquest
+(35496, 0, 48076, 0, 0, 2687, 0), -- Velen's Mantle of Conquest
+(35496, 0, 48097, 0, 0, 2687, 0), -- Zabra's Handwraps of Conquest
+(35496, 0, 48098, 0, 0, 2686, 0), -- Zabra's Circlet of Conquest
+(35496, 0, 48099, 0, 0, 2686, 0), -- Zabra's Pants of Conquest
+(35496, 0, 48100, 0, 0, 2686, 0), -- Zabra's Raiments of Conquest
+(35496, 0, 48101, 0, 0, 2687, 0); -- Zabra's Mantle of Conquest

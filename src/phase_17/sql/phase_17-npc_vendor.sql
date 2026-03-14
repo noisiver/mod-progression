@@ -4,10 +4,10 @@ DELETE FROM `npc_vendor` WHERE `entry` = 35496 AND `item` IN (50240, 50241, 5024
 DELETE FROM `npc_vendor` WHERE `entry` = 32172 AND `item` IN (51557, 51558, 51559, 51560);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES
 -- Harold Winston <Jewelry Vendor>
-(32172, 0, 51557, 0, 0, 27350, 0), -- Runed Signet of the Kirin Tor
-(32172, 0, 51558, 0, 0, 27370, 0), -- Runed Loop of the Kirin Tor
-(32172, 0, 51559, 0, 0, 27360, 0), -- Runed Ring of the Kirin Tor
-(32172, 0, 51560, 0, 0, 27380, 0), -- Runed Band of the Kirin Tor
+(32172, 0, 51557, 0, 0, 2735, 0), -- Runed Signet of the Kirin Tor
+(32172, 0, 51558, 0, 0, 2737, 0), -- Runed Loop of the Kirin Tor
+(32172, 0, 51559, 0, 0, 2736, 0), -- Runed Ring of the Kirin Tor
+(32172, 0, 51560, 0, 0, 2738, 0), -- Runed Band of the Kirin Tor
 -- Knight Dameron <Wintergrasp Quartermaster>
 (32294, 0, 48983, 0, 0, 2579, 0), -- Titan-Forged Chain Leggings of Triumph
 (32294, 0, 48987, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Salvation
@@ -31,66 +31,66 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (32296, 0, 48997, 0, 0, 2579, 0), -- Titan-Forged Cloth Trousers of Domination
 (32296, 0, 48998, 0, 0, 2579, 0), -- Titan-Forged Leather Legguards of Dominance
 -- Rueben Lauren <Cloth Armor Merchant>
-(35496, 0, 50240, 0, 0, 27400, 0), -- Dark Coven Gloves
-(35496, 0, 50241, 0, 0, 27420, 0), -- Dark Coven Hood
-(35496, 0, 50242, 0, 0, 27420, 0), -- Dark Coven Leggings
-(35496, 0, 50243, 0, 0, 27420, 0), -- Dark Coven Robe
-(35496, 0, 50244, 0, 0, 27400, 0), -- Dark Coven Shoulderpads
-(35496, 0, 50275, 0, 0, 27400, 0), -- Bloodmage Gloves
-(35496, 0, 50276, 0, 0, 27420, 0), -- Bloodmage Hood
-(35496, 0, 50277, 0, 0, 27420, 0), -- Bloodmage Leggings
-(35496, 0, 50278, 0, 0, 27420, 0), -- Bloodmage Robe
-(35496, 0, 50279, 0, 0, 27400, 0), -- Bloodmage Shoulderpads
-(35496, 0, 50391, 0, 0, 27400, 0), -- Crimson Acolyte Handwraps
-(35496, 0, 50392, 0, 0, 27420, 0), -- Crimson Acolyte Cowl
-(35496, 0, 50393, 0, 0, 27420, 0), -- Crimson Acolyte Pants
-(35496, 0, 50394, 0, 0, 27420, 0), -- Crimson Acolyte Raiments
-(35496, 0, 50396, 0, 0, 27400, 0), -- Crimson Acolyte Mantle
-(35496, 0, 50765, 0, 0, 27420, 0), -- Crimson Acolyte Hood
-(35496, 0, 50766, 0, 0, 27400, 0), -- Crimson Acolyte Gloves
-(35496, 0, 50767, 0, 0, 27400, 0), -- Crimson Acolyte Shoulderpads
-(35496, 0, 50768, 0, 0, 27420, 0), -- Crimson Acolyte Robe
-(35496, 0, 50769, 0, 0, 27420, 0), -- Crimson Acolyte Leggings
-(35496, 0, 51155, 0, 0, 27450, 0), -- Sanctified Bloodmage Shoulderpads
-(35496, 0, 51156, 0, 0, 27460, 0), -- Sanctified Bloodmage Robe
-(35496, 0, 51157, 0, 0, 27470, 0), -- Sanctified Bloodmage Leggings
-(35496, 0, 51158, 0, 0, 27480, 0), -- Sanctified Bloodmage Hood
-(35496, 0, 51159, 0, 0, 27490, 0), -- Sanctified Bloodmage Gloves
-(35496, 0, 51175, 0, 0, 28550, 0), -- Sanctified Crimson Acolyte Shoulderpads
-(35496, 0, 51176, 0, 0, 28560, 0), -- Sanctified Crimson Acolyte Robe
-(35496, 0, 51177, 0, 0, 28570, 0), -- Sanctified Crimson Acolyte Leggings
-(35496, 0, 51178, 0, 0, 28580, 0), -- Sanctified Crimson Acolyte Hood
-(35496, 0, 51179, 0, 0, 28590, 0), -- Sanctified Crimson Acolyte Gloves
-(35496, 0, 51180, 0, 0, 28650, 0), -- Sanctified Crimson Acolyte Raiments
-(35496, 0, 51181, 0, 0, 28660, 0), -- Sanctified Crimson Acolyte Pants
-(35496, 0, 51182, 0, 0, 28670, 0), -- Sanctified Crimson Acolyte Mantle
-(35496, 0, 51183, 0, 0, 28680, 0), -- Sanctified Crimson Acolyte Handwraps
-(35496, 0, 51184, 0, 0, 28690, 0), -- Sanctified Crimson Acolyte Cowl
-(35496, 0, 51205, 0, 0, 28450, 0), -- Sanctified Dark Coven Shoulderpads
-(35496, 0, 51206, 0, 0, 28460, 0), -- Sanctified Dark Coven Robe
-(35496, 0, 51207, 0, 0, 28470, 0), -- Sanctified Dark Coven Leggings
-(35496, 0, 51208, 0, 0, 28480, 0), -- Sanctified Dark Coven Hood
-(35496, 0, 51209, 0, 0, 28490, 0), -- Sanctified Dark Coven Gloves
-(35496, 0, 51230, 0, 0, 28500, 0), -- Sanctified Dark Coven Gloves
-(35496, 0, 51231, 0, 0, 28510, 0), -- Sanctified Dark Coven Hood
-(35496, 0, 51232, 0, 0, 28520, 0), -- Sanctified Dark Coven Leggings
-(35496, 0, 51233, 0, 0, 28530, 0), -- Sanctified Dark Coven Robe
-(35496, 0, 51234, 0, 0, 28540, 0), -- Sanctified Dark Coven Shoulderpads
-(35496, 0, 51255, 0, 0, 28700, 0), -- Sanctified Crimson Acolyte Cowl
-(35496, 0, 51256, 0, 0, 28710, 0), -- Sanctified Crimson Acolyte Handwraps
-(35496, 0, 51257, 0, 0, 28720, 0), -- Sanctified Crimson Acolyte Mantle
-(35496, 0, 51258, 0, 0, 28730, 0), -- Sanctified Crimson Acolyte Pants
-(35496, 0, 51259, 0, 0, 28740, 0), -- Sanctified Crimson Acolyte Raiments
-(35496, 0, 51260, 0, 0, 28600, 0), -- Sanctified Crimson Acolyte Gloves
-(35496, 0, 51261, 0, 0, 28610, 0), -- Sanctified Crimson Acolyte Hood
-(35496, 0, 51262, 0, 0, 28620, 0), -- Sanctified Crimson Acolyte Leggings
-(35496, 0, 51263, 0, 0, 28630, 0), -- Sanctified Crimson Acolyte Robe
-(35496, 0, 51264, 0, 0, 28640, 0), -- Sanctified Crimson Acolyte Shoulderpads
-(35496, 0, 51280, 0, 0, 27500, 0), -- Sanctified Bloodmage Gloves
-(35496, 0, 51281, 0, 0, 27510, 0), -- Sanctified Bloodmage Hood
-(35496, 0, 51282, 0, 0, 27520, 0), -- Sanctified Bloodmage Leggings
-(35496, 0, 51283, 0, 0, 27530, 0), -- Sanctified Bloodmage Robe
-(35496, 0, 51284, 0, 0, 27540, 0), -- Sanctified Bloodmage Shoulderpads
+(35496, 0, 50240, 0, 0, 2740, 0), -- Dark Coven Gloves
+(35496, 0, 50241, 0, 0, 2742, 0), -- Dark Coven Hood
+(35496, 0, 50242, 0, 0, 2742, 0), -- Dark Coven Leggings
+(35496, 0, 50243, 0, 0, 2742, 0), -- Dark Coven Robe
+(35496, 0, 50244, 0, 0, 2740, 0), -- Dark Coven Shoulderpads
+(35496, 0, 50275, 0, 0, 2740, 0), -- Bloodmage Gloves
+(35496, 0, 50276, 0, 0, 2742, 0), -- Bloodmage Hood
+(35496, 0, 50277, 0, 0, 2742, 0), -- Bloodmage Leggings
+(35496, 0, 50278, 0, 0, 2742, 0), -- Bloodmage Robe
+(35496, 0, 50279, 0, 0, 2740, 0), -- Bloodmage Shoulderpads
+(35496, 0, 50391, 0, 0, 2740, 0), -- Crimson Acolyte Handwraps
+(35496, 0, 50392, 0, 0, 2742, 0), -- Crimson Acolyte Cowl
+(35496, 0, 50393, 0, 0, 2742, 0), -- Crimson Acolyte Pants
+(35496, 0, 50394, 0, 0, 2742, 0), -- Crimson Acolyte Raiments
+(35496, 0, 50396, 0, 0, 2740, 0), -- Crimson Acolyte Mantle
+(35496, 0, 50765, 0, 0, 2742, 0), -- Crimson Acolyte Hood
+(35496, 0, 50766, 0, 0, 2740, 0), -- Crimson Acolyte Gloves
+(35496, 0, 50767, 0, 0, 2740, 0), -- Crimson Acolyte Shoulderpads
+(35496, 0, 50768, 0, 0, 2742, 0), -- Crimson Acolyte Robe
+(35496, 0, 50769, 0, 0, 2742, 0), -- Crimson Acolyte Leggings
+(35496, 0, 51155, 0, 0, 2745, 0), -- Sanctified Bloodmage Shoulderpads
+(35496, 0, 51156, 0, 0, 2746, 0), -- Sanctified Bloodmage Robe
+(35496, 0, 51157, 0, 0, 2747, 0), -- Sanctified Bloodmage Leggings
+(35496, 0, 51158, 0, 0, 2748, 0), -- Sanctified Bloodmage Hood
+(35496, 0, 51159, 0, 0, 2749, 0), -- Sanctified Bloodmage Gloves
+(35496, 0, 51175, 0, 0, 2855, 0), -- Sanctified Crimson Acolyte Shoulderpads
+(35496, 0, 51176, 0, 0, 2856, 0), -- Sanctified Crimson Acolyte Robe
+(35496, 0, 51177, 0, 0, 2857, 0), -- Sanctified Crimson Acolyte Leggings
+(35496, 0, 51178, 0, 0, 2858, 0), -- Sanctified Crimson Acolyte Hood
+(35496, 0, 51179, 0, 0, 2859, 0), -- Sanctified Crimson Acolyte Gloves
+(35496, 0, 51180, 0, 0, 2865, 0), -- Sanctified Crimson Acolyte Raiments
+(35496, 0, 51181, 0, 0, 2866, 0), -- Sanctified Crimson Acolyte Pants
+(35496, 0, 51182, 0, 0, 2867, 0), -- Sanctified Crimson Acolyte Mantle
+(35496, 0, 51183, 0, 0, 2868, 0), -- Sanctified Crimson Acolyte Handwraps
+(35496, 0, 51184, 0, 0, 2869, 0), -- Sanctified Crimson Acolyte Cowl
+(35496, 0, 51205, 0, 0, 2845, 0), -- Sanctified Dark Coven Shoulderpads
+(35496, 0, 51206, 0, 0, 2846, 0), -- Sanctified Dark Coven Robe
+(35496, 0, 51207, 0, 0, 2847, 0), -- Sanctified Dark Coven Leggings
+(35496, 0, 51208, 0, 0, 2848, 0), -- Sanctified Dark Coven Hood
+(35496, 0, 51209, 0, 0, 2849, 0), -- Sanctified Dark Coven Gloves
+(35496, 0, 51230, 0, 0, 2850, 0), -- Sanctified Dark Coven Gloves
+(35496, 0, 51231, 0, 0, 2851, 0), -- Sanctified Dark Coven Hood
+(35496, 0, 51232, 0, 0, 2852, 0), -- Sanctified Dark Coven Leggings
+(35496, 0, 51233, 0, 0, 2853, 0), -- Sanctified Dark Coven Robe
+(35496, 0, 51234, 0, 0, 2854, 0), -- Sanctified Dark Coven Shoulderpads
+(35496, 0, 51255, 0, 0, 2870, 0), -- Sanctified Crimson Acolyte Cowl
+(35496, 0, 51256, 0, 0, 2871, 0), -- Sanctified Crimson Acolyte Handwraps
+(35496, 0, 51257, 0, 0, 2872, 0), -- Sanctified Crimson Acolyte Mantle
+(35496, 0, 51258, 0, 0, 2873, 0), -- Sanctified Crimson Acolyte Pants
+(35496, 0, 51259, 0, 0, 2874, 0), -- Sanctified Crimson Acolyte Raiments
+(35496, 0, 51260, 0, 0, 2860, 0), -- Sanctified Crimson Acolyte Gloves
+(35496, 0, 51261, 0, 0, 2861, 0), -- Sanctified Crimson Acolyte Hood
+(35496, 0, 51262, 0, 0, 2862, 0), -- Sanctified Crimson Acolyte Leggings
+(35496, 0, 51263, 0, 0, 2863, 0), -- Sanctified Crimson Acolyte Robe
+(35496, 0, 51264, 0, 0, 2864, 0), -- Sanctified Crimson Acolyte Shoulderpads
+(35496, 0, 51280, 0, 0, 2750, 0), -- Sanctified Bloodmage Gloves
+(35496, 0, 51281, 0, 0, 2751, 0), -- Sanctified Bloodmage Hood
+(35496, 0, 51282, 0, 0, 2752, 0), -- Sanctified Bloodmage Leggings
+(35496, 0, 51283, 0, 0, 2753, 0), -- Sanctified Bloodmage Robe
+(35496, 0, 51284, 0, 0, 2754, 0), -- Sanctified Bloodmage Shoulderpads
 -- Marshal Magruder <Wintergrasp Quartermaster>
 (39172, 0, 51568, 0, 0, 2578, 0), -- Titan-Forged Pendant of Ascendancy
 (39172, 0, 51569, 0, 0, 2578, 0), -- Titan-Forged Pendant of Victory
