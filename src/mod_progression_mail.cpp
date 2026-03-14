@@ -8,6 +8,6 @@ void Progression::OnBeforeMailDraftSendMailTo(MailDraft* /*mailDraft*/, MailRece
         if (pSender->GetSession()->GetSecurity())
             return;
 
-    if (sProgressionMgr->GetPatchId() < PATCH_BLACK_TEMPLE)
+    if (sProgressionMgr->GetPhaseId() < 7)
         custom_expiration = 3;
 }

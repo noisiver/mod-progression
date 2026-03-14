@@ -8,30 +8,28 @@ ProgressionMgr* ProgressionMgr::instance()
     return &instance;
 }
 
-Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript"), UnitScript("ProgressionUnitScript"), ServerScript("ProgressionServerScript"), WorldScript("ProgressionWorldScript") {}
+Progression::Progression() : AllBattlegroundScript("ProgressionAllBattlegroundScript"), DatabaseScript("ProgressionDatabaseScript"), MailScript("ProgressionMailScript"), PlayerScript("ProgressionPlayerScript") , UnitScript("ProgressionUnitScript"), WorldScript("ProgressionWorldScript") {}
 
 void AddSC_spell_mark_of_kazzak();
 void AddSC_instance_blackrock_spire_progression();
-void AddSC_instance_onyxias_lair_progression();
-void AddSC_boss_onyxia_progression();
 void AddSC_go_scarab_gong();
 void AddSC_go_scarab_gate();
+void AddSC_spell_summon_nightbane();
+void AddSC_instance_onyxias_lair_progression();
+void AddSC_boss_onyxia_progression();
 void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
-void AddSC_boss_skadi_progression();
-void AddSC_boss_svala_progression();
-void AddSC_spell_summon_nightbane();
 
 void Addmod_progressionScripts()
 {
     new Progression();
 
-    uint8 id = sConfigMgr->GetOption<uint8>("Progression.Patch", PATCH_ASSAULT_ON_THE_RUBY_SANCTUM);
+    uint8 phaseId = sConfigMgr->GetOption<uint8>("Progression.Phase", 18);
 
-    if (id < PATCH_BEFORE_THE_STORM)
+    if (phaseId < 7)
         AddSC_spell_mark_of_kazzak();
 
-    if (id < PATCH_ECHOES_OF_DOOM)
+    if (phaseId < 13)
     {
         AddSC_instance_blackrock_spire_progression();
         AddSC_go_scarab_gong();
@@ -39,7 +37,7 @@ void Addmod_progressionScripts()
         AddSC_spell_summon_nightbane();
     }
 
-    if (id < PATCH_CALL_OF_THE_CRUSADE)
+    if (phaseId < 16)
     {
         AddSC_instance_onyxias_lair_progression();
         AddSC_boss_onyxia_progression();
@@ -47,10 +45,6 @@ void Addmod_progressionScripts()
 
     AddSC_npc_archmage_landalock();
 
-    if (id < PATCH_FALL_OF_THE_LICH_KING)
-    {
+    if (phaseId < 17)
         AddSC_npc_archmage_timear();
-        AddSC_boss_skadi_progression();
-        AddSC_boss_svala_progression();
-    }
 }
