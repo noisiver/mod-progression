@@ -44,8 +44,11 @@ void Progression::OnAfterConfigLoad(bool reload)
         LOG_INFO("server.loading", ">> Expansion set to {}", expansion);
         sWorld->setIntConfig(CONFIG_EXPANSION, expansion);
 
-        LOG_INFO("server.loading", ">> Max level set to {}", maxLevel);
-        sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, maxLevel);
+        if (sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL) > maxLevel)
+        {
+            LOG_INFO("server.loading", ">> Max level set to {}", maxLevel);
+            sWorld->setIntConfig(CONFIG_MAX_PLAYER_LEVEL, maxLevel);
+        }
 
         if (sConfigMgr->GetOption<bool>("Progression.QuestInfo.Enforced", true))
         {
