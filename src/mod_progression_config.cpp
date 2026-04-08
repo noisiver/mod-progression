@@ -95,11 +95,11 @@ void Progression::OnAfterConfigLoad(bool reload)
         LOG_INFO("server.loading", ">> Enabled legacy arena points calculation");
         sWorld->setIntConfig(CONFIG_LEGACY_ARENA_POINTS_CALC, true);
 
-        float DamageMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", true);
+        float DamageMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Damage", 0.6f);
         LOG_INFO("server.loading", ">> Damage multiplier set to {}", DamageMultiplier);
         sProgressionMgr->SetDamageMultiplier(DamageMultiplier);
 
-        float HealingMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", true);
+        float HealingMultiplier = sConfigMgr->GetOption<float>("Progression.Multiplier.Healing", 0.5f);
         LOG_INFO("server.loading", ">> Healing multiplier set to {}", HealingMultiplier);
         sProgressionMgr->SetHealingMultiplier(HealingMultiplier);
     }

@@ -48,9 +48,9 @@ public:
     uint8 GetPhaseId() { return phaseId; }
     void SetAuraId(uint8 id) { auraId = id; }
     uint8 GetAuraId() { return auraId; }
-    float GetDamageMultiplier() { return 0.6f; }
+    float GetDamageMultiplier() { return damageMultiplier; }
     void SetDamageMultiplier(float value) { damageMultiplier = value; }
-    float GetHealingMultiplier() { return 1.0f; }
+    float GetHealingMultiplier() { return healingMultiplier; }
     void SetHealingMultiplier(float value) { healingMultiplier = value; }
     void SetResetDatabase(bool value) { resetDatabase = value; }
     bool GetResetDatabase() { return resetDatabase; }
