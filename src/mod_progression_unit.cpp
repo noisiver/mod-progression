@@ -65,8 +65,14 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
     if (spellInfo->HasAttribute(SPELL_ATTR0_NO_IMMUNITIES) && spellInfo->Mechanic == MECHANIC_BANDAGE)
         return;
 
-    if (spellInfo->Id == 48982 || spellInfo->Id == 20004)
+    if (spellInfo->Id == 20004 || spellInfo->Id == 20578 || spellInfo->Id == 48982)
         return;
+
+    for (uint8 i = 0; i < MAX_SPELL_EFFECTS; i++)
+    {
+        if (spellInfo->Effects[i].Effect == SPELL_EFFECT_HEAL_MAX_HEALTH)
+            return;
+    }
 
     heal *= sProgressionMgr->GetHealingMultiplier();
 }
