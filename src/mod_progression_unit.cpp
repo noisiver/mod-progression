@@ -62,7 +62,7 @@ void Progression::ModifyHealReceived(Unit* /*target*/, Unit* healer, uint32& hea
     if (!isPet && !healer->IsPlayer())
         return;
 
-    if (spellInfo->HasAttribute(SPELL_ATTR0_NO_IMMUNITIES) && spellInfo->Mechanic == MECHANIC_BANDAGE)
+    if (spellInfo->HasAttribute(SPELL_ATTR0_NO_IMMUNITIES) || spellInfo->Mechanic == MECHANIC_BANDAGE)
         return;
 
     if (spellInfo->Id == 20004 || spellInfo->Id == 20578 || spellInfo->Id == 48982)
