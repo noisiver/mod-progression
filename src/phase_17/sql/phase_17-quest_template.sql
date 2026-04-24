@@ -19,3 +19,6 @@ UPDATE `quest_template` SET `RewardItem1` = 47241 WHERE `ID` IN ( -- Emblem of T
     24789, -- Daily Heroic Random (Nth)
     24790 -- Daily Normal Random (1st)
 );
+UPDATE `quest_template` SET `RewardItem1` = 49426 WHERE `ID` IN ( -- Emblem of Frost
+    24788 -- Daily Heroic Random (1st)
+);
