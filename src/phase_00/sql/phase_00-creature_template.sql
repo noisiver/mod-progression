@@ -271,6 +271,11 @@ UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Ba
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `HealthModifier` = 330, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `exp` = 0, `skinloot` = 0, `HealthModifier` = 1 WHERE `entry` = 11262; -- Onyxian Whelp
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `lootid` = 0, `HealthModifier` = 25 WHERE `entry` = 12129; -- Onyxian Warder
+UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (
+    17097, -- Advisor Sarophas
+    20520 -- Ethereum Prisoner
+);
+UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 17002; -- Angela "The Claw" Kestrel
 UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (
     397, -- Morganth
     436, -- Blackrock Shadowcaster
@@ -478,6 +483,7 @@ UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (
     14388 -- Rogue Black Drake
 );
 UPDATE `creature_template` SET `HealthModifier` = 3.1 WHERE `entry` = 730; -- Tethis
+UPDATE `creature_template` SET `HealthModifier` = 3.1253 WHERE `entry` = 23127; -- Farseer Javad <Shaman Trainer>
 UPDATE `creature_template` SET `HealthModifier` = 3.15 WHERE `entry` = 728; -- Bhag'thera
 UPDATE `creature_template` SET `HealthModifier` = 3.25 WHERE `entry` IN (
     1063, -- Jade
@@ -488,8 +494,14 @@ UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (
     7053, -- Klaven Mortwake
     7728, -- Kirith the Damned
     10807, -- Brumeran
-    11734 -- Hive'Regal Hive Lord
+    11734, -- Hive'Regal Hive Lord
+    16178, -- Phase Hound
+    20043, -- Apprentice Star Scryer
+    20044, -- Novice Astromancer
+    24047, -- Amani Crocolisk
+    24138 -- Tamed Amani Crocolisk
 );
+UPDATE `creature_template` SET `HealthModifier` = 4.408 WHERE `entry` = 22462; -- Vindicator Haylen
 UPDATE `creature_template` SET `HealthModifier` = 4.5 WHERE `entry` = 10806; -- Ursius
 UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` IN (
     1364, -- Balgaras the Foul
@@ -500,7 +512,8 @@ UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` IN (
     7996, -- Qiaga the Keeper
     8636, -- Morta'gya the Keeper
     8924, -- The Behemoth
-    10802 -- Hitah'ya the Keeper
+    10802, -- Hitah'ya the Keeper
+    23047 -- Shadowmoon Soldier
 );
 UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (
     6231, -- Techbot
@@ -508,15 +521,53 @@ UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (
     12262, -- Ziggurat Protector
     12263, -- Slaughterhouse Protector
     14467, -- Kroshius
-    15318 -- Hive'Zara Drone
+    15318, -- Hive'Zara Drone
+    15551, -- Spectral Stable Hand
+    16175, -- Vampiric Shadowbat
+    16176, -- Shadowbeast
+    16389, -- Spectral Apprentice
+    16406, -- Phantom Attendant
+    16407, -- Spectral Servant
+    16411, -- Spectral Chef
+    16412, -- Ghostly Baker
+    16415, -- Skeletal Waiter
+    16424, -- Spectral Sentry
+    16425, -- Phantom Guardsman
+    16525, -- Spell Shade
+    16530, -- Mana Warp
+    16540, -- Shadow Pillager
+    23401 -- Hungering Soul Fragment
 );
 UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` IN (
     2597, -- Lord Falconcrest <Syndicate Leader>
-    8400 -- Obsidion
+    8400, -- Obsidion
+    16171, -- Coldmist Widow
+    16177 -- Dreadbeast
 );
 UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` IN (
     4500, -- Overlord Mok'Morokk
-    14621 -- Overseer Maltorius
+    14621, -- Overseer Maltorius
+    16174, -- Greater Shadowbat
+    16410, -- Spectral Retainer
+    16414, -- Ghostly Steward
+    16459, -- Wanton Hostess
+    16460, -- Night Mistress
+    16461, -- Concubine
+    16470, -- Ghostly Philanthropist
+    16473, -- Spectral Performer
+    16489, -- Chaotic Sentience
+    16526, -- Sorcerous Shade
+    16529, -- Magical Horror
+    16544, -- Ethereal Thief
+    24043, -- Amani Lynx
+    24530 -- Amani Elder Lynx
+);
+UPDATE `creature_template` SET `HealthModifier` = 9 WHERE `entry` IN (
+    15547, -- Spectral Charger
+    15548, -- Spectral Stallion
+    16408, -- Phantom Valet
+    16472, -- Phantom Stagehand
+    22883 -- Aqueous Spawn
 );
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 15215; -- Mistress Natalia Mar'alith <High Priestess of C'Thun>
 UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (
@@ -529,7 +580,6 @@ UPDATE `creature_template` SET `HealthModifier` = 65 WHERE `entry` IN (
     15241, -- Gryphon Rider Guard
     15242 -- Bat Rider Guard
 );
-UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 1284; -- Archbishop Benedictus
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (
     16481, -- Ghastly Haunt
     16482, -- Trapped Soul
@@ -744,6 +794,7 @@ UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` IN (
 UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` IN (
     15688, -- Terestian Illhoof
     18831, -- High King Maulgar <Lord of the Ogres>
+    25160, -- Madrigosa
     25508 -- Shadowsword Guardian
 );
 UPDATE `creature_template` SET `HealthModifier` = 115 WHERE `entry` = 15691; -- The Curator
@@ -760,10 +811,14 @@ UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` IN (
     22997 -- Flame of Azzinoth
 );
 UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 16524; -- Shade of Aran
+UPDATE `creature_template` SET `HealthModifier` = 165 WHERE `entry` = 21700; -- Akama
 UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` = 17225; -- Nightbane
 UPDATE `creature_template` SET `HealthModifier` = 180 WHERE `entry` = 23576; -- Nalorakk <Bear Avatar>
 UPDATE `creature_template` SET `HealthModifier` = 195 WHERE `entry` = 24891; -- Kalecgos
-UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 15689; -- Netherspite
+UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` IN (
+    1284, -- Archbishop Benedictus
+    15689 -- Netherspite
+);
 UPDATE `creature_template` SET `HealthModifier` = 220 WHERE `entry` = 23574; -- Akil'zon <Eagle Avatar>
 UPDATE `creature_template` SET `HealthModifier` = 225 WHERE `entry` = 23863; -- Zul'jin
 UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` IN (
