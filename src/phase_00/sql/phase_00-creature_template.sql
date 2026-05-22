@@ -271,6 +271,315 @@ UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Ba
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `HealthModifier` = 330, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `exp` = 0, `skinloot` = 0, `HealthModifier` = 1 WHERE `entry` = 11262; -- Onyxian Whelp
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `lootid` = 0, `HealthModifier` = 25 WHERE `entry` = 12129; -- Onyxian Warder
+UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (
+    17097, -- Advisor Sarophas
+    20520 -- Ethereum Prisoner
+);
+UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 17002; -- Angela "The Claw" Kestrel
+UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (
+    397, -- Morganth
+    436, -- Blackrock Shadowcaster
+    594, -- Defias Henchman
+    596, -- Brainwashed Noble
+    599, -- Marisa du'Paige
+    619, -- Defias Conjurer
+    623, -- Skeletal Miner
+    624, -- Undead Excavator
+    625, -- Undead Dynamiter
+    626, -- Foreman Thistlenettle
+    678, -- Mosh'Ogg Mauler
+    679, -- Mosh'Ogg Shaman
+    680, -- Mosh'Ogg Lord
+    709, -- Mosh'Ogg Warmonger
+    710, -- Mosh'Ogg Spellcrafter
+    813, -- Colonel Kurzen
+    818, -- Mai'Zoth
+    871, -- Saltscale Warrior
+    873, -- Saltscale Oracle
+    875, -- Saltscale Tide Lord
+    877, -- Saltscale Forager
+    879, -- Saltscale Hunter
+    1051, -- Dark Iron Dwarf
+    1052, -- Dark Iron Saboteur
+    1053, -- Dark Iron Tunneler
+    1054, -- Dark Iron Demolitionist
+    1178, -- Mo'grosh Ogre
+    1179, -- Mo'grosh Enforcer
+    1180, -- Mo'grosh Brute
+    1181, -- Mo'grosh Shaman
+    1183, -- Mo'grosh Mystic
+    1225, -- Ol' Sooty
+    1388, -- Vagash
+    1725, -- Defias Watchman
+    1726, -- Defias Magician
+    1788, -- Skeletal Warlord
+    1827, -- Scarlet Sentinel
+    1832, -- Scarlet Magus
+    1834, -- Scarlet Paladin
+    1891, -- Pyrewood Watcher
+    1894, -- Pyrewood Sentry
+    1895, -- Pyrewood Elder
+    1947, -- Thule Ravenclaw
+    2091, -- Chieftain Nek'rosh
+    2106, -- Apothecary Berard
+    2166, -- Oakenscowl
+    2254, -- Crushridge Mauler
+    2255, -- Crushridge Mage
+    2256, -- Crushridge Enforcer
+    2257, -- Mug'thol
+    2287, -- Crushridge Warmonger
+    2304, -- Captain Ironhill
+    2344, -- Dun Garok Mountaineer
+    2345, -- Dun Garok Rifleman
+    2346, -- Dun Garok Priest
+    2416, -- Crushridge Plunderer
+    2421, -- Muckrake
+    2422, -- Glommus
+    2558, -- Witherbark Berserker
+    2569, -- Boulderfist Mauler
+    2570, -- Boulderfist Shaman
+    2571, -- Boulderfist Lord
+    2583, -- Stromgarde Troll Hunter
+    2584, -- Stromgarde Defender
+    2585, -- Stromgarde Vindicator
+    2588, -- Syndicate Prowler
+    2590, -- Syndicate Conjuror
+    2591, -- Syndicate Magus
+    2599, -- Otto <Bodyguard>
+    2607, -- Prince Galen Trollbane
+    2612, -- Lieutenant Valorcall
+    2635, -- Elder Saltwater Crocolisk
+    2641, -- Vilebranch Headhunter
+    2642, -- Vilebranch Shadowcaster
+    2643, -- Vilebranch Berserker
+    2644, -- Vilebranch Hideskinner
+    2645, -- Vilebranch Shadow Hunter
+    2646, -- Vilebranch Blood Drinker
+    2647, -- Vilebranch Soul Eater
+    2648, -- Vilebranch Aman'zasi Guard
+    2681, -- Vilebranch Raiding Wolf
+    2738, -- Stromgarde Cavalryman
+    2780, -- Caretaker Nevlin
+    2781, -- Caretaker Weston
+    2782, -- Caretaker Alaric
+    2783, -- Marez Cowl
+    2835, -- Cedrik Prose <Gryphon Master>
+    2892, -- Stonevault Seer
+    2932, -- Magregan Deepshadow
+    3528, -- Pyrewood Armorer
+    3530, -- Pyrewood Tailor
+    3532, -- Pyrewood Leatherworker
+    3630, -- Deviate Coiler
+    3631, -- Deviate Stinglash
+    3632, -- Deviate Creeper
+    3633, -- Deviate Slayer
+    3634, -- Deviate Stalker
+    3638, -- Devouring Ectoplasm
+    3641, -- Deviate Lurker
+    3652, -- Trigore the Lasher
+    3655, -- Mad Magglish
+    3672, -- Boahn <Druid of the Fang>
+    4050, -- Cenarion Caretaker
+    4052, -- Cenarion Druid
+    4056, -- Mirkfallon Keeper
+    4061, -- Mirkfallon Dryad
+    4064, -- Blackrock Scout
+    4065, -- Blackrock Sentry
+    4066, -- Nal'taszar
+    4280, -- Scarlet Preserver
+    4281, -- Scarlet Scout
+    4282, -- Scarlet Magician
+    4283, -- Scarlet Sentry
+    4284, -- Scarlet Augur
+    4285, -- Scarlet Disciple
+    4394, -- Bubbling Swamp Ooze
+    4409, -- Gatekeeper Kordurus
+    4462, -- Blackrock Hunter
+    4464, -- Blackrock Gladiator
+    4465, -- Vilebranch Warrior
+    4468, -- Jade Sludge
+    4469, -- Emerald Ooze
+    4499, -- Rok'Alim the Pounder
+    4788, -- Fallenroot Satyr
+    4789, -- Fallenroot Rogue
+    4802, -- Blackfathom Tide Priestess
+    4803, -- Blackfathom Oracle
+    4844, -- Shadowforge Surveyor
+    4845, -- Shadowforge Ruffian
+    4846, -- Shadowforge Digger
+    4851, -- Stonevault Rockchewer
+    4856, -- Stonevault Cave Hunter
+    4872, -- Obsidian Golem
+    5224, -- Murk Slitherer
+    5225, -- Murk Spitter
+    5235, -- Fungal Ooze
+    5243, -- Cursed Atal'ai
+    5261, -- Enthralled Atal'ai
+    5263, -- Mummified Atal'ai
+    5269, -- Atal'ai Priest
+    5399, -- Veyzhak the Cannibal
+    5400, -- Zekkis
+    5401, -- Kazkaz the Unholy
+    5645, -- Sandfury Hideskinner
+    5646, -- Sandfury Axe Thrower
+    5647, -- Sandfury Firecaller
+    5833, -- Margol the Rager
+    5860, -- Twilight Dark Shaman
+    5861, -- Twilight Fire Guard
+    5862, -- Twilight Geomancer
+    5928, -- Sorrow Wing
+    6132, -- Razorfen Servitor
+    6208, -- Caverndeep Invader
+    6210, -- Caverndeep Pillager
+    6213, -- Irradiated Invader
+    6523, -- Dark Iron Rifleman
+    6733, -- Stonevault Basher
+    7040, -- Black Dragonspawn
+    7041, -- Black Wyrmkin
+    7042, -- Flamescale Dragonspawn
+    7043, -- Flamescale Wyrmkin
+    7044, -- Black Drake
+    7045, -- Scalding Drake
+    7046, -- Searscale Drake
+    7136, -- Infernal Sentry
+    7872, -- Death's Head Cultist
+    7873, -- Razorfen Battleguard
+    7874, -- Razorfen Thornweaver
+    7895, -- Ambassador Bloodrage
+    8419, -- Twilight Idolater
+    8447, -- Clunk <The Undermarket>
+    8518, -- Rynthariel the Keymaster
+    9043, -- Scarshield Grunt <Scarshield Legion>
+    9044, -- Scarshield Sentry <Scarshield Legion>
+    9046, -- Scarshield Quartermaster <Scarshield Legion>
+    10608, -- Scarlet Priest
+    10738, -- High Chief Winterfall
+    11440, -- Gordok Enforcer
+    11442, -- Gordok Mauler
+    11443, -- Gordok Ogre-Mage
+    11698, -- Hive'Ashi Stinger
+    11721, -- Hive'Ashi Worker
+    11722, -- Hive'Ashi Defender
+    11724, -- Hive'Ashi Swarmer
+    11725, -- Hive'Zora Waywatcher
+    11726, -- Hive'Zora Tunneler
+    11728, -- Hive'Zora Reaver
+    11729, -- Hive'Zora Hive Sister
+    11731, -- Hive'Regal Burrower
+    11732, -- Hive'Regal Spitfire
+    11733, -- Hive'Regal Slavemaker
+    11777, -- Shadowshard Rumbler
+    11778, -- Shadowshard Smasher
+    11781, -- Ambershard Crusher
+    11782, -- Ambershard Destroyer
+    11785, -- Ambereye Basilisk
+    11786, -- Ambereye Reaver
+    11787, -- Rock Borer
+    11788, -- Rock Worm
+    11921, -- Besseleth
+    12579, -- Bloodfury Ripper
+    12865, -- Ambassador Malcin
+    13839, -- Royal Dreadguard
+    14388 -- Rogue Black Drake
+);
+UPDATE `creature_template` SET `HealthModifier` = 3.1 WHERE `entry` = 730; -- Tethis
+UPDATE `creature_template` SET `HealthModifier` = 3.1253 WHERE `entry` = 23127; -- Farseer Javad <Shaman Trainer>
+UPDATE `creature_template` SET `HealthModifier` = 3.15 WHERE `entry` = 728; -- Bhag'thera
+UPDATE `creature_template` SET `HealthModifier` = 3.25 WHERE `entry` IN (
+    1063, -- Jade
+    2773, -- Or'Kalar
+    7977 -- Gammerita
+);
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (
+    7053, -- Klaven Mortwake
+    7728, -- Kirith the Damned
+    10807, -- Brumeran
+    11734, -- Hive'Regal Hive Lord
+    16178, -- Phase Hound
+    20043, -- Apprentice Star Scryer
+    20044, -- Novice Astromancer
+    24047, -- Amani Crocolisk
+    24138 -- Tamed Amani Crocolisk
+);
+UPDATE `creature_template` SET `HealthModifier` = 4.408 WHERE `entry` = 22462; -- Vindicator Haylen
+UPDATE `creature_template` SET `HealthModifier` = 4.5 WHERE `entry` = 10806; -- Ursius
+UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` IN (
+    1364, -- Balgaras the Foul
+    1559, -- King Mukla
+    2420, -- Targ
+    6140, -- Hetaera
+    7995, -- Vile Priestess Hexx
+    7996, -- Qiaga the Keeper
+    8636, -- Morta'gya the Keeper
+    8924, -- The Behemoth
+    10802, -- Hitah'ya the Keeper
+    23047 -- Shadowmoon Soldier
+);
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (
+    6231, -- Techbot
+    11897, -- Duskwing
+    12262, -- Ziggurat Protector
+    12263, -- Slaughterhouse Protector
+    14467, -- Kroshius
+    15318, -- Hive'Zara Drone
+    15551, -- Spectral Stable Hand
+    16175, -- Vampiric Shadowbat
+    16176, -- Shadowbeast
+    16389, -- Spectral Apprentice
+    16406, -- Phantom Attendant
+    16407, -- Spectral Servant
+    16411, -- Spectral Chef
+    16412, -- Ghostly Baker
+    16415, -- Skeletal Waiter
+    16424, -- Spectral Sentry
+    16425, -- Phantom Guardsman
+    16525, -- Spell Shade
+    16530, -- Mana Warp
+    16540, -- Shadow Pillager
+    23401 -- Hungering Soul Fragment
+);
+UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` IN (
+    2597, -- Lord Falconcrest <Syndicate Leader>
+    8400, -- Obsidion
+    16171, -- Coldmist Widow
+    16177 -- Dreadbeast
+);
+UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` IN (
+    4500, -- Overlord Mok'Morokk
+    14621, -- Overseer Maltorius
+    16174, -- Greater Shadowbat
+    16410, -- Spectral Retainer
+    16414, -- Ghostly Steward
+    16459, -- Wanton Hostess
+    16460, -- Night Mistress
+    16461, -- Concubine
+    16470, -- Ghostly Philanthropist
+    16473, -- Spectral Performer
+    16489, -- Chaotic Sentience
+    16526, -- Sorcerous Shade
+    16529, -- Magical Horror
+    16544, -- Ethereal Thief
+    24043, -- Amani Lynx
+    24530 -- Amani Elder Lynx
+);
+UPDATE `creature_template` SET `HealthModifier` = 9 WHERE `entry` IN (
+    15547, -- Spectral Charger
+    15548, -- Spectral Stallion
+    16408, -- Phantom Valet
+    16472, -- Phantom Stagehand
+    22883 -- Aqueous Spawn
+);
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 15215; -- Mistress Natalia Mar'alith <High Priestess of C'Thun>
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (
+    11022, -- Alexi Barov <House of Barov>
+    11023 -- Weldon Barov <House of Barov>
+);
+UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` = 11896; -- Borelgore
+UPDATE `creature_template` SET `HealthModifier` = 30 WHERE `entry` = 11878; -- Nathanos Blightcaller <Champion of the Banshee Queen>
+UPDATE `creature_template` SET `HealthModifier` = 65 WHERE `entry` IN (
+    15241, -- Gryphon Rider Guard
+    15242 -- Bat Rider Guard
+);
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (
     16481, -- Ghastly Haunt
     16482, -- Trapped Soul
@@ -485,6 +794,7 @@ UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` IN (
 UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` IN (
     15688, -- Terestian Illhoof
     18831, -- High King Maulgar <Lord of the Ogres>
+    25160, -- Madrigosa
     25508 -- Shadowsword Guardian
 );
 UPDATE `creature_template` SET `HealthModifier` = 115 WHERE `entry` = 15691; -- The Curator
@@ -501,10 +811,14 @@ UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` IN (
     22997 -- Flame of Azzinoth
 );
 UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 16524; -- Shade of Aran
+UPDATE `creature_template` SET `HealthModifier` = 165 WHERE `entry` = 21700; -- Akama
 UPDATE `creature_template` SET `HealthModifier` = 175 WHERE `entry` = 17225; -- Nightbane
 UPDATE `creature_template` SET `HealthModifier` = 180 WHERE `entry` = 23576; -- Nalorakk <Bear Avatar>
 UPDATE `creature_template` SET `HealthModifier` = 195 WHERE `entry` = 24891; -- Kalecgos
-UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 15689; -- Netherspite
+UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` IN (
+    1284, -- Archbishop Benedictus
+    15689 -- Netherspite
+);
 UPDATE `creature_template` SET `HealthModifier` = 220 WHERE `entry` = 23574; -- Akil'zon <Eagle Avatar>
 UPDATE `creature_template` SET `HealthModifier` = 225 WHERE `entry` = 23863; -- Zul'jin
 UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` IN (

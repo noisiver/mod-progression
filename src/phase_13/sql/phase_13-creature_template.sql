@@ -84,6 +84,66 @@ UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN
     17468 -- Prophet Velen
 );
 UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 16800; -- Grand Magister Rommath
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (
+    17002, -- Angela "The Claw" Kestrel
+    17097, -- Advisor Sarophas
+    20520 -- Ethereum Prisoner
+);
+UPDATE `creature_template` SET `HealthModifier` = 1.25 WHERE `entry` = 23127; -- Farseer Javad <Shaman Trainer>
+UPDATE `creature_template` SET `HealthModifier` = 1.3 WHERE `entry` = 21700; -- Akama
+UPDATE `creature_template` SET `HealthModifier` = 2.45 WHERE `entry` = 16178; -- Phase Hound
+UPDATE `creature_template` SET `HealthModifier` = 2.8 WHERE `entry` IN (
+    20043, -- Apprentice Star Scryer
+    20044, -- Novice Astromancer
+    24047, -- Amani Crocolisk
+    24138 -- Tamed Amani Crocolisk
+);
+UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` = 22462; -- Vindicator Haylen
+UPDATE `creature_template` SET `HealthModifier` = 3.5 WHERE `entry` = 23047; -- Shadowmoon Soldier
+UPDATE `creature_template` SET `HealthModifier` = 4.2 WHERE `entry` IN (
+    15551, -- Spectral Stable Hand
+    16175, -- Vampiric Shadowbat
+    16176, -- Shadowbeast
+    16389, -- Spectral Apprentice
+    16406, -- Phantom Attendant
+    16407, -- Spectral Servant
+    16411, -- Spectral Chef
+    16412, -- Ghostly Baker
+    16415, -- Skeletal Waiter
+    16424, -- Spectral Sentry
+    16425, -- Phantom Guardsman
+    16525, -- Spell Shade
+    16530, -- Mana Warp
+    16540, -- Shadow Pillager
+    23401 -- Hungering Soul Fragment
+);
+UPDATE `creature_template` SET `HealthModifier` = 4.9 WHERE `entry` IN (
+    16171, -- Coldmist Widow
+    16177 -- Dreadbeast
+);
+UPDATE `creature_template` SET `HealthModifier` = 5.6 WHERE `entry` IN (
+    16174, -- Greater Shadowbat
+    16410, -- Spectral Retainer
+    16414, -- Ghostly Steward
+    16459, -- Wanton Hostess
+    16460, -- Night Mistress
+    16461, -- Concubine
+    16470, -- Ghostly Philanthropist
+    16473, -- Spectral Performer
+    16489, -- Chaotic Sentience
+    16526, -- Sorcerous Shade
+    16529, -- Magical Horror
+    16544, -- Ethereal Thief
+    24043, -- Amani Lynx
+    24530 -- Amani Elder Lynx
+);
+UPDATE `creature_template` SET `HealthModifier` = 6.3 WHERE `entry` IN (
+    15547, -- Spectral Charger
+    15548, -- Spectral Stallion
+    16408, -- Phantom Valet
+    16472, -- Phantom Stagehand
+    22883 -- Aqueous Spawn
+);
 UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` IN (
     16481, -- Ghastly Haunt
     16482, -- Trapped Soul
@@ -298,6 +358,7 @@ UPDATE `creature_template` SET `HealthModifier` = 63 WHERE `entry` IN (
 UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` IN (
     15688, -- Terestian Illhoof
     18831, -- High King Maulgar <Lord of the Ogres>
+    25160, -- Madrigosa
     25508 -- Shadowsword Guardian
 );
 UPDATE `creature_template` SET `HealthModifier` = 80.5 WHERE `entry` = 15691; -- The Curator
