@@ -270,7 +270,7 @@ UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (
 UPDATE `creature_template` SET `faction` = 16 WHERE `entry` = 3183; -- Yarrog Baneshadow
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 63, `maxlevel` = 63, `exp` = 0, `lootid` = @lootId+0, `mingold` = 914892, `maxgold` = 1066294, `HealthModifier` = 330, `ManaModifier` = 4 WHERE `entry` = 10184; -- Onyxia
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 56, `maxlevel` = 57, `exp` = 0, `skinloot` = 0, `HealthModifier` = 1 WHERE `entry` = 11262; -- Onyxian Whelp
-UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `lootid` = 0, `HealthModifier` = 25 WHERE `entry` = 12129; -- Onyxian Warder
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 63, `exp` = 0, `DamageModifier` = 10, `lootid` = 0, `HealthModifier` = 25 WHERE `entry` = 12129; -- Onyxian Warder
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (
     17097, -- Advisor Sarophas
     20520 -- Ethereum Prisoner
@@ -890,3 +890,207 @@ UPDATE `creature_template` SET `faction` = 111 WHERE `entry` IN (
     2954 -- Bristleback Battleboar
 );
 UPDATE `creature_template` SET `ScriptName` = 'npc_archmage_timear' WHERE `entry` = 31439; -- Archmage Timear
+UPDATE `creature_template` SET `DamageModifier` = 2.1 WHERE `entry` = 4345; -- Drywallow Daggermaw
+UPDATE `creature_template` SET `DamageModifier` = 2.2 WHERE `entry` = 4329; -- Firemane Scout
+UPDATE `creature_template` SET `DamageModifier` = 2.3 WHERE `entry` = 4331; -- Firemane Ash Tail
+UPDATE `creature_template` SET `DamageModifier` = 2.4 WHERE `entry` IN (
+    4328, -- Firemane Scalebane
+    4334 -- Firemane Flamecaller
+);
+UPDATE `creature_template` SET `DamageModifier` = 2.5 WHERE `entry` = 5833; -- Margol the Rager
+UPDATE `creature_template` SET `DamageModifier` = 2.6 WHERE `entry` = 12418; -- Gordok Hyena
+UPDATE `creature_template` SET `DamageModifier` = 2.8 WHERE `entry` = 8447; -- Clunk <The Undermarket>
+UPDATE `creature_template` SET `DamageModifier` = 3 WHERE `entry` IN (
+    1666, -- Kam Deepfury
+    2835, -- Cedrik Prose <Gryphon Master>
+    6140, -- Hetaera
+    8567 -- Glutton
+);
+UPDATE `creature_template` SET `DamageModifier` = 3.5 WHERE `entry` IN (
+    7728, -- Kirith the Damned
+    9043, -- Scarshield Grunt <Scarshield Legion>
+    9044, -- Scarshield Sentry <Scarshield Legion>
+    9046 -- Scarshield Quartermaster <Scarshield Legion>
+);
+UPDATE `creature_template` SET `DamageModifier` = 4 WHERE `entry` IN (
+    6488, -- Fallen Champion
+    6646, -- Monnos the Elder
+    7051, -- Malformed Defias Drone
+    7358, -- Amnennar the Coldbringer
+    7428, -- Frostmaul Giant
+    7429, -- Frostmaul Preserver
+    11374 -- Hooktooth Frenzy
+);
+UPDATE `creature_template` SET `DamageModifier` = 4.25 WHERE `entry` = 8127; -- Antu'sul <Overseer of Sul>
+UPDATE `creature_template` SET `DamageModifier` = 4.5 WHERE `entry` IN (
+    4829, -- Aku'mai
+    6583, -- Gruff
+    7228 -- Ironaya
+);
+UPDATE `creature_template` SET `DamageModifier` = 5 WHERE `entry` IN (
+    2447, -- Narillasanz
+    9017, -- Lord Incendius
+    9096, -- Rage Talon Dragonspawn
+    9156, -- Ambassador Flamelash
+    9196, -- Highlord Omokk
+    9197, -- Spirestone Battle Mage
+    9198, -- Spirestone Mystic
+    9199, -- Spirestone Enforcer
+    9200, -- Spirestone Reaver
+    9201, -- Spirestone Ogre Magus
+    9259, -- Firebrand Grunt <Firebrand Legion>
+    9716, -- Bloodaxe Warmonger <Bloodaxe Legion>
+    9736, -- Quartermaster Zigris <Bloodaxe Legion>
+    10407, -- Fleshflayer Ghoul
+    10503, -- Jandice Barov
+    10505, -- Instructor Malicia
+    10809, -- Stonespine
+    11897 -- Duskwing
+);
+UPDATE `creature_template` SET `DamageModifier` = 5.25 WHERE `entry` = 11383; -- High Priestess Hai'watna
+UPDATE `creature_template` SET `DamageModifier` = 5.4 WHERE `entry` = 10558; -- Hearthsinger Forresten
+UPDATE `creature_template` SET `DamageModifier` = 5.5 WHERE `entry` IN (
+    8908, -- Molten War Golem
+    11043, -- Crimson Monk
+    11896 -- Borelgore
+);
+UPDATE `creature_template` SET `DamageModifier` = 5.6 WHERE `entry` = 9037; -- Gloom'rel
+UPDATE `creature_template` SET `DamageModifier` = 5.7 WHERE `entry` = 10596; -- Mother Smolderweb
+UPDATE `creature_template` SET `DamageModifier` = 6 WHERE `entry` IN (
+    8716, -- Dreadlord
+    9016, -- Bael'Gar
+    9217, -- Spirestone Lord Magus
+    9218, -- Spirestone Battle Lord
+    9219, -- Spirestone Butcher
+    9816, -- Pyroguard Emberseer
+    10317, -- Blackhand Elite <Blackhand Legion>
+    10319, -- Blackhand Iron Guard <Blackhand Legion>
+    10366, -- Rage Talon Dragon Guard
+    10371, -- Rage Talon Captain
+    10372, -- Rage Talon Fire Tongue
+    10414, -- Patchwork Horror
+    10416, -- Bile Spewer
+    10440, -- Baron Rivendare
+    10486, -- Risen Warrior
+    10504, -- Lord Alexei Barov
+    10762, -- Blackhand Thug
+    10899, -- Goraluk Anvilcrack <Blackhand Legion Armorsmith>
+    11372, -- Razzashi Adder
+    11459, -- Ironbark Protector
+    11488, -- Illyanna Ravenoak
+    12337, -- Crimson Courier
+    12800, -- Chimaerok
+    12801, -- Arcane Chimaerok
+    12802, -- Chimaerok Devourer
+    13021, -- Warpwood Crusher
+    13196, -- Phase Lasher
+    13197, -- Fel Lash
+    13285, -- Death Lash
+    14327, -- Lethtendris
+    15591 -- Minion of Weavil
+);
+UPDATE `creature_template` SET `DamageModifier` = 6.1 WHERE `entry` = 10417; -- Venom Belcher
+UPDATE `creature_template` SET `DamageModifier` = 6.25 WHERE `entry` IN (
+    8983, -- Golem Lord Argelmach
+    10433 -- Marduk Blackpool
+);
+UPDATE `creature_template` SET `DamageModifier` = 6.5 WHERE `entry` IN (
+    9033, -- General Angerforge
+    10220, -- Halycon
+    10502, -- Lady Illucia Barov
+    10811, -- Archivist Galford
+    11490, -- Zevrim Thornhoof
+    13280 -- Hydrospawn
+);
+UPDATE `creature_template` SET `DamageModifier` = 6.75 WHERE `entry` = 11032; -- Malor the Zealous
+UPDATE `creature_template` SET `DamageModifier` = 7 WHERE `entry` IN (
+    9502, -- Phalanx
+    9568, -- Overlord Wyrmthalak
+    9938, -- Magmus
+    10507, -- The Ravenian
+    10997, -- Cannon Master Willey
+    11487, -- Magister Kalendris
+    11622, -- Rattlegore
+    14321, -- Guard Fengus
+    14323, -- Guard Slip'kik
+    14326, -- Guard Mol'dar
+    14471 -- Setis
+);
+UPDATE `creature_template` SET `DamageModifier` = 7.25 WHERE `entry` IN (
+    9019, -- Emperor Dagran Thaurissan
+    10436 -- Baroness Anastari
+);
+UPDATE `creature_template` SET `DamageModifier` = 7.5 WHERE `entry` IN (
+    9237, -- War Master Voone
+    10318, -- Blackhand Assassin <Blackhand Legion>
+    10435, -- Magistrate Barthilas
+    10437, -- Nerub'enkan
+    10488, -- Risen Construct
+    15462 -- Spitting Scarab
+);
+UPDATE `creature_template` SET `DamageModifier` = 8 WHERE `entry` IN (
+    9236, -- Shadow Hunter Vosh'gajin
+    11467, -- Tsu'zee
+    11489, -- Tendris Warpwood
+    11496 -- Immol'thar
+);
+UPDATE `creature_template` SET `DamageModifier` = 8.5 WHERE `entry` IN (
+    6584, -- King Mosh
+    10201, -- Lady Hederine
+    10812 -- Grand Crusader Dathrohan
+);
+UPDATE `creature_template` SET `DamageModifier` = 9 WHERE `entry` = 8718; -- Manahound
+UPDATE `creature_template` SET `DamageModifier` = 9.1 WHERE `entry` = 10814; -- Chromatic Elite Guard
+UPDATE `creature_template` SET `DamageModifier` = 9.5 WHERE `entry` = 7846; -- Teremus the Devourer
+UPDATE `creature_template` SET `DamageModifier` = 10 WHERE `entry` IN (
+    8717, -- Felguard Elite
+    10363, -- General Drakkisath
+    10430, -- The Beast
+    11498, -- Skarr the Unbreakable
+    12396, -- Doomguard Commander
+    15126, -- Rutherford Twing <Defilers Supply Officer>
+    15127 -- Samuel Hawke <League of Arathor Supply Officer>
+);
+UPDATE `creature_template` SET `DamageModifier` = 11 WHERE `entry` = 11261; -- Doctor Theolen Krastinov <The Butcher>
+UPDATE `creature_template` SET `DamageModifier` = 12 WHERE `entry` = 11497; -- The Razza
+UPDATE `creature_template` SET `DamageModifier` = 14 WHERE `entry` = 15338; -- Obsidian Destroyer
+UPDATE `creature_template` SET `DamageModifier` = 15 WHERE `entry` IN (
+    5317, -- Jademir Oracle
+    5319, -- Jademir Tree Warder
+    5320, -- Jademir Boughguard
+    12474, -- Emeraldon Boughguard
+    12475, -- Emeraldon Tree Warder
+    12476, -- Emeraldon Oracle
+    12477, -- Verdantine Boughguard
+    12478, -- Verdantine Oracle
+    12479, -- Verdantine Tree Warder
+    12803, -- Lord Lakmaeran
+    15552 -- Doctor Weavil
+);
+UPDATE `creature_template` SET `DamageModifier` = 17 WHERE `entry` = 15340; -- Moam
+UPDATE `creature_template` SET `DamageModifier` = 18 WHERE `entry` IN (
+    12557, -- Grethok the Controller
+    15249, -- Qiraji Lasher
+    15341, -- General Rajaxx
+    15385, -- Colonel Zerran
+    15386, -- Major Yeggeth
+    15388, -- Major Pakkon
+    15389, -- Captain Drenn
+    15390, -- Captain Xurrem
+    15391, -- Captain Qeez
+    15392, -- Captain Tuubid
+    15984 -- Sartura's Royal Guard
+);
+UPDATE `creature_template` SET `DamageModifier` = 20 WHERE `entry` IN (
+    14887, -- Ysondre
+    14889, -- Emeriss
+    14890, -- Taerar
+    15343, -- Qiraji Swarmguard
+    15369 -- Ayamiss the Hunter
+);
+UPDATE `creature_template` SET `DamageModifier` = 25 WHERE `entry` IN (
+    6109, -- Azuregos
+    15312 -- Obsidian Nullifier
+);
+UPDATE `creature_template` SET `DamageModifier` = 30 WHERE `entry` = 15516; -- Battleguard Sartura
+UPDATE `creature_template` SET `DamageModifier` = 33 WHERE `entry` = 15299; -- Viscidus
