@@ -1,5 +1,5 @@
 DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
-    8182, -- The Hand of Rastakhan
+    8181, -- Confront Yeh'kinya
     8922, -- A Supernatural Device
     8923 -- A Supernatural Device
 );
