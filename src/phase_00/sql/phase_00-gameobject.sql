@@ -176,7 +176,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `guid` IN ( -- These are for t
 );
 UPDATE `gameobject` SET `id` = 180717, `phaseMask` = 16384 WHERE `guid` = 49451; -- The Scarab Gong
 SET @goId := 5300000;
-DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996);
+DELETE FROM `gameobject` WHERE `id` IN (176146, 176147, 176148, 176996, 181476);
 DELETE FROM `gameobject` WHERE `guid` BETWEEN @goId+4 AND @goId+7;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES
 -- Gate of Ahn'Qiraj

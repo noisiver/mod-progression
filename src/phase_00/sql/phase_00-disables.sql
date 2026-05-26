@@ -72,7 +72,7 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (2, 509, 1, '', '', 'Ruins of Ahn\'Qiraj'), -- Phase 5
 (2, 531, 1, '', '', 'Temple of Ahn\'Qiraj'), -- Phase 5
 (2, 532, 1, '', '', 'Karazhan'), -- Phase 8
-(2, 533, 3, '', '', 'Naxxramas'), -- Phase 14
+(2, 533, 3, '', '', 'Naxxramas'), -- Phase 6
 (2, 534, 1, '', '', 'Hyjal Summit'), -- Phase 10
 (2, 540, 3, '', '', 'The Shattered Halls'), -- Phase 7
 (2, 542, 3, '', '', 'The Blood Furnace'), -- Phase 7
