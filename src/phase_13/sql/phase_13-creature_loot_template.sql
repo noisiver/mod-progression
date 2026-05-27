@@ -5,3 +5,6 @@ UPDATE `creature_loot_template` SET `Item` = 50432 WHERE `entry` IN ( -- Disease
 UPDATE `creature_loot_template` SET `Item` = 49205 WHERE `entry` IN ( -- Small Scroll
     4421 -- Charlga Razorflank <The Crone>
 ) AND `item` = 17008; -- Small Scroll
+SET @lootId := 46000;
+-- Naxxramas
+DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+1 AND @lootId+1;

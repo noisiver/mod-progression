@@ -432,9 +432,13 @@ UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `positio
 UPDATE `creature` SET `position_x` = -3613.43, `position_y` = -4463.9, `position_z` = 13.6227, `orientation` = 2.97522 WHERE `id1` = 4456; -- Fiora Longears
 SET @cId := 5300000;
 DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657, 14720);
+DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+6;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@cId+0, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8442.99, 331.755, 122.58, 2.24057, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Highlord Bolvar Fordragon
 (@cId+1, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Lady Katrana Prestor
 (@cId+2, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL), -- Lord Kazzak
 (@cId+3, 12657, 0, 0, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Don Pompa
-(@cId+4, 14720, 0, 0, 1, 0, 0, 1, 1, 1, 1565.79, -4395.27, 7.131, 3.22088, 300, 0, 0, 1476000, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- High Overlord Saurfang
+(@cId+4, 14720, 0, 0, 1, 0, 0, 1, 1, 1, 1565.79, -4395.27, 7.131, 3.22088, 300, 0, 0, 1476000, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- High Overlord Saurfang
+-- Naxxramas
+(@cId+5, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3086.04, -3386.8, 298.401, 3.1765, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Patchwork Golem
+(@cId+6, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3054.92, -3356.8, 298.401, 4.72984, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL); -- Patchwork Golem
