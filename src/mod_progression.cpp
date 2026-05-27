@@ -20,6 +20,7 @@ void AddSC_boss_onyxia_progression();
 void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_at_naxxramas();
+void AddSC_gy_naxxramas();
 
 void Addmod_progressionScripts()
 {
@@ -50,5 +51,8 @@ void Addmod_progressionScripts()
         AddSC_npc_archmage_timear();
 
     if (phaseId >= 6 && phaseId < 13)
+    {
         AddSC_at_naxxramas();
+        AddSC_gy_naxxramas();
+    }
 }
