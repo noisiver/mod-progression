@@ -21,6 +21,7 @@ void AddSC_npc_archmage_landalock();
 void AddSC_npc_archmage_timear();
 void AddSC_at_naxxramas();
 void AddSC_gy_naxxramas();
+void AddSC_spell_naxxramas();
 
 void Addmod_progressionScripts()
 {
@@ -54,5 +55,6 @@ void Addmod_progressionScripts()
     {
         AddSC_at_naxxramas();
         AddSC_gy_naxxramas();
+        AddSC_spell_naxxramas();
     }
 }
