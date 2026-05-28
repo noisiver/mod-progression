@@ -1095,4 +1095,5 @@ UPDATE `creature_template` SET `DamageModifier` = 25 WHERE `entry` IN (
 UPDATE `creature_template` SET `DamageModifier` = 30 WHERE `entry` = 15516; -- Battleguard Sartura
 UPDATE `creature_template` SET `DamageModifier` = 33 WHERE `entry` = 15299; -- Viscidus
 -- Naxxramas
-UPDATE `creature_template` SET `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 30, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+1, `maxgold` = 4965, `HealthModifier` = 28 WHERE `entry` = 16017; -- Patchwork Golem
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 30, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+1, `maxgold` = 4965, `HealthModifier` = 28 WHERE `entry` = 16017; -- Patchwork Golem
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 28, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+2, `HealthModifier` = 34 WHERE `entry` = 16018; -- Bile Retcher

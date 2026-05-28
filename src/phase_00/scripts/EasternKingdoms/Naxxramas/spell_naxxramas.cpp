@@ -2,8 +2,6 @@
 #include "GlobalScript.h"
 #include "SpellInfo.h"
 
-#include "Log.h"
-
 class spell_naxxramas : public GlobalScript
 {
 public:
@@ -22,6 +20,10 @@ public:
             spellInfo->Effects[EFFECT_0].Effect = SPELL_EFFECT_WEAPON_DAMAGE;
             spellInfo->Effects[EFFECT_0].BasePoints = 249;
             spellInfo->Effects[EFFECT_0].RealPointsPerLevel = 5;
+            break;
+        case 30081: // Retching Plague
+            spellInfo->Effects[EFFECT_0].BasePoints = 249;
+            spellInfo->Effects[EFFECT_1].BasePoints = -76;
             break;
         default:
             break;
