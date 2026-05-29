@@ -46,4 +46,6 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 
 UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 16018; -- Bile Retcher
 
-DELETE FROM `creature_addon` WHERE `guid` = 128075; -- Bile Retcher
+DELETE FROM `creature_addon` WHERE `guid` = 128075;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES
+(128075, 0, 0, 0, 1, 0, 0, '30079'); -- Bile Retcher
