@@ -98,6 +98,5 @@ DELETE FROM `gameobject` WHERE `guid` IN (
 DELETE FROM `gameobject` WHERE `id` IN (
     176146, -- Gate of Ahn'Qiraj
     176147, -- Ahn'Qiraj Gate Roots
-    176148, -- Ahn'Qiraj Gate Runes
-    181476 -- Nox Portal Plaguewood
+    176148 -- Ahn'Qiraj Gate Runes
 );

@@ -179,6 +179,3 @@ UPDATE `creature` SET `id1` = 36224 WHERE `id1` = 14402; -- Seeker Cromwell -> D
 UPDATE `creature` SET `id1` = 36225 WHERE `id1` = 14403; -- Seeker Nahr -> Dark Ranger Anya
 UPDATE `creature` SET `id1` = 36226 WHERE `id1` = 14404; -- Seeker Thompson -> Dark Ranger Cyndia
 UPDATE `creature` SET `position_x` = -3962, `position_y` = -13926.3, `position_z` = 101.238, `orientation` = 4.1889 WHERE `id1` = 16475; -- Megelon
-SET @cId := 5300000;
--- Naxxramas
-DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+6;

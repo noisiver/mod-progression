@@ -627,6 +627,3 @@ UPDATE `creature_template` SET `DamageModifier` = 18 WHERE `entry` = 15516; -- B
 UPDATE `creature_template` SET `DamageModifier` = 20.45 WHERE `entry` = 6109; -- Azuregos
 UPDATE `creature_template` SET `DamageModifier` = 21.45 WHERE `entry` = 15299; -- Viscidus
 UPDATE `creature_template` SET `DamageModifier` = 23.2 WHERE `entry` = 15312; -- Obsidian Nullifier
--- Naxxramas
-UPDATE `creature_template` SET `difficulty_entry_1` = 29347, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `maxgold` = 11953, `HealthModifier` = 11 WHERE `entry` = 16017; -- Patchwork Golem
-UPDATE `creature_template` SET `difficulty_entry_1` = 29353, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `HealthModifier` = 13.5 WHERE `entry` = 16018; -- Bile Retcher
