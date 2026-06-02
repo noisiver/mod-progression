@@ -29,12 +29,13 @@ DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+1 AND @lootId
 
 UPDATE `creature_template` SET `difficulty_entry_1` = 29347, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `maxgold` = 11953, `HealthModifier` = 11 WHERE `entry` = 16017; -- Patchwork Golem
 UPDATE `creature_template` SET `difficulty_entry_1` = 29353, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `HealthModifier` = 13.5 WHERE `entry` = 16018; -- Bile Retcher
+UPDATE `creature_template` SET `difficulty_entry_1` = 29355, `minlevel` = 80, `maxlevel` = 80, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `HealthModifier` = 1.6 WHERE `entry` = 16024; -- Embalming Slime
 UPDATE `creature_template` SET `difficulty_entry_1` = 29356, `minlevel` = 82, `maxlevel` = 82, `exp` = 2, `DamageModifier` = 7.5, `RangeAttackTime` = 2000, `lootid` = 100003, `mingold` = 8523, `maxgold` = 8523, `HealthModifier` = 10 WHERE `entry` = 16029; -- Sludge Belcher
 UPDATE `creature_template` SET `difficulty_entry_1` = 29354, `minlevel` = 80, `maxlevel` = 80, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `HealthModifier` = 8 WHERE `entry` = 16375; -- Sewage Slime
 
 DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+9 AND @refId+12;
 
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018, 16029);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
 -- Patchwork Golem
 (16017, 0, 0, 0, 0, 0, 100, 2, 4800, 10700, 14000, 19000, 0, 0, 11, 27758, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In combat - Cast War Stomp'),
@@ -44,7 +45,11 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 (16017, 0, 4, 0, 12, 0, 100, 2, 0, 20, 35000, 43000, 0, 0, 11, 7160, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - On target HP 0-20% - Cast Execute'),
 -- Bile Retcher
 (16018, 0, 0, 0, 0, 0, 100, 2, 3600, 6800, 13700, 19700, 0, 0, 11, 27807, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In combat - Cast Bile Vomit'),
-(16018, 0, 1, 0, 0, 0, 100, 4, 3600, 6800, 13700, 19700, 0, 0, 11, 54326, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In combat - Cast Bile Vomit');
+(16018, 0, 1, 0, 0, 0, 100, 4, 3600, 6800, 13700, 19700, 0, 0, 11, 54326, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In combat - Cast Bile Vomit'),
+-- Sludge Belcher
+(16029, 0, 0, 0, 0, 0, 100, 2, 1900, 3000, 6000, 7300, 0, 0, 11, 27891, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In combat - Cast Acidic Sludge'),
+(16029, 0, 1, 0, 0, 0, 100, 4, 1900, 3000, 6000, 7300, 0, 0, 11, 54331, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In combat - Cast Acidic Sludge'),
+(16029, 0, 2, 0, 25, 0, 100, 0, 0, 0, 0, 0, 0, 0, 11, 28362, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - On reset - Cast Disease Cloud');
 
 UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 16018; -- Bile Retcher
 

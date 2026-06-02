@@ -53,6 +53,7 @@ INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, 
 
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 30, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+1, `maxgold` = 4965, `HealthModifier` = 28 WHERE `entry` = 16017; -- Patchwork Golem
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 28, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+2, `HealthModifier` = 34 WHERE `entry` = 16018; -- Bile Retcher
+UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 60, `exp` = 0, `DamageModifier` = 25, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `HealthModifier` = 4 WHERE `entry` = 16024; -- Embalming Slime
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 62, `maxlevel` = 62, `exp` = 0, `DamageModifier` = 28, `RangeAttackTime` = 2500, `lootid` = @lootId+3, `mingold` = 0, `maxgold` = 0, `HealthModifier` = 25 WHERE `entry` = 16029; -- Sludge Belcher
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 60, `maxlevel` = 60, `exp` = 0, `DamageModifier` = 28, `BaseAttackTime` = 1800, `RangeAttackTime` = 1800, `HealthModifier` = 50 WHERE `entry` = 16375; -- Sewage Slime
 
@@ -583,14 +584,17 @@ INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `
 (@refId+12, 14557, 0, 0, 0, 1, 1, 1, 1, 'The Lion Horn of Stormwind'),
 (@refId+12, 14558, 0, 0, 0, 1, 1, 1, 1, 'Lady Maye\'s Pendant');
 
-DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018);
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018, 16029);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
 -- Patchwork Golem
 (16017, 0, 0, 0, 0, 0, 100, 0, 5000, 15000, 10000, 25000, 0, 0, 11, 27758, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In combat - \'Cast War Stomp\''),
 (16017, 0, 2, 0, 0, 0, 100, 0, 10000, 20000, 6000, 18000, 0, 0, 11, 27794, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Patchwork Golem - In combat - \'Cast Cleave\''),
 -- Bile Retcher
 (16018, 0, 0, 0, 0, 0, 100, 0, 10000, 10000, 15000, 15000, 0, 0, 11, 27807, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In Combat - Cast \'Bile Vomit\''),
-(16018, 0, 1, 0, 0, 0, 100, 0, 15000, 15000, 10000, 10000, 0, 0, 11, 27862, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In Combat - Cast \'Bile Retcher Slam\'');
+(16018, 0, 1, 0, 0, 0, 100, 0, 15000, 15000, 10000, 10000, 0, 0, 11, 27862, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Bile Retcher - In Combat - Cast \'Bile Retcher Slam\''),
+-- Sludge Belcher
+(16029, 0, 0, 0, 0, 0, 100, 0, 4000, 12000, 4000, 12000, 0, 0, 11, 27891, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Acidic Sludge\''),
+(16029, 0, 1, 0, 0, 0, 100, 0, 2000, 8000, 20000, 25000, 0, 0, 11, 27889, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sludge Belcher - In Combat - Cast \'Spawn Bile Sludge\'');
 
 UPDATE `creature_template_addon` SET `auras` = '30079' WHERE `entry` = 16018; -- Bile Retcher
 
