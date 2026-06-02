@@ -25,12 +25,14 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 
 DELETE FROM `creature_formations` WHERE `leaderGUID` IN (@cId+5, @cId+7, @cId+8, @cId+9);
 
-DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+1 AND @lootId+2;
+DELETE FROM `creature_loot_template` WHERE `Entry` BETWEEN @lootId+1 AND @lootId+3;
 
 UPDATE `creature_template` SET `difficulty_entry_1` = 29347, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `maxgold` = 11953, `HealthModifier` = 11 WHERE `entry` = 16017; -- Patchwork Golem
 UPDATE `creature_template` SET `difficulty_entry_1` = 29353, `minlevel` = 81, `maxlevel` = 81, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `lootid` = 100003, `HealthModifier` = 13.5 WHERE `entry` = 16018; -- Bile Retcher
+UPDATE `creature_template` SET `difficulty_entry_1` = 29356, `minlevel` = 82, `maxlevel` = 82, `exp` = 2, `DamageModifier` = 7.5, `RangeAttackTime` = 2000, `lootid` = 100003, `mingold` = 8523, `maxgold` = 8523, `HealthModifier` = 10 WHERE `entry` = 16029; -- Sludge Belcher
+UPDATE `creature_template` SET `difficulty_entry_1` = 29354, `minlevel` = 80, `maxlevel` = 80, `exp` = 2, `DamageModifier` = 7.5, `BaseAttackTime` = 2000, `RangeAttackTime` = 2000, `HealthModifier` = 8 WHERE `entry` = 16375; -- Sewage Slime
 
-DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+9 AND @refId+9;
+DELETE FROM `reference_loot_template` WHERE `Entry` BETWEEN @refId+9 AND @refId+12;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid` IN (16017, 16018);
 INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES
