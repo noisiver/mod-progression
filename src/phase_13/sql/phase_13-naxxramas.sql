@@ -17,7 +17,9 @@ DELETE FROM `areatrigger_scripts` WHERE `entry` = 4055;
 DELETE FROM `gameobject` WHERE `id` = 181476; -- Nox Portal Plaguewood
 
 UPDATE `creature` SET `id1` = 16018 WHERE `guid` IN (128075, 128084); -- Patchwork Golem -> Bile Retcher
-DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+10;
+DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+11;
+
+DELETE FROM `waypoint_data` WHERE `id` = (@cId+11)*10;
 
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` = 533;
 INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES
@@ -53,7 +55,7 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 
 UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 16018; -- Bile Retcher
 
-DELETE FROM `creature_addon` WHERE `guid` IN (128075, 128084);
+DELETE FROM `creature_addon` WHERE `guid` IN (128075, 128084, @cId+11);
 INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES
 (128075, 0, 0, 0, 1, 0, 0, '30079'), -- Bile Retcher
 (128084, 0, 0, 0, 1, 0, 0, '30079'); -- Bile Retcher

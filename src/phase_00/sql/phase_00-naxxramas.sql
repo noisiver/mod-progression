@@ -25,14 +25,15 @@ INSERT INTO `mapdifficulty_dbc` (`ID`, `MapID`, `Difficulty`, `Message_Lang_enUS
 (128, 533, 1, 'You must be level 51+, in a Raid group, and be attuned to Naxxramas to enter.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 16712190, 604800, 40, 'RAID_DIFFICULTY_40PLAYER');
 
 UPDATE `creature` SET `id1` = 16017 WHERE `guid` IN (128075, 128084); -- Patchwork Golem -> Bile Retcher
-DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+10;
+DELETE FROM `creature` WHERE `guid` BETWEEN @cId+5 AND @cId+11;
 INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (@cId+5, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3086.04, -3386.8, 298.401, 3.1765, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Patchwork Golem
 (@cId+6, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3054.92, -3356.8, 298.401, 4.72984, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Patchwork Golem
 (@cId+7, 16018, 0, 0, 533, 0, 0, 3, 1, 0, 3149.04, -3345.12, 294.592, 2.46091, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Bile Retcher
 (@cId+8, 16018, 0, 0, 533, 0, 0, 3, 1, 0, 3096.72, -3292.51, 294.597, 5.60251, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Bile Retcher
 (@cId+9, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3149.68, -3265.7, 294.576, 4.2237, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Patchwork Golem
-(@cId+10, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3174.14, -3291.93, 294.714, 3.80482, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL); -- Patchwork Golem
+(@cId+10, 16017, 0, 0, 533, 0, 0, 3, 1, 0, 3174.14, -3291.93, 294.714, 3.80482, 3600, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, NULL), -- Patchwork Golem
+(@cId+11, 16018, 0, 0, 533, 0, 0, 3, 1, 0, 3139.62, -3301.69, 293.629, 5.49026, 3600, 0, 0, 0, 0, 2, 0, 0, 0, NULL, 0, 0, NULL); -- Bile Retcher
 
 DELETE FROM `creature_formations` WHERE `leaderGUID` IN (@cId+5, @cId+7, @cId+8, @cId+9);
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES
@@ -50,6 +51,17 @@ INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, 
 (@cId+9, @cId+10, 0, 0, @noFollowMember, 0, 0),
 (@cId+9, 128070, 0, 0, @noFollowMember, 0, 0),
 (@cId+9, 128071, 0, 0, @noFollowMember, 0, 0);
+
+DELETE FROM `waypoint_data` WHERE `id` = @cId+11;
+INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `velocity`, `delay`, `smoothTransition`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES
+-- Bile Retcher
+((@cId+11)*10, 1, 3149.88, -3312.39, 293.629, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 2, 3139.43, -3323.29, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 3, 3128.05, -3335.14, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 4, 3116.95, -3324.14, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 5, 3106.94, -3314.26, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 6, 3118.58, -3302.33, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0),
+((@cId+11)*10, 7, 3129.75, -3290.89, 293.627, NULL, 0, 0, 0, 0, 0, 100, 0);
 
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 30, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+1, `maxgold` = 4965, `HealthModifier` = 28 WHERE `entry` = 16017; -- Patchwork Golem
 UPDATE `creature_template` SET `difficulty_entry_1` = 0, `minlevel` = 61, `maxlevel` = 61, `exp` = 0, `DamageModifier` = 28, `BaseAttackTime` = 2500, `RangeAttackTime` = 2500, `lootid` = @lootId+2, `HealthModifier` = 34 WHERE `entry` = 16018; -- Bile Retcher
@@ -598,4 +610,6 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 
 UPDATE `creature_template_addon` SET `auras` = '30079' WHERE `entry` = 16018; -- Bile Retcher
 
-DELETE FROM `creature_addon` WHERE `guid` IN (128075, 128084); -- Bile Retcher
+DELETE FROM `creature_addon` WHERE `guid` IN (128075, 128084, @cId+11); -- Bile Retcher
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES
+(@cId+11, (@cId+11)*10, 0, 0, 1, 0, 0, NULL); -- Bile Retcher
