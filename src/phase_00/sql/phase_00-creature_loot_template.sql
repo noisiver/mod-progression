@@ -127,7 +127,7 @@ INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `Q
 (@lootId+0, 17966, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Onyxia Hide Backpack'),
 (@lootId+0, 18422, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Head of Onyxia'),
 (@lootId+0, 18423, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Head of Onyxia'),
-(@lootId+0, 21108, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Draconic for Dummies Chapter IV'),
+(@lootId+0, 21108, 0, 100, 0, 1, 0, 1, 1, 'Onyxia - Draconic for Dummies Chapter VI'),
 (@lootId+0, @refId+0, 46000, 100, 0, 1, 0, 2, 2, 'Onyxia - (ReferenceTable)'),
 (@lootId+0, @refId+1, 46001, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
 (@lootId+0, @refId+2, 46002, 100, 0, 1, 0, 1, 1, 'Onyxia - (ReferenceTable)'),
