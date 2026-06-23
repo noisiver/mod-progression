@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     14875, -- Molthor <Hand of Rastakhan>
     14876, -- Zandalar Headshrinker
     14887, -- Ysondre

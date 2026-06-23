@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     22836, -- Jheel
@@ -166,16 +166,16 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     203494, -- Orgrimmar Grunt
     203495 -- Orgrimmar Grunt
 );
-DELETE FROM `creature` WHERE `id1` IN (
+DELETE FROM `creature` WHERE `id` IN (
     1748, -- Highlord Bolvar Fordragon
     1749, -- Lady Katrana Prestor
     12657, -- Don Pompa
     14720 -- High Overlord Saurfang
 );
 UPDATE `creature` SET `position_x` = 1671.89, `position_y` = 1678.29, `position_z` = 120.802, `orientation` = 0.0349066 WHERE `guid` = 29803; -- Undertaker Mordo
-UPDATE `creature` SET `id1` = 36213, `equipment_id` = 1 WHERE `id1` = 5624; -- Undercity Guardian -> Kor'kron Overseer
-UPDATE `creature` SET `id1` = 36273, `equipment_id` = 1 WHERE `id1` = 2425; -- Varimathras -> Bragor Bloodfist <Kor'kron Captain>
-UPDATE `creature` SET `id1` = 36224 WHERE `id1` = 14402; -- Seeker Cromwell -> Dark Ranger Clea
-UPDATE `creature` SET `id1` = 36225 WHERE `id1` = 14403; -- Seeker Nahr -> Dark Ranger Anya
-UPDATE `creature` SET `id1` = 36226 WHERE `id1` = 14404; -- Seeker Thompson -> Dark Ranger Cyndia
-UPDATE `creature` SET `position_x` = -3962, `position_y` = -13926.3, `position_z` = 101.238, `orientation` = 4.1889 WHERE `id1` = 16475; -- Megelon
+UPDATE `creature` SET `id` = 36213, `equipment_id` = 1 WHERE `id` = 5624; -- Undercity Guardian -> Kor'kron Overseer
+UPDATE `creature` SET `id` = 36273, `equipment_id` = 1 WHERE `id` = 2425; -- Varimathras -> Bragor Bloodfist <Kor'kron Captain>
+UPDATE `creature` SET `id` = 36224 WHERE `id` = 14402; -- Seeker Cromwell -> Dark Ranger Clea
+UPDATE `creature` SET `id` = 36225 WHERE `id` = 14403; -- Seeker Nahr -> Dark Ranger Anya
+UPDATE `creature` SET `id` = 36226 WHERE `id` = 14404; -- Seeker Thompson -> Dark Ranger Cyndia
+UPDATE `creature` SET `position_x` = -3962, `position_y` = -13926.3, `position_z` = 101.238, `orientation` = 4.1889 WHERE `id` = 16475; -- Megelon

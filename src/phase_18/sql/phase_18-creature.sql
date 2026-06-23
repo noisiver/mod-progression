@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
     39263, -- Disassembled Mechano-Tank
     39275, -- Gnomeregan Medic
     39349, -- Gnomeregan Trainee

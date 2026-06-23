@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     16287, -- Ambassador Sunsorrow
     16288, -- Advisor Sorrelon
     16840, -- Advisor Sevel
@@ -114,11 +114,11 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     24665 -- Gadgetzan Bruiser
 );
 UPDATE `creature` SET `position_x` = -4881.99, `position_y` = -981.982, `position_z` = 503.941, `orientation` = 3.83069 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
-UPDATE `creature` SET `position_x` = -8294.49, `position_y` = -4586.79, `position_z` = 9.10518, `wander_distance` = 16 WHERE `id1` = 8196; -- Occulus
-UPDATE `creature` SET `position_x` = -8105.5, `position_y` = -4645.59, `position_z` = -0.26068, `orientation` = 5.21357, `wander_distance` = 18 WHERE `id1` = 8197; -- Chronalis
-UPDATE `creature` SET `position_x` = -8145.5, `position_y` = -4540.84, `position_z` = -0.35593, `wander_distance` = 15 WHERE `id1` = 8198; -- Tick
-UPDATE `creature` SET `position_x` = -8240.33, `position_y` = -4648.71, `position_z` = 0.334381, `orientation` = 0.750492 WHERE `id1` = 15192; -- Anachronos
-UPDATE `creature` SET `position_x` = 2977.16, `position_y` = -3261.14, `position_z` = 160.496, `orientation` = 2.79253 WHERE `id1` = 3880; -- Sentinel Melyria Frostshadow
-UPDATE `creature` SET `position_x` = 3001.16, `position_y` = -3322.58, `position_z` = 152.267, `orientation` = 2.1293 WHERE `id1` = 3901; -- Illiyana
-UPDATE `creature` SET `position_x` = 6482.97, `position_y` = 729.743, `position_z` = 8.40589, `orientation` = 1.8326 WHERE `id1` = 4456; -- Fiora Longears
-DELETE FROM `creature` WHERE `id1` = 12397; -- Lord Kazzak
+UPDATE `creature` SET `position_x` = -8294.49, `position_y` = -4586.79, `position_z` = 9.10518, `wander_distance` = 16 WHERE `id` = 8196; -- Occulus
+UPDATE `creature` SET `position_x` = -8105.5, `position_y` = -4645.59, `position_z` = -0.26068, `orientation` = 5.21357, `wander_distance` = 18 WHERE `id` = 8197; -- Chronalis
+UPDATE `creature` SET `position_x` = -8145.5, `position_y` = -4540.84, `position_z` = -0.35593, `wander_distance` = 15 WHERE `id` = 8198; -- Tick
+UPDATE `creature` SET `position_x` = -8240.33, `position_y` = -4648.71, `position_z` = 0.334381, `orientation` = 0.750492 WHERE `id` = 15192; -- Anachronos
+UPDATE `creature` SET `position_x` = 2977.16, `position_y` = -3261.14, `position_z` = 160.496, `orientation` = 2.79253 WHERE `id` = 3880; -- Sentinel Melyria Frostshadow
+UPDATE `creature` SET `position_x` = 3001.16, `position_y` = -3322.58, `position_z` = 152.267, `orientation` = 2.1293 WHERE `id` = 3901; -- Illiyana
+UPDATE `creature` SET `position_x` = 6482.97, `position_y` = 729.743, `position_z` = 8.40589, `orientation` = 1.8326 WHERE `id` = 4456; -- Fiora Longears
+DELETE FROM `creature` WHERE `id` = 12397; -- Lord Kazzak

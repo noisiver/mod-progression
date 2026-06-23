@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     18594, -- Dathris Sunstriker
     19202, -- Emissary Mordin
     19216, -- Grand Anchorite Almonen

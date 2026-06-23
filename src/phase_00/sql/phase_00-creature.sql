@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     6109, -- Azuregos
     10182, -- Rokaro <Champion of the Horde>
     10321, -- Emberstrife
@@ -400,7 +400,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     203494, -- Orgrimmar Grunt
     203495 -- Orgrimmar Grunt
 );
-UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
+UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN ( -- These are for the event 'Operation: Gnomeregan' but the event doesn't exist in azerothcore
     39263, -- Disassembled Mechano-Tank
     39275, -- Gnomeregan Medic
     39349, -- Gnomeregan Trainee
@@ -417,24 +417,24 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id1` IN ( -- These are for the 
 UPDATE `creature` SET `position_x` = -8441.42, `position_y` = 333.102, `position_z` = 122.679, `orientation` = 2.23167 WHERE `guid` = 10494; -- Anduin Wrynn <Prince of Stormwind>
 UPDATE `creature` SET `position_x` = -4886.97, `position_y` = -978.31, `position_z` = 504.024, `orientation` = 5.39307 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
 UPDATE `creature` SET `position_x` = 1678.99, `position_y` = 1667.86, `position_z` = 135.855, `orientation` = 3.76991 WHERE `guid` = 29803; -- Undertaker Mordo
-UPDATE `creature` SET `id1` = 5624, `equipment_id` = 0 WHERE `id1` = 36213; -- Kor'kron Overseer -> Undercity Guardian
-UPDATE `creature` SET `id1` = 2425, `equipment_id` = 0 WHERE `id1` = 36273; -- Bragor Bloodfist <Kor'kron Captain> -> Varimathras
-UPDATE `creature` SET `id1` = 14402 WHERE `id1` = 36224; -- Dark Ranger Clea -> Seeker Cromwell
-UPDATE `creature` SET `id1` = 14403 WHERE `id1` = 36225; -- Dark Ranger Anya -> Seeker Nahr
-UPDATE `creature` SET `id1` = 14404 WHERE `id1` = 36226; -- Dark Ranger Cyndia -> Seeker Thompson
-UPDATE `creature` SET `position_x` = -8195.5, `position_y` = -4480.25, `position_z` = 9.20932, `wander_distance` = 7 WHERE `id1` = 8196; -- Occulus
-UPDATE `creature` SET `position_x` = -8185.17, `position_y` = -4695.1, `position_z` = 16.1702, `orientation` = 3.73691, `wander_distance` = 5 WHERE `id1` = 8197; -- Chronalis
-UPDATE `creature` SET `position_x` = -8189.83, `position_y` = -4586.73, `position_z` = 8.14232, `wander_distance` = 7 WHERE `id1` = 8198; -- Tick
-UPDATE `creature` SET `position_x` = -8175.67, `position_y` = -4718.28, `position_z` = 26.3489, `orientation` = 1.88496 WHERE `id1` = 15192; -- Anachronos
-UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_z` = 74.1523, `orientation` = 5.58505 WHERE `id1` = 3880; -- Sentinel Melyria Frostshadow
-UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id1` = 3901; -- Illiyana
-UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `position_z` = 92.0423, `orientation` = 5.13127 WHERE `id1` = 16475; -- Megelon
-UPDATE `creature` SET `position_x` = -3613.43, `position_y` = -4463.9, `position_z` = 13.6227, `orientation` = 2.97522 WHERE `id1` = 4456; -- Fiora Longears
+UPDATE `creature` SET `id` = 5624, `equipment_id` = 0 WHERE `id` = 36213; -- Kor'kron Overseer -> Undercity Guardian
+UPDATE `creature` SET `id` = 2425, `equipment_id` = 0 WHERE `id` = 36273; -- Bragor Bloodfist <Kor'kron Captain> -> Varimathras
+UPDATE `creature` SET `id` = 14402 WHERE `id` = 36224; -- Dark Ranger Clea -> Seeker Cromwell
+UPDATE `creature` SET `id` = 14403 WHERE `id` = 36225; -- Dark Ranger Anya -> Seeker Nahr
+UPDATE `creature` SET `id` = 14404 WHERE `id` = 36226; -- Dark Ranger Cyndia -> Seeker Thompson
+UPDATE `creature` SET `position_x` = -8195.5, `position_y` = -4480.25, `position_z` = 9.20932, `wander_distance` = 7 WHERE `id` = 8196; -- Occulus
+UPDATE `creature` SET `position_x` = -8185.17, `position_y` = -4695.1, `position_z` = 16.1702, `orientation` = 3.73691, `wander_distance` = 5 WHERE `id` = 8197; -- Chronalis
+UPDATE `creature` SET `position_x` = -8189.83, `position_y` = -4586.73, `position_z` = 8.14232, `wander_distance` = 7 WHERE `id` = 8198; -- Tick
+UPDATE `creature` SET `position_x` = -8175.67, `position_y` = -4718.28, `position_z` = 26.3489, `orientation` = 1.88496 WHERE `id` = 15192; -- Anachronos
+UPDATE `creature` SET `position_x` = 2636.49, `position_y` = 417.815, `position_z` = 74.1523, `orientation` = 5.58505 WHERE `id` = 3880; -- Sentinel Melyria Frostshadow
+UPDATE `creature` SET `position_x` = 2622.5, `position_y` = 446.768, `position_z` = 73.7489, `orientation` = 2.77507 WHERE `id` = 3901; -- Illiyana
+UPDATE `creature` SET `position_x` = -3985.07, `position_y` = -13877.1, `position_z` = 92.0423, `orientation` = 5.13127 WHERE `id` = 16475; -- Megelon
+UPDATE `creature` SET `position_x` = -3613.43, `position_y` = -4463.9, `position_z` = 13.6227, `orientation` = 2.97522 WHERE `id` = 4456; -- Fiora Longears
 SET @cId := 5300000;
-DELETE FROM `creature` WHERE `id1` IN (1748, 1749, 12397, 12657, 14720);
-INSERT INTO `creature` (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
-(@cId+0, 1748, 0, 0, 0, 0, 0, 1, 1, 1, -8442.99, 331.755, 122.58, 2.24057, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Highlord Bolvar Fordragon
-(@cId+1, 1749, 0, 0, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Lady Katrana Prestor
-(@cId+2, 12397, 0, 0, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL), -- Lord Kazzak
-(@cId+3, 12657, 0, 0, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Don Pompa
-(@cId+4, 14720, 0, 0, 1, 0, 0, 1, 1, 1, 1565.79, -4395.27, 7.131, 3.22088, 300, 0, 0, 1476000, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- High Overlord Saurfang
+DELETE FROM `creature` WHERE `id` IN (1748, 1749, 12397, 12657, 14720);
+INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
+(@cId+0, 1748, 0, 0, 0, 1, 1, 1, -8442.99, 331.755, 122.58, 2.24057, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Highlord Bolvar Fordragon
+(@cId+1, 1749, 0, 0, 0, 1, 1, 1, -8439.61, 334.384, 122.58, 2.2081, 7200, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Lady Katrana Prestor
+(@cId+2, 12397, 0, 0, 0, 1, 16384, 1, -12275.6, -2524.26, 3.79202, 1.69492, 604800, 0, 0, 1, 0, 2, 0, 0, 0, NULL, NULL, 0, NULL), -- Lord Kazzak
+(@cId+3, 12657, 0, 0, 0, 1, 1, 0, -3720.61, -596.261, 6.6216, 4.36332, 300, 0, 0, 1, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL), -- Don Pompa
+(@cId+4, 14720, 1, 0, 0, 1, 1, 1, 1565.79, -4395.27, 7.131, 3.22088, 300, 0, 0, 1476000, 0, 0, 0, 0, 0, NULL, NULL, 0, NULL); -- High Overlord Saurfang

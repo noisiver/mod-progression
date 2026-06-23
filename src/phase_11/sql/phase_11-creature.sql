@@ -1,4 +1,4 @@
-UPDATE `creature` SET `phaseMask` = 1 WHERE `id1` IN (
+UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     23559, -- Budd Nedreck
     23560, -- Provisioner Ameenah <Reagents>
     23718, -- Mack
