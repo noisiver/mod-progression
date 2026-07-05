@@ -70,7 +70,7 @@ Progression.TradableBindsOnPickup.Enforced = 1
 
 #
 #    Progression.DungeonFinder.Enforced
-#        Description: Enforce the availability of the dungeon finder based on the active patch
+#        Description: Enforce the availability of the dungeon finder based on the active phase
 #                     0 - Disabled
 #        Default:     1 - Enabled
 #

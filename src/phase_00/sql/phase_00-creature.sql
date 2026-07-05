@@ -156,6 +156,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     23601, -- Apprentice Garion <Tabetha's Apprentice>
     23602, -- Deserter Agitator
     23612, -- Dyslix Silvergrub <Flight Master>
+    23616, -- Kyle the Frenzied
+    23618, -- Ahab Wheathoof <The Old Rancher>
     23620, -- Privateer
     23635, -- Krixx <Zeppelin Engineer>
     23636, -- Mudsprocket Bruiser

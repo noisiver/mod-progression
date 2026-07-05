@@ -17,6 +17,7 @@ UPDATE `gameobject` SET `phaseMask` = 1 WHERE `id` IN (
     186241, -- Mudsprocket
     186426, -- Wanted Poster
     186432, -- Cove Cannon
+    186264, -- Missing: Kyle
     188123 -- Mailbox
 );
 UPDATE `gameobject` SET `phaseMask` = 1 WHERE `guid` IN (

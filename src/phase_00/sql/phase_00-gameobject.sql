@@ -35,6 +35,7 @@ UPDATE `gameobject` SET `phaseMask` = 16384 WHERE `id` IN (
     186233, -- Campfire
     186241, -- Mudsprocket
     186251, -- Meeting Stone (Zul'Aman)
+    186264, -- Missing: Kyle
     186426, -- Wanted Poster
     186432, -- Cove Cannon
     187290, -- Guild Vault
