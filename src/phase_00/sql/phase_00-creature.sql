@@ -249,6 +249,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     27703, -- Ysuria <Portal Trainer>
     27704, -- Horace Alder <Mage Trainer>
     27705, -- Lorrin Foxfire <Portal Trainer>
+    28126, -- Don Carlos
     28347, -- Miles Sidney <Poison Supplies>
     28355, -- Wright Williams
     29095, -- Edward Cairn <Elder>
@@ -384,6 +385,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `guid` IN (
     34138, -- Archery Target
     34137, -- Archery Target
     34139, -- Archery Target
+    65613, -- Riding White Stalion
     120616, -- Stormwind Harbor Guard
     120623, -- Stormwind Harbor Guard
     120624, -- Stormwind Harbor Guard

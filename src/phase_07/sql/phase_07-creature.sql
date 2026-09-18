@@ -108,12 +108,14 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     27703, -- Ysuria <Portal Trainer>
     27704, -- Horace Alder <Mage Trainer>
     27705, -- Lorrin Foxfire <Portal Trainer>
+    28126, -- Don Carlos
     29095 -- Edward Cairn <Elder>
 );
 UPDATE `creature` SET `phaseMask` = 1 WHERE `guid` IN (
     14740, -- Alliance Brigadier General
     24664, -- Gadgetzan Bruiser
-    24665 -- Gadgetzan Bruiser
+    24665, -- Gadgetzan Bruiser
+    65613 -- Riding White Stalion
 );
 UPDATE `creature` SET `position_x` = -4881.99, `position_y` = -981.982, `position_z` = 503.941, `orientation` = 3.83069 WHERE `guid` = 1749; -- Dinita Stonemantle <Vault Administrator>
 UPDATE `creature` SET `position_x` = -8294.49, `position_y` = -4586.79, `position_z` = 9.10518, `wander_distance` = 16 WHERE `id` = 8196; -- Occulus
