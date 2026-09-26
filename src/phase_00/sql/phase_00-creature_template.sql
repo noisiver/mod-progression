@@ -259,6 +259,7 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     16802, -- Lor'themar Theron <Regent Lord of Quel'Thalas>
     17468 -- Prophet Velen
 );
+UPDATE `creature_template` SET `minlevel` = 70, `maxlevel` = 70 WHERE `entry` = 22494; -- Cosmowrench Bruiser
 UPDATE `creature_template` SET `faction` = 14 WHERE `entry` IN (
     2966, -- Battleboar
     3101, -- Vile Familiar
