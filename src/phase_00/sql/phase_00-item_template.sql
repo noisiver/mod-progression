@@ -171,3 +171,4 @@ UPDATE `item_template` SET `ItemLevel` = 30, `RequiredLevel` = 30 WHERE `entry` 
     37827 -- Brewfest Kodo
 );
 UPDATE `item_template` SET `RequiredLevel` = 30 WHERE `entry` = 37011; -- Magic Broom
+UPDATE `item_template` SET `description` = 'Teaches Tranquilizing Shot.' WHERE `entry` = 16665; -- Tome of Tranquilizing Shot

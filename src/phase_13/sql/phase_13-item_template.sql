@@ -166,3 +166,4 @@ UPDATE `item_template` SET `ItemLevel` = 60, `RequiredLevel` = 60 WHERE `entry` 
     35225 -- X-51 Nether-Rocket
 );
 UPDATE `item_template` SET `RequiredLevel` = 10 WHERE `entry` = 37011; -- Magic Broom
+UPDATE `item_template` SET `description` = '' WHERE `entry` = 16665; -- Tome of Tranquilizing Shot
