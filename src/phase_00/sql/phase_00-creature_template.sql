@@ -13,6 +13,7 @@ UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 55 WHERE `entry` IN
     1573, -- Gryth Thurden <Gryphon Master>
     1642, -- Northshire Guard
     1736, -- Deathguard Randolph
+    1737, -- Deathguard Oliver
     1739, -- Deathguard Phillip
     1741, -- Deathguard Bartrand
     1976, -- Stormwind City Patroller
