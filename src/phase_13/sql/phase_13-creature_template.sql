@@ -75,6 +75,7 @@ UPDATE `creature_template` SET `faction` = 2136 WHERE `entry` = 808; -- Grik'nir
 UPDATE `creature_template` SET `minlevel` = 83, `maxlevel` = 83 WHERE `entry` IN (
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     3057, -- Cairne Bloodhoof <High Chieftain>
+    3516, -- Arch Druid Fandral Staghelm
     4949, -- Thrall <Warchief>
     4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>

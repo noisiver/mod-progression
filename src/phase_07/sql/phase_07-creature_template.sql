@@ -176,6 +176,7 @@ UPDATE `creature_template` SET `minlevel` = 73, `maxlevel` = 73 WHERE `entry` IN
     1748, -- Highlord Bolvar Fordragon
     2784, -- King Magni Bronzebeard <Lord of Ironforge>
     3057, -- Cairne Bloodhoof <High Chieftain>
+    3516, -- Arch Druid Fandral Staghelm
     4949, -- Thrall <Warchief>
     4968, -- Lady Jaina Proudmoore <Ruler of Theramore>
     7937, -- High Tinker Mekkatorque <King of Gnomes>
