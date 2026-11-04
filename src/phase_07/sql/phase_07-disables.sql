@@ -5,7 +5,8 @@ DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     11211, -- Help for Mudsprocket
     11212, -- Tabetha's Farm
     11213, -- Check Up on Tabetha
-    11215 -- Help Mudsprocket
+    11215, -- Help Mudsprocket
+    11225 -- The Hermit of Witch Hill
 );
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
     269, -- The Black Morass
