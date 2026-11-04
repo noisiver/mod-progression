@@ -61,5 +61,6 @@ DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (
     27859, -- Zangar Caps
     27860, -- Purified Draenic Water
     31952, -- Khorium Lockbox
-    33114 -- Sealed Letter
+    33114, -- Sealed Letter
+    33115 -- Sealed Letter
 );
