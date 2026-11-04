@@ -83,6 +83,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     23723, -- Sergeant Lukas
     23797, -- Moxie Steelgrille
     23835, -- Sergeant Amelyn
+    23843, -- Mordant Grimsby
     23896, -- "Dirty" Michael Crowe <Fish Merchant>
     23905, -- Major Mills
     23942, -- Andello Porter <SI:7>
