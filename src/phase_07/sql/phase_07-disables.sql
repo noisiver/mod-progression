@@ -3,6 +3,8 @@ DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     11124, -- Inspecting the Ruins
     11143, -- A Grim Connection
     11211, -- Help for Mudsprocket
+    11212, -- Tabetha's Farm
+    11213, -- Check Up on Tabetha
     11215 -- Help Mudsprocket
 );
 DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` IN (
