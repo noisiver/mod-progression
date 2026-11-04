@@ -125,4 +125,5 @@ UPDATE `creature` SET `position_x` = -8240.33, `position_y` = -4648.71, `positio
 UPDATE `creature` SET `position_x` = 2977.16, `position_y` = -3261.14, `position_z` = 160.496, `orientation` = 2.79253 WHERE `id` = 3880; -- Sentinel Melyria Frostshadow
 UPDATE `creature` SET `position_x` = 3001.16, `position_y` = -3322.58, `position_z` = 152.267, `orientation` = 2.1293 WHERE `id` = 3901; -- Illiyana
 UPDATE `creature` SET `position_x` = 6482.97, `position_y` = 729.743, `position_z` = 8.40589, `orientation` = 1.8326 WHERE `id` = 4456; -- Fiora Longears
+UPDATE `creature` SET `id` = 23949 WHERE `id` = 4947; -- Theramore Lieutenant -> Lieutenant Nath
 DELETE FROM `creature` WHERE `id` = 12397; -- Lord Kazzak

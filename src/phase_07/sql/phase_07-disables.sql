@@ -1,6 +1,7 @@
 DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     11123, -- Inspecting the Ruins
     11124, -- Inspecting the Ruins
+    11143, -- A Grim Connection
     11211, -- Help for Mudsprocket
     11215 -- Help Mudsprocket
 );
@@ -56,5 +57,6 @@ DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (
     21877, -- Netherweave Cloth
     27859, -- Zangar Caps
     27860, -- Purified Draenic Water
-    31952 -- Khorium Lockbox
+    31952, -- Khorium Lockbox
+    33114 -- Sealed Letter
 );
