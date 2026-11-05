@@ -479,3 +479,4 @@ UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (
 );
 UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` = 11878; -- Nathanos Blightcaller <Champion of the Banshee Queen>
 UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 1284; -- Archbishop Benedictus
+UPDATE `creature_template` SET `name` = 'Broken Exile' WHERE `entry` = 11198; -- Broken Exile

@@ -1097,3 +1097,4 @@ UPDATE `creature_template` SET `DamageModifier` = 25 WHERE `entry` IN (
 );
 UPDATE `creature_template` SET `DamageModifier` = 30 WHERE `entry` = 15516; -- Battleguard Sartura
 UPDATE `creature_template` SET `DamageModifier` = 33 WHERE `entry` = 15299; -- Viscidus
+UPDATE `creature_template` SET `name` = 'Draenei Exile' WHERE `entry` = 11198; -- Broken Exile

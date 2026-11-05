@@ -32,6 +32,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     17531, -- Draenei Protector
     17541, -- Draenei Quartermaster
     18165, -- Archmage Cedric
+    18221, -- Holaaru
     19254, -- Warlord Dar'toon
     19859, -- Max Luna <Arena Battlemaster>
     19860, -- Katrina Turner
