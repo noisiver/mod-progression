@@ -8,6 +8,8 @@ UPDATE `creature_template_model` SET `CreatureDisplayID` = 21013 WHERE `Creature
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 19837 WHERE `CreatureID` = 7801; -- Gilveradin Sunchaser
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 19840 WHERE `CreatureID` = 8395; -- Sanath Lim-yo
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 21011 WHERE `CreatureID` = 9836; -- Mathredis Firestar
+UPDATE `creature_template_model` SET `CreatureDisplayID` = 18910 WHERE `CreatureID` = 10304; -- Aurora Skycaller
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 19817 WHERE `CreatureID` = 10976; -- Jeziba
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 19841 WHERE `CreatureID` = 11198; -- Broken Exile
+UPDATE `creature_template_model` SET `CreatureDisplayID` = 19819 WHERE `CreatureID` = 11704; -- Kriss Goldenlight
 UPDATE `creature_template_model` SET `CreatureDisplayID` = 19851 WHERE `CreatureID` = 11874; -- Masat T'andr <Superior Leatherworker>
