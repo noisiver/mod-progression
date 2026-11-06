@@ -1,4 +1,5 @@
 UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
+    11701, -- Mor'vek <Ravasaur Trainers>
     20807, -- Scribe Saalyn <Aldor Inscriptions>
     20808, -- Scribe Veredis <Scryer Inscriptions>
     22836, -- Jheel
@@ -103,6 +104,7 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     33681, -- Korim <Master Leatherworking Trainer>
     33683, -- Dremm <Master Skinning Trainer>
     33684, -- Weaver Aoa <Master Tailoring Trainer>
+    34158, -- Young Venomhide Ravasaur
     34526, -- Aponi Brightmane
     34528, -- Tahu Sagewind
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>

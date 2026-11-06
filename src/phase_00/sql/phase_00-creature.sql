@@ -2,6 +2,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     6109, -- Azuregos
     10182, -- Rokaro <Champion of the Horde>
     10321, -- Emberstrife
+    11701, -- Mor'vek <Ravasaur Trainers>
     14373, -- Sage Korolusk
     14374, -- Scholar Runethorn
     14387, -- Lothos Riftwaker
@@ -324,6 +325,7 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     33964, -- Arcanist Firael <Emblem of Conquest Quartermaster>
     33993, -- Emalon the Storm Watcher
     34015, -- Tempest Warder
+    34158, -- Young Venomhide Ravasaur
     34526, -- Aponi Brightmane
     34528, -- Tahu Sagewind
     34765, -- Zelli Hotnozzle <Thunder Bluff Zeppelin Master>
