@@ -2,6 +2,7 @@ DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     11123, -- Inspecting the Ruins
     11124, -- Inspecting the Ruins
     11143, -- A Grim Connection
+    11204, -- Return to Krog
     11211, -- Help for Mudsprocket
     11212, -- Tabetha's Farm
     11213, -- Check Up on Tabetha
