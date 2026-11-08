@@ -2,5 +2,6 @@ UPDATE `creature` SET `phaseMask` = 1 WHERE `id` IN (
     6109, -- Azuregos
     12397, -- Lord Kazzak
     14373, -- Sage Korolusk
-    14374 -- Scholar Runethorn
+    14374, -- Scholar Runethorn
+    14463 -- Daio the Decrepit
 );
