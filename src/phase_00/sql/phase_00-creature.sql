@@ -3,6 +3,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     10182, -- Rokaro <Champion of the Horde>
     10321, -- Emberstrife
     11701, -- Mor'vek <Ravasaur Trainers>
+    13699, -- Selendra
+    13737, -- Marandis' Sister
     14373, -- Sage Korolusk
     14374, -- Scholar Runethorn
     14387, -- Lothos Riftwaker
