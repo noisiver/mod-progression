@@ -229,6 +229,8 @@ INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, 
 (10, 18705, 0, '', '', 'Mature Black Dragon Sinew'), -- Phase 3
 (10, 18987, 0, '', '', 'Blackhand\'s Command'), -- Phase 3
 (10, 21877, 0, '', '', 'Netherweave Cloth'), -- Phase 7
+(10, 23777, 0, '', '', 'Diabolical Plans'), -- Phase 7
+(10, 23797, 0, '', '', 'Diabolical Plans'), -- Phase 7
 (10, 27859, 0, '', '', 'Zangar Caps'), -- Phase 7
 (10, 27860, 0, '', '', 'Purified Draenic Water'), -- Phase 7
 (10, 31952, 0, '', '', 'Khorium Lockbox'), -- Phase 7

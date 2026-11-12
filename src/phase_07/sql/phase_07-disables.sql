@@ -59,6 +59,8 @@ DELETE FROM `disables` WHERE `sourceType` = 9 AND `entry` IN (
 );
 DELETE FROM `disables` WHERE `sourceType` = 10 AND `entry` IN (
     21877, -- Netherweave Cloth
+    23777, -- Diabolical Plans
+    23797, -- Diabolical Plans
     27859, -- Zangar Caps
     27860, -- Purified Draenic Water
     31952, -- Khorium Lockbox
