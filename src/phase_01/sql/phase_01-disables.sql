@@ -1,5 +1,6 @@
 DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
     4903, -- Warlord's Command
+    6566, -- What the Wind Carries
     7068, -- Shadowshard Fragments
     7070 -- Shadowshard Fragments
 );
