@@ -1,12 +1,15 @@
 UPDATE `creature_queststarter` SET `id` = 3216 WHERE `quest` = 3122; -- Neeru Fireblade, Return to Witch Doctor Uzer'i
 DELETE FROM `creature_queststarter` WHERE `id` IN (4947, 20735, 31439);
-DELETE FROM `creature_queststarter` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 7496, 8344);
+DELETE FROM `creature_queststarter` WHERE `quest` IN (550, 1599, 1470, 1598, 1485, 8344);
+DELETE FROM `creature_queststarter` WHERE `id` = 1748 AND `quest` IN (6186, 6187, 7496);
 INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES
 -- Drusilla La Salle <Warlock Trainer>
 (459, 1598), -- The Stolen Tome
 -- Alamar Grimm <Warlock Trainer>
 (460, 1599), -- Beginnings
 -- Highlord Bolvar Fordragon
+(1748, 6186), -- The Blightcaller Cometh
+(1748, 6187), -- Order Must Be Restored
 (1748, 7496), -- Celebrating Good Times
 -- High Executor Darthalia
 (2215, 550), -- Battle of Hillsbrad

@@ -5,6 +5,10 @@ DELETE FROM `creature_queststarter` WHERE `quest` IN (
     1470, -- Piercing the Veil
     1598, -- The Stolen Tome
     1485, -- Vile Familiars
-    7496, -- Celebrating Good Times
     8344 -- Windows to the Source
+);
+DELETE FROM `creature_queststarter` WHERE `id` = 1748 AND `quest` IN ( -- Highlord Bolvar Fordragon
+    6186, -- The Blightcaller Cometh
+    6187, -- Order Must Be Restored
+    7496 -- Celebrating Good Times
 );
