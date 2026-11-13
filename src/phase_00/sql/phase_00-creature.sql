@@ -3,6 +3,8 @@ UPDATE `creature` SET `phaseMask` = 16384 WHERE `id` IN (
     10182, -- Rokaro <Champion of the Horde>
     10321, -- Emberstrife
     11701, -- Mor'vek <Ravasaur Trainers>
+    11705, -- Rayan Dawnrisen
+    11707, -- Joy Ar'nareth
     11715, -- Talendria
     11823, -- Vark Battlescar
     13656, -- Willow <Twilight's Hammer>
