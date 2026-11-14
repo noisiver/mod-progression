@@ -1,4 +1,5 @@
 DELETE FROM `disables` WHERE `sourceType` = 1 AND `entry` IN (
+    10883, -- The Tempest Key
     11009, -- Ogre Heaven
     13432 -- The Vials of Eternity
 );
