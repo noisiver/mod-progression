@@ -24,24 +24,33 @@
 
 #define OnyxiasLairScriptName "instance_onyxias_lair"
 
-enum eInstanceData
+enum DataTypes
 {
     DATA_ONYXIA                 = 0,
-    MAX_ENCOUNTER               = 1,
-    DATA_WHELP_SUMMONED,
-    DATA_DEEP_BREATH_FAILED,
+    MAX_ENCOUNTER               = 1
 };
 
-enum eCreatures
+enum CreatureIds
 {
     NPC_ONYXIA                  = 10184,
     NPC_ONYXIAN_WHELP           = 11262,
+    NPC_WORLD_TRIGGER           = 22515
 };
 
-enum eGameObjects
+enum Actions
+{
+    ACTION_WHELP_SUMMONED       = 1
+};
+
+enum GameObjectIds
 {
     GO_WHELP_SPAWNER            = 176510,
-    GO_WHELP_EGG                = 176511
+    GO_ONYXIA_EGG               = 176511
+};
+
+enum SharedSpells
+{
+    SPELL_SUMMON_WHELP          = 17646
 };
 
 template <class AI, class T>

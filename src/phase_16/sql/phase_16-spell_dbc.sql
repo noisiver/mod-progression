@@ -15,5 +15,17 @@ DELETE FROM `spell_dbc` WHERE `ID` IN (
     18609, -- Breath
     18617, -- Breath
     18958, -- Flame Lash
-    20203 -- Fire Nova
+    20203, -- Fire Nova
+    22191, -- Heated Ground
+    22192, -- Heated Ground
+    22193, -- Heated Ground
+    22194, -- Heated Ground
+    22195, -- Heated Ground
+    22196, -- Heated Ground
+    22197, -- Heated Ground
+    22198, -- Heated Ground
+    22199, -- Heated Ground
+    22200, -- Heated Ground
+    22201, -- Heated Ground
+    22202 -- Heated Ground
 );

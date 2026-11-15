@@ -15,10 +15,8 @@
  * with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "GlobalScript.h"
 #include "InstanceMapScript.h"
 #include "ScriptedCreature.h"
-#include "SpellInfo.h"
 #include "onyxias_lair.h"
 
 ObjectData const creatureData[] =
@@ -27,27 +25,32 @@ ObjectData const creatureData[] =
     { 0,          0           }
 };
 
+// Leash radius: 95 yards plus Onyxia's 18 yard combat reach
+BossBoundaryData const boundaries =
+{
+    { DATA_ONYXIA, new CircleBoundary(Position(-10.6155f, -219.357f), 113.0) }
+};
+
 class instance_onyxias_lair_progression : public InstanceMapScript
 {
 public:
     instance_onyxias_lair_progression() : InstanceMapScript("instance_onyxias_lair", MAP_ONYXIAS_LAIR) { }
 
-    InstanceScript* GetInstanceScript(InstanceMap* pMap) const override
+    InstanceScript* GetInstanceScript(InstanceMap* map) const override
     {
-        return new instance_onyxias_lair_InstanceMapScript(pMap);
+        return new instance_onyxias_lair_InstanceMapScript(map);
     }
 
     struct instance_onyxias_lair_InstanceMapScript : public InstanceScript
     {
-        instance_onyxias_lair_InstanceMapScript(Map* pMap) : InstanceScript(pMap) {Initialize();};
-
-        std::string str_data;
+        instance_onyxias_lair_InstanceMapScript(Map* map) : InstanceScript(map) { }
 
         void Initialize() override
         {
             SetHeaders(DataHeader);
             SetBossNumber(MAX_ENCOUNTER);
             LoadObjectData(creatureData, nullptr);
+            LoadBossBoundaries(boundaries);
         }
 
         void OnGameObjectCreate(GameObject* go) override
@@ -55,11 +58,9 @@ public:
             switch (go->GetEntry())
             {
                 case GO_WHELP_SPAWNER:
-                    go->CastSpell((Unit*)nullptr, 17646);
-                    if (Creature* onyxia = GetCreature(DATA_ONYXIA))
-                    {
-                        onyxia->AI()->DoAction(-1);
-                    }
+                    go->CastSpell(nullptr, SPELL_SUMMON_WHELP);
+                    break;
+                default:
                     break;
             }
         }
